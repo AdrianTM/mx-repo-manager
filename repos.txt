@@ -1,0 +1,6 @@
+Crete -  http://ftp.cc.uoc.gr/mirrors/linux/mx/mx
+Ecuador -  http://mirror.cedia.org.ec/mx-workspace/mx
+USA, Los Angeles -  http://iso.mxrepo.com/mx
+USA, Utah -  http://mxrepo.com/mx
+The Netherlands - http://nl.mxrepo.com/mx
+Taiwan -  http://ftp.yzu.edu.tw/Linux/mx-workspace/mx

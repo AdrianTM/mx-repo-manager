@@ -1,0 +1,14 @@
+Source: mx-repo-manager
+Section: admin
+Priority: optional
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Build-Depends: qt5-qmake,
+	debhelper (>=7.0.50~)
+Standards-Version: 3.9.5
+Vcs-Git: git://github.com/AdrianTM/mx-repo-manager
+
+Package: mx-repo-manager
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer
+Description: MX Repo Manager
+ MX Repo Manager is a tool used for choosing the default APT repository for MX Linux
