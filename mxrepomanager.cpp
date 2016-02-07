@@ -41,6 +41,9 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     ui->buttonCancel->setEnabled(true);
     ui->buttonOK->setEnabled(true);
     refresh();
+    int height = ui->listWidget->sizeHintForRow(0) * ui->listWidget->count();
+    ui->listWidget->setMinimumHeight(height);
+    this->adjustSize();
 }
 
 mxrepomanager::~mxrepomanager()
@@ -104,9 +107,6 @@ void mxrepomanager::displayRepos(QStringList repos)
         QListWidgetItem *it = new QListWidgetItem(ui->listWidget);
         ui->listWidget->setItemWidget(it, new QRadioButton(repo));
     }
-    int height = ui->listWidget->sizeHintForRow(0) * ui->listWidget->count();
-    ui->listWidget->setMinimumHeight(height);
-    this->adjustSize();
 }
 
 // displays the current repo by selecting the item
