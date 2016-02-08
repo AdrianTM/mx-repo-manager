@@ -14,64 +14,64 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="40"/>
-        <location filename="../mxrepomanager.cpp" line="171"/>
-        <location filename="../mxrepomanager.cpp" line="178"/>
-        <location filename="../mxrepomanager.cpp" line="187"/>
+        <location filename="../mxrepomanager.cpp" line="169"/>
+        <location filename="../mxrepomanager.cpp" line="176"/>
+        <location filename="../mxrepomanager.cpp" line="185"/>
         <source>MX Repo Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <source>Select the APT repo that you want to use:</source>
+        <source>Select the APT repository that you want to use:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="138"/>
+        <location filename="../mxrepomanager.ui" line="151"/>
         <source>Display help </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="141"/>
+        <location filename="../mxrepomanager.ui" line="154"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="148"/>
+        <location filename="../mxrepomanager.ui" line="161"/>
         <source>Alt+H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="193"/>
+        <location filename="../mxrepomanager.ui" line="206"/>
         <source>About this application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="196"/>
+        <location filename="../mxrepomanager.ui" line="209"/>
         <source>About...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="203"/>
+        <location filename="../mxrepomanager.ui" line="216"/>
         <source>Alt+B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="219"/>
+        <location filename="../mxrepomanager.ui" line="232"/>
         <source>Quit application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="222"/>
+        <location filename="../mxrepomanager.ui" line="235"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="229"/>
+        <location filename="../mxrepomanager.ui" line="242"/>
         <source>Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="267"/>
+        <location filename="../mxrepomanager.ui" line="280"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
@@ -82,49 +82,47 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="147"/>
-        <source>Your default repo have been changed to the selected one. 
-Please update your sources by running &apos;apt-get update&apos; 
-or &apos;Reload&apos; in Synaptic before installing/upgrading programs.</source>
+        <source>Your new selection will take effect the next time sources are updated.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="151"/>
+        <location filename="../mxrepomanager.cpp" line="149"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="152"/>
+        <location filename="../mxrepomanager.cpp" line="150"/>
         <source>Could not change the repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="170"/>
+        <location filename="../mxrepomanager.cpp" line="168"/>
         <source>About MX Repo Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="171"/>
+        <location filename="../mxrepomanager.cpp" line="169"/>
         <source>Version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="172"/>
+        <location filename="../mxrepomanager.cpp" line="170"/>
         <source>Program for choosing the default APT repository</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="174"/>
+        <location filename="../mxrepomanager.cpp" line="172"/>
         <source>Copyright (c) MX Linux</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="175"/>
+        <location filename="../mxrepomanager.cpp" line="173"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mxrepomanager.cpp" line="174"/>
         <location filename="../mxrepomanager.cpp" line="176"/>
-        <location filename="../mxrepomanager.cpp" line="178"/>
         <source>License</source>
         <translation type="unfinished"></translation>
     </message>

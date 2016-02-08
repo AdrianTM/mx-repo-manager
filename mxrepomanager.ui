@@ -29,7 +29,7 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Select the APT repo that you want to use:</string>
+      <string>Select the APT repository that you want to use:</string>
      </property>
     </widget>
    </item>
@@ -105,6 +105,19 @@
       <bool>false</bool>
      </property>
     </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
    </item>
    <item>
     <layout class="QGridLayout" name="buttonBar" columnstretch="0,0,0,0,0,0,0,0,0,0">
