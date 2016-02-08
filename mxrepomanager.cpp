@@ -144,9 +144,7 @@ void mxrepomanager::replaceRepos(QString url)
             QString("sed -i 's;deb.*/testrepo/ mx15 test;%1;' %2").arg(test_line).arg(apt_file);;
     if (runCmd(cmd).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
-                                 tr("Your default repo have been changed to the selected one. \n"
-                                    "Please update your sources by running 'apt-get update' \n"
-                                    "or 'Reload' in Synaptic before installing/upgrading programs."));
+                                 tr("Your new selection will take effect the next time sources are updated."));
     } else {
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not change the repo."));
