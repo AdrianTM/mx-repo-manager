@@ -18,26 +18,26 @@ Changes:
  .
    * initial release
 Checksums-Sha1:
- 0a3db105282c7d94e4c2b5a35ce897502cb18bdf 1184 mx-repo-manager_0.16.2mx15.dsc
- 38b9aa2460f95f63099b1dde2b71672361a8f2db 366164 mx-repo-manager_0.16.2mx15.tar.xz
- 09b4ec48a5ada0e41b63b8d7b7104da6a330d42d 26386 mx-repo-manager_0.16.2mx15_amd64.deb
+ 922fba9897775a7c8e7be652377ba0cd24418168 1184 mx-repo-manager_0.16.2mx15.dsc
+ 757d9c17cb407080d7bce7f2f9d437503f4299fc 410128 mx-repo-manager_0.16.2mx15.tar.xz
+ 2fb1701b81c1ddd23d4553f4de70c85585dd05f3 26340 mx-repo-manager_0.16.2mx15_amd64.deb
 Checksums-Sha256:
- 95c933d494aec54e236f13a48fa8a7e633e46ce94224ea38647c9f5ec38110f4 1184 mx-repo-manager_0.16.2mx15.dsc
- da4926b181bba4518b8aba7b3680a518c1b3cfd7237c773ea3d7a81f3effd967 366164 mx-repo-manager_0.16.2mx15.tar.xz
- 77a83209a7ee4e14ded1876f227a1f0923bfa1a37fa9999a37d01fde613f4941 26386 mx-repo-manager_0.16.2mx15_amd64.deb
+ 2851e1a63e2acf6bec79fe992f3b16d1877d44d067e10580d0ee4ef0ad0dde99 1184 mx-repo-manager_0.16.2mx15.dsc
+ 000db77983917e35d18727c658700a555af38f415e3b827560b25ba04a0485f6 410128 mx-repo-manager_0.16.2mx15.tar.xz
+ 9b5f58f43e9fbb8337cfb4ea8c6e690e96e0643fce8416f30774c7f34a05d098 26340 mx-repo-manager_0.16.2mx15_amd64.deb
 Files:
- 89721c2e7d0e4ffe5cc1b7632ba40dc4 1184 admin optional mx-repo-manager_0.16.2mx15.dsc
- a6b201455506f21050194b76cfcdcfed 366164 admin optional mx-repo-manager_0.16.2mx15.tar.xz
- 8dccbcc92f1ba8c41d108f64a6833fb2 26386 admin optional mx-repo-manager_0.16.2mx15_amd64.deb
+ 76fc22ec673b2e763ef6fc8c021716f1 1184 admin optional mx-repo-manager_0.16.2mx15.dsc
+ aa3e00e2bfa6526aae884c48682f38c8 410128 admin optional mx-repo-manager_0.16.2mx15.tar.xz
+ ac6123a9ffafa913a5cb1dbcf7302d5e 26340 admin optional mx-repo-manager_0.16.2mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWuLGQAAoJEHCTjHgGee6YHFQIAJFupIv9ffCBcPHQq0ljmmGS
-ntj2wauKLYuQsKHVuUOvo+cSe9oYI3b6fHGMx1680L7E5SUYI2n5rGjU815mJErG
-s6AAsO1lehoqaKnneOicF6cYJgQ0hB216yU1e2qkCCzGyb0lINhnU8bNzcS9/P4i
-EV1wwA3w+Yk0rnR+QZYXuRxChkWKPTdcepWQZxev/tX11KxZJhX+UlO4aF8OXSHH
-Wz0fCDID0J70ZZBzhQtM85ce2bAQZwYnsBEdYbygwgiZ77G2p0I+r8JRJRWfMMlD
-1ebGnz1ZPBF1WCyIVla8YcvAmURcGEXmLcqS2QiCP/h7BW33XEsJZ7/xfsAytzQ=
-=F7uH
+iQEcBAEBAgAGBQJWuM4mAAoJEHCTjHgGee6YeEYH/iOOy4GjEI+x2yZwsOieM/6v
+9C9a0cxmO2sH+0taE4LiJfO0VDQtsR3eJOOjkzbKqX7mALaqDwppj3JoWkUBb32J
+nVFNZ4ZVNbsGX51Glno1dFVDGBjqKLWJcQS3vsl5ENIvA9m2hsvKEnp9ACkh1FEy
+x8X1mR7kom3SZOWYO3G51AkvM4Nc90OkjgVbFpQT8xsLhubzmB0I6F5AHxuGNGpA
+k4udvG8LDxwWjRbRFjt2wwL5zDE5K6MuYgphVQqKyn06hY4omusw6MAXnmH8ltJa
+6z76XGoqC28d8HMJ1vPOtFkHglKb1gbpmLwfN7drD0tFbjK/UCNHilhf3oE3qNY=
+=hKME
 -----END PGP SIGNATURE-----

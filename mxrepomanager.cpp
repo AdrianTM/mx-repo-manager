@@ -94,7 +94,7 @@ QStringList mxrepomanager::readRepos()
 // List current repo
 QString mxrepomanager::getCurrentRepo()
 {
-    return runCmd("grep '^deb' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
+    return runCmd("grep -m1 '^deb.*/repo/ mx15 main non-free' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
 }
 
 // display available repos
