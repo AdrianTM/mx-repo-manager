@@ -184,7 +184,7 @@ void mxrepomanager::on_buttonAbout_clicked()
 void mxrepomanager::on_buttonHelp_clicked()
 {
     this->hide();
-    QString cmd = QString("mx-viewer http://www.mepiscommunity.org/user_manual_mx15/mxum.html#test '%1'").arg(tr("MX Repo Manager"));
+    QString cmd = QString("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-repo-manager '%1'").arg(tr("MX Repo Manager"));
     system(cmd.toUtf8());
     this->show();
 }
