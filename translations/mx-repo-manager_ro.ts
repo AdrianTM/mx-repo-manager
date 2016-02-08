@@ -26,52 +26,52 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="151"/>
+        <location filename="../mxrepomanager.ui" line="164"/>
         <source>Display help </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="154"/>
+        <location filename="../mxrepomanager.ui" line="167"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="161"/>
+        <location filename="../mxrepomanager.ui" line="174"/>
         <source>Alt+H</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="206"/>
+        <location filename="../mxrepomanager.ui" line="219"/>
         <source>About this application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="209"/>
+        <location filename="../mxrepomanager.ui" line="222"/>
         <source>About...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="216"/>
+        <location filename="../mxrepomanager.ui" line="229"/>
         <source>Alt+B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="232"/>
+        <location filename="../mxrepomanager.ui" line="245"/>
         <source>Quit application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="235"/>
+        <location filename="../mxrepomanager.ui" line="248"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="242"/>
+        <location filename="../mxrepomanager.ui" line="255"/>
         <source>Alt+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="280"/>
+        <location filename="../mxrepomanager.ui" line="293"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
