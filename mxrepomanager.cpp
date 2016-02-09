@@ -147,7 +147,7 @@ void mxrepomanager::replaceRepos(QString url)
     // for antiX repos
     if (url != "http://mxrepo.com") {
         QString repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
-        cmd_antix = QString("sed -i 's;deb.*/jessie jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
+        cmd_antix = QString("sed -i 's;deb.*/jessie/ jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
     }
     if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
