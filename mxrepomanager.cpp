@@ -127,7 +127,7 @@ void mxrepomanager::setSelected()
     for (int row = 0; row < ui->listWidget->count(); ++row) {
         QRadioButton *item = (QRadioButton*)ui->listWidget->itemWidget(ui->listWidget->item(row));
         if (item->isChecked()) {
-            url = item->text().section("http://", 1, -1, QString::SectionIncludeLeadingSep);
+            url = item->text().section("http://", 1, 1, QString::SectionIncludeLeadingSep).trimmed();
             replaceRepos(url);
         }
     }
@@ -138,6 +138,7 @@ void mxrepomanager::replaceRepos(QString url)
 {
     QString cmd_mx;
     QString cmd_antix = "true";
+    QString repo_line_antix;
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
     QString antix_file = "/etc/apt/sources.list.d/antix.list";
     QString repo_line_mx = "deb " + url + "/mx/repo/ mx15 main non-free";
@@ -146,8 +147,12 @@ void mxrepomanager::replaceRepos(QString url)
             QString("sed -i 's;deb.*/testrepo/ mx15 test;%1;' %2").arg(test_line_mx).arg(mx_file);;
     // for antiX repos
     if (url != "http://mxrepo.com") {
-        QString repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
-        cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
+        if (url == "http://main.mepis-deb.org") { // for default repos
+            repo_line_antix = "deb http://antix.daveserver.info/jessie jessie main";
+        } else {
+            repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
+        }
+        cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);    
     }
     if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
