@@ -4,3 +4,4 @@ USA, Los Angeles -  http://iso.mxrepo.com
 USA, Utah -  http://mxrepo.com
 The Netherlands - http://nl.mxrepo.com
 Taiwan -  http://ftp.yzu.edu.tw/Linux/mx-workspace
+Reset repos - http://main.mepis-deb.org http://antix.daveserver.info
