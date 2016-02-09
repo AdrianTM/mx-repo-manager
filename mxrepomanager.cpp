@@ -161,7 +161,7 @@ void mxrepomanager::replaceRepos(QString url)
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not change the repo."));
     }
-
+    qApp->quit();
 }
 
 //// slots ////
