@@ -136,19 +136,27 @@ void mxrepomanager::setSelected()
 // replaces the lines in the APT file
 void mxrepomanager::replaceRepos(QString url)
 {
-    QString cmd;
-    QString apt_file = "/etc/apt/sources.list.d/mx.list";
-    QString repo_line = "deb " + url + "/repo/ mx15 main non-free";
-    QString test_line = "deb " + url + "/testrepo/ mx15 test";
-    cmd = QString("sed -i 's;deb.*/repo/ mx15 main non-free;%1;' %2 && ").arg(repo_line).arg(apt_file) +
-            QString("sed -i 's;deb.*/testrepo/ mx15 test;%1;' %2").arg(test_line).arg(apt_file);;
-    if (runCmd(cmd).exit_code == 0) {
+    QString cmd_mx;
+    QString cmd_antix = "true";
+    QString mx_file = "/etc/apt/sources.list.d/mx.list";
+    QString antix_file = "/etc/apt/sources.list.d/antix.list";
+    QString repo_line_mx = "deb " + url + "/mx/repo/ mx15 main non-free";
+    QString test_line_mx = "deb " + url + "/mx/testrepo/ mx15 test";
+    cmd_mx = QString("sed -i 's;deb.*/repo/ mx15 main non-free;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
+            QString("sed -i 's;deb.*/testrepo/ mx15 test;%1;' %2").arg(test_line_mx).arg(mx_file);;
+    // for antiX repos
+    if (url != "http://mxrepo.com") {
+        QString repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
+        cmd_antix = QString("sed -i 's;deb.*/jessie jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
+    }
+    if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));
     } else {
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not change the repo."));
     }
+
 }
 
 //// slots ////
