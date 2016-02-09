@@ -18,20 +18,20 @@ Changes:
  .
    * initial release
 Checksums-Sha1:
- 6453a30e256cbc2b9db6e807ed899937d534898a 27180 mx-repo-manager_0.16.2mx15_i386.deb
+ 383f840887b472f75f3bf111a4fd317e51d04b7b 27198 mx-repo-manager_0.16.2mx15_i386.deb
 Checksums-Sha256:
- 47f13a839fa4b8c5cca0f7c4d40086f9cf286e844afbe5cb25417e4e45a75b4f 27180 mx-repo-manager_0.16.2mx15_i386.deb
+ 3a3a0e2f00ff1297658d732ce415def037aba890cd03a1512e75b314f2749f66 27198 mx-repo-manager_0.16.2mx15_i386.deb
 Files:
- 119c295d83c82736ec0da89f6bc40687 27180 admin optional mx-repo-manager_0.16.2mx15_i386.deb
+ 66f690bb8be863f01b175b0a39fce811 27198 admin optional mx-repo-manager_0.16.2mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWuSveAAoJEHCTjHgGee6YM58H/2tCDAOhrB1BJpGKe7gtmMat
-VcYS6K1J+QdEP38MpfJOxlwruvey2Eh//Fs24CtXgAifNgcaTXj+SXddVU3Pa9uO
-bHMo8UQA10LEbDuErhQguqccUts2GZKsR7eYU1guSpLK+Ngw2n4NBeS09P3SF6v+
-DpyvXkGXkcObziih76tm0k/9Ak8FBV5q5ubolruKOGR2FWuxg5MUUgFxpts2VuiD
-YBkbLd3IvPeA9H5pxSYDMpKvcAj1IW+VtC+cCzezvBAJN28lgUdXuDt1FKZpz6bv
-qUT+gjv7CL0zBnVQgb5BmF4gXSa/B8oqaZXWfHlqvlczuMLibOnnCZii9lxl+Jo=
-=4wPS
+iQEcBAEBAgAGBQJWuUMWAAoJEHCTjHgGee6YiLIH/2uf2cBfC0FwmWdCWFJ8oaxq
+70Cp9dVsw8W73mzPJYv/vrtan7kQHjLBHX5pule0agWKa5NNXM942+RiCIMUjieS
+s4Z/AWktp4E7p22y1ujn6hmFu2IuC86OZfrSnzep/YdAZ5QAhBkYeUnvmTFyvKnv
+3ESXRkk7kSx6+7odiCRYWq6CCFCtYLETi5hLamySIDrC+wM5a1YPUQm4C59YlTXP
+y6w7FU3ZDX/znUtk2yTzN6ILA/DcmHonfVjW/DPEDnN31s0q7PFkD35TxNvxstJD
+MMc9QvCeASW4LmDeeRK7MaeFSgOgCUsFKH15Qw8xINRy+zmOIhy7lN12YhqqLrs=
+=h/Tr
 -----END PGP SIGNATURE-----
