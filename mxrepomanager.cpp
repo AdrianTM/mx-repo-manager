@@ -102,10 +102,26 @@ void mxrepomanager::displayRepos(QStringList repos)
 {
     ui->listWidget->clear();
     QStringListIterator repoIterator(repos);
+    QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
         QListWidgetItem *it = new QListWidgetItem(ui->listWidget);
-        ui->listWidget->setItemWidget(it, new QRadioButton(repo));
+        QRadioButton *button = new QRadioButton(repo);
+        if (repo.contains("http://mxrepo.com") || repo.contains("http://iso.mxrepo.com") || repo.contains("http://main.mepis-deb.org")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/us.png");
+        } else if (repo.contains("http://nl.mxrepo.com")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/nl.png");
+        } else if (repo.contains(".gr/")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/gr.png");
+        } else if (repo.contains(".ec/")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/ec.png");
+        } else if (repo.contains(".tw/")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/tw.png");
+        } else {
+            flag = QIcon();
+        }
+        button->setIcon(flag);
+        ui->listWidget->setItemWidget(it, button);
     }
 }
 
