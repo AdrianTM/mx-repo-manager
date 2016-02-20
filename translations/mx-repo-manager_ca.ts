@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ca_ES">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cal ser usuari principal per executar aquest programa</translation>
     </message>
 </context>
 <context>
@@ -18,113 +16,113 @@
         <location filename="../mxrepomanager.cpp" line="205"/>
         <location filename="../mxrepomanager.cpp" line="214"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation type="unfinished"></translation>
+        <translation>Trieu el dipòsit d&apos;APT que voleu usar: </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="164"/>
         <source>Display help </source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra l&apos;ajuda</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="167"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuda </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="174"/>
         <source>Alt+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="219"/>
         <source>About this application</source>
-        <translation type="unfinished"></translation>
+        <translation>Quant a aquesta aplicació </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="222"/>
         <source>About...</source>
-        <translation type="unfinished"></translation>
+        <translation>Quant a...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="229"/>
         <source>Alt+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="245"/>
         <source>Quit application</source>
-        <translation type="unfinished"></translation>
+        <translation>Surt de l&apos;aplicació </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="248"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="255"/>
         <source>Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="293"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecciona</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="174"/>
         <source>Success</source>
-        <translation type="unfinished"></translation>
+        <translation>Èxit</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="175"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aquesta tria serà efectiva la propera vegada que actualitzeu les fonts. </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="177"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;ha produït un error</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="178"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;ha pogut canviar el dipòsit. </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="197"/>
         <source>About MX Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>Quant a MX Repo Manager </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="198"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Versió: </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="199"/>
         <source>Program for choosing the default APT repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Programa per triar els dipòsits d&apos;APT per omissió </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="201"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancel·la </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="203"/>
         <location filename="../mxrepomanager.cpp" line="205"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Llicència </translation>
     </message>
 </context>
 </TS>

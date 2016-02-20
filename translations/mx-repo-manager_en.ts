@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Devi eseguire questo programma come amministratore</translation>
+        <translation>You must run this program as root.</translation>
     </message>
 </context>
 <context>
@@ -21,17 +21,17 @@
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Scegli il Repository di APT da utilizzare</translation>
+        <translation>Select the APT repository that you want to use:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="164"/>
         <source>Display help </source>
-        <translation>Visualizza aiuto</translation>
+        <translation>Display help </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="167"/>
         <source>Help</source>
-        <translation>Aiuto</translation>
+        <translation>Help</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="174"/>
@@ -41,12 +41,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="219"/>
         <source>About this application</source>
-        <translation>Informazioni riguardo questa applicazione</translation>
+        <translation>About this application</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="222"/>
         <source>About...</source>
-        <translation>Info...</translation>
+        <translation>About...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="229"/>
@@ -56,12 +56,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="245"/>
         <source>Quit application</source>
-        <translation> Chiudi l&apos;applicazione</translation>
+        <translation>Quit application</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="248"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation>Close</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="255"/>
@@ -71,42 +71,42 @@
     <message>
         <location filename="../mxrepomanager.ui" line="293"/>
         <source>Select</source>
-        <translation>Seleziona</translation>
+        <translation>Select</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="174"/>
         <source>Success</source>
-        <translation>Successo</translation>
+        <translation>Success</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="175"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>La tua selezione avrà effetto col prossimo aggiornamento dei sorgenti</translation>
+        <translation>Your new selection will take effect the next time sources are updated.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="177"/>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="178"/>
         <source>Could not change the repo.</source>
-        <translation>Repository non modificabile</translation>
+        <translation>Could not change the repo.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="197"/>
         <source>About MX Repo Manager</source>
-        <translation>Informazioni su MX Repo Manager</translation>
+        <translation>About MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="198"/>
         <source>Version: </source>
-        <translation>Versione:</translation>
+        <translation>Version: </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="199"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Programma per selezionare il Repository di APT predefinito</translation>
+        <translation>Program for choosing the default APT repository</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="201"/>
@@ -116,13 +116,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Cancel</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="203"/>
         <location filename="../mxrepomanager.cpp" line="205"/>
         <source>License</source>
-        <translation>Licenza</translation>
+        <translation>License</translation>
     </message>
 </context>
 </TS>
