@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ja">
 <context>
     <name>QApplication</name>
     <message>
@@ -24,52 +26,52 @@
         <translation>使用する APT リポジトリを選択して下さい:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="164"/>
+        <location filename="../mxrepomanager.ui" line="167"/>
         <source>Display help </source>
         <translation>ヘルプの表示</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="167"/>
+        <location filename="../mxrepomanager.ui" line="170"/>
         <source>Help</source>
         <translation>ヘルプ</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="174"/>
+        <location filename="../mxrepomanager.ui" line="177"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="219"/>
+        <location filename="../mxrepomanager.ui" line="222"/>
         <source>About this application</source>
         <translation>このアプリケーションについて</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="222"/>
+        <location filename="../mxrepomanager.ui" line="225"/>
         <source>About...</source>
         <translation>About...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="229"/>
+        <location filename="../mxrepomanager.ui" line="232"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="245"/>
+        <location filename="../mxrepomanager.ui" line="248"/>
         <source>Quit application</source>
         <translation>アプリケーションの終了</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="248"/>
+        <location filename="../mxrepomanager.ui" line="251"/>
         <source>Close</source>
         <translation>閉じる</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="255"/>
+        <location filename="../mxrepomanager.ui" line="258"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="293"/>
+        <location filename="../mxrepomanager.ui" line="296"/>
         <source>Select</source>
         <translation>Select</translation>
     </message>

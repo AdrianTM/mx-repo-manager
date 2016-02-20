@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name>QApplication</name>
     <message>
@@ -24,52 +26,52 @@
         <translation>Sélectionnez le dépôt APT que vous souhaitez utiliser:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="164"/>
+        <location filename="../mxrepomanager.ui" line="167"/>
         <source>Display help </source>
         <translation>Afficher l&apos;aide</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="167"/>
+        <location filename="../mxrepomanager.ui" line="170"/>
         <source>Help</source>
         <translation>Aide </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="174"/>
+        <location filename="../mxrepomanager.ui" line="177"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="219"/>
+        <location filename="../mxrepomanager.ui" line="222"/>
         <source>About this application</source>
         <translation>A propos de cette application</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="222"/>
+        <location filename="../mxrepomanager.ui" line="225"/>
         <source>About...</source>
         <translation>A propos...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="229"/>
+        <location filename="../mxrepomanager.ui" line="232"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="245"/>
+        <location filename="../mxrepomanager.ui" line="248"/>
         <source>Quit application</source>
         <translation>Quitter l&apos;application</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="248"/>
+        <location filename="../mxrepomanager.ui" line="251"/>
         <source>Close</source>
         <translation>Fermer</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="255"/>
+        <location filename="../mxrepomanager.ui" line="258"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="293"/>
+        <location filename="../mxrepomanager.ui" line="296"/>
         <source>Select</source>
         <translation>Sélectionnez</translation>
     </message>
