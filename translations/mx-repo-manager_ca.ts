@@ -14,9 +14,9 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="40"/>
-        <location filename="../mxrepomanager.cpp" line="198"/>
-        <location filename="../mxrepomanager.cpp" line="205"/>
-        <location filename="../mxrepomanager.cpp" line="214"/>
+        <location filename="../mxrepomanager.cpp" line="200"/>
+        <location filename="../mxrepomanager.cpp" line="207"/>
+        <location filename="../mxrepomanager.cpp" line="216"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
@@ -76,53 +76,53 @@
         <translation>Selecciona</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="174"/>
+        <location filename="../mxrepomanager.cpp" line="176"/>
         <source>Success</source>
         <translation>Èxit</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="175"/>
+        <location filename="../mxrepomanager.cpp" line="177"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Aquesta tria serà efectiva la propera vegada que actualitzeu les fonts. </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="177"/>
+        <location filename="../mxrepomanager.cpp" line="179"/>
         <source>Error</source>
         <translation>S&apos;ha produït un error</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="178"/>
+        <location filename="../mxrepomanager.cpp" line="180"/>
         <source>Could not change the repo.</source>
         <translation>No s&apos;ha pogut canviar el dipòsit. </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="197"/>
+        <location filename="../mxrepomanager.cpp" line="199"/>
         <source>About MX Repo Manager</source>
         <translation>Quant a MX Repo Manager </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="198"/>
+        <location filename="../mxrepomanager.cpp" line="200"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="199"/>
+        <location filename="../mxrepomanager.cpp" line="201"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programa per triar els dipòsits d&apos;APT per omissió </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="201"/>
+        <location filename="../mxrepomanager.cpp" line="203"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="202"/>
+        <location filename="../mxrepomanager.cpp" line="204"/>
         <source>Cancel</source>
         <translation>Cancel·la </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="203"/>
         <location filename="../mxrepomanager.cpp" line="205"/>
+        <location filename="../mxrepomanager.cpp" line="207"/>
         <source>License</source>
         <translation>Llicència </translation>
     </message>

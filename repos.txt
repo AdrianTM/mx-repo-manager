@@ -1,5 +1,6 @@
 Crete -  http://ftp.cc.uoc.gr/mirrors/linux/mx
 Ecuador -  http://mirror.cedia.org.ec/mx-workspace
+New Zealand - http://mx.debian.nz
 USA, Los Angeles -  http://iso.mxrepo.com
 USA, Utah -  http://mxrepo.com
 The Netherlands - http://nl.mxrepo.com

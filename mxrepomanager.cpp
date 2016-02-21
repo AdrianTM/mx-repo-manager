@@ -115,6 +115,8 @@ void mxrepomanager::displayRepos(QStringList repos)
             flag = QIcon("/usr/share/mx-repo-manager/icons/gr.png");
         } else if (repo.contains(".ec/")) {
             flag = QIcon("/usr/share/mx-repo-manager/icons/ec.png");
+        } else if (repo.contains(".nz")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/nz.png");
         } else if (repo.contains(".tw/")) {
             flag = QIcon("/usr/share/mx-repo-manager/icons/tw.png");
         } else {
