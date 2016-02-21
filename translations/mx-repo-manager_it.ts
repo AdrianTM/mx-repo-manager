@@ -14,9 +14,9 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="40"/>
-        <location filename="../mxrepomanager.cpp" line="198"/>
-        <location filename="../mxrepomanager.cpp" line="205"/>
-        <location filename="../mxrepomanager.cpp" line="214"/>
+        <location filename="../mxrepomanager.cpp" line="200"/>
+        <location filename="../mxrepomanager.cpp" line="207"/>
+        <location filename="../mxrepomanager.cpp" line="216"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
@@ -76,53 +76,53 @@
         <translation>Seleziona</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="174"/>
+        <location filename="../mxrepomanager.cpp" line="176"/>
         <source>Success</source>
         <translation>Successo</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="175"/>
+        <location filename="../mxrepomanager.cpp" line="177"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>La tua selezione avrà effetto col prossimo aggiornamento dei sorgenti</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="177"/>
+        <location filename="../mxrepomanager.cpp" line="179"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="178"/>
+        <location filename="../mxrepomanager.cpp" line="180"/>
         <source>Could not change the repo.</source>
         <translation>Repository non modificabile</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="197"/>
+        <location filename="../mxrepomanager.cpp" line="199"/>
         <source>About MX Repo Manager</source>
         <translation>Informazioni su MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="198"/>
+        <location filename="../mxrepomanager.cpp" line="200"/>
         <source>Version: </source>
         <translation>Versione:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="199"/>
+        <location filename="../mxrepomanager.cpp" line="201"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programma per selezionare il Repository di APT predefinito</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="201"/>
+        <location filename="../mxrepomanager.cpp" line="203"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="202"/>
+        <location filename="../mxrepomanager.cpp" line="204"/>
         <source>Cancel</source>
         <translation>Annulla</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="203"/>
         <location filename="../mxrepomanager.cpp" line="205"/>
+        <location filename="../mxrepomanager.cpp" line="207"/>
         <source>License</source>
         <translation>Licenza</translation>
     </message>
