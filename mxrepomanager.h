@@ -27,6 +27,8 @@
 #define MXREPOMANAGER_H
 
 #include <QMessageBox>
+#include <QDir>
+#include <QTreeWidget>
 
 namespace Ui {
 class mxrepomanager;
@@ -48,21 +50,28 @@ public:
     ~mxrepomanager();
 
     QString version;
+    QList<QStringList> queued_changes;
 
-    void displayRepos(QStringList repos);
+
+    void displayMXRepos(QStringList repos);
+    void displayAllRepos(QFileInfoList apt_files);
     void displayCurrent(QString repo);
     void refresh();
     void replaceRepos(QString url);
     void setSelected();
     Output runCmd(QString cmd);
+    QFileInfoList listAptFiles();
     QString getCurrentRepo();
-    QString getVersion(QString name);    
-    QStringList readRepos();
+    QString getVersion(QString name);
+    QStringList readMXRepos();
+    QStringList loadAptFile(QString file);
+
 
 private slots:
     void on_buttonOK_clicked();
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
+    void on_treeWidget_itemChanged(QTreeWidgetItem * item, int column);
 
 private:
     Ui::mxrepomanager *ui;

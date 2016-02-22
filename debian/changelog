@@ -1,3 +1,9 @@
+mx-repo-manager (16.2mx15+3) mx; urgency=medium
+
+  * enable/disable repos
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 22 Feb 2016 11:38:05 -0500
+
 mx-repo-manager (16.2mx15+2) mx; urgency=medium
 
   * added NZ repo
