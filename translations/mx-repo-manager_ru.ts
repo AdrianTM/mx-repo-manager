@@ -22,17 +22,18 @@
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
+        <location filename="../mxrepomanager.cpp" line="324"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Выберите APT репозиторий, который Вы хотите использовать:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
-        <source>Select MX default repo</source>
+        <source>Default repo</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
-        <source>Enable/Disable repos</source>
+        <source>Individual sources</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -140,6 +141,11 @@
         <location filename="../mxrepomanager.cpp" line="281"/>
         <source>License</source>
         <translation>Лицензия</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="326"/>
+        <source>Select the APT repository and sources that you want to use:</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

@@ -18,20 +18,20 @@ Changes:
  .
    * enable/disable repos
 Checksums-Sha1:
- 0517a680b9c531f7d06edd569e81d0b1a7ddccf4 45816 mx-repo-manager_16.2mx15+3_i386.deb
+ 04bc10919ff6876def6758abd134486e6845ebc3 46134 mx-repo-manager_16.2mx15+3_i386.deb
 Checksums-Sha256:
- ddb886d61917d413fe2fb38dff3e32fa569cbd149a5198324e6b793b80c4767e 45816 mx-repo-manager_16.2mx15+3_i386.deb
+ 55e0405a5f52e2fcfdba4a0d4941c426ee7e9632e35e804cecaaef7a511177ed 46134 mx-repo-manager_16.2mx15+3_i386.deb
 Files:
- e3e6cd8cd6e6aa3be115607e6e845d73 45816 admin optional mx-repo-manager_16.2mx15+3_i386.deb
+ f00b2fc07c7715ee3b02a7c2e32a410b 46134 admin optional mx-repo-manager_16.2mx15+3_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWy0aRAAoJEHCTjHgGee6YzOIIAMn3x6S5XU2AzU7l5RxraP6J
-3gH7zRH0KLy9KZ4rwPXQlhChF7qFAYtftrnEP7SOMN2bPNV27fd9BlTA6oipfMr5
-8/+0eARZhA1ptKVj8FfNQLvv5QPQIGyMhyK9DnNEcfM9vC2Oik1QgF36AUZYJMi3
-AJKBrUVQ+5zG4tYS9s2WB83Ig1nGC6eoTNQN3yL7vFN1x9dahz3ofoknUFfwtPan
-NSeoDvjQW75sO4wsbWcY6f3i2FOdhSMjdZuHWTyVR/n6uazjY0XIPUx/jLahC1kM
-rKqB/+8nEnStFIdRnvWu/boOp1SwRUEaVhRM0n6ydVkUo7OF0BdKKsZ+tj0h1k8=
-=yN+y
+iQEcBAEBAgAGBQJWy3buAAoJEHCTjHgGee6YOTYIAJhDAss8GJ1kUCfHih7Vh9tz
+kutqFfXeHaJ9VscjVcTWhS4UaRcVkmNa4iNRCNi0HiHf84MP8kfOpfU/8EHg9Lee
+OCiHCC8NcQourzenQD5Gd4XFhxAdm3Q276+Z0Gh7CUBFrn3ZqUhyBxKypUG4fWIR
+YmwR1PwTubyxolh3gOcMyBQ5bvCAIohqnpoYPNHxyguZdzD2yQn7tl5rpvrgf9DQ
+FslJ9mTs7aSxB4hO97QA1V2eP4HL/8T5Oa1nIbZIWrVZyeIw0hfMbmF0xv89Cl9n
+Ul5cqQLWHyEm6LH4o9Kh099/9H/Jn24ymRBBt+QULozKGnshuv7EK+uXPdJwpZg=
+=YSC/
 -----END PGP SIGNATURE-----

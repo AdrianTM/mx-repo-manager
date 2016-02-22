@@ -317,3 +317,12 @@ void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column
     queued_changes << changes;
     ui->treeWidget->blockSignals(false);
 }
+
+void mxrepomanager::on_tabWidget_currentChanged()
+{
+    if (ui->tabWidget->currentWidget() == ui->tabMX) {
+        ui->label->setText(tr("Select the APT repository that you want to use:"));
+    } else {
+        ui->label->setText(tr("Select the APT repository and sources that you want to use:"));
+    }
+}
