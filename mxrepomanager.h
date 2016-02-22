@@ -72,6 +72,7 @@ private slots:
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
     void on_treeWidget_itemChanged(QTreeWidgetItem * item, int column);
+    void on_tabWidget_currentChanged();
 
 private:
     Ui::mxrepomanager *ui;

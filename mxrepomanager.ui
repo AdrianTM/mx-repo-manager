@@ -56,7 +56,7 @@
      </property>
      <widget class="QWidget" name="tabMX">
       <attribute name="title">
-       <string>Select MX default repo</string>
+       <string>Default repo</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
@@ -139,7 +139,7 @@
      </widget>
      <widget class="QWidget" name="tabAllRepos">
       <attribute name="title">
-       <string>Enable/Disable repos</string>
+       <string>Individual sources</string>
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
