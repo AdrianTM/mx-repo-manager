@@ -28,6 +28,7 @@
 
 #include <QProcess>
 #include <QRadioButton>
+#include <QDir>
 #include <QDebug>
 
 
@@ -38,8 +39,7 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     ui->setupUi(this);
     version = getVersion("mx-repo-manager");
     this->setWindowTitle(tr("MX Repo Manager"));
-    ui->buttonCancel->setEnabled(true);
-    ui->buttonOK->setEnabled(true);
+    ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
     int height = ui->listWidget->sizeHintForRow(0) * ui->listWidget->count();
     ui->listWidget->setMinimumHeight(height);
@@ -67,9 +67,10 @@ Output mxrepomanager::runCmd(QString cmd)
 
 // refresh repo info
 void mxrepomanager::refresh()
-{
-    displayRepos(readRepos());
+{    
+    displayMXRepos(readMXRepos());
     displayCurrent(getCurrentRepo());
+    displayAllRepos(listAptFiles());
 }
 
 
@@ -81,7 +82,7 @@ QString mxrepomanager::getVersion(QString name)
 }
 
 // List available repos
-QStringList mxrepomanager::readRepos()
+QStringList mxrepomanager::readMXRepos()
 {
     QString file_content;
     QStringList repos;
@@ -98,14 +99,14 @@ QString mxrepomanager::getCurrentRepo()
 }
 
 // display available repos
-void mxrepomanager::displayRepos(QStringList repos)
+void mxrepomanager::displayMXRepos(QStringList repos)
 {
     ui->listWidget->clear();
     QStringListIterator repoIterator(repos);
     QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
-        QListWidgetItem *it = new QListWidgetItem(ui->listWidget);
+        QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
         if (repo.contains("http://mxrepo.com") || repo.contains("http://iso.mxrepo.com") || repo.contains("http://main.mepis-deb.org")) {
             flag = QIcon("/usr/share/mx-repo-manager/icons/us.png");
@@ -123,8 +124,55 @@ void mxrepomanager::displayRepos(QStringList repos)
             flag = QIcon();
         }
         button->setIcon(flag);
-        ui->listWidget->setItemWidget(it, button);
+        ui->listWidget->setItemWidget(item, button);
     }
+}
+
+void mxrepomanager::displayAllRepos(QFileInfoList apt_files)
+{
+    ui->treeWidget->clear();
+    ui->treeWidget->blockSignals(true);
+    QStringList columnNames;
+    columnNames << "APT files" << tr("Entries (checked entries are enabled)");
+    ui->treeWidget->setHeaderLabels(columnNames);
+    QTreeWidgetItem *topLevelItem;
+    QFileInfo file_info;
+    foreach (file_info, apt_files) {
+        QString file_name = file_info.fileName();
+        QString file = file_info.absoluteFilePath();
+        topLevelItem = new QTreeWidgetItem;
+        topLevelItem->setText(0, file_name);
+        ui->treeWidget->addTopLevelItem(topLevelItem);
+        // topLevelItem look
+        topLevelItem->setForeground(0, QBrush(Qt::darkGreen));
+        topLevelItem->setIcon(0, QIcon("/usr/share/mx-repo-manager/icons/folder.png"));
+        // load file entries
+        QStringList entries = loadAptFile(file);
+        QString item;
+        foreach (item, entries) {
+            // add entries as childItem to treeWidget
+            QTreeWidgetItem *childItem = new QTreeWidgetItem(topLevelItem);
+            childItem->setText(1, item);
+            // add checkboxes
+            childItem->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
+            if (item.startsWith("#")) {
+                childItem->setCheckState(1, Qt::Unchecked);
+            } else {
+                childItem->setCheckState(1, Qt::Checked);
+            }
+        }
+    }
+    for (int i = 0; i < ui->treeWidget->columnCount(); i++) {
+        ui->treeWidget->resizeColumnToContents(i);
+    }
+    ui->treeWidget->expandAll();
+    ui->treeWidget->blockSignals(false);
+}
+
+QStringList mxrepomanager::loadAptFile(QString file)
+{
+    QString entries = runCmd("grep '^#*[ ]*deb' " + file).str;
+    return entries.split("\n");
 }
 
 // displays the current repo by selecting the item
@@ -179,14 +227,40 @@ void mxrepomanager::replaceRepos(QString url)
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not change the repo."));
     }
-    qApp->quit();
+ //   qApp->quit();
 }
+
+QFileInfoList mxrepomanager::listAptFiles()
+{
+    QStringList apt_files;
+    QFileInfoList list;
+    QDir apt_dir("/etc/apt/sources.list.d");
+    list << apt_dir.entryInfoList(QStringList("*.list"));
+    QFile file("/etc/apt/sources.list");
+    if (file.size() != 0) {
+        list << file;
+    }
+    return list;
+}
+
 
 //// slots ////
 
 // Submit button clicked
 void mxrepomanager::on_buttonOK_clicked()
 {
+    if (queued_changes.size() > 0) {
+        QStringList changes;
+        foreach (changes, queued_changes) {
+            QString text, new_text, file_name;
+            text = changes[0];
+            new_text = changes[1];
+            file_name = changes[2];
+            QString cmd = QString("sed -i 's;%1;%2;g' %3").arg(text).arg(new_text).arg(file_name);
+            runCmd(cmd);
+        }
+        queued_changes.clear();
+    }
     setSelected();
     refresh();
 }
@@ -216,4 +290,30 @@ void mxrepomanager::on_buttonHelp_clicked()
     QString cmd = QString("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-repo-manager '%1'").arg(tr("MX Repo Manager"));
     system(cmd.toUtf8());
     this->show();
+}
+
+void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
+{
+    ui->treeWidget->blockSignals(true);
+    QFile file;
+    QString new_text;
+    QString file_name = item->parent()->text(0);
+    QString text = item->text(column);
+    QStringList changes;
+    if (file_name == "sources.list") {
+        file.setFileName("/etc/apt/" + file_name);
+    } else {
+        file.setFileName("/etc/apt/sources.list.d/" + file_name);
+    }
+    if (item->checkState(column) == Qt::Checked) {
+        new_text = text;
+        new_text.remove(QRegExp("#\\s*"));
+        item->setText(column, new_text);
+    } else {
+        new_text = "# " + text;
+        item->setText(column, new_text);
+    }
+    changes << text << new_text << file.fileName();
+    queued_changes << changes;
+    ui->treeWidget->blockSignals(false);
 }

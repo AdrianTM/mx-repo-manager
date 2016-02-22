@@ -1,5 +1,5 @@
 # **********************************************************************
-# * Copyright (C) 2015 MX Authors
+# * Copyright (C) 2016 MX Authors
 # *
 # * Authors: Adrian
 # *          MX & MEPIS Community <http://forum.mepiscommunity.org>
