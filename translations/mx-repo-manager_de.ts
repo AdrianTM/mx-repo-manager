@@ -89,7 +89,12 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <source>Entries (checked entries are enabled)</source>
+        <source>Lists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="136"/>
+        <source>Sources (checked sources are enabled)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
