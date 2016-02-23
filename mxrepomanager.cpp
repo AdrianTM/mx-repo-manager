@@ -133,7 +133,7 @@ void mxrepomanager::displayAllRepos(QFileInfoList apt_files)
     ui->treeWidget->clear();
     ui->treeWidget->blockSignals(true);
     QStringList columnNames;
-    columnNames << "APT files" << tr("Entries (checked entries are enabled)");
+    columnNames << tr("Lists") << tr("Sources (checked sources are enabled)");
     ui->treeWidget->setHeaderLabels(columnNames);
     QTreeWidgetItem *topLevelItem;
     QFileInfo file_info;
