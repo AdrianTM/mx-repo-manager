@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 29 Feb 2016 11:04:43 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 16.2mx15+5
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (16.2mx15+5) mx; urgency=medium
+ .
+   * icon fix
+Checksums-Sha1:
+ 11ccf81a6ae79dc7c86fc7735d1aed625afbaa56 1184 mx-repo-manager_16.2mx15+5.dsc
+ fd0d58cdca5c9c2fd49c47ac9cd3533ff1d8d749 579028 mx-repo-manager_16.2mx15+5.tar.xz
+ 816cc60e6dc1f057c6d97d8fc275338e05c25895 45888 mx-repo-manager_16.2mx15+5_amd64.deb
+Checksums-Sha256:
+ 71016dccdd790246d8c3fce1265c3ddee53140dea5f515a56eb7bbb8efb94110 1184 mx-repo-manager_16.2mx15+5.dsc
+ 0d30ee5b1744d3f428df09e70255e539855d74ce63c4b5375814d13d774ccad7 579028 mx-repo-manager_16.2mx15+5.tar.xz
+ c9de374a0ffeec843a3d0d6984f6acd07adbe0c56736d2302a9ce7c1e37162c5 45888 mx-repo-manager_16.2mx15+5_amd64.deb
+Files:
+ 02420bfc24f35ad4c867ae41c07df1b7 1184 admin optional mx-repo-manager_16.2mx15+5.dsc
+ 11c039d33e186959aa6853d13489ea5f 579028 admin optional mx-repo-manager_16.2mx15+5.tar.xz
+ fef1d472fd58eb5329b7b8a72d92bea5 45888 admin optional mx-repo-manager_16.2mx15+5_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJW1GzMAAoJEHCTjHgGee6Ybz4H/0J6Bq/QlUmQKbl1AUHLiMrI
+XGoA0sdVkaq/nxZLFLkDNQf6TdYivFBPuhf1pBfFXBVoeRWyIgF8gaYjSFXtORbi
+DkmPClBMEVOTIMzqlvL5o2cap/kwAkjWET2EpGEFlq0hbTR+5CMKygtIr5zNNg9m
+YHB96ffeylF9Qm1yCQDQGiAbgEDzorvGpo1L4DLzRZeNwEZ8UZEAIQKXzjr34jkO
+XWF9huzdLT+nKhfkJYZWvK5/sSn3eBDDLiMEDMcSz+D26AYP9Ax6/b6/QzNjv6Uy
+xrbeSPQonuBC19fKqkad0Lhx4FTTzs8ATwUdnGCHOlH/U63zqyLFm4vKIcz93F8=
+=g1yV
+-----END PGP SIGNATURE-----

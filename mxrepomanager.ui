@@ -333,7 +333,7 @@
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../mx-packageinstaller/icons/dialog-ok.png</normaloff>../mx-packageinstaller/icons/dialog-ok.png</iconset>
+         <normaloff>../../../../../../../usr/share/mx-repo-manager/icons/dialog-ok.png</normaloff>../../../../../../../usr/share/mx-repo-manager/icons/dialog-ok.png</iconset>
        </property>
       </widget>
      </item>
