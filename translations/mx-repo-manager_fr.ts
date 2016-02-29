@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -29,12 +27,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>Default repo</source>
-        <translation type="unfinished"></translation>
+        <translation>Repo par défaut</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
         <source>Individual sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Sources individuelles</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="203"/>
@@ -89,12 +87,12 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <source>Lists</source>
-        <translation type="unfinished"></translation>
+        <translation>Listes</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sources (case cochée indique activée)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="224"/>
@@ -114,8 +112,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="228"/>
         <source>Could not change the repo.</source>
-        <translation>
-Impossible de modifier le dépôt.</translation>
+        <translation>Impossible de modifier le dépôt.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="273"/>
@@ -151,7 +148,7 @@ Impossible de modifier le dépôt.</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="326"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionnez le dépôt APT et les sources que vous souhaitez utiliser:</translation>
     </message>
 </context>
 </TS>

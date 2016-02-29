@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -30,12 +28,12 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>Default repo</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard-Repository</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
         <source>Individual sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Einzelquellen </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="203"/>
@@ -90,12 +88,12 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <source>Lists</source>
-        <translation type="unfinished"></translation>
+        <translation>Listen</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished"></translation>
+        <translation>Quellen (angehaktes Kästchen gleicht aktiviert)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="224"/>
@@ -151,7 +149,7 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="326"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished"></translation>
+        <translation>Wählen Sie das APT-Repository und die Quellen, die Sie verwenden möchten:</translation>
     </message>
 </context>
 </TS>
