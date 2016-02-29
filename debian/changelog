@@ -1,3 +1,9 @@
+mx-repo-manager (16.2mx15+4) mx; urgency=medium
+
+  *  new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 28 Feb 2016 19:48:34 -0500
+
 mx-repo-manager (16.2mx15+3) mx; urgency=medium
 
   * enable/disable repos
