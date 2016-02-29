@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -29,12 +27,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>Default repo</source>
-        <translation type="unfinished"></translation>
+        <translation>デフォルトリポジトリ</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
         <source>Individual sources</source>
-        <translation type="unfinished"></translation>
+        <translation>個々のソース</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="203"/>
@@ -89,12 +87,12 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <source>Lists</source>
-        <translation type="unfinished"></translation>
+        <translation>一覧</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished"></translation>
+        <translation>ソース (チェックが入ったソースが有効)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="224"/>
@@ -150,7 +148,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="326"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished"></translation>
+        <translation>必要なAPTリポジトリとソースを選択して下さい:</translation>
     </message>
 </context>
 </TS>
