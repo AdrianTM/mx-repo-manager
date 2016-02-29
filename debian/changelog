@@ -1,8 +1,8 @@
-mx-repo-manager (16.2mx15+4) mx; urgency=medium
+mx-repo-manager (16.2mx15+5) mx; urgency=medium
 
-  *  new translations
+  * icon fix
 
- -- Adrian <adrian@mxlinux.org>  Sun, 28 Feb 2016 19:48:34 -0500
+ -- Adrian <adrian@mxlinux.org>  Mon, 29 Feb 2016 11:04:43 -0500
 
 mx-repo-manager (16.2mx15+3) mx; urgency=medium
 

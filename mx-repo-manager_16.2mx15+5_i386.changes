@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 29 Feb 2016 11:04:43 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 16.2mx15+5
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (16.2mx15+5) mx; urgency=medium
+ .
+   * icon fix
+Checksums-Sha1:
+ 281556da51dbaccbadeeba43e43c66ab61250b61 46986 mx-repo-manager_16.2mx15+5_i386.deb
+Checksums-Sha256:
+ dabe5bba2d29ca4af1fd8a3bc84bae95a84ac89a23e5e6ed10f6d920a1461bc2 46986 mx-repo-manager_16.2mx15+5_i386.deb
+Files:
+ 490ab27326e863d56b501a519247b717 46986 admin optional mx-repo-manager_16.2mx15+5_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJW1KHuAAoJEHCTjHgGee6YaYUH/0ijd2TgWyTpV7mfpkDy2aWc
+qnTQMMqEz7IW9IrbeaskCWdwNQVXy1brWS5MMgIKosO+dxkRNYZgFa4QRL2xT0BT
+OsfeAFfug5Ijmy+RdX3qPxEClgPU0QG/4fHlz8fucZ3/2nbhCb7+AkU1l+MvcROQ
+2Tc+/ay/D55+pHtdDS2cwzdz/wrAzmYY21rPHxt841S8l2rqNYWoRd94RKqpEEeq
+Y9Z9dYjgCP0rO6pSdYuAI3wHczO1RjoFhbogtwGeQ0ilxQYBgcp/WXYkQcpK3DCb
+/l/jIg6PHolZyzcuDEzdyMTaRFhgpCHCy+wWiUNAf6Dz5sVhpdB4LigU6NSBoao=
+=OzQk
+-----END PGP SIGNATURE-----
