@@ -1,3 +1,9 @@
+mx-repo-manager (16.5mx15) mx; urgency=medium
+
+  * new desktop file
+
+ -- dolphinoracle <dolphinoracle@gmail.com>  Mon, 29 Feb 2016 11:04:43 -0500
+
 mx-repo-manager (16.2mx15+5) mx; urgency=medium
 
   * icon fix
