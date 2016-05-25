@@ -26,5 +26,5 @@ Exec=su-to-root -X -c mx-repo-manager
 Terminal=false
 Type=Application
 Icon=mx-repo-manager
-Categories=GNOME;GTK;System;
+Categories=GNOME;GTK;System;MX-Software;
 NoDisplay=false
