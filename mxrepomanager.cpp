@@ -4,7 +4,7 @@
  * Copyright (C) 2015 MX Authors
  *
  * Authors: Adrian
- *          MX & MEPIS Community <http://forum.mepiscommunity.org>
+ *          MX Linux <http://mxlinux.org>
  *
  * This file is part of mx-repo-manager.
  *
@@ -55,7 +55,6 @@ mxrepomanager::~mxrepomanager()
 Output mxrepomanager::runCmd(QString cmd)
 {
     QProcess *proc = new QProcess();
-    QEventLoop loop;
     proc->setReadChannelMode(QProcess::MergedChannels);
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     proc->waitForFinished();
@@ -67,7 +66,7 @@ Output mxrepomanager::runCmd(QString cmd)
 
 // refresh repo info
 void mxrepomanager::refresh()
-{    
+{
     displayMXRepos(readMXRepos());
     displayCurrent(getCurrentRepo());
     displayAllRepos(listAptFiles());
@@ -218,7 +217,7 @@ void mxrepomanager::replaceRepos(QString url)
         } else {
             repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
         }
-        cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);    
+        cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
     }
     if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
@@ -273,7 +272,7 @@ void mxrepomanager::on_buttonAbout_clicked()
                        tr("About MX Repo Manager"), "<p align=\"center\"><b><h2>" +
                        tr("MX Repo Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
                        tr("Program for choosing the default APT repository") +
-                       "</h3></p><p align=\"center\"><a href=\"http://www.mepiscommunity.org/mx\">http://www.mepiscommunity.org/mx</a><br /></p><p align=\"center\">" +
+                       "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
     msgBox.addButton(tr("Cancel"), QMessageBox::AcceptRole); // because we want to display the buttons in reverse order we use counter-intuitive roles.
     msgBox.addButton(tr("License"), QMessageBox::RejectRole);
@@ -287,7 +286,7 @@ void mxrepomanager::on_buttonAbout_clicked()
 void mxrepomanager::on_buttonHelp_clicked()
 {
     this->hide();
-    QString cmd = QString("mx-viewer http://mepiscommunity.org/wiki/help-files/help-mx-repo-manager '%1'").arg(tr("MX Repo Manager"));
+    QString cmd = QString("mx-viewer https://mxlinux.org/wiki/help-files/help-mx-repo-manager '%1'").arg(tr("MX Repo Manager"));
     system(cmd.toUtf8());
     this->show();
 }
