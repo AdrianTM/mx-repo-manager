@@ -14,15 +14,15 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="41"/>
-        <location filename="../mxrepomanager.cpp" line="274"/>
-        <location filename="../mxrepomanager.cpp" line="281"/>
-        <location filename="../mxrepomanager.cpp" line="290"/>
+        <location filename="../mxrepomanager.cpp" line="273"/>
+        <location filename="../mxrepomanager.cpp" line="280"/>
+        <location filename="../mxrepomanager.cpp" line="289"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="324"/>
+        <location filename="../mxrepomanager.cpp" line="323"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Επιλέξτε την αποθήκη του APT που θέλετε να χρησιμοποιήσετε.</translation>
     </message>
@@ -87,68 +87,68 @@
         <translation>Επιλέξτε</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="136"/>
+        <location filename="../mxrepomanager.cpp" line="135"/>
         <source>Lists</source>
         <translation>Κατάλογος</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="136"/>
+        <location filename="../mxrepomanager.cpp" line="135"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Πηγές (ενεργοποιημένες ελεγχόμενες πηγές)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="224"/>
+        <location filename="../mxrepomanager.cpp" line="223"/>
         <source>Success</source>
         <translation>Επιτυχία!</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="225"/>
+        <location filename="../mxrepomanager.cpp" line="224"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Η νέα επιλογή σας θα τεθεί σε ισχύ την επόμενη φορά που ενημερώνονται οι πηγές.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="227"/>
+        <location filename="../mxrepomanager.cpp" line="226"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="228"/>
+        <location filename="../mxrepomanager.cpp" line="227"/>
         <source>Could not change the repo.</source>
         <translation>Δεν ήταν δυνατή η αλλαγή.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="273"/>
+        <location filename="../mxrepomanager.cpp" line="272"/>
         <source>About MX Repo Manager</source>
         <translation>Περί MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="274"/>
+        <location filename="../mxrepomanager.cpp" line="273"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="275"/>
+        <location filename="../mxrepomanager.cpp" line="274"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Πρόγραμμα για την επιλογή της προεπιλεγμένης αποθήκης του APT</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="277"/>
+        <location filename="../mxrepomanager.cpp" line="276"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="278"/>
+        <location filename="../mxrepomanager.cpp" line="277"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="279"/>
-        <location filename="../mxrepomanager.cpp" line="281"/>
+        <location filename="../mxrepomanager.cpp" line="278"/>
+        <location filename="../mxrepomanager.cpp" line="280"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="326"/>
+        <location filename="../mxrepomanager.cpp" line="325"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Επιλέξτε το APT repository και τις πηγές για χρήση:</translation>
     </message>
