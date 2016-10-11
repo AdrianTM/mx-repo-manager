@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 10 Oct 2016 13:57:51 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source
+Version: 16.10mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (16.10mx16) mx; urgency=medium
+ .
+   * Changed URLs
+Checksums-Sha1:
+ ccbab134b01ae5cbb7c69a240d20ac0407a390c8 1180 mx-repo-manager_16.10mx16.dsc
+ d54b592927b7065d670bdc9fc87ab3424f7465bd 133712 mx-repo-manager_16.10mx16.tar.xz
+Checksums-Sha256:
+ 0255af2cc18b6b14c0cea84db354e435e25f14a9eaefd459b75b62d115816ff3 1180 mx-repo-manager_16.10mx16.dsc
+ 332c8bbbcb5af36410f12ba934a7af774da71b124fbc8ff5506a90bd0cb8f8f3 133712 mx-repo-manager_16.10mx16.tar.xz
+Files:
+ 56a9c9524e3fb125f9391cadb829bf33 1180 admin optional mx-repo-manager_16.10mx16.dsc
+ fbe22ef7eab3cb058a49369e367dcc5b 133712 admin optional mx-repo-manager_16.10mx16.tar.xz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJX/OIwAAoJEHCTjHgGee6Y9NkH/30Kftkv3IIIDPmj+TCCe/qB
+zXWrcBoNA8UMXMzPXnSHrx9JzUKn03bc9LzvezuKcr6mna9DHgJ8nEVKpHY9M7xy
+b1PM1R1OfUAxe/swFmnWVxIbniRXANpTIaANP8H7bJr9clWXj/cxjAZuivEuqOe6
+5tmJ8xNEMNlqwTUYvrieGVNUn8ErKRzJ5XYF+lGz6T8s+HNoXQn6GrmtjTsv+/kL
+jAuoU/HtjHwPLV9EKI4r+IX89MTs3jugIyXgrs5awhBqu6pJelXi4oSYaOn0fkn4
+rMdxfo5O9LcWZyy+mnnQKvY7B5Ab1XfhPq3oiuP/9QV/OVcPw9fw+W9PXE2Iux8=
+=WgaP
+-----END PGP SIGNATURE-----
