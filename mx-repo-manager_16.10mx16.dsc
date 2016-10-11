@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  mx-repo-manager deb admin optional arch=any
 Checksums-Sha1:
- 60473c317f029b3cedbe0f9138b9125b0ef089e5 35380 mx-repo-manager_16.10mx16.tar.xz
+ d54b592927b7065d670bdc9fc87ab3424f7465bd 133712 mx-repo-manager_16.10mx16.tar.xz
 Checksums-Sha256:
- 5e55ccfbad612244f2c550a39a25e6b5bae1ada30ecfb86f6ecc3a014d7c55e2 35380 mx-repo-manager_16.10mx16.tar.xz
+ 332c8bbbcb5af36410f12ba934a7af774da71b124fbc8ff5506a90bd0cb8f8f3 133712 mx-repo-manager_16.10mx16.tar.xz
 Files:
- 2e621492dc2ae2a0510df40b35ae960b 35380 mx-repo-manager_16.10mx16.tar.xz
+ fbe22ef7eab3cb058a49369e367dcc5b 133712 mx-repo-manager_16.10mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJX+9cWAAoJEHCTjHgGee6YTGsH/i3M4ZfnAr68sgfFZDFFKNbI
-vH0Oa8oGnLDcBK0CU7sCW5XBapG9qwvP7BNyRtZWuaHv6tA5kAHFob1UZrkfMEMr
-C7rQtpyvDlocPQBwHm1chL7dN/WHyC8oyhZeLZsgwPm4SamyW1e+qP/2p+vmLELD
-tH0tVR9NI91tS9fcZOV7PKN3Mmn59o/AF9ohG2V1fPL9FFsU5AB97wCOD6kZLdbt
-quJBiS14JbVOj44UOmQ5ipTuIu7Oo88ztWiNObDDsQ5U4EQia9B8ikTVYRr1ACrK
-dYx59x1KSvKGtDKS8KBt6mGVOs3RTu9HhWcqLczbe8aET8sF78uH71mt91+nMTU=
-=oikO
+iQEcBAEBAgAGBQJX/OIsAAoJEHCTjHgGee6YRsoIAM8AVZLAU+Dkl+MOG9+SaTLS
+L9O1jdjvrwRpFPgin39fWq8tf0mhh3QRSG5kP8saCcOFW9EJGsp4mVKGYzbhVlcU
+qvEL+syiD5dt59WQ2PYN+Dyxb8Pm7rIHuhISFkXXf0wr5SFCEvmCD5iZsnRkZaHY
+Z2Eo83mdfXe7mNzwwG8kXcNP3DSOKxrSeNCq5n+FyJUSkoR0tA/+nt4oAWj34DXR
+kCvgWhC1QNu6eMrqSvx92GS6bUcWbgcAFPul7Fj4YkxcPIkdmN6Z+W9qQ9uCEG9h
+h5jyuPp1vbm6+Y3E5/nOM0H99Gi6T/36y131dnP2C+C6vof+YD2j+jJ8oLfs6iw=
+=tHYs
 -----END PGP SIGNATURE-----
