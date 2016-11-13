@@ -1,3 +1,9 @@
+mx-repo-manager (16.11mx16) mx; urgency=medium
+
+  * fixes for mx16
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 13 Nov 2016 17:11:46 -0500
+
 mx-repo-manager (16.10mx16) mx; urgency=medium
 
   * Changed URLs

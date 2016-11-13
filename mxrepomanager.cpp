@@ -94,7 +94,7 @@ QStringList mxrepomanager::readMXRepos()
 // List current repo
 QString mxrepomanager::getCurrentRepo()
 {
-    return runCmd("grep -m1 '^deb.*/repo/ mx15 main non-free' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
+    return runCmd("grep -m1 '^deb.*/repo/ mx' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
 }
 
 // display available repos
@@ -206,10 +206,10 @@ void mxrepomanager::replaceRepos(QString url)
     QString repo_line_antix;
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
     QString antix_file = "/etc/apt/sources.list.d/antix.list";
-    QString repo_line_mx = "deb " + url + "/mx/repo/ mx15 main non-free";
-    QString test_line_mx = "deb " + url + "/mx/testrepo/ mx15 test";
-    cmd_mx = QString("sed -i 's;deb.*/repo/ mx15 main non-free;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
-            QString("sed -i 's;deb.*/testrepo/ mx15 test;%1;' %2").arg(test_line_mx).arg(mx_file);;
+    QString repo_line_mx = "deb " + url + "/mx/repo/ mx";
+    QString test_line_mx = "deb " + url + "/mx/testrepo/ mx";
+    cmd_mx = QString("sed -i 's;deb.*/repo/ mx;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
+            QString("sed -i 's;deb.*/testrepo/ mx;%1;' %2").arg(test_line_mx).arg(mx_file);;
     // for antiX repos
     if (url != "http://mxrepo.com") {
         if (url == "http://main.mepis-deb.org") { // for default repos
