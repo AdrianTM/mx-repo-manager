@@ -1,130 +1,154 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ro_RO">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trebuie să rulați programul ca administrator.</translation>
     </message>
 </context>
 <context>
     <name>mxrepomanager</name>
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
-        <location filename="../mxrepomanager.cpp" line="40"/>
-        <location filename="../mxrepomanager.cpp" line="198"/>
-        <location filename="../mxrepomanager.cpp" line="205"/>
-        <location filename="../mxrepomanager.cpp" line="214"/>
+        <location filename="../mxrepomanager.cpp" line="41"/>
+        <location filename="../mxrepomanager.cpp" line="273"/>
+        <location filename="../mxrepomanager.cpp" line="280"/>
+        <location filename="../mxrepomanager.cpp" line="289"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
+        <location filename="../mxrepomanager.cpp" line="323"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="164"/>
+        <location filename="../mxrepomanager.ui" line="59"/>
+        <source>Default repo</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.ui" line="142"/>
+        <source>Individual sources</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.ui" line="203"/>
         <source>Display help </source>
-        <translation type="unfinished"></translation>
+        <translation>Afișează ajutor</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="167"/>
+        <location filename="../mxrepomanager.ui" line="206"/>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajutor</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="174"/>
+        <location filename="../mxrepomanager.ui" line="213"/>
         <source>Alt+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="219"/>
+        <location filename="../mxrepomanager.ui" line="258"/>
         <source>About this application</source>
-        <translation type="unfinished"></translation>
+        <translation>Informații despre program</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="222"/>
+        <location filename="../mxrepomanager.ui" line="261"/>
         <source>About...</source>
-        <translation type="unfinished"></translation>
+        <translation>Despre...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="229"/>
+        <location filename="../mxrepomanager.ui" line="268"/>
         <source>Alt+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="245"/>
+        <location filename="../mxrepomanager.ui" line="284"/>
         <source>Quit application</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="248"/>
+        <location filename="../mxrepomanager.ui" line="287"/>
         <source>Close</source>
-        <translation type="unfinished"></translation>
+        <translation>Închidere</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="255"/>
+        <location filename="../mxrepomanager.ui" line="294"/>
         <source>Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="293"/>
+        <location filename="../mxrepomanager.ui" line="332"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="174"/>
+        <location filename="../mxrepomanager.cpp" line="135"/>
+        <source>Lists</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="135"/>
+        <source>Sources (checked sources are enabled)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="223"/>
         <source>Success</source>
-        <translation type="unfinished"></translation>
+        <translation>Succes</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="175"/>
+        <location filename="../mxrepomanager.cpp" line="224"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="177"/>
+        <location filename="../mxrepomanager.cpp" line="226"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Eroare</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="178"/>
+        <location filename="../mxrepomanager.cpp" line="227"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="197"/>
+        <location filename="../mxrepomanager.cpp" line="272"/>
         <source>About MX Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="198"/>
+        <location filename="../mxrepomanager.cpp" line="273"/>
         <source>Version: </source>
-        <translation type="unfinished"></translation>
+        <translation>Versiune:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="199"/>
+        <location filename="../mxrepomanager.cpp" line="274"/>
         <source>Program for choosing the default APT repository</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="201"/>
+        <location filename="../mxrepomanager.cpp" line="276"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="202"/>
+        <location filename="../mxrepomanager.cpp" line="277"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Anulează</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="203"/>
-        <location filename="../mxrepomanager.cpp" line="205"/>
+        <location filename="../mxrepomanager.cpp" line="278"/>
+        <location filename="../mxrepomanager.cpp" line="280"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licență</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="325"/>
+        <source>Select the APT repository and sources that you want to use:</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

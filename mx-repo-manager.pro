@@ -43,7 +43,11 @@ TRANSLATIONS += translations/mx-repo-manager_ca.ts \
                 translations/mx-repo-manager_it.ts \
                 translations/mx-repo-manager_ja.ts \
                 translations/mx-repo-manager_nl.ts \
+                translations/mx-repo-manager_pl.ts \
+                translations/mx-repo-manager_pt.ts \
+                translations/mx-repo-manager_ro.ts \
                 translations/mx-repo-manager_ru.ts \
-                translations/mx-repo-manager_sv.ts
+                translations/mx-repo-manager_sv.ts \
+                translations/mx-repo-manager_tr.ts
 
 
