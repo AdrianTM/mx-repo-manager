@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="pl">
 <context>
     <name>QApplication</name>
     <message>
@@ -16,23 +18,23 @@
         <location filename="../mxrepomanager.cpp" line="280"/>
         <location filename="../mxrepomanager.cpp" line="289"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
         <location filename="../mxrepomanager.cpp" line="323"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>Default repo</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
         <source>Individual sources</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="203"/>
@@ -82,17 +84,17 @@
     <message>
         <location filename="../mxrepomanager.ui" line="332"/>
         <source>Select</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
         <source>Lists</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="223"/>
@@ -102,7 +104,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="224"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="226"/>
@@ -112,12 +114,12 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="227"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="272"/>
         <source>About MX Repo Manager</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="273"/>
@@ -127,7 +129,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="274"/>
         <source>Program for choosing the default APT repository</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="276"/>
@@ -148,7 +150,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="325"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
