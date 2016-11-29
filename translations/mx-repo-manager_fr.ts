@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -29,7 +27,7 @@
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>Default repo</source>
-        <translation>Repo par défaut</translation>
+        <translation>Dépôt par défaut</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
@@ -84,7 +82,7 @@
     <message>
         <location filename="../mxrepomanager.ui" line="332"/>
         <source>Select</source>
-        <translation>Sélectionnez</translation>
+        <translation>Sélectionner</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
@@ -94,7 +92,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>Sources (case cochée indique activée)</translation>
+        <translation>Sources (case cochée si déjà activée)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="223"/>
@@ -104,7 +102,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="224"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Votre nouvelle sélection prendra effet la prochaine fois que les sources sont mises à jour.</translation>
+        <translation>Votre nouvelle sélection prendra effet la prochaine fois que les sources seront mises à jour.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="226"/>
@@ -119,7 +117,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="272"/>
         <source>About MX Repo Manager</source>
-        <translation>A propos de MX Repo Manager</translation>
+        <translation>A propos de MX Gestionnaire de dépôts</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="273"/>
