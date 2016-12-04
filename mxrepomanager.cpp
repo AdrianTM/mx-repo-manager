@@ -205,6 +205,9 @@ void mxrepomanager::replaceRepos(QString url)
     QString cmd_antix = "true";
     QString repo_line_antix;
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
+    if (QFile("/etc/apt/sources.list.d/mx16.list").exists()) {
+        mx_file += " /etc/apt/sources.list.d/mx16.list";       // add mx16.list to the list if it exists
+    }
     QString antix_file = "/etc/apt/sources.list.d/antix.list";
     QString repo_line_mx = "deb " + url + "/mx/repo/ mx";
     QString test_line_mx = "deb " + url + "/mx/testrepo/ mx";
