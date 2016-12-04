@@ -14,15 +14,15 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="41"/>
-        <location filename="../mxrepomanager.cpp" line="273"/>
-        <location filename="../mxrepomanager.cpp" line="280"/>
-        <location filename="../mxrepomanager.cpp" line="289"/>
+        <location filename="../mxrepomanager.cpp" line="276"/>
+        <location filename="../mxrepomanager.cpp" line="283"/>
+        <location filename="../mxrepomanager.cpp" line="292"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="323"/>
+        <location filename="../mxrepomanager.cpp" line="326"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Trieu el dipòsit d&apos;APT que voleu usar: </translation>
     </message>
@@ -97,58 +97,58 @@
         <translation>Fonts (les marcades són les habilitades) </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="223"/>
+        <location filename="../mxrepomanager.cpp" line="226"/>
         <source>Success</source>
         <translation>Èxit</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="224"/>
+        <location filename="../mxrepomanager.cpp" line="227"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Aquesta tria serà efectiva la propera vegada que actualitzeu les fonts. </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="226"/>
+        <location filename="../mxrepomanager.cpp" line="229"/>
         <source>Error</source>
         <translation>S&apos;ha produït un error</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="227"/>
+        <location filename="../mxrepomanager.cpp" line="230"/>
         <source>Could not change the repo.</source>
         <translation>No s&apos;ha pogut canviar el dipòsit. </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="272"/>
+        <location filename="../mxrepomanager.cpp" line="275"/>
         <source>About MX Repo Manager</source>
         <translation>Quant a MX Repo Manager </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="273"/>
+        <location filename="../mxrepomanager.cpp" line="276"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="274"/>
+        <location filename="../mxrepomanager.cpp" line="277"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programa per triar els dipòsits d&apos;APT per omissió </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="276"/>
+        <location filename="../mxrepomanager.cpp" line="279"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="277"/>
+        <location filename="../mxrepomanager.cpp" line="280"/>
         <source>Cancel</source>
         <translation>Cancel·la </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="278"/>
-        <location filename="../mxrepomanager.cpp" line="280"/>
+        <location filename="../mxrepomanager.cpp" line="281"/>
+        <location filename="../mxrepomanager.cpp" line="283"/>
         <source>License</source>
         <translation>Llicència </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="325"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Trieu el dipòsit APT i les fonts que voleu usar: </translation>
     </message>
