@@ -1,8 +1,10 @@
-Crete -  http://ftp.cc.uoc.gr/mirrors/linux/mx
-Ecuador -  http://mirror.cedia.org.ec/mx-workspace
+Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
+Ecuador - http://mirror.cedia.org.ec/mx-workspace
+France - http://fr.mirror.vinzv.de/mxlinux/packages
+Germany - http://de.mirror.vinzv.de/mxlinux/packages
 New Zealand - http://mx.debian.nz
-USA, Los Angeles -  http://iso.mxrepo.com
-USA, Utah -  http://mxrepo.com
+USA, Los Angeles - http://iso.mxrepo.com
+USA, Utah - http://mxrepo.com
 The Netherlands - http://nl.mxrepo.com
-Taiwan -  http://ftp.yzu.edu.tw/Linux/mx-workspace
+Taiwan - http://ftp.yzu.edu.tw/Linux/mx-workspace
 Reset repos - http://main.mepis-deb.org http://antix.daveserver.info

@@ -111,6 +111,10 @@ void mxrepomanager::displayMXRepos(QStringList repos)
             flag = QIcon("/usr/share/mx-repo-manager/icons/us.png");
         } else if (repo.contains("http://nl.mxrepo.com")) {
             flag = QIcon("/usr/share/mx-repo-manager/icons/nl.png");
+        } else if (repo.contains("http://fr.")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/fr.png");
+        } else if (repo.contains("http://de.")) {
+            flag = QIcon("/usr/share/mx-repo-manager/icons/de.png");
         } else if (repo.contains(".gr/")) {
             flag = QIcon("/usr/share/mx-repo-manager/icons/gr.png");
         } else if (repo.contains(".ec/")) {
