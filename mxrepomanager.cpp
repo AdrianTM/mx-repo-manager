@@ -63,7 +63,6 @@ Output mxrepomanager::runCmd(QString cmd)
     return out;
 }
 
-
 // refresh repo info
 void mxrepomanager::refresh()
 {
@@ -105,28 +104,11 @@ void mxrepomanager::displayMXRepos(QStringList repos)
     QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
+        QString country = repo.section("-", 0, 0).trimmed();
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
-        if (repo.contains("http://mxrepo.com") || repo.contains("http://iso.mxrepo.com") || repo.contains("http://main.mepis-deb.org")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/us.png");
-        } else if (repo.contains("http://nl.mxrepo.com")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/nl.png");
-        } else if (repo.contains("http://fr.")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/fr.png");
-        } else if (repo.contains("http://de.")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/de.png");
-        } else if (repo.contains(".gr/")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/gr.png");
-        } else if (repo.contains(".ec/")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/ec.png");
-        } else if (repo.contains(".nz")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/nz.png");
-        } else if (repo.contains(".tw/")) {
-            flag = QIcon("/usr/share/mx-repo-manager/icons/tw.png");
-        } else {
-            flag = QIcon();
-        }
-        button->setIcon(flag);
+        buildFlags();
+        button->setIcon(flags.value(country));
         ui->listWidget->setItemWidget(item, button);
     }
 }
@@ -331,4 +313,19 @@ void mxrepomanager::on_tabWidget_currentChanged()
     } else {
         ui->label->setText(tr("Select the APT repository and sources that you want to use:"));
     }
+}
+
+// build the list of flags for the country name
+void mxrepomanager::buildFlags()
+{
+    flags.insert("Crete", QIcon("/usr/share/mx-repo-manager/icons/gr.png"));
+    flags.insert("Ecuador", QIcon("/usr/share/mx-repo-manager/icons/ec.png"));
+    flags.insert("France", QIcon("/usr/share/mx-repo-manager/icons/fr.png"));
+    flags.insert("Germany", QIcon("/usr/share/mx-repo-manager/icons/de.png"));
+    flags.insert("New Zealand", QIcon("/usr/share/mx-repo-manager/icons/nz.png"));
+    flags.insert("USA, Los Angeles", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
+    flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
+    flags.insert("The Netherlands", QIcon("/usr/share/mx-repo-manager/icons/nl.png"));
+    flags.insert("Taiwan", QIcon("/usr/share/mx-repo-manager/icons/tw.png"));
+    flags.insert("Reset repos", QIcon("/usr/share/mx-repo-manager/icons/us.png")); // reset repos will get US flag
 }
