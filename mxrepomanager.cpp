@@ -84,7 +84,12 @@ QStringList mxrepomanager::readMXRepos()
 {
     QString file_content;
     QStringList repos;
-    file_content = runCmd("cat /usr/share/mx-repo-manager/repos.txt").str;
+    QFile file("/usr/share/mx-repo-manager/repos.txt");
+    if(!file.open(QIODevice::ReadOnly)) {
+        qDebug() << "Count not open file: " << file.fileName();
+    }
+    file_content = file.readAll().trimmed();
+    file.close();
     repos = file_content.split("\n");
     repos.sort();
     return repos;
