@@ -52,7 +52,7 @@ public:
     QString version;
     QList<QStringList> queued_changes;
 
-
+    void buildFlags();
     void displayMXRepos(QStringList repos);
     void displayAllRepos(QFileInfoList apt_files);
     void displayCurrent(QString repo);
@@ -76,6 +76,7 @@ private slots:
 
 private:
     Ui::mxrepomanager *ui;
+    QHash<QString, QIcon> flags;
 };
 
 
