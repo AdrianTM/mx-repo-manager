@@ -1,3 +1,9 @@
+mx-repo-manager (17.1mx16) mx; urgency=medium
+
+  * added fr and de repos 
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 02 Jan 2017 20:33:56 -0500
+
 mx-repo-manager (16.11mx16+3) mx; urgency=medium
 
   * process mx16.list file too
