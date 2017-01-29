@@ -205,14 +205,12 @@ void mxrepomanager::replaceRepos(QString url)
     cmd_mx = QString("sed -i 's;deb.*/repo/ mx;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
             QString("sed -i 's;deb.*/testrepo/ mx;%1;' %2").arg(test_line_mx).arg(mx_file);;
     // for antiX repos
-    if (url != "http://mxrepo.com") {
-        if (url == "http://main.mepis-deb.org") { // for default repos
-            repo_line_antix = "deb http://antix.daveserver.info/jessie jessie main";
-        } else {
-            repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
-        }
-        cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
+    if (url == "http://mxrepo.com") {
+        repo_line_antix = "deb http://antix.daveserver.info/jessie jessie main";
+    } else {
+        repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
     }
+    cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
     if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));
@@ -328,9 +326,9 @@ void mxrepomanager::buildFlags()
     flags.insert("France", QIcon("/usr/share/mx-repo-manager/icons/fr.png"));
     flags.insert("Germany", QIcon("/usr/share/mx-repo-manager/icons/de.png"));
     flags.insert("New Zealand", QIcon("/usr/share/mx-repo-manager/icons/nz.png"));
-    flags.insert("USA, Los Angeles", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
-    flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
+    flags.insert("Sweden", QIcon("/usr/share/mx-repo-manager/icons/se.png"));
     flags.insert("The Netherlands", QIcon("/usr/share/mx-repo-manager/icons/nl.png"));
     flags.insert("Taiwan", QIcon("/usr/share/mx-repo-manager/icons/tw.png"));
-    flags.insert("Reset repos", QIcon("/usr/share/mx-repo-manager/icons/us.png")); // reset repos will get US flag
+    flags.insert("USA, Los Angeles", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
+    flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));    
 }
