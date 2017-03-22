@@ -69,6 +69,29 @@ void mxrepomanager::refresh()
     displayMXRepos(readMXRepos());
     displayCurrent(getCurrentRepo());
     displayAllRepos(listAptFiles());
+    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
+}
+
+// replace default Debian repos
+void mxrepomanager::replaceDebianRepos(QString url)
+{
+    QStringList files;
+    QString cmd;
+
+    // Debian list files that are present by default in MX
+    files << "/etc/apt/sources.list.d/debian.list" << "/etc/apt/sources.list.d/debian-stable-updates.list";
+    foreach(QString file, files) {
+        // backup file
+        cmd = "cp " + file + " " + file + ".$(date +%s)";
+        system(cmd.toUtf8());
+        cmd = "sed -i 's;deb\\s.*/debian/;deb " + url + ";' " + file ; // replace deb lines in file
+        system(cmd.toUtf8());
+        cmd = "sed -i 's;deb-src\\s.*/debian/;deb-src " + url + ";' " + file; // replace deb-src lines in file
+        system(cmd.toUtf8());
+    }
+    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
+    QMessageBox::information(this, tr("Success"),
+                             tr("Your new selection will take effect the next time sources are updated."));
 }
 
 
@@ -121,42 +144,65 @@ void mxrepomanager::displayMXRepos(QStringList repos)
 void mxrepomanager::displayAllRepos(QFileInfoList apt_files)
 {
     ui->treeWidget->clear();
+    ui->treeWidgetDeb->clear();
     ui->treeWidget->blockSignals(true);
+    ui->treeWidgetDeb->blockSignals(true);
+
     QStringList columnNames;
     columnNames << tr("Lists") << tr("Sources (checked sources are enabled)");
     ui->treeWidget->setHeaderLabels(columnNames);
+    ui->treeWidgetDeb->setHeaderLabels(columnNames);
+
     QTreeWidgetItem *topLevelItem;
+    QTreeWidgetItem *topLevelItemDeb;
     QFileInfo file_info;
     foreach (file_info, apt_files) {
         QString file_name = file_info.fileName();
         QString file = file_info.absoluteFilePath();
         topLevelItem = new QTreeWidgetItem;
         topLevelItem->setText(0, file_name);
+        topLevelItemDeb = new QTreeWidgetItem;
+        topLevelItemDeb->setText(0, file_name);
         ui->treeWidget->addTopLevelItem(topLevelItem);
+        if (file_name.contains("debian")) {
+            ui->treeWidgetDeb->addTopLevelItem(topLevelItemDeb);
+        }
         // topLevelItem look
         topLevelItem->setForeground(0, QBrush(Qt::darkGreen));
+        topLevelItemDeb->setForeground(0, QBrush(Qt::darkGreen));
         topLevelItem->setIcon(0, QIcon("/usr/share/mx-repo-manager/icons/folder.png"));
+        topLevelItemDeb->setIcon(0, QIcon("/usr/share/mx-repo-manager/icons/folder.png"));
         // load file entries
         QStringList entries = loadAptFile(file);
         QString item;
         foreach (item, entries) {
             // add entries as childItem to treeWidget
             QTreeWidgetItem *childItem = new QTreeWidgetItem(topLevelItem);
+            QTreeWidgetItem *childItemDeb = new QTreeWidgetItem(topLevelItemDeb);
             childItem->setText(1, item);
+            childItemDeb->setText(1, item);
             // add checkboxes
             childItem->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
+            childItemDeb->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
             if (item.startsWith("#")) {
                 childItem->setCheckState(1, Qt::Unchecked);
+                childItemDeb->setCheckState(1, Qt::Unchecked);
             } else {
                 childItem->setCheckState(1, Qt::Checked);
+                childItemDeb->setCheckState(1, Qt::Checked);
             }
         }
     }
     for (int i = 0; i < ui->treeWidget->columnCount(); i++) {
         ui->treeWidget->resizeColumnToContents(i);
     }
+    for (int i = 0; i < ui->treeWidgetDeb->columnCount(); i++) {
+        ui->treeWidgetDeb->resizeColumnToContents(i);
+    }
     ui->treeWidget->expandAll();
-    ui->treeWidget->blockSignals(false);
+    ui->treeWidgetDeb->expandAll();
+    ui->treeWidget->blockSignals(false);    
+    ui->treeWidgetDeb->blockSignals(false);
 }
 
 QStringList mxrepomanager::loadAptFile(QString file)
@@ -309,6 +355,32 @@ void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column
     ui->treeWidget->blockSignals(false);
 }
 
+void mxrepomanager::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
+{
+    ui->treeWidgetDeb->blockSignals(true);
+    QFile file;
+    QString new_text;
+    QString file_name = item->parent()->text(0);
+    QString text = item->text(column);
+    QStringList changes;
+    if (file_name == "sources.list") {
+        file.setFileName("/etc/apt/" + file_name);
+    } else {
+        file.setFileName("/etc/apt/sources.list.d/" + file_name);
+    }
+    if (item->checkState(column) == Qt::Checked) {
+        new_text = text;
+        new_text.remove(QRegExp("#\\s*"));
+        item->setText(column, new_text);
+    } else {
+        new_text = "# " + text;
+        item->setText(column, new_text);
+    }
+    changes << text << new_text << file.fileName();
+    queued_changes << changes;
+    ui->treeWidgetDeb->blockSignals(false);
+}
+
 void mxrepomanager::on_tabWidget_currentChanged()
 {
     if (ui->tabWidget->currentWidget() == ui->tabMX) {
@@ -331,4 +403,25 @@ void mxrepomanager::buildFlags()
     flags.insert("Taiwan", QIcon("/usr/share/mx-repo-manager/icons/tw.png"));
     flags.insert("USA, Los Angeles", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
     flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));    
+}
+
+// detect fastest Debian repo
+void mxrepomanager::on_pushFastestDebian_clicked()
+{
+    QString repo;
+
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    this->blockSignals(true);
+    runCmd("netselect-apt jessie -o /tmp/mx-repo-manager-debian.list");
+    Output out = runCmd("grep -m 1 deb /tmp/mx-repo-manager-debian.list | cut -d ' ' -f 2");
+    if (out.exit_code == 0) {
+        repo = out.str;
+    }
+    // doublecheck if repo is valid
+    out = runCmd("wget --spider " + repo);
+    this->blockSignals(false);
+    if (out.exit_code == 0) {
+        replaceDebianRepos(repo);
+    }
+    refresh();
 }
