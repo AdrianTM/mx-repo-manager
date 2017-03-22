@@ -14,141 +14,161 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="41"/>
-        <location filename="../mxrepomanager.cpp" line="265"/>
-        <location filename="../mxrepomanager.cpp" line="272"/>
-        <location filename="../mxrepomanager.cpp" line="281"/>
+        <location filename="../mxrepomanager.cpp" line="311"/>
+        <location filename="../mxrepomanager.cpp" line="318"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
         <source>MX Repo Manager</source>
         <translation>MX Pakketbronbeheer</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="315"/>
+        <location filename="../mxrepomanager.cpp" line="387"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Selecteer de APT pakketbron die u wilt gebruiken:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="59"/>
         <source>Default repo</source>
-        <translation>Standaard pakketbron</translation>
+        <translation type="vanished">Standaard pakketbron</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.ui" line="59"/>
+        <source>Default MX repo</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="142"/>
+        <source>Debian repos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.ui" line="161"/>
+        <source>Select fastest Debian repos for me</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.ui" line="191"/>
         <source>Individual sources</source>
         <translation>Individuele bronnen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="203"/>
+        <location filename="../mxrepomanager.ui" line="252"/>
         <source>Display help </source>
         <translation>Toon help</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="206"/>
+        <location filename="../mxrepomanager.ui" line="255"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="213"/>
+        <location filename="../mxrepomanager.ui" line="262"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="258"/>
+        <location filename="../mxrepomanager.ui" line="307"/>
         <source>About this application</source>
         <translation>Over deze toepassing</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="261"/>
+        <location filename="../mxrepomanager.ui" line="310"/>
         <source>About...</source>
         <translation>Over...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="268"/>
+        <location filename="../mxrepomanager.ui" line="317"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="284"/>
+        <location filename="../mxrepomanager.ui" line="333"/>
         <source>Quit application</source>
         <translation>Verlaat de applicatie</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="287"/>
+        <location filename="../mxrepomanager.ui" line="336"/>
         <source>Close</source>
         <translation>Sluiten</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="294"/>
+        <location filename="../mxrepomanager.ui" line="343"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="332"/>
-        <source>Select</source>
-        <translation>Selecteer</translation>
+        <location filename="../mxrepomanager.ui" line="381"/>
+        <source>Apply</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="126"/>
+        <source>Select</source>
+        <translation type="vanished">Selecteer</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="152"/>
         <source>Lists</source>
         <translation>Lijsten</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="126"/>
+        <location filename="../mxrepomanager.cpp" line="152"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Bronnen (aangevinkte bronnen zijn ingeschakeld)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="215"/>
+        <location filename="../mxrepomanager.cpp" line="93"/>
+        <location filename="../mxrepomanager.cpp" line="261"/>
         <source>Success</source>
         <translation>Gelukt</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="216"/>
+        <location filename="../mxrepomanager.cpp" line="94"/>
+        <location filename="../mxrepomanager.cpp" line="262"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Uw nieuwe selectie zal de volgende keer dat de bronnen geupdate worden effectief worden.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="218"/>
+        <location filename="../mxrepomanager.cpp" line="264"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="219"/>
+        <location filename="../mxrepomanager.cpp" line="265"/>
         <source>Could not change the repo.</source>
         <translation>Kon de pakketbron niet wijzigen.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="264"/>
+        <location filename="../mxrepomanager.cpp" line="310"/>
         <source>About MX Repo Manager</source>
         <translation>Over MX Pakketbronbeheer</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="265"/>
+        <location filename="../mxrepomanager.cpp" line="311"/>
         <source>Version: </source>
         <translation>Versie:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="266"/>
+        <location filename="../mxrepomanager.cpp" line="312"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programma om de standaard APT pakketbron te kiezen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="268"/>
+        <location filename="../mxrepomanager.cpp" line="314"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="269"/>
+        <location filename="../mxrepomanager.cpp" line="315"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="270"/>
-        <location filename="../mxrepomanager.cpp" line="272"/>
+        <location filename="../mxrepomanager.cpp" line="316"/>
+        <location filename="../mxrepomanager.cpp" line="318"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="317"/>
+        <location filename="../mxrepomanager.cpp" line="389"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Selecteer de APT pakketbron en bronnen die u wilt gebruiken:</translation>
     </message>

@@ -57,6 +57,7 @@ public:
     void displayAllRepos(QFileInfoList apt_files);
     void displayCurrent(QString repo);
     void refresh();
+    void replaceDebianRepos(QString url);
     void replaceRepos(QString url);
     void setSelected();
     Output runCmd(QString cmd);
@@ -72,7 +73,9 @@ private slots:
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
     void on_treeWidget_itemChanged(QTreeWidgetItem * item, int column);
+    void on_treeWidgetDeb_itemChanged(QTreeWidgetItem * item, int column);
     void on_tabWidget_currentChanged();
+    void on_pushFastestDebian_clicked();
 
 private:
     Ui::mxrepomanager *ui;

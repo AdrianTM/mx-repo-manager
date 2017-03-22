@@ -1,3 +1,9 @@
+mx-repo-manager (17.3mx16) mx; urgency=medium
+
+  * select fastest Debian repo
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 22 Mar 2017 16:47:13 -0400
+
 mx-repo-manager (17.1mx16+1) mx; urgency=medium
 
   * added se repo, renamed fr, de repos
