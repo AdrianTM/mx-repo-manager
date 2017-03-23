@@ -1,6 +1,6 @@
 mx-repo-manager (17.3mx16) mx; urgency=medium
 
-  * select fastest Debian repo
+  * select fastest repos
 
  -- Adrian <adrian@mxlinux.org>  Wed, 22 Mar 2017 16:47:13 -0400
 
