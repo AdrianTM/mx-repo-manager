@@ -53,19 +53,19 @@ public:
     QList<QStringList> queued_changes;
 
     void buildFlags();
-    void displayMXRepos(QStringList repos);
-    void displayAllRepos(QFileInfoList apt_files);
-    void displayCurrent(QString repo);
+    void displayMXRepos(const QStringList &repos);
+    void displayAllRepos(const QFileInfoList &apt_files);
+    void displayCurrent(const QString &repo);
     void refresh();
-    void replaceDebianRepos(QString url);
-    void replaceRepos(QString url);
+    void replaceDebianRepos(const QString &url);
+    void replaceRepos(const QString &url);
     void setSelected();
-    Output runCmd(QString cmd);
+    Output runCmd(const QString &cmd);
     QFileInfoList listAptFiles();
     QString getCurrentRepo();
-    QString getVersion(QString name);
+    QString getVersion(const QString &name);
     QStringList readMXRepos();
-    QStringList loadAptFile(QString file);
+    QStringList loadAptFile(const QString &file);
 
 
 private slots:

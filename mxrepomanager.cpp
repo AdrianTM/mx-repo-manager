@@ -52,7 +52,7 @@ mxrepomanager::~mxrepomanager()
 }
 
 // util function for getting bash command output and error code
-Output mxrepomanager::runCmd(QString cmd)
+Output mxrepomanager::runCmd(const QString &cmd)
 {
     QProcess *proc = new QProcess();
     proc->setReadChannelMode(QProcess::MergedChannels);
@@ -73,7 +73,7 @@ void mxrepomanager::refresh()
 }
 
 // replace default Debian repos
-void mxrepomanager::replaceDebianRepos(QString url)
+void mxrepomanager::replaceDebianRepos(const QString &url)
 {
     QStringList files;
     QString cmd;
@@ -96,7 +96,7 @@ void mxrepomanager::replaceDebianRepos(QString url)
 
 
 // Get version of the program
-QString mxrepomanager::getVersion(QString name)
+QString mxrepomanager::getVersion(const QString &name)
 {
     QString cmdstr = QString("dpkg -l %1 | awk 'NR==6 {print $3}'").arg(name);
     return runCmd(cmdstr).str;
@@ -125,7 +125,7 @@ QString mxrepomanager::getCurrentRepo()
 }
 
 // display available repos
-void mxrepomanager::displayMXRepos(QStringList repos)
+void mxrepomanager::displayMXRepos(const QStringList &repos)
 {
     ui->listWidget->clear();
     QStringListIterator repoIterator(repos);
@@ -141,7 +141,7 @@ void mxrepomanager::displayMXRepos(QStringList repos)
     }
 }
 
-void mxrepomanager::displayAllRepos(QFileInfoList apt_files)
+void mxrepomanager::displayAllRepos(const QFileInfoList &apt_files)
 {
     ui->treeWidget->clear();
     ui->treeWidgetDeb->clear();
@@ -205,14 +205,14 @@ void mxrepomanager::displayAllRepos(QFileInfoList apt_files)
     ui->treeWidgetDeb->blockSignals(false);
 }
 
-QStringList mxrepomanager::loadAptFile(QString file)
+QStringList mxrepomanager::loadAptFile(const QString &file)
 {
     QString entries = runCmd("grep '^#*[ ]*deb' " + file).str;
     return entries.split("\n");
 }
 
 // displays the current repo by selecting the item
-void mxrepomanager::displayCurrent(QString repo)
+void mxrepomanager::displayCurrent(const QString &repo)
 {
     for (int row = 0; row < ui->listWidget->count(); ++row) {
         QRadioButton *item = (QRadioButton*)ui->listWidget->itemWidget(ui->listWidget->item(row));
@@ -236,7 +236,7 @@ void mxrepomanager::setSelected()
 }
 
 // replaces the lines in the APT file
-void mxrepomanager::replaceRepos(QString url)
+void mxrepomanager::replaceRepos(const QString &url)
 {
     QString cmd_mx;
     QString cmd_antix = "true";
