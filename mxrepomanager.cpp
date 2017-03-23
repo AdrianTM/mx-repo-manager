@@ -68,7 +68,7 @@ Output mxrepomanager::runCmd(const QString &cmd)
 void mxrepomanager::refresh()
 {
     displayMXRepos(readMXRepos());
-    displayCurrent(getCurrentRepo());
+    selectRepo(getCurrentRepo());
     displayAllRepos(listAptFiles());
     QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
 }
@@ -114,8 +114,10 @@ QStringList mxrepomanager::readMXRepos()
     }
     file_content = file.readAll().trimmed();
     file.close();
+
     repos = file_content.split("\n");
     repos.sort();
+    extractUrls(repos);
     return repos;
 }
 
@@ -214,13 +216,22 @@ QStringList mxrepomanager::loadAptFile(const QString &file)
 }
 
 // displays the current repo by selecting the item
-void mxrepomanager::displayCurrent(const QString &repo)
+void mxrepomanager::selectRepo(const QString &repo)
 {
     for (int row = 0; row < ui->listWidget->count(); ++row) {
         QRadioButton *item = (QRadioButton*)ui->listWidget->itemWidget(ui->listWidget->item(row));
         if (item->text().contains(repo)) {
             item->setChecked(true);
         }
+    }
+}
+
+// extract the URLs from the list of repos that contain country names and description
+void mxrepomanager::extractUrls(const QStringList &repos)
+{
+    foreach(QString line, repos) {
+        QStringList linelist = line.split("-");
+        listMXurls += linelist[1].trimmed() + " ";
     }
 }
 
@@ -429,4 +440,22 @@ void mxrepomanager::on_pushFastestDebian_clicked()
         replaceDebianRepos(repo);
     }
     refresh();
+}
+
+// detect and select the fastest MX repo
+void mxrepomanager::on_pushFastestMX_clicked()
+{
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    this->blockSignals(true);
+    Output out = runCmd("netselect -D -I " + listMXurls + "| cut -d' ' -f4");
+    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
+    this->blockSignals(false);
+    if (out.exit_code == 0 && out.str !="") {
+        selectRepo(out.str);
+        on_buttonOK_clicked();
+    } else {
+        QMessageBox::critical(this, tr("Error"),
+                              tr("Could not detect fastest repo."));
+    }
+
 }
