@@ -435,6 +435,7 @@ void mxrepomanager::on_pushFastestDebian_clicked()
     } else {
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not detect fastest repo."));
+        return;
     }
     // doublecheck if repo is valid
     out = runCmd("wget --spider " + repo);
