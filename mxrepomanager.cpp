@@ -201,7 +201,7 @@ void mxrepomanager::displayAllRepos(QFileInfoList apt_files)
     }
     ui->treeWidget->expandAll();
     ui->treeWidgetDeb->expandAll();
-    ui->treeWidget->blockSignals(false);    
+    ui->treeWidget->blockSignals(false);
     ui->treeWidgetDeb->blockSignals(false);
 }
 
@@ -402,7 +402,7 @@ void mxrepomanager::buildFlags()
     flags.insert("The Netherlands", QIcon("/usr/share/mx-repo-manager/icons/nl.png"));
     flags.insert("Taiwan", QIcon("/usr/share/mx-repo-manager/icons/tw.png"));
     flags.insert("USA, Los Angeles", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
-    flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));    
+    flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
 }
 
 // detect fastest Debian repo
@@ -412,8 +412,9 @@ void mxrepomanager::on_pushFastestDebian_clicked()
 
     QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
     this->blockSignals(true);
-    runCmd("netselect-apt jessie -o /tmp/mx-repo-manager-debian.list");
-    Output out = runCmd("grep -m 1 deb /tmp/mx-repo-manager-debian.list | cut -d ' ' -f 2");
+    QString tmpfile = runCmd("mktemp -d /tmp/mx-repo-manager-XXXXXXXX").str + "/sources.list";
+    runCmd("netselect-apt jessie -o " + tmpfile);
+    Output out = runCmd("grep -m 1 deb " + tmpfile + "| cut -d ' ' -f 2");
     if (out.exit_code == 0) {
         repo = out.str;
     }
