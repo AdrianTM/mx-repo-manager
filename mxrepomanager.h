@@ -51,18 +51,21 @@ public:
     ~mxrepomanager();
 
     QString version;
+    QString listMXurls;
     QList<QStringList> queued_changes;
 
     void buildFlags();
     void displayMXRepos(const QStringList &repos);
     void displayAllRepos(const QFileInfoList &apt_files);
-    void displayCurrent(const QString &repo);
+    void selectRepo(const QString &repo);
+    void extractUrls(const QStringList &repos);
     void refresh();
     void replaceDebianRepos(const QString &url);
     void replaceRepos(const QString &url);
     void setSelected();
     Output runCmd(const QString &cmd);
     QFileInfoList listAptFiles();
+
     QString getCurrentRepo();
     QString getVersion(const QString &name);
     QStringList readMXRepos();
@@ -78,6 +81,8 @@ private slots:
     void on_tabWidget_currentChanged();
     void on_pushFastestDebian_clicked();
 
+
+    void on_pushFastestMX_clicked();
 
 private:
     Ui::mxrepomanager *ui;

@@ -58,8 +58,8 @@
       <attribute name="title">
        <string>Default MX repo</string>
       </attribute>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
         <widget class="QListWidget" name="listWidget">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -135,6 +135,19 @@
          </property>
         </widget>
        </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="pushFastestMX">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Select fastest MX repo for me</string>
+         </property>
+        </widget>
+       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tabDebian">
@@ -142,39 +155,6 @@
        <string>Debian repos</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="3" column="0">
-        <spacer name="horizontalSpacer">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="3" column="1">
-        <widget class="QPushButton" name="pushFastestDebian">
-         <property name="text">
-          <string>Select fastest Debian repos for me</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>40</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="0" column="0" colspan="3">
         <widget class="QTreeWidget" name="treeWidgetDeb">
          <column>
@@ -182,6 +162,19 @@
            <string notr="true">1</string>
           </property>
          </column>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushFastestDebian">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Select fastest Debian repo for me</string>
+         </property>
         </widget>
        </item>
       </layout>
@@ -347,6 +340,23 @@
        </property>
       </widget>
      </item>
+     <item row="0" column="6">
+      <widget class="QPushButton" name="buttonOK">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../../../../../usr/share/mx-repo-manager/icons/dialog-ok.png</normaloff>../../../../../../../usr/share/mx-repo-manager/icons/dialog-ok.png</iconset>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="3">
       <widget class="QLabel" name="labelMX">
        <property name="maximumSize">
@@ -369,37 +379,18 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="6">
-      <widget class="QPushButton" name="buttonOK">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>Apply</string>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>../../../../../../../usr/share/mx-repo-manager/icons/dialog-ok.png</normaloff>../../../../../../../usr/share/mx-repo-manager/icons/dialog-ok.png</iconset>
-       </property>
-      </widget>
-     </item>
     </layout>
    </item>
   </layout>
  </widget>
  <tabstops>
   <tabstop>tabWidget</tabstop>
-  <tabstop>listWidget</tabstop>
   <tabstop>buttonAbout</tabstop>
   <tabstop>buttonHelp</tabstop>
   <tabstop>buttonOK</tabstop>
   <tabstop>buttonCancel</tabstop>
   <tabstop>treeWidgetDeb</tabstop>
   <tabstop>treeWidget</tabstop>
-  <tabstop>pushFastestDebian</tabstop>
  </tabstops>
  <resources/>
  <connections>
