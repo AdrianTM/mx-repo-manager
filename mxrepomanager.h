@@ -29,6 +29,7 @@
 #include <QMessageBox>
 #include <QDir>
 #include <QTreeWidget>
+#include <QListWidgetItem>
 
 namespace Ui {
 class mxrepomanager;
@@ -76,6 +77,7 @@ private slots:
     void on_treeWidgetDeb_itemChanged(QTreeWidgetItem * item, int column);
     void on_tabWidget_currentChanged();
     void on_pushFastestDebian_clicked();
+
 
 private:
     Ui::mxrepomanager *ui;

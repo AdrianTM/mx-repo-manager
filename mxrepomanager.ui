@@ -390,6 +390,17 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>listWidget</tabstop>
+  <tabstop>buttonAbout</tabstop>
+  <tabstop>buttonHelp</tabstop>
+  <tabstop>buttonOK</tabstop>
+  <tabstop>buttonCancel</tabstop>
+  <tabstop>treeWidgetDeb</tabstop>
+  <tabstop>treeWidget</tabstop>
+  <tabstop>pushFastestDebian</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
@@ -399,8 +410,8 @@
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>723</x>
-     <y>519</y>
+     <x>766</x>
+     <y>494</y>
     </hint>
     <hint type="destinationlabel">
      <x>388</x>
