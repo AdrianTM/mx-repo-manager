@@ -429,9 +429,12 @@ void mxrepomanager::on_pushFastestDebian_clicked()
     this->blockSignals(true);
     QString tmpfile = runCmd("mktemp -d /tmp/mx-repo-manager-XXXXXXXX").str + "/sources.list";
     runCmd("netselect-apt jessie -o " + tmpfile);
-    Output out = runCmd("grep -m 1 deb " + tmpfile + "| cut -d ' ' -f 2");
+    Output out = runCmd("set -o pipefail; grep -m 1 deb " + tmpfile + "| cut -d ' ' -f 2");
     if (out.exit_code == 0) {
         repo = out.str;
+    } else {
+        QMessageBox::critical(this, tr("Error"),
+                              tr("Could not detect fastest repo."));
     }
     // doublecheck if repo is valid
     out = runCmd("wget --spider " + repo);
@@ -447,7 +450,7 @@ void mxrepomanager::on_pushFastestMX_clicked()
 {
     QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
     this->blockSignals(true);
-    Output out = runCmd("netselect -D -I " + listMXurls + "| cut -d' ' -f4");
+    Output out = runCmd("set -o pipefail; netselect -D -I " + listMXurls + "| cut -d' ' -f4");
     QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
     this->blockSignals(false);
     if (out.exit_code == 0 && out.str !="") {

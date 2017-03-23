@@ -134,7 +134,8 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="277"/>
-        <location filename="../mxrepomanager.cpp" line="457"/>
+        <location filename="../mxrepomanager.cpp" line="436"/>
+        <location filename="../mxrepomanager.cpp" line="460"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
@@ -180,7 +181,8 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation>Wählen Sie das APT-Repository und die Quellen, die Sie verwenden möchten:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="458"/>
+        <location filename="../mxrepomanager.cpp" line="437"/>
+        <location filename="../mxrepomanager.cpp" line="461"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
