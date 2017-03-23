@@ -37,6 +37,7 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     ui(new Ui::mxrepomanager)
 {
     ui->setupUi(this);
+    ui->buttonOK->setDisabled(true);
     version = getVersion("mx-repo-manager");
     this->setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
@@ -138,6 +139,7 @@ void mxrepomanager::displayMXRepos(const QStringList &repos)
         buildFlags();
         button->setIcon(flags.value(country));
         ui->listWidget->setItemWidget(item, button);
+        connect(button, SIGNAL(clicked(bool)),ui->buttonOK, SLOT(setEnabled(bool)));
     }
 }
 
@@ -331,6 +333,7 @@ void mxrepomanager::on_buttonHelp_clicked()
 
 void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
 {
+    ui->buttonOK->setEnabled(true);
     ui->treeWidget->blockSignals(true);
     QFile file;
     QString new_text;
@@ -357,6 +360,7 @@ void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column
 
 void mxrepomanager::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
 {
+    ui->buttonOK->setEnabled(true);
     ui->treeWidgetDeb->blockSignals(true);
     QFile file;
     QString new_text;
