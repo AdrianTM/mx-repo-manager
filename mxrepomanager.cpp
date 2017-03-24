@@ -71,8 +71,9 @@ mxrepomanager::~mxrepomanager()
 Output mxrepomanager::runCmd(const QString &cmd)
 {
     QEventLoop loop;
-    QProcess *proc = new QProcess();
+    QProcess *proc = new QProcess(this);
     proc->setReadChannelMode(QProcess::MergedChannels);
+
     connect(timer, SIGNAL(timeout()), SLOT(procTime()));
     connect(proc, SIGNAL(started()), SLOT(procStart()));
     connect(proc, SIGNAL(finished(int)), SLOT(procDone(int)));
@@ -80,8 +81,10 @@ Output mxrepomanager::runCmd(const QString &cmd)
     connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
     loop.exec();
-//    proc->start("/bin/bash", QStringList() << "-c" << cmd);
-//    proc->waitForFinished();
+
+    disconnect(timer, 0, 0, 0);
+    disconnect(proc, 0, 0, 0);
+
     Output out = {proc->exitCode(), proc->readAll().trimmed()};
     delete proc;
     return out;
