@@ -26,10 +26,12 @@
 #include "mxrepomanager.h"
 #include "ui_mxrepomanager.h"
 
+#include <QDebug>
+
+#include <QDir>
 #include <QProcess>
 #include <QRadioButton>
-#include <QDir>
-#include <QDebug>
+#include <QProgressBar>
 
 
 mxrepomanager::mxrepomanager(QWidget *parent) :
@@ -37,7 +39,20 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     ui(new Ui::mxrepomanager)
 {
     ui->setupUi(this);
+
+    timer = new QTimer(this);
+    progress = new QProgressDialog(this);
+    bar = new QProgressBar(progress);
+    progress->setWindowModality(Qt::WindowModal);
+    progress->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint |Qt::WindowSystemMenuHint | Qt::WindowStaysOnTopHint);
+    progress->setCancelButton(0);
+    progress->setLabelText(tr("Please wait..."));
+    progress->setAutoClose(false);
+    progress->setBar(bar);
+    bar->setTextVisible(false);
+
     ui->buttonOK->setDisabled(true);
+
     version = getVersion("mx-repo-manager");
     this->setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
@@ -55,10 +70,18 @@ mxrepomanager::~mxrepomanager()
 // util function for getting bash command output and error code
 Output mxrepomanager::runCmd(const QString &cmd)
 {
+    QEventLoop loop;
     QProcess *proc = new QProcess();
     proc->setReadChannelMode(QProcess::MergedChannels);
+    connect(timer, SIGNAL(timeout()), SLOT(procTime()));
+    connect(proc, SIGNAL(started()), SLOT(procStart()));
+    connect(proc, SIGNAL(finished(int)), SLOT(procDone(int)));
+
+    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
     proc->start("/bin/bash", QStringList() << "-c" << cmd);
-    proc->waitForFinished();
+    loop.exec();
+//    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+//    proc->waitForFinished();
     Output out = {proc->exitCode(), proc->readAll().trimmed()};
     delete proc;
     return out;
@@ -70,7 +93,6 @@ void mxrepomanager::refresh()
     displayMXRepos(readMXRepos());
     selectRepo(getCurrentRepo());
     displayAllRepos(listAptFiles());
-    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
 }
 
 // replace default Debian repos
@@ -90,7 +112,6 @@ void mxrepomanager::replaceDebianRepos(const QString &url)
         cmd = "sed -i 's;deb-src\\s.*/debian/;deb-src " + url + ";' " + file; // replace deb-src lines in file
         system(cmd.toUtf8());
     }
-    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
     QMessageBox::information(this, tr("Success"),
                              tr("Your new selection will take effect the next time sources are updated."));
 }
@@ -246,6 +267,30 @@ void mxrepomanager::setSelected()
             replaceRepos(url);
         }
     }
+}
+
+
+void mxrepomanager::procTime()
+{
+    if (bar->value() == 100) {
+        bar->reset();
+    }
+    bar->setValue(bar->value() + 1);
+    //qApp->processEvents();
+}
+
+void mxrepomanager::procStart()
+{
+    timer->start(100);
+    bar->setValue(0);
+    QApplication::setOverrideCursor(QCursor(Qt::BusyCursor));
+}
+
+void mxrepomanager::procDone(int)
+{
+    timer->stop();
+    bar->setValue(100);
+    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
 }
 
 // replaces the lines in the APT file
@@ -425,10 +470,11 @@ void mxrepomanager::on_pushFastestDebian_clicked()
 {
     QString repo;
 
-    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
-    this->blockSignals(true);
+    progress->show();
     QString tmpfile = runCmd("mktemp -d /tmp/mx-repo-manager-XXXXXXXX").str + "/sources.list";
     Output out = runCmd("netselect-apt jessie -o " + tmpfile);
+    progress->hide();
+
     if (out.exit_code != 0) {
         QMessageBox::critical(this, tr("Error"),
                               tr("netselect-apt could not detect fastest repo."));
@@ -449,11 +495,9 @@ void mxrepomanager::on_pushFastestDebian_clicked()
 // detect and select the fastest MX repo
 void mxrepomanager::on_pushFastestMX_clicked()
 {
-    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
-    this->blockSignals(true);
+    progress->show();
     Output out = runCmd("set -o pipefail; netselect -D -I " + listMXurls + "| cut -d' ' -f4");
-    QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
-    this->blockSignals(false);
+    progress->hide();
     if (out.exit_code == 0 && out.str !="") {
         selectRepo(out.str);
         on_buttonOK_clicked();
@@ -461,5 +505,4 @@ void mxrepomanager::on_pushFastestMX_clicked()
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not detect fastest repo."));
     }
-
 }
