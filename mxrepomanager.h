@@ -26,10 +26,13 @@
 #ifndef MXREPOMANAGER_H
 #define MXREPOMANAGER_H
 
-#include <QMessageBox>
 #include <QDir>
-#include <QTreeWidget>
 #include <QListWidgetItem>
+#include <QMessageBox>
+#include <QProgressDialog>
+#include <QTimer>
+#include <QTreeWidget>
+
 
 namespace Ui {
 class mxrepomanager;
@@ -80,13 +83,17 @@ private slots:
     void on_treeWidgetDeb_itemChanged(QTreeWidgetItem * item, int column);
     void on_tabWidget_currentChanged();
     void on_pushFastestDebian_clicked();
-
-
     void on_pushFastestMX_clicked();
+    void procDone(int);
+    void procTime();
+    void procStart();
 
 private:
     Ui::mxrepomanager *ui;
     QHash<QString, QIcon> flags;
+    QTimer *timer;
+    QProgressBar *bar;
+    QProgressDialog *progress;
 };
 
 
