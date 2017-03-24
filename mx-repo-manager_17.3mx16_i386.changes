@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 22 Mar 2017 16:47:13 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 17.3mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (17.3mx16) mx; urgency=medium
+ .
+   * select fastest repos
+Checksums-Sha1:
+ 5555fe6170867b51613b7324a3fb9048c1380f8e 57182 mx-repo-manager_17.3mx16_i386.deb
+Checksums-Sha256:
+ 4e563221f884d190e89d001b6019ea1c39c811a87900ab9f81e8850a373c5574 57182 mx-repo-manager_17.3mx16_i386.deb
+Files:
+ 4f299d4a388af3e6d674ef1fe81fc6a8 57182 admin optional mx-repo-manager_17.3mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJY1YuRAAoJEHCTjHgGee6YJHIH/RrCPlkKrAQwKCBSZMOgV1ee
+YAGXS5mfzN2aIb7Bz3KOrhrOIkw//T784TFU0Bss+CldQm0R6JWhW/veNoKOLh1S
+WZiXWw/SIyTtZuY88GREwFR3veClley5KPt/0ga41IFBaymsyO0Gq0DXePMVSM1q
+EzAk71vMkF8UAeLLEwjcVeHFoxoieHIAYNn06bG6x9OUwAu1Ra+b2P3CUebU7EQb
+Pl5D51Z7weA7JBlnsBomRL9m2D9ijBQsaEZgxgFoDZSXesDaBK4cQhnx+0E+x01M
+y1iqvhTPuKd6o5TpQByZ6loyaU+bACr/axvOUNs2nzYQugaoo+GifbrkyuE4+bs=
+=QzpB
+-----END PGP SIGNATURE-----
