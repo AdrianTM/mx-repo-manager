@@ -32,7 +32,7 @@
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
-        <source>Default MX repo</source>
+        <source>MX repos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -41,67 +41,67 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="155"/>
+        <location filename="../mxrepomanager.ui" line="158"/>
         <source>Debian repos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="176"/>
+        <location filename="../mxrepomanager.ui" line="179"/>
         <source>Select fastest Debian repo for me</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="184"/>
+        <location filename="../mxrepomanager.ui" line="192"/>
         <source>Individual sources</source>
         <translation>Bireysel kaynaklar</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="245"/>
+        <location filename="../mxrepomanager.ui" line="253"/>
         <source>Display help </source>
         <translation>Yardımı görüntüle</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="248"/>
+        <location filename="../mxrepomanager.ui" line="256"/>
         <source>Help</source>
         <translation>Yardım</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="255"/>
+        <location filename="../mxrepomanager.ui" line="263"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="300"/>
+        <location filename="../mxrepomanager.ui" line="308"/>
         <source>About this application</source>
         <translation>Uygulama hakkında</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="303"/>
+        <location filename="../mxrepomanager.ui" line="311"/>
         <source>About...</source>
         <translation>Hakkında...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="310"/>
+        <location filename="../mxrepomanager.ui" line="318"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="326"/>
+        <location filename="../mxrepomanager.ui" line="334"/>
         <source>Quit application</source>
         <translation>Uygulamadan çık</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="329"/>
+        <location filename="../mxrepomanager.ui" line="337"/>
         <source>Close</source>
         <translation>Kapat</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="336"/>
+        <location filename="../mxrepomanager.ui" line="344"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="352"/>
+        <location filename="../mxrepomanager.ui" line="360"/>
         <source>Apply</source>
         <translation type="unfinished"></translation>
     </message>
