@@ -14,15 +14,15 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="57"/>
-        <location filename="../mxrepomanager.cpp" line="369"/>
-        <location filename="../mxrepomanager.cpp" line="376"/>
-        <location filename="../mxrepomanager.cpp" line="385"/>
+        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="379"/>
+        <location filename="../mxrepomanager.cpp" line="388"/>
         <source>MX Repo Manager</source>
         <translation>MX Pakketbronbeheer</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="447"/>
+        <location filename="../mxrepomanager.cpp" line="450"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Selecteer de APT pakketbron die u wilt gebruiken:</translation>
     </message>
@@ -110,18 +110,18 @@
         <translation type="vanished">Selecteer</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="177"/>
+        <location filename="../mxrepomanager.cpp" line="180"/>
         <source>Lists</source>
         <translation>Lijsten</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="177"/>
+        <location filename="../mxrepomanager.cpp" line="180"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Bronnen (aangevinkte bronnen zijn ingeschakeld)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="115"/>
-        <location filename="../mxrepomanager.cpp" line="319"/>
+        <location filename="../mxrepomanager.cpp" line="118"/>
+        <location filename="../mxrepomanager.cpp" line="322"/>
         <source>Success</source>
         <translation>Gelukt</translation>
     </message>
@@ -131,68 +131,68 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="116"/>
-        <location filename="../mxrepomanager.cpp" line="320"/>
+        <location filename="../mxrepomanager.cpp" line="119"/>
+        <location filename="../mxrepomanager.cpp" line="323"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Uw nieuwe selectie zal de volgende keer dat de bronnen geupdate worden effectief worden.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="322"/>
-        <location filename="../mxrepomanager.cpp" line="479"/>
-        <location filename="../mxrepomanager.cpp" line="490"/>
-        <location filename="../mxrepomanager.cpp" line="505"/>
+        <location filename="../mxrepomanager.cpp" line="325"/>
+        <location filename="../mxrepomanager.cpp" line="482"/>
+        <location filename="../mxrepomanager.cpp" line="493"/>
+        <location filename="../mxrepomanager.cpp" line="508"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="323"/>
+        <location filename="../mxrepomanager.cpp" line="326"/>
         <source>Could not change the repo.</source>
         <translation>Kon de pakketbron niet wijzigen.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="368"/>
+        <location filename="../mxrepomanager.cpp" line="371"/>
         <source>About MX Repo Manager</source>
         <translation>Over MX Pakketbronbeheer</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="369"/>
+        <location filename="../mxrepomanager.cpp" line="372"/>
         <source>Version: </source>
         <translation>Versie:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programma om de standaard APT pakketbron te kiezen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="375"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="373"/>
+        <location filename="../mxrepomanager.cpp" line="376"/>
         <source>Cancel</source>
         <translation>Cancel</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="374"/>
-        <location filename="../mxrepomanager.cpp" line="376"/>
+        <location filename="../mxrepomanager.cpp" line="377"/>
+        <location filename="../mxrepomanager.cpp" line="379"/>
         <source>License</source>
         <translation>Licentie</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="449"/>
+        <location filename="../mxrepomanager.cpp" line="452"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Selecteer de APT pakketbron en bronnen die u wilt gebruiken:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="480"/>
+        <location filename="../mxrepomanager.cpp" line="483"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="491"/>
-        <location filename="../mxrepomanager.cpp" line="506"/>
+        <location filename="../mxrepomanager.cpp" line="494"/>
+        <location filename="../mxrepomanager.cpp" line="509"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>

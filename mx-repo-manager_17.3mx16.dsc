@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, debhelper (>= 7.0.50~)
 Package-List:
  mx-repo-manager deb admin optional arch=any
 Checksums-Sha1:
- d7140e2a00d2ec363c01f9f8117fb21aaa5d9cb7 38560 mx-repo-manager_17.3mx16.tar.xz
+ cdefff74638cd69ac1ca30cfad2d0b4073de4eaa 38584 mx-repo-manager_17.3mx16.tar.xz
 Checksums-Sha256:
- 691e32609530bb819ea1b60b376edbfd30817ee4ede1b3806d3b5f6eb46dc532 38560 mx-repo-manager_17.3mx16.tar.xz
+ 85f72312039cfa4ec8785a56c6b5aa71185ab1f0e1b1fcbef6d922d7c7c256b3 38584 mx-repo-manager_17.3mx16.tar.xz
 Files:
- 44ce9f9eb26c9dcc51f2a3b2117c6bb4 38560 mx-repo-manager_17.3mx16.tar.xz
+ f0c80d8769024e82d35bc89ae027d64a 38584 mx-repo-manager_17.3mx16.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJY1YNZAAoJEHCTjHgGee6YISsH/1h/eACuHCZVXLEM6MN3tafS
-Rx9bVwK7jPk92XKUeJjXWsYbvqsdo0G2VUK+AUf/aK5An7Q4A5YQ438PlCOTSTrj
-6zBc2dcYP+C3D6miMfearps2DMLC42c33Ja0fx3ZwOezBjZybflMJyhfRCEgbLgD
-OwJjzYF4pyS4Jc0MIUApyTKfH8syYEg8bgU7qspAZlcNuMZb3Lw8/irQEh84SLBo
-03YXMPUeHLhPZ5uQ/sEMDNxp+MdCcKyolHdeXX2YqbVsx8BETBkjM1QVroP8TnCu
-Txjj/1eYZDHgWbREjx/ciSih2+XECThHncylEcr0uC6QzNYyB8K1FIFcIw7DClk=
-=iIgI
+iQEcBAEBAgAGBQJY1YWnAAoJEHCTjHgGee6YRyIH/1AhwSs7hFZc0Wfq13Gnbrhc
+F9e1OWuaaS4xSbVh/qJ43xeYQLEGTShwPyIuUBlM/pvF0S47iHJEZ7uDPWfqG+jW
+afnecii+fu396Pg4ANUIwjznBvqSWRn6aoX+p8cxbB9ODMG1O4xaUP8cLOjYjypU
+68q3erqaQDgb7O/DXZ+lR2TAnM22C7yDPTT4RKPw+Rgpg4ViwsA1sYTvmKiSj97X
+VNqJTOJDqmcn+EIibBNjm2toVsQZjIlrpjCbHIDG8nq71Wetxo5/57KSTrIHGSNu
+FfnP85FOtjDXZWBH8i55Lt9yaF91MNeAbVR4jkOpuljxmGKD2TgtiWZ96iVVxwM=
+=8w0a
 -----END PGP SIGNATURE-----
