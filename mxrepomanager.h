@@ -70,10 +70,10 @@ public:
     QFileInfoList listAptFiles();
 
     QString getCurrentRepo();
+    QString getDebianVersion();
     QString getVersion(const QString &name);
     QStringList readMXRepos();
     QStringList loadAptFile(const QString &file);
-
 
 private slots:
     void on_buttonOK_clicked();

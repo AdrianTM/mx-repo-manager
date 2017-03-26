@@ -151,6 +151,11 @@ QString mxrepomanager::getCurrentRepo()
     return runCmd("grep -m1 '^deb.*/repo/ mx' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
 }
 
+QString mxrepomanager::getDebianVersion()
+{
+    return runCmd("cat /etc/debian_version | cut -f1 -d'.'").str;
+}
+
 // display available repos
 void mxrepomanager::displayMXRepos(const QStringList &repos)
 {
@@ -475,7 +480,16 @@ void mxrepomanager::on_pushFastestDebian_clicked()
 
     progress->show();
     QString tmpfile = runCmd("mktemp -d /tmp/mx-repo-manager-XXXXXXXX").str + "/sources.list";
-    Output out = runCmd("netselect-apt jessie -o " + tmpfile);
+
+    QString ver_num = getDebianVersion();
+    QString ver_name;
+    if (ver_num == "8") {
+        ver_name = "jessie";
+    } else if (ver_name == "9") {
+        ver_name = "stretch";
+    }
+
+    Output out = runCmd("netselect-apt " + ver_name + " -o " + tmpfile);
     progress->hide();
 
     if (out.exit_code != 0) {
