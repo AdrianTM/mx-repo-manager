@@ -14,15 +14,15 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="57"/>
-        <location filename="../mxrepomanager.cpp" line="372"/>
-        <location filename="../mxrepomanager.cpp" line="379"/>
-        <location filename="../mxrepomanager.cpp" line="388"/>
+        <location filename="../mxrepomanager.cpp" line="377"/>
+        <location filename="../mxrepomanager.cpp" line="384"/>
+        <location filename="../mxrepomanager.cpp" line="393"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="450"/>
+        <location filename="../mxrepomanager.cpp" line="455"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>
 Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
@@ -111,18 +111,18 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation type="vanished">Auswählen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="180"/>
+        <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Lists</source>
         <translation>Listen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="180"/>
+        <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Quellen (angehaktes Kästchen gleicht aktiviert)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="322"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
         <source>Success</source>
         <translation>Erfolg</translation>
     </message>
@@ -133,67 +133,67 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="323"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ihre neue Auswahl wird wirksam wenn die Quellen nächstes Mal aktualisiert werden.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="325"/>
-        <location filename="../mxrepomanager.cpp" line="482"/>
-        <location filename="../mxrepomanager.cpp" line="493"/>
-        <location filename="../mxrepomanager.cpp" line="508"/>
+        <location filename="../mxrepomanager.cpp" line="330"/>
+        <location filename="../mxrepomanager.cpp" line="496"/>
+        <location filename="../mxrepomanager.cpp" line="507"/>
+        <location filename="../mxrepomanager.cpp" line="522"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="326"/>
+        <location filename="../mxrepomanager.cpp" line="331"/>
         <source>Could not change the repo.</source>
         <translation>Unmöglich, das Repository zu ändern</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="371"/>
+        <location filename="../mxrepomanager.cpp" line="376"/>
         <source>About MX Repo Manager</source>
         <translation>Über MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="377"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="373"/>
+        <location filename="../mxrepomanager.cpp" line="378"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programm, um das Standard-Repository für APT zu wählen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="375"/>
+        <location filename="../mxrepomanager.cpp" line="380"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="376"/>
+        <location filename="../mxrepomanager.cpp" line="381"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="377"/>
-        <location filename="../mxrepomanager.cpp" line="379"/>
+        <location filename="../mxrepomanager.cpp" line="382"/>
+        <location filename="../mxrepomanager.cpp" line="384"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="452"/>
+        <location filename="../mxrepomanager.cpp" line="457"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Wählen Sie das APT-Repository und die Quellen, die Sie verwenden möchten:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="483"/>
+        <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="494"/>
-        <location filename="../mxrepomanager.cpp" line="509"/>
+        <location filename="../mxrepomanager.cpp" line="508"/>
+        <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
