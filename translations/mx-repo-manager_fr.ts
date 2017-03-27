@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -27,28 +25,24 @@
         <translation>Sélectionnez le dépôt APT que vous souhaitez utiliser:</translation>
     </message>
     <message>
-        <source>Default repo</source>
-        <translation type="vanished">Dépôt par défaut</translation>
-    </message>
-    <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Dépots MX</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner le dépôt MX le plus rapide</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Dépôts Debian</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Sélectionner le dépôt Debian le plus rapide</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="195"/>
@@ -103,11 +97,24 @@
     <message>
         <location filename="../mxrepomanager.ui" line="363"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Appliquer</translation>
     </message>
     <message>
-        <source>Select</source>
-        <translation type="vanished">Sélectionner</translation>
+        <location filename="../mxrepomanager.cpp" line="49"/>
+        <source>Please wait...</source>
+        <translation>Veuillez patienter...</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="118"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
+        <source>Success</source>
+        <translation>Succès</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="119"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
+        <source>Your new selection will take effect the next time sources are updated.</source>
+        <translation>Votre nouvelle sélection prendra effet la prochaine fois que les sources seront mises à jour.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="185"/>
@@ -118,23 +125,6 @@
         <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Sources (case cochée si déjà activée)</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="327"/>
-        <source>Success</source>
-        <translation>Succès</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="49"/>
-        <source>Please wait...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="328"/>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Votre nouvelle sélection prendra effet la prochaine fois que les sources seront mises à jour.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="330"/>
@@ -188,13 +178,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>netselect-apt n&apos;a pas pu détecter le dépôt le plus rapide.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="508"/>
         <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible de déterminer le dépôt le plus rapide.</translation>
     </message>
 </context>
 </TS>

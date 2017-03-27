@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -18,7 +16,7 @@
         <location filename="../mxrepomanager.cpp" line="384"/>
         <location filename="../mxrepomanager.cpp" line="393"/>
         <source>MX Repo Manager</source>
-        <translation>MX Manejador de Repositorios</translation>
+        <translation>MX Gestionar repos</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
@@ -27,28 +25,24 @@
         <translation>Seleccione el repositorio APT que desea usar:</translation>
     </message>
     <message>
-        <source>Default repo</source>
-        <translation type="vanished">Repositorio por defecto</translation>
-    </message>
-    <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Repos</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar el repo MX más veloz </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation>repos Debian</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleccionar el repo Debian más veloz</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="195"/>
@@ -103,11 +97,24 @@
     <message>
         <location filename="../mxrepomanager.ui" line="363"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Aplicar</translation>
     </message>
     <message>
-        <source>Select</source>
-        <translation type="vanished">Seleccione</translation>
+        <location filename="../mxrepomanager.cpp" line="49"/>
+        <source>Please wait...</source>
+        <translation>Por favor, espere...</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="118"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
+        <source>Success</source>
+        <translation>Exito</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="119"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
+        <source>Your new selection will take effect the next time sources are updated.</source>
+        <translation>Su nueva selección será efectiva cuando se actualicen las fuentes de los repositorios.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="185"/>
@@ -118,23 +125,6 @@
         <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Código fuente (el corregido esta activado)</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="327"/>
-        <source>Success</source>
-        <translation>Exito</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="49"/>
-        <source>Please wait...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="328"/>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Su nueva selección será efectiva cuando se actualicen las fuentes de los repositorios.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="330"/>
@@ -188,13 +178,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>netselect-apt no pudo detectar el repo más veloz</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="508"/>
         <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>No pudo detectar el repo más veloz</translation>
     </message>
 </context>
 </TS>

@@ -36,12 +36,14 @@ HEADERS  += mxrepomanager.h
 FORMS    += mxrepomanager.ui
 
 TRANSLATIONS += translations/mx-repo-manager_ca.ts \
+                translations/mx-repo-manager_cs.ts \
                 translations/mx-repo-manager_de.ts \
                 translations/mx-repo-manager_el.ts \
                 translations/mx-repo-manager_es.ts \
                 translations/mx-repo-manager_fr.ts \
                 translations/mx-repo-manager_it.ts \
                 translations/mx-repo-manager_ja.ts \
+                translations/mx-repo-manager_lt.ts \
                 translations/mx-repo-manager_nl.ts \
                 translations/mx-repo-manager_pl.ts \
                 translations/mx-repo-manager_pt.ts \
