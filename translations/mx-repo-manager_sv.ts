@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -27,28 +25,24 @@
         <translation>Välj det APT förråd du vill använda:</translation>
     </message>
     <message>
-        <source>Default repo</source>
-        <translation type="vanished">Standardförråd</translation>
-    </message>
-    <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>MX förråd</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj snabbaste MX förråd för mig</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Debian förråd</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj snabbaste Debian förråd för mig</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="195"/>
@@ -103,11 +97,24 @@
     <message>
         <location filename="../mxrepomanager.ui" line="363"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Genomför</translation>
     </message>
     <message>
-        <source>Select</source>
-        <translation type="vanished">Välj</translation>
+        <location filename="../mxrepomanager.cpp" line="49"/>
+        <source>Please wait...</source>
+        <translation>Var vänlig vänta...</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="118"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
+        <source>Success</source>
+        <translation>Det lyckades</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="119"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
+        <source>Your new selection will take effect the next time sources are updated.</source>
+        <translation>Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="185"/>
@@ -118,23 +125,6 @@
         <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Förråd (markerade förråd är aktiva)</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="327"/>
-        <source>Success</source>
-        <translation>Det lyckades</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="49"/>
-        <source>Please wait...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="328"/>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="330"/>
@@ -188,13 +178,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>netselect-apt kunde inte hitta snabbaste förrådet.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="508"/>
         <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte hitta snabbaste förrådet.</translation>
     </message>
 </context>
 </TS>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -27,28 +25,25 @@
         <translation>Επιλέξτε την αποθήκη του APT που θέλετε να χρησιμοποιήσετε.</translation>
     </message>
     <message>
-        <source>Default repo</source>
-        <translation type="vanished">repo προεπιλογής</translation>
-    </message>
-    <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>MX repos</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε την ταχύτερη αποθήκη του ΜΧ για μένα</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Debian repos</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε την ταχύτερη αποθήκη του Debian για μένα
+</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="195"/>
@@ -103,11 +98,24 @@
     <message>
         <location filename="../mxrepomanager.ui" line="363"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Εφαρμογή</translation>
     </message>
     <message>
-        <source>Select</source>
-        <translation type="vanished">Επιλέξτε</translation>
+        <location filename="../mxrepomanager.cpp" line="49"/>
+        <source>Please wait...</source>
+        <translation>Παρακαλώ περιμένετε...</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="118"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
+        <source>Success</source>
+        <translation>Επιτυχία!</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="119"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
+        <source>Your new selection will take effect the next time sources are updated.</source>
+        <translation>Η νέα επιλογή σας θα τεθεί σε ισχύ την επόμενη φορά που ενημερώνονται οι πηγές.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="185"/>
@@ -118,23 +126,6 @@
         <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Πηγές (ενεργοποιημένες ελεγχόμενες πηγές)</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="327"/>
-        <source>Success</source>
-        <translation>Επιτυχία!</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="49"/>
-        <source>Please wait...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="328"/>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Η νέα επιλογή σας θα τεθεί σε ισχύ την επόμενη φορά που ενημερώνονται οι πηγές.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="330"/>
@@ -188,13 +179,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το netselect-apt δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="508"/>
         <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
 </context>
 </TS>

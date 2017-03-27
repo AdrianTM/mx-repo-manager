@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>このプログラムは root で実行する必要があります。</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -18,47 +16,43 @@
         <location filename="../mxrepomanager.cpp" line="384"/>
         <location filename="../mxrepomanager.cpp" line="393"/>
         <source>MX Repo Manager</source>
-        <translation>MX リボジトリマネージャー</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
         <location filename="../mxrepomanager.cpp" line="455"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>使用する APT リポジトリを選択して下さい:</translation>
-    </message>
-    <message>
-        <source>Default repo</source>
-        <translation type="vanished">デフォルトリポジトリ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="195"/>
         <source>Individual sources</source>
-        <translation>個々のソース</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="256"/>
         <source>Display help </source>
-        <translation>ヘルプの表示</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="259"/>
@@ -78,7 +72,7 @@
     <message>
         <location filename="../mxrepomanager.ui" line="314"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="321"/>
@@ -88,7 +82,7 @@
     <message>
         <location filename="../mxrepomanager.ui" line="337"/>
         <source>Quit application</source>
-        <translation>アプリケーションの終了</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="340"/>
@@ -103,11 +97,24 @@
     <message>
         <location filename="../mxrepomanager.ui" line="363"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>適用</translation>
     </message>
     <message>
-        <source>Select</source>
-        <translation type="vanished">Select</translation>
+        <location filename="../mxrepomanager.cpp" line="49"/>
+        <source>Please wait...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="118"/>
+        <location filename="../mxrepomanager.cpp" line="327"/>
+        <source>Success</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="119"/>
+        <location filename="../mxrepomanager.cpp" line="328"/>
+        <source>Your new selection will take effect the next time sources are updated.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="185"/>
@@ -117,24 +124,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="185"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>ソース (チェックが入ったソースが有効)</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="327"/>
-        <source>Success</source>
-        <translation>完了</translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="49"/>
-        <source>Please wait...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="328"/>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>新たな選択はソースが更新された後に反映されます。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="330"/>
@@ -147,22 +137,22 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="331"/>
         <source>Could not change the repo.</source>
-        <translation>リボジトリを変更できませんでした。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="376"/>
         <source>About MX Repo Manager</source>
-        <translation>MX レポジトリマネージャーについて</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="377"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="378"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>デフォルト APT リポジトリを選択するプログラム</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="380"/>
@@ -183,18 +173,18 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="457"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>必要なAPTリポジトリとソースを選択して下さい:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="508"/>
         <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
