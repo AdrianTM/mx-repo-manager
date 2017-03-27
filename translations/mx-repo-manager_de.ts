@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="de">
 <context>
     <name>QApplication</name>
     <message>
@@ -28,22 +30,22 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="195"/>
@@ -103,7 +105,7 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="49"/>
         <source>Please wait...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="118"/>
@@ -179,13 +181,13 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="497"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="508"/>
         <location filename="../mxrepomanager.cpp" line="523"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
