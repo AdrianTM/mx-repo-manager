@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 30 Mar 2017 09:34:20 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 17.3mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Steven Pusser (Stevo) <maintainer@mepiscommunity.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (17.3mx16+1) mx; urgency=medium
+ .
+   * save .list backups in a separate folder
+Checksums-Sha1:
+ 92d687d6c945778c9dfa5b1c9aae6c3ac18f6220 1181 mx-repo-manager_17.3mx16+1.dsc
+ cda1813267ac5e9fdd175d8fbb59237c74146ced 40068 mx-repo-manager_17.3mx16+1.tar.xz
+ b9df1f6836d2f0ddd8c21d02665ff6b2dc44d23e 58648 mx-repo-manager_17.3mx16+1_amd64.deb
+Checksums-Sha256:
+ 766edb592f5e71b9f053fa7e73dae81909208360d3c4842c57f1fb2620eb2b3c 1181 mx-repo-manager_17.3mx16+1.dsc
+ 917d6a540b7ab6ab94c625fe048174e87bda112bbe5308fbe7c37cab83e7310f 40068 mx-repo-manager_17.3mx16+1.tar.xz
+ f3e9439eb5595e8464e4d721ce3aa33ec052dc9375117b4b7c13bd56cbc19a0a 58648 mx-repo-manager_17.3mx16+1_amd64.deb
+Files:
+ 6007473ace2a33ed91830c1815ff7543 1181 admin optional mx-repo-manager_17.3mx16+1.dsc
+ a3b9fa0078671b68c5e9ffb6ba4dde65 40068 admin optional mx-repo-manager_17.3mx16+1.tar.xz
+ 0409211670020e185f0d2186e38d2c5a 58648 admin optional mx-repo-manager_17.3mx16+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJY3QmKAAoJEHCTjHgGee6YC2UH/Ah50e0vWchxBsLfNP3MHD3T
+3u8ZewIRIQgTzWQxPNjCsOoGYexRB4CzBu6u6eZfC2Okpk6g9Z9jGBvW7K+D6csM
+6pzsm45ei1wE3F9zZmp0L7RIrFivTXgCcOcW0dt26cHHGVkymf9nEU6pmHUzKZ4Z
+Y0Lq/QT+ocZYuzJUu3OCUl4oc8IRIH56dgcx26787JTGb1wZzsgj5I1tSo9lRwLD
+jQS//1pIPho0bsrdeWiAQBs7+6zeEEwXxHKHkTtIUB1CRczejYXh3Q6XBWgUjNSe
+MFs6oTmBAy3Wf+yEKmsNTTRzNhE9dt4sS8Avr9dkSAm4KnFwLDhnYjCVj1O9ZoU=
+=ffiN
+-----END PGP SIGNATURE-----
