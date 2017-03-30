@@ -14,15 +14,15 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="57"/>
-        <location filename="../mxrepomanager.cpp" line="377"/>
-        <location filename="../mxrepomanager.cpp" line="384"/>
-        <location filename="../mxrepomanager.cpp" line="393"/>
+        <location filename="../mxrepomanager.cpp" line="385"/>
+        <location filename="../mxrepomanager.cpp" line="392"/>
+        <location filename="../mxrepomanager.cpp" line="401"/>
         <source>MX Repo Manager</source>
         <translation>MX Менеджер репозиториев</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="455"/>
+        <location filename="../mxrepomanager.cpp" line="463"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Выберите APT репозиторий, который Вы хотите использовать:</translation>
     </message>
@@ -107,84 +107,84 @@
         <translation>Пожалуйста, ждите...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="118"/>
-        <location filename="../mxrepomanager.cpp" line="327"/>
+        <location filename="../mxrepomanager.cpp" line="126"/>
+        <location filename="../mxrepomanager.cpp" line="335"/>
         <source>Success</source>
         <translation>Успешно</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="119"/>
-        <location filename="../mxrepomanager.cpp" line="328"/>
+        <location filename="../mxrepomanager.cpp" line="127"/>
+        <location filename="../mxrepomanager.cpp" line="336"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ваш новый выбор вступит в силу при следующем обновлении.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="185"/>
+        <location filename="../mxrepomanager.cpp" line="193"/>
         <source>Lists</source>
         <translation>Списки</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="185"/>
+        <location filename="../mxrepomanager.cpp" line="193"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Источники (отмеченные источники включены)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="330"/>
-        <location filename="../mxrepomanager.cpp" line="496"/>
-        <location filename="../mxrepomanager.cpp" line="507"/>
-        <location filename="../mxrepomanager.cpp" line="522"/>
+        <location filename="../mxrepomanager.cpp" line="338"/>
+        <location filename="../mxrepomanager.cpp" line="504"/>
+        <location filename="../mxrepomanager.cpp" line="515"/>
+        <location filename="../mxrepomanager.cpp" line="530"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="331"/>
+        <location filename="../mxrepomanager.cpp" line="339"/>
         <source>Could not change the repo.</source>
         <translation>Не удалось изменить репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="376"/>
+        <location filename="../mxrepomanager.cpp" line="384"/>
         <source>About MX Repo Manager</source>
         <translation>Об  MX Менеджере репозиториев</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="377"/>
+        <location filename="../mxrepomanager.cpp" line="385"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="378"/>
+        <location filename="../mxrepomanager.cpp" line="386"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Программа для выбора APT репозитория по умолчанию</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="380"/>
+        <location filename="../mxrepomanager.cpp" line="388"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="381"/>
+        <location filename="../mxrepomanager.cpp" line="389"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="382"/>
-        <location filename="../mxrepomanager.cpp" line="384"/>
+        <location filename="../mxrepomanager.cpp" line="390"/>
+        <location filename="../mxrepomanager.cpp" line="392"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="457"/>
+        <location filename="../mxrepomanager.cpp" line="465"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="497"/>
+        <location filename="../mxrepomanager.cpp" line="505"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="508"/>
-        <location filename="../mxrepomanager.cpp" line="523"/>
+        <location filename="../mxrepomanager.cpp" line="516"/>
+        <location filename="../mxrepomanager.cpp" line="531"/>
         <source>Could not detect fastest repo.</source>
         <translation>Не удалось определить самый быстрый репозиторий.</translation>
     </message>

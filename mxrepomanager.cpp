@@ -106,9 +106,17 @@ void mxrepomanager::replaceDebianRepos(const QString &url)
 
     // Debian list files that are present by default in MX
     files << "/etc/apt/sources.list.d/debian.list" << "/etc/apt/sources.list.d/debian-stable-updates.list";
+
+    // make backup folder
+    if (!QDir("/etc/apt/sources.list.d/backups").exists()) {
+        QDir().mkdir("/etc/apt/sources.list.d/backups");
+    }
+
     foreach(QString file, files) {
+        QFileInfo fileinfo(file);
+
         // backup file
-        cmd = "cp " + file + " " + file + ".$(date +%s)";
+        cmd = "cp " + file + " /etc/apt/sources.list.d/backups/" + fileinfo.fileName() + ".$(date +%s)";
         system(cmd.toUtf8());
         cmd = "sed -i 's;deb\\s.*/debian/;deb " + url + ";' " + file ; // replace deb lines in file
         system(cmd.toUtf8());
