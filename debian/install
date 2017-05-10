@@ -2,6 +2,5 @@ mx-repo-manager 		usr/bin
 mx-repo-manager.desktop	 	usr/share/applications
 translations/*.qm 		usr/share/mx-repo-manager/locale
 mx-repo-manager.png		usr/share/pixmaps
-icons/*                 	usr/share/mx-repo-manager/icons
 license.html            	usr/share/doc/mx-repo-manager
 repos.txt			usr/share/mx-repo-manager

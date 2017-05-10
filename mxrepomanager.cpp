@@ -39,6 +39,15 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     ui(new Ui::mxrepomanager)
 {
     ui->setupUi(this);
+    if (ui->buttonOk->icon().isNull()) {
+        ui->buttonOk->setIcon(QIcon(":/icons/dialog-ok.svg"));
+    }
+    if (ui->pushFastestMX->icon().isNull()) {
+        ui->pushFastestMX->setIcon(QIcon(":/icons/cursor-arrow.svg"));
+    }
+    if (ui->pushFastestDebian->icon().isNull()) {
+        ui->pushFastestDebian->setIcon(QIcon(":/icons/cursor-arrow.svg"));
+    }
 
     timer = new QTimer(this);
     progress = new QProgressDialog(this);
@@ -51,7 +60,7 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     progress->setBar(bar);
     bar->setTextVisible(false);
 
-    ui->buttonOK->setDisabled(true);
+    ui->buttonOk->setDisabled(true);
 
     version = getVersion("mx-repo-manager");
     this->setWindowTitle(tr("MX Repo Manager"));
@@ -178,7 +187,7 @@ void mxrepomanager::displayMXRepos(const QStringList &repos)
         buildFlags();
         button->setIcon(flags.value(country));
         ui->listWidget->setItemWidget(item, button);
-        connect(button, SIGNAL(clicked(bool)),ui->buttonOK, SLOT(setEnabled(bool)));
+        connect(button, SIGNAL(clicked(bool)),ui->buttonOk, SLOT(setEnabled(bool)));
     }
 }
 
@@ -358,7 +367,7 @@ QFileInfoList mxrepomanager::listAptFiles()
 //// slots ////
 
 // Submit button clicked
-void mxrepomanager::on_buttonOK_clicked()
+void mxrepomanager::on_buttonOk_clicked()
 {
     if (queued_changes.size() > 0) {
         QStringList changes;
@@ -405,7 +414,7 @@ void mxrepomanager::on_buttonHelp_clicked()
 
 void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
 {
-    ui->buttonOK->setEnabled(true);
+    ui->buttonOk->setEnabled(true);
     ui->treeWidget->blockSignals(true);
     QFile file;
     QString new_text;
@@ -432,7 +441,7 @@ void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column
 
 void mxrepomanager::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
 {
-    ui->buttonOK->setEnabled(true);
+    ui->buttonOk->setEnabled(true);
     ui->treeWidgetDeb->blockSignals(true);
     QFile file;
     QString new_text;
@@ -469,16 +478,16 @@ void mxrepomanager::on_tabWidget_currentChanged()
 // build the list of flags for the country name
 void mxrepomanager::buildFlags()
 {
-    flags.insert("Crete", QIcon("/usr/share/mx-repo-manager/icons/gr.png"));
-    flags.insert("Ecuador", QIcon("/usr/share/mx-repo-manager/icons/ec.png"));
-    flags.insert("France", QIcon("/usr/share/mx-repo-manager/icons/fr.png"));
-    flags.insert("Germany", QIcon("/usr/share/mx-repo-manager/icons/de.png"));
-    flags.insert("New Zealand", QIcon("/usr/share/mx-repo-manager/icons/nz.png"));
-    flags.insert("Sweden", QIcon("/usr/share/mx-repo-manager/icons/se.png"));
-    flags.insert("The Netherlands", QIcon("/usr/share/mx-repo-manager/icons/nl.png"));
-    flags.insert("Taiwan", QIcon("/usr/share/mx-repo-manager/icons/tw.png"));
-    flags.insert("USA, Los Angeles", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
-    flags.insert("USA, Utah", QIcon("/usr/share/mx-repo-manager/icons/us.png"));
+    flags.insert("Crete", QIcon(":/icons/gr.png"));
+    flags.insert("Ecuador", QIcon(":/icons/ec.png"));
+    flags.insert("France", QIcon(":/icons/fr.png"));
+    flags.insert("Germany", QIcon(":/icons/de.png"));
+    flags.insert("New Zealand", QIcon(":/icons/nz.png"));
+    flags.insert("Sweden", QIcon(":/icons/se.png"));
+    flags.insert("The Netherlands", QIcon(":/icons/nl.png"));
+    flags.insert("Taiwan", QIcon(":/icons/tw.png"));
+    flags.insert("USA, Los Angeles", QIcon(":/icons/us.png"));
+    flags.insert("USA, Utah", QIcon(":/icons/us.png"));
 }
 
 // detect fastest Debian repo
@@ -525,7 +534,7 @@ void mxrepomanager::on_pushFastestMX_clicked()
     progress->hide();
     if (out.exit_code == 0 && out.str !="") {
         selectRepo(out.str);
-        on_buttonOK_clicked();
+        on_buttonOk_clicked();
     } else {
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not detect fastest repo."));

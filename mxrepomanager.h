@@ -76,7 +76,7 @@ public:
     QStringList loadAptFile(const QString &file);
 
 private slots:
-    void on_buttonOK_clicked();
+    void on_buttonOk_clicked();
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
     void on_treeWidget_itemChanged(QTreeWidgetItem * item, int column);
