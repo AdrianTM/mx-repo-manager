@@ -1,3 +1,9 @@
+mx-repo-manager (17.5mx16) mx; urgency=medium
+
+  * update icons
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 10 May 2017 14:18:16 -0400
+
 mx-repo-manager (17.3mx16+1) mx; urgency=medium
 
   * save .list backups in a separate folder

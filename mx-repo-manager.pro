@@ -52,4 +52,7 @@ TRANSLATIONS += translations/mx-repo-manager_ca.ts \
                 translations/mx-repo-manager_sv.ts \
                 translations/mx-repo-manager_tr.ts
 
+RESOURCES += \
+    images.qrc
+
 

@@ -1,6 +1,5 @@
 Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
-France - http://fr.mirror.mxlinux.de/packages
 Germany - http://de.mirror.mxlinux.de/packages
 New Zealand - http://mx.debian.nz
 Sweden - http://se.mirror.mxlinux.de/packages
