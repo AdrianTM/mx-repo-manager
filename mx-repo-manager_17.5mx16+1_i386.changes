@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 16 May 2017 19:36:17 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 17.5mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (17.5mx16+1) mx; urgency=medium
+ .
+   * removed German mirror
+Checksums-Sha1:
+ e7de05dd990a9c2a6413070200005b9d279e299a 57084 mx-repo-manager_17.5mx16+1_i386.deb
+Checksums-Sha256:
+ a89c36305fe44e36711ad509f6f04a9348d466fb900a47c26a48d5a731e98df5 57084 mx-repo-manager_17.5mx16+1_i386.deb
+Files:
+ 81bba5fc0613e5e03486e263433d9438 57084 admin optional mx-repo-manager_17.5mx16+1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZG41SAAoJEHCTjHgGee6Y1n4H/AjOaoEe9uGT9POXRiVuecHB
+sCtbTda6AVIBp9VmVGLRQwoRiGKRcc1ls7rcpdpAihrX5NzUrviLBw3d4Qrtx5yV
+G3d7x7nIMV8B2H+j2HTjf2xRxnMWkQ8XAGKcOnTSquBiwLt8wp1jrJvmCFE5edd/
+gXUWe4HZZDYiWg4EgvLUM48WXmd5cXDxVCdwSKam0JxZRlCIWzkCeA7zQ2BpeL17
+4lm622KcLZC1UnVp/yEknNuBYCIyXcElzYNDakK45HVW28jPhz/MDVDnwvGLdIqV
+w4fYy9rYCfYRFK9AwTGwoSX1EqQffVZ2r25ZHKoQiY74TXmyXNY+dZIYM1Cw2aQ=
+=DdUh
+-----END PGP SIGNATURE-----
