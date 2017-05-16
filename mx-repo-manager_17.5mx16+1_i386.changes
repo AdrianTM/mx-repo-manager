@@ -18,20 +18,20 @@ Changes:
  .
    * removed German mirror
 Checksums-Sha1:
- e7de05dd990a9c2a6413070200005b9d279e299a 57084 mx-repo-manager_17.5mx16+1_i386.deb
+ 6094492480d2274ed24290d8c7a2737ce428ce72 57116 mx-repo-manager_17.5mx16+1_i386.deb
 Checksums-Sha256:
- a89c36305fe44e36711ad509f6f04a9348d466fb900a47c26a48d5a731e98df5 57084 mx-repo-manager_17.5mx16+1_i386.deb
+ dfdd2c9013b63c8d876964e20b7acaa37f41fa2f4b27711c8961e4c17ebebf7e 57116 mx-repo-manager_17.5mx16+1_i386.deb
 Files:
- 81bba5fc0613e5e03486e263433d9438 57084 admin optional mx-repo-manager_17.5mx16+1_i386.deb
+ 5563921f6bcb772222a9c52d9611c1cf 57116 admin optional mx-repo-manager_17.5mx16+1_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJZG41SAAoJEHCTjHgGee6Y1n4H/AjOaoEe9uGT9POXRiVuecHB
-sCtbTda6AVIBp9VmVGLRQwoRiGKRcc1ls7rcpdpAihrX5NzUrviLBw3d4Qrtx5yV
-G3d7x7nIMV8B2H+j2HTjf2xRxnMWkQ8XAGKcOnTSquBiwLt8wp1jrJvmCFE5edd/
-gXUWe4HZZDYiWg4EgvLUM48WXmd5cXDxVCdwSKam0JxZRlCIWzkCeA7zQ2BpeL17
-4lm622KcLZC1UnVp/yEknNuBYCIyXcElzYNDakK45HVW28jPhz/MDVDnwvGLdIqV
-w4fYy9rYCfYRFK9AwTGwoSX1EqQffVZ2r25ZHKoQiY74TXmyXNY+dZIYM1Cw2aQ=
-=DdUh
+iQEcBAEBAgAGBQJZG44DAAoJEHCTjHgGee6Y/LoH+gOhxgFKY0xILRjEiTjwfJMf
+01Bwku9nzWVpb098YqcEUU2UV8A8hR7V0/jjTXKqoFajjqLnwcGJjU+sWZ4Fw2OG
+Fo0fLtvCAEQF9KNYSdtwgy2/lKLR0WKBdj+4EVmkSRouVtZkimuMjHFr8QHCzouo
+0f2/38wVTUMGjGSnSju3xhBBmVxFb08EVdKdrgvjcHKlKe/p/Nl9x/zG9agMlezA
+qlaCm8pjs2SMWPZW0EcRYxeLCTcX1cLZLMKPzOjpOks8R5U5WECvuLSU1buAgRYo
+3X8xw4aCVdZYnpWckUI5+7kyjmSUhxlLHYu+kggwMq0hXklR7zPyiXfReviEUJk=
+=C5ro
 -----END PGP SIGNATURE-----
