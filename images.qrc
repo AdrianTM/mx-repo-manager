@@ -13,5 +13,6 @@
         <file>icons/tw.png</file>
         <file>icons/us.png</file>
         <file>icons/cursor-arrow.svg</file>
+        <file>icons/it.png</file>
     </qresource>
 </RCC>

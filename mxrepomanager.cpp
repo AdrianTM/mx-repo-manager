@@ -482,6 +482,7 @@ void mxrepomanager::buildFlags()
     flags.insert("Ecuador", QIcon(":/icons/ec.png"));
     flags.insert("France", QIcon(":/icons/fr.png"));
     flags.insert("Germany", QIcon(":/icons/de.png"));
+    flags.insert("Italy", QIcon(":/icons/it.png"));
     flags.insert("New Zealand", QIcon(":/icons/nz.png"));
     flags.insert("Sweden", QIcon(":/icons/se.png"));
     flags.insert("The Netherlands", QIcon(":/icons/nl.png"));
