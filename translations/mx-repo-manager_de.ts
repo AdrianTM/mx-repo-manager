@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -30,22 +28,22 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>MX Repos</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle schnellstes MX Repo für mich</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="133"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Debian Repos</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="145"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle schnellstes Debian Repo für mich</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="193"/>
@@ -105,7 +103,7 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
         <source>Please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bitte warten...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
@@ -163,15 +161,15 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="399"/>
-        <source>Cancel</source>
-        <translation>Abbrechen</translation>
-    </message>
-    <message>
         <location filename="../mxrepomanager.cpp" line="398"/>
         <location filename="../mxrepomanager.cpp" line="401"/>
         <source>License</source>
         <translation>Lizenz</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="399"/>
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="474"/>
@@ -181,13 +179,13 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mxrepomanager.cpp" line="515"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>netselect-apt konnte das schnellste Repo nicht erkennen</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="526"/>
         <location filename="../mxrepomanager.cpp" line="541"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Konnte schnellstes Repo nicht erkennen.</translation>
     </message>
 </context>
 </TS>
