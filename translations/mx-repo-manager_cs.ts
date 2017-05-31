@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="cs">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
@@ -29,22 +27,22 @@
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Repozitáře MX</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat nejrychlejší repozitář MX</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="133"/>
         <source>Debian repos</source>
-        <translation type="unfinished"></translation>
+        <translation>Repozitáře Debianu</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="145"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>Vybrat nejrychlejší repozitář Debianu</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="193"/>
@@ -104,7 +102,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
         <source>Please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosím vyčkejte...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
@@ -162,15 +160,15 @@
         <translation>Vlastnická práva (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="399"/>
-        <source>Cancel</source>
-        <translation>Zrušit</translation>
-    </message>
-    <message>
         <location filename="../mxrepomanager.cpp" line="398"/>
         <location filename="../mxrepomanager.cpp" line="401"/>
         <source>License</source>
         <translation>Licence</translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="399"/>
+        <source>Cancel</source>
+        <translation>Zrušit</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="474"/>
@@ -180,13 +178,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="515"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Příkaz netselect-apt nemohl nalézt nejrychlejší repozitář.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="526"/>
         <location filename="../mxrepomanager.cpp" line="541"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nebylo možné nalézt nejrychlejší repozitář.</translation>
     </message>
 </context>
 </TS>

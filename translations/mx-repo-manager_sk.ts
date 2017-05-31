@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Devi eseguire questo programma come amministratore</translation>
+        <translation>Tento program musíte spustiť ako root užívateľ.</translation>
     </message>
 </context>
 <context>
@@ -22,42 +22,42 @@
         <location filename="../mxrepomanager.ui" line="32"/>
         <location filename="../mxrepomanager.cpp" line="472"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Scegli il Repository di APT da utilizzare</translation>
+        <translation>Vyberte APT repozitár, ktorý chcete používať: </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation>MX repos</translation>
+        <translation>Repozitáre MX</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation>Seleziona l&apos;MX-repo più veloce per me </translation>
+        <translation>Vybrať najrýchlejší repozitár MX</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="133"/>
         <source>Debian repos</source>
-        <translation>Debian repos</translation>
+        <translation>Repozitáre Debian </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="145"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>Seleziona il Debian-repo più veloce per me </translation>
+        <translation>Vybrať najrýchlejší repozitár Debian</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="193"/>
         <source>Individual sources</source>
-        <translation>Fonti individuali</translation>
+        <translation>Jednotlivé zdroje</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="254"/>
         <source>Display help </source>
-        <translation>Visualizza aiuto</translation>
+        <translation>Zobraziť nápovedu</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="257"/>
         <source>Help</source>
-        <translation>Aiuto</translation>
+        <translation>Pomoc</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="263"/>
@@ -67,12 +67,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="308"/>
         <source>About this application</source>
-        <translation>Informazioni riguardo questa applicazione</translation>
+        <translation>O tejto aplikácii</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="311"/>
         <source>About...</source>
-        <translation>Info...</translation>
+        <translation>O Programe</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="317"/>
@@ -82,12 +82,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="333"/>
         <source>Quit application</source>
-        <translation> Chiudi l&apos;applicazione</translation>
+        <translation>Zatvoriť aplikáciu</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="336"/>
         <source>Close</source>
-        <translation>Chiudi</translation>
+        <translation>Zatvoriť</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="342"/>
@@ -97,34 +97,34 @@
     <message>
         <location filename="../mxrepomanager.ui" line="358"/>
         <source>Apply</source>
-        <translation>Applica</translation>
+        <translation>Použiť</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
         <source>Please wait...</source>
-        <translation>Aspetta, per piacere...</translation>
+        <translation>Čakajte prosím...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
         <location filename="../mxrepomanager.cpp" line="344"/>
         <source>Success</source>
-        <translation>Successo</translation>
+        <translation>Úspech</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <location filename="../mxrepomanager.cpp" line="345"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>La tua selezione avrà effetto col prossimo aggiornamento delle sorgenti dei repository.</translation>
+        <translation>Zmeny sa prejavia pri najbližšej aktualizácií.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Lists</source>
-        <translation>Elenchi</translation>
+        <translation>Zoznamy</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>Fonti (le fonti vidimate sono abilitate)</translation>
+        <translation>Zdroje (zaškrtnuté zdroje sa používajú)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="347"/>
@@ -132,27 +132,27 @@
         <location filename="../mxrepomanager.cpp" line="525"/>
         <location filename="../mxrepomanager.cpp" line="540"/>
         <source>Error</source>
-        <translation>Errore</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="348"/>
         <source>Could not change the repo.</source>
-        <translation>Repository non modificabile</translation>
+        <translation>Repozitár na nepodarilo zmeniť.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="393"/>
         <source>About MX Repo Manager</source>
-        <translation>Informazioni su MX Repo Manager</translation>
+        <translation>O programe MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="394"/>
         <source>Version: </source>
-        <translation>Versione:</translation>
+        <translation>Verzia:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="395"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Programma per selezionare il Repository di APT predefinito</translation>
+        <translation>Program pre výber predvolených repozitárov.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="397"/>
@@ -163,28 +163,28 @@
         <location filename="../mxrepomanager.cpp" line="398"/>
         <location filename="../mxrepomanager.cpp" line="401"/>
         <source>License</source>
-        <translation>Licenza</translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="399"/>
         <source>Cancel</source>
-        <translation>Annulla</translation>
+        <translation>Zrušiť</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="474"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>Seleziona il repository di APT e le fonti che vuoi usare:</translation>
+        <translation>Vyberte APT repozitár a zdroje, ktoré chcete používať: </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="515"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>netselect-apt non riesce a rilevare il repo più veloce.</translation>
+        <translation>Príkaz netselect-apt nenašiel najrýchlejší repozitár.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="526"/>
         <location filename="../mxrepomanager.cpp" line="541"/>
         <source>Could not detect fastest repo.</source>
-        <translation>Non si riesce a rilevare il repo più veloce.</translation>
+        <translation>Najrýchlejší repozitár sa nenašiel.</translation>
     </message>
 </context>
 </TS>
