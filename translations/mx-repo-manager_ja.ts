@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ja">
 <context>
     <name>QApplication</name>
     <message>
@@ -27,22 +29,22 @@
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="133"/>
         <source>Debian repos</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="145"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="193"/>
@@ -102,7 +104,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
         <source>Please wait...</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
@@ -178,13 +180,13 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="515"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="526"/>
         <location filename="../mxrepomanager.cpp" line="541"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
