@@ -59,6 +59,7 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     progress->setAutoClose(false);
     progress->setBar(bar);
     bar->setTextVisible(false);
+    progress->reset();
 
     ui->buttonOk->setDisabled(true);
 
