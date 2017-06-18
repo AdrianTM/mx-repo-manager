@@ -325,6 +325,15 @@ void mxrepomanager::replaceRepos(const QString &url)
     QString cmd_mx;
     QString cmd_antix = "true";
     QString repo_line_antix;
+
+    QString ver_num = getDebianVersion();
+    QString ver_name;
+    if (ver_num == "8") {
+        ver_name = "jessie";
+    } else if (ver_name == "9") {
+        ver_name = "stretch";
+    }
+
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
     if (QFile("/etc/apt/sources.list.d/mx16.list").exists()) {
         mx_file += " /etc/apt/sources.list.d/mx16.list";       // add mx16.list to the list if it exists
@@ -336,11 +345,11 @@ void mxrepomanager::replaceRepos(const QString &url)
             QString("sed -i 's;deb.*/testrepo/ mx;%1;' %2").arg(test_line_mx).arg(mx_file);;
     // for antiX repos
     if (url == "http://mxrepo.com") {
-        repo_line_antix = "deb http://antix.daveserver.info/jessie jessie main";
+        repo_line_antix = "deb http://antix.daveserver.info/" + ver_name + " " + ver_name + " main";
     } else {
-        repo_line_antix = "deb " + url + "/antix/jessie/ jessie main";
+        repo_line_antix = "deb " + url + "/antix/" + ver_name + "/ " + ver_name + " main";
     }
-    cmd_antix = QString("sed -i 's;deb.*/jessie/\\? jessie main;%1;' %2").arg(repo_line_antix).arg(antix_file);
+    cmd_antix = QString("sed -i 's;deb.*/" + ver_name + "/\\? " + ver_name + " main;%1;' %2").arg(repo_line_antix).arg(antix_file);
     if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));

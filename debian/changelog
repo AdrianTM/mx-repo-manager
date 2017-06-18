@@ -1,3 +1,9 @@
+mx-repo-manager (17.6mx16+1) mx; urgency=medium
+
+  * small fix for Stretch
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 18 Jun 2017 11:18:56 -0400
+
 mx-repo-manager (17.6mx16) mx; urgency=medium
 
   * updated translations
