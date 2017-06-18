@@ -13,16 +13,16 @@
     <name>mxrepomanager</name>
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
-        <location filename="../mxrepomanager.cpp" line="66"/>
-        <location filename="../mxrepomanager.cpp" line="394"/>
-        <location filename="../mxrepomanager.cpp" line="401"/>
-        <location filename="../mxrepomanager.cpp" line="410"/>
+        <location filename="../mxrepomanager.cpp" line="67"/>
+        <location filename="../mxrepomanager.cpp" line="404"/>
+        <location filename="../mxrepomanager.cpp" line="411"/>
+        <location filename="../mxrepomanager.cpp" line="420"/>
         <source>MX Repo Manager</source>
         <translation>MX_Gestor de Repositórios</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="472"/>
+        <location filename="../mxrepomanager.cpp" line="482"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Seleccionar o repositório APT que pretende usar:</translation>
     </message>
@@ -107,84 +107,84 @@
         <translation>Aguardar...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="135"/>
-        <location filename="../mxrepomanager.cpp" line="344"/>
+        <location filename="../mxrepomanager.cpp" line="136"/>
+        <location filename="../mxrepomanager.cpp" line="354"/>
         <source>Success</source>
         <translation>Sucesso</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="345"/>
+        <location filename="../mxrepomanager.cpp" line="137"/>
+        <location filename="../mxrepomanager.cpp" line="355"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>A sua nova escolha terá efeito na próxima vez que as origens forem atualizadas.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="202"/>
+        <location filename="../mxrepomanager.cpp" line="203"/>
         <source>Lists</source>
         <translation>Listas</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="202"/>
+        <location filename="../mxrepomanager.cpp" line="203"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Origens (verifique que as origens estão activadas)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="347"/>
-        <location filename="../mxrepomanager.cpp" line="514"/>
-        <location filename="../mxrepomanager.cpp" line="525"/>
-        <location filename="../mxrepomanager.cpp" line="540"/>
+        <location filename="../mxrepomanager.cpp" line="357"/>
+        <location filename="../mxrepomanager.cpp" line="524"/>
+        <location filename="../mxrepomanager.cpp" line="535"/>
+        <location filename="../mxrepomanager.cpp" line="550"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="348"/>
+        <location filename="../mxrepomanager.cpp" line="358"/>
         <source>Could not change the repo.</source>
         <translation>Não foi possível alterar o repositório</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="393"/>
+        <location filename="../mxrepomanager.cpp" line="403"/>
         <source>About MX Repo Manager</source>
         <translation>Sobre o MX_Gestor de Repositórios</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="394"/>
+        <location filename="../mxrepomanager.cpp" line="404"/>
         <source>Version: </source>
         <translation>Versão:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="395"/>
+        <location filename="../mxrepomanager.cpp" line="405"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programa para escolher o repositório APT pré-definido</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="397"/>
+        <location filename="../mxrepomanager.cpp" line="407"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="399"/>
+        <location filename="../mxrepomanager.cpp" line="409"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="398"/>
-        <location filename="../mxrepomanager.cpp" line="401"/>
+        <location filename="../mxrepomanager.cpp" line="408"/>
+        <location filename="../mxrepomanager.cpp" line="411"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="474"/>
+        <location filename="../mxrepomanager.cpp" line="484"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Seleccione o repositório APT e as origens que quer usar:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="515"/>
+        <location filename="../mxrepomanager.cpp" line="525"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>O netselect-apt não consegue detectar o repositório mais rápido</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="526"/>
-        <location filename="../mxrepomanager.cpp" line="541"/>
+        <location filename="../mxrepomanager.cpp" line="536"/>
+        <location filename="../mxrepomanager.cpp" line="551"/>
         <source>Could not detect fastest repo.</source>
         <translation>Não foi possível detectar o repositório mais rápido</translation>
     </message>
