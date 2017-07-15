@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 15 Jul 2017 10:07:46 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 17.7mx16
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (17.7mx16) mx; urgency=medium
+ .
+   * added Sweden mirror
+Checksums-Sha1:
+ 9c90bd5e20c493a6ff9d020cc39745693cfc78d7 1147 mx-repo-manager_17.7mx16.dsc
+ ca62f8d3650fd4bdf0201fdf1d055deff0e19eb1 54380 mx-repo-manager_17.7mx16.tar.xz
+ d3fe57541fc8f1482f656a631a9ab2da5d87db1d 58628 mx-repo-manager_17.7mx16_amd64.deb
+Checksums-Sha256:
+ 5c3ee9c71f97fbbccc328cf1124c74ed8954b453e3e6a32cea783ed56f4fbab4 1147 mx-repo-manager_17.7mx16.dsc
+ 17dd71cfd5f66ecb7226b4d74600de6b5c548dc45ff3afa8ac01420a17338a5a 54380 mx-repo-manager_17.7mx16.tar.xz
+ 92560ecbeaec746a2e9e5b5f55ac21bcfc9983ac7eb36b5ecf73d2eafaa7ab82 58628 mx-repo-manager_17.7mx16_amd64.deb
+Files:
+ f22ee8ec69b465ab4d8aa5ae094cd8df 1147 admin optional mx-repo-manager_17.7mx16.dsc
+ abde6ae9df1d37eab248625ef70c8717 54380 admin optional mx-repo-manager_17.7mx16.tar.xz
+ 94e9147ba573168485fc522724fb243e 58628 admin optional mx-repo-manager_17.7mx16_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZaiIKAAoJEHCTjHgGee6YwwkIAK2p6hRtOpcgU/87vwK4kpzE
+oFC5qtJRglL4HZYXqNZ7f15TgPSfH3On7WyIfPCOpgYBjJ+SNtkDKYVgc3SV0e8v
+kNI82rLLMaYM0FOn0lZ0F8b61ylEi02QAd78Mhm8AwONbRoT+flW7wgD823vPgL8
+xX1vcp3DIlfHWbvSQw3aNA13DgsbNxem7XlBKZpVW/ShW4RkI8Xd4+gkGwaEysMO
+D+KZ5IAYImcEonejtwKsjQ37akmAJyfGOcPcvGbTCfFb/gjxlDzAkDStE5vkkAqZ
+8H0+ZrOZ/9rqQ9+awf602TGqu/t7vTjiFvoMAVG75RTkjd6pGCjTX/j1CzGnLe0=
+=XGot
+-----END PGP SIGNATURE-----
