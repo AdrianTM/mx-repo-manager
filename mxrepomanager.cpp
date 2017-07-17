@@ -323,9 +323,10 @@ void mxrepomanager::procDone(int)
 void mxrepomanager::replaceRepos(const QString &url)
 {
     QString cmd_mx;
-    QString cmd_antix = "true";
+    QString cmd_antix;
     QString repo_line_antix;
 
+    // get Debian version
     QString ver_num = getDebianVersion();
     QString ver_name;
     if (ver_num == "8") {
@@ -334,22 +335,28 @@ void mxrepomanager::replaceRepos(const QString &url)
         ver_name = "stretch";
     }
 
+    // mx source files to be edited (mx.list and mx16.list for MX15/16)
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
     if (QFile("/etc/apt/sources.list.d/mx16.list").exists()) {
         mx_file += " /etc/apt/sources.list.d/mx16.list";       // add mx16.list to the list if it exists
     }
-    QString antix_file = "/etc/apt/sources.list.d/antix.list";
-    QString repo_line_mx = "deb " + url + "/mx/repo/ mx";
-    QString test_line_mx = "deb " + url + "/mx/testrepo/ mx";
-    cmd_mx = QString("sed -i 's;deb.*/repo/ mx;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
-            QString("sed -i 's;deb.*/testrepo/ mx;%1;' %2").arg(test_line_mx).arg(mx_file);;
+
+    // for MX repos
+    QString repo_line_mx = "deb " + url + "/mx/repo/ ";
+    QString test_line_mx = "deb " + url + "/mx/testrepo/ ";
+    cmd_mx = QString("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
+            QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx).arg(mx_file);;
+
     // for antiX repos
+    QString antix_file = "/etc/apt/sources.list.d/antix.list";
     if (url == "http://mxrepo.com") {
         repo_line_antix = "deb http://antix.daveserver.info/" + ver_name + " " + ver_name + " main";
     } else {
         repo_line_antix = "deb " + url + "/antix/" + ver_name + "/ " + ver_name + " main";
     }
     cmd_antix = QString("sed -i 's;deb.*/" + ver_name + "/\\? " + ver_name + " main;%1;' %2").arg(repo_line_antix).arg(antix_file);
+
+    // check if both replacement were successful
     if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));
@@ -357,7 +364,6 @@ void mxrepomanager::replaceRepos(const QString &url)
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not change the repo."));
     }
- //   qApp->quit();
 }
 
 QFileInfoList mxrepomanager::listAptFiles()
@@ -528,6 +534,7 @@ void mxrepomanager::on_pushFastestDebian_clicked()
     out = runCmd("set -o pipefail; grep -m1 '^deb ' " + tmpfile + "| cut -d' ' -f2");
     repo = out.str;
     this->blockSignals(false);
+
     if (out.exit_code == 0 && runCmd("wget --spider " + repo).exit_code == 0) {
         replaceDebianRepos(repo);
         refresh();
