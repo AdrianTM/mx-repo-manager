@@ -166,7 +166,7 @@ QStringList mxrepomanager::readMXRepos()
 // List current repo
 QString mxrepomanager::getCurrentRepo()
 {
-    return runCmd("grep -m1 '^deb.*/repo/ mx' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
+    return runCmd("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
 }
 
 QString mxrepomanager::getDebianVersion()
@@ -331,7 +331,7 @@ void mxrepomanager::replaceRepos(const QString &url)
     QString ver_name;
     if (ver_num == "8") {
         ver_name = "jessie";
-    } else if (ver_name == "9") {
+    } else if (ver_num == "9") {
         ver_name = "stretch";
     }
 
@@ -345,7 +345,7 @@ void mxrepomanager::replaceRepos(const QString &url)
     QString repo_line_mx = "deb " + url + "/mx/repo/ ";
     QString test_line_mx = "deb " + url + "/mx/testrepo/ ";
     cmd_mx = QString("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
-            QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx).arg(mx_file);;
+            QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx).arg(mx_file);
 
     // for antiX repos
     QString antix_file = "/etc/apt/sources.list.d/antix.list";
@@ -519,7 +519,7 @@ void mxrepomanager::on_pushFastestDebian_clicked()
     QString ver_name;
     if (ver_num == "8") {
         ver_name = "jessie";
-    } else if (ver_name == "9") {
+    } else if (ver_num == "9") {
         ver_name = "stretch";
     }
 
