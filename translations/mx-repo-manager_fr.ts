@@ -108,13 +108,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="360"/>
+        <location filename="../mxrepomanager.cpp" line="361"/>
         <source>Success</source>
         <translation>Succès</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="361"/>
+        <location filename="../mxrepomanager.cpp" line="362"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Votre nouvelle sélection prendra effet la prochaine fois que les sources seront mises à jour.</translation>
     </message>
@@ -129,15 +129,15 @@
         <translation>Sources (case cochée si déjà activée)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="363"/>
+        <location filename="../mxrepomanager.cpp" line="364"/>
         <location filename="../mxrepomanager.cpp" line="530"/>
-        <location filename="../mxrepomanager.cpp" line="541"/>
-        <location filename="../mxrepomanager.cpp" line="556"/>
+        <location filename="../mxrepomanager.cpp" line="542"/>
+        <location filename="../mxrepomanager.cpp" line="557"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="364"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Could not change the repo.</source>
         <translation>Impossible de modifier le dépôt.</translation>
     </message>
@@ -183,8 +183,8 @@
         <translation>netselect-apt n&apos;a pas pu détecter le dépôt le plus rapide.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="542"/>
-        <location filename="../mxrepomanager.cpp" line="557"/>
+        <location filename="../mxrepomanager.cpp" line="543"/>
+        <location filename="../mxrepomanager.cpp" line="558"/>
         <source>Could not detect fastest repo.</source>
         <translation>Impossible de déterminer le dépôt le plus rapide.</translation>
     </message>

@@ -108,13 +108,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="360"/>
+        <location filename="../mxrepomanager.cpp" line="361"/>
         <source>Success</source>
         <translation>Успешно</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="361"/>
+        <location filename="../mxrepomanager.cpp" line="362"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ваш новый выбор вступит в силу при следующем обновлении.</translation>
     </message>
@@ -129,15 +129,15 @@
         <translation>Источники (отмеченные источники включены)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="363"/>
+        <location filename="../mxrepomanager.cpp" line="364"/>
         <location filename="../mxrepomanager.cpp" line="530"/>
-        <location filename="../mxrepomanager.cpp" line="541"/>
-        <location filename="../mxrepomanager.cpp" line="556"/>
+        <location filename="../mxrepomanager.cpp" line="542"/>
+        <location filename="../mxrepomanager.cpp" line="557"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="364"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Could not change the repo.</source>
         <translation>Не удалось изменить репозиторий.</translation>
     </message>
@@ -183,8 +183,8 @@
         <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="542"/>
-        <location filename="../mxrepomanager.cpp" line="557"/>
+        <location filename="../mxrepomanager.cpp" line="543"/>
+        <location filename="../mxrepomanager.cpp" line="558"/>
         <source>Could not detect fastest repo.</source>
         <translation>Не удалось определить самый быстрый репозиторий.</translation>
     </message>

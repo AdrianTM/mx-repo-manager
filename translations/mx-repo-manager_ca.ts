@@ -108,13 +108,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="360"/>
+        <location filename="../mxrepomanager.cpp" line="361"/>
         <source>Success</source>
         <translation>Èxit</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="361"/>
+        <location filename="../mxrepomanager.cpp" line="362"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Aquesta tria serà efectiva la propera vegada que actualitzeu les fonts. </translation>
     </message>
@@ -129,15 +129,15 @@
         <translation>Fonts (les marcades són les habilitades) </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="363"/>
+        <location filename="../mxrepomanager.cpp" line="364"/>
         <location filename="../mxrepomanager.cpp" line="530"/>
-        <location filename="../mxrepomanager.cpp" line="541"/>
-        <location filename="../mxrepomanager.cpp" line="556"/>
+        <location filename="../mxrepomanager.cpp" line="542"/>
+        <location filename="../mxrepomanager.cpp" line="557"/>
         <source>Error</source>
         <translation>S&apos;ha produït un error</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="364"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Could not change the repo.</source>
         <translation>No s&apos;ha pogut canviar el dipòsit. </translation>
     </message>
@@ -183,8 +183,8 @@
         <translation>netselect-apt no ha pogut trobar el dipòsit més ràpid</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="542"/>
-        <location filename="../mxrepomanager.cpp" line="557"/>
+        <location filename="../mxrepomanager.cpp" line="543"/>
+        <location filename="../mxrepomanager.cpp" line="558"/>
         <source>Could not detect fastest repo.</source>
         <translation>No he pogut trobar el dipòsit més ràpid.</translation>
     </message>

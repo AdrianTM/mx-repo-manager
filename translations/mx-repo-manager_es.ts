@@ -108,13 +108,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="360"/>
+        <location filename="../mxrepomanager.cpp" line="361"/>
         <source>Success</source>
         <translation>Exito</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="361"/>
+        <location filename="../mxrepomanager.cpp" line="362"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Su nueva selección será efectiva cuando se actualicen las fuentes de los repositorios.</translation>
     </message>
@@ -129,15 +129,15 @@
         <translation>Código fuente (el corregido esta activado)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="363"/>
+        <location filename="../mxrepomanager.cpp" line="364"/>
         <location filename="../mxrepomanager.cpp" line="530"/>
-        <location filename="../mxrepomanager.cpp" line="541"/>
-        <location filename="../mxrepomanager.cpp" line="556"/>
+        <location filename="../mxrepomanager.cpp" line="542"/>
+        <location filename="../mxrepomanager.cpp" line="557"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="364"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Could not change the repo.</source>
         <translation>So se pudo cambiar el repositorio.</translation>
     </message>
@@ -183,8 +183,8 @@
         <translation>netselect-apt no pudo detectar el repo más veloz</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="542"/>
-        <location filename="../mxrepomanager.cpp" line="557"/>
+        <location filename="../mxrepomanager.cpp" line="543"/>
+        <location filename="../mxrepomanager.cpp" line="558"/>
         <source>Could not detect fastest repo.</source>
         <translation>No pudo detectar el repo más veloz</translation>
     </message>
