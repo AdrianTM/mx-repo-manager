@@ -16,13 +16,13 @@
         <location filename="../mxrepomanager.cpp" line="67"/>
         <location filename="../mxrepomanager.cpp" line="410"/>
         <location filename="../mxrepomanager.cpp" line="417"/>
-        <location filename="../mxrepomanager.cpp" line="426"/>
+        <location filename="../mxrepomanager.cpp" line="436"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="488"/>
+        <location filename="../mxrepomanager.cpp" line="501"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Vyberte APT repozitár, ktorý chcete používať: </translation>
     </message>
@@ -130,9 +130,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="364"/>
-        <location filename="../mxrepomanager.cpp" line="530"/>
-        <location filename="../mxrepomanager.cpp" line="542"/>
-        <location filename="../mxrepomanager.cpp" line="557"/>
+        <location filename="../mxrepomanager.cpp" line="543"/>
+        <location filename="../mxrepomanager.cpp" line="555"/>
+        <location filename="../mxrepomanager.cpp" line="570"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
@@ -173,18 +173,18 @@
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="490"/>
+        <location filename="../mxrepomanager.cpp" line="503"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Vyberte APT repozitár a zdroje, ktoré chcete používať: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="531"/>
+        <location filename="../mxrepomanager.cpp" line="544"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Príkaz netselect-apt nenašiel najrýchlejší repozitár.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="543"/>
-        <location filename="../mxrepomanager.cpp" line="558"/>
+        <location filename="../mxrepomanager.cpp" line="556"/>
+        <location filename="../mxrepomanager.cpp" line="571"/>
         <source>Could not detect fastest repo.</source>
         <translation>Najrýchlejší repozitár sa nenašiel.</translation>
     </message>

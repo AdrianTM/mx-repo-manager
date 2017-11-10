@@ -423,8 +423,21 @@ void mxrepomanager::on_buttonAbout_clicked()
 void mxrepomanager::on_buttonHelp_clicked()
 {
     this->hide();
-    QString cmd = QString("mx-viewer https://mxlinux.org/wiki/help-files/help-mx-repo-manager '%1'").arg(tr("MX Repo Manager"));
+
+    QLocale locale;
+    QString lang = locale.bcp47Name();
+
+    QString url = "https://mxlinux.org/wiki/help-files/help-mx-repo-manager";
+
+    if (lang == "fr") {
+        url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
+    }
+
+    QString cmd = QString("mx-viewer " + url + " '%1'").arg(tr("MX Repo Manager"));
+
     system(cmd.toUtf8());
+
+
     this->show();
 }
 
