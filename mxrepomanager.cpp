@@ -429,7 +429,7 @@ void mxrepomanager::on_buttonHelp_clicked()
 
     QString url = "https://mxlinux.org/wiki/help-files/help-mx-repo-manager";
 
-    if (lang == "fr") {
+    if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
     }
 
