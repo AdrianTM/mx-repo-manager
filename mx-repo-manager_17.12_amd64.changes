@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 04 Dec 2017 14:57:37 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 17.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (17.12) mx; urgency=medium
+ .
+   * new translations
+Checksums-Sha1:
+ b0efa59fabe91da199305be81a35e7a4f815cc62 1135 mx-repo-manager_17.12.dsc
+ 4c190c5394920df9bb9f939061aeee59db7f5acf 39796 mx-repo-manager_17.12.tar.xz
+ f31c7d68557d48dfc5e2e0870897c6c42c1d107b 58928 mx-repo-manager_17.12_amd64.deb
+Checksums-Sha256:
+ 8720118327adb125d8d17a36c7ca5394335464d602f93eeed99391798f7a0cc3 1135 mx-repo-manager_17.12.dsc
+ a96916f73df7bbe29e8d90f41187c8aca4f1b0374be43d0927411cd05b9bbe58 39796 mx-repo-manager_17.12.tar.xz
+ a14b5dd159d8f14c36c78c95bd4850219fca939d2721a9bc8ed9dc0f7a9f2544 58928 mx-repo-manager_17.12_amd64.deb
+Files:
+ 12497d18700ba173c3d002e843278469 1135 admin optional mx-repo-manager_17.12.dsc
+ fed4e932d5092dda0d8b3fba700a3d87 39796 admin optional mx-repo-manager_17.12.tar.xz
+ 5f69dd16cc27f65c540e1ae4f0b2be37 58928 admin optional mx-repo-manager_17.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaJalAAAoJEHCTjHgGee6YNcwH/ier3pFkYILjHyNkzxUfzSm5
+3JgRPCc2LZiBt02DhE2zayLW4FDf1RXkbwh6RMz1EQQh+S8E8lin7Ure8P2aKQEt
+48CKtOLOQeSOW2PonIVEIB51+K1cV9Nk9voIzyT348/GkgijpP4oD2ugv4K5eBxK
+YpOsiYKVNRUkYXHKr46BPYICni0pDSShstoE6Ums/Fj7qHuegUr1gSSk2MCbkgBM
+b2i2v3SEGcGzvpLeBT7S24o8pE6xe7AJn5v3ryYfVPb7cOLjSw4bd7UAEfnITv1d
++3oN1yqzuZ9/WY+SUQF6PPvSqUjyRWr0Mvaji1CL3NdQZ4LR+k1prBjc2SrD8Bg=
+=yw1A
+-----END PGP SIGNATURE-----

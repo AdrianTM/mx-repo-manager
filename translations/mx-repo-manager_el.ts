@@ -37,68 +37,68 @@
         <translation>Επιλέξτε την ταχύτερη αποθήκη του ΜΧ για μένα</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="133"/>
+        <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
         <translation>Debian repos</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="145"/>
+        <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
         <translation>Επιλέξτε την ταχύτερη αποθήκη του Debian για μένα
 </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="193"/>
+        <location filename="../mxrepomanager.ui" line="195"/>
         <source>Individual sources</source>
         <translation>Μεμονωμένες πηγές</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="254"/>
+        <location filename="../mxrepomanager.ui" line="256"/>
         <source>Display help </source>
         <translation>Δείτε Βοήθεια</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="257"/>
+        <location filename="../mxrepomanager.ui" line="259"/>
         <source>Help</source>
         <translation>Βοήθεια </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="263"/>
+        <location filename="../mxrepomanager.ui" line="267"/>
         <source>Alt+H</source>
         <translation>Alt+H </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="308"/>
+        <location filename="../mxrepomanager.ui" line="312"/>
         <source>About this application</source>
         <translation>Περί εφαρμογής.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="311"/>
+        <location filename="../mxrepomanager.ui" line="315"/>
         <source>About...</source>
         <translation>Περί</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="317"/>
+        <location filename="../mxrepomanager.ui" line="323"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="333"/>
+        <location filename="../mxrepomanager.ui" line="339"/>
         <source>Quit application</source>
         <translation>Κλείστε την εφαρμογή </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="336"/>
+        <location filename="../mxrepomanager.ui" line="342"/>
         <source>Close</source>
         <translation>Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="342"/>
+        <location filename="../mxrepomanager.ui" line="350"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="358"/>
+        <location filename="../mxrepomanager.ui" line="369"/>
         <source>Apply</source>
         <translation>Εφαρμογή</translation>
     </message>
