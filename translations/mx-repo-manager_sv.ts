@@ -37,67 +37,67 @@
         <translation>Välj snabbaste MX förråd för mig</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="133"/>
+        <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
         <translation>Debian förråd</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="145"/>
+        <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
         <translation>Välj snabbaste Debian förråd för mig</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="193"/>
+        <location filename="../mxrepomanager.ui" line="195"/>
         <source>Individual sources</source>
         <translation>Individuella källor</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="254"/>
+        <location filename="../mxrepomanager.ui" line="256"/>
         <source>Display help </source>
         <translation>Visa hjälp</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="257"/>
+        <location filename="../mxrepomanager.ui" line="259"/>
         <source>Help</source>
         <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="263"/>
+        <location filename="../mxrepomanager.ui" line="267"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="308"/>
+        <location filename="../mxrepomanager.ui" line="312"/>
         <source>About this application</source>
         <translation>Om detta program</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="311"/>
+        <location filename="../mxrepomanager.ui" line="315"/>
         <source>About...</source>
         <translation>Om...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="317"/>
+        <location filename="../mxrepomanager.ui" line="323"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="333"/>
+        <location filename="../mxrepomanager.ui" line="339"/>
         <source>Quit application</source>
         <translation>Avsluta programmet</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="336"/>
+        <location filename="../mxrepomanager.ui" line="342"/>
         <source>Close</source>
         <translation>Stäng</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="342"/>
+        <location filename="../mxrepomanager.ui" line="350"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="358"/>
+        <location filename="../mxrepomanager.ui" line="369"/>
         <source>Apply</source>
         <translation>Genomför</translation>
     </message>

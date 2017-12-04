@@ -37,67 +37,67 @@
         <translation>Sélectionner le dépôt MX le plus rapide</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="133"/>
+        <location filename="../mxrepomanager.ui" line="135"/>
         <source>Debian repos</source>
         <translation>Dépôts Debian</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="145"/>
+        <location filename="../mxrepomanager.ui" line="147"/>
         <source>Select fastest Debian repo for me</source>
         <translation>Sélectionner le dépôt Debian le plus rapide</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="193"/>
+        <location filename="../mxrepomanager.ui" line="195"/>
         <source>Individual sources</source>
         <translation>Sources individuelles</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="254"/>
+        <location filename="../mxrepomanager.ui" line="256"/>
         <source>Display help </source>
         <translation>Afficher l&apos;aide</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="257"/>
+        <location filename="../mxrepomanager.ui" line="259"/>
         <source>Help</source>
         <translation>Aide </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="263"/>
+        <location filename="../mxrepomanager.ui" line="267"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="308"/>
+        <location filename="../mxrepomanager.ui" line="312"/>
         <source>About this application</source>
         <translation>A propos de cette application</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="311"/>
+        <location filename="../mxrepomanager.ui" line="315"/>
         <source>About...</source>
         <translation>A propos...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="317"/>
+        <location filename="../mxrepomanager.ui" line="323"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="333"/>
+        <location filename="../mxrepomanager.ui" line="339"/>
         <source>Quit application</source>
         <translation>Quitter l&apos;application</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="336"/>
+        <location filename="../mxrepomanager.ui" line="342"/>
         <source>Close</source>
         <translation>Fermer</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="342"/>
+        <location filename="../mxrepomanager.ui" line="350"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="358"/>
+        <location filename="../mxrepomanager.ui" line="369"/>
         <source>Apply</source>
         <translation>Appliquer</translation>
     </message>
