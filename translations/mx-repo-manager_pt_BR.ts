@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt_BR" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Musisz uruchomić ten program jako administrator. </translation>
+        <translation>Você deve executar esta aplicação como root.</translation>
     </message>
 </context>
 <context>
@@ -52,12 +52,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="254"/>
         <source>Display help </source>
-        <translation>Wyświetl pomoc</translation>
+        <translation>Exibir ajuda</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="257"/>
         <source>Help</source>
-        <translation>Pomoc</translation>
+        <translation>Ajuda</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="263"/>
@@ -67,12 +67,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="308"/>
         <source>About this application</source>
-        <translation>O programie</translation>
+        <translation>Sobre esta aplicação</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="311"/>
         <source>About...</source>
-        <translation>O...</translation>
+        <translation>Sobre...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="317"/>
@@ -82,12 +82,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="333"/>
         <source>Quit application</source>
-        <translation>Zamknij apliikację</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="336"/>
         <source>Close</source>
-        <translation>Zamknij</translation>
+        <translation>Encerrar</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="342"/>
@@ -97,7 +97,7 @@
     <message>
         <location filename="../mxrepomanager.ui" line="358"/>
         <source>Apply</source>
-        <translation>Zastosuj</translation>
+        <translation>Aplicar</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
@@ -108,7 +108,7 @@
         <location filename="../mxrepomanager.cpp" line="135"/>
         <location filename="../mxrepomanager.cpp" line="344"/>
         <source>Success</source>
-        <translation>Sukces </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
@@ -132,7 +132,7 @@
         <location filename="../mxrepomanager.cpp" line="525"/>
         <location filename="../mxrepomanager.cpp" line="540"/>
         <source>Error</source>
-        <translation>Błąd</translation>
+        <translation>Erro</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="348"/>
@@ -147,7 +147,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="394"/>
         <source>Version: </source>
-        <translation>Wersja:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="395"/>
@@ -157,18 +157,18 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="397"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="398"/>
         <location filename="../mxrepomanager.cpp" line="401"/>
         <source>License</source>
-        <translation>Licencja</translation>
+        <translation>licença</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="399"/>
         <source>Cancel</source>
-        <translation>Anuluj</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="474"/>

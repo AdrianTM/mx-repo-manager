@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="pl" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="kk" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Musisz uruchomić ten program jako administrator. </translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -52,12 +52,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="254"/>
         <source>Display help </source>
-        <translation>Wyświetl pomoc</translation>
+        <translation>Көмекті көрсету</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="257"/>
         <source>Help</source>
-        <translation>Pomoc</translation>
+        <translation>Көмек</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="263"/>
@@ -67,12 +67,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="308"/>
         <source>About this application</source>
-        <translation>O programie</translation>
+        <translation>Бұл қолданба жөнінде</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="311"/>
         <source>About...</source>
-        <translation>O...</translation>
+        <translation>Осы туралы...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="317"/>
@@ -82,12 +82,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="333"/>
         <source>Quit application</source>
-        <translation>Zamknij apliikację</translation>
+        <translation>Қолданба жұмысын аяқтау</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="336"/>
         <source>Close</source>
-        <translation>Zamknij</translation>
+        <translation>Жабу</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="342"/>
@@ -97,7 +97,7 @@
     <message>
         <location filename="../mxrepomanager.ui" line="358"/>
         <source>Apply</source>
-        <translation>Zastosuj</translation>
+        <translation>Іске асыру</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
@@ -108,7 +108,7 @@
         <location filename="../mxrepomanager.cpp" line="135"/>
         <location filename="../mxrepomanager.cpp" line="344"/>
         <source>Success</source>
-        <translation>Sukces </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
@@ -132,7 +132,7 @@
         <location filename="../mxrepomanager.cpp" line="525"/>
         <location filename="../mxrepomanager.cpp" line="540"/>
         <source>Error</source>
-        <translation>Błąd</translation>
+        <translation>Қате</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="348"/>
@@ -147,7 +147,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="394"/>
         <source>Version: </source>
-        <translation>Wersja:</translation>
+        <translation>Нұсқасы:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="395"/>
@@ -163,12 +163,12 @@
         <location filename="../mxrepomanager.cpp" line="398"/>
         <location filename="../mxrepomanager.cpp" line="401"/>
         <source>License</source>
-        <translation>Licencja</translation>
+        <translation>Лицензиясы</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="399"/>
         <source>Cancel</source>
-        <translation>Anuluj</translation>
+        <translation>Бас тарту</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="474"/>
