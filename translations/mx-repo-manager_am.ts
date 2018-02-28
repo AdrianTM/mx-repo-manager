@@ -37,17 +37,17 @@
     <message>
         <location filename="../mxrepomanager.ui" line="133"/>
         <source>Debian repos</source>
-        <translation type="unfinished"/>
+        <translation>የ ዴቢያን ማጠራቀሚያ</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="145"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"/>
+        <translation>ፈጣን የ ዴቢያን ማጠራቀሚያ ለ እኔ ምረጥልኝ</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="193"/>
         <source>Individual sources</source>
-        <translation type="unfinished"/>
+        <translation>እያንዳንዱ ምንጭ</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="254"/>
@@ -102,7 +102,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
         <source>Please wait...</source>
-        <translation type="unfinished"/>
+        <translation>እባክዎን ይቆዩ...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
@@ -119,12 +119,12 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Lists</source>
-        <translation type="unfinished"/>
+        <translation>ዝርዝሮች</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished"/>
+        <translation>ምንጮች (የ ተመረመሩ ምንጮች እና አስችለዋል)</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="347"/>
@@ -137,7 +137,7 @@
     <message>
         <location filename="../mxrepomanager.cpp" line="348"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished"/>
+        <translation>ማጠራቀሚያ መቀየር  አልተቻለም</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="393"/>
@@ -184,7 +184,7 @@
         <location filename="../mxrepomanager.cpp" line="526"/>
         <location filename="../mxrepomanager.cpp" line="541"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation>ፈጣን ማጠራቀሚያ ማግኘት አልተቻለም</translation>
     </message>
 </context>
 </TS>
