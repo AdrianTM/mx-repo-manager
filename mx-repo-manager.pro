@@ -35,29 +35,29 @@ HEADERS  += mxrepomanager.h
 
 FORMS    += mxrepomanager.ui
 
-TRANSLATIONS += translations/mx-bootrepair_am.ts \
-                translations/mx-bootrepair_ca.ts \
-                translations/mx-bootrepair_cs.ts \
-                translations/mx-bootrepair_de.ts \
-                translations/mx-bootrepair_el.ts \
-                translations/mx-bootrepair_es.ts \
-                translations/mx-bootrepair_fr.ts \
-                translations/mx-bootrepair_hu.ts \
-                translations/mx-bootrepair_it.ts \
-                translations/mx-bootrepair_ja.ts \
-                translations/mx-bootrepair_kk.ts \
-                translations/mx-bootrepair_lt.ts \
-                translations/mx-bootrepair_nl.ts \
-                translations/mx-bootrepair_pl.ts \
-                translations/mx-bootrepair_pt.ts \
-                translations/mx-bootrepair_pt_BR.ts \
-                translations/mx-bootrepair_ro.ts \
-                translations/mx-bootrepair_ru.ts \
-                translations/mx-bootrepair_sk.ts \
-                translations/mx-bootrepair_sv.ts \
-                translations/mx-bootrepair_tr.ts \
-                translations/mx-bootrepair_uk.ts \
-                translations/mx-bootrepair_zh_TW.ts
+TRANSLATIONS += translations/mx-repo-manager_am.ts \
+                translations/mx-repo-manager_ca.ts \
+                translations/mx-repo-manager_cs.ts \
+                translations/mx-repo-manager_de.ts \
+                translations/mx-repo-manager_el.ts \
+                translations/mx-repo-manager_es.ts \
+                translations/mx-repo-manager_fr.ts \
+                translations/mx-repo-manager_hu.ts \
+                translations/mx-repo-manager_it.ts \
+                translations/mx-repo-manager_ja.ts \
+                translations/mx-repo-manager_kk.ts \
+                translations/mx-repo-manager_lt.ts \
+                translations/mx-repo-manager_nl.ts \
+                translations/mx-repo-manager_pl.ts \
+                translations/mx-repo-manager_pt.ts \
+                translations/mx-repo-manager_pt_BR.ts \
+                translations/mx-repo-manager_ro.ts \
+                translations/mx-repo-manager_ru.ts \
+                translations/mx-repo-manager_sk.ts \
+                translations/mx-repo-manager_sv.ts \
+                translations/mx-repo-manager_tr.ts \
+                translations/mx-repo-manager_uk.ts \
+                translations/mx-repo-manager_zh_TW.ts
 
 RESOURCES += \
     images.qrc
