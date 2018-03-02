@@ -58,6 +58,7 @@ public:
     QList<QStringList> queued_changes;
 
     void buildFlags();
+    void displayDoc(QString url);
     void displayMXRepos(const QStringList &repos);
     void displayAllRepos(const QFileInfoList &apt_files);
     void selectRepo(const QString &repo);
