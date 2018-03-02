@@ -414,7 +414,8 @@ void mxrepomanager::on_buttonAbout_clicked()
     msgBox.addButton(tr("License"), QMessageBox::AcceptRole);
     msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
     if (msgBox.exec() == QMessageBox::AcceptRole) {
-        system("mx-viewer file:///usr/share/doc/mx-repo-manager/license.html '" + tr("MX Repo Manager").toUtf8() + " " + tr("License").toUtf8() + "'");
+        QString url = "file:///usr/share/doc/mx-repo-manager/license.html";
+        displayDoc(url);
     }
     this->show();
 }
@@ -422,8 +423,6 @@ void mxrepomanager::on_buttonAbout_clicked()
 // Help button clicked
 void mxrepomanager::on_buttonHelp_clicked()
 {
-    this->hide();
-
     QLocale locale;
     QString lang = locale.bcp47Name();
 
@@ -432,13 +431,7 @@ void mxrepomanager::on_buttonHelp_clicked()
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
     }
-
-    QString cmd = QString("mx-viewer " + url + " '%1'").arg(tr("MX Repo Manager"));
-
-    system(cmd.toUtf8());
-
-
-    this->show();
+    displayDoc(url);
 }
 
 void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
@@ -518,6 +511,17 @@ void mxrepomanager::buildFlags()
     flags.insert("Taiwan", QIcon(":/icons/tw.png"));
     flags.insert("USA, Los Angeles", QIcon(":/icons/us.png"));
     flags.insert("USA, Utah", QIcon(":/icons/us.png"));
+}
+
+void mxrepomanager::displayDoc(QString url)
+{
+    QString exec = "xdg-open";
+    QString user = runCmd("logname").str;
+    if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
+        exec = "mx-viewer";
+    }
+    QString cmd = "su " + user + " -c \"" + exec + " " + url + "\"&";
+    system(cmd.toUtf8());
 }
 
 // detect fastest Debian repo
