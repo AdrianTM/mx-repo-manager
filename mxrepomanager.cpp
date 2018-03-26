@@ -221,8 +221,6 @@ void mxrepomanager::displayAllRepos(const QFileInfoList &apt_files)
         // topLevelItem look
         topLevelItem->setForeground(0, QBrush(Qt::darkGreen));
         topLevelItemDeb->setForeground(0, QBrush(Qt::darkGreen));
-        topLevelItem->setIcon(0, QIcon("/usr/share/mx-repo-manager/icons/folder.png"));
-        topLevelItemDeb->setIcon(0, QIcon("/usr/share/mx-repo-manager/icons/folder.png"));
         // load file entries
         QStringList entries = loadAptFile(file);
         QString item;
@@ -508,6 +506,7 @@ void mxrepomanager::buildFlags()
     flags.insert("New Zealand", QIcon(":/icons/nz.png"));
     flags.insert("Sweden", QIcon(":/icons/se.png"));
     flags.insert("The Netherlands", QIcon(":/icons/nl.png"));
+    flags.insert("Russia", QIcon(":/icons/ru.png"));
     flags.insert("Taiwan", QIcon(":/icons/tw.png"));
     flags.insert("USA, Los Angeles", QIcon(":/icons/us.png"));
     flags.insert("USA, Utah", QIcon(":/icons/us.png"));

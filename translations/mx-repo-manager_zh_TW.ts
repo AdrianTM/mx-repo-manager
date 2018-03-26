@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="67"/>
-        <location filename="../mxrepomanager.cpp" line="410"/>
+        <location filename="../mxrepomanager.cpp" line="408"/>
         <source>MX Repo Manager</source>
         <translation>MX 軟體倉庫管理員</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="494"/>
+        <location filename="../mxrepomanager.cpp" line="492"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>選擇你要用的 APT 倉庫：</translation>
     </message>
@@ -106,13 +106,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="361"/>
+        <location filename="../mxrepomanager.cpp" line="359"/>
         <source>Success</source>
         <translation>成功</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="362"/>
+        <location filename="../mxrepomanager.cpp" line="360"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>下次更新軟體來源時，新選的項目便會啟用。</translation>
     </message>
@@ -127,61 +127,61 @@
         <translation>軟體來源（打勾的項目會啟用）</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="364"/>
-        <location filename="../mxrepomanager.cpp" line="547"/>
-        <location filename="../mxrepomanager.cpp" line="559"/>
-        <location filename="../mxrepomanager.cpp" line="574"/>
+        <location filename="../mxrepomanager.cpp" line="362"/>
+        <location filename="../mxrepomanager.cpp" line="546"/>
+        <location filename="../mxrepomanager.cpp" line="558"/>
+        <location filename="../mxrepomanager.cpp" line="573"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="365"/>
+        <location filename="../mxrepomanager.cpp" line="363"/>
         <source>Could not change the repo.</source>
         <translation>無法改用該軟體倉庫。</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="409"/>
+        <location filename="../mxrepomanager.cpp" line="407"/>
         <source>About MX Repo Manager</source>
         <translation>關於 MX 軟體倉庫管理員</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="410"/>
+        <location filename="../mxrepomanager.cpp" line="408"/>
         <source>Version: </source>
         <translation>版本：</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="411"/>
+        <location filename="../mxrepomanager.cpp" line="409"/>
         <source>Program for choosing the default APT repository</source>
         <translation>本程式可選擇預設的 APT 倉庫</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="413"/>
+        <location filename="../mxrepomanager.cpp" line="411"/>
         <source>Copyright (c) MX Linux</source>
         <translation>版權所有 (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="412"/>
         <source>License</source>
         <translation>授權條款</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="496"/>
+        <location filename="../mxrepomanager.cpp" line="494"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>選擇你要用的 APT 倉庫和軟體來源：</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="548"/>
+        <location filename="../mxrepomanager.cpp" line="547"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt 無法偵測速度最快的倉庫。</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="560"/>
-        <location filename="../mxrepomanager.cpp" line="575"/>
+        <location filename="../mxrepomanager.cpp" line="559"/>
+        <location filename="../mxrepomanager.cpp" line="574"/>
         <source>Could not detect fastest repo.</source>
         <translation>無法偵測到最快的倉庫。</translation>
     </message>

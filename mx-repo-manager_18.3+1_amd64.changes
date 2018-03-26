@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 25 Mar 2018 23:24:40 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.3+1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.3+1) mx; urgency=medium
+ .
+   * RU mirror
+Checksums-Sha1:
+ ee52da3dd25bba92667e4ec0d60995ae6543f7a8 1133 mx-repo-manager_18.3+1.dsc
+ 5915d48cc96b06c5f62d3e87e9f8eb6a7715b9d4 41204 mx-repo-manager_18.3+1.tar.xz
+ 3f21a1a0bd7078e2e1bb1b83c6a309c4cb8ce7dd 61058 mx-repo-manager_18.3+1_amd64.deb
+Checksums-Sha256:
+ e54f93f511a9ebfb6a3faca9466476a65f6ea4e462aeb094727c063721cbe1a1 1133 mx-repo-manager_18.3+1.dsc
+ c844151e66208a2ad373349a76e642ab538ac81371877579fcb72565791e8eb8 41204 mx-repo-manager_18.3+1.tar.xz
+ 230eb1b6d2fd91ff33e5e81d5392d541eeee44529719b2f5398c28b45bd9fb74 61058 mx-repo-manager_18.3+1_amd64.deb
+Files:
+ 5439f562d27b1505ea1bab5f8e528340 1133 admin optional mx-repo-manager_18.3+1.dsc
+ 3ac51c63b778195b6a9ac9e2825460f0 41204 admin optional mx-repo-manager_18.3+1.tar.xz
+ 3f31a34c570f4312526178b88a321a59 61058 admin optional mx-repo-manager_18.3+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJauGzSAAoJEHCTjHgGee6YfekH/1if7ofMSeeAUT7nm+vtTcy6
+8L/DmOV03fmKsPPWaGf9slczTsS+LQyvq3LyvPAu7bOlI5oYphsx8tLSejVZb+QZ
+mSUD/DcI72GHWF623V+ljfr5O+BeIvVTq+qb4FvHOmzbDoL143P7FgRlCzjwf6MS
+8BWzDaSyYyAITv1ckTqJQfLJTBaMl/YBabhcigYA9pmHDwvD5NQYYmtjnCm5AN24
+Uu+xpqpIgN17JzmS/7xcKM1IszrjfguG3u/P+15Im4dpAviI9Y8CIGDYwgXJANkV
+k2GVY5HF7drdElBU0Qdip7OFLaeMNEL3t3NUOXvPw8OJahOjOVO9Gn2HE2Cj7Q4=
+=/rwm
+-----END PGP SIGNATURE-----

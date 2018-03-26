@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="67"/>
-        <location filename="../mxrepomanager.cpp" line="410"/>
+        <location filename="../mxrepomanager.cpp" line="408"/>
         <source>MX Repo Manager</source>
         <translation>MX Менеджер репозиториев</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="494"/>
+        <location filename="../mxrepomanager.cpp" line="492"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Выберите APT репозиторий, который Вы хотите использовать:</translation>
     </message>
@@ -106,13 +106,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="361"/>
+        <location filename="../mxrepomanager.cpp" line="359"/>
         <source>Success</source>
         <translation>Успешно</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="362"/>
+        <location filename="../mxrepomanager.cpp" line="360"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ваш новый выбор вступит в силу при следующем обновлении.</translation>
     </message>
@@ -127,61 +127,61 @@
         <translation>Источники (отмеченные источники включены)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="364"/>
-        <location filename="../mxrepomanager.cpp" line="547"/>
-        <location filename="../mxrepomanager.cpp" line="559"/>
-        <location filename="../mxrepomanager.cpp" line="574"/>
+        <location filename="../mxrepomanager.cpp" line="362"/>
+        <location filename="../mxrepomanager.cpp" line="546"/>
+        <location filename="../mxrepomanager.cpp" line="558"/>
+        <location filename="../mxrepomanager.cpp" line="573"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="365"/>
+        <location filename="../mxrepomanager.cpp" line="363"/>
         <source>Could not change the repo.</source>
         <translation>Не удалось изменить репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="409"/>
+        <location filename="../mxrepomanager.cpp" line="407"/>
         <source>About MX Repo Manager</source>
         <translation>Об  MX Менеджере репозиториев</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="410"/>
+        <location filename="../mxrepomanager.cpp" line="408"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="411"/>
+        <location filename="../mxrepomanager.cpp" line="409"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Программа для выбора APT репозитория по умолчанию</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="413"/>
+        <location filename="../mxrepomanager.cpp" line="411"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="412"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="496"/>
+        <location filename="../mxrepomanager.cpp" line="494"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="548"/>
+        <location filename="../mxrepomanager.cpp" line="547"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="560"/>
-        <location filename="../mxrepomanager.cpp" line="575"/>
+        <location filename="../mxrepomanager.cpp" line="559"/>
+        <location filename="../mxrepomanager.cpp" line="574"/>
         <source>Could not detect fastest repo.</source>
         <translation>Не удалось определить самый быстрый репозиторий.</translation>
     </message>
