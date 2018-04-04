@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="67"/>
-        <location filename="../mxrepomanager.cpp" line="408"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>MX Repo Manager</source>
         <translation>MX Depo Yöneticisi</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="492"/>
+        <location filename="../mxrepomanager.cpp" line="497"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Kullanmak istediğiniz APT deposunu seçin:</translation>
     </message>
@@ -35,67 +35,72 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="135"/>
+        <location filename="../mxrepomanager.ui" line="141"/>
         <source>Debian repos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="147"/>
+        <location filename="../mxrepomanager.ui" line="153"/>
         <source>Select fastest Debian repo for me</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="195"/>
+        <location filename="../mxrepomanager.ui" line="200"/>
+        <source>Use Debian Automatic Redirector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.ui" line="211"/>
         <source>Individual sources</source>
         <translation>Bireysel kaynaklar</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="256"/>
+        <location filename="../mxrepomanager.ui" line="272"/>
         <source>Display help </source>
         <translation>Yardımı görüntüle</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="259"/>
+        <location filename="../mxrepomanager.ui" line="275"/>
         <source>Help</source>
         <translation>Yardım</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="267"/>
+        <location filename="../mxrepomanager.ui" line="283"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="312"/>
+        <location filename="../mxrepomanager.ui" line="328"/>
         <source>About this application</source>
         <translation>Uygulama hakkında</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="315"/>
+        <location filename="../mxrepomanager.ui" line="331"/>
         <source>About...</source>
         <translation>Hakkında...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="323"/>
+        <location filename="../mxrepomanager.ui" line="339"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="339"/>
+        <location filename="../mxrepomanager.ui" line="355"/>
         <source>Quit application</source>
         <translation>Uygulamadan çık</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="342"/>
+        <location filename="../mxrepomanager.ui" line="358"/>
         <source>Close</source>
         <translation>Kapat</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="350"/>
+        <location filename="../mxrepomanager.ui" line="366"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="369"/>
+        <location filename="../mxrepomanager.ui" line="385"/>
         <source>Apply</source>
         <translation>Uygula</translation>
     </message>
@@ -105,83 +110,83 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="136"/>
-        <location filename="../mxrepomanager.cpp" line="359"/>
+        <location filename="../mxrepomanager.cpp" line="141"/>
+        <location filename="../mxrepomanager.cpp" line="364"/>
         <source>Success</source>
         <translation>Başarılı</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="137"/>
-        <location filename="../mxrepomanager.cpp" line="360"/>
+        <location filename="../mxrepomanager.cpp" line="142"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Yeni seçiminiz, daha sonra güncellenmiş kaynakları etkileyecek.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="203"/>
+        <location filename="../mxrepomanager.cpp" line="208"/>
         <source>Lists</source>
         <translation>Listeler</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="203"/>
+        <location filename="../mxrepomanager.cpp" line="208"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Kaynaklar ( Etkinleştirilmiş kaynaklar kontrol edildi)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="362"/>
-        <location filename="../mxrepomanager.cpp" line="546"/>
-        <location filename="../mxrepomanager.cpp" line="558"/>
-        <location filename="../mxrepomanager.cpp" line="573"/>
+        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="551"/>
+        <location filename="../mxrepomanager.cpp" line="563"/>
+        <location filename="../mxrepomanager.cpp" line="578"/>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="363"/>
+        <location filename="../mxrepomanager.cpp" line="368"/>
         <source>Could not change the repo.</source>
         <translation>Depo değiştirilemedi.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="407"/>
+        <location filename="../mxrepomanager.cpp" line="412"/>
         <source>About MX Repo Manager</source>
         <translation>MX Depo Yöneticisi hakkında</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="408"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>Version: </source>
         <translation>Sürüm</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="409"/>
+        <location filename="../mxrepomanager.cpp" line="414"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Öntanımlı APT seçimi için program</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="411"/>
+        <location filename="../mxrepomanager.cpp" line="416"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="412"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>License</source>
         <translation>Ruhsat</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="413"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>Cancel</source>
         <translation>İptal</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="494"/>
+        <location filename="../mxrepomanager.cpp" line="499"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Kullanmak istediğiniz kaynakları ve APT deposunu seçin:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="547"/>
+        <location filename="../mxrepomanager.cpp" line="552"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="559"/>
-        <location filename="../mxrepomanager.cpp" line="574"/>
+        <location filename="../mxrepomanager.cpp" line="564"/>
+        <location filename="../mxrepomanager.cpp" line="579"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>

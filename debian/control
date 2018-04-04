@@ -9,6 +9,6 @@ Vcs-Git: git://github.com/AdrianTM/mx-repo-manager
 
 Package: mx-repo-manager
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer|xdg-utils, netselect-apt, menu, wget
+Depends: ${misc:Depends}, ${shlibs:Depends}, mx-viewer|xdg-utils, netselect-apt, menu, wget, apt-transport-https
 Description: MX Repo Manager
  MX Repo Manager is a tool used for choosing the default APT repository for MX Linux

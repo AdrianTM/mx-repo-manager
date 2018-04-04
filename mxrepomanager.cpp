@@ -128,10 +128,15 @@ void mxrepomanager::replaceDebianRepos(const QString &url)
         // backup file
         cmd = "cp " + file + " /etc/apt/sources.list.d/backups/" + fileinfo.fileName() + ".$(date +%s)";
         system(cmd.toUtf8());
+
         cmd = "sed -i 's;deb\\s.*/debian/;deb " + url + ";' " + file ; // replace deb lines in file
         system(cmd.toUtf8());
         cmd = "sed -i 's;deb-src\\s.*/debian/;deb-src " + url + ";' " + file; // replace deb-src lines in file
         system(cmd.toUtf8());
+        if (url == "https://deb.debian.org/debian/") {
+            cmd = "sed -i 's;deb\\s*http://security.debian.org/;deb https://deb.debian.org/debian-security/;' " + file; // replace security.debian.org in file
+            system(cmd.toUtf8());
+        }
     }
     QMessageBox::information(this, tr("Success"),
                              tr("Your new selection will take effect the next time sources are updated."));
@@ -287,7 +292,7 @@ void mxrepomanager::setSelected()
     for (int row = 0; row < ui->listWidget->count(); ++row) {
         QRadioButton *item = (QRadioButton*)ui->listWidget->itemWidget(ui->listWidget->item(row));
         if (item->isChecked()) {
-            url = item->text().section("http://", 1, 1, QString::SectionIncludeLeadingSep).trimmed();
+            url = item->text().section(" - ", 1, 1).trimmed();
             replaceRepos(url);
         }
     }
@@ -573,4 +578,10 @@ void mxrepomanager::on_pushFastestMX_clicked()
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not detect fastest repo."));
     }
+}
+
+void mxrepomanager::on_pushRedirector_clicked()
+{
+    replaceDebianRepos("https://deb.debian.org/debian/");
+    refresh();
 }
