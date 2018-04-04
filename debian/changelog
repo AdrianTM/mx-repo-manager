@@ -1,3 +1,9 @@
+mx-repo-manager (18.4) mx; urgency=medium
+
+  * add German and Netherlands mirrors
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 04 Apr 2018 09:43:08 -0400
+
 mx-repo-manager (18.3+1) mx; urgency=medium
 
   * RU mirror

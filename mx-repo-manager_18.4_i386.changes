@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 04 Apr 2018 09:43:08 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 18.4
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.4) mx; urgency=medium
+ .
+   * add German and Netherlands mirrors
+Checksums-Sha1:
+ 78d99f68346b7962c89b2120c424863e047499ce 62418 mx-repo-manager_18.4_i386.deb
+Checksums-Sha256:
+ bc1136ca5d2706d142dafd2899e0209559eb7a1097431914941e14803756ff55 62418 mx-repo-manager_18.4_i386.deb
+Files:
+ 27f8e4beb0df4f9cc581c0c57d61ca9a 62418 admin optional mx-repo-manager_18.4_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJaxS0oAAoJEHCTjHgGee6YeTYIAKGVg9LktpnveoEJSX9OHKoK
+g8VBo5VPoAFwOMIaFd7qlxy0S9lO9j8TFCbbpEv3jzXG8cvXP/YwAGsQFR5FjFPk
+YcClGK6X+JWJs2hKn603GbL7Te8qIy8REXypPqrkziXzrrvn7eHBHcJnIjWPs6ss
+glfmJwX/qYiyKBixeXcGb4D5P2QTla8LN14LWVSm8XoXnnxIcsxBVXUGHzGB1dWh
+K1QgPV2o4J9wddVttqqg6M1gVRZxvKHhQr49qJ+4/DBULouwUN/JjgwLGNFB+qES
+tQaOvaz2SUhP64BkCwmfPxTV7GdDpQFicZuqwpPbC+NksfH9ieZkjqMfBHFDIKE=
+=qkvH
+-----END PGP SIGNATURE-----
