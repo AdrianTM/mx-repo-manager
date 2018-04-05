@@ -18,20 +18,20 @@ Changes:
  .
    * add German and Netherlands mirrors
 Checksums-Sha1:
- 78d99f68346b7962c89b2120c424863e047499ce 62418 mx-repo-manager_18.4_i386.deb
+ 86bec70019adc47bd13d6a79c946bd12604cbd84 61976 mx-repo-manager_18.4_i386.deb
 Checksums-Sha256:
- bc1136ca5d2706d142dafd2899e0209559eb7a1097431914941e14803756ff55 62418 mx-repo-manager_18.4_i386.deb
+ 5e6ac2e95a983ed11584300fcc859257040d775125e3122ed485fa5a2400c9a5 61976 mx-repo-manager_18.4_i386.deb
 Files:
- 27f8e4beb0df4f9cc581c0c57d61ca9a 62418 admin optional mx-repo-manager_18.4_i386.deb
+ 25bde5f0e9db5b785c22384d8e0d6c42 61976 admin optional mx-repo-manager_18.4_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJaxS0oAAoJEHCTjHgGee6YeTYIAKGVg9LktpnveoEJSX9OHKoK
-g8VBo5VPoAFwOMIaFd7qlxy0S9lO9j8TFCbbpEv3jzXG8cvXP/YwAGsQFR5FjFPk
-YcClGK6X+JWJs2hKn603GbL7Te8qIy8REXypPqrkziXzrrvn7eHBHcJnIjWPs6ss
-glfmJwX/qYiyKBixeXcGb4D5P2QTla8LN14LWVSm8XoXnnxIcsxBVXUGHzGB1dWh
-K1QgPV2o4J9wddVttqqg6M1gVRZxvKHhQr49qJ+4/DBULouwUN/JjgwLGNFB+qES
-tQaOvaz2SUhP64BkCwmfPxTV7GdDpQFicZuqwpPbC+NksfH9ieZkjqMfBHFDIKE=
-=qkvH
+iQEcBAEBAgAGBQJaxgouAAoJEHCTjHgGee6YC0YH/0aLHZhsAhHlbDMJfEcw/QYS
+43rEmDYUnn9zD3HP+vuBXceuk1Y7ZgCGzBpEVgIoGOAXuQpzYcPiPOCewISYtRK1
+VruZ+AL3YulLuDu3yMBVOanfkt58PplVfkiowASvHun7nbo0mcVBUAseOqeJchee
+r6B8bvIgKnmNJ8hhPSFKDm7yNWyqaWmDz5K4s0NI6vRiiEonkyu042FEawJMaJnY
+y+BkH9uqZ1ML4S5WLaSbTFnMNBJ+CDsWFtbwPCo0zdDqZB0PsmemUJUzGwKMBk7T
+G11d1i+rvkc1k2t7fx7VwFzIjyM+4Oqvx5AVb2kW+SBDHymb0LINzx31mIhYCI0=
+=+B7P
 -----END PGP SIGNATURE-----
