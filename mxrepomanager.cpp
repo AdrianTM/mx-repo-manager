@@ -580,8 +580,8 @@ void mxrepomanager::on_pushFastestMX_clicked()
     }
 }
 
-void mxrepomanager::on_pushRedirector_clicked()
-{
-    replaceDebianRepos("https://deb.debian.org/debian/");
-    refresh();
-}
+//void mxrepomanager::on_pushRedirector_clicked()
+//{
+//    replaceDebianRepos("https://deb.debian.org/debian/");
+//    refresh();
+//}

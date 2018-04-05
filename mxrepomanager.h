@@ -85,7 +85,7 @@ private slots:
     void on_tabWidget_currentChanged();
     void on_pushFastestDebian_clicked();
     void on_pushFastestMX_clicked();
-    void on_pushRedirector_clicked();
+    //void on_pushRedirector_clicked();
     void procDone(int);
     void procTime();
     void procStart();
