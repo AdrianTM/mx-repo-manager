@@ -128,9 +128,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="551"/>
-        <location filename="../mxrepomanager.cpp" line="563"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
+        <location filename="../mxrepomanager.cpp" line="550"/>
+        <location filename="../mxrepomanager.cpp" line="562"/>
+        <location filename="../mxrepomanager.cpp" line="577"/>
         <source>Error</source>
         <translation>Қате</translation>
     </message>
@@ -175,13 +175,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="552"/>
+        <location filename="../mxrepomanager.cpp" line="551"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="564"/>
-        <location filename="../mxrepomanager.cpp" line="579"/>
+        <location filename="../mxrepomanager.cpp" line="563"/>
+        <location filename="../mxrepomanager.cpp" line="578"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>

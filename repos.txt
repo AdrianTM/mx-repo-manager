@@ -1,6 +1,7 @@
-Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
-Germany - https://ftp.fau.de/mxlinux-packages
+Germany, Aachen - http://ftp.halifax.rwth-aachen.de/mxlinux/packages
+Germany, Earlangen - https://ftp.fau.de/mxlinux-packages
+Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
 Italy - http://it.mxrepo.com
 New Zealand - http://mx.debian.nz
 Russia - http://mirror.truenetwork.ru/mxlinux

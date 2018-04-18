@@ -187,7 +187,7 @@ void mxrepomanager::displayMXRepos(const QStringList &repos)
     QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
-        QString country = repo.section("-", 0, 0).trimmed();
+        QString country = repo.section("-", 0, 0).trimmed().section(",", 0, 0);
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
         buildFlags();
@@ -503,18 +503,17 @@ void mxrepomanager::on_tabWidget_currentChanged()
 // build the list of flags for the country name
 void mxrepomanager::buildFlags()
 {
-    flags.insert("Crete", QIcon(":/icons/gr.png"));
     flags.insert("Ecuador", QIcon(":/icons/ec.png"));
     flags.insert("France", QIcon(":/icons/fr.png"));
     flags.insert("Germany", QIcon(":/icons/de.png"));
+    flags.insert("Greece", QIcon(":/icons/gr.png"));
     flags.insert("Italy", QIcon(":/icons/it.png"));
     flags.insert("New Zealand", QIcon(":/icons/nz.png"));
     flags.insert("Sweden", QIcon(":/icons/se.png"));
     flags.insert("The Netherlands", QIcon(":/icons/nl.png"));
     flags.insert("Russia", QIcon(":/icons/ru.png"));
     flags.insert("Taiwan", QIcon(":/icons/tw.png"));
-    flags.insert("USA, Los Angeles", QIcon(":/icons/us.png"));
-    flags.insert("USA, Utah", QIcon(":/icons/us.png"));
+    flags.insert("USA", QIcon(":/icons/us.png"));
 }
 
 void mxrepomanager::displayDoc(QString url)
