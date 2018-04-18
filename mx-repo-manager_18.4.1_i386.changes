@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 17 Apr 2018 23:56:50 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 18.4.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.4.1) mx; urgency=medium
+ .
+   * add new repos
+Checksums-Sha1:
+ faa0fac55f5583a9931ab0cc98230fb72c661d2a 62580 mx-repo-manager_18.4.1_i386.deb
+Checksums-Sha256:
+ a751f6d86e2eca3a651ddd4202bc3bbba80f7c7631ab10734fd64f03f147d85c 62580 mx-repo-manager_18.4.1_i386.deb
+Files:
+ 19924a8c684a7c9d93028d828826790b 62580 admin optional mx-repo-manager_18.4.1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJa12xfAAoJEHCTjHgGee6Y/q0H/2PH6yUB+HBGkYHY9nsorm9s
+tR1rY3+6E+9syoXM3doS1cY8iXtV8j/B377yLahDY2ZcK3VnpWjiGNC+BgL8cXnv
+tRJVa8ubl1SLgXxeMHK9Nea7wWUfoTiGyoRihKs30JF4N7hFTQDN9bC2etsFKV2n
+kZDYXVggMlXwA5Kp/SxrVnNiosgsfe9+v3g2U2Nn/mackPWcd9HfrOZaG3flNjkq
+6kV3Z3Gg38pqdlu0jiuSpjdCEPFHHzulgUoqTwLp9uUvtfdbCV6Xdr/CJWXrtFGV
+wTxf74itNKiGpJ2BmJF10Mr92Jo7ZaIgSdn9eJ+xDbq34XarYT3Nil4i8PRt/Ks=
+=qxcA
+-----END PGP SIGNATURE-----

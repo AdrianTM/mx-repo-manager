@@ -4,6 +4,7 @@ Germany, Earlangen - https://ftp.fau.de/mxlinux-packages
 Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
 Italy - http://it.mxrepo.com
 New Zealand - http://mx.debian.nz
+Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
 Russia - http://mirror.truenetwork.ru/mxlinux
 Sweden - http://ftp.acc.umu.se/mirror/mxlinux.org/packages
 The Netherlands - http://nl.mxrepo.com

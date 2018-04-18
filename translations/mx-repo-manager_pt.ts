@@ -128,9 +128,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="550"/>
-        <location filename="../mxrepomanager.cpp" line="562"/>
-        <location filename="../mxrepomanager.cpp" line="577"/>
+        <location filename="../mxrepomanager.cpp" line="552"/>
+        <location filename="../mxrepomanager.cpp" line="564"/>
+        <location filename="../mxrepomanager.cpp" line="579"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
@@ -175,13 +175,13 @@
         <translation>Seleccione o repositório APT e as origens que quer usar:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="551"/>
+        <location filename="../mxrepomanager.cpp" line="553"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>O netselect-apt não consegue detectar o repositório mais rápido</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="563"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
+        <location filename="../mxrepomanager.cpp" line="565"/>
+        <location filename="../mxrepomanager.cpp" line="580"/>
         <source>Could not detect fastest repo.</source>
         <translation>Não foi possível detectar o repositório mais rápido</translation>
     </message>
