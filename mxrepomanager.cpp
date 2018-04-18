@@ -503,6 +503,7 @@ void mxrepomanager::on_tabWidget_currentChanged()
 // build the list of flags for the country name
 void mxrepomanager::buildFlags()
 {
+    flags.insert("Colombia", QIcon(":/icons/co.png"));
     flags.insert("Ecuador", QIcon(":/icons/ec.png"));
     flags.insert("France", QIcon(":/icons/fr.png"));
     flags.insert("Germany", QIcon(":/icons/de.png"));
@@ -511,6 +512,7 @@ void mxrepomanager::buildFlags()
     flags.insert("New Zealand", QIcon(":/icons/nz.png"));
     flags.insert("Sweden", QIcon(":/icons/se.png"));
     flags.insert("The Netherlands", QIcon(":/icons/nl.png"));
+    flags.insert("Poland", QIcon(":/icons/pl.png"));
     flags.insert("Russia", QIcon(":/icons/ru.png"));
     flags.insert("Taiwan", QIcon(":/icons/tw.png"));
     flags.insert("USA", QIcon(":/icons/us.png"));
