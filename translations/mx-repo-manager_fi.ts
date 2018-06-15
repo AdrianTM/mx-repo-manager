@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fi" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>You must run this program as root.</translation>
+        <translation>Sinun täytyy suorittaa tämä ohjelma pääkäyttäjänä.</translation>
     </message>
 </context>
 <context>
@@ -16,48 +16,48 @@
         <location filename="../mxrepomanager.cpp" line="401"/>
         <location filename="../mxrepomanager.cpp" line="410"/>
         <source>MX Repo Manager</source>
-        <translation>MX Repo Manager</translation>
+        <translation>MX Pakettivarastojen hallinta</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
         <location filename="../mxrepomanager.cpp" line="472"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Select the APT repository that you want to use:</translation>
+        <translation>Valitse APT-pakettivarasto jota haluat käyttää:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation>MX repos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation>Select fastest MX repo for me</translation>
+        <translation>Valitse minulle nopein MX pakettivarasto</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="133"/>
         <source>Debian repos</source>
-        <translation>Debian repos</translation>
+        <translation>Debian pakettihakemistot</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="145"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>Select fastest Debian repo for me</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="193"/>
         <source>Individual sources</source>
-        <translation>Individual sources</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="254"/>
         <source>Display help </source>
-        <translation>Display help </translation>
+        <translation>Näytä ohje</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="257"/>
         <source>Help</source>
-        <translation>Help</translation>
+        <translation>Ohje</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="263"/>
@@ -67,12 +67,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="308"/>
         <source>About this application</source>
-        <translation>About this application</translation>
+        <translation>Tietoja tästä sovelluksesta</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="311"/>
         <source>About...</source>
-        <translation>About...</translation>
+        <translation>Tietoja...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="317"/>
@@ -82,12 +82,12 @@
     <message>
         <location filename="../mxrepomanager.ui" line="333"/>
         <source>Quit application</source>
-        <translation>Quit application</translation>
+        <translation>Sulje sovellus</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="336"/>
         <source>Close</source>
-        <translation>Close</translation>
+        <translation>Sulje</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="342"/>
@@ -97,34 +97,34 @@
     <message>
         <location filename="../mxrepomanager.ui" line="358"/>
         <source>Apply</source>
-        <translation>Apply</translation>
+        <translation>Hyväksy</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="58"/>
         <source>Please wait...</source>
-        <translation>Please wait...</translation>
+        <translation>Odota, ole hyvä...</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="135"/>
         <location filename="../mxrepomanager.cpp" line="344"/>
         <source>Success</source>
-        <translation>Success</translation>
+        <translation>Onnistui</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="136"/>
         <location filename="../mxrepomanager.cpp" line="345"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Your new selection will take effect the next time sources are updated.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Lists</source>
-        <translation>Lists</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="202"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>Sources (checked sources are enabled)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="347"/>
@@ -132,27 +132,27 @@
         <location filename="../mxrepomanager.cpp" line="525"/>
         <location filename="../mxrepomanager.cpp" line="540"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Virhe</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="348"/>
         <source>Could not change the repo.</source>
-        <translation>Could not change the repo.</translation>
+        <translation>Pakettivarastoa ei voitu muuttaa.</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="393"/>
         <source>About MX Repo Manager</source>
-        <translation>About MX Repo Manager</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="394"/>
         <source>Version: </source>
-        <translation>Version: </translation>
+        <translation>Versio: </translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="395"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Program for choosing the default APT repository</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="397"/>
@@ -163,28 +163,28 @@
         <location filename="../mxrepomanager.cpp" line="398"/>
         <location filename="../mxrepomanager.cpp" line="401"/>
         <source>License</source>
-        <translation>License</translation>
+        <translation>Lisenssi</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="399"/>
         <source>Cancel</source>
-        <translation>Cancel</translation>
+        <translation>Peruuta</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="474"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>Select the APT repository and sources that you want to use:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="515"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>netselect-apt could not detect fastest repo.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="526"/>
         <location filename="../mxrepomanager.cpp" line="541"/>
         <source>Could not detect fastest repo.</source>
-        <translation>Could not detect fastest repo.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
