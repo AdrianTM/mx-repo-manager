@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+
+sed -i 's;http://repo.antixlinux.com;http://iso.mxrepo.com/antix;g' /etc/apt/sources.list.d/antix.list
