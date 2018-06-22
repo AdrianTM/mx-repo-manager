@@ -18,29 +18,29 @@ Changes:
  .
    * remove daveserver
 Checksums-Sha1:
- 8dd5623f3199b52b85809254608e3d4911f2eba6 1207 mx-repo-manager_18.6.1.dsc
- 61c15d7ef6d6f7f4ca4543e0382eeb66a66e1193 42124 mx-repo-manager_18.6.1.tar.xz
- 9b86bce147df217e9c06ec786360533b9e5f6893 11222 mx-repo-manager_18.6.1_amd64.buildinfo
- 041cad1e341eb2691eedf8d722eae03df2d3b794 62674 mx-repo-manager_18.6.1_amd64.deb
+ 73aa4adc67c24b52e05eb0019f252fdc00001d8d 1207 mx-repo-manager_18.6.1.dsc
+ 82a705d858b342eecec59541cb979815656e2fc9 42184 mx-repo-manager_18.6.1.tar.xz
+ 669e719067cb830f5885242a3cbc9a0ab2cdb03f 11222 mx-repo-manager_18.6.1_amd64.buildinfo
+ 772424303e5113e180d3c1268f6069773568f6d1 62476 mx-repo-manager_18.6.1_amd64.deb
 Checksums-Sha256:
- 0a6fa796e0ae96e64d940661683c70a90a268e78c38cf0d7ea948d28fc067109 1207 mx-repo-manager_18.6.1.dsc
- 17db84f5159c3ac43faa01ed95525fb1194909df1f560488b75b66dbdad59bd2 42124 mx-repo-manager_18.6.1.tar.xz
- a2f1f88871d952d9537063ed5ee1b58fc6b3fba5f7ebb285813e65e00cf5dab8 11222 mx-repo-manager_18.6.1_amd64.buildinfo
- 0cf7ace23126bda0ce48968aa8e631cb02d8d9f7abd0cca939bfe95a0778a317 62674 mx-repo-manager_18.6.1_amd64.deb
+ 65c882c9e313201e6c50040a22d2e12fcd9afdaedcca0f494534d300e0a069f6 1207 mx-repo-manager_18.6.1.dsc
+ 976a7859bd9cbc241507e7654a06bdb43a59eb023ba82908972dfd11a1c922f0 42184 mx-repo-manager_18.6.1.tar.xz
+ df77735d8b432729c99b2532a60352d690a34f487b5778323ed34590301532e8 11222 mx-repo-manager_18.6.1_amd64.buildinfo
+ 773c3ae47a295bf2fbe61ff19cc970382041b41da8fcd3d5f02c57f8b7fb9355 62476 mx-repo-manager_18.6.1_amd64.deb
 Files:
- 595173fd6e94ca065653584e8068a868 1207 admin optional mx-repo-manager_18.6.1.dsc
- d06a11b5eacef12f851b00594035f243 42124 admin optional mx-repo-manager_18.6.1.tar.xz
- 3babf6c87e8d36a9c5bba85dc8c3a468 11222 admin optional mx-repo-manager_18.6.1_amd64.buildinfo
- df2081e165fc1379a979d50ace7f7840 62674 admin optional mx-repo-manager_18.6.1_amd64.deb
+ 6b8c47d4f6d31d59d5808cd40fa308c8 1207 admin optional mx-repo-manager_18.6.1.dsc
+ 640d9ac55d3043be5568b7de1126542c 42184 admin optional mx-repo-manager_18.6.1.tar.xz
+ fc0549b65fd3b09e6b4ef4a585d90d48 11222 admin optional mx-repo-manager_18.6.1_amd64.buildinfo
+ d79c7ec6f7aa4554d4ff79b082952171 62476 admin optional mx-repo-manager_18.6.1_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlstATUTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumO1SCACyEsvrCp5qIsLMpNZpIMI5WxeTlDgh
-w1spWsaWyNU6uqnS01ndNckkB1/tEgblOV3i2hny/1RTGBBELFA4VLCu4JFikLwm
-1wN11prGuknDl3A/s1iMh+nPThSSsHiXFiaNaxGnx1NHlgSdpIFOYFrAMhOWqxAR
-hXTMxvWLPUwbOmZ8GThS49GT1JhTGqNWHWfjKdlQjS8ie3XDOw7QyBDSBP64T3MB
-TCK3TXbBuJgtGkUoCMBUjayiyLgmlbwCAjB5TBuc3+J3KRxJlk9eaT2hYo7UBJVW
-a9n8VSswCrbg+WQZX3X/LgcJG3oS0kRD0obnzBCpqFd34NfQ2Nb1FPTN
-=X1Do
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlstGOMTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumOpzCACmCjfIRpnLbirdEnHRI5609FaJ4yc3
+nW5rHy2qivIWc2jp6aoZRVnX33XXzdL/yWfmNu6CQ1wSTXd9KTDh7tQLkvx9t0+V
+Yb4FQxTTIjnZYgT15a4DdnnG6OlyCZ1+UifFSjarkVQv11+D5gyh2ljA92yfx2nH
+PXXrP89FqODTaS+vMRHgNI5nosvlsXKgXGPIfXAi/WRhZDuX95hx47JYyyom+b+C
+WESZA7UnXCj7UPPmGwfvZKphZwUOxLMK0r/ZP/6LRDbXcREGeJk7VJPkPcNmX2pY
+ZRPK3/EBtHJOotmk80uVqmtz1T4ytNEYg1+43AsdWSm58uXLbZOXZExL
+=TVtT
 -----END PGP SIGNATURE-----
