@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Tue, 26 Jun 2018 18:22:05 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.6.2
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.6.2) mx; urgency=medium
+ .
+   * added Denmark repo
+   * added changelog button
+Checksums-Sha1:
+ d521e159d1bf01f3821fcefa5a66da760230e2aa 1207 mx-repo-manager_18.6.2.dsc
+ cfcb22fdfe83990557fd5168be401e550fae8134 43192 mx-repo-manager_18.6.2.tar.xz
+ 05f7bdea979ae262815d7fe5b2c6e025cc39c3cc 64172 mx-repo-manager_18.6.2_amd64.deb
+Checksums-Sha256:
+ 01ef9122104f8f85717f54a915b52db17a78ca5e35bf6b9ea9751a876b82966c 1207 mx-repo-manager_18.6.2.dsc
+ c85a2d8c311549dfe017593337b722c3e7e3e670d696c9a75277b9550ba17410 43192 mx-repo-manager_18.6.2.tar.xz
+ 9f375ac6a24e1f2de6455fe5a33c44e01162ef0c57fdf6a8cafb35c17c551c60 64172 mx-repo-manager_18.6.2_amd64.deb
+Files:
+ 98408cdf29c8c763e62e742270690738 1207 admin optional mx-repo-manager_18.6.2.dsc
+ ea522f3f75854dddf1cc2929d443ab2c 43192 admin optional mx-repo-manager_18.6.2.tar.xz
+ 3b6ae572aaa88c2bd08f6bc28d4cc0f0 64172 admin optional mx-repo-manager_18.6.2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlsyvxITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHQGB/44dtjppWc9i02Q91imGKbOCqb7pDm5
+N6CyRXZuU+CGIHSPP/B0gn+4mr7SKZoOkg6spf3VpmuFeQSfpLqB18jFBq2FuqF5
+2iA6D/e6V+MfIyc7hafGTDvUltZsq/KpHqm2Pf3WlsyooDXpHHW687zWsMBY6/LT
+/gsnAGgv0tE+Yp7/7o5Jpte1bJFySGvalJQi90oTXAnsl1qChrhdxJ6J+HcCHMGa
+stYosmcIg+njGjA9ivQsG8Da339d6j2Jr5SO+13owXVAUfIqW1lOHNFDiXfxzBJz
+ItQjCcK/E7UmBaGlL7GZh3NEYl647pGFGwzF1HN4uSzjZpfwQWbWIY2V
+=thS8
+-----END PGP SIGNATURE-----

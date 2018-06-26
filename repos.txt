@@ -1,4 +1,5 @@
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
+Denmark - http://mirrors.dotsrc.org/mx-packages
 Germany, Aachen - http://ftp.halifax.rwth-aachen.de/mxlinux/packages
 Germany, Earlangen - https://ftp.fau.de/mxlinux-packages
 Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
