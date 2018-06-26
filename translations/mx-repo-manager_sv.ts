@@ -13,14 +13,14 @@
     <name>mxrepomanager</name>
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
-        <location filename="../mxrepomanager.cpp" line="67"/>
-        <location filename="../mxrepomanager.cpp" line="412"/>
+        <location filename="../mxrepomanager.cpp" line="68"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="496"/>
+        <location filename="../mxrepomanager.cpp" line="519"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Välj det APT förråd du vill använda:</translation>
     </message>
@@ -100,88 +100,98 @@
         <translation>Genomför</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="58"/>
+        <location filename="../mxrepomanager.cpp" line="59"/>
         <source>Please wait...</source>
         <translation>Var vänlig vänta...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="141"/>
-        <location filename="../mxrepomanager.cpp" line="363"/>
+        <location filename="../mxrepomanager.cpp" line="142"/>
+        <location filename="../mxrepomanager.cpp" line="364"/>
         <source>Success</source>
         <translation>Det lyckades</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="142"/>
-        <location filename="../mxrepomanager.cpp" line="364"/>
+        <location filename="../mxrepomanager.cpp" line="143"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="207"/>
+        <location filename="../mxrepomanager.cpp" line="208"/>
         <source>Lists</source>
         <translation>Listor</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="207"/>
+        <location filename="../mxrepomanager.cpp" line="208"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Förråd (markerade förråd är aktiva)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="366"/>
-        <location filename="../mxrepomanager.cpp" line="551"/>
-        <location filename="../mxrepomanager.cpp" line="563"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
+        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="575"/>
+        <location filename="../mxrepomanager.cpp" line="587"/>
+        <location filename="../mxrepomanager.cpp" line="602"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="368"/>
         <source>Could not change the repo.</source>
         <translation>Kunde inte ändra förrådet</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="411"/>
+        <location filename="../mxrepomanager.cpp" line="412"/>
         <source>About MX Repo Manager</source>
         <translation>Om MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="412"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>Version: </source>
         <translation>Version</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="413"/>
+        <location filename="../mxrepomanager.cpp" line="414"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Program för att välja standard Apt förråd</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="416"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="416"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>License</source>
         <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="417"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
+        <source>Changelog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="419"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="498"/>
+        <location filename="../mxrepomanager.cpp" line="435"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mxrepomanager.cpp" line="521"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Välj det APT-förråd och källor du vill använda:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="552"/>
+        <location filename="../mxrepomanager.cpp" line="576"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt kunde inte hitta snabbaste förrådet.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="564"/>
-        <location filename="../mxrepomanager.cpp" line="579"/>
+        <location filename="../mxrepomanager.cpp" line="588"/>
+        <location filename="../mxrepomanager.cpp" line="603"/>
         <source>Could not detect fastest repo.</source>
         <translation>Kunde inte hitta snabbaste förrådet.</translation>
     </message>
