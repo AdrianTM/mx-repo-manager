@@ -57,7 +57,6 @@ public:
     QString listMXurls;
     QList<QStringList> queued_changes;
 
-    void buildFlags();
     void displayDoc(QString url);
     void displayMXRepos(const QStringList &repos);
     void displayAllRepos(const QFileInfoList &apt_files);
@@ -69,6 +68,7 @@ public:
     void setSelected();
     Output runCmd(const QString &cmd);
     QFileInfoList listAptFiles();
+    QIcon getFlag(QString country);
 
     QString getCurrentRepo();
     QString getDebianVersion();
