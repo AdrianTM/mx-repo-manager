@@ -8,8 +8,8 @@ New Zealand - http://mx.debian.nz
 Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
 Russia - http://mirror.truenetwork.ru/mxlinux
 Sweden - http://ftp.acc.umu.se/mirror/mxlinux.org/packages
-The Netherlands - http://nl.mxrepo.com
-The Netherlands - https://ftp.nluug.nl/os/Linux/distr/mxlinux
+Netherlands - http://nl.mxrepo.com
+Netherlands - https://ftp.nluug.nl/os/Linux/distr/mxlinux
 Taiwan - http://ftp.yzu.edu.tw/Linux/mx-workspace
-USA, Los Angeles - http://iso.mxrepo.com
-USA, Utah - http://mxrepo.com
+United States, Los Angeles - http://iso.mxrepo.com
+United States, Utah - http://mxrepo.com

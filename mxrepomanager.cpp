@@ -29,6 +29,7 @@
 #include <QDebug>
 
 #include <QDir>
+#include <QMetaEnum>
 #include <QProcess>
 #include <QRadioButton>
 #include <QProgressBar>
@@ -190,8 +191,7 @@ void mxrepomanager::displayMXRepos(const QStringList &repos)
         QString country = repo.section("-", 0, 0).trimmed().section(",", 0, 0);
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
-        buildFlags();
-        button->setIcon(flags.value(country));
+        button->setIcon(getFlag(country));
         ui->listWidget->setItemWidget(item, button);
         connect(button, SIGNAL(clicked(bool)),ui->buttonOk, SLOT(setEnabled(bool)));
     }
@@ -522,23 +522,17 @@ void mxrepomanager::on_tabWidget_currentChanged()
     }
 }
 
-// build the list of flags for the country name
-void mxrepomanager::buildFlags()
+// Transform "country" name to 2-3 letter ISO 3166 country code and provide the QIcon for it
+QIcon mxrepomanager::getFlag(QString country)
 {
-    flags.insert("Colombia", QIcon(":/icons/co.png"));
-    flags.insert("Denmark", QIcon(":/icons/dk.png"));
-    flags.insert("Ecuador", QIcon(":/icons/ec.png"));
-    flags.insert("France", QIcon(":/icons/fr.png"));
-    flags.insert("Germany", QIcon(":/icons/de.png"));
-    flags.insert("Greece", QIcon(":/icons/gr.png"));
-    flags.insert("Italy", QIcon(":/icons/it.png"));
-    flags.insert("New Zealand", QIcon(":/icons/nz.png"));
-    flags.insert("Sweden", QIcon(":/icons/se.png"));
-    flags.insert("The Netherlands", QIcon(":/icons/nl.png"));
-    flags.insert("Poland", QIcon(":/icons/pl.png"));
-    flags.insert("Russia", QIcon(":/icons/ru.png"));
-    flags.insert("Taiwan", QIcon(":/icons/tw.png"));
-    flags.insert("USA", QIcon(":/icons/us.png"));
+    QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>();
+    int index = metaEnum.keyToValue(country.remove(" ").toUtf8());
+    QList<QLocale> locales = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));
+    if (locales.length() > 0) {
+        QString short_name = locales.at(0).name().section("_", 1, 1).toLower();
+        return QIcon("/usr/share/iso-flags-png-320x240/" + short_name + ".png");
+    }
+    return QIcon();
 }
 
 void mxrepomanager::displayDoc(QString url)
