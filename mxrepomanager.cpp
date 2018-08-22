@@ -530,7 +530,7 @@ QIcon mxrepomanager::getFlag(QString country)
     QList<QLocale> locales = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));
     if (locales.length() > 0) {
         QString short_name = locales.at(0).name().section("_", 1, 1).toLower();
-        return QIcon("/usr/share/iso-flags-png-320x240/" + short_name + ".png");
+        return QIcon("/usr/share/iso-flags-svg/country-4x3/" + short_name + ".svg");
     }
     return QIcon();
 }

@@ -13,7 +13,7 @@
     <name>mxrepomanager</name>
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
-        <location filename="../mxrepomanager.cpp" line="68"/>
+        <location filename="../mxrepomanager.cpp" line="69"/>
         <location filename="../mxrepomanager.cpp" line="413"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
@@ -100,18 +100,18 @@
         <translation>Genomför</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="59"/>
+        <location filename="../mxrepomanager.cpp" line="60"/>
         <source>Please wait...</source>
         <translation>Var vänlig vänta...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="142"/>
+        <location filename="../mxrepomanager.cpp" line="143"/>
         <location filename="../mxrepomanager.cpp" line="364"/>
         <source>Success</source>
         <translation>Det lyckades</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="143"/>
+        <location filename="../mxrepomanager.cpp" line="144"/>
         <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
@@ -128,9 +128,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="575"/>
-        <location filename="../mxrepomanager.cpp" line="587"/>
-        <location filename="../mxrepomanager.cpp" line="602"/>
+        <location filename="../mxrepomanager.cpp" line="569"/>
+        <location filename="../mxrepomanager.cpp" line="581"/>
+        <location filename="../mxrepomanager.cpp" line="596"/>
         <source>Error</source>
         <translation>Fel</translation>
     </message>
@@ -185,13 +185,13 @@
         <translation>Välj det APT-förråd och källor du vill använda:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="576"/>
+        <location filename="../mxrepomanager.cpp" line="570"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt kunde inte hitta snabbaste förrådet.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="588"/>
-        <location filename="../mxrepomanager.cpp" line="603"/>
+        <location filename="../mxrepomanager.cpp" line="582"/>
+        <location filename="../mxrepomanager.cpp" line="597"/>
         <source>Could not detect fastest repo.</source>
         <translation>Kunde inte hitta snabbaste förrådet.</translation>
     </message>

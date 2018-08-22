@@ -13,7 +13,7 @@
     <name>mxrepomanager</name>
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
-        <location filename="../mxrepomanager.cpp" line="68"/>
+        <location filename="../mxrepomanager.cpp" line="69"/>
         <location filename="../mxrepomanager.cpp" line="413"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
@@ -101,18 +101,18 @@
         <translation>Εφαρμογή</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="59"/>
+        <location filename="../mxrepomanager.cpp" line="60"/>
         <source>Please wait...</source>
         <translation>Παρακαλώ περιμένετε...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="142"/>
+        <location filename="../mxrepomanager.cpp" line="143"/>
         <location filename="../mxrepomanager.cpp" line="364"/>
         <source>Success</source>
         <translation>Επιτυχία!</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="143"/>
+        <location filename="../mxrepomanager.cpp" line="144"/>
         <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Η νέα επιλογή σας θα τεθεί σε ισχύ την επόμενη φορά που ενημερώνονται οι πηγές.</translation>
@@ -129,9 +129,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="575"/>
-        <location filename="../mxrepomanager.cpp" line="587"/>
-        <location filename="../mxrepomanager.cpp" line="602"/>
+        <location filename="../mxrepomanager.cpp" line="569"/>
+        <location filename="../mxrepomanager.cpp" line="581"/>
+        <location filename="../mxrepomanager.cpp" line="596"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
@@ -186,13 +186,13 @@
         <translation>Επιλέξτε το APT repository και τις πηγές για χρήση:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="576"/>
+        <location filename="../mxrepomanager.cpp" line="570"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Το netselect-apt δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="588"/>
-        <location filename="../mxrepomanager.cpp" line="603"/>
+        <location filename="../mxrepomanager.cpp" line="582"/>
+        <location filename="../mxrepomanager.cpp" line="597"/>
         <source>Could not detect fastest repo.</source>
         <translation>Δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
