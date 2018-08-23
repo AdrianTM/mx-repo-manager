@@ -128,9 +128,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="569"/>
-        <location filename="../mxrepomanager.cpp" line="581"/>
-        <location filename="../mxrepomanager.cpp" line="596"/>
+        <location filename="../mxrepomanager.cpp" line="571"/>
+        <location filename="../mxrepomanager.cpp" line="583"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -185,13 +185,13 @@
         <translation>選擇你要用的 APT 倉庫和軟體來源：</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="570"/>
+        <location filename="../mxrepomanager.cpp" line="572"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt 無法偵測速度最快的倉庫。</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="582"/>
-        <location filename="../mxrepomanager.cpp" line="597"/>
+        <location filename="../mxrepomanager.cpp" line="584"/>
+        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>Could not detect fastest repo.</source>
         <translation>無法偵測到最快的倉庫。</translation>
     </message>
