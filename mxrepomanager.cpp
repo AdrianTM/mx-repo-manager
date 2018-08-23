@@ -525,12 +525,14 @@ void mxrepomanager::on_tabWidget_currentChanged()
 // Transform "country" name to 2-3 letter ISO 3166 country code and provide the QIcon for it
 QIcon mxrepomanager::getFlag(QString country)
 {
-    QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>();
+    QMetaObject metaObject = QLocale::staticMetaObject;
+    QMetaEnum metaEnum = metaObject.enumerator(metaObject.indexOfEnumerator("Country"));
+    //QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
     int index = metaEnum.keyToValue(country.remove(" ").toUtf8());
     QList<QLocale> locales = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));
     if (locales.length() > 0) {
         QString short_name = locales.at(0).name().section("_", 1, 1).toLower();
-        return QIcon("/usr/share/iso-flags-svg/country-4x3/" + short_name + ".svg");
+        return QIcon("/usr/share/fskbsetting/flags/" + short_name + ".png");
     }
     return QIcon();
 }

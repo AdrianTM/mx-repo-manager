@@ -128,9 +128,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="569"/>
-        <location filename="../mxrepomanager.cpp" line="581"/>
-        <location filename="../mxrepomanager.cpp" line="596"/>
+        <location filename="../mxrepomanager.cpp" line="571"/>
+        <location filename="../mxrepomanager.cpp" line="583"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
         <source>Error</source>
         <translation>S&apos;ha produït un error</translation>
     </message>
@@ -185,13 +185,13 @@
         <translation>Trieu el dipòsit APT i les fonts que voleu usar: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="570"/>
+        <location filename="../mxrepomanager.cpp" line="572"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt no ha pogut trobar el dipòsit més ràpid</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="582"/>
-        <location filename="../mxrepomanager.cpp" line="597"/>
+        <location filename="../mxrepomanager.cpp" line="584"/>
+        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>Could not detect fastest repo.</source>
         <translation>No he pogut trobar el dipòsit més ràpid.</translation>
     </message>
