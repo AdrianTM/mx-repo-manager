@@ -528,9 +528,14 @@ QIcon mxrepomanager::getFlag(QString country)
 {
     QMetaObject metaObject = QLocale::staticMetaObject;
     QMetaEnum metaEnum = metaObject.enumerator(metaObject.indexOfEnumerator("Country"));
+    // fix flag of the Netherlands               : QLocale::Netherlands
+    if (country == "The Netherlands" ) { country = "Netherlands"; }
+    // fix flag of the United States of America  : QLocale::UnitedStates
+    if (country == "USA" )             { country = "UnitedStates"; }
     //QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
     int index = metaEnum.keyToValue(country.remove(" ").toUtf8());
     QList<QLocale> locales = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));
+    // qDebug() << "etFlag county: " << country << " locales: " << locales;
     if (locales.length() > 0) {
         QString short_name = locales.at(0).name().section("_", 1, 1).toLower();
         return QIcon("/usr/share/fskbsetting/flags/" + short_name + ".png");
