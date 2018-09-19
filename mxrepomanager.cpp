@@ -281,7 +281,6 @@ void mxrepomanager::extractUrls(const QStringList &repos)
 {
     foreach(QString line, repos) {
         QStringList linelist = line.split("-");
-        //fehlix
         linelist.removeAt(0);
         listMXurls += linelist.join("-").trimmed() + " ";
     }
@@ -591,7 +590,6 @@ void mxrepomanager::on_pushFastestDebian_clicked()
 void mxrepomanager::on_pushFastestMX_clicked()
 {
     progress->show();
-    // fehlix
     Output out = runCmd("set -o pipefail; netselect -D -I " + listMXurls + "| tr -s ' ' | sed 's/^ //' | cut -d' ' -f2");
     progress->hide();
     if (out.exit_code == 0 && out.str !="") {
