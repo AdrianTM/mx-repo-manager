@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="413"/>
+        <location filename="../mxrepomanager.cpp" line="414"/>
         <source>MX Repo Manager</source>
         <translation>MX リボジトリマネージャー</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="519"/>
+        <location filename="../mxrepomanager.cpp" line="520"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>使用する APT リポジトリを選択して下さい:</translation>
     </message>
@@ -106,13 +106,13 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="364"/>
+        <location filename="../mxrepomanager.cpp" line="365"/>
         <source>Success</source>
         <translation>完了</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="365"/>
+        <location filename="../mxrepomanager.cpp" line="366"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>新たな選択はソースが更新された後に反映されます。</translation>
     </message>
@@ -127,71 +127,71 @@
         <translation>ソース (チェックが入ったソースが有効)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="367"/>
-        <location filename="../mxrepomanager.cpp" line="571"/>
-        <location filename="../mxrepomanager.cpp" line="583"/>
-        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="368"/>
+        <location filename="../mxrepomanager.cpp" line="577"/>
+        <location filename="../mxrepomanager.cpp" line="589"/>
+        <location filename="../mxrepomanager.cpp" line="604"/>
         <source>Error</source>
         <translation>エラー</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="368"/>
+        <location filename="../mxrepomanager.cpp" line="369"/>
         <source>Could not change the repo.</source>
         <translation>リボジトリを変更できませんでした。</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="412"/>
+        <location filename="../mxrepomanager.cpp" line="413"/>
         <source>About MX Repo Manager</source>
         <translation>MX レポジトリマネージャーについて</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="413"/>
+        <location filename="../mxrepomanager.cpp" line="414"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="415"/>
         <source>Program for choosing the default APT repository</source>
         <translation>デフォルト APT リポジトリを選択するプログラム</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="416"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="417"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>License</source>
         <translation>ライセンス</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="419"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="420"/>
         <source>Cancel</source>
         <translation>キャンセル</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="435"/>
+        <location filename="../mxrepomanager.cpp" line="436"/>
         <source>&amp;Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="521"/>
+        <location filename="../mxrepomanager.cpp" line="522"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>必要なAPTリポジトリとソースを選択して下さい:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="572"/>
+        <location filename="../mxrepomanager.cpp" line="578"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="584"/>
-        <location filename="../mxrepomanager.cpp" line="599"/>
+        <location filename="../mxrepomanager.cpp" line="590"/>
+        <location filename="../mxrepomanager.cpp" line="605"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
