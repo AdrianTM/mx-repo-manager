@@ -38,6 +38,7 @@ FORMS    += mxrepomanager.ui
 TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_ca.ts \
                 translations/mx-repo-manager_cs.ts \
+                translations/mx-repo-manager_da.ts \
                 translations/mx-repo-manager_de.ts \
                 translations/mx-repo-manager_el.ts \
                 translations/mx-repo-manager_es.ts \
@@ -57,6 +58,7 @@ TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_ro.ts \
                 translations/mx-repo-manager_ru.ts \
                 translations/mx-repo-manager_sk.ts \
+                translations/mx-repo-manager_sq.ts \
                 translations/mx-repo-manager_sv.ts \
                 translations/mx-repo-manager_tr.ts \
                 translations/mx-repo-manager_uk.ts \
