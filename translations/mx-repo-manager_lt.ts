@@ -30,7 +30,7 @@
     <message>
         <location filename="mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"/>
+        <translation>Parinkti man greičiausią MX saugyklą</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="141"/>
@@ -40,7 +40,7 @@
     <message>
         <location filename="mxrepomanager.ui" line="153"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished"/>
+        <translation>Parinkti man greičiausią Debian saugyklą</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="201"/>
@@ -185,13 +185,13 @@
     <message>
         <location filename="mxrepomanager.cpp" line="578"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation>Komandai netselect-apt nepavyko aptikti greičiausios saugyklos.</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="590"/>
         <location filename="mxrepomanager.cpp" line="605"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished"/>
+        <translation>Nepavyko aptikti greičiausios saugyklos.</translation>
     </message>
 </context>
 </TS>
