@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 14 Oct 2018 19:51:36 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.10) mx; urgency=medium
+ .
+   * updated translations
+Checksums-Sha1:
+ 8d7e712aa4833eb670530a37feb70fb848a3987e 1203 mx-repo-manager_18.10.dsc
+ a74ea3428735353a4df53581291027eb841998cf 37340 mx-repo-manager_18.10.tar.xz
+ 08e9b7747f1c635a538d679eaad2119f463e0394 57710 mx-repo-manager_18.10_amd64.deb
+Checksums-Sha256:
+ fcaa50a4d0b4cfa0aa4bb15e95c655a354a6d3630387687d2da12fdb35c94b69 1203 mx-repo-manager_18.10.dsc
+ d1bee63e1553afd06993f34ff3f957148a835c8f5e9a11208e6340f61bd371dd 37340 mx-repo-manager_18.10.tar.xz
+ 4541e655d46f11b2ef82a9673ecfd710115d64f059fadc06e292ce55e9c8330f 57710 mx-repo-manager_18.10_amd64.deb
+Files:
+ 03e061820958633c3c6c3084c8b7383b 1203 admin optional mx-repo-manager_18.10.dsc
+ 49d6f1e648e6a776fa4f67e9910edf98 37340 admin optional mx-repo-manager_18.10.tar.xz
+ cbb4652f86d59b5be1f9ff755cab0b0a 57710 admin optional mx-repo-manager_18.10_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlvD13gTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAhgB/4y0g1mt0jslx0xuMvfzQXkHHZB7SyA
+yyWke73GjdhBTFKfGOFF4kqKqru4Y67KCMMk7pYeskIpiplqlBegCqQFZotxZOXB
+10qiwvZziJrKBYSCdqpPMhA2FzkMY9ulBLG6biCD8BVNciIr6253A5AhlWVE0Ylx
+i1N9DzosN3GGy0LZ1LEZCige0sU35OO3HUa6po4jUtz8BJQI5N9EpNDeajXsxShc
+vz3Bd2Do2sigNVt/Bt7+dxNKSR9744S8JWOQRsrl9d/w0n4O/AaliTNncJ6NdjnA
+PjVlz+LEsgsBVk9kMuhBAsNReANdwwG3AhrZVMFajO0ZVIM4vWpCx6SQ
+=GcWo
+-----END PGP SIGNATURE-----
