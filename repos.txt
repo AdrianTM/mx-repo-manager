@@ -1,8 +1,10 @@
+China - https://mirrors.sjtug.sjtu.edu.cn/mx-packages
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
 Denmark - http://mirrors.dotsrc.org/mx-packages
 Germany, Aachen - http://ftp.halifax.rwth-aachen.de/mxlinux/packages
 Germany, Earlangen - https://ftp.fau.de/mxlinux-packages
 Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
+Hong Kong - https://mirror-hk.koddos.net/mxlinux
 Italy - http://it.mxrepo.com
 New Zealand - http://mx.debian.nz
 Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace

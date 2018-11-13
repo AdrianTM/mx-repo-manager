@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Tue, 13 Nov 2018 13:55:16 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.11
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.11) mx; urgency=medium
+ .
+   * new mirrors: China, Hong Kong
+Checksums-Sha1:
+ 867e35b876c87d7a041a93358fb2658422039efa 1203 mx-repo-manager_18.11.dsc
+ 0f6a2a2e800cb50b1349fdabce0a4b5eb5844001 37232 mx-repo-manager_18.11.tar.xz
+ 1b3143a0d16de85776cfb9fa8b0a36082005fbc8 11214 mx-repo-manager_18.11_amd64.buildinfo
+ 12757c962571cec0347625a05210c3194cbff005 57500 mx-repo-manager_18.11_amd64.deb
+Checksums-Sha256:
+ c59bea623beb28737cb168ebd3c4129718d2e89bc002af116f318ab38fbd7c63 1203 mx-repo-manager_18.11.dsc
+ d6a9702802bda82bd4a2b9c0725b07ba7eaa9b41d5d64d122c045338290e82f3 37232 mx-repo-manager_18.11.tar.xz
+ 20a279d576278e49aae423ebdd3a4ac8d56c65ae071dae1b1d34230feca70542 11214 mx-repo-manager_18.11_amd64.buildinfo
+ 0abe1bea47040d83e06a260a4af0692cb5c09f64f99fc8c850ba031530d9a63f 57500 mx-repo-manager_18.11_amd64.deb
+Files:
+ d10155d1f8bc3da3fe57388f03579f12 1203 admin optional mx-repo-manager_18.11.dsc
+ 30605bd279b8d718b10182e650c035d5 37232 admin optional mx-repo-manager_18.11.tar.xz
+ 9e1035e13aa207ec5125cd24ea167b22 11214 admin optional mx-repo-manager_18.11_amd64.buildinfo
+ 2ae57d473f830a70b51936f792d461dc 57500 admin optional mx-repo-manager_18.11_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlvrHq0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKzxB/97AOT2pVHRFD105MBRqS1S1JxWiBrG
+SIqpcCRBCN2O2oc1q78/7HjFqN9t8/97Q9xeH7bq4EuwXN6hEJXKZCmhfTWGAEUt
+wIo4wJ8ZA70a2J3ohi5V1siJ2GNl2FaeQhI/W2XNfTrYOCF1stoJgWUiidGlT2fD
+/Upuhcb//Pm+3k8WtWGGZh4QbsJWiQlD+yfQy+hRF63oTHX19vv+LIMqVwtwclMN
++2FOxTfL2Ml8dv9ZpjUL2emocZPMXiP9jC5NBwgIvEZjJTruppsuSz+iECttALTn
+lTSaRI1isYR0ROj/mcD+6VAYYIlGMGb2M4eV4G0uGwBHZfF3S+8k9JIV
+=Q1bG
+-----END PGP SIGNATURE-----
