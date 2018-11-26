@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="lt" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="is" version="2.1">
 <context>
     <name>QApplication</name>
     <message>
         <location filename="main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Privalote paleisti šią programą kaip pagrindinis (root) naudotojas.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -14,48 +14,48 @@
         <location filename="mxrepomanager.cpp" line="69"/>
         <location filename="mxrepomanager.cpp" line="414"/>
         <source>MX Repo Manager</source>
-        <translation>MX saugyklų tvarkytuvė</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="32"/>
         <location filename="mxrepomanager.cpp" line="520"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Pasirinkite norimą naudoti APT saugyklą:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation>MX saugyklos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="71"/>
         <source>Select fastest MX repo for me</source>
-        <translation>Parinkti man greičiausią MX saugyklą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="141"/>
         <source>Debian repos</source>
-        <translation>Debian saugyklos</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="153"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>Parinkti man greičiausią Debian saugyklą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="201"/>
         <source>Individual sources</source>
-        <translation>Atskiri šaltiniai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="262"/>
         <source>Display help </source>
-        <translation>Rodyti žinyną</translation>
+        <translation>Birta hjálp</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="265"/>
         <source>Help</source>
-        <translation>Žinynas</translation>
+        <translation>Hjálp</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="273"/>
@@ -65,12 +65,12 @@
     <message>
         <location filename="mxrepomanager.ui" line="318"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation>Um þetta forrit</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="321"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation>Um hugbúnaðinn...</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="329"/>
@@ -80,12 +80,12 @@
     <message>
         <location filename="mxrepomanager.ui" line="345"/>
         <source>Quit application</source>
-        <translation>Išeiti iš programos</translation>
+        <translation>Hætta í forriti</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="348"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation>Hætta</translation>
     </message>
     <message>
         <location filename="mxrepomanager.ui" line="356"/>
@@ -95,34 +95,34 @@
     <message>
         <location filename="mxrepomanager.ui" line="375"/>
         <source>Apply</source>
-        <translation>Taikyti</translation>
+        <translation>Virkja</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="60"/>
         <source>Please wait...</source>
-        <translation>Prašome palaukti...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="143"/>
         <location filename="mxrepomanager.cpp" line="365"/>
         <source>Success</source>
-        <translation>Pavyko</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="144"/>
         <location filename="mxrepomanager.cpp" line="366"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Jūsų naujas pasirinkimas įsigalios, kitą kartą atnaujinus šaltinius.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="208"/>
         <source>Lists</source>
-        <translation>Sąrašai</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="208"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>Šaltiniai (pažymėti šaltiniai yra įjungti)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="368"/>
@@ -130,68 +130,68 @@
         <location filename="mxrepomanager.cpp" line="589"/>
         <location filename="mxrepomanager.cpp" line="604"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation>Villa</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="369"/>
         <source>Could not change the repo.</source>
-        <translation>Nepavyko pakeisti saugyklos.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="413"/>
         <source>About MX Repo Manager</source>
-        <translation>Apie MX saugyklų tvarkytuvė</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="414"/>
         <source>Version: </source>
-        <translation>Versija: </translation>
+        <translation>Útgáfa:</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="415"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Programa, skirta pasirinkti numatytąją APT saugyklą</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="417"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation>Höfundarréttur (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="418"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation>Notkunarleyfi</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="419"/>
         <source>Changelog</source>
-        <translation>Keitinių žurnalas</translation>
+        <translation>Breytingaskrá</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="420"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation>Hætta við</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="436"/>
         <source>&amp;Close</source>
-        <translation>&amp;Užverti</translation>
+        <translation>&amp;Loka</translation>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="522"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>Pasirinkite norimą naudoti APT saugyklą ir šaltinius:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="578"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>Komandai netselect-apt nepavyko aptikti greičiausios saugyklos.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mxrepomanager.cpp" line="590"/>
         <location filename="mxrepomanager.cpp" line="605"/>
         <source>Could not detect fastest repo.</source>
-        <translation>Nepavyko aptikti greičiausios saugyklos.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
