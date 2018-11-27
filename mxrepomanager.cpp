@@ -69,9 +69,9 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     this->setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
-    int height = ui->listWidget->sizeHintForRow(0) * ui->listWidget->count();
-    ui->listWidget->setMinimumHeight(height);
-    this->adjustSize();
+    //int height = ui->listWidget->sizeHintForRow(0) * ui->listWidget->count();
+    //ui->listWidget->setMinimumHeight(height);
+    //this->adjustSize();
 }
 
 mxrepomanager::~mxrepomanager()
@@ -106,7 +106,7 @@ Output mxrepomanager::runCmd(const QString &cmd)
 void mxrepomanager::refresh()
 {
     displayMXRepos(readMXRepos());
-    selectRepo(getCurrentRepo());
+    displaySelected(getCurrentRepo());
     displayAllRepos(listAptFiles());
 }
 
@@ -266,12 +266,13 @@ QStringList mxrepomanager::loadAptFile(const QString &file)
 }
 
 // displays the current repo by selecting the item
-void mxrepomanager::selectRepo(const QString &repo)
+void mxrepomanager::displaySelected(const QString &repo)
 {
     for (int row = 0; row < ui->listWidget->count(); ++row) {
         QRadioButton *item = (QRadioButton*)ui->listWidget->itemWidget(ui->listWidget->item(row));
         if (item->text().contains(repo)) {
             item->setChecked(true);
+            ui->listWidget->scrollToItem(ui->listWidget->item(row));
         }
     }
 }
@@ -598,7 +599,7 @@ void mxrepomanager::on_pushFastestMX_clicked()
     Output out = runCmd("set -o pipefail; netselect -D -I " + listMXurls + "| tr -s ' ' | sed 's/^ //' | cut -d' ' -f2");
     progress->hide();
     if (out.exit_code == 0 && out.str !="") {
-        selectRepo(out.str);
+        displaySelected(out.str);
         on_buttonOk_clicked();
     } else {
         QMessageBox::critical(this, tr("Error"),

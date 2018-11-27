@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Tue, 27 Nov 2018 15:10:17 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.11.2
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.11.2) mx; urgency=medium
+ .
+   * new mirrors: Canada, Japan, Kazakhstan, Kenya, South Africa, Ukraine, England
+Checksums-Sha1:
+ e21c719a650327ded75e9adb892a7e64afe86965 1211 mx-repo-manager_18.11.2.dsc
+ e7a50b4a8f87af71d7bd7207de7441e055f343e5 37528 mx-repo-manager_18.11.2.tar.xz
+ 1f913067333bae158616c1b46f53ee5dc7baf57a 11230 mx-repo-manager_18.11.2_amd64.buildinfo
+ 691d31efc4c95fb5200bbc3b9ea037273501b533 58052 mx-repo-manager_18.11.2_amd64.deb
+Checksums-Sha256:
+ f5f7d01fdbf1d7d3869da95162b599a965805e4c649fb22495f12688053af67e 1211 mx-repo-manager_18.11.2.dsc
+ ee0292193f6076cb309857ad5de7cfd186b8b0c6394b9a2e519d10f6fb8b1435 37528 mx-repo-manager_18.11.2.tar.xz
+ 0208111231011c0d83c130f7f8a411ea9bbcc8e7f928a2bb7ba76fa540feb7a5 11230 mx-repo-manager_18.11.2_amd64.buildinfo
+ e1fa22da53efffb72104e0136536ee24a443e330c5bbfe12c7f2649a5bcc4f1c 58052 mx-repo-manager_18.11.2_amd64.deb
+Files:
+ 0ed872a86cda799b1518d21f3d1fd6cf 1211 admin optional mx-repo-manager_18.11.2.dsc
+ 3f2502f368ed498d03306b34171f94ad 37528 admin optional mx-repo-manager_18.11.2.tar.xz
+ ee04c00e34b69e54e4efa17a43fa42e4 11230 admin optional mx-repo-manager_18.11.2_amd64.buildinfo
+ 7a048cce3c5d67d1a46e3e0431869089 58052 admin optional mx-repo-manager_18.11.2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlv9pacTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLMWB/4jPm2ry+OBBhgcm+LYXK/hKiJRcvmA
+/ldlgeBJQ2C4WfPJz4+o6zEcjOi/hpmGUSk/mlLH5nP3sheQtWRz6IOIfXEGo4FX
+CInJ8xcLDVL1/GLXISaRG0WYRdXtugtV01kKvc3zxPe6DQQkeuB4b9ou1qYFQMXQ
+3Wn8P6oLhhmDc5nmeiKAi5HtyHUG4Ni7Y1SPOKLA+GxtbuoDpBXj+dRBtKntRbkU
+EMxicgK4uB0WaVnDBJGmqQbQs1IOJThIIDUOyG0Q8eRUDrn3Dk5jv8aqaaGyMZE3
+GVSHFE1UoO8hqp3+LRKa/avLfs6ZVBsZDkO58dIdIuiefOQh7dHKYsk1
+=e+sX
+-----END PGP SIGNATURE-----

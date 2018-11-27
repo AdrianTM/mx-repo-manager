@@ -1,3 +1,6 @@
+Canada, Halifax - http://mirror.its.dal.ca/mxlinux
+Canada, Montreal - http://mirror.cedille.club/mx-linux
+Canada, Toronto - http://mirror.utoronto.ca/mxlinux
 China, Beijing - https://mirrors.tuna.tsinghua.edu.cn/mxlinux
 China, Shanghai - https://mirrors.sjtug.sjtu.edu.cn/mx-packages
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
@@ -5,6 +8,10 @@ Denmark - http://mirrors.dotsrc.org/mx-packages
 Germany, Aachen - http://ftp.halifax.rwth-aachen.de/mxlinux/packages
 Germany, Earlangen - https://ftp.fau.de/mxlinux-packages
 Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
+Japan - https://mirrors.cat.net/mx-packages
+Kazakhstan - https://mirror.ps.kz/mx
+Kazakhstan - https://mirror.neolabs.kz/mx
+Kenya - https://mirror.liquidtelecom.com/mxlinux/packages
 Hong Kong - https://mirror-hk.koddos.net/mxlinux
 Italy - http://it.mxrepo.com
 New Zealand - http://mx.debian.nz
@@ -13,6 +20,9 @@ Russia - http://mirror.truenetwork.ru/mxlinux
 Sweden - http://ftp.acc.umu.se/mirror/mxlinux.org/packages
 Netherlands - http://nl.mxrepo.com
 Netherlands - https://ftp.nluug.nl/os/Linux/distr/mxlinux
+South Africa - https://ftp.saix.net/pub/linux/distributions/mxlinux
 Taiwan - http://ftp.yzu.edu.tw/Linux/mx-workspace
+Ukraine - https://mx-packages.ip-connect.vn.ua
+United Kingdom, London - http://mxlinux.mirrors.uk2.net/packages
 United States, Los Angeles - http://iso.mxrepo.com
 United States, Utah - http://mxrepo.com

@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>777</width>
-    <height>505</height>
+    <height>850</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -52,7 +52,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabMX">
       <attribute name="title">
@@ -72,8 +72,7 @@
          </property>
          <property name="icon">
           <iconset theme="cursor-arrow">
-           <normaloff/>
-          </iconset>
+           <normaloff>.</normaloff>.</iconset>
          </property>
         </widget>
        </item>
@@ -92,6 +91,9 @@
        </item>
        <item row="0" column="0" colspan="3">
         <widget class="QListWidget" name="listWidget">
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOn</enum>
+         </property>
          <property name="autoScroll">
           <bool>true</bool>
          </property>
@@ -154,8 +156,7 @@
          </property>
          <property name="icon">
           <iconset theme="cursor-arrow">
-           <normaloff/>
-          </iconset>
+           <normaloff>.</normaloff>.</iconset>
          </property>
         </widget>
        </item>
@@ -187,6 +188,9 @@
        </item>
        <item row="0" column="0" colspan="3">
         <widget class="QTreeWidget" name="treeWidgetDeb">
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
          <column>
           <property name="text">
            <string notr="true">1</string>
@@ -266,8 +270,7 @@
        </property>
        <property name="icon">
         <iconset theme="help-contents">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+H</string>
@@ -322,8 +325,7 @@
        </property>
        <property name="icon">
         <iconset theme="help-about">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+B</string>
@@ -349,8 +351,7 @@
        </property>
        <property name="icon">
         <iconset theme="window-close">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
        <property name="shortcut">
         <string>Alt+N</string>
@@ -376,8 +377,7 @@
        </property>
        <property name="icon">
         <iconset theme="dialog-ok">
-         <normaloff/>
-        </iconset>
+         <normaloff>.</normaloff>.</iconset>
        </property>
       </widget>
      </item>
