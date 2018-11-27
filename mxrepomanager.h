@@ -60,7 +60,7 @@ public:
     void displayDoc(QString url);
     void displayMXRepos(const QStringList &repos);
     void displayAllRepos(const QFileInfoList &apt_files);
-    void selectRepo(const QString &repo);
+    void displaySelected(const QString &repo);
     void extractUrls(const QStringList &repos);
     void refresh();
     void replaceDebianRepos(const QString &url);

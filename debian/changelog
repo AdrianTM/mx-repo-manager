@@ -1,3 +1,9 @@
+mx-repo-manager (18.11.2) mx; urgency=medium
+
+  * new mirrors: Canada, Japan, Kazakhstan, Kenya, South Africa, Ukraine, England
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 27 Nov 2018 15:10:17 -0500
+
 mx-repo-manager (18.11.1) mx; urgency=medium
 
   * new mirror: Beijing
