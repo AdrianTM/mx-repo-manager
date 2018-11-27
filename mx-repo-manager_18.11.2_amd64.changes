@@ -18,29 +18,29 @@ Changes:
  .
    * new mirrors: Canada, Japan, Kazakhstan, Kenya, South Africa, Ukraine, England
 Checksums-Sha1:
- e21c719a650327ded75e9adb892a7e64afe86965 1211 mx-repo-manager_18.11.2.dsc
- e7a50b4a8f87af71d7bd7207de7441e055f343e5 37528 mx-repo-manager_18.11.2.tar.xz
- 1f913067333bae158616c1b46f53ee5dc7baf57a 11230 mx-repo-manager_18.11.2_amd64.buildinfo
- 691d31efc4c95fb5200bbc3b9ea037273501b533 58052 mx-repo-manager_18.11.2_amd64.deb
+ 9ae2310c043a14d9cd603db56d952319c8ea1f5f 1211 mx-repo-manager_18.11.2.dsc
+ 644ecc209df7ab7e10cfd7915853ff47785318f7 37924 mx-repo-manager_18.11.2.tar.xz
+ eac7544f5ba5fd0e4f7a0cd2cb053475e2702a94 11230 mx-repo-manager_18.11.2_amd64.buildinfo
+ d81f69697da74b9aa57fda07f7ad9f6e8bad6bf4 58520 mx-repo-manager_18.11.2_amd64.deb
 Checksums-Sha256:
- f5f7d01fdbf1d7d3869da95162b599a965805e4c649fb22495f12688053af67e 1211 mx-repo-manager_18.11.2.dsc
- ee0292193f6076cb309857ad5de7cfd186b8b0c6394b9a2e519d10f6fb8b1435 37528 mx-repo-manager_18.11.2.tar.xz
- 0208111231011c0d83c130f7f8a411ea9bbcc8e7f928a2bb7ba76fa540feb7a5 11230 mx-repo-manager_18.11.2_amd64.buildinfo
- e1fa22da53efffb72104e0136536ee24a443e330c5bbfe12c7f2649a5bcc4f1c 58052 mx-repo-manager_18.11.2_amd64.deb
+ d45022bd61e73a489c7f26fb1cf710bcc1ead3182b3871800b2481f34fdfcc55 1211 mx-repo-manager_18.11.2.dsc
+ 707802ec307e91eb873215791c634eb92196ef385f817368b04d4b099089487d 37924 mx-repo-manager_18.11.2.tar.xz
+ 4777228965da9e6cfb82901d1ea95b26204e0d0f0bf37830687aa17365ee184b 11230 mx-repo-manager_18.11.2_amd64.buildinfo
+ fb31ef70c2a451de992d74dfbac93a9da279ed78ccc489346fc0902efc08c8b5 58520 mx-repo-manager_18.11.2_amd64.deb
 Files:
- 0ed872a86cda799b1518d21f3d1fd6cf 1211 admin optional mx-repo-manager_18.11.2.dsc
- 3f2502f368ed498d03306b34171f94ad 37528 admin optional mx-repo-manager_18.11.2.tar.xz
- ee04c00e34b69e54e4efa17a43fa42e4 11230 admin optional mx-repo-manager_18.11.2_amd64.buildinfo
- 7a048cce3c5d67d1a46e3e0431869089 58052 admin optional mx-repo-manager_18.11.2_amd64.deb
+ fe71fc92b6784c0401a4bac910f9ea28 1211 admin optional mx-repo-manager_18.11.2.dsc
+ 9091e705b47a1540fd2ce408b6325d44 37924 admin optional mx-repo-manager_18.11.2.tar.xz
+ 1033c3eb556936a86b5e1b983d1e861e 11230 admin optional mx-repo-manager_18.11.2_amd64.buildinfo
+ 53b5d2d0c6b593b726bf8e20ee4d7861 58520 admin optional mx-repo-manager_18.11.2_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlv9pacTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumLMWB/4jPm2ry+OBBhgcm+LYXK/hKiJRcvmA
-/ldlgeBJQ2C4WfPJz4+o6zEcjOi/hpmGUSk/mlLH5nP3sheQtWRz6IOIfXEGo4FX
-CInJ8xcLDVL1/GLXISaRG0WYRdXtugtV01kKvc3zxPe6DQQkeuB4b9ou1qYFQMXQ
-3Wn8P6oLhhmDc5nmeiKAi5HtyHUG4Ni7Y1SPOKLA+GxtbuoDpBXj+dRBtKntRbkU
-EMxicgK4uB0WaVnDBJGmqQbQs1IOJThIIDUOyG0Q8eRUDrn3Dk5jv8aqaaGyMZE3
-GVSHFE1UoO8hqp3+LRKa/avLfs6ZVBsZDkO58dIdIuiefOQh7dHKYsk1
-=e+sX
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlv9sacTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHp6CACjcJrfznTN3QWtQC/lHEDOPyl2Bxz1
+Qet/DwXXRwhyxhLeFf6FXcEicMBQi05uSnU7tCnB8AHU1pZMFM85ZOujXcLsqpka
+cxNwmEJYZzXJqa/39QxXl4PZRMoyNCm34lQcG3RE6iu6Q/06GRvxuMmMlLEz5XoF
+VT8er7ErKuw2TuYSCri3fhcZE6AALGwENmiU5yFHVL+US7ENbLDEXXQsuAj+dX2C
+HIBzuuCARuV1DhmtWFE6qhgzhX7UaG4kUVMDxjxRlj6N0JppUtaAM2SDPFHBPNM5
+BoENp9l8ee6NU34QyOC0+VGk6zfSVJvFTu1wWpbkODxUcwrQj4R1UIH8
+=Vcgv
 -----END PGP SIGNATURE-----
