@@ -47,6 +47,7 @@ TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_hi.ts \
                 translations/mx-repo-manager_hr.ts \
                 translations/mx-repo-manager_hu.ts \
+                translations/mx-repo-manager_is.ts \
                 translations/mx-repo-manager_it.ts \
                 translations/mx-repo-manager_ja.ts \
                 translations/mx-repo-manager_kk.ts \
