@@ -9,6 +9,7 @@ Germany, Aachen - http://ftp.halifax.rwth-aachen.de/mxlinux/packages
 Germany, Earlangen - https://ftp.fau.de/mxlinux-packages
 Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
 Japan - https://mirrors.cat.net/mx-packages
+Japan, Tsukuba - http://ftp.tsukuba.wide.ad.jp/Linux/mxlinux
 Kazakhstan - https://mirror.ps.kz/mx
 Kazakhstan - https://mirror.neolabs.kz/mx
 Kenya - https://mirror.liquidtelecom.com/mxlinux/packages
