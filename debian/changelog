@@ -1,3 +1,9 @@
+mx-repo-manager (18.11.3) mx; urgency=medium
+
+  * new mirror: Japan, Tsukuba
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 27 Nov 2018 21:06:26 -0500
+
 mx-repo-manager (18.11.2) mx; urgency=medium
 
   * new mirrors: Canada, Japan, Kazakhstan, Kenya, South Africa, Ukraine, England

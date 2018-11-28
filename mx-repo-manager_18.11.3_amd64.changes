@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 27 Nov 2018 21:06:26 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.11.3
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.11.3) mx; urgency=medium
+ .
+   * new mirror: Japan, Tsukuba
+Checksums-Sha1:
+ ec3b9cb44d4fe34e83e891245a06fa46ab4e7e1f 649 mx-repo-manager_18.11.3.dsc
+ 4987556f1314871b1ab57dbd929eaa6dbdc3ea62 38148 mx-repo-manager_18.11.3.tar.xz
+ 0e9a05bf9aabc8d53f09bf573c2016e9730dc474 58802 mx-repo-manager_18.11.3_amd64.deb
+Checksums-Sha256:
+ c4cd116d9871b37ffeac08d65b1684582cab3841c820ad914c7de6764ea046ce 649 mx-repo-manager_18.11.3.dsc
+ ba81ff57db8ce86b11d78ff7f014f9b1fc6db3cf08aa2f19b1633dd9c669ec57 38148 mx-repo-manager_18.11.3.tar.xz
+ 37edd7bd0fe01ab7fb1a0567fc09b48105d9247a4e73c0775cc28f2463e02ba8 58802 mx-repo-manager_18.11.3_amd64.deb
+Files:
+ c94de56cdfeac456144c6298a7c2d3d4 649 admin optional mx-repo-manager_18.11.3.dsc
+ 57585864e3bb7b68c59b040e7d4b58af 38148 admin optional mx-repo-manager_18.11.3.tar.xz
+ 91744827584cd665374ff91f7ebd7dbc 58802 admin optional mx-repo-manager_18.11.3_amd64.deb
