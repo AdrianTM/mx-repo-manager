@@ -14,6 +14,7 @@ Kazakhstan - https://mirror.ps.kz/mx
 Kazakhstan - https://mirror.neolabs.kz/mx
 Kenya - https://mirror.liquidtelecom.com/mxlinux/packages
 Hong Kong - https://mirror-hk.koddos.net/mxlinux
+Hong Kong, xTom - https://mirrors.xtom.com.hk/mx-packages
 Italy - http://it.mxrepo.com
 New Zealand - http://mx.debian.nz
 Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
@@ -25,6 +26,7 @@ South Africa - https://ftp.saix.net/pub/linux/distributions/mxlinux
 Taiwan - http://ftp.yzu.edu.tw/Linux/mx-workspace
 Ukraine - https://mx-packages.ip-connect.vn.ua
 United Kingdom, London - http://mxlinux.mirrors.uk2.net/packages
+United States, Freemont - https://mirrors.xtom.com/mx-packages
 United States, Los Angeles - http://iso.mxrepo.com
 United States, Utah - http://mxrepo.com
 Uruguay - https://espejito.fder.edu.uy/mxlinux/packages

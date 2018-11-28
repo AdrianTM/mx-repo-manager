@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 28 Nov 2018 14:06:43 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.11.5
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.11.5) mx; urgency=medium
+ .
+   * new mirror: HK and California
+Checksums-Sha1:
+ 7d5308a6d912208eb4c66f1a1f499c0338478fa3 1211 mx-repo-manager_18.11.5.dsc
+ 6028070a4b3941af3849986d36bb8e422b87c063 38064 mx-repo-manager_18.11.5.tar.xz
+ 3e0d784306eea3c23bafab081f683c78060997cb 11230 mx-repo-manager_18.11.5_amd64.buildinfo
+ b0aa8197e56cede1fbc09b993a50f55cf140612a 58664 mx-repo-manager_18.11.5_amd64.deb
+Checksums-Sha256:
+ a013983a9409d596cfb7333f047bd0e102d0f41018f0d285b4084511b28606a4 1211 mx-repo-manager_18.11.5.dsc
+ fa75c866874288086ae20214a2c5c98ce6e0897eb4b78f2b822c681f8fd14b15 38064 mx-repo-manager_18.11.5.tar.xz
+ a3bc238eb1f6e0cefc4079e3efaed64daa7daae35386fccd5b7e2f3fc2802ebf 11230 mx-repo-manager_18.11.5_amd64.buildinfo
+ 85f42fbf3ec106a368bd24b44c8fa965737f07f11a3c1324c6407601e0b44b02 58664 mx-repo-manager_18.11.5_amd64.deb
+Files:
+ 58065f225437657870c9d7c4e75bccf2 1211 admin optional mx-repo-manager_18.11.5.dsc
+ 11b2d6c5b0a1ee8733545c583c432de8 38064 admin optional mx-repo-manager_18.11.5.tar.xz
+ fbdcc169b3de7f455125912bef808723 11230 admin optional mx-repo-manager_18.11.5_amd64.buildinfo
+ c7ef2cb332b33aeecb0eb5baf465edef 58664 admin optional mx-repo-manager_18.11.5_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlv+5+YTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFjXCACpnf4WvS1gPtOau4cmnMJz5gQEcxXV
+dza0wM+0ACuVQ9kLW0iA6Pd8gtjP6VeXUmD99OfEIhsBoph0ftYrVJNRIn0ADmXe
+WR0bfyZDfkn/3n0obVkSr+3qPXKiA2fPUgTDliP244sX5FD1taltgAm9910Yiu4/
+HURVOPQLZfuqI52pgu716qBho9F4nbadHMkHOJESsObZRtvbJk/DD39L58I3/0kT
+6zUjVxXO7cQhYTl5kV+K07fSQX0wV0rg34/pe9le24j07EtTp9XE8PQDbcn/Me2H
+0k4t/4YiWvYNe2HmcNJBDCUW+Bo4P/2qvAH1ZyoAPhp1gVHFM66GCpjw
+=FkvD
+-----END PGP SIGNATURE-----
