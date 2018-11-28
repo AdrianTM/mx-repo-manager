@@ -27,3 +27,4 @@ Ukraine - https://mx-packages.ip-connect.vn.ua
 United Kingdom, London - http://mxlinux.mirrors.uk2.net/packages
 United States, Los Angeles - http://iso.mxrepo.com
 United States, Utah - http://mxrepo.com
+Uruguay - https://espejito.fder.edu.uy/mxlinux/packages
