@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 28 Nov 2018 09:29:38 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.11.4
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.11.4) mx; urgency=medium
+ .
+   * new mirror: Uruguay
+Checksums-Sha1:
+ 0f7a20ec1ef84c58afde8fcba707f283e2f8326d 1211 mx-repo-manager_18.11.4.dsc
+ 2e3033d5fc02a3212acf97e462c3c14e12242ce1 38020 mx-repo-manager_18.11.4.tar.xz
+ 99dfbaddcdb116e8e1049d6be48d46ddc5edbc24 11230 mx-repo-manager_18.11.4_amd64.buildinfo
+ 8d8e3bf4f977ae89b66332e17f049b00e866c124 58592 mx-repo-manager_18.11.4_amd64.deb
+Checksums-Sha256:
+ 5d5809fe88cdbfd9a22e0e1b6fae4842b24b0005c84749191c4950565292fb93 1211 mx-repo-manager_18.11.4.dsc
+ e0b99d00ba760b19fb3f1d334d7fb05e0c2ce62ccdfcb7d9f23f8177d79d03e4 38020 mx-repo-manager_18.11.4.tar.xz
+ 68f5e6ceab563ea0792b8e9e89e9fd4aacb142bd4c8915a6a775a375d838b6aa 11230 mx-repo-manager_18.11.4_amd64.buildinfo
+ 8531b072aa747ca5e6431e374bc5604321ba3cd03fc051c1ea855bdb1064cb9c 58592 mx-repo-manager_18.11.4_amd64.deb
+Files:
+ a14079b827df4057f07e50fb508a4b58 1211 admin optional mx-repo-manager_18.11.4.dsc
+ cdd022009c0e7c63134b619243e21bc1 38020 admin optional mx-repo-manager_18.11.4.tar.xz
+ 2c4dace0f5c3823752b9aa323b692425 11230 admin optional mx-repo-manager_18.11.4_amd64.buildinfo
+ 90de97187c3f420dc46e8d8d33be5887 58592 admin optional mx-repo-manager_18.11.4_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlv+pwoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumKvdCACDdX8pCB1URIcf6OthMYqwn5/1CeL2
+UIi/EeIRa2GCLdP+qwjkdZuKu5zVjNLgMuUA2gzPakpXRCxFVp4/+QU/nH53lxZD
+PQNjNELLxFQ/4JPuoox4PQIJHEcnP/Kebl0CfR+BX4gWlamh1WwxnO5qT1UKzqck
+cPtQbKkab61SEKxNkFC8rI8qEhjc8GG1EP+EQTUXLIWCb3Ma9VhI8xUyJ1mO6grm
+AokB2vIPyl4QNBbreQgy0m+P4dWrh5Su7gKVHXMaUfL3pI8DPyfxhQjLpjxUd86m
+so8gm5SkiZiN0KXOVMqiF0ZRYCiEIRLdQXGLN04gZyzrxLZChNoBGpOV
+=nbIn
+-----END PGP SIGNATURE-----
