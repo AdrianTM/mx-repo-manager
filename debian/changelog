@@ -1,3 +1,9 @@
+mx-repo-manager (18.11.6) mx; urgency=medium
+
+  * new mirror: Spain, Singapore, Maryland
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 29 Nov 2018 10:39:30 -0500
+
 mx-repo-manager (18.11.5) mx; urgency=medium
 
   * new mirror: HK and California
