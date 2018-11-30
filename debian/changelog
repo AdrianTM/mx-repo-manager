@@ -1,3 +1,9 @@
+mx-repo-manager (18.11.7) mx; urgency=medium
+
+  * new mirror: Brazil
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 30 Nov 2018 11:56:37 -0500
+
 mx-repo-manager (18.11.6) mx; urgency=medium
 
   * new mirror: Spain, Singapore, Maryland
