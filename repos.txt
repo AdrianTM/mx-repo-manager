@@ -1,3 +1,4 @@
+Brazil - http://sft.if.usp.br/mx-workspace 
 Canada, Halifax - http://mirror.its.dal.ca/mxlinux
 Canada, Montreal - http://mirror.cedille.club/mx-linux
 Canada, Toronto - http://mirror.utoronto.ca/mxlinux

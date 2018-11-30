@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Fri, 30 Nov 2018 11:56:37 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.11.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.11.7) mx; urgency=medium
+ .
+   * new mirror: Brazil
+Checksums-Sha1:
+ f087a82fa0b0edd5bb147f400073324c01d3c576 1211 mx-repo-manager_18.11.7.dsc
+ 2df01f0b6df18eaae98815a5c6a29250caf255c2 38168 mx-repo-manager_18.11.7.tar.xz
+ dbabf55c08a65f36ffe2315a503e30f572d67f67 11230 mx-repo-manager_18.11.7_amd64.buildinfo
+ 3b4bde89ea432008b4af0aec5f6fc073b701c4ae 58790 mx-repo-manager_18.11.7_amd64.deb
+Checksums-Sha256:
+ f1b09958c30964283c9cad4c1a634fe9dc2eda44bdd54045caecb5e7c68ba748 1211 mx-repo-manager_18.11.7.dsc
+ 9df0aeae2e145f085a24525c0ab87eef8451d23ac775d7c264eba3719e75a700 38168 mx-repo-manager_18.11.7.tar.xz
+ f25a10195616d77f55ad7ac016e95868b3de616b4f6b479c6839299b8afc240e 11230 mx-repo-manager_18.11.7_amd64.buildinfo
+ 8e046055a7c6885b8cffe1bdb89bed3670ecd026abf467f7fd6b2660506f8457 58790 mx-repo-manager_18.11.7_amd64.deb
+Files:
+ 37db879d244e985c2aeedbe4939c82f1 1211 admin optional mx-repo-manager_18.11.7.dsc
+ 7f944a7c7c150d570ad8c7e6ae14636c 38168 admin optional mx-repo-manager_18.11.7.tar.xz
+ 5de1a368fd9fc531c64b5e19b9c83a86 11230 admin optional mx-repo-manager_18.11.7_amd64.buildinfo
+ 3a33fa83d01c4d4d598d0ffdf450e6cd 58790 admin optional mx-repo-manager_18.11.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwBi5ETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPjkCADCPqFzfZ6+QsFPc+PFJYimyS2dfTmZ
+lYOFirC0BrO5BpUN7Dgl+Jk15Tmyb17OaxtWdjDzHNuP9UASqlsGCMon4jksAiFU
+WYPaH5bDHW6Yrz/L4LBcBcr73S1FrHBO894on7bJIFfKgccMr3jYRaPTSyR2sO5/
+4v1tnxW2WOiteqJJShWS/jceIuBGe6LdofJD/IW6c6/tKcDwESLBLFfRzTzO9osl
+sIs96ZXLQqFcAO/JHNvfYSIe/YYMGPcfqBO/vc0aZssEyTDH65eqlCg4rYliFhte
+iITn3iR/tpD9db3E1MSjq4t6D3Ry7u3e6tl2Ee9GIW7dyctZ6/oX5oVe
+=X0vr
+-----END PGP SIGNATURE-----
