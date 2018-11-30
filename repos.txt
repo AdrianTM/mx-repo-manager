@@ -32,5 +32,6 @@ United Kingdom, London - http://mxlinux.mirrors.uk2.net/packages
 United States, Freemont - https://mirrors.xtom.com/mx-packages
 United States, Los Angeles - http://iso.mxrepo.com
 United States, Maryland - http://mirror.umd.edu/mxlinux
+United States, Rochester - http://mirrors.rit.edu/mxlinux/mx-packages
 United States, Utah - http://mxrepo.com
 Uruguay - https://espejito.fder.edu.uy/mxlinux/packages
