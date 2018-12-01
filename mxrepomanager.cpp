@@ -154,17 +154,24 @@ QString mxrepomanager::getVersion(const QString &name)
 // List available repos
 QStringList mxrepomanager::readMXRepos()
 {
-    QString file_content;
-    QStringList repos;
     QFile file("/usr/share/mx-repo-manager/repos.txt");
     if(!file.open(QIODevice::ReadOnly)) {
         qDebug() << "Count not open file: " << file.fileName();
     }
-    file_content = file.readAll().trimmed();
+    QString file_content = file.readAll().trimmed();
     file.close();
 
-    repos = file_content.split("\n");
-    repos.sort();
+    QStringList file_content_list = file_content.split("\n");
+    file_content_list.sort();
+
+    // remove commented out lines
+    QStringList repos;
+    foreach (QString line, file_content_list) {
+        if (!line.startsWith("#")) {
+            repos << line;
+        }
+    }
+
     extractUrls(repos);
     return repos;
 }
@@ -188,9 +195,6 @@ void mxrepomanager::displayMXRepos(const QStringList &repos)
     QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
-        if (repo.startsWith("#")) {
-            continue;
-        }
         QString country = repo.section("-", 0, 0).trimmed().section(",", 0, 0);
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
