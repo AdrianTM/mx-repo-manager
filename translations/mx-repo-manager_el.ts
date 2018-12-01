@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="521"/>
+        <location filename="../mxrepomanager.cpp" line="524"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Επιλέξτε την αποθήκη του APT που θέλετε να χρησιμοποιήσετε.</translation>
     </message>
@@ -107,92 +107,92 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="366"/>
+        <location filename="../mxrepomanager.cpp" line="369"/>
         <source>Success</source>
         <translation>Επιτυχία!</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="370"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Η νέα επιλογή σας θα τεθεί σε ισχύ την επόμενη φορά που ενημερώνονται οι πηγές.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Lists</source>
         <translation>Κατάλογος</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Πηγές (ενεργοποιημένες ελεγχόμενες πηγές)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="369"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
-        <location filename="../mxrepomanager.cpp" line="590"/>
-        <location filename="../mxrepomanager.cpp" line="605"/>
+        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="581"/>
+        <location filename="../mxrepomanager.cpp" line="593"/>
+        <location filename="../mxrepomanager.cpp" line="608"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Could not change the repo.</source>
         <translation>Δεν ήταν δυνατή η αλλαγή.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>About MX Repo Manager</source>
         <translation>Περί MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>Version: </source>
         <translation>Έκδοση:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="416"/>
+        <location filename="../mxrepomanager.cpp" line="419"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Πρόγραμμα για την επιλογή της προεπιλεγμένης αποθήκης του APT</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="421"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c)  MX Linux </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>License</source>
         <translation>Άδεια</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="420"/>
+        <location filename="../mxrepomanager.cpp" line="423"/>
         <source>Changelog</source>
         <translation>Changelog</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="421"/>
+        <location filename="../mxrepomanager.cpp" line="424"/>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="437"/>
+        <location filename="../mxrepomanager.cpp" line="440"/>
         <source>&amp;Close</source>
         <translation>&amp;Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="523"/>
+        <location filename="../mxrepomanager.cpp" line="526"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Επιλέξτε το APT repository και τις πηγές για χρήση:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="579"/>
+        <location filename="../mxrepomanager.cpp" line="582"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Το netselect-apt δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="591"/>
-        <location filename="../mxrepomanager.cpp" line="606"/>
+        <location filename="../mxrepomanager.cpp" line="594"/>
+        <location filename="../mxrepomanager.cpp" line="609"/>
         <source>Could not detect fastest repo.</source>
         <translation>Δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>

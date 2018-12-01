@@ -27,6 +27,7 @@ Singapore - https://mirror.0x.sg/mx-workspace
 South Africa - https://ftp.saix.net/pub/linux/distributions/mxlinux
 Spain - http://ftp.cica.es/mirrors/Linux/MX-Packages
 Taiwan - http://ftp.yzu.edu.tw/Linux/mx-workspace
+Thailand - https://mirror.kku.ac.th/mx-packages
 Ukraine - https://mx-packages.ip-connect.vn.ua
 United Kingdom, London - http://mxlinux.mirrors.uk2.net/packages
 United States, Freemont - https://mirrors.xtom.com/mx-packages
@@ -35,3 +36,4 @@ United States, Maryland - http://mirror.umd.edu/mxlinux
 United States, Rochester - http://mirrors.rit.edu/mxlinux/mx-packages
 United States, Utah - http://mxrepo.com
 Uruguay - https://espejito.fder.edu.uy/mxlinux/packages
+# Vietnam - https://mirror.freedif.org/MXLinux/repo
