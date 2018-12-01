@@ -13,20 +13,20 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 9)
 Package-List:
  mx-repo-manager deb admin optional arch=any
 Checksums-Sha1:
- 9de11c328dd182cf9e11a0f5976cfe03a7ec81a3 38480 mx-repo-manager_18.11.8.tar.xz
+ e33e9c5a2dd96da6f9d812cea2baf5d2a5e67740 38476 mx-repo-manager_18.11.8.tar.xz
 Checksums-Sha256:
- 6d8efc9fdc73e462ab81fd5fcd5c4772971f70caaaee87c2f9ec1b950a1db2d5 38480 mx-repo-manager_18.11.8.tar.xz
+ 2fe317f8d0e32f6b2dedbf5d77c84d2c4f69f81cb4d91016423e2b4b46dc01e1 38476 mx-repo-manager_18.11.8.tar.xz
 Files:
- 870b6a57935aa2d09bc60a3961b566ec 38480 mx-repo-manager_18.11.8.tar.xz
+ d395046e5112d2c6ed779a6ccc71f05e 38476 mx-repo-manager_18.11.8.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwCwLUTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNGQB/45nR4XbbN0uV4RTYJ4OmPLOSeFdzN0
-TWmq/+6/l3PIC95tolONRKiFk6EuT4wHwJlsUKqDGwOJtM76+JSqCepZTv6Wc3W+
-Bo3j5RzCn/eZReHoIMTlhGxu0edRxl8KZhNuEmV5Co9Srn/vj3j2K5xq8+aPZVwo
-Sx8aWA8Sz8aUdxFsJ5GwVAv3mvVJ/Fv8lfaZEbtN4woIadTW+FTDizwoQ+rcFcRy
-FA870f/0B7uvmXS296Ozvd874WCkkYlht8UUw1EEOQQGSaGjyXblfsNZJGz83xX2
-OZLIEWRETGbnVmUzwQ3KjDEYC/66gLYYny5fRrTKjZiSuNC9+gVwODcP
-=b1yU
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwCylkTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJQsB/9S2z4rMbkA1YXoXprNl4r/yDfhXxXr
+VPBYHPIfx85CN7FvqChkXe9j5mvmgtJ4/PpKvgbfeKva3xdx2VWhlyFIEtXWC/O2
+EQlLlBsMHqUbMSnwsa7DPH+F0jnvAN2lq8DoN4FaOv8wJUJtU6SqUSuukDf0UquC
+WnqYvTROssws+V5r0PRz8iXqr4MOrCkDK19wkcVrWhCQRlYltV2ze4U8Uc01WfEP
+b5krTQTSMe2U+8mtdEbXsu1tK4674ocdmuxM7i8JMeMZ4WdeafL9/BpdokExyNGW
+G3Vn8GwBVoVNYloY9kWsLABs2HAUhS+N0sUHQHrQMjBXgcO+wCayQaI4
+=zMV6
 -----END PGP SIGNATURE-----
