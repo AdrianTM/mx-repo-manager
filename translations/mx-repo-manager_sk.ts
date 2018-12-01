@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="521"/>
+        <location filename="../mxrepomanager.cpp" line="524"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Vyberte APT repozitár, ktorý chcete používať: </translation>
     </message>
@@ -106,92 +106,92 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="366"/>
+        <location filename="../mxrepomanager.cpp" line="369"/>
         <source>Success</source>
         <translation>Úspech</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="370"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Zmeny sa prejavia pri najbližšej aktualizácií.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Lists</source>
         <translation>Zoznamy</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Zdroje (zaškrtnuté zdroje sa používajú)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="369"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
-        <location filename="../mxrepomanager.cpp" line="590"/>
-        <location filename="../mxrepomanager.cpp" line="605"/>
+        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="581"/>
+        <location filename="../mxrepomanager.cpp" line="593"/>
+        <location filename="../mxrepomanager.cpp" line="608"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Could not change the repo.</source>
         <translation>Repozitár na nepodarilo zmeniť.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>About MX Repo Manager</source>
         <translation>O programe MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>Version: </source>
         <translation>Verzia:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="416"/>
+        <location filename="../mxrepomanager.cpp" line="419"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Program pre výber predvolených repozitárov.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="421"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>License</source>
         <translation>Licencia</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="420"/>
+        <location filename="../mxrepomanager.cpp" line="423"/>
         <source>Changelog</source>
         <translation>História zmien</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="421"/>
+        <location filename="../mxrepomanager.cpp" line="424"/>
         <source>Cancel</source>
         <translation>Zrušiť</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="437"/>
+        <location filename="../mxrepomanager.cpp" line="440"/>
         <source>&amp;Close</source>
         <translation>&amp;Zatvoriť</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="523"/>
+        <location filename="../mxrepomanager.cpp" line="526"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Vyberte APT repozitár a zdroje, ktoré chcete používať: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="579"/>
+        <location filename="../mxrepomanager.cpp" line="582"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Príkaz netselect-apt nenašiel najrýchlejší repozitár.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="591"/>
-        <location filename="../mxrepomanager.cpp" line="606"/>
+        <location filename="../mxrepomanager.cpp" line="594"/>
+        <location filename="../mxrepomanager.cpp" line="609"/>
         <source>Could not detect fastest repo.</source>
         <translation>Najrýchlejší repozitár sa nenašiel.</translation>
     </message>

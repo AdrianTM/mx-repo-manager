@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="521"/>
+        <location filename="../mxrepomanager.cpp" line="524"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Trieu el dipòsit d&apos;APT que voleu usar: </translation>
     </message>
@@ -106,92 +106,92 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="366"/>
+        <location filename="../mxrepomanager.cpp" line="369"/>
         <source>Success</source>
         <translation>Èxit</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="370"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Aquesta tria serà efectiva la propera vegada que actualitzeu les fonts. </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Lists</source>
         <translation>Llistes </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Fonts (les marcades són les habilitades) </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="369"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
-        <location filename="../mxrepomanager.cpp" line="590"/>
-        <location filename="../mxrepomanager.cpp" line="605"/>
+        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="581"/>
+        <location filename="../mxrepomanager.cpp" line="593"/>
+        <location filename="../mxrepomanager.cpp" line="608"/>
         <source>Error</source>
         <translation>S&apos;ha produït un error</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Could not change the repo.</source>
         <translation>No s&apos;ha pogut canviar el dipòsit. </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>About MX Repo Manager</source>
         <translation>Quant a MX Repo Manager </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>Version: </source>
         <translation>Versió: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="416"/>
+        <location filename="../mxrepomanager.cpp" line="419"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programa per triar els dipòsits d&apos;APT per omissió </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="421"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>License</source>
         <translation>Llicència </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="420"/>
+        <location filename="../mxrepomanager.cpp" line="423"/>
         <source>Changelog</source>
         <translation>Registre de canvis</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="421"/>
+        <location filename="../mxrepomanager.cpp" line="424"/>
         <source>Cancel</source>
         <translation>Cancel·la </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="437"/>
+        <location filename="../mxrepomanager.cpp" line="440"/>
         <source>&amp;Close</source>
         <translation>Tan&amp;ca </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="523"/>
+        <location filename="../mxrepomanager.cpp" line="526"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Trieu el dipòsit APT i les fonts que voleu usar: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="579"/>
+        <location filename="../mxrepomanager.cpp" line="582"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt no ha pogut trobar el dipòsit més ràpid</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="591"/>
-        <location filename="../mxrepomanager.cpp" line="606"/>
+        <location filename="../mxrepomanager.cpp" line="594"/>
+        <location filename="../mxrepomanager.cpp" line="609"/>
         <source>Could not detect fastest repo.</source>
         <translation>No he pogut trobar el dipòsit més ràpid.</translation>
     </message>

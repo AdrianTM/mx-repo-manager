@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>MX Repo Manager</source>
         <translation>MX Repo Manager</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="521"/>
+        <location filename="../mxrepomanager.cpp" line="524"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>
 Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
@@ -107,92 +107,92 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="366"/>
+        <location filename="../mxrepomanager.cpp" line="369"/>
         <source>Success</source>
         <translation>Erfolg</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="367"/>
+        <location filename="../mxrepomanager.cpp" line="370"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ihre neue Auswahl wird wirksam wenn die Quellen nächstes Mal aktualisiert werden.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Lists</source>
         <translation>Listen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="208"/>
+        <location filename="../mxrepomanager.cpp" line="211"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Quellen (angehaktes Kästchen gleicht aktiviert)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="369"/>
-        <location filename="../mxrepomanager.cpp" line="578"/>
-        <location filename="../mxrepomanager.cpp" line="590"/>
-        <location filename="../mxrepomanager.cpp" line="605"/>
+        <location filename="../mxrepomanager.cpp" line="372"/>
+        <location filename="../mxrepomanager.cpp" line="581"/>
+        <location filename="../mxrepomanager.cpp" line="593"/>
+        <location filename="../mxrepomanager.cpp" line="608"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Could not change the repo.</source>
         <translation>Unmöglich, das Repository zu ändern</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="414"/>
+        <location filename="../mxrepomanager.cpp" line="417"/>
         <source>About MX Repo Manager</source>
         <translation>Über MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="415"/>
+        <location filename="../mxrepomanager.cpp" line="418"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="416"/>
+        <location filename="../mxrepomanager.cpp" line="419"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programm, um das Standard-Repository für APT zu wählen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="421"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>License</source>
         <translation>Lizenz</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="420"/>
+        <location filename="../mxrepomanager.cpp" line="423"/>
         <source>Changelog</source>
         <translation>Changelog</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="421"/>
+        <location filename="../mxrepomanager.cpp" line="424"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="437"/>
+        <location filename="../mxrepomanager.cpp" line="440"/>
         <source>&amp;Close</source>
         <translation>&amp;Close</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="523"/>
+        <location filename="../mxrepomanager.cpp" line="526"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Wählen Sie das APT-Repository und die Quellen, die Sie verwenden möchten:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="579"/>
+        <location filename="../mxrepomanager.cpp" line="582"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt konnte das schnellste Repo nicht erkennen</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="591"/>
-        <location filename="../mxrepomanager.cpp" line="606"/>
+        <location filename="../mxrepomanager.cpp" line="594"/>
+        <location filename="../mxrepomanager.cpp" line="609"/>
         <source>Could not detect fastest repo.</source>
         <translation>Konnte schnellstes Repo nicht erkennen.</translation>
     </message>

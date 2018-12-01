@@ -188,6 +188,9 @@ void mxrepomanager::displayMXRepos(const QStringList &repos)
     QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
+        if (repo.startsWith("#")) {
+            continue;
+        }
         QString country = repo.section("-", 0, 0).trimmed().section(",", 0, 0);
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
