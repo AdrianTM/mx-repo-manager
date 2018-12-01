@@ -36,4 +36,4 @@ United States, Maryland - http://mirror.umd.edu/mxlinux
 United States, Rochester - http://mirrors.rit.edu/mxlinux/mx-packages
 United States, Utah - http://mxrepo.com
 Uruguay - https://espejito.fder.edu.uy/mxlinux/packages
-# Vietnam - https://mirror.freedif.org/MXLinux/repo
+Vietnam - https://mirror.freedif.org/MXLinux/repo
