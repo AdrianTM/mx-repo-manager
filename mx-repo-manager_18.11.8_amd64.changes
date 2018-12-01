@@ -18,26 +18,26 @@ Changes:
  .
    * new mirror: Thailand, added commented out Vietnam, not yet populated
 Checksums-Sha1:
- 82bf9c387d8a5759f51d41bf980d8764e8c20433 1211 mx-repo-manager_18.11.8.dsc
- abec7364283ca709b6f81772686ab14a55faad79 38452 mx-repo-manager_18.11.8.tar.xz
- 6b6fec095f902070f57cec9cb91a00934e7594c1 59016 mx-repo-manager_18.11.8_amd64.deb
+ 8f4e6cbfe5ed654ceff82d62411172294c97917a 1211 mx-repo-manager_18.11.8.dsc
+ 9de11c328dd182cf9e11a0f5976cfe03a7ec81a3 38480 mx-repo-manager_18.11.8.tar.xz
+ 4d276e1a8cfef89e2b7353f77c926d69842070f8 59096 mx-repo-manager_18.11.8_amd64.deb
 Checksums-Sha256:
- 311da70788e010c2b7bb6dda828dcf16f04864d8f2158ed3d22c726bb3a4dff4 1211 mx-repo-manager_18.11.8.dsc
- b16c011a8e9e9bf5a0118a07654d3fc7e2ef54576e0526fed0d0057a4826521c 38452 mx-repo-manager_18.11.8.tar.xz
- aacfe39a3a580b3e6edddf916a6970d7713e8e8bfd4ca9ef8b73beec3230ede8 59016 mx-repo-manager_18.11.8_amd64.deb
+ 3a821470203476e4ea878f16ee32d9e74218a610dfeca3f2b816764a9a3613a9 1211 mx-repo-manager_18.11.8.dsc
+ 6d8efc9fdc73e462ab81fd5fcd5c4772971f70caaaee87c2f9ec1b950a1db2d5 38480 mx-repo-manager_18.11.8.tar.xz
+ 39dcba91c97e33508a866fc65cc4a3b0bfad36ccebbe3adc51d491c858cb771a 59096 mx-repo-manager_18.11.8_amd64.deb
 Files:
- c7ecb8420344f00398e03cf0fff07730 1211 admin optional mx-repo-manager_18.11.8.dsc
- 10e80bc5d73f97f022486e8b88b2b861 38452 admin optional mx-repo-manager_18.11.8.tar.xz
- 12754a43075439373927b8de391af576 59016 admin optional mx-repo-manager_18.11.8_amd64.deb
+ ac3f8e7c533d8a49edf284f3d4388d1d 1211 admin optional mx-repo-manager_18.11.8.dsc
+ 870b6a57935aa2d09bc60a3961b566ec 38480 admin optional mx-repo-manager_18.11.8.tar.xz
+ 86a349bd60a2bd48c1ef77955b5be273 59096 admin optional mx-repo-manager_18.11.8_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwCu4QTHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJrNB/4oKqSYAJi1aYa2Kmw8KcW5fMJ0cxZu
-30ZoxSd9XG9aa08dG25rRCkkvOkurxvHn4RQ96voiI0jIrRN+Pe5ZVisWEaALq6w
-SVyXJC0aonnLUuRbvfZG+x82N49bBWVDh4LB1Waf4M3PstccCoMf4pZPSFW0aL1B
-dtm2FWXJ+d8FQ3O+STDWN19V+PKygeZWQzhNABAhUG53aItIbNS0sNZc7irotaPK
-D3aOAy2HYgAaOdHzMjcxEEBQF+B+cKRyJiBgCT/ehm0tgYZfe7LpzLlDYICY2ggu
-JdGs1OQtLKpQHtqlwocixsyXaUf2V3w0qIxEN3K8tDsUWaqENTNDIIus
-=n6gE
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwCwLYTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumPivCADHdpq7w6GQpj7wdBtVJyHu2P1oA2N8
+FWkr8LWG04TC23juW2z/JtD/JtZR2qh20f8izjrw1aUZLU3LQCWTvNbhYnA/bNxT
+o35sLqbjeMKkOzAZp4Jzg5IRnQyKHdPwwbRreMu0cpudnIlsMitoapuFmfRuMXwX
+xGZMjfxdMX5RpoL5RBU9OIOicbnyVi/7PH+EsIN1hmgaXXuaIpwkhqi5E6BFySGz
+0PDWsXUVfGrwpHPr2jOlB5L8nHscTRcc7MnYCc25D9t0nP4RYW7oSNyb0scWeltQ
+F1quFaUyJvs8xQ2fVCu0YeMTmaoGxuUEaYhDZazLiIjbIh5DjgEAcT1y
+=tRAZ
 -----END PGP SIGNATURE-----

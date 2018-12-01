@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>MX Repo Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="524"/>
+        <location filename="../mxrepomanager.cpp" line="528"/>
         <source>Select the APT repository that you want to use:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -106,92 +106,92 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="369"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Success</source>
         <translation>Uspjeh</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="374"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="211"/>
+        <location filename="../mxrepomanager.cpp" line="215"/>
         <source>Lists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="211"/>
+        <location filename="../mxrepomanager.cpp" line="215"/>
         <source>Sources (checked sources are enabled)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="372"/>
-        <location filename="../mxrepomanager.cpp" line="581"/>
-        <location filename="../mxrepomanager.cpp" line="593"/>
-        <location filename="../mxrepomanager.cpp" line="608"/>
+        <location filename="../mxrepomanager.cpp" line="376"/>
+        <location filename="../mxrepomanager.cpp" line="585"/>
+        <location filename="../mxrepomanager.cpp" line="597"/>
+        <location filename="../mxrepomanager.cpp" line="612"/>
         <source>Error</source>
         <translation>Greška</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="373"/>
+        <location filename="../mxrepomanager.cpp" line="377"/>
         <source>Could not change the repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="417"/>
+        <location filename="../mxrepomanager.cpp" line="421"/>
         <source>About MX Repo Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>Version: </source>
         <translation>Inačica:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="423"/>
         <source>Program for choosing the default APT repository</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="421"/>
+        <location filename="../mxrepomanager.cpp" line="425"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Autorska prava (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="422"/>
+        <location filename="../mxrepomanager.cpp" line="426"/>
         <source>License</source>
         <translation>Licenca</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="423"/>
+        <location filename="../mxrepomanager.cpp" line="427"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="424"/>
+        <location filename="../mxrepomanager.cpp" line="428"/>
         <source>Cancel</source>
         <translation>Otkaži</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="440"/>
+        <location filename="../mxrepomanager.cpp" line="444"/>
         <source>&amp;Close</source>
         <translation>&amp;Zatvori</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="526"/>
+        <location filename="../mxrepomanager.cpp" line="530"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="582"/>
+        <location filename="../mxrepomanager.cpp" line="586"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="594"/>
-        <location filename="../mxrepomanager.cpp" line="609"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="613"/>
         <source>Could not detect fastest repo.</source>
         <translation type="unfinished"></translation>
     </message>

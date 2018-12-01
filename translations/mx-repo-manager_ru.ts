@@ -14,13 +14,13 @@
     <message>
         <location filename="../mxrepomanager.ui" line="17"/>
         <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>MX Repo Manager</source>
         <translation>MX Менеджер репозиториев</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="524"/>
+        <location filename="../mxrepomanager.cpp" line="528"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Выберите APT репозиторий, который Вы хотите использовать:</translation>
     </message>
@@ -106,92 +106,92 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="143"/>
-        <location filename="../mxrepomanager.cpp" line="369"/>
+        <location filename="../mxrepomanager.cpp" line="373"/>
         <source>Success</source>
         <translation>Успешно</translation>
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="144"/>
-        <location filename="../mxrepomanager.cpp" line="370"/>
+        <location filename="../mxrepomanager.cpp" line="374"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ваш новый выбор вступит в силу при следующем обновлении.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="211"/>
+        <location filename="../mxrepomanager.cpp" line="215"/>
         <source>Lists</source>
         <translation>Списки</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="211"/>
+        <location filename="../mxrepomanager.cpp" line="215"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Источники (отмеченные источники включены)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="372"/>
-        <location filename="../mxrepomanager.cpp" line="581"/>
-        <location filename="../mxrepomanager.cpp" line="593"/>
-        <location filename="../mxrepomanager.cpp" line="608"/>
+        <location filename="../mxrepomanager.cpp" line="376"/>
+        <location filename="../mxrepomanager.cpp" line="585"/>
+        <location filename="../mxrepomanager.cpp" line="597"/>
+        <location filename="../mxrepomanager.cpp" line="612"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="373"/>
+        <location filename="../mxrepomanager.cpp" line="377"/>
         <source>Could not change the repo.</source>
         <translation>Не удалось изменить репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="417"/>
+        <location filename="../mxrepomanager.cpp" line="421"/>
         <source>About MX Repo Manager</source>
         <translation>Об  MX Менеджере репозиториев</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="418"/>
+        <location filename="../mxrepomanager.cpp" line="422"/>
         <source>Version: </source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="419"/>
+        <location filename="../mxrepomanager.cpp" line="423"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Программа для выбора APT репозитория по умолчанию</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="421"/>
+        <location filename="../mxrepomanager.cpp" line="425"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Авторское право (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="422"/>
+        <location filename="../mxrepomanager.cpp" line="426"/>
         <source>License</source>
         <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="423"/>
+        <location filename="../mxrepomanager.cpp" line="427"/>
         <source>Changelog</source>
         <translation>Список изменений</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="424"/>
+        <location filename="../mxrepomanager.cpp" line="428"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="440"/>
+        <location filename="../mxrepomanager.cpp" line="444"/>
         <source>&amp;Close</source>
         <translation>&amp;Закрыть</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="526"/>
+        <location filename="../mxrepomanager.cpp" line="530"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="582"/>
+        <location filename="../mxrepomanager.cpp" line="586"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="594"/>
-        <location filename="../mxrepomanager.cpp" line="609"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="613"/>
         <source>Could not detect fastest repo.</source>
         <translation>Не удалось определить самый быстрый репозиторий.</translation>
     </message>
