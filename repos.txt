@@ -16,6 +16,7 @@ Kazakhstan - https://mirror.neolabs.kz/mx
 Kenya - https://mirror.liquidtelecom.com/mxlinux/packages
 Hong Kong - https://mirror-hk.koddos.net/mxlinux
 Hong Kong, xTom - https://mirrors.xtom.com.hk/mx-packages
+Hungary - https://quantum-mirror.hu/mirrors/pub/mx-linux/packages
 Italy - http://it.mxrepo.com
 New Zealand - http://mx.debian.nz
 Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
