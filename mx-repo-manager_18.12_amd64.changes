@@ -18,26 +18,29 @@ Changes:
  .
    * new mirror: Hungary
 Checksums-Sha1:
- a56cc77b3a95ae20b20758da6a675ae57c12769c 1203 mx-repo-manager_18.12.dsc
- add70d9d57254cf5f896cdf18a9e5c5a605ee0ac 38528 mx-repo-manager_18.12.tar.xz
- a7ebeadef7cdddcfc52f63c61f4c37debffa8af5 59246 mx-repo-manager_18.12_amd64.deb
+ 38519c18444093ffccc15fc33bd6bdea11b51ea6 1203 mx-repo-manager_18.12.dsc
+ d95d451570b6d52c182096e7da6f48b356a79e96 38364 mx-repo-manager_18.12.tar.xz
+ f8d83f5187fba89599c5e6904b18e481511f01e3 11214 mx-repo-manager_18.12_amd64.buildinfo
+ 8ea559d8f093417942ce6b32e0a58991c387bc34 59054 mx-repo-manager_18.12_amd64.deb
 Checksums-Sha256:
- 7c611c8ca0cd3dfa29ae2d700c3cc85c56310f774ec769d67af50cb56cee1445 1203 mx-repo-manager_18.12.dsc
- 89e1edc39745aa6b7216e93ccfb00c4a23960c23ae66495f90b2fe904f3c362f 38528 mx-repo-manager_18.12.tar.xz
- 4d3f3f1c6fcdbe2e0f595f66673a1672bf19ab4c723217747f342216baa08388 59246 mx-repo-manager_18.12_amd64.deb
+ 5d3a0c404969a44b184b9a33e350ad2390c1f3635d80d12d90b7c69e7443882b 1203 mx-repo-manager_18.12.dsc
+ 6db2cce08b86d165cfa0e18d438d00bb6c599894b70fcadbbd415b3fcd3e6de6 38364 mx-repo-manager_18.12.tar.xz
+ 1f33fefcd981564b80e9245f7f3a0fd2c60df78db51bb3c34bf0be4489dee389 11214 mx-repo-manager_18.12_amd64.buildinfo
+ bb0d28ece92c96e57d897e29ecc11f6a339a6499b5a41ebe6f288211c15999c8 59054 mx-repo-manager_18.12_amd64.deb
 Files:
- 579aa2d13efb9420a7675d9e2b17e45e 1203 admin optional mx-repo-manager_18.12.dsc
- b8398dabe699f88bfe905f70d184a06f 38528 admin optional mx-repo-manager_18.12.tar.xz
- 0d3791291fd4fc1e9a8afbcda50df29d 59246 admin optional mx-repo-manager_18.12_amd64.deb
+ d528df038c62f24e7086dd7843d12de2 1203 admin optional mx-repo-manager_18.12.dsc
+ 830073eeafeb33ade46a4617b396c292 38364 admin optional mx-repo-manager_18.12.tar.xz
+ 3a5d2a67836775ead8a25e73fc6c5e05 11214 admin optional mx-repo-manager_18.12_amd64.buildinfo
+ c23a7eac7be841cb15d0b05ed14eda7f 59054 admin optional mx-repo-manager_18.12_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwE7k4THGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumL0QB/0VkVwUpVGEEfrJGAOLVrF3fauNDK6X
-igq3mtSKz83/PS/VuLz95aSto1dqvMwXecGiBsODyOy9VwSEaXOWnPNgjijqY2zW
-jDSfwsWJ40QGlTtdaIYBkR5lTM4q+kPC8/Bdnp+kgchYYupMP216WWUBxCnZYAWG
-pZQras/iyIR1q15HwyWUV0QM2vC3JyHPSVHYQrQOI72uHajn7l9Z5qVX+9qxUIJt
-NuvbG5f2Sho6/82DeQMIwyuidfN60RSjTDddm32Zd3LtDYitZ5/gLZfBgbN1TjwI
-ybAVQfvbhOyavVAyHm+PUJ/FNPKTsKaYnTO/idT3U+8bgJaUWYPEJT76
-=BFWl
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwFTkoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHFmCACa0AhEWlaiqq4M6tkiOzbrTJ/In5+Y
+NlH6whXKO1OI3vSsw8f1kdmqkSi1waWQy8forPUfXeCn6wU+HBPWiAqbtAbwsUYw
+RNVlrLkQXtxDgOdkF+OrciNuAi4ZFSmcZ61IzTqPZ8TWObhwaMutQhMHs9QTEvHS
+/d3fT4y8DJyAHrOshnPzY0bJFttumPsG1Ud8JZOCqiYfsy7V1woz4m96T1eXu2vy
+YnHIKmh8xNjlNGrEFigtH4xBsmXwR3RG9f4nHiqBSdAQVXSujGHq1blz7ZNahPTB
+500OKRzaObEl8N1VGviN8Op6j1wU3pmfJw7gtYBBAtrgHXVNFfxAtmds
+=AGGp
 -----END PGP SIGNATURE-----
