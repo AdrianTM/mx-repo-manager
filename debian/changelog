@@ -1,3 +1,9 @@
+mx-repo-manager (18.12) mx; urgency=medium
+
+  * new mirror: Hungary
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 03 Dec 2018 03:46:41 -0500
+
 mx-repo-manager (18.11.8) mx; urgency=medium
 
   * new mirror: Thailand, added commented out Vietnam, not yet populated
