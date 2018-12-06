@@ -1,3 +1,9 @@
+mx-repo-manager (18.12.3) mx; urgency=medium
+
+  * new mirrors: Belgium, Germany, Phillipines, Spain
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 06 Dec 2018 17:34:38 -0500
+
 mx-repo-manager (18.12.2) mx; urgency=medium
 
   * new mirrors: Austria, Atlanta GA
