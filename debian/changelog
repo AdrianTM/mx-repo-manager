@@ -1,3 +1,9 @@
+mx-repo-manager (18.12.5) mx; urgency=medium
+
+  * fix KZ mirrors
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 07 Dec 2018 09:33:36 -0500
+
 mx-repo-manager (18.12.4) mx; urgency=medium
 
   * replaced iso.mxrepo with la.mxrepo

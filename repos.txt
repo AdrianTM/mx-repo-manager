@@ -18,8 +18,8 @@ Greece, Crete - http://ftp.cc.uoc.gr/mirrors/linux/mx
 Indonesia - http://kartolo.sby.datautama.net.id/mx-packages
 Japan - https://mirrors.cat.net/mx-packages
 Japan, Tsukuba - http://ftp.tsukuba.wide.ad.jp/Linux/mxlinux
-Kazakhstan - https://mirror.ps.kz/mx
-Kazakhstan - https://mirror.neolabs.kz/mx
+Kazakhstan - https://mirror.ps.kz/mx/packages
+Kazakhstan - http://mirror.neolabs.kz/mx/packages
 Kenya - https://mirror.liquidtelecom.com/mxlinux/packages
 Hong Kong - https://mirror-hk.koddos.net/mxlinux
 Hong Kong, xTom - https://mirrors.xtom.com.hk/mx-packages
