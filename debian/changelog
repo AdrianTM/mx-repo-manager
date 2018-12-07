@@ -1,3 +1,9 @@
+mx-repo-manager (18.12.4) mx; urgency=medium
+
+  * replaced iso.mxrepo with la.mxrepo
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 06 Dec 2018 22:33:46 -0500
+
 mx-repo-manager (18.12.3) mx; urgency=medium
 
   * new mirrors: Belgium, Germany, Phillipines, Spain
