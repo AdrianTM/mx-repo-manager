@@ -362,7 +362,7 @@ void mxrepomanager::replaceRepos(const QString &url)
     // for antiX repos
     QString antix_file = "/etc/apt/sources.list.d/antix.list";
     if (url == "http://mxrepo.com") {
-        repo_line_antix = "http://iso.mxrepo.com/antix/" + ver_name + "/";
+        repo_line_antix = "http://la.mxrepo.com/antix/" + ver_name + "/";
     } else {
         repo_line_antix = url + "/antix/" + ver_name + "/";
     }

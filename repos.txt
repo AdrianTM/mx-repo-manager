@@ -42,7 +42,7 @@ Ukraine - https://mx-packages.ip-connect.vn.ua
 United Kingdom, London - http://mxlinux.mirrors.uk2.net/packages
 United States, Atlanta GA - http://www.gtlib.gatech.edu/pub/MX-Linux/workspace
 United States, Freemont CA - https://mirrors.xtom.com/mx-packages
-United States, Los Angeles CA - http://iso.mxrepo.com
+United States, Los Angeles CA - http://la.mxrepo.com
 United States, MD - http://mirror.umd.edu/mxlinux
 United States, Rochester NY - http://mirrors.rit.edu/mxlinux/mx-packages
 United States, UT - http://mxrepo.com
