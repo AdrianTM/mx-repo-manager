@@ -1,3 +1,9 @@
+mx-repo-manager (18.12.6) mx; urgency=medium
+
+  * new repo: Malaysia
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 08 Dec 2018 03:04:23 -0500
+
 mx-repo-manager (18.12.5) mx; urgency=medium
 
   * fix KZ mirrors
