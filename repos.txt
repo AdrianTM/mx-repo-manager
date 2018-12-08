@@ -25,6 +25,7 @@ Hong Kong - https://mirror-hk.koddos.net/mxlinux
 Hong Kong, xTom - https://mirrors.xtom.com.hk/mx-packages
 Hungary - https://quantum-mirror.hu/mirrors/pub/mx-linux/packages
 Italy - http://it.mxrepo.com
+Malaysia - http://mirror.myren.net.my/mx-linux
 New Zealand - http://mx.debian.nz
 Philippines - https://mirror.pregi.net/mx-linux-packages
 Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
