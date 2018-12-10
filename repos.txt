@@ -7,6 +7,7 @@ Canada, Montreal - http://mirror.cedille.club/mx-linux
 Canada, Toronto - http://mirror.utoronto.ca/mxlinux
 China, Beijing - https://mirrors.tuna.tsinghua.edu.cn/mxlinux
 China, Shanghai - https://mirrors.sjtug.sjtu.edu.cn/mx-packages
+Czech Republic - http://mirror.karneval.cz/pub/linux/mxlinux-packages
 Denmark - http://mirrors.dotsrc.org/mx-packages
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
 France, Paris - http://ftp.lip6.fr/pub/linux/distributions/mxlinux/packages

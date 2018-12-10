@@ -1,3 +1,9 @@
+mx-repo-manager (18.12.7) mx; urgency=medium
+
+  * new mirror: Czech Republic
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 10 Dec 2018 11:24:24 -0500
+
 mx-repo-manager (18.12.6) mx; urgency=medium
 
   * new repo: Malaysia
