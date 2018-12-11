@@ -1,4 +1,5 @@
-Austria - http://mirror.digitalnova.at/mxlinux/packages
+Austria, Graz - http://mirror.digitalnova.at/mxlinux/packages
+Austria, Vienna - http://mirror.easyname.at/mxlinux-packages
 Belgium - http://mirror.adct.be/mx
 Brazil - http://sft.if.usp.br/mx-workspace 
 Brazil, Manaus - http://mirror.ufam.edu.br/mx
@@ -10,6 +11,7 @@ China, Shanghai - https://mirrors.sjtug.sjtu.edu.cn/mx-packages
 Czech Republic - http://mirror.karneval.cz/pub/linux/mxlinux-packages
 Denmark - http://mirrors.dotsrc.org/mx-packages
 Ecuador - http://mirror.cedia.org.ec/mx-workspace
+France, Lyon - http://mirror.ibcp.fr/pub/mxlinux/workspace
 France, Paris - http://ftp.lip6.fr/pub/linux/distributions/mxlinux/packages
 France, Saint Étienne du Rouvray - http://ftp.crihan.fr/mirrors/mxlinux.org-packages
 Germany, Aachen - http://ftp.halifax.rwth-aachen.de/mxlinux/packages
@@ -33,6 +35,7 @@ Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
 Russia - http://mirror.truenetwork.ru/mxlinux
 Spain - http://ftp.cica.es/mirrors/Linux/MX-Packages
 Sweden - http://ftp.acc.umu.se/mirror/mxlinux.org/packages
+Switzerland, Zurich - http://mirror.easyname.ch/mxlinux-packages
 Netherlands - http://nl.mxrepo.com
 Netherlands - https://ftp.nluug.nl/os/Linux/distr/mxlinux
 Singapore - https://mirror.0x.sg/mx-workspace
@@ -48,5 +51,6 @@ United States, Los Angeles CA - http://la.mxrepo.com
 United States, MD - http://mirror.umd.edu/mxlinux
 United States, Rochester NY - http://mirrors.rit.edu/mxlinux/mx-packages
 United States, UT - http://mxrepo.com
-Uruguay - https://espejito.fder.edu.uy/mxlinux/packages
+Uruguay, Montevideo - https://espejito.fder.edu.uy/mxlinux/packages
+Uruguay, Treint y Tres - https://repo.cure.edu.uy/mxlinux/packages
 Vietnam - https://mirror.freedif.org/MXLinux/repo
