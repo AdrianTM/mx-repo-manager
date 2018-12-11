@@ -1,3 +1,5 @@
+Australia, Melbourne - http://mx.mirror.ausnetservers.net.au/packages
+Australia, Launceston - http://mirror.launtel.net.au/repo/mx
 Austria, Graz - http://mirror.digitalnova.at/mxlinux/packages
 Austria, Vienna - http://mirror.easyname.at/mxlinux-packages
 Belgium - http://mirror.adct.be/mx
@@ -29,6 +31,9 @@ Hong Kong, xTom - https://mirrors.xtom.com.hk/mx-packages
 Hungary - https://quantum-mirror.hu/mirrors/pub/mx-linux/packages
 Italy - http://it.mxrepo.com
 Malaysia - http://mirror.myren.net.my/mx-linux
+Netherlands, Alblasserdam - http://nl.mxrepo.com
+Netherlands, Ede - https://ftp.nluug.nl/os/Linux/distr/mxlinux
+Netherlands, Amsterdam - https://mirror.koddos.net/mxlinux
 New Zealand - http://mx.debian.nz
 Philippines - https://mirror.pregi.net/mx-linux-packages
 Poland - http://ftp.icm.edu.pl/pub/Linux/dist/antix-workspace
@@ -36,8 +41,6 @@ Russia - http://mirror.truenetwork.ru/mxlinux
 Spain - http://ftp.cica.es/mirrors/Linux/MX-Packages
 Sweden - http://ftp.acc.umu.se/mirror/mxlinux.org/packages
 Switzerland, Zurich - http://mirror.easyname.ch/mxlinux-packages
-Netherlands - http://nl.mxrepo.com
-Netherlands - https://ftp.nluug.nl/os/Linux/distr/mxlinux
 Singapore - https://mirror.0x.sg/mx-workspace
 South Africa - https://ftp.saix.net/pub/linux/distributions/mxlinux
 Spain - http://ftp.cica.es/mirrors/Linux/MX-Packages
