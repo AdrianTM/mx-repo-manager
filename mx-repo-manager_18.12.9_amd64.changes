@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 12 Dec 2018 10:02:37 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.12.9
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.12.9) mx; urgency=medium
+ .
+   * new mirror: Turkey
+Checksums-Sha1:
+ 7bb7349eb86bc40099e55733ff1481b80b65a79e 1211 mx-repo-manager_18.12.9.dsc
+ db5b1ef3e37d0b52e45453beac60809aff43e0b8 39068 mx-repo-manager_18.12.9.tar.xz
+ 1b346af9a12a0892ccf525fc0a7ae6ab3218663f 59782 mx-repo-manager_18.12.9_amd64.deb
+Checksums-Sha256:
+ a211940fd5a2e13a3db7cc450aeaf48adcae6cebf2f4faee0292ee02437b18f2 1211 mx-repo-manager_18.12.9.dsc
+ 960511167034e4d73a3d203a5820abddd9690f2f1daf54a401609a48106e64ef 39068 mx-repo-manager_18.12.9.tar.xz
+ f8dd5cdbfd35ade813776eb4ed9a407db7ca1785150b552237c43c567f0f5edc 59782 mx-repo-manager_18.12.9_amd64.deb
+Files:
+ 539c55a0dff0633105e93de2d125c40c 1211 admin optional mx-repo-manager_18.12.9.dsc
+ 34b59ee293a70397bfe3ae87cf784d0b 39068 admin optional mx-repo-manager_18.12.9.tar.xz
+ 2d17222e1de0f151484d5710f0ff946f 59782 admin optional mx-repo-manager_18.12.9_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwRI60THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAN2CADNBhiFXOPBbPVfUDJFD+9QSWOODdNB
+5/PcIFevrv2fPfYeBJWo74ucqo+zZOmc3KgMrAT7hDRC0Uw19bN5baA69S2NMEed
+pNSsO42/4vMxYkO/q5xKN6uNTOMMriTbliTYsgUDTQS38+VfvrfoUNI+5X+iw9VS
+MAvlkA6YgSsFxiweXxzuJc2F64cgbnpsRToRpIyFYxaSnersNdJYqkNGBO3rHBnw
+PAMKTp7BzibD2gswdmMwezVXH3oASa3EwZaARfoigRHENAYSLFc/bHEYfjrtWOuk
+28Ji5ofp1HlcoNR7jlbVAKmeV71fhuHsd71IYx58WhRQRk8nSPo/03GZ
+=3fya
+-----END PGP SIGNATURE-----
