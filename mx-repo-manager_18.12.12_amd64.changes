@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Thu, 13 Dec 2018 12:19:29 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 18.12.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (18.12.12) mx; urgency=medium
+ .
+   * split repos.list file to mx-repo-list package
+Checksums-Sha1:
+ 7a2c58c7313e8b67140e2d8cdda47aa391b7b6fe 1215 mx-repo-manager_18.12.12.dsc
+ 13d33e69690aac8a8ef7c19b04520ade20d69c6b 39028 mx-repo-manager_18.12.12.tar.xz
+ eca40c9cd166e1712b376e9c267573ed062e577d 11238 mx-repo-manager_18.12.12_amd64.buildinfo
+ fe5b46e11a211ec302370d1b571041fccd0bea34 58516 mx-repo-manager_18.12.12_amd64.deb
+Checksums-Sha256:
+ ddc60fc84312a2127f6402729c41d4749b6bc07fd73346a61402022b5c8511ad 1215 mx-repo-manager_18.12.12.dsc
+ 545dcbb14042052843e1ad14dedff2847a783e746a490c4dfd58b7277f4c9957 39028 mx-repo-manager_18.12.12.tar.xz
+ 9cf0f99cff57ffa2a05d022cf43f274448ce83a76192e909235860239396ac62 11238 mx-repo-manager_18.12.12_amd64.buildinfo
+ b638d96abdad243ac058f2c1d57312fa527779d0e1ae73757c5f10f41233cdf3 58516 mx-repo-manager_18.12.12_amd64.deb
+Files:
+ afa8e53f83663c637c69f4d042efb1c2 1215 admin optional mx-repo-manager_18.12.12.dsc
+ ccc1074bf671f3244633f800546abb00 39028 admin optional mx-repo-manager_18.12.12.tar.xz
+ 6cfb60d4c1213f3494dd3f132f5beb05 11238 admin optional mx-repo-manager_18.12.12_amd64.buildinfo
+ 7e2a981a24028bb06f6310e98ded3c0e 58516 admin optional mx-repo-manager_18.12.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlwSmIATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNB9CACWfahGFLxRVs3YDlNoQyBBr+tMTywB
+vpmj8DyJ9P41WytzxjyNzyo9CnvEcPKmz2iKpqv9SXPAJIAqGaaAgyRdMzQkwfIt
+zI+RO+o6k5/xaNVMO9XRpbLAChK47xqpO0wN/FgGO5+ipaZMIT1b16wSSYaiOPnh
+3NZZg0hwLktC5AB8mrBbxNS6eeQegV7/jMJ/M+bIkRPfrWgmORUPMEixqkrZ2njs
+OykC5kO7JRKVKfBmLulXkWVENiv060uZKG9KTr91c5v04sMW7Pjvtp3oam3fUYA3
+9MNmg2W62kYdTzNjye6r4b34Xi5FyzEvpJ6hN3WkHG5urVqdHhYFANQd
+=ee7M
+-----END PGP SIGNATURE-----
