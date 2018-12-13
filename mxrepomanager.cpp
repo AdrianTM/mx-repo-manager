@@ -154,7 +154,7 @@ QString mxrepomanager::getVersion(const QString &name)
 // List available repos
 QStringList mxrepomanager::readMXRepos()
 {
-    QFile file("/usr/share/mx-repo-manager/repos.txt");
+    QFile file("/usr/share/mx-repo-list/repos.txt");
     if(!file.open(QIODevice::ReadOnly)) {
         qDebug() << "Count not open file: " << file.fileName();
     }

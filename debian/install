@@ -4,4 +4,3 @@ translations/*.qm	usr/share/mx-repo-manager/locale
 mx-repo-manager.png	usr/share/pixmaps
 mx-repo-manager.png	usr/share/icons/hicolor/48x48/apps
 license.html		usr/share/doc/mx-repo-manager
-repos.txt		usr/share/mx-repo-manager
