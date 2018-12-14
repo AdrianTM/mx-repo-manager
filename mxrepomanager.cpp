@@ -105,9 +105,11 @@ Output mxrepomanager::runCmd(const QString &cmd)
 // refresh repo info
 void mxrepomanager::refresh()
 {
-    displayMXRepos(readMXRepos());
-    displaySelected(getCurrentRepo());
+    getCurrentRepo();
+    displayMXRepos(readMXRepos(), QString());
     displayAllRepos(listAptFiles());
+    ui->lineSearch->clear();
+    ui->lineSearch->setFocus();
 }
 
 // replace default Debian repos
@@ -173,13 +175,14 @@ QStringList mxrepomanager::readMXRepos()
     }
 
     extractUrls(repos);
+    this->repos = repos;
     return repos;
 }
 
 // List current repo
-QString mxrepomanager::getCurrentRepo()
+void mxrepomanager::getCurrentRepo()
 {
-    return runCmd("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
+    current_repo  = runCmd("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
 }
 
 QString mxrepomanager::getDebianVersion()
@@ -188,18 +191,25 @@ QString mxrepomanager::getDebianVersion()
 }
 
 // display available repos
-void mxrepomanager::displayMXRepos(const QStringList &repos)
+void mxrepomanager::displayMXRepos(const QStringList &repos, const QString &filter)
 {
     ui->listWidget->clear();
     QStringListIterator repoIterator(repos);
     QIcon flag;
     while (repoIterator.hasNext()) {
         QString repo = repoIterator.next();
+        if (!filter.isEmpty() && !repo.contains(filter, Qt::CaseInsensitive)) {
+            continue;
+        }
         QString country = repo.section("-", 0, 0).trimmed().section(",", 0, 0);
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
         QRadioButton *button = new QRadioButton(repo);
         button->setIcon(getFlag(country));
         ui->listWidget->setItemWidget(item, button);
+        if (repo.contains(current_repo)) {
+            button->setChecked(true);
+            ui->listWidget->scrollToItem(item);
+        }
         connect(button, SIGNAL(clicked(bool)),ui->buttonOk, SLOT(setEnabled(bool)));
     }
 }
@@ -619,3 +629,8 @@ void mxrepomanager::on_pushFastestMX_clicked()
 //    replaceDebianRepos("https://deb.debian.org/debian/");
 //    refresh();
 //}
+
+void mxrepomanager::on_lineSearch_textChanged(const QString &arg1)
+{
+    displayMXRepos(repos, arg1);
+}
