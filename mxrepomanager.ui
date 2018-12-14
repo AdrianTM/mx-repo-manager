@@ -60,6 +60,19 @@
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="2" column="1">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="2">
         <widget class="QPushButton" name="pushFastestMX">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -89,7 +102,20 @@
          </property>
         </spacer>
        </item>
-       <item row="0" column="0" colspan="3">
+       <item row="2" column="4">
+        <widget class="QLineEdit" name="lineSearch">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>search</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="5">
         <widget class="QListWidget" name="listWidget">
          <property name="verticalScrollBarPolicy">
           <enum>Qt::ScrollBarAlwaysOn</enum>
@@ -123,8 +149,8 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="2">
-        <spacer name="horizontalSpacer_4">
+       <item row="2" column="3">
+        <spacer name="horizontalSpacer_5">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -428,7 +454,7 @@
    <hints>
     <hint type="sourcelabel">
      <x>766</x>
-     <y>494</y>
+     <y>839</y>
     </hint>
     <hint type="destinationlabel">
      <x>388</x>

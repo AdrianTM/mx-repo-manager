@@ -58,10 +58,11 @@ public:
     QList<QStringList> queued_changes;
 
     void displayDoc(QString url);
-    void displayMXRepos(const QStringList &repos);
+    void displayMXRepos(const QStringList &repos, const QString &filter);
     void displayAllRepos(const QFileInfoList &apt_files);
     void displaySelected(const QString &repo);
     void extractUrls(const QStringList &repos);
+    void getCurrentRepo();
     void refresh();
     void replaceDebianRepos(const QString &url);
     void replaceRepos(const QString &url);
@@ -69,8 +70,6 @@ public:
     Output runCmd(const QString &cmd);
     QFileInfoList listAptFiles();
     QIcon getFlag(QString country);
-
-    QString getCurrentRepo();
     QString getDebianVersion();
     QString getVersion(const QString &name);
     QStringList readMXRepos();
@@ -91,12 +90,17 @@ private slots:
     void procStart();
 
 
+    void on_lineSearch_textChanged(const QString &arg1);
+
 private:
     Ui::mxrepomanager *ui;
     QHash<QString, QIcon> flags;
     QTimer *timer;
     QProgressBar *bar;
     QProgressDialog *progress;
+    QString current_repo;
+    QStringList repos;
+
 };
 
 
