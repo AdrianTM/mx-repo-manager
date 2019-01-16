@@ -133,9 +133,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="386"/>
-        <location filename="../mxrepomanager.cpp" line="595"/>
-        <location filename="../mxrepomanager.cpp" line="607"/>
-        <location filename="../mxrepomanager.cpp" line="622"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="610"/>
+        <location filename="../mxrepomanager.cpp" line="625"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
@@ -190,13 +190,13 @@
         <translation>Vyberte APT repozitár a zdroje, ktoré chcete používať: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="596"/>
+        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Príkaz netselect-apt nenašiel najrýchlejší repozitár.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="608"/>
-        <location filename="../mxrepomanager.cpp" line="623"/>
+        <location filename="../mxrepomanager.cpp" line="611"/>
+        <location filename="../mxrepomanager.cpp" line="626"/>
         <source>Could not detect fastest repo.</source>
         <translation>Najrýchlejší repozitár sa nenašiel.</translation>
     </message>
