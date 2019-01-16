@@ -550,6 +550,9 @@ QIcon mxrepomanager::getFlag(QString country)
     if (country == "The Netherlands" ) { country = "Netherlands"; }
     // fix flag of the United States of America  : QLocale::UnitedStates
     if (country == "USA" )             { country = "UnitedStates"; }
+    if (country == "Anycast" || country == "Any" || country == "World") {
+        return QIcon("/usr/share/fskbsetting/flags/any.png");
+    }
     //QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
     int index = metaEnum.keyToValue(country.remove(" ").toUtf8());
     QList<QLocale> locales = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));

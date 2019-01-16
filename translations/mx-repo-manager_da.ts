@@ -133,9 +133,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="386"/>
-        <location filename="../mxrepomanager.cpp" line="595"/>
-        <location filename="../mxrepomanager.cpp" line="607"/>
-        <location filename="../mxrepomanager.cpp" line="622"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="610"/>
+        <location filename="../mxrepomanager.cpp" line="625"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
@@ -190,13 +190,13 @@
         <translation>Vælg den APT-softwarekilde og -kilder som du vil bruge:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="596"/>
+        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt kunne ikke registrere hurtigste softwarekilde.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="608"/>
-        <location filename="../mxrepomanager.cpp" line="623"/>
+        <location filename="../mxrepomanager.cpp" line="611"/>
+        <location filename="../mxrepomanager.cpp" line="626"/>
         <source>Could not detect fastest repo.</source>
         <translation>Kunne ikke registrere hurtigste softwarekilde.</translation>
     </message>

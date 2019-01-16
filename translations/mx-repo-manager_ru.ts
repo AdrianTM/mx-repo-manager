@@ -133,9 +133,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="386"/>
-        <location filename="../mxrepomanager.cpp" line="595"/>
-        <location filename="../mxrepomanager.cpp" line="607"/>
-        <location filename="../mxrepomanager.cpp" line="622"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="610"/>
+        <location filename="../mxrepomanager.cpp" line="625"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
@@ -190,13 +190,13 @@
         <translation>Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="596"/>
+        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="608"/>
-        <location filename="../mxrepomanager.cpp" line="623"/>
+        <location filename="../mxrepomanager.cpp" line="611"/>
+        <location filename="../mxrepomanager.cpp" line="626"/>
         <source>Could not detect fastest repo.</source>
         <translation>Не удалось определить самый быстрый репозиторий.</translation>
     </message>

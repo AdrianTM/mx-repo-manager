@@ -134,9 +134,9 @@
     </message>
     <message>
         <location filename="../mxrepomanager.cpp" line="386"/>
-        <location filename="../mxrepomanager.cpp" line="595"/>
-        <location filename="../mxrepomanager.cpp" line="607"/>
-        <location filename="../mxrepomanager.cpp" line="622"/>
+        <location filename="../mxrepomanager.cpp" line="598"/>
+        <location filename="../mxrepomanager.cpp" line="610"/>
+        <location filename="../mxrepomanager.cpp" line="625"/>
         <source>Error</source>
         <translation>Σφάλμα</translation>
     </message>
@@ -191,13 +191,13 @@
         <translation>Επιλέξτε το APT repository και τις πηγές για χρήση:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="596"/>
+        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Το netselect-apt δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="608"/>
-        <location filename="../mxrepomanager.cpp" line="623"/>
+        <location filename="../mxrepomanager.cpp" line="611"/>
+        <location filename="../mxrepomanager.cpp" line="626"/>
         <source>Could not detect fastest repo.</source>
         <translation>Δεν μπόρεσε να ανιχνεύσει την ταχύτερη αποθήκη</translation>
     </message>
