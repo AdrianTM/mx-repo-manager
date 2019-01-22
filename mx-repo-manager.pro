@@ -36,22 +36,33 @@ HEADERS  += mxrepomanager.h
 FORMS    += mxrepomanager.ui
 
 TRANSLATIONS += translations/mx-repo-manager_am.ts \
+                translations/mx-repo-manager_ar.ts \
+                translations/mx-repo-manager_bg.ts \
                 translations/mx-repo-manager_ca.ts \
                 translations/mx-repo-manager_cs.ts \
                 translations/mx-repo-manager_da.ts \
                 translations/mx-repo-manager_de.ts \
                 translations/mx-repo-manager_el.ts \
                 translations/mx-repo-manager_es.ts \
+                translations/mx-repo-manager_et.ts \
+                translations/mx-repo-manager_eu.ts \
+                translations/mx-repo-manager_fa.ts \
                 translations/mx-repo-manager_fi.ts \
                 translations/mx-repo-manager_fr.ts \
+                translations/mx-repo-manager_he_IL.ts \
                 translations/mx-repo-manager_hi.ts \
                 translations/mx-repo-manager_hr.ts \
                 translations/mx-repo-manager_hu.ts \
+                translations/mx-repo-manager_id.ts \
                 translations/mx-repo-manager_is.ts \
                 translations/mx-repo-manager_it.ts \
                 translations/mx-repo-manager_ja.ts \
+                translations/mx-repo-manager_ja_JP.ts \
                 translations/mx-repo-manager_kk.ts \
+                translations/mx-repo-manager_ko.ts \
                 translations/mx-repo-manager_lt.ts \
+                translations/mx-repo-manager_mk.ts \
+                translations/mx-repo-manager_nb.ts \
                 translations/mx-repo-manager_nl.ts \
                 translations/mx-repo-manager_pl.ts \
                 translations/mx-repo-manager_pt.ts \
@@ -59,10 +70,13 @@ TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_ro.ts \
                 translations/mx-repo-manager_ru.ts \
                 translations/mx-repo-manager_sk.ts \
+                translations/mx-repo-manager_sl.ts \
                 translations/mx-repo-manager_sq.ts \
+                translations/mx-repo-manager_sr.ts \
                 translations/mx-repo-manager_sv.ts \
                 translations/mx-repo-manager_tr.ts \
                 translations/mx-repo-manager_uk.ts \
+                translations/mx-repo-manager_zh_CN.ts \
                 translations/mx-repo-manager_zh_TW.ts
 
 RESOURCES += \
