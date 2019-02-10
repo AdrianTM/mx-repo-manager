@@ -1,5 +1,5 @@
 /**********************************************************************
- *  mxrepomanager.cpp
+ *  mainwindow.cpp
  **********************************************************************
  * Copyright (C) 2015 MX Authors
  *
@@ -23,22 +23,21 @@
  **********************************************************************/
 
 
-#include "mxrepomanager.h"
-#include "ui_mxrepomanager.h"
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
 
 #include <QDebug>
 
 #include <QDir>
 #include <QMetaEnum>
-#include <QProcess>
 #include <QRadioButton>
 #include <QProgressBar>
 #include <QTextEdit>
 
 
-mxrepomanager::mxrepomanager(QWidget *parent) :
+MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::mxrepomanager)
+    ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     if (ui->buttonOk->icon().isNull()) {
@@ -51,7 +50,11 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
         ui->pushFastestDebian->setIcon(QIcon(":/icons/cursor-arrow.svg"));
     }
 
-    timer = new QTimer(this);
+    shell = new Cmd(this);
+    connect(shell, &Cmd::started, this, &MainWindow::procStart);
+    connect(shell, &Cmd::finished, this, &MainWindow::procDone);
+    connect(shell, &Cmd::runTime, this, &MainWindow::procTime);
+
     progress = new QProgressDialog(this);
     bar = new QProgressBar(progress);
     progress->setWindowModality(Qt::WindowModal);
@@ -74,36 +77,13 @@ mxrepomanager::mxrepomanager(QWidget *parent) :
     //this->adjustSize();
 }
 
-mxrepomanager::~mxrepomanager()
+MainWindow::~MainWindow()
 {
     delete ui;
 }
 
-// util function for getting bash command output and error code
-Output mxrepomanager::runCmd(const QString &cmd)
-{
-    QEventLoop loop;
-    QProcess *proc = new QProcess(this);
-    proc->setReadChannelMode(QProcess::MergedChannels);
-
-    connect(timer, SIGNAL(timeout()), SLOT(procTime()));
-    connect(proc, SIGNAL(started()), SLOT(procStart()));
-    connect(proc, SIGNAL(finished(int)), SLOT(procDone(int)));
-
-    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
-    proc->start("/bin/bash", QStringList() << "-c" << cmd);
-    loop.exec();
-
-    disconnect(timer, 0, 0, 0);
-    disconnect(proc, 0, 0, 0);
-
-    Output out = {proc->exitCode(), proc->readAll().trimmed()};
-    delete proc;
-    return out;
-}
-
 // refresh repo info
-void mxrepomanager::refresh()
+void MainWindow::refresh()
 {
     getCurrentRepo();
     displayMXRepos(readMXRepos(), QString());
@@ -113,7 +93,7 @@ void mxrepomanager::refresh()
 }
 
 // replace default Debian repos
-void mxrepomanager::replaceDebianRepos(const QString &url)
+void MainWindow::replaceDebianRepos(const QString &url)
 {
     QStringList files;
     QString cmd;
@@ -148,13 +128,13 @@ void mxrepomanager::replaceDebianRepos(const QString &url)
 
 
 // Get version of the program
-QString mxrepomanager::getVersion(const QString &name)
+QString MainWindow::getVersion(const QString &name)
 {
-    return runCmd("dpkg-query -f '${Version}' -W " + name).str;
+    return shell->getOutput("dpkg-query -f '${Version}' -W " + name);
 }
 
 // List available repos
-QStringList mxrepomanager::readMXRepos()
+QStringList MainWindow::readMXRepos()
 {
     QFile file("/usr/share/mx-repo-list/repos.txt");
     if(!file.open(QIODevice::ReadOnly)) {
@@ -180,18 +160,18 @@ QStringList mxrepomanager::readMXRepos()
 }
 
 // List current repo
-void mxrepomanager::getCurrentRepo()
+void MainWindow::getCurrentRepo()
 {
-    current_repo  = runCmd("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3").str;
+    current_repo  = shell->getOutput("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3");
 }
 
-QString mxrepomanager::getDebianVersion()
+QString MainWindow::getDebianVersion()
 {
-    return runCmd("cat /etc/debian_version | cut -f1 -d'.'").str;
+    return shell->getOutput("cat /etc/debian_version | cut -f1 -d'.'");
 }
 
 // display available repos
-void mxrepomanager::displayMXRepos(const QStringList &repos, const QString &filter)
+void MainWindow::displayMXRepos(const QStringList &repos, const QString &filter)
 {
     ui->listWidget->clear();
     QStringListIterator repoIterator(repos);
@@ -214,7 +194,7 @@ void mxrepomanager::displayMXRepos(const QStringList &repos, const QString &filt
     }
 }
 
-void mxrepomanager::displayAllRepos(const QFileInfoList &apt_files)
+void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
 {
     ui->treeWidget->clear();
     ui->treeWidgetDeb->clear();
@@ -276,14 +256,14 @@ void mxrepomanager::displayAllRepos(const QFileInfoList &apt_files)
     ui->treeWidgetDeb->blockSignals(false);
 }
 
-QStringList mxrepomanager::loadAptFile(const QString &file)
+QStringList MainWindow::loadAptFile(const QString &file)
 {
-    QString entries = runCmd("grep '^#*[ ]*deb' " + file).str;
+    QString entries = shell->getOutput("grep '^#*[ ]*deb' " + file);
     return entries.split("\n");
 }
 
 // displays the current repo by selecting the item
-void mxrepomanager::displaySelected(const QString &repo)
+void MainWindow::displaySelected(const QString &repo)
 {
     for (int row = 0; row < ui->listWidget->count(); ++row) {
         QRadioButton *item = (QRadioButton*)ui->listWidget->itemWidget(ui->listWidget->item(row));
@@ -295,7 +275,7 @@ void mxrepomanager::displaySelected(const QString &repo)
 }
 
 // extract the URLs from the list of repos that contain country names and description
-void mxrepomanager::extractUrls(const QStringList &repos)
+void MainWindow::extractUrls(const QStringList &repos)
 {
     foreach(QString line, repos) {
         QStringList linelist = line.split("-");
@@ -305,7 +285,7 @@ void mxrepomanager::extractUrls(const QStringList &repos)
 }
 
 // set the selected repo
-void mxrepomanager::setSelected()
+void MainWindow::setSelected()
 {
     QString url;
     for (int row = 0; row < ui->listWidget->count(); ++row) {
@@ -317,8 +297,7 @@ void mxrepomanager::setSelected()
     }
 }
 
-
-void mxrepomanager::procTime()
+void MainWindow::procTime()
 {
     if (bar->value() == 100) {
         bar->reset();
@@ -327,22 +306,22 @@ void mxrepomanager::procTime()
     //qApp->processEvents();
 }
 
-void mxrepomanager::procStart()
+void MainWindow::procStart()
 {
-    timer->start(100);
     bar->setValue(0);
     QApplication::setOverrideCursor(QCursor(Qt::BusyCursor));
 }
 
-void mxrepomanager::procDone(int)
+void MainWindow::procDone()
 {
-    timer->stop();
     bar->setValue(100);
     QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
 }
 
+
+
 // replaces the lines in the APT file
-void mxrepomanager::replaceRepos(const QString &url)
+void MainWindow::replaceRepos(const QString &url)
 {
     QString cmd_mx;
     QString cmd_antix;
@@ -379,7 +358,7 @@ void mxrepomanager::replaceRepos(const QString &url)
     cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix).arg(antix_file);
 
     // check if both replacement were successful
-    if (runCmd(cmd_mx).exit_code == 0 && runCmd(cmd_antix).exit_code == 0) {
+    if (shell->run(cmd_mx) == 0 && shell->run(cmd_antix) == 0) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));
     } else {
@@ -388,7 +367,7 @@ void mxrepomanager::replaceRepos(const QString &url)
     }
 }
 
-QFileInfoList mxrepomanager::listAptFiles()
+QFileInfoList MainWindow::listAptFiles()
 {
     QStringList apt_files;
     QFileInfoList list;
@@ -405,7 +384,7 @@ QFileInfoList mxrepomanager::listAptFiles()
 //// slots ////
 
 // Submit button clicked
-void mxrepomanager::on_buttonOk_clicked()
+void MainWindow::on_buttonOk_clicked()
 {
     if (queued_changes.size() > 0) {
         QStringList changes;
@@ -415,7 +394,7 @@ void mxrepomanager::on_buttonOk_clicked()
             new_text = changes[1];
             file_name = changes[2];
             QString cmd = QString("sed -i 's;%1;%2;g' %3").arg(text).arg(new_text).arg(file_name);
-            runCmd(cmd);
+            shell->run(cmd);
         }
         queued_changes.clear();
     }
@@ -424,7 +403,7 @@ void mxrepomanager::on_buttonOk_clicked()
 }
 
 // About button clicked
-void mxrepomanager::on_buttonAbout_clicked()
+void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
@@ -449,7 +428,7 @@ void mxrepomanager::on_buttonAbout_clicked()
 
         QTextEdit *text = new QTextEdit;
         text->setReadOnly(true);
-        text->setText(runCmd("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz").str);
+        text->setText(shell->getOutput("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
 
         QPushButton *btnClose = new QPushButton(tr("&Close"));
         btnClose->setIcon(QIcon::fromTheme("window-close"));
@@ -465,7 +444,7 @@ void mxrepomanager::on_buttonAbout_clicked()
 }
 
 // Help button clicked
-void mxrepomanager::on_buttonHelp_clicked()
+void MainWindow::on_buttonHelp_clicked()
 {
     QLocale locale;
     QString lang = locale.bcp47Name();
@@ -478,10 +457,15 @@ void mxrepomanager::on_buttonHelp_clicked()
     displayDoc(url);
 }
 
-void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
+void MainWindow::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
 {
     ui->buttonOk->setEnabled(true);
     ui->treeWidget->blockSignals(true);
+    if (item->text(column).contains("/mx/testrepo/") && item->checkState(column) == Qt::Checked) {
+        QMessageBox::warning(this, tr("Warning"),
+                             tr("You have selected MX Test Repo. It's not recommended to leave it enabled or to upgrade all the packages from it.") +"\n\n" +
+                             tr("A safer option is to install packages individually with MX Package Installer."));
+    }
     QFile file;
     QString new_text;
     QString file_name = item->parent()->text(0);
@@ -505,7 +489,7 @@ void mxrepomanager::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column
     ui->treeWidget->blockSignals(false);
 }
 
-void mxrepomanager::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
+void MainWindow::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
 {
     ui->buttonOk->setEnabled(true);
     ui->treeWidgetDeb->blockSignals(true);
@@ -532,7 +516,7 @@ void mxrepomanager::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int colu
     ui->treeWidgetDeb->blockSignals(false);
 }
 
-void mxrepomanager::on_tabWidget_currentChanged()
+void MainWindow::on_tabWidget_currentChanged()
 {
     if (ui->tabWidget->currentWidget() == ui->tabMX) {
         ui->label->setText(tr("Select the APT repository that you want to use:"));
@@ -542,7 +526,7 @@ void mxrepomanager::on_tabWidget_currentChanged()
 }
 
 // Transform "country" name to 2-3 letter ISO 3166 country code and provide the QIcon for it
-QIcon mxrepomanager::getFlag(QString country)
+QIcon MainWindow::getFlag(QString country)
 {
     QMetaObject metaObject = QLocale::staticMetaObject;
     QMetaEnum metaEnum = metaObject.enumerator(metaObject.indexOfEnumerator("Country"));
@@ -564,10 +548,10 @@ QIcon mxrepomanager::getFlag(QString country)
     return QIcon();
 }
 
-void mxrepomanager::displayDoc(QString url)
+void MainWindow::displayDoc(QString url)
 {
     QString exec = "xdg-open";
-    QString user = runCmd("logname").str;
+    QString user = shell->getOutput("logname");
     if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
         exec = "mx-viewer";
     }
@@ -576,12 +560,12 @@ void mxrepomanager::displayDoc(QString url)
 }
 
 // detect fastest Debian repo
-void mxrepomanager::on_pushFastestDebian_clicked()
+void MainWindow::on_pushFastestDebian_clicked()
 {
     QString repo;
 
     progress->show();
-    QString tmpfile = runCmd("mktemp -d /tmp/mx-repo-manager-XXXXXXXX").str + "/sources.list";
+    QString tmpfile = shell->getOutput("mktemp -d /tmp/mx-repo-manager-XXXXXXXX") + "/sources.list";
 
     QString ver_num = getDebianVersion();
     QString ver_name;
@@ -591,19 +575,18 @@ void mxrepomanager::on_pushFastestDebian_clicked()
         ver_name = "stretch";
     }
 
-    Output out = runCmd("netselect-apt " + ver_name + " -o " + tmpfile);
+    QString out = shell->getOutput("netselect-apt " + ver_name + " -o " + tmpfile);
     progress->hide();
 
-    if (out.exit_code != 0) {
+    if (shell->getExitCode(true) != 0) {
         QMessageBox::critical(this, tr("Error"),
                               tr("netselect-apt could not detect fastest repo."));
         return;
     }
-    out = runCmd("set -o pipefail; grep -m1 '^deb ' " + tmpfile + "| cut -d' ' -f2");
-    repo = out.str;
+    repo = shell->getOutput("set -o pipefail; grep -m1 '^deb ' " + tmpfile + "| cut -d' ' -f2");
     this->blockSignals(false);
 
-    if (out.exit_code == 0 && runCmd("wget --spider " + repo).exit_code == 0) {
+    if (shell->getExitCode(true) == 0 && shell->run("wget --spider " + repo) == 0) {
         replaceDebianRepos(repo);
         refresh();
     } else {
@@ -613,13 +596,15 @@ void mxrepomanager::on_pushFastestDebian_clicked()
 }
 
 // detect and select the fastest MX repo
-void mxrepomanager::on_pushFastestMX_clicked()
+void MainWindow::on_pushFastestMX_clicked()
 {
     progress->show();
-    Output out = runCmd("set -o pipefail; netselect -D -I " + listMXurls + "| tr -s ' ' | sed 's/^ //' | cut -d' ' -f2");
+    QString out = shell->getOutput("set -o pipefail; netselect -D -I " + listMXurls + "| tr -s ' ' | sed 's/^ //' | cut -d' ' -f2");
+    qDebug() << listMXurls;
+    qDebug() << "FASTEST " << shell->getExitCode(true) << out;
     progress->hide();
-    if (out.exit_code == 0 && out.str !="") {
-        displaySelected(out.str);
+    if (shell->getExitCode(true) == 0 && !out.isEmpty()) {
+        displaySelected(out);
         on_buttonOk_clicked();
     } else {
         QMessageBox::critical(this, tr("Error"),
@@ -627,13 +612,44 @@ void mxrepomanager::on_pushFastestMX_clicked()
     }
 }
 
-//void mxrepomanager::on_pushRedirector_clicked()
+//void MainWindow::on_pushRedirector_clicked()
 //{
 //    replaceDebianRepos("https://deb.debian.org/debian/");
 //    refresh();
 //}
 
-void mxrepomanager::on_lineSearch_textChanged(const QString &arg1)
+void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 {
     displayMXRepos(repos, arg1);
+}
+
+void MainWindow::on_pb_restoreSources_clicked()
+{
+    QString mx_version = shell->getOutput("lsb_release -rs").left(2);
+    if (mx_version.toInt() < 15) {
+        qDebug() << "MX version not detected or out of range: " << mx_version;
+        return;
+    }
+    // create temp folder
+    QString path = shell->getOutput("mktemp -d /tmp/mx-sources.XXXXXX");
+    // download source files from
+    QString cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(path);
+    if (shell->run(cmd.toUtf8()) != 0) {
+        QMessageBox::critical(this, tr("Error"),
+                              tr("Could not download original APT files."));
+        return;
+    }
+    // extract master.zip to temp folder
+    cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
+    system(cmd.toUtf8());
+    // move the files from the temporary directory to /etc/apt/sources.list.d/
+    cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(path);
+    system(cmd.toUtf8());
+    // delete temp folder
+    cmd = QString("rm -rf %1").arg(path);
+    system(cmd.toUtf8());
+    refresh();
+    QMessageBox::information(this, tr("Success"),
+                             tr("Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.") + "\n\n" +
+                             tr("Your new selection will take effect the next time sources are updated."));
 }

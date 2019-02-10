@@ -22,7 +22,7 @@
  * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-#include "mxrepomanager.h"
+#include "mainwindow.h"
 #include <unistd.h>
 #include <QApplication>
 #include <QTranslator>
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     a.installTranslator(&appTran);
 
     if (getuid() == 0) {
-        mxrepomanager w;
+        MainWindow w;
         w.show();
         return a.exec();
     } else {

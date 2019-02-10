@@ -2,6 +2,231 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="lt">
 <context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="../mainwindow.ui" line="17"/>
+        <location filename="../mainwindow.cpp" line="72"/>
+        <location filename="../mainwindow.cpp" line="411"/>
+        <source>MX Repo Manager</source>
+        <translation type="unfinished">MX saugyklų tvarkytuvė</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="32"/>
+        <location filename="../mainwindow.cpp" line="522"/>
+        <source>Select the APT repository that you want to use:</source>
+        <translation type="unfinished">Pasirinkite norimą naudoti APT saugyklą:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="59"/>
+        <source>MX repos</source>
+        <translation type="unfinished">MX saugyklos</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="84"/>
+        <source>Select fastest MX repo for me</source>
+        <translation type="unfinished">Parinkti man greičiausią MX saugyklą</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="114"/>
+        <source>search</source>
+        <translation type="unfinished">ieškoti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="172"/>
+        <source>Debian repos</source>
+        <translation type="unfinished">Debian saugyklos</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="184"/>
+        <source>Select fastest Debian repo for me</source>
+        <translation type="unfinished">Parinkti man greičiausią Debian saugyklą</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="237"/>
+        <source>Individual sources</source>
+        <translation type="unfinished">Atskiri šaltiniai</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="256"/>
+        <source>Restore original APT sources</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="338"/>
+        <source>Display help </source>
+        <translation type="unfinished">Rodyti žinyną</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="341"/>
+        <source>Help</source>
+        <translation type="unfinished">Žinynas</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="348"/>
+        <source>Alt+H</source>
+        <translation type="unfinished">Alt+H</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="393"/>
+        <source>About this application</source>
+        <translation type="unfinished">Apie šią programą</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="396"/>
+        <source>About...</source>
+        <translation type="unfinished">Apie...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="403"/>
+        <source>Alt+B</source>
+        <translation type="unfinished">Alt+B</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="419"/>
+        <source>Quit application</source>
+        <translation type="unfinished">Išeiti iš programos</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="422"/>
+        <source>Close</source>
+        <translation type="unfinished">Užverti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="429"/>
+        <source>Alt+N</source>
+        <translation type="unfinished">Alt+N</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="448"/>
+        <source>Apply</source>
+        <translation type="unfinished">Taikyti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="63"/>
+        <source>Please wait...</source>
+        <translation type="unfinished">Prašome palaukti...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="125"/>
+        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="652"/>
+        <source>Success</source>
+        <translation type="unfinished">Pavyko</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="126"/>
+        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="654"/>
+        <source>Your new selection will take effect the next time sources are updated.</source>
+        <translation type="unfinished">Jūsų naujas pasirinkimas įsigalios, kitą kartą atnaujinus šaltinius.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="205"/>
+        <source>Lists</source>
+        <translation type="unfinished">Sąrašai</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="205"/>
+        <source>Sources (checked sources are enabled)</source>
+        <translation type="unfinished">Šaltiniai (pažymėti šaltiniai yra įjungti)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="582"/>
+        <location filename="../mainwindow.cpp" line="593"/>
+        <location filename="../mainwindow.cpp" line="610"/>
+        <location filename="../mainwindow.cpp" line="638"/>
+        <source>Error</source>
+        <translation type="unfinished">Klaida</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="366"/>
+        <source>Could not change the repo.</source>
+        <translation type="unfinished">Nepavyko pakeisti saugyklos.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="410"/>
+        <source>About MX Repo Manager</source>
+        <translation type="unfinished">Apie MX saugyklų tvarkytuvė</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="411"/>
+        <source>Version: </source>
+        <translation type="unfinished">Versija: </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="412"/>
+        <source>Program for choosing the default APT repository</source>
+        <translation type="unfinished">Programa, skirta pasirinkti numatytąją APT saugyklą</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="414"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation type="unfinished">Autorių teisės (c) MX Linux</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="415"/>
+        <source>License</source>
+        <translation type="unfinished">Licencija</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="416"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Keitinių žurnalas</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Atsisakyti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="433"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Užverti</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="465"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="466"/>
+        <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="467"/>
+        <source>A safer option is to install packages individually with MX Package Installer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="524"/>
+        <source>Select the APT repository and sources that you want to use:</source>
+        <translation type="unfinished">Pasirinkite norimą naudoti APT saugyklą ir šaltinius:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="583"/>
+        <source>netselect-apt could not detect fastest repo.</source>
+        <translation type="unfinished">Komandai netselect-apt nepavyko aptikti greičiausios saugyklos.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="594"/>
+        <location filename="../mainwindow.cpp" line="611"/>
+        <source>Could not detect fastest repo.</source>
+        <translation type="unfinished">Nepavyko aptikti greičiausios saugyklos.</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="639"/>
+        <source>Could not download original APT files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="653"/>
+        <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QApplication</name>
     <message>
         <location filename="../main.cpp" line="53"/>
@@ -12,193 +237,148 @@
 <context>
     <name>mxrepomanager</name>
     <message>
-        <location filename="../mxrepomanager.ui" line="17"/>
-        <location filename="../mxrepomanager.cpp" line="69"/>
-        <location filename="../mxrepomanager.cpp" line="432"/>
         <source>MX Repo Manager</source>
-        <translation>MX saugyklų tvarkytuvė</translation>
+        <translation type="vanished">MX saugyklų tvarkytuvė</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="32"/>
-        <location filename="../mxrepomanager.cpp" line="538"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Pasirinkite norimą naudoti APT saugyklą:</translation>
+        <translation type="vanished">Pasirinkite norimą naudoti APT saugyklą:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="59"/>
         <source>MX repos</source>
-        <translation>MX saugyklos</translation>
+        <translation type="vanished">MX saugyklos</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation>Parinkti man greičiausią MX saugyklą</translation>
+        <translation type="vanished">Parinkti man greičiausią MX saugyklą</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="111"/>
         <source>search</source>
-        <translation>ieškoti</translation>
+        <translation type="vanished">ieškoti</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="169"/>
         <source>Debian repos</source>
-        <translation>Debian saugyklos</translation>
+        <translation type="vanished">Debian saugyklos</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="181"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>Parinkti man greičiausią Debian saugyklą</translation>
+        <translation type="vanished">Parinkti man greičiausią Debian saugyklą</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="231"/>
         <source>Individual sources</source>
-        <translation>Atskiri šaltiniai</translation>
+        <translation type="vanished">Atskiri šaltiniai</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="292"/>
         <source>Display help </source>
-        <translation>Rodyti žinyną</translation>
+        <translation type="vanished">Rodyti žinyną</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="295"/>
         <source>Help</source>
-        <translation>Žinynas</translation>
+        <translation type="vanished">Žinynas</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="302"/>
         <source>Alt+H</source>
-        <translation>Alt+H</translation>
+        <translation type="vanished">Alt+H</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="347"/>
         <source>About this application</source>
-        <translation>Apie šią programą</translation>
+        <translation type="vanished">Apie šią programą</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="350"/>
         <source>About...</source>
-        <translation>Apie...</translation>
+        <translation type="vanished">Apie...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="357"/>
         <source>Alt+B</source>
-        <translation>Alt+B</translation>
+        <translation type="vanished">Alt+B</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="373"/>
         <source>Quit application</source>
-        <translation>Išeiti iš programos</translation>
+        <translation type="vanished">Išeiti iš programos</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="376"/>
         <source>Close</source>
-        <translation>Užverti</translation>
+        <translation type="vanished">Užverti</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="383"/>
         <source>Alt+N</source>
-        <translation>Alt+N</translation>
+        <translation type="vanished">Alt+N</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.ui" line="402"/>
         <source>Apply</source>
-        <translation>Taikyti</translation>
+        <translation type="vanished">Taikyti</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="60"/>
         <source>Please wait...</source>
-        <translation>Prašome palaukti...</translation>
+        <translation type="vanished">Prašome palaukti...</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="145"/>
-        <location filename="../mxrepomanager.cpp" line="383"/>
         <source>Success</source>
-        <translation>Pavyko</translation>
+        <translation type="vanished">Pavyko</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="146"/>
-        <location filename="../mxrepomanager.cpp" line="384"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Jūsų naujas pasirinkimas įsigalios, kitą kartą atnaujinus šaltinius.</translation>
+        <translation type="vanished">Jūsų naujas pasirinkimas įsigalios, kitą kartą atnaujinus šaltinius.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="225"/>
         <source>Lists</source>
-        <translation>Sąrašai</translation>
+        <translation type="vanished">Sąrašai</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="225"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>Šaltiniai (pažymėti šaltiniai yra įjungti)</translation>
+        <translation type="vanished">Šaltiniai (pažymėti šaltiniai yra įjungti)</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="386"/>
-        <location filename="../mxrepomanager.cpp" line="598"/>
-        <location filename="../mxrepomanager.cpp" line="610"/>
-        <location filename="../mxrepomanager.cpp" line="625"/>
         <source>Error</source>
-        <translation>Klaida</translation>
+        <translation type="vanished">Klaida</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="387"/>
         <source>Could not change the repo.</source>
-        <translation>Nepavyko pakeisti saugyklos.</translation>
+        <translation type="vanished">Nepavyko pakeisti saugyklos.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="431"/>
         <source>About MX Repo Manager</source>
-        <translation>Apie MX saugyklų tvarkytuvė</translation>
+        <translation type="vanished">Apie MX saugyklų tvarkytuvė</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="432"/>
         <source>Version: </source>
-        <translation>Versija: </translation>
+        <translation type="vanished">Versija: </translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="433"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Programa, skirta pasirinkti numatytąją APT saugyklą</translation>
+        <translation type="vanished">Programa, skirta pasirinkti numatytąją APT saugyklą</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="435"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Autorių teisės (c) MX Linux</translation>
+        <translation type="vanished">Autorių teisės (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="436"/>
         <source>License</source>
-        <translation>Licencija</translation>
+        <translation type="vanished">Licencija</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="437"/>
         <source>Changelog</source>
-        <translation>Keitinių žurnalas</translation>
+        <translation type="vanished">Keitinių žurnalas</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="438"/>
         <source>Cancel</source>
-        <translation>Atsisakyti</translation>
+        <translation type="vanished">Atsisakyti</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="454"/>
         <source>&amp;Close</source>
-        <translation>&amp;Užverti</translation>
+        <translation type="vanished">&amp;Užverti</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="540"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>Pasirinkite norimą naudoti APT saugyklą ir šaltinius:</translation>
+        <translation type="vanished">Pasirinkite norimą naudoti APT saugyklą ir šaltinius:</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="599"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>Komandai netselect-apt nepavyko aptikti greičiausios saugyklos.</translation>
+        <translation type="vanished">Komandai netselect-apt nepavyko aptikti greičiausios saugyklos.</translation>
     </message>
     <message>
-        <location filename="../mxrepomanager.cpp" line="611"/>
-        <location filename="../mxrepomanager.cpp" line="626"/>
         <source>Could not detect fastest repo.</source>
-        <translation>Nepavyko aptikti greičiausios saugyklos.</translation>
+        <translation type="vanished">Nepavyko aptikti greičiausios saugyklos.</translation>
     </message>
 </context>
 </TS>

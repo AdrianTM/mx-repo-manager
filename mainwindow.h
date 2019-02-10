@@ -1,5 +1,5 @@
 /**********************************************************************
- *  mxrepomanager.h
+ *  mainwindow.h
  **********************************************************************
  * Copyright (C) 2015 MX Authors
  *
@@ -23,35 +23,29 @@
  **********************************************************************/
 
 
-#ifndef MXREPOMANAGER_H
-#define MXREPOMANAGER_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QDir>
 #include <QListWidgetItem>
 #include <QMessageBox>
 #include <QProgressDialog>
-#include <QTimer>
 #include <QTreeWidget>
+
+#include "cmd.h"
 
 
 namespace Ui {
-class mxrepomanager;
+class MainWindow;
 }
 
-// struct for outputing both the exit code and the strings when running a command
-struct Output {
-    int exit_code;
-    QString str;
-};
-
-
-class mxrepomanager : public QDialog
+class MainWindow : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit mxrepomanager(QWidget *parent = 0);
-    ~mxrepomanager();
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
 
     QString version;
     QString listMXurls;
@@ -67,7 +61,6 @@ public:
     void replaceDebianRepos(const QString &url);
     void replaceRepos(const QString &url);
     void setSelected();
-    Output runCmd(const QString &cmd);
     QFileInfoList listAptFiles();
     QIcon getFlag(QString country);
     QString getDebianVersion();
@@ -76,6 +69,10 @@ public:
     QStringList loadAptFile(const QString &file);
 
 private slots:
+    void procDone();
+    void procTime();
+    void procStart();
+
     void on_buttonOk_clicked();
     void on_buttonAbout_clicked();
     void on_buttonHelp_clicked();
@@ -84,18 +81,13 @@ private slots:
     void on_tabWidget_currentChanged();
     void on_pushFastestDebian_clicked();
     void on_pushFastestMX_clicked();
-    //void on_pushRedirector_clicked();
-    void procDone(int);
-    void procTime();
-    void procStart();
-
-
     void on_lineSearch_textChanged(const QString &arg1);
+    void on_pb_restoreSources_clicked();
 
 private:
-    Ui::mxrepomanager *ui;
+    Ui::MainWindow *ui;
+    Cmd *shell;
     QHash<QString, QIcon> flags;
-    QTimer *timer;
     QProgressBar *bar;
     QProgressDialog *progress;
     QString current_repo;
@@ -104,5 +96,5 @@ private:
 };
 
 
-#endif // MXREPOMANAGER_H
+#endif // MAINWINDOW_H
 
