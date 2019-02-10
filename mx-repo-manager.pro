@@ -29,11 +29,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mxrepomanager.cpp
+    mainwindow.cpp
 
-HEADERS  += mxrepomanager.h
+HEADERS  += mainwindow.h
 
-FORMS    += mxrepomanager.ui
+FORMS    += mainwindow.ui
 
 TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_ar.ts \
@@ -83,3 +83,4 @@ RESOURCES += \
     images.qrc
 
 
+unix:!macx: LIBS += -lcmd

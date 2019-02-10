@@ -1,3 +1,10 @@
+mx-repo-manager (19.2) mx; urgency=medium
+
+  * added restore APT sources option in third tab
+  * added warning when selecting MX Test repo
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 10 Feb 2019 09:51:09 -0500
+
 mx-repo-manager (19.1.1) mx; urgency=medium
 
   * new translations
