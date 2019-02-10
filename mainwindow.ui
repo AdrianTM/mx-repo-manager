@@ -329,7 +329,7 @@
      <item row="0" column="1">
       <widget class="QPushButton" name="buttonHelp">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -355,7 +355,7 @@
         <enum>Qt::Horizontal</enum>
        </property>
        <property name="sizeType">
-        <enum>QSizePolicy::Minimum</enum>
+        <enum>QSizePolicy::Expanding</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -371,7 +371,7 @@
         <enum>Qt::Horizontal</enum>
        </property>
        <property name="sizeType">
-        <enum>QSizePolicy::Minimum</enum>
+        <enum>QSizePolicy::Expanding</enum>
        </property>
        <property name="sizeHint" stdset="0">
         <size>
@@ -384,7 +384,7 @@
      <item row="0" column="0">
       <widget class="QPushButton" name="buttonAbout">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -410,7 +410,7 @@
      <item row="0" column="7">
       <widget class="QPushButton" name="buttonCancel">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
@@ -439,7 +439,7 @@
      <item row="0" column="6">
       <widget class="QPushButton" name="buttonOk">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>

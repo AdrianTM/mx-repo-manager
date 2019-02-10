@@ -19,26 +19,26 @@ Changes:
    * added restore APT sources option in third tab
    * added warning when selecting MX Test repo
 Checksums-Sha1:
- 99e9a51ea64415a832a3c06f3ab8af6848bf5d77 1207 mx-repo-manager_19.2.dsc
- 40b9721a54eb98dfdbf09698b3a9a6b137791be4 48076 mx-repo-manager_19.2.tar.xz
- 93888b7f3a83f7db6df86ac4caa1c0772021439d 64446 mx-repo-manager_19.2_amd64.deb
+ 3a08125559f75fb734cda8e2f098afab8dc8294a 1207 mx-repo-manager_19.2.dsc
+ b52437de933897ec6fd23295b81ac757312d0b6d 48088 mx-repo-manager_19.2.tar.xz
+ 5702b09b47037ed96c8c6cb59a5c191c47d0a68f 64368 mx-repo-manager_19.2_amd64.deb
 Checksums-Sha256:
- c2a438d01c528412359680890b316babfbb32b1a9754fbf592ebe43e4777c358 1207 mx-repo-manager_19.2.dsc
- 6231dcf4e7736724471d96d35b0306bf1a5e7523a7ef1627da31ea644eac568e 48076 mx-repo-manager_19.2.tar.xz
- 4cac706f2b2adedaec0ff4692250809317eb1a0e9b39be00df1df21bc6de74fa 64446 mx-repo-manager_19.2_amd64.deb
+ d13db2080bedce712fe391740a21a230c27c1aef25b9a710b0909c6635099361 1207 mx-repo-manager_19.2.dsc
+ 7e9061276ec0ce0e88089a2805ab58e92e70697c85c7bda14cbc2b3d2ba1588b 48088 mx-repo-manager_19.2.tar.xz
+ f50dedcfb5da4a79cc55b390953711890669278923fe71a6bea30aa9d5f803fd 64368 mx-repo-manager_19.2_amd64.deb
 Files:
- 8fbd8501f93c0cf635572b460e45e8ea 1207 admin optional mx-repo-manager_19.2.dsc
- 15b6eaf385155c32028ad43c64f083ea 48076 admin optional mx-repo-manager_19.2.tar.xz
- 7746d11772f7173135c968ff77e2386c 64446 admin optional mx-repo-manager_19.2_amd64.deb
+ 5b20b92d06e4f64d3425910d689ee64c 1207 admin optional mx-repo-manager_19.2.dsc
+ 098c93a08235f824307ce1f5137b6822 48088 admin optional mx-repo-manager_19.2.tar.xz
+ 719566866c6a5f5219c270528f2875c4 64368 admin optional mx-repo-manager_19.2_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxgPPETHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumC2PB/wJ3DaJWOQc3x5s1kyAgHr4eVBd7w8K
-Cgfj0xsVK+M18TUbBerwQ8Wnm8wIPgWdmLDijuOhigULtsVlPYl4HEm95ReLAl6Z
-wMSQ3BK3omcCWyZNbdZFJUlxQnI9i3xJjXnjJwCfe78EdhDbhIpHi+yRqAp3ASQO
-qveO2Dn5hCH2cqXllG/kaJSSb3DbRDkJAzLEroRpLYV0kIBAFtlmAwkbY1a+nDaY
-X2PNPIDNnGp9bGIrmNP8fn4masBybohSHIoslRo4gs+lfRITTSflNiKTZLfMWHQc
-vOKhhj6AsUiI6cXBb8Q+K5LsT9SBN3tc5dJUMpT7ObgNmq0oIJauDcHU
-=OQu8
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAlxgQEcTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumAspCACMqyxxXSdXZ+YfdgQLnjtxshNrnvhh
+OAIe9GmtYR0rju4pnn1wDRu2plFPqntVARFqIDD/qjKTzUvWZDXfsbrX5efbY+v2
+qEkTi/be4aSlgIo2ZZdOgmSvAFm4Omc1EXgyRcQBljihkarANBxA4xCTaFL6Jlxc
+hiQpBPCQDvtgqM57eCCbl9u//2Ewm6PxtJ/Xmiit0bFNacoCHVYFQCuX68dOlYEw
+isrKGwqzFVq2nUYpZCjsjqxXWRyMBSE/WYWm2hYBYd1IkcuA3dSAkWPTyRddZ2KA
+UMLTTYWAir2/P2XZHQFkwm2Pu7T6KKbyPbi1IsZstp8jdNwnuL9dKCAk
+=I1Nn
 -----END PGP SIGNATURE-----
