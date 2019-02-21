@@ -1,384 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="17"/>
-        <location filename="../mainwindow.cpp" line="72"/>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="mainwindow.ui" line="17"/>
+        <location filename="mainwindow.cpp" line="72"/>
+        <location filename="mainwindow.cpp" line="411"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished">MX Repo Manager</translation>
+        <translation>MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="mainwindow.ui" line="32"/>
+        <location filename="mainwindow.cpp" line="522"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation type="unfinished">Välj det APT förråd du vill använda:</translation>
+        <translation>Välj det APT förråd du vill använda:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="59"/>
+        <location filename="mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished">MX förråd</translation>
+        <translation>MX förråd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="84"/>
+        <location filename="mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished">Välj snabbaste MX förråd för mig</translation>
+        <translation>Välj snabbaste MX förråd för mig</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="114"/>
+        <location filename="mainwindow.ui" line="114"/>
         <source>search</source>
-        <translation type="unfinished">sök</translation>
+        <translation>sök</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="172"/>
+        <location filename="mainwindow.ui" line="172"/>
         <source>Debian repos</source>
-        <translation type="unfinished">Debian förråd</translation>
+        <translation>Debian förråd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="184"/>
+        <location filename="mainwindow.ui" line="184"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished">Välj snabbaste Debian förråd för mig</translation>
+        <translation>Välj snabbaste Debian förråd för mig</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="237"/>
+        <location filename="mainwindow.ui" line="237"/>
         <source>Individual sources</source>
-        <translation type="unfinished">Individuella källor</translation>
+        <translation>Individuella källor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="256"/>
+        <location filename="mainwindow.ui" line="256"/>
         <source>Restore original APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Återställ original APT sources</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="338"/>
+        <location filename="mainwindow.ui" line="338"/>
         <source>Display help </source>
-        <translation type="unfinished">Visa hjälp</translation>
+        <translation>Visa hjälp</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="341"/>
+        <location filename="mainwindow.ui" line="341"/>
         <source>Help</source>
-        <translation type="unfinished">Hjälp</translation>
+        <translation>Hjälp</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="mainwindow.ui" line="348"/>
         <source>Alt+H</source>
-        <translation type="unfinished">Alt+H</translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="393"/>
+        <location filename="mainwindow.ui" line="393"/>
         <source>About this application</source>
-        <translation type="unfinished">Om detta program</translation>
+        <translation>Om detta program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="396"/>
+        <location filename="mainwindow.ui" line="396"/>
         <source>About...</source>
-        <translation type="unfinished">Om...</translation>
+        <translation>Om...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="403"/>
+        <location filename="mainwindow.ui" line="403"/>
         <source>Alt+B</source>
-        <translation type="unfinished">Alt+B</translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="419"/>
+        <location filename="mainwindow.ui" line="419"/>
         <source>Quit application</source>
-        <translation type="unfinished">Avsluta programmet</translation>
+        <translation>Avsluta programmet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="422"/>
+        <location filename="mainwindow.ui" line="422"/>
         <source>Close</source>
-        <translation type="unfinished">Stäng</translation>
+        <translation>Stäng</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="429"/>
+        <location filename="mainwindow.ui" line="429"/>
         <source>Alt+N</source>
-        <translation type="unfinished">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="448"/>
+        <location filename="mainwindow.ui" line="448"/>
         <source>Apply</source>
-        <translation type="unfinished">Genomför</translation>
+        <translation>Använd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="63"/>
+        <location filename="mainwindow.cpp" line="63"/>
         <source>Please wait...</source>
-        <translation type="unfinished">Var vänlig vänta...</translation>
+        <translation>Var vänlig vänta...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="125"/>
-        <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="652"/>
+        <location filename="mainwindow.cpp" line="125"/>
+        <location filename="mainwindow.cpp" line="362"/>
+        <location filename="mainwindow.cpp" line="652"/>
         <source>Success</source>
-        <translation type="unfinished">Det lyckades</translation>
+        <translation>Det lyckades</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="126"/>
-        <location filename="../mainwindow.cpp" line="363"/>
-        <location filename="../mainwindow.cpp" line="654"/>
+        <location filename="mainwindow.cpp" line="126"/>
+        <location filename="mainwindow.cpp" line="363"/>
+        <location filename="mainwindow.cpp" line="654"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="unfinished">Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
+        <translation>Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Lists</source>
-        <translation type="unfinished">Listor</translation>
+        <translation>Listor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished">Förråd (markerade förråd är aktiva)</translation>
+        <translation>Förråd (markerade förråd är aktiva)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
-        <location filename="../mainwindow.cpp" line="582"/>
-        <location filename="../mainwindow.cpp" line="593"/>
-        <location filename="../mainwindow.cpp" line="610"/>
-        <location filename="../mainwindow.cpp" line="638"/>
+        <location filename="mainwindow.cpp" line="365"/>
+        <location filename="mainwindow.cpp" line="582"/>
+        <location filename="mainwindow.cpp" line="593"/>
+        <location filename="mainwindow.cpp" line="610"/>
+        <location filename="mainwindow.cpp" line="638"/>
         <source>Error</source>
-        <translation type="unfinished">Fel</translation>
+        <translation>Fel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="mainwindow.cpp" line="366"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished">Kunde inte ändra förrådet</translation>
+        <translation>Kunde inte ändra förrådet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="410"/>
+        <location filename="mainwindow.cpp" line="410"/>
         <source>About MX Repo Manager</source>
-        <translation type="unfinished">Om MX Repo Manager</translation>
+        <translation>Om MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="mainwindow.cpp" line="411"/>
         <source>Version: </source>
-        <translation type="unfinished">Version</translation>
+        <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="mainwindow.cpp" line="412"/>
         <source>Program for choosing the default APT repository</source>
-        <translation type="unfinished">Program för att välja standard Apt förråd</translation>
+        <translation>Program för att välja standard Apt förråd</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="mainwindow.cpp" line="414"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="mainwindow.cpp" line="415"/>
         <source>License</source>
-        <translation type="unfinished">Licens</translation>
+        <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="mainwindow.cpp" line="416"/>
         <source>Changelog</source>
-        <translation type="unfinished">Ändringslogg</translation>
+        <translation>Ändringslogg</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="mainwindow.cpp" line="417"/>
         <source>Cancel</source>
-        <translation type="unfinished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="mainwindow.cpp" line="433"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Close</translation>
+        <translation>&amp;Close</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="465"/>
+        <location filename="mainwindow.cpp" line="465"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varning</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="mainwindow.cpp" line="466"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du har valt MX Test Repo. Det är inte rekommendabelt att lämna dom aktiverade eller att uppgradera alla paket från det.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="mainwindow.cpp" line="467"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ett säkrare val är att installera paket individuellt med MX Paket Installerare.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="mainwindow.cpp" line="524"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished">Välj det APT-förråd och källor du vill använda:</translation>
+        <translation>Välj det APT-förråd och källor du vill använda:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="mainwindow.cpp" line="583"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished">netselect-apt kunde inte hitta snabbaste förrådet.</translation>
+        <translation>netselect-apt kunde inte hitta snabbaste förrådet.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="594"/>
-        <location filename="../mainwindow.cpp" line="611"/>
+        <location filename="mainwindow.cpp" line="594"/>
+        <location filename="mainwindow.cpp" line="611"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished">Kunde inte hitta snabbaste förrådet.</translation>
+        <translation>Kunde inte hitta snabbaste förrådet.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="639"/>
+        <location filename="mainwindow.cpp" line="639"/>
         <source>Could not download original APT files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kunde inte ladda ner original APT filer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="653"/>
+        <location filename="mainwindow.cpp" line="653"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>Original APT sources har återställts till ursprunglig status. Source-filer tillagda av användare i /etc/apt/sources.list.d/ har inte ändrats.</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="53"/>
+        <location filename="main.cpp" line="53"/>
         <source>You must run this program as root.</source>
         <translation>Du måste köra detta program som root</translation>
-    </message>
-</context>
-<context>
-    <name>mxrepomanager</name>
-    <message>
-        <source>MX Repo Manager</source>
-        <translation type="vanished">MX Repo Manager</translation>
-    </message>
-    <message>
-        <source>Select the APT repository that you want to use:</source>
-        <translation type="vanished">Välj det APT förråd du vill använda:</translation>
-    </message>
-    <message>
-        <source>MX repos</source>
-        <translation type="vanished">MX förråd</translation>
-    </message>
-    <message>
-        <source>Select fastest MX repo for me</source>
-        <translation type="vanished">Välj snabbaste MX förråd för mig</translation>
-    </message>
-    <message>
-        <source>search</source>
-        <translation type="vanished">sök</translation>
-    </message>
-    <message>
-        <source>Debian repos</source>
-        <translation type="vanished">Debian förråd</translation>
-    </message>
-    <message>
-        <source>Select fastest Debian repo for me</source>
-        <translation type="vanished">Välj snabbaste Debian förråd för mig</translation>
-    </message>
-    <message>
-        <source>Individual sources</source>
-        <translation type="vanished">Individuella källor</translation>
-    </message>
-    <message>
-        <source>Display help </source>
-        <translation type="vanished">Visa hjälp</translation>
-    </message>
-    <message>
-        <source>Help</source>
-        <translation type="vanished">Hjälp</translation>
-    </message>
-    <message>
-        <source>Alt+H</source>
-        <translation type="vanished">Alt+H</translation>
-    </message>
-    <message>
-        <source>About this application</source>
-        <translation type="vanished">Om detta program</translation>
-    </message>
-    <message>
-        <source>About...</source>
-        <translation type="vanished">Om...</translation>
-    </message>
-    <message>
-        <source>Alt+B</source>
-        <translation type="vanished">Alt+B</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation type="vanished">Avsluta programmet</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">Stäng</translation>
-    </message>
-    <message>
-        <source>Alt+N</source>
-        <translation type="vanished">Alt+N</translation>
-    </message>
-    <message>
-        <source>Apply</source>
-        <translation type="vanished">Genomför</translation>
-    </message>
-    <message>
-        <source>Please wait...</source>
-        <translation type="vanished">Var vänlig vänta...</translation>
-    </message>
-    <message>
-        <source>Success</source>
-        <translation type="vanished">Det lyckades</translation>
-    </message>
-    <message>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="vanished">Ditt nya val kommer att träda i kraft nästa gång förråden uppdateras.</translation>
-    </message>
-    <message>
-        <source>Lists</source>
-        <translation type="vanished">Listor</translation>
-    </message>
-    <message>
-        <source>Sources (checked sources are enabled)</source>
-        <translation type="vanished">Förråd (markerade förråd är aktiva)</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Fel</translation>
-    </message>
-    <message>
-        <source>Could not change the repo.</source>
-        <translation type="vanished">Kunde inte ändra förrådet</translation>
-    </message>
-    <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Om MX Repo Manager</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Version</translation>
-    </message>
-    <message>
-        <source>Program for choosing the default APT repository</source>
-        <translation type="vanished">Program för att välja standard Apt förråd</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licens</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Ändringslogg</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Avbryt</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Close</translation>
-    </message>
-    <message>
-        <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="vanished">Välj det APT-förråd och källor du vill använda:</translation>
-    </message>
-    <message>
-        <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="vanished">netselect-apt kunde inte hitta snabbaste förrådet.</translation>
-    </message>
-    <message>
-        <source>Could not detect fastest repo.</source>
-        <translation type="vanished">Kunde inte hitta snabbaste förrådet.</translation>
     </message>
 </context>
 </TS>
