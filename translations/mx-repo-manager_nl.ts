@@ -1,384 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="17"/>
-        <location filename="../mainwindow.cpp" line="72"/>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="mainwindow.ui" line="17"/>
+        <location filename="mainwindow.cpp" line="72"/>
+        <location filename="mainwindow.cpp" line="411"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished">MX Pakketbronbeheer</translation>
+        <translation>MX Pakketbronbeheer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="mainwindow.ui" line="32"/>
+        <location filename="mainwindow.cpp" line="522"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation type="unfinished">Selecteer de APT pakketbron die u wilt gebruiken:</translation>
+        <translation>Selecteer de APT pakketbron die u wilt gebruiken:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="59"/>
+        <location filename="mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished">MX pakketbronnen</translation>
+        <translation>MX pakketbronnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="84"/>
+        <location filename="mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished">Selecteer de snelste MX pakketbron voor me</translation>
+        <translation>Selecteer de snelste MX pakketbron voor me</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="114"/>
+        <location filename="mainwindow.ui" line="114"/>
         <source>search</source>
-        <translation type="unfinished">zoeken</translation>
+        <translation>zoeken</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="172"/>
+        <location filename="mainwindow.ui" line="172"/>
         <source>Debian repos</source>
-        <translation type="unfinished">Debian pakketbronnen</translation>
+        <translation>Debian pakketbronnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="184"/>
+        <location filename="mainwindow.ui" line="184"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished">Selecteer de snelste Debian pakketbron voor me</translation>
+        <translation>Selecteer de snelste Debian pakketbron voor me</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="237"/>
+        <location filename="mainwindow.ui" line="237"/>
         <source>Individual sources</source>
-        <translation type="unfinished">Individuele bronnen</translation>
+        <translation>Individuele bronnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="256"/>
+        <location filename="mainwindow.ui" line="256"/>
         <source>Restore original APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Herstel originele APT bronnen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="338"/>
+        <location filename="mainwindow.ui" line="338"/>
         <source>Display help </source>
-        <translation type="unfinished">Toon help</translation>
+        <translation>Toon help</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="341"/>
+        <location filename="mainwindow.ui" line="341"/>
         <source>Help</source>
-        <translation type="unfinished">Help</translation>
+        <translation>Hulp</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="mainwindow.ui" line="348"/>
         <source>Alt+H</source>
-        <translation type="unfinished">Alt+H</translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="393"/>
+        <location filename="mainwindow.ui" line="393"/>
         <source>About this application</source>
-        <translation type="unfinished">Over deze toepassing</translation>
+        <translation>Over deze toepassing</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="396"/>
+        <location filename="mainwindow.ui" line="396"/>
         <source>About...</source>
-        <translation type="unfinished">Over...</translation>
+        <translation>Over...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="403"/>
+        <location filename="mainwindow.ui" line="403"/>
         <source>Alt+B</source>
-        <translation type="unfinished">Alt+B</translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="419"/>
+        <location filename="mainwindow.ui" line="419"/>
         <source>Quit application</source>
-        <translation type="unfinished">Verlaat de applicatie</translation>
+        <translation>Verlaat de applicatie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="422"/>
+        <location filename="mainwindow.ui" line="422"/>
         <source>Close</source>
-        <translation type="unfinished">Sluiten</translation>
+        <translation>Sluiten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="429"/>
+        <location filename="mainwindow.ui" line="429"/>
         <source>Alt+N</source>
-        <translation type="unfinished">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="448"/>
+        <location filename="mainwindow.ui" line="448"/>
         <source>Apply</source>
-        <translation type="unfinished">Toepassen</translation>
+        <translation>Toepassen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="63"/>
+        <location filename="mainwindow.cpp" line="63"/>
         <source>Please wait...</source>
-        <translation type="unfinished">Even wachten aub...</translation>
+        <translation>Even wachten aub...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="125"/>
-        <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="652"/>
+        <location filename="mainwindow.cpp" line="125"/>
+        <location filename="mainwindow.cpp" line="362"/>
+        <location filename="mainwindow.cpp" line="652"/>
         <source>Success</source>
-        <translation type="unfinished">Gelukt</translation>
+        <translation>Gelukt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="126"/>
-        <location filename="../mainwindow.cpp" line="363"/>
-        <location filename="../mainwindow.cpp" line="654"/>
+        <location filename="mainwindow.cpp" line="126"/>
+        <location filename="mainwindow.cpp" line="363"/>
+        <location filename="mainwindow.cpp" line="654"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="unfinished">Uw nieuwe selectie zal de volgende keer dat de bronnen geupdate worden effectief worden.</translation>
+        <translation>Uw nieuwe selectie zal de volgende keer dat de bronnen geupdate worden effectief worden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Lists</source>
-        <translation type="unfinished">Lijsten</translation>
+        <translation>Lijsten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished">Bronnen (aangevinkte bronnen zijn ingeschakeld)</translation>
+        <translation>Bronnen (aangevinkte bronnen zijn ingeschakeld)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
-        <location filename="../mainwindow.cpp" line="582"/>
-        <location filename="../mainwindow.cpp" line="593"/>
-        <location filename="../mainwindow.cpp" line="610"/>
-        <location filename="../mainwindow.cpp" line="638"/>
+        <location filename="mainwindow.cpp" line="365"/>
+        <location filename="mainwindow.cpp" line="582"/>
+        <location filename="mainwindow.cpp" line="593"/>
+        <location filename="mainwindow.cpp" line="610"/>
+        <location filename="mainwindow.cpp" line="638"/>
         <source>Error</source>
-        <translation type="unfinished">Fout</translation>
+        <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="mainwindow.cpp" line="366"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished">Kon de pakketbron niet wijzigen.</translation>
+        <translation>Kon de pakketbron niet wijzigen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="410"/>
+        <location filename="mainwindow.cpp" line="410"/>
         <source>About MX Repo Manager</source>
-        <translation type="unfinished">Over MX Pakketbronbeheer</translation>
+        <translation>Over MX Pakketbronbeheer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="mainwindow.cpp" line="411"/>
         <source>Version: </source>
-        <translation type="unfinished">Versie:</translation>
+        <translation>Versie:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="mainwindow.cpp" line="412"/>
         <source>Program for choosing the default APT repository</source>
-        <translation type="unfinished">Programma om de standaard APT pakketbron te kiezen</translation>
+        <translation>Programma om de standaard APT pakketbron te kiezen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="mainwindow.cpp" line="414"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Copyright (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="mainwindow.cpp" line="415"/>
         <source>License</source>
-        <translation type="unfinished">Licentie</translation>
+        <translation>Licentie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="mainwindow.cpp" line="416"/>
         <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
+        <translation>Changelog</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="mainwindow.cpp" line="417"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancel</translation>
+        <translation>Ongedaan maken</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="mainwindow.cpp" line="433"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Close</translation>
+        <translation>&amp;Close</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="465"/>
+        <location filename="mainwindow.cpp" line="465"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Waarschuwing</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="mainwindow.cpp" line="466"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Je hebt de MX Test Pakketbron geselecteerd. Het is niet aan te raden om deze ingeschakeld te laten of alle pakketten eruit te upgraden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="mainwindow.cpp" line="467"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Een veiliger optie is om pakketten individueel te installeren met MX Pakket Installeerder.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="mainwindow.cpp" line="524"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished">Selecteer de APT pakketbron en bronnen die u wilt gebruiken:</translation>
+        <translation>Selecteer de APT pakketbron en bronnen die u wilt gebruiken:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="mainwindow.cpp" line="583"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished">netselect-apt kon de snelste pakketbron niet ontdekken.</translation>
+        <translation>netselect-apt kon de snelste pakketbron niet ontdekken.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="594"/>
-        <location filename="../mainwindow.cpp" line="611"/>
+        <location filename="mainwindow.cpp" line="594"/>
+        <location filename="mainwindow.cpp" line="611"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished">Kon de snelste pakketbron niet ontdekken.</translation>
+        <translation>Kon de snelste pakketbron niet ontdekken.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="639"/>
+        <location filename="mainwindow.cpp" line="639"/>
         <source>Could not download original APT files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kon de originele APT bestanden niet downloaden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="653"/>
+        <location filename="mainwindow.cpp" line="653"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>Originele APT bronnen zijn teruggezet naar de release status. Bronbestanden die door de gebruiker zijn toegevoegd in /etc/apt/sources.list.d/ zijn niet gewijzigd.</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="53"/>
+        <location filename="main.cpp" line="53"/>
         <source>You must run this program as root.</source>
         <translation>U dient deze toepassing als &apos;root&apos; uit te voeren.</translation>
-    </message>
-</context>
-<context>
-    <name>mxrepomanager</name>
-    <message>
-        <source>MX Repo Manager</source>
-        <translation type="vanished">MX Pakketbronbeheer</translation>
-    </message>
-    <message>
-        <source>Select the APT repository that you want to use:</source>
-        <translation type="vanished">Selecteer de APT pakketbron die u wilt gebruiken:</translation>
-    </message>
-    <message>
-        <source>MX repos</source>
-        <translation type="vanished">MX pakketbronnen</translation>
-    </message>
-    <message>
-        <source>Select fastest MX repo for me</source>
-        <translation type="vanished">Selecteer de snelste MX pakketbron voor me</translation>
-    </message>
-    <message>
-        <source>search</source>
-        <translation type="vanished">zoeken</translation>
-    </message>
-    <message>
-        <source>Debian repos</source>
-        <translation type="vanished">Debian pakketbronnen</translation>
-    </message>
-    <message>
-        <source>Select fastest Debian repo for me</source>
-        <translation type="vanished">Selecteer de snelste Debian pakketbron voor me</translation>
-    </message>
-    <message>
-        <source>Individual sources</source>
-        <translation type="vanished">Individuele bronnen</translation>
-    </message>
-    <message>
-        <source>Display help </source>
-        <translation type="vanished">Toon help</translation>
-    </message>
-    <message>
-        <source>Help</source>
-        <translation type="vanished">Help</translation>
-    </message>
-    <message>
-        <source>Alt+H</source>
-        <translation type="vanished">Alt+H</translation>
-    </message>
-    <message>
-        <source>About this application</source>
-        <translation type="vanished">Over deze toepassing</translation>
-    </message>
-    <message>
-        <source>About...</source>
-        <translation type="vanished">Over...</translation>
-    </message>
-    <message>
-        <source>Alt+B</source>
-        <translation type="vanished">Alt+B</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation type="vanished">Verlaat de applicatie</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">Sluiten</translation>
-    </message>
-    <message>
-        <source>Alt+N</source>
-        <translation type="vanished">Alt+N</translation>
-    </message>
-    <message>
-        <source>Apply</source>
-        <translation type="vanished">Toepassen</translation>
-    </message>
-    <message>
-        <source>Please wait...</source>
-        <translation type="vanished">Even wachten aub...</translation>
-    </message>
-    <message>
-        <source>Success</source>
-        <translation type="vanished">Gelukt</translation>
-    </message>
-    <message>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="vanished">Uw nieuwe selectie zal de volgende keer dat de bronnen geupdate worden effectief worden.</translation>
-    </message>
-    <message>
-        <source>Lists</source>
-        <translation type="vanished">Lijsten</translation>
-    </message>
-    <message>
-        <source>Sources (checked sources are enabled)</source>
-        <translation type="vanished">Bronnen (aangevinkte bronnen zijn ingeschakeld)</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Fout</translation>
-    </message>
-    <message>
-        <source>Could not change the repo.</source>
-        <translation type="vanished">Kon de pakketbron niet wijzigen.</translation>
-    </message>
-    <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Over MX Pakketbronbeheer</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Versie:</translation>
-    </message>
-    <message>
-        <source>Program for choosing the default APT repository</source>
-        <translation type="vanished">Programma om de standaard APT pakketbron te kiezen</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Copyright (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Licentie</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Changelog</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Cancel</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Close</translation>
-    </message>
-    <message>
-        <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="vanished">Selecteer de APT pakketbron en bronnen die u wilt gebruiken:</translation>
-    </message>
-    <message>
-        <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="vanished">netselect-apt kon de snelste pakketbron niet ontdekken.</translation>
-    </message>
-    <message>
-        <source>Could not detect fastest repo.</source>
-        <translation type="vanished">Kon de snelste pakketbron niet ontdekken.</translation>
     </message>
 </context>
 </TS>

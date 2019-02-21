@@ -1,384 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.ui" line="17"/>
-        <location filename="../mainwindow.cpp" line="72"/>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="mainwindow.ui" line="17"/>
+        <location filename="mainwindow.cpp" line="72"/>
+        <location filename="mainwindow.cpp" line="411"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished">MX Менеджер репозиториев</translation>
+        <translation>MX Менеджер репозиториев</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="mainwindow.ui" line="32"/>
+        <location filename="mainwindow.cpp" line="522"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation type="unfinished">Выберите APT репозиторий, который Вы хотите использовать:</translation>
+        <translation>Выберите APT репозиторий, который Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="59"/>
+        <location filename="mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished">MX репозитории</translation>
+        <translation>MX репозитории</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="84"/>
+        <location filename="mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished">Выберите самый быстрый для себя MX репозиторий</translation>
+        <translation>Выберите самый быстрый для себя MX репозиторий</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="114"/>
+        <location filename="mainwindow.ui" line="114"/>
         <source>search</source>
-        <translation type="unfinished">поиск</translation>
+        <translation>поиск</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="172"/>
+        <location filename="mainwindow.ui" line="172"/>
         <source>Debian repos</source>
-        <translation type="unfinished">Debian репозитории</translation>
+        <translation>Debian репозитории</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="184"/>
+        <location filename="mainwindow.ui" line="184"/>
         <source>Select fastest Debian repo for me</source>
-        <translation type="unfinished">Выберите самый быстрый для себя Debian репозиторий</translation>
+        <translation>Выберите самый быстрый для себя Debian репозиторий</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="237"/>
+        <location filename="mainwindow.ui" line="237"/>
         <source>Individual sources</source>
-        <translation type="unfinished">Частные источники</translation>
+        <translation>Частные источники</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="256"/>
+        <location filename="mainwindow.ui" line="256"/>
         <source>Restore original APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Восстановить изначальные источники APT</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="338"/>
+        <location filename="mainwindow.ui" line="338"/>
         <source>Display help </source>
-        <translation type="unfinished">Показать справку</translation>
+        <translation>Показать справку</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="341"/>
+        <location filename="mainwindow.ui" line="341"/>
         <source>Help</source>
-        <translation type="unfinished">Справка</translation>
+        <translation>Справка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="mainwindow.ui" line="348"/>
         <source>Alt+H</source>
-        <translation type="unfinished">Alt+H</translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="393"/>
+        <location filename="mainwindow.ui" line="393"/>
         <source>About this application</source>
-        <translation type="unfinished">Об этом приложении</translation>
+        <translation>Об этом приложении</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="396"/>
+        <location filename="mainwindow.ui" line="396"/>
         <source>About...</source>
-        <translation type="unfinished">O...</translation>
+        <translation>O...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="403"/>
+        <location filename="mainwindow.ui" line="403"/>
         <source>Alt+B</source>
-        <translation type="unfinished">Alt+B</translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="419"/>
+        <location filename="mainwindow.ui" line="419"/>
         <source>Quit application</source>
-        <translation type="unfinished">Выйти из приложения</translation>
+        <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="422"/>
+        <location filename="mainwindow.ui" line="422"/>
         <source>Close</source>
-        <translation type="unfinished">Закрыть</translation>
+        <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="429"/>
+        <location filename="mainwindow.ui" line="429"/>
         <source>Alt+N</source>
-        <translation type="unfinished">Alt+N</translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="448"/>
+        <location filename="mainwindow.ui" line="448"/>
         <source>Apply</source>
-        <translation type="unfinished">Применить</translation>
+        <translation>Применить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="63"/>
+        <location filename="mainwindow.cpp" line="63"/>
         <source>Please wait...</source>
-        <translation type="unfinished">Пожалуйста, ждите...</translation>
+        <translation>Пожалуйста, ждите...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="125"/>
-        <location filename="../mainwindow.cpp" line="362"/>
-        <location filename="../mainwindow.cpp" line="652"/>
+        <location filename="mainwindow.cpp" line="125"/>
+        <location filename="mainwindow.cpp" line="362"/>
+        <location filename="mainwindow.cpp" line="652"/>
         <source>Success</source>
-        <translation type="unfinished">Успешно</translation>
+        <translation>Успешно</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="126"/>
-        <location filename="../mainwindow.cpp" line="363"/>
-        <location filename="../mainwindow.cpp" line="654"/>
+        <location filename="mainwindow.cpp" line="126"/>
+        <location filename="mainwindow.cpp" line="363"/>
+        <location filename="mainwindow.cpp" line="654"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="unfinished">Ваш новый выбор вступит в силу при следующем обновлении.</translation>
+        <translation>Ваш новый выбор вступит в силу при следующем обновлении.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Lists</source>
-        <translation type="unfinished">Списки</translation>
+        <translation>Списки</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="205"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation type="unfinished">Источники (отмеченные источники включены)</translation>
+        <translation>Источники (отмеченные источники включены)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
-        <location filename="../mainwindow.cpp" line="582"/>
-        <location filename="../mainwindow.cpp" line="593"/>
-        <location filename="../mainwindow.cpp" line="610"/>
-        <location filename="../mainwindow.cpp" line="638"/>
+        <location filename="mainwindow.cpp" line="365"/>
+        <location filename="mainwindow.cpp" line="582"/>
+        <location filename="mainwindow.cpp" line="593"/>
+        <location filename="mainwindow.cpp" line="610"/>
+        <location filename="mainwindow.cpp" line="638"/>
         <source>Error</source>
-        <translation type="unfinished">Ошибка</translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="mainwindow.cpp" line="366"/>
         <source>Could not change the repo.</source>
-        <translation type="unfinished">Не удалось изменить репозиторий.</translation>
+        <translation>Не удалось изменить репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="410"/>
+        <location filename="mainwindow.cpp" line="410"/>
         <source>About MX Repo Manager</source>
-        <translation type="unfinished">Об  MX Менеджере репозиториев</translation>
+        <translation>Об  MX Менеджере репозиториев</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="mainwindow.cpp" line="411"/>
         <source>Version: </source>
-        <translation type="unfinished">Версия:</translation>
+        <translation>Версия: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="mainwindow.cpp" line="412"/>
         <source>Program for choosing the default APT repository</source>
-        <translation type="unfinished">Программа для выбора APT репозитория по умолчанию</translation>
+        <translation>Программа для выбора APT репозитория по умолчанию</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="mainwindow.cpp" line="414"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished">Авторское право (c) MX Linux</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="mainwindow.cpp" line="415"/>
         <source>License</source>
-        <translation type="unfinished">Лицензия</translation>
+        <translation>Лицензия</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="mainwindow.cpp" line="416"/>
         <source>Changelog</source>
-        <translation type="unfinished">Список изменений</translation>
+        <translation>Список изменений</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="mainwindow.cpp" line="417"/>
         <source>Cancel</source>
-        <translation type="unfinished">Отмена</translation>
+        <translation>Отменить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="mainwindow.cpp" line="433"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Закрыть</translation>
+        <translation>&amp;Закрыть</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="465"/>
+        <location filename="mainwindow.cpp" line="465"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="mainwindow.cpp" line="466"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы выбрали MX Тестовый репозиторий. Не рекомендуется оставлять его активированным или обновлять из него все пакеты.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="mainwindow.cpp" line="467"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Безопасной является возможность устанавливать отдельные пакеты через MX Установщик Пакетов.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="mainwindow.cpp" line="524"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="unfinished">Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
+        <translation>Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="mainwindow.cpp" line="583"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="unfinished">netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
+        <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="594"/>
-        <location filename="../mainwindow.cpp" line="611"/>
+        <location filename="mainwindow.cpp" line="594"/>
+        <location filename="mainwindow.cpp" line="611"/>
         <source>Could not detect fastest repo.</source>
-        <translation type="unfinished">Не удалось определить самый быстрый репозиторий.</translation>
+        <translation>Не удалось определить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="639"/>
+        <location filename="mainwindow.cpp" line="639"/>
         <source>Could not download original APT files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось загрузить оригинальные файлы APT.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="653"/>
+        <location filename="mainwindow.cpp" line="653"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>Оригинальные источники APT были восстановлены до состояния релиза. Добавленные пользователем файлы источников в /etc/apt/sources.list.d/ не были затронуты.</translation>
     </message>
 </context>
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="53"/>
+        <location filename="main.cpp" line="53"/>
         <source>You must run this program as root.</source>
         <translation>Вы должны запустить программу от имени суперпользователя.</translation>
-    </message>
-</context>
-<context>
-    <name>mxrepomanager</name>
-    <message>
-        <source>MX Repo Manager</source>
-        <translation type="vanished">MX Менеджер репозиториев</translation>
-    </message>
-    <message>
-        <source>Select the APT repository that you want to use:</source>
-        <translation type="vanished">Выберите APT репозиторий, который Вы хотите использовать:</translation>
-    </message>
-    <message>
-        <source>MX repos</source>
-        <translation type="vanished">MX репозитории</translation>
-    </message>
-    <message>
-        <source>Select fastest MX repo for me</source>
-        <translation type="vanished">Выберите самый быстрый для себя MX репозиторий</translation>
-    </message>
-    <message>
-        <source>search</source>
-        <translation type="vanished">поиск</translation>
-    </message>
-    <message>
-        <source>Debian repos</source>
-        <translation type="vanished">Debian репозитории</translation>
-    </message>
-    <message>
-        <source>Select fastest Debian repo for me</source>
-        <translation type="vanished">Выберите самый быстрый для себя Debian репозиторий</translation>
-    </message>
-    <message>
-        <source>Individual sources</source>
-        <translation type="vanished">Частные источники</translation>
-    </message>
-    <message>
-        <source>Display help </source>
-        <translation type="vanished">Показать справку</translation>
-    </message>
-    <message>
-        <source>Help</source>
-        <translation type="vanished">Справка</translation>
-    </message>
-    <message>
-        <source>Alt+H</source>
-        <translation type="vanished">Alt+H</translation>
-    </message>
-    <message>
-        <source>About this application</source>
-        <translation type="vanished">Об этом приложении</translation>
-    </message>
-    <message>
-        <source>About...</source>
-        <translation type="vanished">O...</translation>
-    </message>
-    <message>
-        <source>Alt+B</source>
-        <translation type="vanished">Alt+B</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation type="vanished">Выйти из приложения</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">Закрыть</translation>
-    </message>
-    <message>
-        <source>Alt+N</source>
-        <translation type="vanished">Alt+N</translation>
-    </message>
-    <message>
-        <source>Apply</source>
-        <translation type="vanished">Применить</translation>
-    </message>
-    <message>
-        <source>Please wait...</source>
-        <translation type="vanished">Пожалуйста, ждите...</translation>
-    </message>
-    <message>
-        <source>Success</source>
-        <translation type="vanished">Успешно</translation>
-    </message>
-    <message>
-        <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation type="vanished">Ваш новый выбор вступит в силу при следующем обновлении.</translation>
-    </message>
-    <message>
-        <source>Lists</source>
-        <translation type="vanished">Списки</translation>
-    </message>
-    <message>
-        <source>Sources (checked sources are enabled)</source>
-        <translation type="vanished">Источники (отмеченные источники включены)</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
-    </message>
-    <message>
-        <source>Could not change the repo.</source>
-        <translation type="vanished">Не удалось изменить репозиторий.</translation>
-    </message>
-    <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Об  MX Менеджере репозиториев</translation>
-    </message>
-    <message>
-        <source>Version: </source>
-        <translation type="vanished">Версия:</translation>
-    </message>
-    <message>
-        <source>Program for choosing the default APT repository</source>
-        <translation type="vanished">Программа для выбора APT репозитория по умолчанию</translation>
-    </message>
-    <message>
-        <source>Copyright (c) MX Linux</source>
-        <translation type="vanished">Авторское право (c) MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">Лицензия</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Список изменений</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="vanished">Отмена</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Закрыть</translation>
-    </message>
-    <message>
-        <source>Select the APT repository and sources that you want to use:</source>
-        <translation type="vanished">Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
-    </message>
-    <message>
-        <source>netselect-apt could not detect fastest repo.</source>
-        <translation type="vanished">netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
-    </message>
-    <message>
-        <source>Could not detect fastest repo.</source>
-        <translation type="vanished">Не удалось определить самый быстрый репозиторий.</translation>
     </message>
 </context>
 </TS>
