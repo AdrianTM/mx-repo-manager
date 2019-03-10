@@ -106,7 +106,7 @@ void MainWindow::replaceDebianRepos(const QString &url)
         QDir().mkdir("/etc/apt/sources.list.d/backups");
     }
 
-    foreach(QString file, files) {
+    for (const QString &file : files) {
         QFileInfo fileinfo(file);
 
         // backup file
@@ -148,7 +148,7 @@ QStringList MainWindow::readMXRepos()
 
     // remove commented out lines
     QStringList repos;
-    foreach (QString line, file_content_list) {
+    for (const QString &line : file_content_list) {
         if (!line.startsWith("#")) {
             repos << line;
         }
@@ -208,8 +208,8 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
 
     QTreeWidgetItem *topLevelItem;
     QTreeWidgetItem *topLevelItemDeb;
-    QFileInfo file_info;
-    foreach (file_info, apt_files) {
+
+    for (const QFileInfo &file_info : apt_files) {
         QString file_name = file_info.fileName();
         QString file = file_info.absoluteFilePath();
         topLevelItem = new QTreeWidgetItem;
@@ -225,8 +225,8 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
         topLevelItemDeb->setForeground(0, QBrush(Qt::darkGreen));
         // load file entries
         QStringList entries = loadAptFile(file);
-        QString item;
-        foreach (item, entries) {
+
+        for (const QString &item : entries) {
             // add entries as childItem to treeWidget
             QTreeWidgetItem *childItem = new QTreeWidgetItem(topLevelItem);
             QTreeWidgetItem *childItemDeb = new QTreeWidgetItem(topLevelItemDeb);
@@ -277,7 +277,7 @@ void MainWindow::displaySelected(const QString &repo)
 // extract the URLs from the list of repos that contain country names and description
 void MainWindow::extractUrls(const QStringList &repos)
 {
-    foreach(QString line, repos) {
+    for (const QString &line : repos) {
         QStringList linelist = line.split("-");
         linelist.removeAt(0);
         listMXurls += linelist.join("-").trimmed() + " ";
@@ -387,8 +387,7 @@ QFileInfoList MainWindow::listAptFiles()
 void MainWindow::on_buttonOk_clicked()
 {
     if (queued_changes.size() > 0) {
-        QStringList changes;
-        foreach (changes, queued_changes) {
+        for (const QStringList &changes : queued_changes) {
             QString text, new_text, file_name;
             text = changes[0];
             new_text = changes[1];
