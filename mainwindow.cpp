@@ -106,7 +106,7 @@ void MainWindow::replaceDebianRepos(const QString &url)
         QDir().mkdir("/etc/apt/sources.list.d/backups");
     }
 
-    for (const QString &file : files) {
+    for (const QString &file : qAsConst(files)) {
         QFileInfo fileinfo(file);
 
         // backup file
@@ -148,7 +148,7 @@ QStringList MainWindow::readMXRepos()
 
     // remove commented out lines
     QStringList repos;
-    for (const QString &line : file_content_list) {
+    for (const QString &line : qAsConst(file_content_list)) {
         if (!line.startsWith("#")) {
             repos << line;
         }
@@ -224,7 +224,7 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
         topLevelItem->setForeground(0, QBrush(Qt::darkGreen));
         topLevelItemDeb->setForeground(0, QBrush(Qt::darkGreen));
         // load file entries
-        QStringList entries = loadAptFile(file);
+        const QStringList entries = loadAptFile(file);
 
         for (const QString &item : entries) {
             // add entries as childItem to treeWidget
@@ -387,7 +387,7 @@ QFileInfoList MainWindow::listAptFiles()
 void MainWindow::on_buttonOk_clicked()
 {
     if (queued_changes.size() > 0) {
-        for (const QStringList &changes : queued_changes) {
+        for (const QStringList &changes : qAsConst(queued_changes)) {
             QString text, new_text, file_name;
             text = changes[0];
             new_text = changes[1];
