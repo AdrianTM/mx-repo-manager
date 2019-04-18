@@ -190,7 +190,7 @@ void MainWindow::displayMXRepos(const QStringList &repos, const QString &filter)
             button->setChecked(true);
             ui->listWidget->scrollToItem(item);
         }
-        connect(button, SIGNAL(clicked(bool)),ui->buttonOk, SLOT(setEnabled(bool)));
+        connect(button, &QRadioButton::clicked, ui->buttonOk, &QPushButton::setEnabled);
     }
 }
 
