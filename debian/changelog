@@ -1,3 +1,9 @@
+mx-repo-manager (19.5) mx; urgency=medium
+
+  * set vertical dimension to 700px
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 08 May 2019 20:08:27 -0400
+
 mx-repo-manager (19.2.1) mx; urgency=medium
 
   * updated translations
