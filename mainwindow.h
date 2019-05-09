@@ -64,7 +64,6 @@ public:
     QFileInfoList listAptFiles();
     QIcon getFlag(QString country);
     QString getDebianVersion();
-    QString getVersion(const QString &name);
     QStringList readMXRepos();
     QStringList loadAptFile(const QString &file);
 

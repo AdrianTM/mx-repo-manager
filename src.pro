@@ -33,7 +33,8 @@ TEMPLATE = app
 SOURCES += main.cpp\
     mainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    version.h
 
 FORMS    += mainwindow.ui
 

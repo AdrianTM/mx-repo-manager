@@ -25,6 +25,7 @@
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "version.h"
 
 #include <QDebug>
 
@@ -39,6 +40,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::MainWindow)
 {
+    qDebug() << "Program Version:" << VERSION;
     ui->setupUi(this);
     if (ui->buttonOk->icon().isNull()) {
         ui->buttonOk->setIcon(QIcon(":/icons/dialog-ok.svg"));
@@ -68,7 +70,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->buttonOk->setDisabled(true);
 
-    version = getVersion("mx-repo-manager");
     this->setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
@@ -124,13 +125,6 @@ void MainWindow::replaceDebianRepos(const QString &url)
     }
     QMessageBox::information(this, tr("Success"),
                              tr("Your new selection will take effect the next time sources are updated."));
-}
-
-
-// Get version of the program
-QString MainWindow::getVersion(const QString &name)
-{
-    return shell->getOutput("dpkg-query -f '${Version}' -W " + name);
 }
 
 // List available repos
@@ -407,7 +401,7 @@ void MainWindow::on_buttonAbout_clicked()
     this->hide();
     QMessageBox msgBox(QMessageBox::NoIcon,
                        tr("About MX Repo Manager"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Repo Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + version + "</p><p align=\"center\"><h3>" +
+                       tr("MX Repo Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Program for choosing the default APT repository") +
                        "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
