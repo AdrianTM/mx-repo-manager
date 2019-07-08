@@ -33,7 +33,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    a.setWindowIcon(QIcon("/usr/share/pixmaps/mx-repo-manager.png"));
+    a.setWindowIcon(QIcon::fromTheme("mx-repo-manager"));
 
     QTranslator qtTran;
     qtTran.load(QString("qt_") + QLocale::system().name());

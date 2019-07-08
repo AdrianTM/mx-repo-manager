@@ -1,6 +1,6 @@
-license.html		usr/share/doc/mx-repo-manager
-mx-repo-manager		usr/bin
-mx-repo-manager.desktop	usr/share/applications
-mx-repo-manager.png	usr/share/icons/hicolor/48x48/apps
-mx-repo-manager.png	usr/share/pixmaps
-translations/*.qm	usr/share/mx-repo-manager/locale
+license.html			usr/share/doc/mx-repo-manager
+mx-repo-manager			usr/bin
+mx-repo-manager.desktop		usr/share/applications
+icons/mx-repo-manager.png	usr/share/icons/hicolor/512x512/apps
+icons/mx-repo-manager.svg	usr/share/icons/hicolor/scalable/apps
+translations/*.qm		usr/share/mx-repo-manager/locale
