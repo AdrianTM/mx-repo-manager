@@ -618,7 +618,7 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 
 void MainWindow::on_pb_restoreSources_clicked()
 {
-    QString mx_version = shell->getOutput("lsb_release -rs").left(2);
+    QString mx_version = shell->getOutput("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2);
     if (mx_version.toInt() < 15) {
         qDebug() << "MX version not detected or out of range: " << mx_version;
         return;
