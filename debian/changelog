@@ -1,3 +1,9 @@
+mx-repo-manager (19.8) mx; urgency=medium
+
+  * fix for Buster
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 12 Aug 2019 11:51:37 -0400
+
 mx-repo-manager (19.7) mx; urgency=medium
 
   * new icon
