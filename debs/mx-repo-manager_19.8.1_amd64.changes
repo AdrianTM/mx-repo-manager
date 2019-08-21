@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Wed, 21 Aug 2019 15:13:00 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 19.8.1
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (19.8.1) mx; urgency=medium
+ .
+   * added offline help file
+Checksums-Sha1:
+ 41806fb8e6cdc34ff1c380d04f4099055fe4440e 1215 mx-repo-manager_19.8.1.dsc
+ ac1c6baa420d7cc5728ce4390c5b30273fcc2ec7 88128 mx-repo-manager_19.8.1.tar.xz
+ e10f723c894b63367a873b7a82aa247d4ab1aff8 110230 mx-repo-manager_19.8.1_amd64.deb
+Checksums-Sha256:
+ 052d560d858ec1adf61122e18dad6307d276342dc3991165019eadcb99de3188 1215 mx-repo-manager_19.8.1.dsc
+ 3183004b56c23b3cdf702496df6c65f98c1ee3900c489e4bf060d93a626ec058 88128 mx-repo-manager_19.8.1.tar.xz
+ e7215e448d72133dcf411293ec277d62dcce7db4ca08a88234e8d27d0d864ff5 110230 mx-repo-manager_19.8.1_amd64.deb
+Files:
+ da1f25eaebcab8ff076cf2b11f29fe10 1215 admin optional mx-repo-manager_19.8.1.dsc
+ 8e1f2c5e6b7f56ecc32e83149208f812 88128 admin optional mx-repo-manager_19.8.1.tar.xz
+ 1869c323c34a81177600bba7df14e6c4 110230 admin optional mx-repo-manager_19.8.1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl1dl+0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCuNB/9WqG12Nj1dxs7wa88huXg8VAmVgcX7
+TrbelvDkH6pFkHHXQnGR6D3WUBQhrTR/Yvv+weMS6WAi/5WmV8TcSUBjbnO2rVXR
+mXLJTL18nWF/MxNYca6Ue+Fv6C9ytt970XeaD9E0ueNPzCkgVKG6tD0xKaWg4lQX
+GRPA5N7CmPZPWUAfFA0WyLbgmD5ql794MuNraSYcbsq9uWpl3VX1ywkwpQ/00r5z
+/FJiD2lTcgtzNbVu9axv/s8S8o7jvTRqdU3fhHImmHHaB6IykNsGpqOK1qGUZsHr
+eUyQ4YvqOdhQpChZxeq+LbWByWlCk2HTI6RIA7xwx8FWR1YZnJ4S8/j0
+=RHFm
+-----END PGP SIGNATURE-----

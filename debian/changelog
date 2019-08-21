@@ -1,3 +1,9 @@
+mx-repo-manager (19.8.1) mx; urgency=medium
+
+  * added offline help file
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 21 Aug 2019 15:13:00 -0400
+
 mx-repo-manager (19.8) mx; urgency=medium
 
   * fix for Buster
