@@ -1,3 +1,4 @@
+help				usr/share/doc/mx-repo-manager
 license.html			usr/share/doc/mx-repo-manager
 mx-repo-manager			usr/bin
 mx-repo-manager.desktop		usr/share/applications
