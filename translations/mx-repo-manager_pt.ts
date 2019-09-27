@@ -229,7 +229,7 @@
     <message>
         <location filename="main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Este programa tem que ser executado como root.</translation>
+        <translation>Deve executar este programa como root.</translation>
     </message>
 </context>
 </TS>

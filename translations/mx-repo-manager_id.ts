@@ -62,7 +62,7 @@
     <message>
         <location filename="mainwindow.ui" line="348"/>
         <source>Alt+H</source>
-        <translation type="unfinished"/>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="393"/>
@@ -87,7 +87,7 @@
     <message>
         <location filename="mainwindow.ui" line="422"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Tutup</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="429"/>
@@ -97,7 +97,7 @@
     <message>
         <location filename="mainwindow.ui" line="448"/>
         <source>Apply</source>
-        <translation type="unfinished"/>
+        <translation>Terapkan</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="63"/>
@@ -150,7 +150,7 @@
     <message>
         <location filename="mainwindow.cpp" line="411"/>
         <source>Version: </source>
-        <translation type="unfinished"/>
+        <translation>Versi:</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="412"/>
@@ -160,17 +160,17 @@
     <message>
         <location filename="mainwindow.cpp" line="414"/>
         <source>Copyright (c) MX Linux</source>
-        <translation type="unfinished"/>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="415"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Lisensi</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="416"/>
         <source>Changelog</source>
-        <translation type="unfinished"/>
+        <translation>Changelog</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="417"/>
@@ -180,7 +180,7 @@
     <message>
         <location filename="mainwindow.cpp" line="433"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Tutup</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="465"/>

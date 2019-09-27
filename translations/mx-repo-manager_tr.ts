@@ -17,12 +17,12 @@
     <message>
         <location filename="mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"/>
+        <translation>MX depoları</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"/>
+        <translation>Benim için en hızlı MX deposunu seç</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="114"/>
