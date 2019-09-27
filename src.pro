@@ -65,6 +65,7 @@ TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_ko.ts \
                 translations/mx-repo-manager_lt.ts \
                 translations/mx-repo-manager_mk.ts \
+                translations/mx-repo-manager_mr.ts \
                 translations/mx-repo-manager_nb.ts \
                 translations/mx-repo-manager_nl.ts \
                 translations/mx-repo-manager_pl.ts \

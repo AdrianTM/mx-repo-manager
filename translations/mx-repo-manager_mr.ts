@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sl" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="mr" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
@@ -6,58 +6,58 @@
         <location filename="mainwindow.cpp" line="72"/>
         <location filename="mainwindow.cpp" line="411"/>
         <source>MX Repo Manager</source>
-        <translation>MX Upravljalnik repozitorijev</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="32"/>
         <location filename="mainwindow.cpp" line="522"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Izberite APT repozitorij, ki ga želite uporabljati:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation>MX repozitoriji</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation>Izberi najhitrejši MX repo</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="114"/>
         <source>search</source>
-        <translation>iskanje</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="172"/>
         <source>Debian repos</source>
-        <translation>Debian repozitoriji</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="184"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>Izberi najhitrejši Debian repo</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="237"/>
         <source>Individual sources</source>
-        <translation>Lastni viri</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="256"/>
         <source>Restore original APT sources</source>
-        <translation>Obnovi izvirne APT vire</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="338"/>
         <source>Display help </source>
-        <translation>Prikaži pomoč</translation>
+        <translation>मदत दाखवा</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="341"/>
         <source>Help</source>
-        <translation>Pomoč</translation>
+        <translation>मदत</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="348"/>
@@ -67,12 +67,12 @@
     <message>
         <location filename="mainwindow.ui" line="393"/>
         <source>About this application</source>
-        <translation>O tem programu</translation>
+        <translation>या अनुप्रयोगाबद्दल</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="396"/>
         <source>About...</source>
-        <translation>O programu...</translation>
+        <translation>विषयी</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="403"/>
@@ -82,12 +82,12 @@
     <message>
         <location filename="mainwindow.ui" line="419"/>
         <source>Quit application</source>
-        <translation>Zapri aplikacijo</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="422"/>
         <source>Close</source>
-        <translation>Zapri</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.ui" line="429"/>
@@ -97,36 +97,36 @@
     <message>
         <location filename="mainwindow.ui" line="448"/>
         <source>Apply</source>
-        <translation>Potrdi</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="63"/>
         <source>Please wait...</source>
-        <translation>Prosimo, počakajt...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="125"/>
         <location filename="mainwindow.cpp" line="362"/>
         <location filename="mainwindow.cpp" line="652"/>
         <source>Success</source>
-        <translation>Operacija je uspela</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="126"/>
         <location filename="mainwindow.cpp" line="363"/>
         <location filename="mainwindow.cpp" line="654"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>Vaša nova izbira bo postala aktivna, ko bodo viri naslednjič posodobljeni.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="205"/>
         <source>Lists</source>
-        <translation>Seznami</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="205"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>Viri (označeni viri so vklopljeni)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="365"/>
@@ -135,93 +135,93 @@
         <location filename="mainwindow.cpp" line="610"/>
         <location filename="mainwindow.cpp" line="638"/>
         <source>Error</source>
-        <translation>Napaka</translation>
+        <translation>त्रुटी</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="366"/>
         <source>Could not change the repo.</source>
-        <translation>Nisem mogel zamenjati repozitorija.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="410"/>
         <source>About MX Repo Manager</source>
-        <translation>O programu MX Upravljanik repozitorijev</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="411"/>
         <source>Version: </source>
-        <translation>Različica:</translation>
+        <translation>आवृत्ती</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="412"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Program za določitev privzetega APT repozitorija</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="414"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation>कॉपीराइट (c) एमएक्स लिनक्स</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="415"/>
         <source>License</source>
-        <translation>Licenca</translation>
+        <translation>परवाना</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="416"/>
         <source>Changelog</source>
-        <translation>Dnevnik sprememb</translation>
+        <translation>बदल सूची</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="417"/>
         <source>Cancel</source>
-        <translation>Prekliči</translation>
+        <translation>रद्द करा</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="433"/>
         <source>&amp;Close</source>
-        <translation>&amp;Zapri</translation>
+        <translation>बंद</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="465"/>
         <source>Warning</source>
-        <translation>Opozorilo</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="466"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation>Izbrali ste MX testni repozitorij. Njegova uporaba ni priporočljiva za nameščanje ali nadradnje.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="467"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation>Bolj varna možnost je nameščanje paketov s pomočjo MX Namestitev paketov</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="524"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>Izberite APT repozitorij in vire, ki jih želite uporabljati:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="583"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>netselect-apt ni mogel najti najhitrejšega repozitorija.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="594"/>
         <location filename="mainwindow.cpp" line="611"/>
         <source>Could not detect fastest repo.</source>
-        <translation>Najhitrejšega repozitorija ni bilo mogoče odkriti</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="639"/>
         <source>Could not download original APT files.</source>
-        <translation>Izvnirnih APT datotek ni bilo mogoče prenesti.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="653"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation>Izvirni APT viri so bili obnovljeni na stanje ob izdaji. Viri, ki jih je uporabnik dodal v /etc/apt/sources.list.d/, niso bili spremenjeni.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -229,7 +229,7 @@
     <message>
         <location filename="main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Ta program morate zagnati kot root</translation>
+        <translation>आपण हा प्रोग्राम रूट म्हणूनच चालवावा.</translation>
     </message>
 </context>
 </TS>
