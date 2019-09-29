@@ -1,225 +1,237 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="17"/>
-        <location filename="mainwindow.cpp" line="72"/>
-        <location filename="mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.ui" line="17"/>
+        <location filename="../mainwindow.cpp" line="75"/>
         <source>MX Repo Manager</source>
         <translation>MX Gestionnaire de dépôts</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="32"/>
-        <location filename="mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.ui" line="32"/>
+        <location filename="../mainwindow.cpp" line="499"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Sélectionnez le dépôt APT que vous souhaitez utiliser:</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="59"/>
+        <location filename="../mainwindow.ui" line="59"/>
         <source>MX repos</source>
         <translation>Dépots MX</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="84"/>
+        <location filename="../mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
         <translation>Sélectionner le dépôt MX le plus rapide</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="114"/>
+        <location filename="../mainwindow.ui" line="114"/>
         <source>search</source>
         <translation>Rechercher</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="172"/>
+        <location filename="../mainwindow.ui" line="172"/>
         <source>Debian repos</source>
         <translation>Dépôts Debian</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="184"/>
+        <location filename="../mainwindow.ui" line="184"/>
         <source>Select fastest Debian repo for me</source>
         <translation>Sélectionner le dépôt Debian le plus rapide</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="237"/>
+        <location filename="../mainwindow.ui" line="237"/>
         <source>Individual sources</source>
         <translation>Sources individuelles</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="256"/>
+        <location filename="../mainwindow.ui" line="256"/>
         <source>Restore original APT sources</source>
         <translation>Restaurer les sources APT d&apos;origine</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="338"/>
+        <location filename="../mainwindow.ui" line="338"/>
         <source>Display help </source>
         <translation>Afficher l&apos;aide</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="341"/>
+        <location filename="../mainwindow.ui" line="341"/>
         <source>Help</source>
         <translation>Aide</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="348"/>
+        <location filename="../mainwindow.ui" line="348"/>
         <source>Alt+H</source>
         <translation>Alt+H</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="393"/>
+        <location filename="../mainwindow.ui" line="393"/>
         <source>About this application</source>
         <translation>À propos de cette application</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="396"/>
+        <location filename="../mainwindow.ui" line="396"/>
         <source>About...</source>
         <translation>À propos...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="403"/>
+        <location filename="../mainwindow.ui" line="403"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="419"/>
+        <location filename="../mainwindow.ui" line="419"/>
         <source>Quit application</source>
         <translation>Quitter l&apos;application</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="422"/>
+        <location filename="../mainwindow.ui" line="422"/>
         <source>Close</source>
         <translation>Fermer</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="429"/>
+        <location filename="../mainwindow.ui" line="429"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="448"/>
+        <location filename="../mainwindow.ui" line="448"/>
         <source>Apply</source>
         <translation>Appliquer</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="63"/>
+        <location filename="../mainwindow.cpp" line="67"/>
         <source>Please wait...</source>
         <translation>Veuillez patienter...</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="125"/>
-        <location filename="mainwindow.cpp" line="362"/>
-        <location filename="mainwindow.cpp" line="652"/>
+        <location filename="../mainwindow.cpp" line="128"/>
+        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="620"/>
         <source>Success</source>
         <translation>Réussite de l&apos;installation</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="126"/>
-        <location filename="mainwindow.cpp" line="363"/>
-        <location filename="mainwindow.cpp" line="654"/>
+        <location filename="../mainwindow.cpp" line="129"/>
+        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="622"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Votre nouvelle sélection prendra effet la prochaine fois que les sources seront mises à jour.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="205"/>
+        <location filename="../mainwindow.cpp" line="201"/>
         <source>Lists</source>
         <translation>Listes</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="205"/>
+        <location filename="../mainwindow.cpp" line="201"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Sources (case cochée si déjà activée)</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="365"/>
-        <location filename="mainwindow.cpp" line="582"/>
-        <location filename="mainwindow.cpp" line="593"/>
-        <location filename="mainwindow.cpp" line="610"/>
-        <location filename="mainwindow.cpp" line="638"/>
+        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="578"/>
+        <location filename="../mainwindow.cpp" line="606"/>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="372"/>
         <source>Could not change the repo.</source>
         <translation>Impossible de modifier le dépôt.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="410"/>
         <source>About MX Repo Manager</source>
-        <translation>A propos de MX Gestionnaire de dépôts</translation>
+        <translation type="vanished">A propos de MX Gestionnaire de dépôts</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programme pour le choix du dépôt APT par défaut</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="415"/>
         <source>License</source>
-        <translation>Licence</translation>
+        <translation type="vanished">Licence</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="416"/>
         <source>Changelog</source>
-        <translation>Journal des modifications</translation>
+        <translation type="vanished">Journal des modifications</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="433"/>
         <source>&amp;Close</source>
-        <translation>&amp;Fermer</translation>
+        <translation type="vanished">&amp;Fermer</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="465"/>
+        <location filename="../mainwindow.cpp" line="414"/>
+        <source>About %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="419"/>
+        <source>%1 License</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="434"/>
+        <source>%1 Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="442"/>
         <source>Warning</source>
         <translation>Attention</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="466"/>
+        <location filename="../mainwindow.cpp" line="443"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Vous avez choisi le dépôt de test de MX. Il est déconseillé de le laisser activé ou de mettre à jour tous les paquets depuis ce même dépôt.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="467"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Installer un à un les paquets depuis MX Installateur de Paquets est une solution plus sûre.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="501"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Sélectionnez le dépôt APT et les sources que vous souhaitez utiliser:</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="583"/>
+        <location filename="../mainwindow.cpp" line="550"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt n&apos;a pas pu détecter le dépôt le plus rapide.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="594"/>
-        <location filename="mainwindow.cpp" line="611"/>
+        <location filename="../mainwindow.cpp" line="561"/>
+        <location filename="../mainwindow.cpp" line="579"/>
         <source>Could not detect fastest repo.</source>
         <translation>Impossible de déterminer le dépôt le plus rapide.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="639"/>
+        <location filename="../mainwindow.cpp" line="607"/>
         <source>Could not download original APT files.</source>
         <translation>Impossible de télécharger les fichiers APT originaux.</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="653"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Les sources APT d&apos;origine ont été restaurées à leurs paramètres initiaux. Les souces entretemps ajoutées par l&apos;utilisateur dans /etc/apt/sources.list.d/ n&apos;ont pas été modifiées.</translation>
     </message>
@@ -227,9 +239,30 @@
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="main.cpp" line="53"/>
+        <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
         <translation>Vous devez lancer cette application avec les droits administrateur.</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="32"/>
+        <source>License</source>
+        <translation type="unfinished">Licence</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="33"/>
+        <location filename="../about.cpp" line="43"/>
+        <source>Changelog</source>
+        <translation type="unfinished">Journal des modifications</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="34"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Annuler</translation>
+    </message>
+    <message>
+        <location filename="../about.cpp" line="51"/>
+        <source>&amp;Close</source>
+        <translation type="unfinished">&amp;Fermer</translation>
     </message>
 </context>
 </TS>

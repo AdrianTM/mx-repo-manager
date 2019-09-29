@@ -1,3 +1,10 @@
+mx-repo-manager (19.90) mx; urgency=medium
+
+  * added cancel button for progress bar
+  * removed libcmd dependency
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 29 Sep 2019 18:25:58 -0400
+
 mx-repo-manager (19.8.1) mx; urgency=medium
 
   * added offline help file
