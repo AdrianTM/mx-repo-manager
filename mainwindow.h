@@ -30,6 +30,7 @@
 #include <QListWidgetItem>
 #include <QMessageBox>
 #include <QProgressDialog>
+#include <QTimer>
 #include <QTreeWidget>
 
 #include "cmd.h"
@@ -68,6 +69,7 @@ public:
     QStringList loadAptFile(const QString &file);
 
 private slots:
+    void cancelOperation();
     void procDone();
     void procTime();
     void procStart();
@@ -89,8 +91,10 @@ private:
     QHash<QString, QIcon> flags;
     QProgressBar *bar;
     QProgressDialog *progress;
+    QPushButton *progCancel;
     QString current_repo;
     QStringList repos;
+    QTimer timer;
 
 };
 
