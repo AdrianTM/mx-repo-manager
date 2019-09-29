@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 29 Sep 2019 18:25:58 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 19.9
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (19.9) mx; urgency=medium
+ .
+   * added cancel button for progress bar
+   * removed libcmd dependency
+Checksums-Sha1:
+ 1d9a105dad1bd019f780c070307371f5964bb911 1188 mx-repo-manager_19.9.dsc
+ 6fe3c4eaff6cf1eec449d9caa1792eacc6f1edc9 92368 mx-repo-manager_19.9.tar.xz
+ 383e2480ceed74b603fb06d999b56f8445fddfbf 769976 mx-repo-manager-dbgsym_19.9_amd64.deb
+ c304f4b1f3cdcf54e75735c26f1ad55a8571f9da 11314 mx-repo-manager_19.9_amd64.buildinfo
+ 5f13e94a53a407db20293eccdce96ee7dda6022c 112340 mx-repo-manager_19.9_amd64.deb
+Checksums-Sha256:
+ efdb30210cf50bef2de5c68eb8685ffd3f366cd90f673e91c9f79eb792d443d7 1188 mx-repo-manager_19.9.dsc
+ 8aa3a58404ab490efa65b5fafb6453bacddc25d4cb806c74cfe63c1dbcf9bfa5 92368 mx-repo-manager_19.9.tar.xz
+ debc127b253714a85f62159dce60acb4253a20d8e13103cdcd7afd0192b064c4 769976 mx-repo-manager-dbgsym_19.9_amd64.deb
+ 045737614ab5797b6be54c74f701328001f109aeac123d2864180d47b90bd6c8 11314 mx-repo-manager_19.9_amd64.buildinfo
+ d5ebdbc08f4ac895945c8e05c4c9ee2c9de27636de45cb0d9dbe1a7542a3d558 112340 mx-repo-manager_19.9_amd64.deb
+Files:
+ 508367862cb368833d91a125d9e79c7e 1188 admin optional mx-repo-manager_19.9.dsc
+ cf5201ea8dd8d4015362d508396ec7c5 92368 admin optional mx-repo-manager_19.9.tar.xz
+ 9b9dcbe9330107f2b2a9daeb5f7bb3e5 769976 debug optional mx-repo-manager-dbgsym_19.9_amd64.deb
+ e08b6ab837ae87911ea877896b74d59a 11314 admin optional mx-repo-manager_19.9_amd64.buildinfo
+ 0afb69fb101ab2698ab715b3565cb81b 112340 admin optional mx-repo-manager_19.9_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2RMQETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumI9nCAC5J+jFeW5Rek1zDJVOx1XePiSTFpLh
+861q+sqZ4/zKeC6gMx/IiVwWv3eqHAccRTq3faiK5y4rZv9lUhDCZRoSds4yy07U
+2Tl8fKjQF7fnNJ6m0fBtYg7xwTgmQvdpSODvcl7+vm5eR52dWzbU7cllb0kLbJtp
+TPcNjgMfcJuBWCtsZNf2t2yaM/fnrkC+RrXCHlFDQzmlSPDkk+MR9CsNuEABLl5o
+32zfpSUMEYUI53al62/Yede2wLTaHd3BdUm76NwLyLgBw7C4hnlsp7ANdhj2aN/u
+m4+jh7wRpO4MW07H5glFPMuyc+wqZp3F6GeW77wSshHrUw6PxksaoWT+
+=ep06
+-----END PGP SIGNATURE-----
