@@ -31,10 +31,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-    mainwindow.cpp
+    mainwindow.cpp \
+    cmd.cpp
 
 HEADERS  += mainwindow.h \
-    version.h
+    version.h \
+    cmd.h
 
 FORMS    += mainwindow.ui
 
@@ -85,6 +87,3 @@ TRANSLATIONS += translations/mx-repo-manager_am.ts \
 
 RESOURCES += \
     images.qrc
-
-
-unix:!macx: LIBS += -lcmd
