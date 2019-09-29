@@ -22,7 +22,7 @@
  * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
-
+#include "about.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "version.h"
@@ -411,40 +411,12 @@ void MainWindow::on_buttonOk_clicked()
 void MainWindow::on_buttonAbout_clicked()
 {
     this->hide();
-    QMessageBox msgBox(QMessageBox::NoIcon,
-                       tr("About MX Repo Manager"), "<p align=\"center\"><b><h2>" +
-                       tr("MX Repo Manager") + "</h2></b></p><p align=\"center\">" + tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
+    displayAboutMsgBox(tr("About %1").arg(this->windowTitle()), "<p align=\"center\"><b><h2>" + this->windowTitle() +"</h2></b></p><p align=\"center\">" +
+                       tr("Version: ") + VERSION + "</p><p align=\"center\"><h3>" +
                        tr("Program for choosing the default APT repository") +
                        "</h3></p><p align=\"center\"><a href=\"http://mxlinux.org\">http://mxlinux.org</a><br /></p><p align=\"center\">" +
-                       tr("Copyright (c) MX Linux") + "<br /><br /></p>", 0, this);
-    QPushButton *btnLicense = msgBox.addButton(tr("License"), QMessageBox::HelpRole);
-    QPushButton *btnChangelog = msgBox.addButton(tr("Changelog"), QMessageBox::HelpRole);
-    QPushButton *btnCancel = msgBox.addButton(tr("Cancel"), QMessageBox::NoRole);
-    btnCancel->setIcon(QIcon::fromTheme("window-close"));
-
-    msgBox.exec();
-
-    if (msgBox.clickedButton() == btnLicense) {
-        QString url = "file:///usr/share/doc/mx-repo-manager/license.html";
-        displayDoc(url);
-    } else if (msgBox.clickedButton() == btnChangelog) {
-        QDialog *changelog = new QDialog(this);
-        changelog->resize(600, 500);
-
-        QTextEdit *text = new QTextEdit;
-        text->setReadOnly(true);
-        text->setText(shell->getCmdOut("zless /usr/share/doc/" + QFileInfo(QCoreApplication::applicationFilePath()).fileName()  + "/changelog.gz"));
-
-        QPushButton *btnClose = new QPushButton(tr("&Close"));
-        btnClose->setIcon(QIcon::fromTheme("window-close"));
-        connect(btnClose, &QPushButton::clicked, changelog, &QDialog::close);
-
-        QVBoxLayout *layout = new QVBoxLayout;
-        layout->addWidget(text);
-        layout->addWidget(btnClose);
-        changelog->setLayout(layout);
-        changelog->exec();
-    }
+                       tr("Copyright (c) MX Linux") + "<br /><br /></p>",
+                       "/usr/share/doc/mx-repo-manager/license.html", tr("%1 License").arg(this->windowTitle()), true);
     this->show();
 }
 
@@ -459,7 +431,7 @@ void MainWindow::on_buttonHelp_clicked()
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
     }
-    displayDoc(url);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
 void MainWindow::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
@@ -551,17 +523,6 @@ QIcon MainWindow::getFlag(QString country)
         return QIcon("/usr/share/fskbsetting/flags/" + short_name + ".png");
     }
     return QIcon();
-}
-
-void MainWindow::displayDoc(QString url)
-{
-    QString exec = "xdg-open";
-    QString user = shell->getCmdOut("logname");
-    if (system("command -v mx-viewer") == 0) { // use mx-viewer if available
-        exec = "mx-viewer";
-    }
-    QString cmd = "su " + user + " -c \"" + exec + " " + url + "\"&";
-    system(cmd.toUtf8());
 }
 
 // detect fastest Debian repo

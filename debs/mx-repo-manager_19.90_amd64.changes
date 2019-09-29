@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 29 Sep 2019 18:25:58 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 19.90
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (19.90) mx; urgency=medium
+ .
+   * added cancel button for progress bar
+   * removed libcmd dependency
+Checksums-Sha1:
+ e6987326954cc0f4b3cf657ecf5e4ad86d6719d5 1192 mx-repo-manager_19.90.dsc
+ 95fd57e6e4dd23e04c5d84ff0802629d1c0d7cd4 92356 mx-repo-manager_19.90.tar.xz
+ aacb1f9d5f6688262a3a91b1f2fdeaad6d9c0967 770022 mx-repo-manager-dbgsym_19.90_amd64.deb
+ 34719efdd10986758ce63415a6e56f0db09d64e8 11325 mx-repo-manager_19.90_amd64.buildinfo
+ 9a22d6d762091302ac84b8b9296e56259cc8414c 112442 mx-repo-manager_19.90_amd64.deb
+Checksums-Sha256:
+ d0a8a37773c1ac971d72b68304489edf513e10e3eabd823445c4e573761173b2 1192 mx-repo-manager_19.90.dsc
+ 1fe656a976de4d7b94c12881ce48c1470ccf372f9764e4568bab8f829cbc7282 92356 mx-repo-manager_19.90.tar.xz
+ f24ccb46a901b6c36a6e701181259b84cdd1f8ad616b91740b5d359a33804857 770022 mx-repo-manager-dbgsym_19.90_amd64.deb
+ 170a808f598276009bb6e522948d63693dd859cfed6f66867e8b667e1164f4e9 11325 mx-repo-manager_19.90_amd64.buildinfo
+ 4cb3390a2c4848842410645908bda7d99ab4286d5d7570ce995e9671113a6bef 112442 mx-repo-manager_19.90_amd64.deb
+Files:
+ c254632c44f9b1fe2d5dc90127749057 1192 admin optional mx-repo-manager_19.90.dsc
+ a72a89ae9d5b13a7032d06a10449f3f0 92356 admin optional mx-repo-manager_19.90.tar.xz
+ 32d1274fc2c13ddf86061c33371e4bdc 770022 debug optional mx-repo-manager-dbgsym_19.90_amd64.deb
+ a1f682884e345a6dcf4dc28c9fb0e883 11325 admin optional mx-repo-manager_19.90_amd64.buildinfo
+ 3b6fba7f2be3b4aec26bf6ae3dc137b3 112442 admin optional mx-repo-manager_19.90_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCAAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl2RL/8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumFr8CADETEM+RVSumS5dFk5x3MenPLycK/Uz
+Z7e9nEKeWo3Z46mO0w2VH82ONTiJDMLMfaZgcOlclrhTSo6Rzas2fVYbn6CsPaq4
+hMjyonwKvijl04F8z9RrjsQkqlFYevw8oknV2mgNg6wdDDuvvYIBkmTaDU13ty+S
+az9hMMVRFpyAYubX8M55nfgtQPnDZwWrJbAN1u0/7nowqgT2u42mp4Ys08TZNxW0
+XNH4slGp9x7GnU+ZN2mhNvsV8LLKIzXzRM37jjPnR4gg/ztUp/I4gtQiMKRSe9St
+sXibYdfO/mlLDh7vt38aTxosb0XBzmSlffgri/JXarZvVTNoQM0FQpqd
+=+7e8
+-----END PGP SIGNATURE-----
