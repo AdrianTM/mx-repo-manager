@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Fri, 18 Oct 2019 01:39:06 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 19.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (19.10) mx; urgency=medium
+ .
+   * filter out empty source files
+Checksums-Sha1:
+ 82c36086d8d40dc220b76ebddf67093ae0ed659c 630 mx-repo-manager_19.10.dsc
+ 932c5ae7a66845f647884b09254f3b3f17eebe7f 92376 mx-repo-manager_19.10.tar.xz
+ ee5459f7d2dd3807ce46e56ca7d5241b1007a674 770294 mx-repo-manager-dbgsym_19.10_amd64.deb
+ bf4ba9ab2b9c676f26678a2002fa35f58ed09742 10760 mx-repo-manager_19.10_amd64.buildinfo
+ a12f3625a1b1840e4b542ab728d21c088c025b47 112480 mx-repo-manager_19.10_amd64.deb
+Checksums-Sha256:
+ 0b0aa61c10b41e1b91db26ab015f944b5b303192a905c670a4b8578f3e6fbf82 630 mx-repo-manager_19.10.dsc
+ ec07e7f143daf10bc492994162a69e56b776f510b04e71d55476c42efb93c4e9 92376 mx-repo-manager_19.10.tar.xz
+ 5bed1940bd4e43b90cdee7f21f32e3d72608d84746a29678fdad9d19123fb6a3 770294 mx-repo-manager-dbgsym_19.10_amd64.deb
+ f225d94a9d8dcf2e53ae51c20cf3ae24feaec37e75b807acfbbe2b2cf9d749bd 10760 mx-repo-manager_19.10_amd64.buildinfo
+ b037dd045daf9a7bdec4d42ba173f3412593a5e70a4d6a6070b9d0a130ae73af 112480 mx-repo-manager_19.10_amd64.deb
+Files:
+ efe32893cc70d976da2f36fa30d0510a 630 admin optional mx-repo-manager_19.10.dsc
+ b3e8d5a1b4e91d75ed18a86c17241dd0 92376 admin optional mx-repo-manager_19.10.tar.xz
+ 1d0a14d46446dbd3535e374ec80c474c 770294 debug optional mx-repo-manager-dbgsym_19.10_amd64.deb
+ 4bdaf7934747f44ef224927a06c238c9 10760 admin optional mx-repo-manager_19.10_amd64.buildinfo
+ cbf70a8995dd48537d6c8439f254d51c 112480 admin optional mx-repo-manager_19.10_amd64.deb

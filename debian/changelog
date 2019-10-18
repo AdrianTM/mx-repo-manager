@@ -1,3 +1,9 @@
+mx-repo-manager (19.10) mx; urgency=medium
+
+  * filter out empty source files
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 18 Oct 2019 01:39:06 -0400
+
 mx-repo-manager (19.9) mx; urgency=medium
 
   * added cancel button for progress bar

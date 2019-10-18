@@ -380,7 +380,7 @@ QFileInfoList MainWindow::listAptFiles()
     QDir apt_dir("/etc/apt/sources.list.d");
     list << apt_dir.entryInfoList(QStringList("*.list"));
     QFile file("/etc/apt/sources.list");
-    if (file.size() != 0) {
+    if (file.size() != 0 && shell->run("grep '^#*[ ]*deb' " + file.fileName(), true)) {
         list << file;
     }
     return list;
