@@ -57,7 +57,7 @@ public:
     void extractUrls(const QStringList &repos);
     void getCurrentRepo();
     void refresh();
-    void replaceDebianRepos(const QString &url);
+    void replaceDebianRepos(QString url);
     void replaceRepos(const QString &url);
     void setSelected();
     QFileInfoList listAptFiles();
