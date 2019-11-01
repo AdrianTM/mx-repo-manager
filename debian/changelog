@@ -1,3 +1,9 @@
+mx-repo-manager (19.10.02) mx; urgency=medium
+
+  * Add stanza in getDebianVersion subroutine for buster
+
+ -- Timothy E. Harris <maintainer@mxrepo.com>  Fri, 01 Nov 2019 15:10:48 -0400
+
 mx-repo-manager (19.10.01) mx; urgency=medium
 
   * fix detecting fastest Debian repo
