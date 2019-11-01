@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 01 Nov 2019 15:10:48 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager mx-repo-manager-dbgsym
+Architecture: source amd64
+Version: 19.10.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Timothy E. Harris <maintainer@mxrepo.com>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (19.10.02) mx; urgency=medium
+ .
+   * Add stanza in getDebianVersion subroutine for buster
+Checksums-Sha1:
+ 208291b837bac7be6af5b58983f77cb27e35ba50 1208 mx-repo-manager_19.10.02.dsc
+ 56c2742956b3aad112f25704ff0847201fe371c6 92488 mx-repo-manager_19.10.02.tar.xz
+ 2f31531f9e40a2d3f59b5de1e08fa17a31166bcd 915596 mx-repo-manager-dbgsym_19.10.02_amd64.deb
+ 5a1b57e6774d7f4751c780d14c0b79fb3fefcd72 11082 mx-repo-manager_19.10.02_amd64.buildinfo
+ 3a4c6f3ec77b48977a039bbb807733310f3ddf0b 113332 mx-repo-manager_19.10.02_amd64.deb
+Checksums-Sha256:
+ 771e28f7ff83bab016274d625301a1d33161de5b9bd84ff6c439604b3f09c778 1208 mx-repo-manager_19.10.02.dsc
+ 89cfe716fb4627615614e4e36be15b8aa8bee9c21ea79a45c1aab460e6c39ed7 92488 mx-repo-manager_19.10.02.tar.xz
+ 00ad4b75f91f34148ae1fbcb52b0c9ebd266399545431b4ac0c770251d547a0a 915596 mx-repo-manager-dbgsym_19.10.02_amd64.deb
+ c8b32a90c405377b52931ac7c123dc938f9d6dbcf320fc2a154cac2398eb5721 11082 mx-repo-manager_19.10.02_amd64.buildinfo
+ 4e1684d3ab733f31261641a8c84260c45d5ee40616967a8e2b3922f0aad0fb0c 113332 mx-repo-manager_19.10.02_amd64.deb
+Files:
+ 783f10284eef49929ffc5df55ebe84c0 1208 admin optional mx-repo-manager_19.10.02.dsc
+ 213c1373672c3a525b182d09c6ebbc2a 92488 admin optional mx-repo-manager_19.10.02.tar.xz
+ 13e5daf2ea589656a4564bfc87ac50c5 915596 debug optional mx-repo-manager-dbgsym_19.10.02_amd64.deb
+ ce8a3b32b9833cf01614b68951e52184 11082 admin optional mx-repo-manager_19.10.02_amd64.buildinfo
+ e5170083f24539c8fd2c1c90d024e3e6 113332 admin optional mx-repo-manager_19.10.02_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFKBAEBCgA0FiEEnXA5JMcBhRzp0ZyODm3FuZB8B4kFAl28hD0WHG1haW50YWlu
+ZXJAbXhyZXBvLmNvbQAKCRAObcW5kHwHiVedCAC+6xxqwanT30NfkjmtVcurwp/q
+jisU8wICLEDQPYHirSA9ZXZWVe7Fk0+f8xKidSWCdbke7+RGGqlz3VN9BQjw5vxI
+vqQ3sdL9v371L12hfSkIGS8DcaTSo6oOvGLR+72E54Kk+ott2k3sPwKJQGyjGdaM
+K+Qgi5QRHyescQB+Zfr/u3/tqOQHNv/2wSPGeB4xkLVv7Tb3uCe+f8tMFzgOLp0Q
+5WY0nyVHBYYf+6sWl5t923bgDoTQrKKvmHRGfB9XM4DJNHaj841K5aubZhgCBJJ0
+WQ29L0RxnG37UAZdIFtMTpL2bjauxArgk60Zmks/6FLc99rTk3cWAIWDnJAK
+=ClDO
+-----END PGP SIGNATURE-----
