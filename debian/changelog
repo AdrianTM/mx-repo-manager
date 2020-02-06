@@ -1,3 +1,9 @@
+mx-repo-manager (20.2) mx; urgency=medium
+
+  * prepare program for removing antiX sources
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 05 Feb 2020 19:03:49 -0500
+
 mx-repo-manager (19.10.01) mx; urgency=medium
 
   * fix detecting fastest Debian repo
