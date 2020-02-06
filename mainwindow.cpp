@@ -356,17 +356,19 @@ void MainWindow::replaceRepos(const QString &url)
     cmd_mx = QString("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
             QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx).arg(mx_file);
 
-    // for antiX repos
-    QString antix_file = "/etc/apt/sources.list.d/antix.list";
-    if (url == "http://mxrepo.com") {
-        repo_line_antix = "http://la.mxrepo.com/antix/" + ver_name + "/";
-    } else {
-        repo_line_antix = url + "/antix/" + ver_name + "/";
+    if (ver_num.toInt() < 9) {
+        // for antiX repos
+        QString antix_file = "/etc/apt/sources.list.d/antix.list";
+        if (url == "http://mxrepo.com") {
+            repo_line_antix = "http://la.mxrepo.com/antix/" + ver_name + "/";
+        } else {
+            repo_line_antix = url + "/antix/" + ver_name + "/";
+        }
+        cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix).arg(antix_file);
     }
-    cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix).arg(antix_file);
 
     // check if both replacement were successful
-    if (shell->run(cmd_mx) && shell->run(cmd_antix)) {
+    if (shell->run(cmd_mx) && (ver_num.toInt() >= 9 || shell->run(cmd_antix))) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));
     } else {
