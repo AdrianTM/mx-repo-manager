@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 05 Feb 2020 19:03:49 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 20.2
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (20.2) mx; urgency=medium
+ .
+   * prepare program for removing antiX sources
+Checksums-Sha1:
+ d67c2c087aa7fd8e735948164f8bdd1fd5143181 1188 mx-repo-manager_20.2.dsc
+ 863800e3e0f554a06fd70c76ee04680b61e02b31 92392 mx-repo-manager_20.2.tar.xz
+ 7bf554f8ca9c205f527028ddc6d9ac603c6ee783 770022 mx-repo-manager-dbgsym_20.2_amd64.deb
+ 701a621b9cfc9f284d0b71fc4f8c8220b0d4db1d 10684 mx-repo-manager_20.2_amd64.buildinfo
+ 4b312b6994d6969362902e62a5186a9caa434c4b 112302 mx-repo-manager_20.2_amd64.deb
+Checksums-Sha256:
+ 49fd6ae6adc4d98e9c374a4658a64aed2efd7111a52e67149b7c535688153ce3 1188 mx-repo-manager_20.2.dsc
+ 61fbfecf518d57e830a3041f80f34194b409117107e27eb65a410e4a80db8c0d 92392 mx-repo-manager_20.2.tar.xz
+ 9072e425d5a5a75a7321a8b8b3b69e04e971f8c1743366fa72bb9f3ff5faf1be 770022 mx-repo-manager-dbgsym_20.2_amd64.deb
+ 09780eb8aa7a2d051ab479295e4d004eddd63e98e6de9fa195a01d3560660efc 10684 mx-repo-manager_20.2_amd64.buildinfo
+ ac82719bacd2d1dd02a4055bf807cfbb3e5811936e09adc33465751e76178439 112302 mx-repo-manager_20.2_amd64.deb
+Files:
+ eac05471fc517d8e6c66395e00303338 1188 admin optional mx-repo-manager_20.2.dsc
+ 8fd8837dc6530f5e9d86478f11e44bd3 92392 admin optional mx-repo-manager_20.2.tar.xz
+ 129b997ddc1c27df5b2fd3030aa121d5 770022 debug extra mx-repo-manager-dbgsym_20.2_amd64.deb
+ 137e5dbc089608d69a22d6512ae03405 10684 admin optional mx-repo-manager_20.2_amd64.buildinfo
+ 9107ff0203ff9321bfa8e5d55602fc1c 112302 admin optional mx-repo-manager_20.2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl47WaITHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBFJB/4zKsihqdSg7/Xo4rmNh3EO9rU8B9Mq
+vfHS4RTmI0DLfPVGTwAvHv9h01+UrZHLGsZIXop0U7NGrXu367GYAZWUopiwVZsi
+yo60w4ypRxJ+J/9cAoM/B4hiaVcVKB5y/OuK0knR/qq7+y4WG53AgXeCdwXDzPcM
+mr4CRTzNbH32DmGrJaBo2njotPMHaxNqQTfWD2gZ2nGJYM09xFrrTdNpX8EYImTC
+tLF+LjMIgLRjYgLcu57uqTx9T+tCGHVTR2hULcvYw4yuCIzQKqPn0Il2apFpNSVG
++O6lXtIrmbh0gkPrxdNPHH2QVKfgK0BKi8QNquWSHG2BMamGlrBxE4va
+=NP/1
+-----END PGP SIGNATURE-----

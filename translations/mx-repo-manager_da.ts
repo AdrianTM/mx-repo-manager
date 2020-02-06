@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="499"/>
+        <location filename="../mainwindow.cpp" line="501"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Vælg den APT-softwarekilde som du vil bruge:</translation>
     </message>
@@ -107,15 +107,15 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="368"/>
-        <location filename="../mainwindow.cpp" line="620"/>
+        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="622"/>
         <source>Success</source>
         <translation>Det lykkedes</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="129"/>
-        <location filename="../mainwindow.cpp" line="369"/>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="624"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Din nye markering træder i kraft næste gang kilderne opdateres.</translation>
     </message>
@@ -130,16 +130,16 @@
         <translation>Kilder (tjekkede kilder er aktiveret)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
-        <location filename="../mainwindow.cpp" line="549"/>
-        <location filename="../mainwindow.cpp" line="560"/>
-        <location filename="../mainwindow.cpp" line="578"/>
-        <location filename="../mainwindow.cpp" line="606"/>
+        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="551"/>
+        <location filename="../mainwindow.cpp" line="562"/>
+        <location filename="../mainwindow.cpp" line="580"/>
+        <location filename="../mainwindow.cpp" line="608"/>
         <source>Error</source>
         <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="374"/>
         <source>Could not change the repo.</source>
         <translation>Kunne ikke skifte softwarekilden.</translation>
     </message>
@@ -148,17 +148,17 @@
         <translation type="vanished">Om MX Softwarekildehåndtering</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="../mainwindow.cpp" line="417"/>
         <source>Version: </source>
         <translation>Version: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Program til at vælge standard-APT-softwarekilden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Ophavsret (c) MX Linux</translation>
     </message>
@@ -180,58 +180,58 @@
         <translation type="vanished">&amp;Luk</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>About %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>%1 License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>%1 Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="442"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>Warning</source>
         <translation>Advarsel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="443"/>
+        <location filename="../mainwindow.cpp" line="445"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Du har valgt MX testsoftwarekilde. Det anbefales ikke at lade den være aktiveret eller at opgradere alle pakkerne fra den.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="444"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Et sikre valg er at installere pakker hver for sig med MX Pakkeinstallationsprogram.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Vælg den APT-softwarekilde og -kilder som du vil bruge:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt kunne ikke registrere hurtigste softwarekilde.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="561"/>
-        <location filename="../mainwindow.cpp" line="579"/>
+        <location filename="../mainwindow.cpp" line="563"/>
+        <location filename="../mainwindow.cpp" line="581"/>
         <source>Could not detect fastest repo.</source>
         <translation>Kunne ikke registrere hurtigste softwarekilde.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="607"/>
+        <location filename="../mainwindow.cpp" line="609"/>
         <source>Could not download original APT files.</source>
         <translation>Kunne ikke downloade de originale APT-filer.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="623"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>De originale APT-kilder er blevet gendannet til udgivelsesstatussen. Kildefiler som er blevet tilføjet af en bruger i /etc/apt/sources.list.d/ er ikke blevet rørt.</translation>
     </message>

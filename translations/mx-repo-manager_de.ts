@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="499"/>
+        <location filename="../mainwindow.cpp" line="501"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>
 Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
@@ -108,15 +108,15 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="368"/>
-        <location filename="../mainwindow.cpp" line="620"/>
+        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="622"/>
         <source>Success</source>
         <translation>Erfolg</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="129"/>
-        <location filename="../mainwindow.cpp" line="369"/>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="624"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ihre neue Auswahl wird wirksam wenn die Quellen nächstes Mal aktualisiert werden.</translation>
     </message>
@@ -131,16 +131,16 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation>Quellen (Kästchen mit Haken sind aktiviert)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
-        <location filename="../mainwindow.cpp" line="549"/>
-        <location filename="../mainwindow.cpp" line="560"/>
-        <location filename="../mainwindow.cpp" line="578"/>
-        <location filename="../mainwindow.cpp" line="606"/>
+        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="551"/>
+        <location filename="../mainwindow.cpp" line="562"/>
+        <location filename="../mainwindow.cpp" line="580"/>
+        <location filename="../mainwindow.cpp" line="608"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="374"/>
         <source>Could not change the repo.</source>
         <translation>Änderung des Repo-Servers nicht möglich</translation>
     </message>
@@ -149,17 +149,17 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation type="vanished">Über MX Repo Manager</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="../mainwindow.cpp" line="417"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programm zur Wahl des Standard-Repos für APT</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
@@ -181,58 +181,58 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation type="vanished">&amp;Close</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>About %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>%1 License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>%1 Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="442"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>Warning</source>
         <translation>Warnung</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="443"/>
+        <location filename="../mainwindow.cpp" line="445"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Sie haben das MX Test Repo ausgewählt. Es wird nicht empfohlen, es aktiviert zu lassen oder alle Pakete davon zu aktualisieren.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="444"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Eine sicherere Weg ist die Installation von einzelnen Paketen mit dem MX Paket-Installer.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Wählen Sie das APT-Repository und die Quellen, die Sie verwenden möchten:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt konnte das schnellste Repo nicht erkennen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="561"/>
-        <location filename="../mainwindow.cpp" line="579"/>
+        <location filename="../mainwindow.cpp" line="563"/>
+        <location filename="../mainwindow.cpp" line="581"/>
         <source>Could not detect fastest repo.</source>
         <translation>Schnellstes Repo konnte nicht erkannt werden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="607"/>
+        <location filename="../mainwindow.cpp" line="609"/>
         <source>Could not download original APT files.</source>
         <translation>Die originalen APT-Dateien konnten nicht heruntergeladen werden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="623"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Die originalen APT-Quellen wurden in den Ausgangsstatus zurückgesetzt. Benutzerdefinierte Quelldateien in /etc/apt/sources.list.d/ wurden nicht berührt.</translation>
     </message>
