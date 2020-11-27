@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 27 Nov 2020 17:25:29 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 20.11
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (20.11) mx; urgency=medium
+ .
+   * replaced dependency
+Checksums-Sha1:
+ 69de6be7ebd097930604dda2c66647c69e4e4152 1192 mx-repo-manager_20.11.dsc
+ 9919d3acd76c5b7908b526125e7f90ebeb95ab8d 92392 mx-repo-manager_20.11.tar.xz
+ cf8daef47102e17d2a15706e9e55a409d8dd517b 770600 mx-repo-manager-dbgsym_20.11_amd64.deb
+ 478ce7560c16e199ca54d361aa6586fbca1d81ee 10744 mx-repo-manager_20.11_amd64.buildinfo
+ 6f56a83cfcf08decc96054a6a906e26b84382454 111486 mx-repo-manager_20.11_amd64.deb
+Checksums-Sha256:
+ 69377d0bca28afc050cafe072fd1d7c5465dc839f7fe8a64342e76aa69849381 1192 mx-repo-manager_20.11.dsc
+ abe97fbeeca4906c1777cbd2fe9ed7177e5d7f927fe29d664dbc05d5aea5046d 92392 mx-repo-manager_20.11.tar.xz
+ 1c8c4f65b19f4af263dbb0b112a33fc50abe2e825c46c44af7cde0a46fe3addb 770600 mx-repo-manager-dbgsym_20.11_amd64.deb
+ f9ab51f606e5b0c299d7e77d43fb5a168a0ed22b6427f32fbf378696de0ae030 10744 mx-repo-manager_20.11_amd64.buildinfo
+ 52fa0dbf0de7761ac96211eaea999818b386eea2578917a2484c9d71d528c7aa 111486 mx-repo-manager_20.11_amd64.deb
+Files:
+ d5426c68577542773c298356b7625cb2 1192 admin optional mx-repo-manager_20.11.dsc
+ 783a0b1c450bce52e1592240a12a1db6 92392 admin optional mx-repo-manager_20.11.tar.xz
+ 837e0ac5bc7975dd8fe9af209ee39374 770600 debug extra mx-repo-manager-dbgsym_20.11_amd64.deb
+ d296374bff2167587f0e81078dd8e7af 10744 admin optional mx-repo-manager_20.11_amd64.buildinfo
+ 6f56bcea1654bdf7afe8bfa094483797 111486 admin optional mx-repo-manager_20.11_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/BfZsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumG5VB/96C2gVPpWrXN9+vdBT7DKafiMiSEN3
+rGHDJIW1+w5dFW38ksPNy/j45t6Bshy6d0gXCk7iYuJiOgUqjs21QW64plYj4rRr
+nsttztxFWepVMgnqy7gx+H7eOLNmn8tyneXwLH3Mxj/Acsl/4eDfutmBkfaWCbgF
+75kIktxwNP2fy1RINxdFGeIhSGbuhExFliIYZ0yIZA3cyPwps1qzTrLcqocAuXgl
+5h6tSE4dJnlc+Wj0VEOIbnddcAziLY6wP6aZjberpL4yqoziV8fDZdXidy+d0Br/
+fftr00mhlJuCJ+0NdLlvIh98ObU6iuvTxKJowZgvScgyziiRCr05rnqf
+=R2kv
+-----END PGP SIGNATURE-----
