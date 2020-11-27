@@ -9,7 +9,7 @@ Vcs-Git: git://github.com/AdrianTM/mx-repo-manager
 Package: mx-repo-manager
 Architecture: any
 Depends: apt-transport-https,
-         fskbsetting,
+         flags-common,
          menu,
          mx-repo-list,
          mx-viewer | xdg-utils,

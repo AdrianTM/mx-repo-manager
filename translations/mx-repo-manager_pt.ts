@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Seleccionar o repositório APT a usar:</translation>
     </message>
@@ -107,15 +107,15 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="370"/>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="624"/>
         <source>Success</source>
         <translation>Êxito</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="129"/>
-        <location filename="../mainwindow.cpp" line="371"/>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="626"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>A nova escolha terá efeito na próxima vez que as origens forem atualizadas.</translation>
     </message>
@@ -130,16 +130,16 @@
         <translation>Origens (as origens marcadas estão activadas)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="373"/>
-        <location filename="../mainwindow.cpp" line="551"/>
-        <location filename="../mainwindow.cpp" line="562"/>
-        <location filename="../mainwindow.cpp" line="580"/>
-        <location filename="../mainwindow.cpp" line="608"/>
+        <location filename="../mainwindow.cpp" line="375"/>
+        <location filename="../mainwindow.cpp" line="553"/>
+        <location filename="../mainwindow.cpp" line="564"/>
+        <location filename="../mainwindow.cpp" line="582"/>
+        <location filename="../mainwindow.cpp" line="610"/>
         <source>Error</source>
         <translation>Erro</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="374"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>Could not change the repo.</source>
         <translation>Não foi possível alterar o repositório</translation>
     </message>
@@ -148,17 +148,17 @@
         <translation type="vanished">Sobre o MX-Gestor de Repositórios</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>Version: </source>
         <translation>Versão: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programa para escolher o repositório APT pré-definido</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="422"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Direitos de autor (c) MX Linux</translation>
     </message>
@@ -180,58 +180,58 @@
         <translation type="vanished">&amp;Fechar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>About %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>%1 License</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="438"/>
         <source>%1 Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="444"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Warning</source>
         <translation>Aviso</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Foi seleccionado o MX Test Repo. Não é recomendado que seja deixado activado nem que sejam actualizados todos os pacotes actualizáveis a partir das versões do mesmo.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>A opção mais segura é instalar pacotes um a um com o MX-Instalador de Pacotes.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="505"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Seleccionar o repositório APT e as origens a usar:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="552"/>
+        <location filename="../mainwindow.cpp" line="554"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>O netselect-apt não conseguiu detectar o repositório mais rápido</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="563"/>
-        <location filename="../mainwindow.cpp" line="581"/>
+        <location filename="../mainwindow.cpp" line="565"/>
+        <location filename="../mainwindow.cpp" line="583"/>
         <source>Could not detect fastest repo.</source>
         <translation>Não foi possível detectar o repositório mais rápido</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="609"/>
+        <location filename="../mainwindow.cpp" line="611"/>
         <source>Could not download original APT files.</source>
         <translation>Não foi possível transferir os ficheiros APT originais.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="623"/>
+        <location filename="../mainwindow.cpp" line="625"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>As origens APT iniciais foram restauradas para como no lançamento. Os ficheiros de origens adicionados pelo utilizador a /etc/apt/sources.list.d/ não foram tocados.</translation>
     </message>
@@ -239,9 +239,8 @@
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../main.cpp" line="53"/>
         <source>You must run this program as root.</source>
-        <translation>Deve executar este programa como root.</translation>
+        <translation type="vanished">Deve executar este programa como root.</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="32"/>

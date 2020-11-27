@@ -1,3 +1,9 @@
+mx-repo-manager (20.11) mx; urgency=medium
+
+  * replaced dependency
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 27 Nov 2020 17:25:29 -0500
+
 mx-repo-manager (20.2) mx; urgency=medium
 
   * prepare program for removing antiX sources
