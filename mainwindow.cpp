@@ -343,7 +343,7 @@ void MainWindow::replaceRepos(const QString &url)
     } else if (ver_num == "10") {
         ver_name = "buster";
    }
-    
+
     // mx source files to be edited (mx.list and mx16.list for MX15/16)
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
     if (QFile("/etc/apt/sources.list.d/mx16.list").exists()) {
@@ -516,7 +516,7 @@ QIcon MainWindow::getFlag(QString country)
     // fix flag of the United States of America  : QLocale::UnitedStates
     if (country == "USA" )             { country = "UnitedStates"; }
     if (country == "Anycast" || country == "Any" || country == "World") {
-        return QIcon("/usr/share/fskbsetting/flags/any.png");
+        return QIcon("/usr/share/flags-common/any.png");
     }
     //QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
     int index = metaEnum.keyToValue(country.remove(" ").toUtf8());
@@ -524,7 +524,7 @@ QIcon MainWindow::getFlag(QString country)
     // qDebug() << "etFlag county: " << country << " locales: " << locales;
     if (locales.length() > 0) {
         QString short_name = locales.at(0).name().section("_", 1, 1).toLower();
-        return QIcon("/usr/share/fskbsetting/flags/" + short_name + ".png");
+        return QIcon("/usr/share/flags-common/" + short_name + ".png");
     }
     return QIcon();
 }
