@@ -108,14 +108,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="128"/>
         <location filename="../mainwindow.cpp" line="372"/>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="../mainwindow.cpp" line="636"/>
         <source>Success</source>
         <translation>Operazione riuscita</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="129"/>
         <location filename="../mainwindow.cpp" line="373"/>
-        <location filename="../mainwindow.cpp" line="626"/>
+        <location filename="../mainwindow.cpp" line="638"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>La tua selezione avrà effetto col prossimo aggiornamento delle sorgenti dei repository.</translation>
     </message>
@@ -134,7 +134,8 @@
         <location filename="../mainwindow.cpp" line="553"/>
         <location filename="../mainwindow.cpp" line="564"/>
         <location filename="../mainwindow.cpp" line="582"/>
-        <location filename="../mainwindow.cpp" line="610"/>
+        <location filename="../mainwindow.cpp" line="603"/>
+        <location filename="../mainwindow.cpp" line="613"/>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
@@ -226,12 +227,27 @@
         <translation>Non si riesce a rilevare il repo più veloce.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="611"/>
+        <location filename="../mainwindow.cpp" line="604"/>
+        <source>MX version not detected or out of range: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="614"/>
         <source>Could not download original APT files.</source>
         <translation>Non si riesce a scaricare i file di APT originali.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="625"/>
+        <location filename="../mainwindow.cpp" line="629"/>
+        <source>Enabling AHS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="630"/>
+        <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="637"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Le sorgenti di APT originali sono state ripristinate a quelle previste per l&apos;attuale release. I file delle sorgenti, aggiunte dall&apos;utente in /etc/apt/sources.list.d/, non sono stati toccati.</translation>
     </message>
