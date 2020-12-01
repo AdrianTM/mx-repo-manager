@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 01 Dec 2020 14:53:11 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 20.12
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (20.12) mx; urgency=medium
+ .
+   * for 64-bit OS check if user wants to restore AHS repo
+Checksums-Sha1:
+ 1bf60e9a9b67b42c16f787e5ff601b91bf78f4ad 1192 mx-repo-manager_20.12.dsc
+ 82b914de3596be9649fb1c7070a50ecbd6e3f55d 92724 mx-repo-manager_20.12.tar.xz
+ 171bab4dace373aef53da0d07cb3e638127e7429 770206 mx-repo-manager-dbgsym_20.12_amd64.deb
+ d4aebd313174ce4ce56fb8ac9a79ab29abae0ab4 10744 mx-repo-manager_20.12_amd64.buildinfo
+ 36ad4355613538a9e247472ee45267ecbdcd8ff9 111712 mx-repo-manager_20.12_amd64.deb
+Checksums-Sha256:
+ 1e65ffe3b1ae8387cc7a1e792f2b9640ea9f2fa2da134c649a91fd592c1b1c23 1192 mx-repo-manager_20.12.dsc
+ d6161541ea4e679745360f28a035a0641f3a5a2dab303f9f668076962b37d7eb 92724 mx-repo-manager_20.12.tar.xz
+ 0e0db88c2524486976005c90965bf1cb49f6c61d02f07f012f391b676b7880b0 770206 mx-repo-manager-dbgsym_20.12_amd64.deb
+ bc08bf4c9386648a5cccef07d7d3a1fa6ef400d084d2fdc5640d8c2947a5d88d 10744 mx-repo-manager_20.12_amd64.buildinfo
+ 30aea067ae288d7c60a10a5c89938072e1b8c19de056b1ede26b5ca42c5ff1a7 111712 mx-repo-manager_20.12_amd64.deb
+Files:
+ 8ffa3c084fe0b424b306a6c6f308c3de 1192 admin optional mx-repo-manager_20.12.dsc
+ 2487e980ddc47753b6b6de02e6415d33 92724 admin optional mx-repo-manager_20.12.tar.xz
+ ff88d76700c920936bd2e5662a801a41 770206 debug extra mx-repo-manager-dbgsym_20.12_amd64.deb
+ 778a7aeaea7036bc632d55da00b787c4 10744 admin optional mx-repo-manager_20.12_amd64.buildinfo
+ 5259cca373eda87a413f31e9782131e5 111712 admin optional mx-repo-manager_20.12_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAl/GoBoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEaMB/9KzgtwqU1gEAndHK0lAi9BxhG3YUbu
+0b+InASZEFQhahOwUn4QbTDvXaB1ChDXOW4PI0AlWyBONBAWpcrA8z6+CCY4CgNR
+LdZbDpc7dkM/GZiLnlLrV9n6Si4l7H1lz0thJmUefdUV+RgIOfQTBnom3cu/0eKs
+Zth0CVwpUD9zNsEc4i7X3F7sDZPqKfUTBMrwtN/NoKuAe0zX4vjtIWNz3WeHwMzK
+58aN1ZYiRml2BxP85r0c0d+ceQld0ouPdKJjanmYyzHEzNFYVdC3ZGcNgFxlMzi0
+ppLjhsYwnlXwZz8uJMdEcPql4oLyimJHdgckuLtj5yXGmOr04KZrpaqB
+=Cu88
+-----END PGP SIGNATURE-----

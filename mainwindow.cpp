@@ -598,10 +598,13 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 void MainWindow::on_pb_restoreSources_clicked()
 {
     QString mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2);
+
     if (mx_version.toInt() < 15) {
-        qDebug() << "MX version not detected or out of range: " << mx_version;
+        QMessageBox::critical(this, tr("Error"),
+                              tr("MX version not detected or out of range: ") + mx_version);
         return;
     }
+
     // create temp folder
     QString path = shell->getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
     // download source files from
@@ -620,6 +623,15 @@ void MainWindow::on_pb_restoreSources_clicked()
     // delete temp folder
     cmd = QString("rm -rf %1").arg(path);
     system(cmd.toUtf8());
+
+    // for 64-bit OS check if user wants AHS repo
+    if (mx_version.toInt() >= 19 && shell->getCmdOut("uname -m", true) == "x86_64") {
+        if (QMessageBox::Yes == QMessageBox::question(this, tr("Enabling AHS"),
+                              tr("Do you use AHS (Advanced Hardware Stack) repo?"))) {
+            shell->run("sed -i '/^\\s*#*\\s*deb.*ahs\\s*/s/^#*\\s*//' /etc/apt/sources.list.d/mx.list", true);
+        }
+    }
+
     refresh();
     QMessageBox::information(this, tr("Success"),
                              tr("Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.") + "\n\n" +
