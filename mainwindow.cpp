@@ -459,7 +459,7 @@ void MainWindow::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
     }
     if (item->checkState(column) == Qt::Checked) {
         new_text = text;
-        new_text.remove(QRegExp("#\\s*"));
+        new_text.remove(QRegularExpression("#\\s*"));
         item->setText(column, new_text);
     } else {
         new_text = "# " + text;
@@ -486,7 +486,7 @@ void MainWindow::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
     }
     if (item->checkState(column) == Qt::Checked) {
         new_text = text;
-        new_text.remove(QRegExp("#\\s*"));
+        new_text.remove(QRegularExpression("#\\s*"));
         item->setText(column, new_text);
     } else {
         new_text = "# " + text;
