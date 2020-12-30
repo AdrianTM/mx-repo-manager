@@ -1,3 +1,10 @@
+mx-repo-manager (20.12.01) mx; urgency=medium
+
+  * geometry save and restore 
+  * additonal check of version 
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 30 Dec 2020 13:34:20 -0500
+
 mx-repo-manager (20.12) mx; urgency=medium
 
   * for 64-bit OS check if user wants to restore AHS repo
