@@ -60,10 +60,12 @@ public:
     void refresh();
     void replaceDebianRepos(QString url);
     void replaceRepos(const QString &url);
+    void setProgressBar();
     void setSelected();
     QFileInfoList listAptFiles();
     QIcon getFlag(QString country);
-    QString getDebianVersion();
+    int getDebianVerNum();
+    QString getDebianVerName(int ver);
     QStringList readMXRepos();
     QStringList loadAptFile(const QString &file);
 

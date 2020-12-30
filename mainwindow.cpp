@@ -161,9 +161,23 @@ void MainWindow::getCurrentRepo()
     current_repo  = shell->getCmdOut("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3");
 }
 
-QString MainWindow::getDebianVersion()
+int MainWindow::getDebianVerNum()
 {
-    return shell->getCmdOut("cat /etc/debian_version | cut -f1 -d'.'");
+    return shell->getCmdOut("cat /etc/debian_version | cut -f1 -d'.'").toInt();
+}
+
+QString MainWindow::getDebianVerName(int ver)
+{
+    switch (ver)
+    {
+    case 8:  return "jessie";
+    case 9:  return "stretch";
+    case 10: return "buster";
+    case 11: return "bullseye";
+    default:
+        qDebug() << "Could not detect Debian version";
+        exit(EXIT_FAILURE);
+    }
 }
 
 // display available repos
@@ -309,10 +323,7 @@ void MainWindow::setSelected()
 
 void MainWindow::procTime()
 {
-    if (bar->value() == 100) {
-        bar->reset();
-    }
-    bar->setValue(bar->value() + 1);
+    bar->setValue((bar->value() + 1) % 100);
 //    qApp->processEvents();
 }
 
@@ -342,15 +353,8 @@ void MainWindow::replaceRepos(const QString &url)
     QString repo_line_antix;
 
     // get Debian version
-    QString ver_num = getDebianVersion();
-    QString ver_name;
-    if (ver_num == "8") {
-        ver_name = "jessie";
-    } else if (ver_num == "9") {
-        ver_name = "stretch";
-    } else if (ver_num == "10") {
-        ver_name = "buster";
-   }
+    int ver_num = getDebianVerNum();
+    QString ver_name = getDebianVerName(ver_num);
 
     // mx source files to be edited (mx.list and mx16.list for MX15/16)
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
@@ -364,7 +368,7 @@ void MainWindow::replaceRepos(const QString &url)
     cmd_mx = QString("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
             QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx).arg(mx_file);
 
-    if (ver_num.toInt() < 9) {
+    if (ver_num < 9 && QFileInfo::exists("/etc/antix-version")) { // Added antix-version check in case running this on a MXfyied Debian
         // for antiX repos
         QString antix_file = "/etc/apt/sources.list.d/antix.list";
         if (url == "http://mxrepo.com") {
@@ -376,7 +380,7 @@ void MainWindow::replaceRepos(const QString &url)
     }
 
     // check if both replacement were successful
-    if (shell->run(cmd_mx) && (ver_num.toInt() >= 9 || shell->run(cmd_antix))) {
+    if (shell->run(cmd_mx) && (ver_num >= 9 || shell->run(cmd_antix))) {
         QMessageBox::information(this, tr("Success"),
                                  tr("Your new selection will take effect the next time sources are updated."));
     } else {
@@ -537,10 +541,10 @@ QIcon MainWindow::getFlag(QString country)
     QMetaObject metaObject = QLocale::staticMetaObject;
     QMetaEnum metaEnum = metaObject.enumerator(metaObject.indexOfEnumerator("Country"));
     // fix flag of the Netherlands               : QLocale::Netherlands
-    if (country == "The Netherlands" ) { country = "Netherlands"; }
+    if (country == QLatin1String("The Netherlands") ) { country = QStringLiteral("Netherlands"); }
     // fix flag of the United States of America  : QLocale::UnitedStates
-    if (country == "USA" )             { country = "UnitedStates"; }
-    if (country == "Anycast" || country == "Any" || country == "World") {
+    if (country == QLatin1String("USA") )             { country = QStringLiteral("UnitedStates"); }
+    if (country == QLatin1String("Anycast") || country == QLatin1String("Any") || country == QLatin1String("World")) {
         return QIcon("/usr/share/flags-common/any.png");
     }
     //QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
@@ -562,13 +566,7 @@ void MainWindow::on_pushFastestDebian_clicked()
     progress->show();
     QString tmpfile = shell->getCmdOut("mktemp -d /tmp/mx-repo-manager-XXXXXXXX") + "/sources.list";
 
-    QString ver_num = getDebianVersion();
-    QString ver_name;
-    if (ver_num == "8") {
-        ver_name = "jessie";
-    } else if (ver_num == "9") {
-        ver_name = "stretch";
-    }
+    QString ver_name = getDebianVerName(getDebianVerNum());;
 
     QByteArray out;
     bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile, out, false);
@@ -622,6 +620,12 @@ void MainWindow::on_lineSearch_textChanged(const QString &arg1)
 
 void MainWindow::on_pb_restoreSources_clicked()
 {
+    // check if running on antiX/MX
+    if (!QFileInfo::exists("/etc/antix-version") && !QFileInfo::exists("/etc/mx-version")) {
+        QMessageBox::critical(this, tr("Error"),
+                              tr("Can't figure out if this app is running on antiX or MX"));
+        return;
+    }
     QString mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2);
 
     if (mx_version.toInt() < 15) {
