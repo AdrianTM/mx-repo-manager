@@ -68,9 +68,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
 
-    int width = 800;
-    int height = 600;
-    this->resize(width, height);
+    int width = this->width();
+    int height = this->height();
     QSettings settings(qApp->applicationName());
     if (settings.contains("geometry")) {
         restoreGeometry(settings.value("geometry").toByteArray());
@@ -287,6 +286,13 @@ void MainWindow::centerWindow()
     int y = (screenGeometry.height()-this->height()) / 2;
     this->move(x, y);
 }
+
+void MainWindow::closeEvent(QCloseEvent *)
+{
+    QSettings settings(qApp->applicationName());
+    settings.setValue("geometry", saveGeometry());
+}
+
 
 // displays the current repo by selecting the item
 void MainWindow::displaySelected(const QString &repo)

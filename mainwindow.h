@@ -71,6 +71,7 @@ public:
 
 private slots:
     void cancelOperation();
+    void closeEvent(QCloseEvent *);
     void procDone();
     void procTime();
     void procStart();
