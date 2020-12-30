@@ -22,18 +22,19 @@
  * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
+#include <QDebug>
+#include <QDesktopWidget>
+#include <QDir>
+#include <QMetaEnum>
+#include <QProgressBar>
+#include <QRadioButton>
+#include <QSettings>
+#include <QTextEdit>
+
 #include "about.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "version.h"
-
-#include <QDebug>
-
-#include <QDir>
-#include <QMetaEnum>
-#include <QRadioButton>
-#include <QProgressBar>
-#include <QTextEdit>
 
 MainWindow::MainWindow(QWidget *parent) :
     QDialog(parent),
@@ -41,6 +42,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     qDebug().noquote() << QCoreApplication::applicationName() << "version:" << VERSION;
     ui->setupUi(this);
+    setWindowFlags(Qt::Window);
     if (ui->buttonOk->icon().isNull()) {
         ui->buttonOk->setIcon(QIcon(":/icons/dialog-ok.svg"));
     }
@@ -56,28 +58,26 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(shell, &Cmd::started, this, &MainWindow::procStart);
     connect(shell, &Cmd::finished, this, &MainWindow::procDone);
 
-    progress = new QProgressDialog(this);
-    bar = new QProgressBar(progress);
-    bar->setMaximum(100);
-    progCancel = new QPushButton(tr("Cancel"));
-    connect(progCancel, &QPushButton::clicked, this, &MainWindow::cancelOperation);
-    progress->setWindowModality(Qt::WindowModal);
-    progress->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint |Qt::WindowSystemMenuHint | Qt::WindowStaysOnTopHint);
-    progress->setCancelButton(progCancel);
-    progress->setLabelText(tr("Please wait..."));
-    progress->setAutoClose(false);
-    progress->setBar(bar);
-    bar->setTextVisible(false);
-    progress->reset();
+    setProgressBar();
 
     ui->buttonOk->setDisabled(true);
 
     this->setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
-    //int height = ui->listWidget->sizeHintForRow(0) * ui->listWidget->count();
-    //ui->listWidget->setMinimumHeight(height);
-    //this->adjustSize();
+
+    int width = 800;
+    int height = 600;
+    this->resize(width, height);
+    QSettings settings(qApp->applicationName());
+    if (settings.contains("geometry")) {
+        restoreGeometry(settings.value("geometry").toByteArray());
+        if (this->isMaximized()) { // add option to resize if maximized
+            this->resize(width, height);
+            centerWindow();
+        }
+    }
+
 }
 
 MainWindow::~MainWindow()
@@ -264,6 +264,14 @@ void MainWindow::cancelOperation()
     procDone();
 }
 
+void MainWindow::centerWindow()
+{
+    QRect screenGeometry = QApplication::desktop()->screenGeometry();
+    int x = (screenGeometry.width()-this->width()) / 2;
+    int y = (screenGeometry.height()-this->height()) / 2;
+    this->move(x, y);
+}
+
 // displays the current repo by selecting the item
 void MainWindow::displaySelected(const QString &repo)
 {
@@ -375,6 +383,23 @@ void MainWindow::replaceRepos(const QString &url)
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not change the repo."));
     }
+}
+
+void MainWindow::setProgressBar()
+{
+    progress = new QProgressDialog(this);
+    bar = new QProgressBar(progress);
+    bar->setMaximum(100);
+    progCancel = new QPushButton(tr("Cancel"));
+    connect(progCancel, &QPushButton::clicked, this, &MainWindow::cancelOperation);
+    progress->setWindowModality(Qt::WindowModal);
+    progress->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint |Qt::WindowSystemMenuHint | Qt::WindowStaysOnTopHint);
+    progress->setCancelButton(progCancel);
+    progress->setLabelText(tr("Please wait..."));
+    progress->setAutoClose(false);
+    progress->setBar(bar);
+    bar->setTextVisible(false);
+    progress->reset();
 }
 
 QFileInfoList MainWindow::listAptFiles()

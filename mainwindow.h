@@ -51,6 +51,7 @@ public:
     QString version;
     QString listMXurls;
     QList<QStringList> queued_changes;
+    void centerWindow();
     void displayMXRepos(const QStringList &repos, const QString &filter);
     void displayAllRepos(const QFileInfoList &apt_files);
     void displaySelected(const QString &repo);
