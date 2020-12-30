@@ -29,6 +29,8 @@
 #include <QProgressBar>
 #include <QRadioButton>
 #include <QSettings>
+#include <QTemporaryDir>
+#include <QTemporaryFile>
 #include <QTextEdit>
 
 #include "about.h"
@@ -564,12 +566,18 @@ void MainWindow::on_pushFastestDebian_clicked()
     QString repo;
 
     progress->show();
-    QString tmpfile = shell->getCmdOut("mktemp -d /tmp/mx-repo-manager-XXXXXXXX") + "/sources.list";
+    QTemporaryFile tmpfile;
+    if (!tmpfile.open()) {
+        qDebug() << "Could not create temp file";
+        return;
+    }
 
-    QString ver_name = getDebianVerName(getDebianVerNum());;
+    QString ver_name = getDebianVerName(getDebianVerNum());
+    if (ver_name == "buster") ver_name = QString(); // netselect-apt doesn't like name buster for some reason, maybe it expects "stable"
+    //// TODO: Might need to fix this when bullseye is released
 
     QByteArray out;
-    bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile, out, false);
+    bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), out, false);
     progress->hide();
 
     if (!success) {
@@ -577,7 +585,7 @@ void MainWindow::on_pushFastestDebian_clicked()
                               tr("netselect-apt could not detect fastest repo."));
         return;
     }
-    repo = shell->getCmdOut("set -o pipefail; grep -m1 '^deb ' " + tmpfile + "| cut -d' ' -f2");
+    repo = shell->getCmdOut("set -o pipefail; grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2");
     this->blockSignals(false);
 
     if (success && shell->run("wget --spider " + repo)) {
@@ -634,23 +642,23 @@ void MainWindow::on_pb_restoreSources_clicked()
         return;
     }
 
-    // create temp folder
-    QString path = shell->getCmdOut("mktemp -d /tmp/mx-sources.XXXXXX");
+    QTemporaryDir tmpdir;
+    if (!tmpdir.isValid()) {
+        qDebug() << "Could not create temp dir";
+        return;
+    }
     // download source files from
-    QString cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(path);
+    QString cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(tmpdir.path());
     if (!shell->run(cmd.toUtf8())) {
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not download original APT files."));
         return;
     }
     // extract master.zip to temp folder
-    cmd = QString("unzip -q %1/master.zip -d %1/").arg(path);
+    cmd = QString("unzip -q %1/master.zip -d %1/").arg(tmpdir.path());
     system(cmd.toUtf8());
     // move the files from the temporary directory to /etc/apt/sources.list.d/
-    cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(path);
-    system(cmd.toUtf8());
-    // delete temp folder
-    cmd = QString("rm -rf %1").arg(path);
+    cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(tmpdir.path());
     system(cmd.toUtf8());
 
     // for 64-bit OS check if user wants AHS repo
