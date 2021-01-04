@@ -1,3 +1,10 @@
+mx-repo-manager (21.1) mx; urgency=medium
+
+  * remove wget dependency, use Qt network tools
+  * fix: geometry save 
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Jan 2021 13:11:44 -0500
+
 mx-repo-manager (20.12.01) mx; urgency=medium
 
   * geometry save and restore 

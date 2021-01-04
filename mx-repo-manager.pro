@@ -20,7 +20,7 @@
 # * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
-QT       += core gui
+QT       += core gui network
 
 CONFIG   += c++11
 

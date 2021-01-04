@@ -26,6 +26,7 @@
 #include <QDesktopWidget>
 #include <QDir>
 #include <QMetaEnum>
+#include <QNetworkReply>
 #include <QProgressBar>
 #include <QRadioButton>
 #include <QSettings>
@@ -106,7 +107,7 @@ void MainWindow::replaceDebianRepos(QString url)
     files << "/etc/apt/sources.list.d/debian.list" << "/etc/apt/sources.list.d/debian-stable-updates.list";
 
     // make backup folder
-    if (!QDir("/etc/apt/sources.list.d/backups").exists()) {
+    if (!QFileInfo::exists("/etc/apt/sources.list.d/backups")) {
         QDir().mkdir("/etc/apt/sources.list.d/backups");
     }
 
@@ -159,12 +160,12 @@ QStringList MainWindow::readMXRepos()
 // List current repo
 void MainWindow::getCurrentRepo()
 {
-    current_repo  = shell->getCmdOut("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list | cut -d' ' -f2 | cut -d/ -f3");
+    current_repo  = shell->getCmdOut("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list |cut -d' ' -f2 |cut -d/ -f3");
 }
 
 int MainWindow::getDebianVerNum()
 {
-    return shell->getCmdOut("cat /etc/debian_version | cut -f1 -d'.'").toInt();
+    return shell->getCmdOut("cat /etc/debian_version |cut -f1 -d'.'").toInt();
 }
 
 QString MainWindow::getDebianVerName(int ver)
@@ -309,10 +310,11 @@ void MainWindow::displaySelected(const QString &repo)
 // extract the URLs from the list of repos that contain country names and description
 void MainWindow::extractUrls(const QStringList &repos)
 {
+    QStringList linelist;
     for (const QString &line : repos) {
-        QStringList linelist = line.split("-");
+        linelist = line.split("-");
         linelist.removeAt(0);
-        listMXurls += linelist.join("-").trimmed() + " ";
+        listMXurls += linelist.join("-").trimmed() + " "; // rejoin any repos that contain "-"
     }
 }
 
@@ -366,7 +368,7 @@ void MainWindow::replaceRepos(const QString &url)
 
     // mx source files to be edited (mx.list and mx16.list for MX15/16)
     QString mx_file = "/etc/apt/sources.list.d/mx.list";
-    if (QFile("/etc/apt/sources.list.d/mx16.list").exists()) {
+    if (QFileInfo::exists("/etc/apt/sources.list.d/mx16.list")) {
         mx_file += " /etc/apt/sources.list.d/mx16.list";       // add mx16.list to the list if it exists
     }
 
@@ -427,18 +429,15 @@ QFileInfoList MainWindow::listAptFiles()
     return list;
 }
 
-
-//// slots ////
-
 // Submit button clicked
 void MainWindow::on_buttonOk_clicked()
 {
     if (queued_changes.size() > 0) {
         for (const QStringList &changes : queued_changes) {
             QString text, new_text, file_name;
-            text = changes[0];
-            new_text = changes[1];
-            file_name = changes[2];
+            text = changes.at(0);
+            new_text = changes.at(1);
+            file_name = changes.at(2);
             QString cmd = QString("sed -i 's;%1;%2;g' %3").arg(text).arg(new_text).arg(file_name);
             shell->run(cmd);
         }
@@ -594,7 +593,7 @@ void MainWindow::on_pushFastestDebian_clicked()
     repo = shell->getCmdOut("set -o pipefail; grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2");
     this->blockSignals(false);
 
-    if (success && shell->run("wget --spider " + repo)) {
+    if (success && checkRepo(repo)) {
         replaceDebianRepos(repo);
         refresh();
     } else {
@@ -608,7 +607,7 @@ void MainWindow::on_pushFastestMX_clicked()
 {
     progress->show();
     QByteArray out;
-    bool success = shell->run("set -o pipefail; netselect -D -I " + listMXurls + "| tr -s ' ' | sed 's/^ //' | cut -d' ' -f2", out);
+    bool success = shell->run("set -o pipefail; netselect -D -I " + listMXurls + " |tr -s ' ' |sed 's/^ //' |cut -d' ' -f2", out);
     qDebug() << listMXurls;
     qDebug() << "FASTEST " << success << out;
     progress->hide();
@@ -640,12 +639,14 @@ void MainWindow::on_pb_restoreSources_clicked()
                               tr("Can't figure out if this app is running on antiX or MX"));
         return;
     }
-    QString mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2);
 
-    if (mx_version.toInt() < 15) {
+    bool ok = true;
+    int mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2).toInt(&ok);
+    if (!ok || mx_version < 15) {
         QMessageBox::critical(this, tr("Error"),
-                              tr("MX version not detected or out of range: ") + mx_version);
+                                            tr("MX version not detected or out of range: ") + QString::number(mx_version));
         return;
+
     }
 
     QTemporaryDir tmpdir;
@@ -653,22 +654,30 @@ void MainWindow::on_pb_restoreSources_clicked()
         qDebug() << "Could not create temp dir";
         return;
     }
+    QDir().setPath(tmpdir.path());
+
     // download source files from
-    QString cmd = QString("wget -q https://github.com/mx-linux/MX-%1_sources/archive/master.zip -P %2").arg(mx_version).arg(tmpdir.path());
-    if (!shell->run(cmd.toUtf8())) {
+    QString url = QStringLiteral("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/master").arg(QString::number(mx_version));
+    QFileInfo fi(url);
+    QFile tofile(tmpdir.path() + "/" + fi.fileName() + ".zip");
+    if (!downloadFile(url, tofile)) {
         QMessageBox::critical(this, tr("Error"),
                               tr("Could not download original APT files."));
         return;
     }
     // extract master.zip to temp folder
-    cmd = QString("unzip -q %1/master.zip -d %1/").arg(tmpdir.path());
-    system(cmd.toUtf8());
+    QString cmd = QString("unzip -q " + tofile.fileName() + " -d %1/").arg(tmpdir.path());
+    if (!tofile.exists() || !shell->run(cmd)) {
+        QMessageBox::critical(this, tr("Error"),
+                              tr("Could not unzip downloaded file."));
+        return;
+    }
     // move the files from the temporary directory to /etc/apt/sources.list.d/
     cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(tmpdir.path());
     system(cmd.toUtf8());
 
     // for 64-bit OS check if user wants AHS repo
-    if (mx_version.toInt() >= 19 && shell->getCmdOut("uname -m", true) == "x86_64") {
+    if (mx_version >= 19 && shell->getCmdOut("uname -m", true) == "x86_64") {
         if (QMessageBox::Yes == QMessageBox::question(this, tr("Enabling AHS"),
                               tr("Do you use AHS (Advanced Hardware Stack) repo?"))) {
             shell->run("sed -i '/^\\s*#*\\s*deb.*ahs\\s*/s/^#*\\s*//' /etc/apt/sources.list.d/mx.list", true);
@@ -679,4 +688,48 @@ void MainWindow::on_pb_restoreSources_clicked()
     QMessageBox::information(this, tr("Success"),
                              tr("Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.") + "\n\n" +
                              tr("Your new selection will take effect the next time sources are updated."));
+}
+
+bool MainWindow::checkRepo(const QString &repo)
+{
+    QNetworkReply::NetworkError error = QNetworkReply::NoError;
+    QEventLoop loop;
+
+    error = QNetworkReply::NoError;
+    reply = manager.get(QNetworkRequest(QUrl(repo)));
+    connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
+    connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
+    loop.exec();
+    reply->disconnect();
+    if (error == QNetworkReply::NoError || error == QNetworkReply::UnknownContentError) {
+        return true;
+    }
+    qDebug() << "No reponse from repo:" << reply->url() << error;
+    return false;
+}
+
+bool MainWindow::downloadFile(const QString &url, QFile &file)
+{
+    if (!file.open(QIODevice::WriteOnly)) {
+        qDebug() << "Could not open file:" << file.fileName();
+        return false;
+    }
+
+    reply = manager.get(QNetworkRequest(QUrl(url)));
+    QEventLoop loop;
+
+    bool success = true;
+    connect(reply, &QNetworkReply::readyRead, [this, &file, &success]() { success = file.write(reply->readAll()); });
+    connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    loop.exec();
+    reply->disconnect();
+
+    if (!success) {
+        QMessageBox::warning(this, tr("Error"), tr("There was an error writing file: %1. Please check if you have enough free space on your drive").arg(file.fileName()));
+        exit(EXIT_FAILURE);
+    }
+
+    file.close();
+    return (reply->error() == QNetworkReply::NoError);
 }
