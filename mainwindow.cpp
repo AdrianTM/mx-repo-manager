@@ -654,7 +654,7 @@ void MainWindow::on_pb_restoreSources_clicked()
         qDebug() << "Could not create temp dir";
         return;
     }
-    QDir().setPath(tmpdir.path());
+    QDir::setCurrent(tmpdir.path());
 
     // download source files from
     QString url = QStringLiteral("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/master").arg(QString::number(mx_version));
@@ -695,14 +695,18 @@ bool MainWindow::checkRepo(const QString &repo)
     QNetworkReply::NetworkError error = QNetworkReply::NoError;
     QEventLoop loop;
 
+    QNetworkRequest request;
+    request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
+    request.setUrl(QUrl(repo));
+
     error = QNetworkReply::NoError;
-    reply = manager.get(QNetworkRequest(QUrl(repo)));
+    reply = manager.get(request);
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
     connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
     loop.exec();
     reply->disconnect();
-    if (error == QNetworkReply::NoError || error == QNetworkReply::UnknownContentError) {
+    if (error == QNetworkReply::NoError) {
         return true;
     }
     qDebug() << "No reponse from repo:" << reply->url() << error;
@@ -716,7 +720,11 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
         return false;
     }
 
-    reply = manager.get(QNetworkRequest(QUrl(url)));
+    QNetworkRequest request;
+    request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
+    request.setUrl(QUrl(url));
+
+    reply = manager.get(request);
     QEventLoop loop;
 
     bool success = true;
