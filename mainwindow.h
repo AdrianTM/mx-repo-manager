@@ -29,6 +29,7 @@
 #include <QDir>
 #include <QListWidgetItem>
 #include <QMessageBox>
+#include <QNetworkAccessManager>
 #include <QProgressDialog>
 #include <QTimer>
 #include <QTreeWidget>
@@ -97,6 +98,11 @@ private:
     QString current_repo;
     QStringList repos;
     QTimer timer;
+
+    QNetworkAccessManager manager;
+    QNetworkReply* reply;
+    bool checkRepo(const QString &repo);
+    bool downloadFile(const QString &url, QFile &file);
 
 };
 
