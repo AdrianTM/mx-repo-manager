@@ -1,4 +1,4 @@
-help				usr/share/doc/mx-repo-manager
+help/*				usr/share/doc/mx-repo-manager
 icons/mx-repo-manager.png	usr/share/icons/hicolor/512x512/apps
 icons/mx-repo-manager.svg	usr/share/icons/hicolor/scalable/apps
 mx-repo-manager			usr/bin
