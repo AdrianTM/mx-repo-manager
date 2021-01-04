@@ -467,7 +467,7 @@ void MainWindow::on_buttonHelp_clicked()
     QLocale locale;
     QString lang = locale.bcp47Name();
 
-    QString url = "/usr/share/doc/mx-repo-manager/help/mx-repo-manager.html";
+    QString url = "/usr/share/doc/mx-repo-manager/mx-repo-manager.html";
 
     if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
