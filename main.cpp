@@ -28,13 +28,16 @@
 #include <QLocale>
 #include <QIcon>
 
-#include "mainwindow.h"
 #include <unistd.h>
+#include "mainwindow.h"
+#include "version.h"
+
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
+    app.setApplicationVersion(VERSION);
 
     QTranslator qtTran;
     if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
