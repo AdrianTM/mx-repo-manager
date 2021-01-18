@@ -39,6 +39,13 @@ int main(int argc, char *argv[])
     app.setWindowIcon(QIcon::fromTheme(app.applicationName()));
     app.setApplicationVersion(VERSION);
 
+    // root guard
+    if (system("logname |grep -q ^root$") == 0) {
+        QMessageBox::critical(nullptr, QObject::tr("Error"),
+                              QObject::tr("You seem to be logged in as root, please log out and log in as normal user to use this program."));
+        exit(EXIT_FAILURE);
+    }
+
     QTranslator qtTran;
     if (qtTran.load(QLocale::system(), "qt", "_", QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTran);
