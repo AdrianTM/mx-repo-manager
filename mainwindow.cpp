@@ -575,8 +575,7 @@ void MainWindow::on_pushFastestDebian_clicked()
     }
 
     QString ver_name = getDebianVerName(getDebianVerNum());
-    if (ver_name == "buster") ver_name = QString(); // netselect-apt doesn't like name buster for some reason, maybe it expects "stable"
-    //// TODO: Might need to fix this when bullseye is released
+    if (ver_name == "buster" || ver_name == "bullseye") ver_name = QString(); // netselect-apt doesn't like name buster/bullseye for some reason, maybe it expects "stable"
 
     QByteArray out;
     bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), out, false);
