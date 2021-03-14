@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 14 Mar 2021 12:09:34 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 21.3
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (21.3) mx; urgency=medium
+ .
+   * change Debian version detection
+Checksums-Sha1:
+ 5d16d95c40db10e8dda55f1e78cf8295a761f9e4 626 mx-repo-manager_21.3.dsc
+ bbf40d029cc8f7b94d90d91f95ca17ace1ba1d4e 94496 mx-repo-manager_21.3.tar.xz
+ 8c4265e06d33969784b42a2d74b2549b42547d54 9891 mx-repo-manager_21.3_amd64.buildinfo
+ 7c58ef59cc44874640533314e3ed3995f2a52cbf 116016 mx-repo-manager_21.3_amd64.deb
+Checksums-Sha256:
+ 6b4cac2c8ac76bb72514cfe65c3b8d33447f1b601e012022edbc28a516f8cbbe 626 mx-repo-manager_21.3.dsc
+ 304a19a060b1fdd7fa72d7351ccc69651c477fd6e2f925943a87366c469e480b 94496 mx-repo-manager_21.3.tar.xz
+ 76fd7847df8c45685200240fad7c76d6d400d69af6a39210250dd70cb8fda602 9891 mx-repo-manager_21.3_amd64.buildinfo
+ af31c2d74ecc3f13875935add583a97177d53a461d6c6699722ecf7f04f5687b 116016 mx-repo-manager_21.3_amd64.deb
+Files:
+ d7928fc94a0b5978202ce69283839eae 626 admin optional mx-repo-manager_21.3.dsc
+ f42ed4529888c0f12f2a7001145c9591 94496 admin optional mx-repo-manager_21.3.tar.xz
+ 025856566ce5ea2c1e4ee8b9ec07e148 9891 admin optional mx-repo-manager_21.3_amd64.buildinfo
+ b8467f32f1bfbda8e8da49a0637f17e5 116016 admin optional mx-repo-manager_21.3_amd64.deb

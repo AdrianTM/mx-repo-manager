@@ -1,3 +1,9 @@
+mx-repo-manager (21.3) mx; urgency=medium
+
+  * change Debian version detection 
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 14 Mar 2021 12:09:34 -0400
+
 mx-repo-manager (21.1) mx; urgency=medium
 
   * remove wget dependency, use Qt network tools
