@@ -124,8 +124,7 @@ void MainWindow::replaceDebianRepos(QString url)
             shell->run(cmd);
         }
     }
-    QMessageBox::information(this, tr("Success"),
-                             tr("Your new selection will take effect the next time sources are updated."));
+    QMessageBox::information(this, tr("Success"), tr("Your new selection will take effect the next time sources are updated."));
 }
 
 // List available repos
@@ -155,7 +154,7 @@ QStringList MainWindow::readMXRepos()
 // List current repo
 void MainWindow::getCurrentRepo()
 {
-    current_repo  = shell->getCmdOut("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list |cut -d' ' -f2 |cut -d/ -f3");
+    current_repo = shell->getCmdOut("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list |cut -d' ' -f2 |cut -d/ -f3");
 }
 
 int MainWindow::getDebianVerNum()
@@ -385,20 +384,16 @@ void MainWindow::replaceRepos(const QString &url)
     if (ver_num < 9 && QFileInfo::exists("/etc/antix-version")) { // Added antix-version check in case running this on a MXfyied Debian
         // for antiX repos
         QString antix_file = "/etc/apt/sources.list.d/antix.list";
-        if (url == "http://mxrepo.com")
-            repo_line_antix = "http://la.mxrepo.com/antix/" + ver_name + "/";
-        else
-            repo_line_antix = url + "/antix/" + ver_name + "/";
+        repo_line_antix = (url == "http://mxrepo.com") ? "http://la.mxrepo.com/antix/" + ver_name + "/"
+                                                       : url + "/antix/" + ver_name + "/";
         cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix).arg(antix_file);
     }
 
     // check if both replacement were successful
     if (shell->run(cmd_mx) && (ver_num >= 9 || shell->run(cmd_antix)))
-        QMessageBox::information(this, tr("Success"),
-                                 tr("Your new selection will take effect the next time sources are updated."));
+        QMessageBox::information(this, tr("Success"), tr("Your new selection will take effect the next time sources are updated."));
     else
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Could not change the repo."));
+        QMessageBox::critical(this, tr("Error"), tr("Could not change the repo."));
 
 }
 
@@ -428,7 +423,6 @@ QFileInfoList MainWindow::listAptFiles()
     QFile file("/etc/apt/sources.list");
     if (file.size() != 0 && shell->run("grep '^#*[ ]*deb' " + file.fileName(), true))
         list << file;
-
     return list;
 }
 
@@ -468,7 +462,6 @@ void MainWindow::on_buttonHelp_clicked()
 {
     QLocale locale;
     QString lang = locale.bcp47Name();
-
     QString url = "/usr/share/doc/mx-repo-manager/mx-repo-manager.html";
 
     if (lang.startsWith("fr"))
@@ -549,14 +542,16 @@ QIcon MainWindow::getFlag(QString country)
 {
     QMetaObject metaObject = QLocale::staticMetaObject;
     QMetaEnum metaEnum = metaObject.enumerator(metaObject.indexOfEnumerator("Country"));
-    // fix flag of the Netherlands               : QLocale::Netherlands
-    if (country == QLatin1String("The Netherlands") ) { country = QStringLiteral("Netherlands"); }
-    // fix flag of the United States of America  : QLocale::UnitedStates
-    if (country == QLatin1String("USA") )             { country = QStringLiteral("UnitedStates"); }
+    // fix flag of the Netherlands: QLocale::Netherlands
+    if (country == QLatin1String("The Netherlands"))
+        country = QStringLiteral("Netherlands");
+    // fix flag of the United States of America: QLocale::UnitedStates
+    if (country == QLatin1String("USA"))
+        country = QStringLiteral("UnitedStates");
     if (country == QLatin1String("Anycast") || country == QLatin1String("Any") || country == QLatin1String("World"))
         return QIcon("/usr/share/flags-common/any.png");
 
-    //QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
+    // QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
     int index = metaEnum.keyToValue(country.remove(" ").toUtf8());
     QList<QLocale> locales = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));
     // qDebug() << "etFlag county: " << country << " locales: " << locales;
@@ -637,16 +632,14 @@ void MainWindow::on_pb_restoreSources_clicked()
 {
     // check if running on antiX/MX
     if (!QFileInfo::exists("/etc/antix-version") && !QFileInfo::exists("/etc/mx-version")) {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Can't figure out if this app is running on antiX or MX"));
+        QMessageBox::critical(this, tr("Error"), tr("Can't figure out if this app is running on antiX or MX"));
         return;
     }
 
     bool ok = true;
     int mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2).toInt(&ok);
     if (!ok || mx_version < 15) {
-        QMessageBox::critical(this, tr("Error"),
-                                            tr("MX version not detected or out of range: ") + QString::number(mx_version));
+        QMessageBox::critical(this, tr("Error"), tr("MX version not detected or out of range: ") + QString::number(mx_version));
         return;
 
     }
@@ -663,15 +656,13 @@ void MainWindow::on_pb_restoreSources_clicked()
     QFileInfo fi(url);
     QFile tofile(tmpdir.path() + "/" + fi.fileName() + ".zip");
     if (!downloadFile(url, tofile)) {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Could not download original APT files."));
+        QMessageBox::critical(this, tr("Error"), tr("Could not download original APT files."));
         return;
     }
     // extract master.zip to temp folder
     QString cmd = QString("unzip -q " + tofile.fileName() + " -d %1/").arg(tmpdir.path());
     if (!tofile.exists() || !shell->run(cmd)) {
-        QMessageBox::critical(this, tr("Error"),
-                              tr("Could not unzip downloaded file."));
+        QMessageBox::critical(this, tr("Error"), tr("Could not unzip downloaded file."));
         return;
     }
     // move the files from the temporary directory to /etc/apt/sources.list.d/
