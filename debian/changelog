@@ -1,3 +1,9 @@
+mx-repo-manager (21.3.01) mx; urgency=medium
+
+  * fix: can enable/disable repos that contain special characters (square brackets for example)
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 27 Mar 2021 22:59:15 -0400
+
 mx-repo-manager (21.3) mx; urgency=medium
 
   * change Debian version detection 

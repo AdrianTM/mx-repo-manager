@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 27 Mar 2021 22:59:15 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 21.3.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (21.3.01) mx; urgency=medium
+ .
+   * fix: can enable/disable repos that contain special characters (square brackets for example)
+Checksums-Sha1:
+ 30bfa78383044dc62c5c6c60eb96eddec4648c23 10165 mx-repo-manager_21.3.01_i386.buildinfo
+ d7fea5d25d87b85abdc8eb108df5a30c7a011d93 119582 mx-repo-manager_21.3.01_i386.deb
+Checksums-Sha256:
+ b75a07c4b33b53db679593cd4b1bd0f806b4d144d40c078824936514ab4e94cf 10165 mx-repo-manager_21.3.01_i386.buildinfo
+ 1bb75de807172ed37c04b4d7901d788c84b5f90a325b3997aa83cc21707af74c 119582 mx-repo-manager_21.3.01_i386.deb
+Files:
+ 1f7b4fc0723027e5943ac6183defad75 10165 admin optional mx-repo-manager_21.3.01_i386.buildinfo
+ 9d6bb9e0d8ec2e0812ea5efa222fa8fc 119582 admin optional mx-repo-manager_21.3.01_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmBf8q0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGpCB/9h6EORaBZslTFgEe2yWvgOMJOsxbrs
+qoc+j4VnfUZcj7aH2ukuEjA50jpcHJ7gfa1CYktHUhBFCVM44fGwQHhsXTGk0RnQ
+hvhP8aHvPNo246p9rlRSSPZGA5nmUoO2BTQnz3ZhxQGtIS0Y2igrcWrepJQ/6S66
+diVR1xTFZU84LGnl2n6hVEt62A1jui+jfAH3F5RqDjPYfiD0DRWMeUr7qO7GXDMl
+qegztMO+VlpVwPk9sITZuuQom0W9GR4ymzKiFv7Su3MHDz+t/yZt+XAGN9VoxcQL
+7bV4BI0QfylLcFXE9a4NKQz6jtmlMDHvE6ViBbUcRO0tysFG6HAfNqAy
+=hrhs
+-----END PGP SIGNATURE-----
