@@ -432,7 +432,7 @@ void MainWindow::on_buttonOk_clicked()
     if (queued_changes.size() > 0) {
         for (const QStringList &changes : queued_changes) {
             QString text, new_text, file_name;
-            text = changes.at(0);
+            text = QRegularExpression::escape(changes.at(0));
             new_text = changes.at(1);
             file_name = changes.at(2);
             QString cmd = QString("sed -i 's;%1;%2;g' %3").arg(text).arg(new_text).arg(file_name);
