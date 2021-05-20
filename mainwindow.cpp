@@ -131,7 +131,7 @@ void MainWindow::replaceDebianRepos(QString url)
 QStringList MainWindow::readMXRepos()
 {
     QFile file("/usr/share/mx-repo-list/repos.txt");
-    if(!file.open(QIODevice::ReadOnly))
+    if (!file.open(QIODevice::ReadOnly))
         qDebug() << "Count not open file: " << file.fileName();
 
     QString file_content = file.readAll().trimmed();
