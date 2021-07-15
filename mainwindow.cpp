@@ -681,15 +681,13 @@ void MainWindow::on_pb_restoreSources_clicked()
 
 bool MainWindow::checkRepo(const QString &repo)
 {
-    QNetworkReply::NetworkError error = QNetworkReply::NoError;
-    QEventLoop loop;
-
     QNetworkRequest request;
     request.setRawHeader("User-Agent", qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
     request.setUrl(QUrl(repo));
+    reply = manager.head(request);
 
-    error = QNetworkReply::NoError;
-    reply = manager.get(request);
+    QNetworkReply::NetworkError error;
+    QEventLoop loop;
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
     connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
