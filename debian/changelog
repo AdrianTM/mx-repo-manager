@@ -1,3 +1,9 @@
+mx-repo-manager (21.7) mx; urgency=medium
+
+  * Download only header when checking the Debian repo
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 15 Jul 2021 14:38:43 -0400
+
 mx-repo-manager (21.3.01) mx; urgency=medium
 
   * fix: can enable/disable repos that contain special characters (square brackets for example)

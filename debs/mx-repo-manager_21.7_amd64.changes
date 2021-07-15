@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 15 Jul 2021 14:38:43 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 21.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (21.7) mx; urgency=medium
+ .
+   * Download only header when checking the Debian repo
+Checksums-Sha1:
+ c8e4b6afba8eab67140e8cc278b5144c84071207 1189 mx-repo-manager_21.7.dsc
+ 476c1a8d1c17b9b7356b84e9049d7f05409d5fe9 94592 mx-repo-manager_21.7.tar.xz
+ 8d3cad2caa324e029f7936afc76338d4140981da 10456 mx-repo-manager_21.7_amd64.buildinfo
+ 561f31696ecd87c58fb53a1862e10f8a36ccda63 116334 mx-repo-manager_21.7_amd64.deb
+Checksums-Sha256:
+ ad0d1b392443025084763f53e524a8daa340aac1b6b688ecc6fcc33140ee4baa 1189 mx-repo-manager_21.7.dsc
+ 3583820e70adbc3b5b0d3fc66386173b7f7f68ced89aa69f8688073a848e1830 94592 mx-repo-manager_21.7.tar.xz
+ 130bf5647baecc3b99cc8322d137595b3afb1ad46368e6960c12b2fb67b8fb41 10456 mx-repo-manager_21.7_amd64.buildinfo
+ f1d397dd2dbbc40085595489a5379a2425e050313e8ad001d054e720c3c3c9a4 116334 mx-repo-manager_21.7_amd64.deb
+Files:
+ e7918e45256d2f9cae1092ca2b9f676e 1189 admin optional mx-repo-manager_21.7.dsc
+ f9ea137fa317bea4719bef543986b177 94592 admin optional mx-repo-manager_21.7.tar.xz
+ 3ab4e55d85d791be0f70d5190318ec07 10456 admin optional mx-repo-manager_21.7_amd64.buildinfo
+ 19e412fae77b9080c87d1d31a26342ca 116334 admin optional mx-repo-manager_21.7_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmDwgR0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumEUQCADH+ZYLEHzy+PFxIrhYguxqaw/GE07a
+qD9sCZ1/DH1x2S740uUBdXJ5ukMTt0ZvT4CNns3T9L/A2DL1e+YToVb8S8fZAop6
+SYuqZ/xcEuwBidbn8VoNtBKIcDR5nDc/bk8dzeb2kpLsB9tYVZv30UZLv0N6RuOs
+4S0/d/frjibU6LLGQ8fGiLIzMuhtMW2/58T0c995hXVj1O0knZMACYPdSlOsIkj1
+775a6b29Kwzu1EtoyfAC9hZh34Pe9Fw/7N4XppS5C2rQZp3BbrpDUbMerTNWSUs2
+thYd7MGo/+gyOp4bb6iL/o5NrvP962THv8Fe/BK153Q+LC6gKq06Z8XF
+=G/ON
+-----END PGP SIGNATURE-----

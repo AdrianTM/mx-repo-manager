@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Thu, 15 Jul 2021 14:38:43 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 21.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (21.7) mx; urgency=medium
+ .
+   * Download only header when checking the Debian repo
+Checksums-Sha1:
+ 37a1ec9e2cdd9851c5ba1513b0be75135699c23f 10150 mx-repo-manager_21.7_i386.buildinfo
+ 6a60c2e25762da833fc2fce2809cc74765a4a3e1 119562 mx-repo-manager_21.7_i386.deb
+Checksums-Sha256:
+ 6b78f6f8a5d96ea3a7d3c20ced6191034675b94a648cae22db7af604e8ef5147 10150 mx-repo-manager_21.7_i386.buildinfo
+ 1e304eb402b56e048032bec2c1a28f545c409b4dcd4fbb53eabe4647a4aecdf4 119562 mx-repo-manager_21.7_i386.deb
+Files:
+ 07fed00ad5b2284925495c19684f2523 10150 admin optional mx-repo-manager_21.7_i386.buildinfo
+ 26598beac81eb9392c1605e1bfc52aba 119562 admin optional mx-repo-manager_21.7_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmDwgR0THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumIypB/98O8RIVZlcrfECKIV6HoDhbPAIi6l1
+FWNSXgPlr6c0WXFUbeKBcVHo0RTOkeF0QwXf4+idrazUHuggyNiMecJYladq3amI
+SeppGggr8vQS3TTVdFibRl6/K/MWb5MqQV22xPGIM2VlbvqBjfOhlI7gMCAbLwfB
+Z+IFnXSiLnH+VHHzI0gn9GrXIabJyBMQl99PrbPXRBZvfjqQhGPg8PVA/hhOrl1X
+L5+3k5tMBtyOGZ8mhMVUMoVDdYeGtA7B8v2/uLBcTjWBY6G426C5rFW4cSHkR6XJ
+czQsp8FUSNneBKIx/hsleP9DTYcXreaCaNcKhZh3TZ3Y8NAXmOaPxGNE
+=ljFJ
+-----END PGP SIGNATURE-----
