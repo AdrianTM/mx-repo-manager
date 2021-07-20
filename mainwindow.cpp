@@ -69,7 +69,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     int width = this->width();
     int height = this->height();
-    QSettings settings(qApp->applicationName());
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
     if (settings.contains("geometry")) {
         restoreGeometry(settings.value("geometry").toByteArray());
         if (this->isMaximized()) { // add option to resize if maximized
@@ -294,7 +294,7 @@ void MainWindow::centerWindow()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings(qApp->applicationName());
+    QSettings settings(qApp->organizationName(), qApp->applicationName());
     settings.setValue("geometry", saveGeometry());
 }
 
