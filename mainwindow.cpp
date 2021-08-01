@@ -638,7 +638,9 @@ void MainWindow::on_pb_restoreSources_clicked()
     QDir::setCurrent(tmpdir.path());
 
     // download source files from
-    QString url = QStringLiteral("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/master").arg(QString::number(mx_version));
+    const QString branch = (mx_version > 19) ? "main" : "master";
+    const QString url = QString("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/"
+                                + branch).arg(QString::number(mx_version));
     QFileInfo fi(url);
     QFile tofile(tmpdir.path() + "/" + fi.fileName() + ".zip");
     if (!downloadFile(url, tofile)) {
@@ -652,7 +654,7 @@ void MainWindow::on_pb_restoreSources_clicked()
         return;
     }
     // move the files from the temporary directory to /etc/apt/sources.list.d/
-    cmd = QString("mv -b %1/MX-*_sources-master/* /etc/apt/sources.list.d/").arg(tmpdir.path());
+    cmd = QString("mv -b %1/MX-*_sources-" + branch + "/* /etc/apt/sources.list.d/").arg(tmpdir.path());
     system(cmd.toUtf8());
 
     // for 64-bit OS check if user wants AHS repo
