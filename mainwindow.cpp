@@ -675,11 +675,12 @@ bool MainWindow::checkRepo(const QString &repo)
     request.setUrl(QUrl(repo));
     reply = manager.head(request);
 
-    QNetworkReply::NetworkError error;
+    auto error {QNetworkReply::NoError};
     QEventLoop loop;
-    connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), [&error](const QNetworkReply::NetworkError &err) {error = err;} ); // errorOccured only in Qt >= 5.15
     connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
+    connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    QTimer::singleShot(5000, &loop, [&loop, &error]() {error = QNetworkReply::TimeoutError; loop.quit();} ); // manager.setTransferTimeout(time) // only in Qt >= 5.15
     loop.exec();
     reply->disconnect();
     if (error == QNetworkReply::NoError)
