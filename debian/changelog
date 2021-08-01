@@ -1,3 +1,11 @@
+mx-repo-manager (21.8) mx; urgency=medium
+
+  * Fix: find fastest Debian repo
+  * Write .conf file in ~/.conf/MX-Linux
+  * Update for MX-21 sources
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 01 Aug 2021 00:23:42 -0400
+
 mx-repo-manager (21.7) mx; urgency=medium
 
   * Download only header when checking the Debian repo
