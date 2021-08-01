@@ -59,7 +59,7 @@ public:
     void extractUrls(const QStringList &repos);
     void getCurrentRepo();
     void refresh();
-    void replaceDebianRepos(QString url);
+    void replaceDebianRepos(const QString &url);
     void replaceRepos(const QString &url);
     void setProgressBar();
     void setSelected();
@@ -77,9 +77,9 @@ private slots:
     void procTime();
     void procStart();
 
-    void on_buttonOk_clicked();
-    void on_buttonAbout_clicked();
-    void on_buttonHelp_clicked();
+    void on_pushOk_clicked();
+    void on_pushAbout_clicked();
+    void on_pushHelp_clicked();
     void on_treeWidget_itemChanged(QTreeWidgetItem * item, int column);
     void on_treeWidgetDeb_itemChanged(QTreeWidgetItem * item, int column);
     void on_tabWidget_currentChanged();
