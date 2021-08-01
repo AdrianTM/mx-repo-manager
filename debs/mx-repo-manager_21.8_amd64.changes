@@ -1,0 +1,48 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 01 Aug 2021 00:23:42 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 21.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (21.8) mx; urgency=medium
+ .
+   * Fix: find fastest Debian repo
+   * Write .conf file in ~/.conf/MX-Linux
+   * Update for MX-21 sources
+Checksums-Sha1:
+ 0c198708c95b5a252f2f79ac502fa81f4a372374 1189 mx-repo-manager_21.8.dsc
+ 3f090eafaba7185b330b5f8c77a9c35c81d07898 94740 mx-repo-manager_21.8.tar.xz
+ b469974cd447a1bbd4643f004ac5e2b2946f97bc 10456 mx-repo-manager_21.8_amd64.buildinfo
+ de2f103147a3691639c199fee507bdf6e982cd34 116042 mx-repo-manager_21.8_amd64.deb
+Checksums-Sha256:
+ 66223c301fdef2b57b792cab83563190bab73cc9a7894b0bacfe9b7df311f4d7 1189 mx-repo-manager_21.8.dsc
+ b2b6e83c0c5242a805a3f12d7ed9bfda46b1b3280419e6b54509d5cd38fa77df 94740 mx-repo-manager_21.8.tar.xz
+ 5282137214fbbfb92f189ece477bb4937cc0b3e103874b9daa193c1a866bec95 10456 mx-repo-manager_21.8_amd64.buildinfo
+ 06b2281010fd4493ac3a86a0dacb8f32cc9a6216d727abfd6de2c88287dd9a5e 116042 mx-repo-manager_21.8_amd64.deb
+Files:
+ 1f9d3928c9aef2a0e260efc6a7498fd7 1189 admin optional mx-repo-manager_21.8.dsc
+ e0598a95e7b2037cc54c2194790e9566 94740 admin optional mx-repo-manager_21.8.tar.xz
+ 0da7ecb56587915a33066ead537dea43 10456 admin optional mx-repo-manager_21.8_amd64.buildinfo
+ 727e80284e71dceb775f3aa760352145 116042 admin optional mx-repo-manager_21.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEGMC8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumDV6B/969MK5VSFp9Er4B8KIw4+x8oirhy+6
+eVw5YIRG0P7I6/O5VB9cxsbYptVo8Ok+E4LG5+6A5UCOvr8a+rToqQma1FT2K8w+
+oJEmn37MlJZESUTaWFfbRpr/eedHgLnslI8+LEKr04pYMJXwo3p3mXaaQd30E8xQ
+6VWeoeL4nIqv/mSE3VZcgqwJFelnwshocdeM9kb1hVvKp+T1Mbp8koZeYX312TWh
++HpFamMIHeMHkXZaufWLa7NxkgQmsZSqO0vq+cupef0OTCP+0DK/vbMduVufJw36
+nmYVS9R8gq4PYACWG3bt3yTzoVkdERATmJYkUHLPotb/qoTHgEtEF7Sd
+=TSox
+-----END PGP SIGNATURE-----
