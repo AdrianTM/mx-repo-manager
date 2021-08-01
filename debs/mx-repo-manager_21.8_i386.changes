@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 01 Aug 2021 00:23:42 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 21.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (21.8) mx; urgency=medium
+ .
+   * Fix: find fastest Debian repo
+   * Write .conf file in ~/.conf/MX-Linux
+   * Update for MX-21 sources
+Checksums-Sha1:
+ 658c698c722ae5bdd1d9ac70d596baaf25cec35e 10150 mx-repo-manager_21.8_i386.buildinfo
+ 3dc40e4f53e35daed66f3213e0aa7a3e01047d0e 119478 mx-repo-manager_21.8_i386.deb
+Checksums-Sha256:
+ 7293a2c4c7c1a2b448da1b17e1bf7797be96d1468b69dfe5143a1678161516b3 10150 mx-repo-manager_21.8_i386.buildinfo
+ 48fa6da83a527b4b06739efca5a6ca6f4871f297448fd100a0481479432b911a 119478 mx-repo-manager_21.8_i386.deb
+Files:
+ a2b9b1b81f140773d382520cd240cadf 10150 admin optional mx-repo-manager_21.8_i386.buildinfo
+ 5a8dd23ea711a7f663654ba9663aa80d 119478 admin optional mx-repo-manager_21.8_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmEGMDATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumJONCAClWnofMEWN9vyEhsJHGZTZiBRoh7+6
+l87d2UiKjEVmEaJGl7sEmhnaPzq1LS2+9Y2LaTz++gMFcWst1QgpK7Wwf1tJ1jYf
+ETeU3bOzktWS7FH4n3WSt9LwLu8R3NmU5t9EHDSXgBWumVwaH9PzGr+dulVCNHx3
+rzMkwq/i/sttqNDWuU/ne1DywjOdm8qxQt0ztgoRxd1huLwn4Jc4DtkxidieON6a
+Snml7nIM2VRoGK7eUuj4UO9ahGK9soYA0P0ytE10++GKRXeJbvZuEX7VsEFj/tku
+U0oCEa54zHV6iANadGd6B2cnGhme6YlECjcDQHMJ6ILlmvFVuO1ZNSPu
+=ccz3
+-----END PGP SIGNATURE-----
