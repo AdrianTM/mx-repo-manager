@@ -29,7 +29,6 @@
 #include <QNetworkReply>
 #include <QProgressBar>
 #include <QRadioButton>
-#include <QSettings>
 #include <QTemporaryDir>
 #include <QTemporaryFile>
 #include <QTextEdit>
@@ -68,7 +67,6 @@ MainWindow::MainWindow(QWidget *parent) :
     refresh();
 
     QSize size = this->size();
-    QSettings settings(qApp->organizationName(), qApp->applicationName());
     if (settings.contains("geometry")) {
         restoreGeometry(settings.value("geometry").toByteArray());
         if (this->isMaximized()) { // add option to resize if maximized
@@ -287,7 +285,6 @@ void MainWindow::centerWindow()
 
 void MainWindow::closeEvent(QCloseEvent *)
 {
-    QSettings settings(qApp->organizationName(), qApp->applicationName());
     settings.setValue("geometry", saveGeometry());
 }
 
