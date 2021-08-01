@@ -45,14 +45,14 @@ MainWindow::MainWindow(QWidget *parent) :
     qDebug().noquote() << qApp->applicationName() << "version:" << qApp->applicationVersion();
     ui->setupUi(this);
     setWindowFlags(Qt::Window);
-    if (ui->buttonOk->icon().isNull())
-        ui->buttonOk->setIcon(QIcon(":/icons/dialog-ok.svg"));
+    if (ui->pushOk->icon().isNull())
+        ui->pushOk->setIcon(QIcon::fromTheme("dialog-ok", QIcon(":/icons/dialog-ok.svg")));
 
     if (ui->pushFastestMX->icon().isNull())
-        ui->pushFastestMX->setIcon(QIcon(":/icons/cursor-arrow.svg"));
+        ui->pushFastestMX->setIcon(QIcon::fromTheme("cursor-arrow", QIcon(":/icons/cursor-arrow.svg")));
 
     if (ui->pushFastestDebian->icon().isNull())
-        ui->pushFastestDebian->setIcon(QIcon(":/icons/cursor-arrow.svg"));
+        ui->pushFastestDebian->setIcon(QIcon::fromTheme("cursor-arrow", QIcon(":/icons/cursor-arrow.svg")));
 
     shell = new Cmd(this);
 
