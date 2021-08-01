@@ -52,7 +52,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabMX">
       <attribute name="title">
@@ -82,10 +82,6 @@
          </property>
          <property name="text">
           <string>Select fastest MX repo for me</string>
-         </property>
-         <property name="icon">
-          <iconset theme="cursor-arrow">
-           <normaloff>.</normaloff>.</iconset>
          </property>
          <property name="autoDefault">
           <bool>false</bool>
@@ -182,10 +178,6 @@
          </property>
          <property name="text">
           <string>Select fastest Debian repo for me</string>
-         </property>
-         <property name="icon">
-          <iconset theme="cursor-arrow">
-           <normaloff>.</normaloff>.</iconset>
          </property>
          <property name="autoDefault">
           <bool>false</bool>
@@ -327,7 +319,7 @@
       <number>5</number>
      </property>
      <item row="0" column="1">
-      <widget class="QPushButton" name="buttonHelp">
+      <widget class="QPushButton" name="pushHelp">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -382,7 +374,7 @@
       </spacer>
      </item>
      <item row="0" column="0">
-      <widget class="QPushButton" name="buttonAbout">
+      <widget class="QPushButton" name="pushAbout">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -408,7 +400,7 @@
       </widget>
      </item>
      <item row="0" column="7">
-      <widget class="QPushButton" name="buttonCancel">
+      <widget class="QPushButton" name="pushCancel">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -437,7 +429,7 @@
       </widget>
      </item>
      <item row="0" column="6">
-      <widget class="QPushButton" name="buttonOk">
+      <widget class="QPushButton" name="pushOk">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -446,10 +438,6 @@
        </property>
        <property name="text">
         <string>Apply</string>
-       </property>
-       <property name="icon">
-        <iconset theme="dialog-ok">
-         <normaloff>.</normaloff>.</iconset>
        </property>
       </widget>
      </item>
@@ -481,10 +469,10 @@
  </widget>
  <tabstops>
   <tabstop>tabWidget</tabstop>
-  <tabstop>buttonAbout</tabstop>
-  <tabstop>buttonHelp</tabstop>
-  <tabstop>buttonOk</tabstop>
-  <tabstop>buttonCancel</tabstop>
+  <tabstop>pushAbout</tabstop>
+  <tabstop>pushHelp</tabstop>
+  <tabstop>pushOk</tabstop>
+  <tabstop>pushCancel</tabstop>
   <tabstop>treeWidgetDeb</tabstop>
   <tabstop>treeWidget</tabstop>
  </tabstops>
@@ -493,7 +481,7 @@
  </resources>
  <connections>
   <connection>
-   <sender>buttonCancel</sender>
+   <sender>pushCancel</sender>
    <signal>pressed()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
