@@ -14,6 +14,7 @@ Depends: apt-transport-https,
          mx-repo-list,
          mx-viewer | xdg-utils,
          netselect-apt,
+         unzip,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: MX Repo Manager
