@@ -31,6 +31,7 @@
 #include <QMessageBox>
 #include <QNetworkAccessManager>
 #include <QProgressDialog>
+#include <QSettings>
 #include <QTimer>
 #include <QTreeWidget>
 
@@ -95,6 +96,7 @@ private:
     QProgressBar *bar;
     QProgressDialog *progress;
     QPushButton *progCancel;
+    QSettings settings;
     QString current_repo;
     QStringList repos;
     QTimer timer;
