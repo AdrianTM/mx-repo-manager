@@ -368,15 +368,15 @@ void MainWindow::replaceRepos(const QString &url)
     // for MX repos
     QString repo_line_mx = "deb " + url + "/mx/repo/ ";
     QString test_line_mx = "deb " + url + "/mx/testrepo/ ";
-    cmd_mx = QString("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx).arg(mx_file) +
-            QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx).arg(mx_file);
+    cmd_mx = QString("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx, mx_file) +
+            QString("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx, mx_file);
 
     if (ver_num < 9 && QFileInfo::exists("/etc/antix-version")) { // Added antix-version check in case running this on a MXfyied Debian
         // for antiX repos
         QString antix_file = "/etc/apt/sources.list.d/antix.list";
         repo_line_antix = (url == "http://mxrepo.com") ? "http://la.mxrepo.com/antix/" + ver_name + "/"
                                                        : url + "/antix/" + ver_name + "/";
-        cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix).arg(antix_file);
+        cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix, antix_file);
     }
 
     // check if both replacement were successful
@@ -419,12 +419,12 @@ QFileInfoList MainWindow::listAptFiles()
 void MainWindow::on_pushOk_clicked()
 {
     if (queued_changes.size() > 0) {
-        for (const QStringList &changes : queued_changes) {
+        for (const QStringList &changes : qAsConst(queued_changes)) {
             QString text, new_text, file_name;
             text = QRegularExpression::escape(changes.at(0));
             new_text = changes.at(1);
             file_name = changes.at(2);
-            QString cmd = QString("sed -i 's;%1;%2;g' %3").arg(text).arg(new_text).arg(file_name);
+            QString cmd = QString("sed -i 's;%1;%2;g' %3").arg(text, new_text, file_name);
             shell->run(cmd);
         }
         queued_changes.clear();
@@ -621,7 +621,7 @@ void MainWindow::on_pb_restoreSources_clicked()
     }
 
     bool ok = true;
-    int mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2).toInt(&ok);
+    int mx_version = shell->getCmdOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").leftRef(2).toInt(&ok);
     if (!ok || mx_version < 15) {
         QMessageBox::critical(this, tr("Error"), tr("MX version not detected or out of range: ") + QString::number(mx_version));
         return;

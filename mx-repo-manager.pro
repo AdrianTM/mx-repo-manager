@@ -20,15 +20,11 @@
 # * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
-QT       += core gui network
-
-CONFIG   += c++11
-
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+QT       += core gui network widgets
+CONFIG   += c++17
 
 TARGET = mx-repo-manager
 TEMPLATE = app
-
 
 SOURCES += main.cpp\
     mainwindow.cpp \
