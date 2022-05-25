@@ -50,26 +50,27 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    QString version;
-    QString listMXurls;
+    QFileInfoList listAptFiles();
+    QIcon getFlag(QString country);
     QList<QStringList> queued_changes;
+    QString getDebianVerName(int ver);
+    QString listMXurls;
+    QString version;
+    QStringList loadAptFile(const QString &file);
+    QStringList readMXRepos();
+    int getDebianVerNum();
     void centerWindow();
-    void displayMXRepos(const QStringList &repos, const QString &filter);
     void displayAllRepos(const QFileInfoList &apt_files);
+    void displayMXRepos(const QStringList &repos, const QString &filter);
     void displaySelected(const QString &repo);
     void extractUrls(const QStringList &repos);
     void getCurrentRepo();
     void refresh();
     void replaceDebianRepos(const QString &url);
     void replaceRepos(const QString &url);
+    void setConnections();
     void setProgressBar();
     void setSelected();
-    QFileInfoList listAptFiles();
-    QIcon getFlag(QString country);
-    int getDebianVerNum();
-    QString getDebianVerName(int ver);
-    QStringList readMXRepos();
-    QStringList loadAptFile(const QString &file);
 
 private slots:
     void cancelOperation();
@@ -78,16 +79,16 @@ private slots:
     void procTime();
     void procStart();
 
-    void on_pushOk_clicked();
-    void on_pushAbout_clicked();
-    void on_pushHelp_clicked();
-    void on_treeWidget_itemChanged(QTreeWidgetItem * item, int column);
-    void on_treeWidgetDeb_itemChanged(QTreeWidgetItem * item, int column);
-    void on_tabWidget_currentChanged();
-    void on_pushFastestDebian_clicked();
-    void on_pushFastestMX_clicked();
-    void on_lineSearch_textChanged(const QString &arg1);
-    void on_pb_restoreSources_clicked();
+    void lineSearch_textChanged(const QString &arg1);
+    void pb_restoreSources_clicked();
+    void pushAbout_clicked();
+    void pushFastestDebian_clicked();
+    void pushFastestMX_clicked();
+    void pushHelp_clicked();
+    void pushOk_clicked();
+    void tabWidget_currentChanged();
+    void treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column);
+    void treeWidget_itemChanged(QTreeWidgetItem *item, int column);
 
 private:
     Ui::MainWindow *ui;
