@@ -43,6 +43,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     qDebug().noquote() << qApp->applicationName() << "version:" << qApp->applicationVersion();
     ui->setupUi(this);
+    setConnections();
     setWindowFlags(Qt::Window);
     if (ui->pushOk->icon().isNull())
         ui->pushOk->setIcon(QIcon::fromTheme("dialog-ok", QIcon(":/icons/dialog-ok.svg")));
@@ -387,6 +388,20 @@ void MainWindow::replaceRepos(const QString &url)
 
 }
 
+void MainWindow::setConnections()
+{
+    connect(ui->lineSearch, &QLineEdit::textChanged, this, &MainWindow::lineSearch_textChanged);
+    connect(ui->pb_restoreSources, &QPushButton::clicked, this, &MainWindow::pb_restoreSources_clicked);
+    connect(ui->pushAbout, &QPushButton::clicked, this, &MainWindow::pushAbout_clicked);
+    connect(ui->pushFastestDebian, &QPushButton::clicked, this, &MainWindow::pushFastestDebian_clicked);
+    connect(ui->pushFastestMX, &QPushButton::clicked, this, &MainWindow::pushFastestMX_clicked);
+    connect(ui->pushHelp, &QPushButton::clicked, this, &MainWindow::pushHelp_clicked);
+    connect(ui->pushOk, &QPushButton::clicked, this, &MainWindow::pushOk_clicked);
+    connect(ui->tabWidget, &QTabWidget::currentChanged, this, &MainWindow::tabWidget_currentChanged);
+    connect(ui->treeWidgetDeb, &QTreeWidget::itemChanged, this, &MainWindow::treeWidgetDeb_itemChanged);
+    connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &MainWindow::treeWidget_itemChanged);
+}
+
 void MainWindow::setProgressBar()
 {
     progress = new QProgressDialog(this);
@@ -416,7 +431,7 @@ QFileInfoList MainWindow::listAptFiles()
 }
 
 // Submit button clicked
-void MainWindow::on_pushOk_clicked()
+void MainWindow::pushOk_clicked()
 {
     if (queued_changes.size() > 0) {
         for (const QStringList &changes : qAsConst(queued_changes)) {
@@ -434,7 +449,7 @@ void MainWindow::on_pushOk_clicked()
 }
 
 // About button clicked
-void MainWindow::on_pushAbout_clicked()
+void MainWindow::pushAbout_clicked()
 {
     this->hide();
     displayAboutMsgBox(tr("About %1").arg(this->windowTitle()), "<p align=\"center\"><b><h2>" + this->windowTitle()
@@ -448,7 +463,7 @@ void MainWindow::on_pushAbout_clicked()
 }
 
 // Help button clicked
-void MainWindow::on_pushHelp_clicked()
+void MainWindow::pushHelp_clicked()
 {
     QLocale locale;
     QString lang = locale.bcp47Name();
@@ -460,7 +475,7 @@ void MainWindow::on_pushHelp_clicked()
     displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
 }
 
-void MainWindow::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
+void MainWindow::treeWidget_itemChanged(QTreeWidgetItem * item, int column)
 {
     ui->pushOk->setEnabled(true);
     ui->treeWidget->blockSignals(true);
@@ -492,7 +507,7 @@ void MainWindow::on_treeWidget_itemChanged(QTreeWidgetItem * item, int column)
     ui->treeWidget->blockSignals(false);
 }
 
-void MainWindow::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
+void MainWindow::treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
 {
     ui->pushOk->setEnabled(true);
     ui->treeWidgetDeb->blockSignals(true);
@@ -519,7 +534,7 @@ void MainWindow::on_treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
     ui->treeWidgetDeb->blockSignals(false);
 }
 
-void MainWindow::on_tabWidget_currentChanged()
+void MainWindow::tabWidget_currentChanged()
 {
     if (ui->tabWidget->currentWidget() == ui->tabMX)
         ui->label->setText(tr("Select the APT repository that you want to use:"));
@@ -553,7 +568,7 @@ QIcon MainWindow::getFlag(QString country)
 }
 
 // detect fastest Debian repo
-void MainWindow::on_pushFastestDebian_clicked()
+void MainWindow::pushFastestDebian_clicked()
 {
     progress->show();
     QTemporaryFile tmpfile;
@@ -585,7 +600,7 @@ void MainWindow::on_pushFastestDebian_clicked()
 }
 
 // detect and select the fastest MX repo
-void MainWindow::on_pushFastestMX_clicked()
+void MainWindow::pushFastestMX_clicked()
 {
     progress->show();
     QByteArray out;
@@ -595,24 +610,24 @@ void MainWindow::on_pushFastestMX_clicked()
     progress->hide();
     if (success && !out.isEmpty()) {
         displaySelected(out);
-        on_pushOk_clicked();
+        pushOk_clicked();
     } else {
         QMessageBox::critical(this, tr("Error"), tr("Could not detect fastest repo."));
     }
 }
 
-//void MainWindow::on_pushRedirector_clicked()
+//void MainWindow::pushRedirector_clicked()
 //{
 //    replaceDebianRepos("https://deb.debian.org/debian/");
 //    refresh();
 //}
 
-void MainWindow::on_lineSearch_textChanged(const QString &arg1)
+void MainWindow::lineSearch_textChanged(const QString &arg1)
 {
     displayMXRepos(repos, arg1);
 }
 
-void MainWindow::on_pb_restoreSources_clicked()
+void MainWindow::pb_restoreSources_clicked()
 {
     // check if running on antiX/MX
     if (!QFileInfo::exists("/etc/antix-version") && !QFileInfo::exists("/etc/mx-version")) {
