@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 15 Jun 2022 16:08:11 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 22.6
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (22.6) mx; urgency=medium
+ .
+   * Preserve user theme when launching program as root
+   * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
+Checksums-Sha1:
+ ce4ccb29edf100dc17ffff1ef3b7a15219759669 10057 mx-repo-manager_22.6_i386.buildinfo
+ ff71bad5322b12f24087dc66b21c480ab22e5fb2 121672 mx-repo-manager_22.6_i386.deb
+Checksums-Sha256:
+ 7b95a4ad89d3a79b6e93bb9c979794bf2c9e8390dc3fc57081952ed545a1fec2 10057 mx-repo-manager_22.6_i386.buildinfo
+ 3486f10297b78fe08d56aff38c7ff9f0d2968f6798d531bab1efafdcbb7d8f6c 121672 mx-repo-manager_22.6_i386.deb
+Files:
+ 62591dfcfc0d96ac031c183e39a00153 10057 admin optional mx-repo-manager_22.6_i386.buildinfo
+ 51132eb7a00e6268eeb53d5c7386fa65 121672 admin optional mx-repo-manager_22.6_i386.deb

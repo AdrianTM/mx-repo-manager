@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 15 Jun 2022 16:08:11 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 22.6
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (22.6) mx; urgency=medium
+ .
+   * Preserve user theme when launching program as root
+   * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
+Checksums-Sha1:
+ 907f3cec4c916ff1049459541beffa066402e54e 627 mx-repo-manager_22.6.dsc
+ d5ad201de1442303191fe89ec244a513b4209faa 96580 mx-repo-manager_22.6.tar.xz
+ 6ae12df7ca8ec1041375f6e648aa8cff3f7df44a 10202 mx-repo-manager_22.6_amd64.buildinfo
+ 7b64f02c7aa429f09d70ad5a262b90b2716a3383 118872 mx-repo-manager_22.6_amd64.deb
+Checksums-Sha256:
+ c3c8ffab92f090cc3eb301138e6610d437e20195ccb1669c528e8d82c917f2db 627 mx-repo-manager_22.6.dsc
+ 2a1d452af01c23731343bfe15e4b8ff27070fc0de86287ca3d626eae3b4d1f8e 96580 mx-repo-manager_22.6.tar.xz
+ 072d7f5c69d199853370243b273f47fc4dfd3b8996963135e554ff4099ee39ea 10202 mx-repo-manager_22.6_amd64.buildinfo
+ 65d385df6ec7562a60f3f8769a9c66cc9e9157cbdcf56483a112e1a35c8b9143 118872 mx-repo-manager_22.6_amd64.deb
+Files:
+ 250ac9cc1650433a72c2be86e75a54a1 627 admin optional mx-repo-manager_22.6.dsc
+ 463594184bcdb9a9e48f6277cc5d7143 96580 admin optional mx-repo-manager_22.6.tar.xz
+ 687f753a6e809081f47ddcd89cecea95 10202 admin optional mx-repo-manager_22.6_amd64.buildinfo
+ 50e78055208d5fcadcbf873146238dc2 118872 admin optional mx-repo-manager_22.6_amd64.deb
