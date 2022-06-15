@@ -13,14 +13,14 @@ Changes:
    * Preserve user theme when launching program as root
    * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
 Checksums-Sha1:
- a01705357839cf568fe36a3467e979ba55e21245 627 mx-repo-manager_22.6.dsc
- 1ace8fff3db9832fe04e406eb5951a60a91744e5 96568 mx-repo-manager_22.6.tar.xz
- 3989050f6c7698bcbd5f4c0c2fb33765988de053 10057 mx-repo-manager_22.6_i386.buildinfo
+ 9b00c9c7bd96c4fe13efbb40a6adf8fb488881c8 627 mx-repo-manager_22.6.dsc
+ aab2a482a41a2811c7a62cee521b0e6e4298eaa4 96588 mx-repo-manager_22.6.tar.xz
+ fd57261e2cd580fc294dc3894ae1a460bd4bacad 10057 mx-repo-manager_22.6_i386.buildinfo
 Checksums-Sha256:
- 45238234957a2a5808e105b1a69cb1e3a3c7518fdcc02d6a792e03ac0831b701 627 mx-repo-manager_22.6.dsc
- ecd6474020b2c2d6ed548e2f2b352cd8218997fc609b4a4fba43f71d59f06901 96568 mx-repo-manager_22.6.tar.xz
- fb17851c576d505b262a0abd63824b30df6f754949f5b6cb60a7bdf16fe664ce 10057 mx-repo-manager_22.6_i386.buildinfo
+ ed16531f78f5c34c9bba3b3db926f9e1e911b04eaaf75aa54cb5bf1bb2b1f0ba 627 mx-repo-manager_22.6.dsc
+ c6a528c15e9d2a121dec9e25de130d6262d884cecf423bf7bf0d0edc1ad20c19 96588 mx-repo-manager_22.6.tar.xz
+ 7a0fc540f880c02c136c8b18df63cd1fec7d8fbc675643afffb9c91c4b5bd1a8 10057 mx-repo-manager_22.6_i386.buildinfo
 Files:
- 20098e5e548fe3ee953998aa8f9deb23 627 admin optional mx-repo-manager_22.6.dsc
- 46a554838461448984013005bb345f03 96568 admin optional mx-repo-manager_22.6.tar.xz
- aaf9a0be825f7b3bc1f88b0b007de61c 10057 admin optional mx-repo-manager_22.6_i386.buildinfo
+ 51ae915d92387d59bc617227c1fa28f5 627 admin optional mx-repo-manager_22.6.dsc
+ d3b6dc07789d54990c84220671e0f3be 96588 admin optional mx-repo-manager_22.6.tar.xz
+ 23412fa0abad43e13bbef200363a8a52 10057 admin optional mx-repo-manager_22.6_i386.buildinfo
