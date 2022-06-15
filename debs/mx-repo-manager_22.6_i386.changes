@@ -16,11 +16,11 @@ Changes:
    * Preserve user theme when launching program as root
    * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
 Checksums-Sha1:
- ce4ccb29edf100dc17ffff1ef3b7a15219759669 10057 mx-repo-manager_22.6_i386.buildinfo
+ 3989050f6c7698bcbd5f4c0c2fb33765988de053 10057 mx-repo-manager_22.6_i386.buildinfo
  ff71bad5322b12f24087dc66b21c480ab22e5fb2 121672 mx-repo-manager_22.6_i386.deb
 Checksums-Sha256:
- 7b95a4ad89d3a79b6e93bb9c979794bf2c9e8390dc3fc57081952ed545a1fec2 10057 mx-repo-manager_22.6_i386.buildinfo
+ fb17851c576d505b262a0abd63824b30df6f754949f5b6cb60a7bdf16fe664ce 10057 mx-repo-manager_22.6_i386.buildinfo
  3486f10297b78fe08d56aff38c7ff9f0d2968f6798d531bab1efafdcbb7d8f6c 121672 mx-repo-manager_22.6_i386.deb
 Files:
- 62591dfcfc0d96ac031c183e39a00153 10057 admin optional mx-repo-manager_22.6_i386.buildinfo
+ aaf9a0be825f7b3bc1f88b0b007de61c 10057 admin optional mx-repo-manager_22.6_i386.buildinfo
  51132eb7a00e6268eeb53d5c7386fa65 121672 admin optional mx-repo-manager_22.6_i386.deb
