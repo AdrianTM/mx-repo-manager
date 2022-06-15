@@ -50,10 +50,11 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    enum Version {Jessie = 8, Stretch, Buster, Bullseye, Bookworm};
     QFileInfoList listAptFiles();
-    QIcon getFlag(QString country);
+    static QIcon getFlag(QString country);
     QList<QStringList> queued_changes;
-    QString getDebianVerName(int ver);
+    static QString getDebianVerName(int ver);
     QString listMXurls;
     QString version;
     QStringList loadAptFile(const QString &file);
@@ -94,16 +95,16 @@ private:
     Ui::MainWindow *ui;
     Cmd *shell;
     QHash<QString, QIcon> flags;
-    QProgressBar *bar;
-    QProgressDialog *progress;
-    QPushButton *progCancel;
+    QProgressBar *bar{};
+    QProgressDialog *progress{};
+    QPushButton *progCancel{};
     QSettings settings;
     QString current_repo;
     QStringList repos;
     QTimer timer;
 
     QNetworkAccessManager manager;
-    QNetworkReply* reply;
+    QNetworkReply* reply{};
     bool checkRepo(const QString &repo);
     bool downloadFile(const QString &url, QFile &file);
 
