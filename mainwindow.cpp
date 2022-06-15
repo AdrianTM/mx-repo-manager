@@ -272,7 +272,7 @@ QStringList MainWindow::loadAptFile(const QString &file)
 
 void MainWindow::cancelOperation()
 {
-    shell->halt();
+    shell->close();
     procDone();
 }
 
@@ -580,7 +580,7 @@ void MainWindow::pushFastestDebian_clicked()
     QString ver_name {getDebianVerName(getDebianVerNum())};
     if (ver_name == "buster" || ver_name == "bullseye") ver_name = QString(); // netselect-apt doesn't like name buster/bullseye for some reason, maybe it expects "stable"
 
-    QByteArray out;
+    QString out;
     bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), out, false);
     progress->hide();
 
@@ -603,7 +603,7 @@ void MainWindow::pushFastestDebian_clicked()
 void MainWindow::pushFastestMX_clicked()
 {
     progress->show();
-    QByteArray out;
+    QString out;
     bool success = shell->run("set -o pipefail; netselect -D -I " + listMXurls + " |tr -s ' ' |sed 's/^ //' |cut -d' ' -f2", out);
     qDebug() << listMXurls;
     qDebug() << "FASTEST " << success << out;
