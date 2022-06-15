@@ -10,7 +10,6 @@ Package: mx-repo-manager
 Architecture: any
 Depends: apt-transport-https,
          flags-common,
-         menu,
          mx-repo-list,
          mx-viewer | xdg-utils,
          netselect-apt,
