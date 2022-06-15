@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Format: 1.8
 Date: Wed, 15 Jun 2022 16:08:11 -0400
 Source: mx-repo-manager
@@ -16,17 +19,29 @@ Changes:
    * Preserve user theme when launching program as root
    * Make sure HOME and XDG_RUNTIME_DIR are correct when launching as root
 Checksums-Sha1:
- 907f3cec4c916ff1049459541beffa066402e54e 627 mx-repo-manager_22.6.dsc
+ 41f5e3b5308238d1cc61ab482195d7c19ecae59b 1189 mx-repo-manager_22.6.dsc
  d5ad201de1442303191fe89ec244a513b4209faa 96580 mx-repo-manager_22.6.tar.xz
- 6ae12df7ca8ec1041375f6e648aa8cff3f7df44a 10202 mx-repo-manager_22.6_amd64.buildinfo
+ 581f0283251059411666691c79e5bf0a31757aa6 10767 mx-repo-manager_22.6_amd64.buildinfo
  7b64f02c7aa429f09d70ad5a262b90b2716a3383 118872 mx-repo-manager_22.6_amd64.deb
 Checksums-Sha256:
- c3c8ffab92f090cc3eb301138e6610d437e20195ccb1669c528e8d82c917f2db 627 mx-repo-manager_22.6.dsc
+ d730785d0ac496f23f5a70560b4ee7ebea1920240799006df215b87b9087154d 1189 mx-repo-manager_22.6.dsc
  2a1d452af01c23731343bfe15e4b8ff27070fc0de86287ca3d626eae3b4d1f8e 96580 mx-repo-manager_22.6.tar.xz
- 072d7f5c69d199853370243b273f47fc4dfd3b8996963135e554ff4099ee39ea 10202 mx-repo-manager_22.6_amd64.buildinfo
+ 2bce020285cc37e5763b7da1f077879fe7114023931dfa7ceb78ebf16a4550c0 10767 mx-repo-manager_22.6_amd64.buildinfo
  65d385df6ec7562a60f3f8769a9c66cc9e9157cbdcf56483a112e1a35c8b9143 118872 mx-repo-manager_22.6_amd64.deb
 Files:
- 250ac9cc1650433a72c2be86e75a54a1 627 admin optional mx-repo-manager_22.6.dsc
+ fd1101b5824da4668c2247046ebb82bd 1189 admin optional mx-repo-manager_22.6.dsc
  463594184bcdb9a9e48f6277cc5d7143 96580 admin optional mx-repo-manager_22.6.tar.xz
- 687f753a6e809081f47ddcd89cecea95 10202 admin optional mx-repo-manager_22.6_amd64.buildinfo
+ ca4ada36fbb47e041516b21a4dbd1c03 10767 admin optional mx-repo-manager_22.6_amd64.buildinfo
  50e78055208d5fcadcbf873146238dc2 118872 admin optional mx-repo-manager_22.6_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmKqTFoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumK2mCACP6eyBgFY+Tt0dTq+6Tn+sTFAp1EDJ
+6prVrLl1R3AOqMaTeggiRcK0DGHXqNjZ5s8semCxBI7seX3fZl7kVNKXknW4v74J
+l+W6jXzc8TIohXrOaQyQUw35H8CH00/TjFM2sXjlfkkQp8KXjDHxHcAbQ7UIL/+S
+sAOOq/vE/xnaqVWhh93wT2RqIb+SRc0aninxpLRTbsHHtqDWwkTtLkqIrH+Zf+AM
+gAF6UgUJ2lkME4RNAjioVFnx15pdII2+eaU85qIXNAmRgyTYWtk86qeko7FsFF10
+BCE7Vxy0KPc1aKoffvG1NBZv42gTljtx1MAeB6Q+d+bw/Fk2DetD28Zt
+=zJIN
+-----END PGP SIGNATURE-----
