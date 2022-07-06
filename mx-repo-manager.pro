@@ -52,6 +52,7 @@ TRANSLATIONS += translations/mx-repo-manager_am.ts \
                 translations/mx-repo-manager_da.ts \
                 translations/mx-repo-manager_de.ts \
                 translations/mx-repo-manager_el.ts \
+                translations/mx-repo-manager_en.ts \
                 translations/mx-repo-manager_es.ts \
                 translations/mx-repo-manager_et.ts \
                 translations/mx-repo-manager_eu.ts \
