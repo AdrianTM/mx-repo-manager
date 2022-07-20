@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ar">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fil_PH">
 <context>
     <name>MainWindow</name>
     <message>
@@ -51,27 +51,27 @@
     <message>
         <location filename="../mainwindow.ui" line="330"/>
         <source>Display help </source>
-        <translation>إظهار المساعدة</translation>
+        <translation>Maghanap ng tulong</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="333"/>
         <source>Help</source>
-        <translation>مساعدة</translation>
+        <translation>Tulong</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="340"/>
         <source>Alt+H</source>
-        <translation>Alt+H&lt;br&gt;&lt;br&gt;</translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="385"/>
         <source>About this application</source>
-        <translation>إيقاف هذا التطبيق</translation>
+        <translation>Patungkol sa application na ito</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="388"/>
         <source>About...</source>
-        <translation>عن...</translation>
+        <translation>Patungkol sa...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="395"/>
@@ -81,12 +81,12 @@
     <message>
         <location filename="../mainwindow.ui" line="411"/>
         <source>Quit application</source>
-        <translation>إنهاء التطبيق</translation>
+        <translation>Iwan ang application</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="414"/>
         <source>Close</source>
-        <translation>إغلاق</translation>
+        <translation>Isara</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="421"/>
@@ -96,14 +96,14 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>Apply</source>
-        <translation type="unfinished"/>
+        <translation>Tanggapin</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
         <source>Success</source>
-        <translation>ناجح</translation>
+        <translation>Tagumpay</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
@@ -133,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="674"/>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>Error</source>
-        <translation>خطأ</translation>
+        <translation>May error</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
@@ -143,7 +143,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
         <source>Cancel</source>
-        <translation>إلغاء</translation>
+        <translation>I-cancel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
@@ -153,12 +153,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source>About %1</source>
-        <translation type="unfinished"/>
+        <translation>Patungkol sa %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <source>Version: </source>
-        <translation>الإصدار:</translation>
+        <translation>Bersyon: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="467"/>
@@ -168,22 +168,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="469"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>حقوق النشر  (MX linux (c</translation>
+        <translation>Karapatan (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"/>
+        <translation>%1 Pahintulot</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"/>
+        <translation>%1 Tulong</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
         <source>Warning</source>
-        <translation type="unfinished"/>
+        <translation>Babala</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="493"/>
@@ -257,28 +257,28 @@
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation>رخصة</translation>
+        <translation>Lisensya</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation>التغيرات</translation>
+        <translation>Ulat na mga pagbabago</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation>إلغاء</translation>
+        <translation>Huwag ituloy</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation>&amp;اغلاق</translation>
+        <translation>&amp;Isara</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="63"/>
         <source>Error</source>
-        <translation>خطأ</translation>
+        <translation>May error</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>

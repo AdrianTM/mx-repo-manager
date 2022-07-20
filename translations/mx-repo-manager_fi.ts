@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fi">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="fi">
 <context>
     <name>MainWindow</name>
     <message>
@@ -48,7 +46,7 @@
     <message>
         <location filename="../mainwindow.ui" line="248"/>
         <source>Restore original APT sources</source>
-        <translation type="unfinished"></translation>
+        <translation>Palauta alkuperäiset APT-lähteet</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="330"/>
@@ -101,11 +99,6 @@
         <translation>Hyväksy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>Odota, ole hyvä...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
@@ -148,8 +141,19 @@
         <translation>Pakettivarastoa ei voitu muuttaa.</translation>
     </message>
     <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Tietoja MX paketinhallinnasta</translation>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation>Peru</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>Odota, ole hyvä...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>About %1</source>
+        <translation>%1 lisätietoja</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
@@ -167,36 +171,14 @@
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <source>License</source>
-        <translation type="vanished">Lisenssi</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Muutosloki</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Cancel</source>
-        <translation>Peru</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Sulje</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="464"/>
-        <source>About %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 lupa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Apuopas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -206,12 +188,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="493"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation type="unfinished"></translation>
+        <translation>Valitsit ohjelmavaraston MX Test Repo. Ei ole suositeltavaa jättää sitä päälle tai päivittää kaikkia paketteja jotka juontuvat sieltä. </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="494"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Turvallisempi vaihtoehto on asentaa paketteja yksittäin MX paketinhallinnan kautta.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
@@ -232,99 +214,76 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Could not download original APT files.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alkuperäisiä APT-tiedostoja ei voitu ladata.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alkuperäiset APT-lähteet ovat palautetut julkaisuun nähden. Käyttäjän lisäämiin lähdetiedostoihin kohteessa /etc/apt/sources.list.d/ ei koskettu.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Sinun täytyy suorittaa tämä ohjelma pääkäyttäjänä.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Lisenssi</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Muutosloki</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Peru</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Sulje</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">Virhe</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Lisenssi</translation>
+        <translation>Lisenssi</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Muutosloki</translation>
+        <translation>Muutosloki</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Peru</translation>
+        <translation>Peru</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Sulje</translation>
+        <translation>&amp;Sulje</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>Virhe</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Olet kirjautunut sisään pääkäyttäjänä. Kirjaudu sisään normaalina käyttäjänä käyttääksesi tätä ohjelmaa.</translation>
     </message>
 </context>
 </TS>

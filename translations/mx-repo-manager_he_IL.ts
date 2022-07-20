@@ -1,29 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="he_IL">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="he_IL">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="17"/>
         <location filename="../mainwindow.cpp" line="69"/>
         <source>MX Repo Manager</source>
-        <translation type="unfinished"></translation>
+        <translation>מנהל מאגרים של MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
         <location filename="../mainwindow.cpp" line="549"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>נא לבחור את מאגר הAPT שאתה רוצה להשתמש בו:</translation>
+        <translation>נא לבחור את מאגר APT שברצונך להשתמש בו:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation type="unfinished"></translation>
+        <translation>מאגרים של MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation type="unfinished"></translation>
+        <translation>נא לבחור את מאגר ה־MX המהיר ביותר עבורי</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
@@ -38,7 +36,7 @@
     <message>
         <location filename="../mainwindow.ui" line="180"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>תבחר את מאגר הDebian הכי מהיר בשבילי</translation>
+        <translation>נא לבחור את מאגר ה־Debian הכי מהיר בשבילי</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="229"/>
@@ -53,7 +51,7 @@
     <message>
         <location filename="../mainwindow.ui" line="330"/>
         <source>Display help </source>
-        <translation type="unfinished"></translation>
+        <translation>הצגת עזרה</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="333"/>
@@ -63,54 +61,49 @@
     <message>
         <location filename="../mainwindow.ui" line="340"/>
         <source>Alt+H</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="385"/>
         <source>About this application</source>
-        <translation>מידע לגבי התוכנה הזו</translation>
+        <translation>על אודות יישום זה</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="388"/>
         <source>About...</source>
-        <translation>אודות...</translation>
+        <translation>על אודות…</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="395"/>
         <source>Alt+B</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+B</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="411"/>
         <source>Quit application</source>
-        <translation>יציאה מהתוכנה</translation>
+        <translation>מהיישום</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="414"/>
         <source>Close</source>
-        <translation>סגור</translation>
+        <translation>סגירה</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="421"/>
         <source>Alt+N</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+N</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>Apply</source>
-        <translation>אשר</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>חכה בבקשה...</translation>
+        <translation>החלה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
         <source>Success</source>
-        <translation type="unfinished"></translation>
+        <translation>הצלחה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
@@ -140,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="674"/>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>Error</source>
-        <translation>תקלה</translation>
+        <translation>שגיאה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
@@ -148,43 +141,44 @@
         <translation>שינוי המאגר לא הצליח</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
-        <source>Version: </source>
-        <translation>גרסה:</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="467"/>
-        <source>Program for choosing the default APT repository</source>
-        <translation>תוכנה לבחירה של מאגר APT ברירת המחדל</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="469"/>
-        <source>Copyright (c) MX Linux</source>
-        <translation>זכויות שמורות MX Linux</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="vanished">רשיון</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="417"/>
         <source>Cancel</source>
         <translation>ביטול</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>נא להמתין…</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>על אודות %1</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="466"/>
+        <source>Version: </source>
+        <translation>גירסה:</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="467"/>
+        <source>Program for choosing the default APT repository</source>
+        <translation>תכנית לבחירת מאגר APT ברירת המחדל</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="469"/>
+        <source>Copyright (c) MX Linux</source>
+        <translation>זכויות היוצרים (c) שמורות ל־MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>רישיון של %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>עזרה עבור %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -199,12 +193,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="494"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation>אופצייה בטוחה יותר היא להתקין חבילות בנפרד עם מתקין החבילות של MX</translation>
+        <translation>אפשרות בטוחה יותר היא התקנת חבילות בנפרד עם אשף התקנת החבילות של MX.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>בחר את מאגר הAPT והמקורות שאתה רוצה להשתמש בהם:</translation>
+        <translation>נא לבחור את מאגר APT והמקורות שברצונך להשתמש בהם:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="597"/>
@@ -220,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -235,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
@@ -255,56 +249,41 @@
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">אתה חייב להריץ את התוכנה הזו עם הרשאות root.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">רשיון</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">ביטול</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">תקלה</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">רשיון</translation>
+        <translation>רישיון</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished"></translation>
+        <translation>יומן שינויים</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">ביטול</translation>
+        <translation>ביטול</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;סגירה</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>שגיאה</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>

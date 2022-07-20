@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ar">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="vi">
 <context>
     <name>MainWindow</name>
     <message>
@@ -26,7 +26,7 @@
     <message>
         <location filename="../mainwindow.ui" line="110"/>
         <source>search</source>
-        <translation type="unfinished"/>
+        <translation>tìm kiếm</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="168"/>
@@ -51,27 +51,27 @@
     <message>
         <location filename="../mainwindow.ui" line="330"/>
         <source>Display help </source>
-        <translation>إظهار المساعدة</translation>
+        <translation>Hiển thị bản trợ giúp</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="333"/>
         <source>Help</source>
-        <translation>مساعدة</translation>
+        <translation>Trợ giúp</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="340"/>
         <source>Alt+H</source>
-        <translation>Alt+H&lt;br&gt;&lt;br&gt;</translation>
+        <translation>Alt+H</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="385"/>
         <source>About this application</source>
-        <translation>إيقاف هذا التطبيق</translation>
+        <translation>Về ứng dụng này</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="388"/>
         <source>About...</source>
-        <translation>عن...</translation>
+        <translation>Về ứng dụng này...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="395"/>
@@ -81,12 +81,12 @@
     <message>
         <location filename="../mainwindow.ui" line="411"/>
         <source>Quit application</source>
-        <translation>إنهاء التطبيق</translation>
+        <translation>Thoát ứng dụng</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="414"/>
         <source>Close</source>
-        <translation>إغلاق</translation>
+        <translation>Đóng</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="421"/>
@@ -96,14 +96,14 @@
     <message>
         <location filename="../mainwindow.ui" line="440"/>
         <source>Apply</source>
-        <translation type="unfinished"/>
+        <translation>Áp dụng</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
         <source>Success</source>
-        <translation>ناجح</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
@@ -133,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="674"/>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>Error</source>
-        <translation>خطأ</translation>
+        <translation>Lỗi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
@@ -143,7 +143,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
         <source>Cancel</source>
-        <translation>إلغاء</translation>
+        <translation>Hủy bỏ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <source>Version: </source>
-        <translation>الإصدار:</translation>
+        <translation>Phiên bản:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="467"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="469"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>حقوق النشر  (MX linux (c</translation>
+        <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
@@ -257,28 +257,28 @@
     <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation>رخصة</translation>
+        <translation>Giấy phép</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation>التغيرات</translation>
+        <translation>Nhật kí thay đổi</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation>إلغاء</translation>
+        <translation>Hủy bỏ</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation>&amp;اغلاق</translation>
+        <translation>&amp;Đóng</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="63"/>
         <source>Error</source>
-        <translation>خطأ</translation>
+        <translation>Lỗi</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="64"/>
