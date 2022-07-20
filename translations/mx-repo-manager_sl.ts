@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sl">
 <context>
     <name>MainWindow</name>
     <message>
@@ -13,7 +11,7 @@
         <location filename="../mainwindow.ui" line="32"/>
         <location filename="../mainwindow.cpp" line="549"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Izberite APT repozitorij, ki ga želite uporabljati:</translation>
+        <translation>Izberite APT skladišče, ki ga želite uporabljati:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
@@ -101,11 +99,6 @@
         <translation>Potrdi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>Prosimo, počakajt...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
@@ -148,8 +141,19 @@
         <translation>Nisem mogel zamenjati repozitorija.</translation>
     </message>
     <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">O programu MX Upravljanik repozitorijev</translation>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation>Prekliči</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>Prosimo, počakajt...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>About %1</source>
+        <translation>O %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
@@ -159,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="467"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>Program za določitev privzetega APT repozitorija</translation>
+        <translation>Program za določitev privzetega APT skladišča</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="469"/>
@@ -167,36 +171,14 @@
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <source>License</source>
-        <translation type="vanished">Licenca</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Dnevnik sprememb</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Cancel</source>
-        <translation>Prekliči</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Zapri</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="464"/>
-        <source>About %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 licenca</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 pomoč</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -216,7 +198,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>Izberite APT repozitorij in vire, ki jih želite uporabljati:</translation>
+        <translation>Izberite APT skladišče in vire, ki jih želite uporabljati:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="597"/>
@@ -232,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -247,84 +229,61 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation>Izvirni APT viri so bili obnovljeni na stanje ob izdaji. Viri, ki jih je uporabnik dodal v /etc/apt/sources.list.d/, niso bili spremenjeni.</translation>
+        <translation>Izvirni APT viri so bili obnovljeni na stanje ob izdaji. Izvorne datoteke, ki jih je uporabnik dodal v /etc/apt/sources.list.d/, niso bili spremenjeni.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Ta program morate zagnati kot root</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Licenca</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Dnevnik sprememb</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Prekliči</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Zapri</translation>
+        <translation>Pri zapisovanju datoteke %1 se je zgodila napaka. Preverite ali je na nosilcu dovolj prostora</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">Napaka</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licenca</translation>
+        <translation>Licenca</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Dnevnik sprememb</translation>
+        <translation>Dnevnik sprememb</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Prekliči</translation>
+        <translation>Prekliči</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Zapri</translation>
+        <translation>&amp;Zapri</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>Napaka</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Prijevljeni ste kot korenski uporabnik. Izpišite se in se ponovno prijavite kot običajen uporabnik, če želite uporabljati ta program.</translation>
     </message>
 </context>
 </TS>

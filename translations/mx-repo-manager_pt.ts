@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="17"/>
         <location filename="../mainwindow.cpp" line="69"/>
         <source>MX Repo Manager</source>
-        <translation>MX-Gestor de Repositórios</translation>
+        <translation>MX Gestor de Repositórios</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
@@ -23,7 +21,7 @@
     <message>
         <location filename="../mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation>Seleccionar automáticamente o repositório MX mais rápido </translation>
+        <translation>Seleccionar automaticamente o repositório mais rápido </translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
@@ -38,7 +36,7 @@
     <message>
         <location filename="../mainwindow.ui" line="180"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>Seleccionar automáticamente o repositório Debian mais rápido</translation>
+        <translation>Seleccionar automaticamente o repositório mais rápido</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="229"/>
@@ -53,7 +51,7 @@
     <message>
         <location filename="../mainwindow.ui" line="330"/>
         <source>Display help </source>
-        <translation>Mostrar a ajuda</translation>
+        <translation>Mostrar ajuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="333"/>
@@ -101,11 +99,6 @@
         <translation>Aplicar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>Aguardar...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
@@ -145,11 +138,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>Could not change the repo.</source>
-        <translation>Não foi possível alterar o repositório</translation>
+        <translation>Não foi possível alterar o repositório.</translation>
     </message>
     <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Sobre o MX-Gestor de Repositórios</translation>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>Aguardar...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>About %1</source>
+        <translation>Sobre o %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
@@ -167,36 +171,14 @@
         <translation>Direitos de autor (c) MX Linux</translation>
     </message>
     <message>
-        <source>License</source>
-        <translation type="vanished">Licença</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Registo de alterações</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Fechar</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="464"/>
-        <source>About %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licença do %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajuda do %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -206,12 +188,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="493"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation>Foi seleccionado o MX Test Repo. Não é recomendado que seja deixado activado nem que sejam actualizados todos os pacotes actualizáveis a partir das versões do mesmo.</translation>
+        <translation>Foi seleccionado o Repositório MX Test (~/mx/testrepo/~). Não é recomendado que este repositório seja deixado activado nem que todos os pacotes actualizáveis sejam actualizados a partir das versões deste repositório.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="494"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation>A opção mais segura é instalar pacotes um a um com o MX-Instalador de Pacotes.</translation>
+        <translation>A opção mais segura é instalar um pacote de cada vez com o MX Instalador de Pacotes.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
@@ -221,23 +203,23 @@
     <message>
         <location filename="../mainwindow.cpp" line="597"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>O netselect-apt não conseguiu detectar o repositório mais rápido</translation>
+        <translation>O netselect-apt não consegue detectar qual é o repositório mais rápido.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="607"/>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Could not detect fastest repo.</source>
-        <translation>Não foi possível detectar o repositório mais rápido</translation>
+        <translation>Não foi possível detectar qual é o repositório mais rápido.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -247,84 +229,61 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation>As origens APT iniciais foram restauradas para como no lançamento. Os ficheiros de origens adicionados pelo utilizador a /etc/apt/sources.list.d/ não foram tocados.</translation>
+        <translation>As origens APT originais foram restauradas para o estado de lançamento. Os ficheiros de origens adicionados pelo utilizador a /etc/apt/sources.list.d/ não foram alterados.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Deve executar este programa como root.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Licença</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Registo de alterações</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Cancelar</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Fechar</translation>
+        <translation>Houve um erro ao gravar o ficheiro: %1. Verifique se tem espaço livre suficiente na sua unidade</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">Erro</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licença</translation>
+        <translation>Licença</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Registo de alterações</translation>
+        <translation>Registo de alterações</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Fechar</translation>
+        <translation>&amp;Fechar</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>Erro</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>O utilizador parece ser o root; para usar este programa, sair e voltar a entrar como utilizador normal.</translation>
     </message>
 </context>
 </TS>

@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="es">
 <context>
     <name>MainWindow</name>
     <message>
@@ -101,11 +99,6 @@
         <translation>Aplicar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>Por favor, espere...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
@@ -148,8 +141,19 @@
         <translation>So se pudo cambiar el repositorio.</translation>
     </message>
     <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Acerca de MX Manejador de repositorios</translation>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation>Cancelar</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>Por favor, espere...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>About %1</source>
+        <translation>Acerca de %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
@@ -167,36 +171,14 @@
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <source>License</source>
-        <translation type="vanished">Licencia</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Registro de cambios</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Cancel</source>
-        <translation>Cancelar</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Close</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="464"/>
-        <source>About %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Licencia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Ayuda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -232,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -247,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
@@ -267,64 +249,41 @@
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Debe ejecutar este programa como root.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Licencia</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Registro de cambios</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Cancelar</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Close</translation>
+        <translation>Hubo un error al escribir el archivo: %1. Por favor, compruebe si tiene suficiente espacio libre en su disco</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">Error</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Licencia</translation>
+        <translation>Licencia</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Registro de cambios</translation>
+        <translation>Registro de cambios</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Cancelar</translation>
+        <translation>Cancelar</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Close</translation>
+        <translation>&amp;Cerrar</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Parece que ha iniciado sesión como root, cierre la sesión e inicie sesión como usuario normal para utilizar este programa.</translation>
     </message>
 </context>
 </TS>

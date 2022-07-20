@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="de">
 <context>
     <name>MainWindow</name>
     <message>
@@ -102,11 +100,6 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation>Anwenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>Bitte warten...</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="126"/>
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
@@ -149,8 +142,19 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation>Änderung des Repo-Servers nicht möglich</translation>
     </message>
     <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Über MX Repo Manager</translation>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>Bitte warten...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>About %1</source>
+        <translation>Über %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
@@ -168,36 +172,14 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <source>License</source>
-        <translation type="vanished">Lizenz</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Changelog</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Cancel</source>
-        <translation>Abbrechen</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Close</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="464"/>
-        <source>About %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Lizenz</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Hilfe</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -233,12 +215,12 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -248,17 +230,17 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
@@ -268,64 +250,41 @@ Wählen Sie das APT-Repository, das Sie verwenden möchten:</translation>
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Dieses Programm muss vom Benutzer &quot;root&quot; ausgeführt werden.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Lizenz</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Changelog</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Abbrechen</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Close</translation>
+        <translation>Beim Schreiben der Datei %1 gab es einen Fehler. Bitte prüfen Sie, ob genügend freier Speicherplatz auf dem Laufwerk vorhanden ist</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">Fehler</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Lizenz</translation>
+        <translation>Lizenz</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Changelog</translation>
+        <translation>Änderungsprotokoll</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Abbrechen</translation>
+        <translation>Abbrechen</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Close</translation>
+        <translation>&amp;Schließen</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>Fehler</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Sie sind als Benutzer “root” am System angemeldet. Bitte melden Sie sich ab und melden sich als normaler Benutzer an, um dieses Programm zu verwenden.</translation>
     </message>
 </context>
 </TS>

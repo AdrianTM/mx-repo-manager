@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ru">
 <context>
     <name>MainWindow</name>
     <message>
@@ -73,7 +71,7 @@
     <message>
         <location filename="../mainwindow.ui" line="388"/>
         <source>About...</source>
-        <translation>O...</translation>
+        <translation>О программе...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="395"/>
@@ -99,11 +97,6 @@
         <location filename="../mainwindow.ui" line="440"/>
         <source>Apply</source>
         <translation>Применить</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="423"/>
-        <source>Please wait...</source>
-        <translation>Пожалуйста, ждите...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
@@ -148,8 +141,19 @@
         <translation>Не удалось изменить репозиторий.</translation>
     </message>
     <message>
-        <source>About MX Repo Manager</source>
-        <translation type="vanished">Об  MX Менеджере репозиториев</translation>
+        <location filename="../mainwindow.cpp" line="417"/>
+        <source>Cancel</source>
+        <translation>Отменить</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="423"/>
+        <source>Please wait...</source>
+        <translation>Пожалуйста, ждите...</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="464"/>
+        <source>About %1</source>
+        <translation>О %1</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
@@ -167,36 +171,14 @@
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <source>License</source>
-        <translation type="vanished">Лицензия</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="vanished">Список изменений</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="417"/>
-        <source>Cancel</source>
-        <translation>Отменить</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="vanished">&amp;Закрыть</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="464"/>
-        <source>About %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>%1 License</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Лицензия</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>%1 Help</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 Справка</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
@@ -211,7 +193,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="494"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation>Безопасной является возможность устанавливать отдельные пакеты через MX Установщик Пакетов.</translation>
+        <translation>Безопасной является возможность устанавливать отдельные пакеты через MX Установщик пакетов.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
@@ -232,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -247,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
@@ -267,64 +249,41 @@
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QApplication</name>
-    <message>
-        <source>You must run this program as root.</source>
-        <translation type="vanished">Вы должны запустить программу от имени суперпользователя.</translation>
-    </message>
-    <message>
-        <source>License</source>
-        <translation type="obsolete">Лицензия</translation>
-    </message>
-    <message>
-        <source>Changelog</source>
-        <translation type="obsolete">Список изменений</translation>
-    </message>
-    <message>
-        <source>Cancel</source>
-        <translation type="obsolete">Отменить</translation>
-    </message>
-    <message>
-        <source>&amp;Close</source>
-        <translation type="obsolete">&amp;Закрыть</translation>
+        <translation>Ошибка при записи файла: %1. Проверьте наличие свободного места на диске.</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="63"/>
-        <source>Error</source>
-        <translation type="unfinished">Ошибка</translation>
-    </message>
-    <message>
-        <location filename="../main.cpp" line="64"/>
-        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../about.cpp" line="41"/>
         <source>License</source>
-        <translation type="unfinished">Лицензия</translation>
+        <translation>Лицензия</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
         <source>Changelog</source>
-        <translation type="unfinished">Список изменений</translation>
+        <translation>Список изменений</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
-        <translation type="unfinished">Отменить</translation>
+        <translation>Отменить</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
-        <translation type="unfinished">&amp;Закрыть</translation>
+        <translation>&amp;Закрыть</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="63"/>
+        <source>Error</source>
+        <translation>Ошибка</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="64"/>
+        <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
+        <translation>Программа запущена суперпользователем. Для использования программы войдите в систему как обычный пользователь.</translation>
     </message>
 </context>
 </TS>
