@@ -214,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"/>
+        <translation>S’kuptohet dot nëse ky aplikacion po xhiron në antiX, apo në MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"/>
+        <translation>S’u pikas version MX-i, ose është jashtë intervali: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -229,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"/>
+        <translation>S’u çngjesh dot kartela e shkarkuar.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"/>
+        <translation>Po aktivizohet AHS</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"/>
+        <translation>A përdorni depon AHS (Advanced Hardware Stack)?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>

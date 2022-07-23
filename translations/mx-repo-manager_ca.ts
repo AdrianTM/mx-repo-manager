@@ -214,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"/>
+        <translation>No sé si aquesta aplicació s&apos;executa a antiX o MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"/>
+        <translation>Versió de MX no detectada o fora de marges:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -229,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"/>
+        <translation>No puc descomprimir el fitxer descarregat.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"/>
+        <translation>Activant AHS</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"/>
+        <translation>Esteu usant el dipòsit AHS  (Advanced Hardware Stack)?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>

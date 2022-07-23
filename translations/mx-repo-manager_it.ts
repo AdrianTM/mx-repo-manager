@@ -214,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"/>
+        <translation>Impossibile stabilire se questa applicazione sia in esecuzione su antiX o MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"/>
+        <translation>Versione di MX non rilevata o fuori numerazione:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -229,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"/>
+        <translation>Impossibile scomprimere il file scaricato.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"/>
+        <translation>Abilitazione di AHS</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"/>
+        <translation>Usi il repo AHS (Advanced Hardware Stack)?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
