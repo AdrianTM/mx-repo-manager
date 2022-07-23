@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 23 Jul 2022 11:33:46 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 22.7
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (22.7) mx; urgency=medium
+ .
+   * translation refresh
+Checksums-Sha1:
+ a22c0a382994322b486b5bb03960fa7737d71751 630 mx-repo-manager_22.7.dsc
+ 979121bec5b46801c1191a405c63a38e6952998f 451016 mx-repo-manager_22.7.tar.xz
+ 17bfbfc223f1a75b4415d97ecf77290623a05bd1 10499 mx-repo-manager_22.7_amd64.buildinfo
+ a86cdf66c7db72ce00f63069c2908959cd21b083 129296 mx-repo-manager_22.7_amd64.deb
+Checksums-Sha256:
+ e69c101262578902cacb332eb1d6d0e315dd798208ed06cf505dd965a2651b50 630 mx-repo-manager_22.7.dsc
+ c92fa8f8a430689b7e442eeeccb07b5f97a9c1b8aba5efe3c95fa4234aa23937 451016 mx-repo-manager_22.7.tar.xz
+ 06223a34ad8cb2a811168f0d6ee3e8e08128eb1a59e050513883df485693ec83 10499 mx-repo-manager_22.7_amd64.buildinfo
+ 7a33773796c57a0576e71639d1cf9af5c4e6e0a096d4a077c6c008e0436fc4bd 129296 mx-repo-manager_22.7_amd64.deb
+Files:
+ f2d25eea1189b1ee03fca820eba399a3 630 admin optional mx-repo-manager_22.7.dsc
+ 818a0d53e87ae2035f3552216c25d571 451016 admin optional mx-repo-manager_22.7.tar.xz
+ 16b0b0cbf98b8e0df9c577a840a509d5 10499 admin optional mx-repo-manager_22.7_amd64.buildinfo
+ 2d79bfffe57472642af96e315d1ce9c7 129296 admin optional mx-repo-manager_22.7_amd64.deb
