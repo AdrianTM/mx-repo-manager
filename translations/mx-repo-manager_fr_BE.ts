@@ -103,7 +103,7 @@
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="687"/>
         <source>Success</source>
-        <translation>Réussite de l&apos;installation</translation>
+        <translation>Installation réussie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="126"/>
@@ -214,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de savoir si cette application fonctionne sur antiX ou MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"/>
+        <translation>Version MX non détectée ou non disponible: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -229,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de décompresser le fichier téléchargé.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"/>
+        <translation>Activation AHS</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"/>
+        <translation>Utilisez-vous le dépôt AHS (Advanced Hardware Stack)?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
@@ -249,7 +249,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation>Il y a eu une erreur dans l&apos;écriture du fichier : %1. Veuillez vérifier si vous avez suffisamment d&apos;espace libre sur votre disque dur</translation>
+        <translation>Il y a eu une erreur dans l&apos;écriture du fichier: %1. Veuillez vérifier si vous avez suffisamment d&apos;espace libre sur votre disque dur</translation>
     </message>
 </context>
 <context>
