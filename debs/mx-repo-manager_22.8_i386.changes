@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 17 Aug 2022 22:00:15 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 22.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (22.8) mx; urgency=medium
+ .
+   * Fix: launching Firefox from Help
+Checksums-Sha1:
+ 2b187c7974c6b58691621c7ddbadf3cef295c77a 10057 mx-repo-manager_22.8_i386.buildinfo
+ 93e2d7ea369c9fa121355f0fe6371ca007ff2632 132264 mx-repo-manager_22.8_i386.deb
+Checksums-Sha256:
+ d7aa6ccad3257d9e79ac8be0429fc2be9c7fc10f679c73e118e5cf50b415fbd1 10057 mx-repo-manager_22.8_i386.buildinfo
+ eef9f7beb35d92aae180cd9e35d5e63ee5546f3447822fb485a71fa212e4176b 132264 mx-repo-manager_22.8_i386.deb
+Files:
+ 758128448217aeb1033cf856958b6cae 10057 admin optional mx-repo-manager_22.8_i386.buildinfo
+ 5e7581d2393ba6f1ce89bb5168b63c9f 132264 admin optional mx-repo-manager_22.8_i386.deb
