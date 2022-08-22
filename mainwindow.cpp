@@ -467,7 +467,7 @@ void MainWindow::pushAbout_clicked()
                        tr("Program for choosing the default APT repository") +
                        R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)" +
                        tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-                       QStringLiteral("/usr/share/doc/mx-repo-manager/license.html"), tr("%1 License").arg(this->windowTitle()), true);
+                       QStringLiteral("/usr/share/doc/mx-repo-manager/license.html"), tr("%1 License").arg(this->windowTitle()));
     this->show();
 }
 
@@ -481,7 +481,7 @@ void MainWindow::pushHelp_clicked()
     if (lang.startsWith(QLatin1String("fr")))
         url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts");
 
-    displayDoc(url, tr("%1 Help").arg(this->windowTitle()), true);
+    displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
 }
 
 void MainWindow::treeWidget_itemChanged(QTreeWidgetItem * item, int column)
