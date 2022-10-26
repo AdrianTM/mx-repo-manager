@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt_BR">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="pt_BR">
 <context>
     <name>MainWindow</name>
     <message>
@@ -13,7 +11,7 @@
         <location filename="../mainwindow.ui" line="32"/>
         <location filename="../mainwindow.cpp" line="549"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>Selecione o repositório APT que você pretende usar:</translation>
+        <translation>Selecione o repositório APT que você pretende utilizar:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
@@ -28,7 +26,7 @@
     <message>
         <location filename="../mainwindow.ui" line="110"/>
         <source>search</source>
-        <translation>procurar</translation>
+        <translation>Procurar</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="168"/>
@@ -112,7 +110,7 @@
         <location filename="../mainwindow.cpp" line="393"/>
         <location filename="../mainwindow.cpp" line="689"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>A sua nova escolha terá efeito na próxima vez que as fontes (sources) forem atualizadas.</translation>
+        <translation>A sua nova escolha terá efeito na próxima vez que as fontes forem atualizadas (sudo apt update).</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="222"/>
@@ -135,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="674"/>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>Error</source>
-        <translation>Erro</translation>
+        <translation>Ocorreu um Erro</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
@@ -216,12 +214,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="643"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation>Não foi possível identificar se este aplicativo está sendo executado no antiX Linux ou MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="650"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation>A versão do MX não foi detectada ou está fora do alcance:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
@@ -231,17 +229,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="674"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Não foi possível descompactar o arquivo baixado/transferido.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation>Ativando o AHS</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation>Você que utilizar o repositório AHS (Advanced Hardware Stack ou Pilha de Equipamentos Avançado)?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="688"/>
@@ -251,29 +249,29 @@
     <message>
         <location filename="../mainwindow.cpp" line="734"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation>Ocorreu um erro ao gravar o arquivo: %1. Por favor, verifique se você tem espaço livre suficiente no seu dispositivo de armazenamento</translation>
+        <translation>Ocorreu um erro ao gravar o arquivo %1. Por favor, verifique se você tem espaço livre suficiente no seu dispositivo de armazenamento</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="50"/>
+        <location filename="../about.cpp" line="41"/>
         <source>License</source>
         <translation>Licença</translation>
     </message>
     <message>
+        <location filename="../about.cpp" line="42"/>
         <location filename="../about.cpp" line="51"/>
-        <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
         <translation>Relatório de alterações</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="52"/>
+        <location filename="../about.cpp" line="43"/>
         <source>Cancel</source>
         <translation>Cancelar</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="70"/>
+        <location filename="../about.cpp" line="63"/>
         <source>&amp;Close</source>
         <translation>&amp;Fechar</translation>
     </message>
