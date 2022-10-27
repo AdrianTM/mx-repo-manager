@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 20:05:50 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 22.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (22.10) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ 4218eb996382f874e011505e3bbb968def3dce28 634 mx-repo-manager_22.10.dsc
+ 05d9ee8596c1addee3995f611bd2de5e5ca6e4eb 481308 mx-repo-manager_22.10.tar.xz
+ 40d4f404b3475ed0a32a1a7489b4ff0318f582e1 10506 mx-repo-manager_22.10_amd64.buildinfo
+ deafd6e5b67afb4c6c39e5fae88b7bafb291d2d6 131092 mx-repo-manager_22.10_amd64.deb
+Checksums-Sha256:
+ b7c4f6bf7e250fa06e3c1c2648c0f5c9fb33587717bb562d5dd51ef1237287c1 634 mx-repo-manager_22.10.dsc
+ 87aefc4d4a63a8cf3be849fed3ad435dae1290a5bce5fd5c3a17319f0d39c1e3 481308 mx-repo-manager_22.10.tar.xz
+ b430b70ba8a801040c472088c47c7eb1926e247ded1543a2c3b207d7649ad986 10506 mx-repo-manager_22.10_amd64.buildinfo
+ 74f50138bfb8c2827e131b704f60c3c4986e8a046c7a76aa2d65f343a9409f28 131092 mx-repo-manager_22.10_amd64.deb
+Files:
+ 094409dc88fef31eb4c690f6abaed54a 634 admin optional mx-repo-manager_22.10.dsc
+ c9a044dd35ae76b256e8edcd9582b647 481308 admin optional mx-repo-manager_22.10.tar.xz
+ 254cf14f14b37872bf3f449a620a81da 10506 admin optional mx-repo-manager_22.10_amd64.buildinfo
+ 1b54a81c80bb63430416949c285f1066 131092 admin optional mx-repo-manager_22.10_amd64.deb

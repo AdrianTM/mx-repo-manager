@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Wed, 26 Oct 2022 20:05:50 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 22.10
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Dolphin Oracle <dolphinoracle@gmail.com>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (22.10) mx; urgency=medium
+ .
+   * update translations
+Checksums-Sha1:
+ 8498519bb16c5efa941308f31d3e4a8b32374898 10210 mx-repo-manager_22.10_i386.buildinfo
+ 9eaa3ee981e950c2d4b05a6b555aa6254e05c38f 134024 mx-repo-manager_22.10_i386.deb
+Checksums-Sha256:
+ ae2032a4360c4e905ffe06567408f7e484e88c983700945fcc4f0a321181e83a 10210 mx-repo-manager_22.10_i386.buildinfo
+ 2d8a66d96a4e7069fc8b04936da58c6475e09fe74c6c4de736baa19e4031a2e9 134024 mx-repo-manager_22.10_i386.deb
+Files:
+ 8de150221cadd5c64b40ffcd927abeb5 10210 admin optional mx-repo-manager_22.10_i386.buildinfo
+ 01b599d45b6baaf01bbe8a16e6a8df08 134024 admin optional mx-repo-manager_22.10_i386.deb
