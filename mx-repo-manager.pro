@@ -20,7 +20,7 @@
 # * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
-QT       += core gui network widgets
+QT       += network widgets
 CONFIG   += c++1z
 
 TARGET = mx-repo-manager
