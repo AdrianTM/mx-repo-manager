@@ -1,3 +1,10 @@
+mx-repo-manager (23.3) mx; urgency=medium
+
+  * Detect proxy
+  * Update translations
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 11 Mar 2023 15:11:33 -0500
+
 mx-repo-manager (22.10) mx; urgency=medium
 
   * update translations
