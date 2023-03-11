@@ -27,6 +27,7 @@
 #include <QDebug>
 #include <QDir>
 #include <QMetaEnum>
+#include <QNetworkProxyFactory>
 #include <QNetworkReply>
 #include <QProgressBar>
 #include <QRadioButton>
@@ -697,6 +698,11 @@ void MainWindow::pb_restoreSources_clicked()
 
 bool MainWindow::checkRepo(const QString &repo)
 {
+    QNetworkProxyQuery query {QUrl(repo)};
+    QList<QNetworkProxy> proxies = QNetworkProxyFactory::systemProxyForQuery(query);
+    if (!proxies.isEmpty())
+        manager.setProxy(proxies.first());
+
     QNetworkRequest request;
     request.setRawHeader("User-Agent",
                          qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
@@ -727,6 +733,11 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
         qDebug() << "Could not open file:" << file.fileName();
         return false;
     }
+
+    QNetworkProxyQuery query {QUrl(url)};
+    QList<QNetworkProxy> proxies = QNetworkProxyFactory::systemProxyForQuery(query);
+    if (!proxies.isEmpty())
+        manager.setProxy(proxies.first());
 
     QNetworkRequest request;
     request.setRawHeader("User-Agent", QApplication::applicationName().toUtf8() + "/"
