@@ -1,0 +1,51 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 30 Apr 2023 23:34:21 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 23.5
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.5) mx; urgency=medium
+ .
+   * Make sure /etc/apt/source.list file is read if present
+   * Run apt-get update when closing the app if sources are changed
+   * Preserve "security" repo line because it might not be available on the mirror
+   * Find default mx repo even if commented out in mx.list
+   * Allow for tab separators in .list files
+   * Update translations
+Checksums-Sha1:
+ 5f8b09293882f231f8ceaf679936e2a9d67ab6e1 1192 mx-repo-manager_23.5.dsc
+ db1cb445d509a87a402bef5136a05aa0191614f6 118632 mx-repo-manager_23.5.tar.xz
+ ff830c017e94b7cb2d287938fe300348e47e721a 10767 mx-repo-manager_23.5_amd64.buildinfo
+ 811bbacbe47947728cf9cd2f5a5c0bde2cb21fe7 138508 mx-repo-manager_23.5_amd64.deb
+Checksums-Sha256:
+ 630dab948d1f1f2256cf743d096810a5208a73c4db4038d7edcca99a90f4dc8f 1192 mx-repo-manager_23.5.dsc
+ 8b5b50abb5aa7d3def76ce2e5ad1d9ceb8e6788d0a46c2706b188c98d633c145 118632 mx-repo-manager_23.5.tar.xz
+ 48894f6d61b1a378a575289029b4a5825d6e6fcb283fa46f369bc4e0eaee8995 10767 mx-repo-manager_23.5_amd64.buildinfo
+ 261ce055b15967c59ff693b9e6601864713e3aef1f470d25766dcaba535853a6 138508 mx-repo-manager_23.5_amd64.deb
+Files:
+ 84e83d9ef77f8e64db5af1675af47bbe 1192 admin optional mx-repo-manager_23.5.dsc
+ b6a45c7a0ed9b97dc5dc26caab6809c7 118632 admin optional mx-repo-manager_23.5.tar.xz
+ d4c2268f0a397e4f7b03721116c83bf3 10767 admin optional mx-repo-manager_23.5_amd64.buildinfo
+ 114a049253becdd7bb04b2e398e42a45 138508 admin optional mx-repo-manager_23.5_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRQNIETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBrbB/96TH96Prp6s1kF9btPAvDzl6MQ9ZnH
+0xm1bLhgAzBI55fILnzgouX9NkbbssCPblRFNzdJhvijpXTdjy4rHF0Bqeauy0Ck
+Y+ypxcQj5WjC88nUULmYMoKVCSNBPJnF90+fCFnfaqpHLD88n38AK2zjSNDfc5Ki
+WIPNWlcEE0oNvpzLPXl/jaSfEoA6NQBUBRxdDLEVvL72NdwoLwEQ7Pk1YXt6/MiB
+SxX5/Pe5zXkISOCt0D3BniMNw3JTYoxziozsGED5o/3PntD3KhyOr+qvdqvnLPVa
+ungn/HKm3iahfIfKTLCVogJKrPsNfN1i0cXuNa8OtfOseeUf3wM9D+E6
+=wqwA
+-----END PGP SIGNATURE-----
