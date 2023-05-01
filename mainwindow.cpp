@@ -476,7 +476,7 @@ void MainWindow::setConnections()
     connect(ui->pushOk, &QPushButton::clicked, this, &MainWindow::pushOk_clicked);
     connect(ui->tabWidget, &QTabWidget::currentChanged, this, &MainWindow::tabWidget_currentChanged);
     connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &MainWindow::treeWidget_itemChanged);
-    connect(ui->treeWidgetDeb, &QTreeWidget::itemChanged, this, &MainWindow::treeWidgetDeb_itemChanged);
+    connect(ui->treeWidgetDeb, &QTreeWidget::itemChanged, this, &MainWindow::treeWidget_itemChanged);
 }
 
 void MainWindow::setProgressBar()
@@ -571,6 +571,7 @@ void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
 {
     ui->pushOk->setEnabled(true);
     ui->treeWidget->blockSignals(true);
+    ui->treeWidgetDeb->blockSignals(true);
     if (item->text(column).contains(QLatin1String("/mx/testrepo/")) && item->checkState(column) == Qt::Checked)
         QMessageBox::warning(this, tr("Warning"),
                              tr("You have selected MX Test Repo. It's not recommended to leave it enabled or to "
@@ -598,34 +599,8 @@ void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
     }
     changes << text << new_text << file.fileName();
     queued_changes << changes;
-    ui->treeWidget->blockSignals(false);
-}
-
-void MainWindow::treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column)
-{
-    ui->pushOk->setEnabled(true);
-    ui->treeWidgetDeb->blockSignals(true);
-    QFile file;
-    QString new_text;
-    const QString file_name {item->parent()->text(0)};
-    const QString text {item->text(column)};
-    QStringList changes;
-    if (file_name == QLatin1String("sources.list"))
-        file.setFileName("/etc/apt/" + file_name);
-    else
-        file.setFileName("/etc/apt/sources.list.d/" + file_name);
-
-    if (item->checkState(column) == Qt::Checked) {
-        new_text = text;
-        new_text.remove(QRegularExpression(QStringLiteral("#\\s*")));
-        item->setText(column, new_text);
-    } else {
-        new_text = "# " + text;
-        item->setText(column, new_text);
-    }
-    changes << text << new_text << file.fileName();
-    queued_changes << changes;
     ui->treeWidgetDeb->blockSignals(false);
+    ui->treeWidget->blockSignals(false);
 }
 
 void MainWindow::tabWidget_currentChanged()
