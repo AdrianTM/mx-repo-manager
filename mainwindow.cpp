@@ -82,7 +82,12 @@ MainWindow::MainWindow(QWidget *parent)
     }
 }
 
-MainWindow::~MainWindow() { delete ui; }
+MainWindow::~MainWindow()
+{
+    delete ui;
+    if (sources_changed)
+        QProcess::startDetached("apt-get", {"update"});
+}
 
 // refresh repo info
 void MainWindow::refresh()
@@ -144,6 +149,7 @@ void MainWindow::replaceDebianRepos(QString url)
         out << content;
         file.close();
     }
+    sources_changed = true;
     QMessageBox::information(this, tr("Success"),
                              tr("Your new selection will take effect the next time sources are updated."));
 }
@@ -455,6 +461,7 @@ void MainWindow::replaceRepos(const QString &url)
                                  tr("Your new selection will take effect the next time sources are updated."));
     else
         QMessageBox::critical(this, tr("Error"), tr("Could not change the repo."));
+    sources_changed = true;
 }
 
 void MainWindow::setConnections()
@@ -524,6 +531,7 @@ void MainWindow::pushOk_clicked()
             file_name = changes.at(2);
             QString cmd = QStringLiteral("sed -i 's;%1;%2;g' %3").arg(text, new_text, file_name);
             shell->run(cmd);
+            sources_changed = true;
         }
         queued_changes.clear();
     }
@@ -772,6 +780,7 @@ void MainWindow::pb_restoreSources_clicked()
                                 "files in /etc/apt/sources.list.d/ have not been touched.")
                                  + "\n\n"
                                  + tr("Your new selection will take effect the next time sources are updated."));
+    sources_changed = true;
 }
 
 bool MainWindow::checkRepo(const QString &repo)
