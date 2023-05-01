@@ -759,6 +759,7 @@ bool MainWindow::checkRepo(const QString &repo)
 {
     QNetworkProxyQuery query {QUrl(repo)};
     QList<QNetworkProxy> proxies = QNetworkProxyFactory::systemProxyForQuery(query);
+    QNetworkAccessManager manager;
     if (!proxies.isEmpty())
         manager.setProxy(proxies.first());
 
@@ -766,7 +767,7 @@ bool MainWindow::checkRepo(const QString &repo)
     request.setRawHeader("User-Agent",
                          qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
     request.setUrl(QUrl(repo));
-    reply = manager.head(request);
+    QNetworkReply *reply = manager.head(request);
 
     auto error {QNetworkReply::NoError};
     QEventLoop loop;
@@ -779,7 +780,6 @@ bool MainWindow::checkRepo(const QString &repo)
         loop.quit();
     }); // manager.setTransferTimeout(time) // only in Qt >= 5.15
     loop.exec();
-    reply->disconnect();
     if (error == QNetworkReply::NoError)
         return true;
     qDebug() << "No reponse from repo:" << reply->url() << error;
@@ -795,6 +795,7 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
 
     QNetworkProxyQuery query {QUrl(url)};
     QList<QNetworkProxy> proxies = QNetworkProxyFactory::systemProxyForQuery(query);
+    QNetworkAccessManager manager;
     if (!proxies.isEmpty())
         manager.setProxy(proxies.first());
 
@@ -803,15 +804,14 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
                                            + QApplication::applicationVersion().toUtf8() + " (linux-gnu)");
     request.setUrl(QUrl(url));
 
-    reply = manager.get(request);
+    QNetworkReply *reply = manager.get(request);
     QEventLoop loop;
 
     bool success = true;
     connect(reply, &QNetworkReply::readyRead,
-            [this, &file, &success]() { success = file.write(reply->readAll()) > 0; });
+            [&reply, &file, &success]() { success = file.write(reply->readAll()) > 0; });
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
-    reply->disconnect();
 
     if (!success) {
         QMessageBox::warning(

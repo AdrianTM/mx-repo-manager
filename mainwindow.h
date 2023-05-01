@@ -28,7 +28,6 @@
 #include <QDir>
 #include <QListWidgetItem>
 #include <QMessageBox>
-#include <QNetworkAccessManager>
 #include <QProgressDialog>
 #include <QSettings>
 #include <QTimer>
@@ -103,9 +102,7 @@ private:
     QTimer timer;
     bool sources_changed {};
 
-    QNetworkAccessManager manager;
-    QNetworkReply *reply {};
-    bool checkRepo(const QString &repo);
+    static bool checkRepo(const QString &repo);
     bool downloadFile(const QString &url, QFile &file);
 };
 
