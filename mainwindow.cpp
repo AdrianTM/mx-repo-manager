@@ -95,34 +95,54 @@ void MainWindow::refresh()
 }
 
 // replace default Debian repos
-void MainWindow::replaceDebianRepos(const QString &url)
+void MainWindow::replaceDebianRepos(QString url)
 {
     // Apt source files that are present by default in MX and /etc/apt/sources.list
     // which might be the default in some Debian releases
-    QStringList files {"/etc/apt/sources.list.d/debian.list", "/etc/apt/sources.list.d/debian-stable-updates.list",
-                       "/etc/apt/sources.list"};
+    const QStringList files {"/etc/apt/sources.list.d/debian.list",
+                             "/etc/apt/sources.list.d/debian-stable-updates.list", "/etc/apt/sources.list"};
+    const QDir backupDir(QStringLiteral("/etc/apt/sources.list.d/backups"));
 
     // make backup folder
-    if (!QFileInfo::exists(QStringLiteral("/etc/apt/sources.list.d/backups")))
+    if (!backupDir.exists())
         QDir().mkdir(QStringLiteral("/etc/apt/sources.list.d/backups"));
 
-    QString cmd;
-    for (const QString &file : files) {
-        QFileInfo fileinfo(file);
-
-        // backup file
-        cmd = "cp " + file + " /etc/apt/sources.list.d/backups/" + fileinfo.fileName() + ".$(date +%s)";
-        shell->run(cmd);
-
-        cmd = "sed -i 's;deb\\s.*/debian/*[^-];deb " + url + " ;' " + file; // replace deb lines in file
-        shell->run(cmd);
-        cmd = "sed -i 's;deb-src\\s.*/debian/*[^-];deb-src " + url + ";' " + file; // replace deb-src lines in file
-        shell->run(cmd);
-        if (url == QLatin1String("https://deb.debian.org/debian/")) {
-            cmd = "sed -i 's;deb\\s*http://security.debian.org/;deb https://deb.debian.org/debian-security/;' "
-                  + file; // replace security.debian.org in file
-            shell->run(cmd);
+    for (const QString &filePath : files) {
+        if (!QFile::exists(filePath))
+            continue;
+        QFileInfo fileInfo(filePath);
+        const QString &backupFilePath = backupDir.absoluteFilePath(
+            fileInfo.fileName() + "." + QDateTime::currentDateTime().toString("yyyyMMdd_HHmmss"));
+        if (!QFile::copy(filePath, backupFilePath)) {
+            qWarning() << "Failed to backup" << filePath;
+            continue;
         }
+        QFile file(filePath);
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            qWarning() << "Count not open file: " << file.fileName() << file.errorString();
+            continue;
+        }
+
+        url.remove(QRegularExpression("/$"));
+        QRegularExpression re {"(ftp|http[s]?://.*/debian)"};
+
+        QString content;
+        QTextStream in(&file);
+        while (!in.atEnd()) {
+            QString line = in.readLine().trimmed();
+            QRegularExpressionMatch match = re.match(line);
+            if (!line.contains("security")) // Don't replace security line since it might not be available on the mirror
+                line.replace(match.captured(1), url);
+            content.append(line).append("\n");
+        }
+        file.close();
+        if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            qWarning() << "Count not open file: " << file.fileName() << file.errorString();
+            continue;
+        }
+        QTextStream out(&file);
+        out << content;
+        file.close();
     }
     QMessageBox::information(this, tr("Success"),
                              tr("Your new selection will take effect the next time sources are updated."));
@@ -133,7 +153,7 @@ QStringList MainWindow::readMXRepos()
 {
     QFile file(QStringLiteral("/usr/share/mx-repo-list/repos.txt"));
     if (!file.open(QIODevice::ReadOnly))
-        qDebug() << "Count not open file: " << file.fileName() << file.errorString();
+        qWarning() << "Count not open file: " << file.fileName() << file.errorString();
 
     QString file_content = file.readAll().trimmed();
     file.close();
@@ -157,7 +177,7 @@ void MainWindow::getCurrentRepo()
 {
     QFile file("/etc/apt/sources.list.d/mx.list");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qDebug() << "Could not open file:" << file.fileName() << file.errorString();
+        qWarning() << "Could not open file:" << file.fileName() << file.errorString();
         return;
     }
     QTextStream in(&file);
@@ -303,7 +323,7 @@ QStringList MainWindow::loadAptFile(const QString &file)
 {
     QFile aptFile(file);
     if (!aptFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qDebug() << "Could not open file: " << aptFile << aptFile.errorString();
+        qWarning() << "Could not open file: " << aptFile << aptFile.errorString();
         return QStringList();
     }
 
@@ -470,9 +490,21 @@ QFileInfoList MainWindow::listAptFiles()
 {
     const QDir apt_dir(QStringLiteral("/etc/apt/sources.list.d"));
     QFileInfoList list {apt_dir.entryInfoList(QStringList("*.list"))};
-    const QFile file(QStringLiteral("/etc/apt/sources.list"));
-    if (file.size() != 0 && shell->run("grep '^#*[ ]*deb' " + file.fileName(), true))
-        list << file;
+    QFile file(QStringLiteral("/etc/apt/sources.list"));
+    if (file.size() != 0) {
+        if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            QTextStream in(&file);
+            QRegularExpression re(QStringLiteral("^#*[ ]*deb"));
+            while (!in.atEnd()) {
+                QString line = in.readLine();
+                if (re.match(line).hasMatch()) {
+                    list << file;
+                    break;
+                }
+            }
+            file.close();
+        }
+    }
     return list;
 }
 
@@ -643,6 +675,7 @@ void MainWindow::pushFastestDebian_clicked()
         return;
     }
     QString repo = shell->getCmdOut("set -o pipefail; grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2");
+    // replaceDebianRepos("http://ftp.us.debian.org/debian/");
     this->blockSignals(false);
 
     if (success && checkRepo(repo)) {
@@ -773,7 +806,7 @@ bool MainWindow::checkRepo(const QString &repo)
 bool MainWindow::downloadFile(const QString &url, QFile &file)
 {
     if (!file.open(QIODevice::WriteOnly)) {
-        qDebug() << "Could not open file:" << file.fileName() << file.errorString();
+        qWarning() << "Could not open file:" << file.fileName() << file.errorString();
         return false;
     }
 

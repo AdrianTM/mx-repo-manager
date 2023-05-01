@@ -54,8 +54,8 @@ public:
     QString listMXurls;
     QString version;
 
-    QFileInfoList listAptFiles();
     QStringList readMXRepos();
+    static QFileInfoList listAptFiles();
     static QIcon getFlag(QString country);
     static QString getDebianVerName(int ver);
     static QStringList loadAptFile(const QString &file);
@@ -67,7 +67,7 @@ public:
     void extractUrls(const QStringList &repos);
     void getCurrentRepo();
     void refresh();
-    void replaceDebianRepos(const QString &url);
+    void replaceDebianRepos(QString url);
     void replaceRepos(const QString &url);
     void setConnections();
     void setProgressBar();
