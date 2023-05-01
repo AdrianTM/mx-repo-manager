@@ -207,36 +207,39 @@ int MainWindow::getDebianVerNum()
         QString line = in.readLine();
         list = line.split(".");
         file.close();
+    } else {
+        qCritical() << "Could not open /etc/debian_version:" << file.errorString() << "Assumes Bullseye";
+        return Version::Bullseye;
     }
     bool ok = false;
     int ver = list.at(0).toInt(&ok);
     if (ok)
         return ver;
-    else if (list.at(0).split(QStringLiteral("/")).at(0) == QLatin1String("bullseye"))
-        return Version::Bullseye;
-    else if (list.at(0).split(QStringLiteral("/")).at(0) == QLatin1String("bookworm"))
-        return Version::Bookworm;
-    else
-        return 0; // unknown
+    else {
+        QString verName = list.at(0).split(QStringLiteral("/")).at(0);
+        if (verName == QLatin1String("bullseye"))
+            return Version::Bullseye;
+        else if (verName == QLatin1String("bookworm"))
+            return Version::Bookworm;
+        else {
+            qCritical() << "Unknown Debian version:" << ver << "Assumes Bullseye";
+            return Version::Bullseye;
+        }
+    }
 }
 
 QString MainWindow::getDebianVerName(int ver)
 {
-    switch (ver) {
-    case Version::Jessie:
-        return QStringLiteral("jessie");
-    case Version::Stretch:
-        return QStringLiteral("stretch");
-    case Version::Buster:
-        return QStringLiteral("buster");
-    case Version::Bullseye:
-        return QStringLiteral("bullseye");
-    case Version::Bookworm:
-        return QStringLiteral("bookworm");
-    default:
-        qDebug() << "Could not detect Debian version";
-        exit(EXIT_FAILURE);
+    QHash<int, QString> versionNames {{Version::Jessie, QStringLiteral("jessie")},
+                                      {Version::Stretch, QStringLiteral("stretch")},
+                                      {Version::Buster, QStringLiteral("buster")},
+                                      {Version::Bullseye, QStringLiteral("bullseye")},
+                                      {Version::Bookworm, QStringLiteral("bookworm")}};
+    if (!versionNames.contains(ver)) {
+        qWarning() << "Error: Invalid Debian version, assumes Bullseye";
+        return "bullseye";
     }
+    return versionNames.value(ver);
 }
 
 // display available repos
@@ -675,7 +678,6 @@ void MainWindow::pushFastestDebian_clicked()
         return;
     }
     QString repo = shell->getCmdOut("set -o pipefail; grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2");
-    // replaceDebianRepos("http://ftp.us.debian.org/debian/");
     this->blockSignals(false);
 
     if (success && checkRepo(repo)) {
