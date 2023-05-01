@@ -189,7 +189,7 @@ void MainWindow::getCurrentRepo()
     QTextStream in(&file);
     while (!in.atEnd()) {
         QString line = in.readLine().trimmed();
-        if (line.contains(QRegularExpression("^#?\\s?deb .*/repo[/]?"))) {
+        if (line.contains(QRegularExpression("^#?\\s?deb\\s+.*/repo[/]?"))) {
             QRegularExpression re {"//(.*?)/"};
             QRegularExpressionMatch match = re.match(line);
             if (match.hasMatch()) {
@@ -335,7 +335,7 @@ QStringList MainWindow::loadAptFile(const QString &file)
 
     QStringList entries;
     QTextStream in(&aptFile);
-    QRegularExpression re("^#*[ ]*deb");
+    QRegularExpression re("^#*\\s*deb");
     while (!in.atEnd()) {
         QString line = in.readLine();
         if (re.match(line).hasMatch())
@@ -501,7 +501,7 @@ QFileInfoList MainWindow::listAptFiles()
     if (file.size() != 0) {
         if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
             QTextStream in(&file);
-            QRegularExpression re(QStringLiteral("^#*[ ]*deb"));
+            QRegularExpression re(QStringLiteral("^#*\\s*deb"));
             while (!in.atEnd()) {
                 QString line = in.readLine();
                 if (re.match(line).hasMatch()) {
