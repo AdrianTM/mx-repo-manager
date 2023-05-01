@@ -88,7 +88,6 @@ private slots:
     void pushHelp_clicked();
     void pushOk_clicked();
     void tabWidget_currentChanged();
-    void treeWidgetDeb_itemChanged(QTreeWidgetItem *item, int column);
     void treeWidget_itemChanged(QTreeWidgetItem *item, int column);
 
 private:
