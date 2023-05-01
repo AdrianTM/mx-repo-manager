@@ -1,7 +1,10 @@
 mx-repo-manager (23.4) mx; urgency=medium
 
   * Make sure /etc/apt/source.list file is read if present
+  * Run apt-get update when closing the app if sources are changed
   * Preserve "security" line because it might not be available on the mirror
+  * Find default mx repo even if commented out in mx.list
+  * Allow for tab separators in .list files
   * Performance improvements
   * Update translations
 
