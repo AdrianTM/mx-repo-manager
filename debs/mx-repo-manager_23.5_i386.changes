@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sun, 30 Apr 2023 23:34:21 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 23.5
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.5) mx; urgency=medium
+ .
+   * Make sure /etc/apt/source.list file is read if present
+   * Run apt-get update when closing the app if sources are changed
+   * Preserve "security" repo line because it might not be available on the mirror
+   * Find default mx repo even if commented out in mx.list
+   * Allow for tab separators in .list files
+   * Update translations
+Checksums-Sha1:
+ c869389090bc0e4c42719a8af530fc7b2ce9b32d 10089 mx-repo-manager_23.5_i386.buildinfo
+ 8b280a2787a930b150679229f32597b87daef962 142120 mx-repo-manager_23.5_i386.deb
+Checksums-Sha256:
+ 3d3386515539e8e494d33592a09a8239a35e88c22ad91b96a4a3937f8291d20b 10089 mx-repo-manager_23.5_i386.buildinfo
+ deddcd153db5ea3a191b957a5ea3e1d061f6f29474442cb0ddb646f402a1f783 142120 mx-repo-manager_23.5_i386.deb
+Files:
+ 70507dc622d80a445b96eaeef8e8a34b 10089 admin optional mx-repo-manager_23.5_i386.buildinfo
+ 1e8d4e99d7bda7a5386b13f2f9722558 142120 admin optional mx-repo-manager_23.5_i386.deb
