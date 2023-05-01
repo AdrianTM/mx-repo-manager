@@ -102,6 +102,7 @@ private:
     QString current_repo;
     QStringList repos;
     QTimer timer;
+    bool sources_changed {};
 
     QNetworkAccessManager manager;
     QNetworkReply *reply {};
