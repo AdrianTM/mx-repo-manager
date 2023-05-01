@@ -50,15 +50,16 @@ public:
     ~MainWindow();
 
     enum Version { Jessie = 8, Stretch, Buster, Bullseye, Bookworm };
-    QFileInfoList listAptFiles();
-    static QIcon getFlag(QString country);
     QList<QStringList> queued_changes;
-    static QString getDebianVerName(int ver);
     QString listMXurls;
     QString version;
-    QStringList loadAptFile(const QString &file);
+
+    QFileInfoList listAptFiles();
     QStringList readMXRepos();
-    int getDebianVerNum();
+    static QIcon getFlag(QString country);
+    static QString getDebianVerName(int ver);
+    static QStringList loadAptFile(const QString &file);
+    static int getDebianVerNum();
     void centerWindow();
     void displayAllRepos(const QFileInfoList &apt_files);
     void displayMXRepos(const QStringList &repos, const QString &filter);
