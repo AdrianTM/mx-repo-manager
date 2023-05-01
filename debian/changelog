@@ -1,3 +1,12 @@
+mx-repo-manager (23.4) mx; urgency=medium
+
+  * Make sure /etc/apt/source.list file is read if present
+  * Preserve "security" line because it might not be available on the mirror
+  * Performance improvements
+  * Update translations
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 30 Apr 2023 23:34:21 -0400
+
 mx-repo-manager (23.3) mx; urgency=medium
 
   * Detect proxy
