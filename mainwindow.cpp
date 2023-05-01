@@ -136,7 +136,8 @@ void MainWindow::replaceDebianRepos(QString url)
         while (!in.atEnd()) {
             QString line = in.readLine().trimmed();
             QRegularExpressionMatch match = re.match(line);
-            if (!line.contains("security")) // Don't replace security line since it might not be available on the mirror
+            // Don't replace security line since it might not be available on the mirror
+            if (!line.contains("security") && match.hasMatch())
                 line.replace(match.captured(1), url);
             content.append(line).append("\n");
         }

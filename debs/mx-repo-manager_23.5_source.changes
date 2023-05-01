@@ -20,26 +20,26 @@ Changes:
    * Allow for tab separators in .list files
    * Update translations
 Checksums-Sha1:
- 5f8b09293882f231f8ceaf679936e2a9d67ab6e1 1192 mx-repo-manager_23.5.dsc
- db1cb445d509a87a402bef5136a05aa0191614f6 118632 mx-repo-manager_23.5.tar.xz
- ff830c017e94b7cb2d287938fe300348e47e721a 10767 mx-repo-manager_23.5_amd64.buildinfo
+ a105bdca79bd754c9b277aa2100567d8933d9902 1192 mx-repo-manager_23.5.dsc
+ 0d1bcdbadbc77bf75620536ce3076aedc074244c 118360 mx-repo-manager_23.5.tar.xz
+ ad8cb49f54660dbb0cd67df5360eda5f498b774f 10767 mx-repo-manager_23.5_amd64.buildinfo
 Checksums-Sha256:
- 630dab948d1f1f2256cf743d096810a5208a73c4db4038d7edcca99a90f4dc8f 1192 mx-repo-manager_23.5.dsc
- 8b5b50abb5aa7d3def76ce2e5ad1d9ceb8e6788d0a46c2706b188c98d633c145 118632 mx-repo-manager_23.5.tar.xz
- 48894f6d61b1a378a575289029b4a5825d6e6fcb283fa46f369bc4e0eaee8995 10767 mx-repo-manager_23.5_amd64.buildinfo
+ c8b1ff2232a361d1c38d006e64affe2d1bea39a605de93b5a1b994e5445ac7b0 1192 mx-repo-manager_23.5.dsc
+ 17c830fb531d7bbfcc19119a1124cdb0b5b37658f6aacf7606bf3e07151f3fbc 118360 mx-repo-manager_23.5.tar.xz
+ c1ff60e469661aba0e9acf8786bcacb8587e98dd36ed7c772d01a29199597110 10767 mx-repo-manager_23.5_amd64.buildinfo
 Files:
- 84e83d9ef77f8e64db5af1675af47bbe 1192 admin optional mx-repo-manager_23.5.dsc
- b6a45c7a0ed9b97dc5dc26caab6809c7 118632 admin optional mx-repo-manager_23.5.tar.xz
- d4c2268f0a397e4f7b03721116c83bf3 10767 admin optional mx-repo-manager_23.5_amd64.buildinfo
+ 3c1b970115967a23911511b3b30bf7f0 1192 admin optional mx-repo-manager_23.5.dsc
+ c716dc13ad849b34732eecb31f108f68 118360 admin optional mx-repo-manager_23.5.tar.xz
+ 383a8424b797d3eab8d6bfd1bc4b287a 10767 admin optional mx-repo-manager_23.5_amd64.buildinfo
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRQNIETHGFkcmlhbkBt
-eGxpbnV4Lm9yZwAKCRBwk4x4BnnumMoUCACT0RueAROwfQr9nhqC8bPzvUl3WlXJ
-4VwGi19RQPHXbiSHuFjZLhvoqoz5BroCAZawskzw7XDT+zs0PGfVfiAHphA1JzfZ
-OcPswqO+KIjoXuYRJmbrgdVglb3Yw0Q6d2GYA2mgex9L9dIRZqWnq/P4pD5x2qWF
-oMQyy4bWPfeVEKDcLCGAy7WKgqVrsC6G9SkqSudQfTZUFVXkPFYyPsoFdc1MMAfn
-P2wH5z/cRjGT01iKihjSDGF7wBhFR0cuZzDlrl+hVolq8A5B1mV3urC2UIS4+gxY
-O0w4qyfxfIZJXVGIGQSnzw8qpQSDa3+XroJs7sbzOsRnF8oyHfxpywie
-=ZCi7
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRQPUsTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumNw8B/41q2HNExkGEe5ByEtinOJDBrFGT6tH
+lXt/XSiAKo1UAm7K+4Boh8dG9lcWLS/VneDYVEqYx2/ZSZa/KzH8Zr7/lFhI7dU6
+7nwm16l1kn0+rWdj3VOz3mWjNqHbkqSUfqr+76XsOhhyftbMKAZfaaWnr0r/nlG0
+8VhtfAGtsi50J4EYcOsZtLegsRBN+JcwMfGfChixbCdzX1dmYi2FzWATFSqpkqWH
+7qveF7x1YP519DF57mku4PfSVLNFD9OI842L+x8JxdzL7BJ8KePx1a7Tr+mevdVj
+s/XWg/ZaNUv42LB4nYl08+DmpKT9qSMZvF1i4BsuqXJQ4G8L1j9PtO7c
+=kCiH
 -----END PGP SIGNATURE-----

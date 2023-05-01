@@ -20,11 +20,11 @@ Changes:
    * Allow for tab separators in .list files
    * Update translations
 Checksums-Sha1:
- c869389090bc0e4c42719a8af530fc7b2ce9b32d 10089 mx-repo-manager_23.5_i386.buildinfo
- 8b280a2787a930b150679229f32597b87daef962 142120 mx-repo-manager_23.5_i386.deb
+ d44459da25c3e39663326aa28c11ead3bc6bd113 10089 mx-repo-manager_23.5_i386.buildinfo
+ a706fedf6450abbdb72850193b23685fcbf91ae8 141976 mx-repo-manager_23.5_i386.deb
 Checksums-Sha256:
- 3d3386515539e8e494d33592a09a8239a35e88c22ad91b96a4a3937f8291d20b 10089 mx-repo-manager_23.5_i386.buildinfo
- deddcd153db5ea3a191b957a5ea3e1d061f6f29474442cb0ddb646f402a1f783 142120 mx-repo-manager_23.5_i386.deb
+ 7a4ab868f242babfc317878f33dd0f0a63a14afe17901e6fdfe8f84c43d99256 10089 mx-repo-manager_23.5_i386.buildinfo
+ 5b1388e99584c83324640231a8b68b2fa31ca1cd5aba7dd66ee05c3c75def3dc 141976 mx-repo-manager_23.5_i386.deb
 Files:
- 70507dc622d80a445b96eaeef8e8a34b 10089 admin optional mx-repo-manager_23.5_i386.buildinfo
- 1e8d4e99d7bda7a5386b13f2f9722558 142120 admin optional mx-repo-manager_23.5_i386.deb
+ 5d656e2d957bc66e449dc4ee09ee8aa9 10089 admin optional mx-repo-manager_23.5_i386.buildinfo
+ 283c45c0ce323dda86d87da1d1ed7e4f 141976 admin optional mx-repo-manager_23.5_i386.deb
