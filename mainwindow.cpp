@@ -189,15 +189,12 @@ void MainWindow::getCurrentRepo()
     QTextStream in(&file);
     while (!in.atEnd()) {
         QString line = in.readLine().trimmed();
-        if (line.startsWith("deb") && line.contains("/repo/")) {
-            QStringList parts = line.split(QChar::fromLatin1(' '));
-            if (parts.length() > 1) {
-                const QString &url = parts.at(1);
-                QStringList urlParts = url.split(QChar::fromLatin1('/'));
-                if (urlParts.length() > 2) {
-                    current_repo = urlParts.at(2);
-                    break;
-                }
+        if (line.contains(QRegularExpression("^#?\\s?deb .*/repo[/]?"))) {
+            QRegularExpression re {"//(.*?)/"};
+            QRegularExpressionMatch match = re.match(line);
+            if (match.hasMatch()) {
+                current_repo = match.captured(1);
+                break;
             }
         }
     }
