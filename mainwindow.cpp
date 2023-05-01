@@ -45,7 +45,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::MainWindow)
 {
-    qDebug().noquote() << qApp->applicationName() << "version:" << qApp->applicationVersion();
+    qDebug().noquote() << QApplication::applicationName() << "version:" << QApplication::applicationVersion();
     ui->setupUi(this);
     setConnections();
     setWindowFlags(Qt::Window);
@@ -97,8 +97,10 @@ void MainWindow::refresh()
 // replace default Debian repos
 void MainWindow::replaceDebianRepos(const QString &url)
 {
-    // Debian list files that are present by default in MX
-    QStringList files {"/etc/apt/sources.list.d/debian.list", "/etc/apt/sources.list.d/debian-stable-updates.list"};
+    // Apt source files that are present by default in MX and /etc/apt/sources.list
+    // which might be the default in some Debian releases
+    QStringList files {"/etc/apt/sources.list.d/debian.list", "/etc/apt/sources.list.d/debian-stable-updates.list",
+                       "/etc/apt/sources.list"};
 
     // make backup folder
     if (!QFileInfo::exists(QStringLiteral("/etc/apt/sources.list.d/backups")))
@@ -131,7 +133,7 @@ QStringList MainWindow::readMXRepos()
 {
     QFile file(QStringLiteral("/usr/share/mx-repo-list/repos.txt"));
     if (!file.open(QIODevice::ReadOnly))
-        qDebug() << "Count not open file: " << file.fileName();
+        qDebug() << "Count not open file: " << file.fileName() << file.errorString();
 
     QString file_content = file.readAll().trimmed();
     file.close();
@@ -153,14 +155,39 @@ QStringList MainWindow::readMXRepos()
 // List current repo
 void MainWindow::getCurrentRepo()
 {
-    current_repo = shell->getCmdOut(
-        QStringLiteral("grep -m1 '^deb.*/repo/ ' /etc/apt/sources.list.d/mx.list |cut -d' ' -f2 |cut -d/ -f3"));
+    QFile file("/etc/apt/sources.list.d/mx.list");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Could not open file:" << file.fileName() << file.errorString();
+        return;
+    }
+    QTextStream in(&file);
+    while (!in.atEnd()) {
+        QString line = in.readLine().trimmed();
+        if (line.startsWith("deb") && line.contains("/repo/")) {
+            QStringList parts = line.split(QChar::fromLatin1(' '));
+            if (parts.length() > 1) {
+                const QString &url = parts.at(1);
+                QStringList urlParts = url.split(QChar::fromLatin1('/'));
+                if (urlParts.length() > 2) {
+                    current_repo = urlParts.at(2);
+                    break;
+                }
+            }
+        }
+    }
+    file.close();
 }
 
 int MainWindow::getDebianVerNum()
 {
-    const QString out = shell->getCmdOut(QStringLiteral("cat /etc/debian_version"));
-    QStringList list = out.split(QStringLiteral("."));
+    QFile file("/etc/debian_version");
+    QStringList list;
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextStream in(&file);
+        QString line = in.readLine();
+        list = line.split(".");
+        file.close();
+    }
     bool ok = false;
     int ver = list.at(0).toInt(&ok);
     if (ok)
@@ -234,7 +261,7 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
         topLevelItemDeb = new QTreeWidgetItem;
         topLevelItemDeb->setText(0, file_name);
         ui->treeWidget->addTopLevelItem(topLevelItem);
-        if (file_name.contains(QLatin1String("debian")))
+        if (file_name.contains(QLatin1String("debian")) || file_name == "sources.list")
             ui->treeWidgetDeb->addTopLevelItem(topLevelItemDeb);
         // topLevelItem look
         topLevelItem->setForeground(0, QBrush(Qt::darkGreen));
@@ -274,8 +301,23 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
 
 QStringList MainWindow::loadAptFile(const QString &file)
 {
-    QString entries = shell->getCmdOut("grep '^#*[ ]*deb' " + file);
-    return entries.split(QStringLiteral("\n"));
+    QFile aptFile(file);
+    if (!aptFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Could not open file: " << aptFile << aptFile.errorString();
+        return QStringList();
+    }
+
+    QStringList entries;
+    QTextStream in(&aptFile);
+    QRegularExpression re("^#*[ ]*deb");
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        if (re.match(line).hasMatch())
+            entries.append(line);
+    }
+
+    aptFile.close();
+    return entries;
 }
 
 void MainWindow::cancelOperation()
@@ -298,7 +340,7 @@ void MainWindow::closeEvent(QCloseEvent * /*unused*/) { settings.setValue(QStrin
 void MainWindow::displaySelected(const QString &repo)
 {
     for (int row = 0; row < ui->listWidget->count(); ++row) {
-        auto *radio = dynamic_cast<QRadioButton *>(ui->listWidget->itemWidget(ui->listWidget->item(row)));
+        auto *radio = qobject_cast<QRadioButton *>(ui->listWidget->itemWidget(ui->listWidget->item(row)));
         if (radio->text().contains(repo)) {
             radio->setChecked(true);
             ui->listWidget->scrollToItem(ui->listWidget->item(row));
@@ -322,7 +364,7 @@ void MainWindow::setSelected()
 {
     QString url;
     for (int row = 0; row < ui->listWidget->count(); ++row) {
-        auto *radio = dynamic_cast<QRadioButton *>(ui->listWidget->itemWidget(ui->listWidget->item(row)));
+        auto *radio = qobject_cast<QRadioButton *>(ui->listWidget->itemWidget(ui->listWidget->item(row)));
         if (radio->isChecked()) {
             url = radio->text().section(QStringLiteral(" - "), 1, 1).trimmed();
             replaceRepos(url);
@@ -397,13 +439,14 @@ void MainWindow::setConnections()
     connect(ui->lineSearch, &QLineEdit::textChanged, this, &MainWindow::lineSearch_textChanged);
     connect(ui->pb_restoreSources, &QPushButton::clicked, this, &MainWindow::pb_restoreSources_clicked);
     connect(ui->pushAbout, &QPushButton::clicked, this, &MainWindow::pushAbout_clicked);
+    connect(ui->pushCancel, &QPushButton::clicked, this, &MainWindow::close);
     connect(ui->pushFastestDebian, &QPushButton::clicked, this, &MainWindow::pushFastestDebian_clicked);
     connect(ui->pushFastestMX, &QPushButton::clicked, this, &MainWindow::pushFastestMX_clicked);
     connect(ui->pushHelp, &QPushButton::clicked, this, &MainWindow::pushHelp_clicked);
     connect(ui->pushOk, &QPushButton::clicked, this, &MainWindow::pushOk_clicked);
     connect(ui->tabWidget, &QTabWidget::currentChanged, this, &MainWindow::tabWidget_currentChanged);
-    connect(ui->treeWidgetDeb, &QTreeWidget::itemChanged, this, &MainWindow::treeWidgetDeb_itemChanged);
     connect(ui->treeWidget, &QTreeWidget::itemChanged, this, &MainWindow::treeWidget_itemChanged);
+    connect(ui->treeWidgetDeb, &QTreeWidget::itemChanged, this, &MainWindow::treeWidgetDeb_itemChanged);
 }
 
 void MainWindow::setProgressBar()
@@ -460,7 +503,7 @@ void MainWindow::pushAbout_clicked()
     displayAboutMsgBox(
         tr("About %1").arg(this->windowTitle()),
         "<p align=\"center\"><b><h2>" + this->windowTitle() + "</h2></b></p><p align=\"center\">" + tr("Version: ")
-            + qApp->applicationVersion() + "</p><p align=\"center\"><h3>"
+            + QApplication::applicationVersion() + "</p><p align=\"center\"><h3>"
             + tr("Program for choosing the default APT repository")
             + R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
@@ -730,7 +773,7 @@ bool MainWindow::checkRepo(const QString &repo)
 bool MainWindow::downloadFile(const QString &url, QFile &file)
 {
     if (!file.open(QIODevice::WriteOnly)) {
-        qDebug() << "Could not open file:" << file.fileName();
+        qDebug() << "Could not open file:" << file.fileName() << file.errorString();
         return false;
     }
 
