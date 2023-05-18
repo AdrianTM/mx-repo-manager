@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Wed, 17 May 2023 23:18:00 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 23.5.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.5.01) mx; urgency=medium
+ .
+   * Update logo
+Checksums-Sha1:
+ 7b947b1fd725da12493228a6c6699eef1bef3594 1204 mx-repo-manager_23.5.01.dsc
+ 716c5f456781323e55202af8880bdf8f1e4fca17 119012 mx-repo-manager_23.5.01.tar.xz
+ 673e9093710131d510e62a327c8a37c39f6a8bf9 10791 mx-repo-manager_23.5.01_amd64.buildinfo
+ 6d50e4ee5f4e88dd3bddcba71d7c50d4f8d7baa2 139080 mx-repo-manager_23.5.01_amd64.deb
+Checksums-Sha256:
+ 025e92511168cc747dbb936f39ed13070c52dfa291911956d47f173176e244e3 1204 mx-repo-manager_23.5.01.dsc
+ cefad30ec8f64a6920c4acd3f1c38c64a23e0901392b3ea5ee5e2cfba9cb4ff0 119012 mx-repo-manager_23.5.01.tar.xz
+ beffec0b4b4a5f0db63550799239026dd26f83d39737523901a89e16984b7290 10791 mx-repo-manager_23.5.01_amd64.buildinfo
+ 53dbc195967d7c79822408bf821e5519367317d2b32f233b3ad1316f80d3df95 139080 mx-repo-manager_23.5.01_amd64.deb
+Files:
+ e0f4205bf18785bf637e0323649e4cbd 1204 admin optional mx-repo-manager_23.5.01.dsc
+ fd820f262915d9cf1af4afcb570b1c10 119012 admin optional mx-repo-manager_23.5.01.tar.xz
+ 7b177ab2dfc8603a473c9536a1671ce9 10791 admin optional mx-repo-manager_23.5.01_amd64.buildinfo
+ fcae6ef4725a10bf0fb37de4219bf04f 139080 admin optional mx-repo-manager_23.5.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmRloWETHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBqKB/wNVEjHPdWxsmVfCJseyvOdhr917X3c
+mV6VEECk4rGu4xCWhFeLee0FnbxPVkiycxoCi6dQJyFZwN52NRQxgXXUy6kgWybV
+iI0xxIgb51z0fyh0W0ahIPFzcegcNth+7N6VN///qoBcvrwKd7aputjTMHKnf1NK
+/w51w+ubupZiv1xpgBvcl2UHG8jHhC9zbJv1gSySRfWqTD11khEWy5U95h9erRQL
+Ysv0B2qk+vtdYiz7WYBccg/P9oXOCx/2ZZcHRZYI3hmwO+GwSbxb8xROdPq0xswe
+1a1SNK4kS+BQzoYbpFoBGGHM1o/AUkohnquOzl2J80UBqCMJ74HRCX3Q
+=wACa
+-----END PGP SIGNATURE-----
