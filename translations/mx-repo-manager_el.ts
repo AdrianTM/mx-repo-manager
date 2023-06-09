@@ -7,7 +7,7 @@
         <location filename="../mainwindow.ui" line="17"/>
         <location filename="../mainwindow.cpp" line="71"/>
         <source>MX Repo Manager</source>
-        <translation>Διαχειριστής αποθετηρίων MX</translation>
+        <translation>MX Διαχειριστής αποθετηρίων</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.ui" line="229"/>
         <source>Individual sources</source>
-        <translation>Μεμονωμένες πηγές</translation>
+        <translation>Πηγές</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="248"/>
@@ -117,7 +117,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>Lists</source>
-        <translation>Κατάλογος</translation>
+        <translation>Κατάλογοι</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
@@ -145,7 +145,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="490"/>
@@ -170,7 +170,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="550"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Πνευματικά δικαιώματα (c)  MX Linux</translation>
+        <translation>Πνευματικά δικαιώματα (c) MX Linux</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="551"/>
@@ -185,17 +185,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="574"/>
         <source>Warning</source>
-        <translation>Προειδοποίηση</translation>
+        <translation>Προσοχή</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="575"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation>Έχετε επιλέξει το αποθετήριο Test του MX. Δεν συνιστάται η ενεργοποίησή του ή η αναβάθμιση όλων των πακέτων από αυτό.</translation>
+        <translation>Έχετε επιλέξει το αποθετήριο Test του MX. Δεν συνιστάται η ενεργοποίηση ή η αναβάθμιση όλων των πακέτων από αυτό.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="578"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation>Ασφαλέστερη επιλογή είναι, να εγκαταστήσετε μεμονωμένα πακέτα από το Διαχειριστή πακέτων MX.</translation>
+        <translation>Η ασφαλέστερη επιλογή είναι, να εγκαταστήσετε μεμονωμένα πακέτα από την εγκατάσταση πακέτων του MX.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="609"/>
@@ -216,12 +216,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="703"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν μπορώ να καταλάβω αν αυτή η εφαρμογή τρέχει σε antiX ή MX</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="712"/>
         <source>MX version not detected or out of range: </source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν ανιχνεύεται η έκδοση MX ή είναι εκτός ορίων: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="730"/>
@@ -231,27 +231,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="736"/>
         <source>Could not unzip downloaded file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν μπόρεσε να αποσυμπιεστεί το ληφθέν αρχείο.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="746"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση AHS</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="746"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation>Θέλετε να χρησιμοποιήσετε το αποθετήριο AHS (Advanced Hardware Stack);</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="752"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation>Τα αποθετήρια επανήλθαν στα αρχικά. Τα αρχεία χρήστη στο /etc/apt/sources.list.d/ δεν τροποποιήθηκαν.</translation>
+        <translation>Τα αποθετήρια επανήλθαν στα αρχική κατάσταση. Τα αρχεία χρήστη στο /etc/apt/sources.list.d/ δεν τροποποιήθηκαν.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="820"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
-        <translation>Υπήρξε ένα αρχείο γραφής σφάλματος: %1. Ελέγξτε αν έχετε αρκετό ελεύθερο χώρο στη μονάδα δίσκου σας</translation>
+        <translation>Υπήρξε σφάλμα στην εγγραφή του αρχείου: %1. Παρακαλώ ελέγξτε αν έχετε αρκετό ελεύθερο χώρο στη μονάδα δίσκου σας</translation>
     </message>
 </context>
 <context>
@@ -270,7 +270,7 @@
     <message>
         <location filename="../about.cpp" line="54"/>
         <source>Cancel</source>
-        <translation>Ακύρωση</translation>
+        <translation>Άκυρο</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="74"/>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../main.cpp" line="72"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation>Φαίνεται ότι έχετε συνδεθεί ως root, αποσυνδεθείτε και συνδεθείτε ως κανονικός χρήστης για να χρησιμοποιήσετε αυτό το πρόγραμμα.</translation>
+        <translation>Φαίνεται ότι έχετε συνδεθεί ως διαχειριστής, αποσυνδεθείτε και συνδεθείτε ως απλός χρήστης για να χρησιμοποιήσετε αυτό το πρόγραμμα.</translation>
     </message>
 </context>
 </TS>

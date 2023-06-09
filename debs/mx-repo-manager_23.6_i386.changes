@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Wed, 24 May 2023 13:43:14 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 23.6
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.6) mx; urgency=medium
+ .
+   * Update policy
+   * Refresh translation
+Checksums-Sha1:
+ a334101142e2f67c0c3cd9b9c9a3ed6062c65c8e 10089 mx-repo-manager_23.6_i386.buildinfo
+ d04117c975f5e3e3e08d51c446dbf6af9b4c84b6 142424 mx-repo-manager_23.6_i386.deb
+Checksums-Sha256:
+ 4fb3eca5f3fd230f9dee2d6862a7ce7789c2ce065d89ff85c06e23648dee8355 10089 mx-repo-manager_23.6_i386.buildinfo
+ 44e0c51045b80c32c99991e8eee7cd97b11fd726cf976d8ec206ec968d1168f8 142424 mx-repo-manager_23.6_i386.deb
+Files:
+ 52a4378ab6326c835277d7c29887cff5 10089 admin optional mx-repo-manager_23.6_i386.buildinfo
+ a587bd4f62c0bc15c3f662ef27c27ff7 142424 admin optional mx-repo-manager_23.6_i386.deb
