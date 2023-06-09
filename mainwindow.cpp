@@ -661,7 +661,7 @@ void MainWindow::pushFastestDebian_clicked()
     QString repo = shell->getCmdOut("set -o pipefail; grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2");
     this->blockSignals(false);
 
-    if (success && checkRepo(repo)) {
+    if (checkRepo(repo)) {
         replaceDebianRepos(repo);
         refresh();
     } else {
