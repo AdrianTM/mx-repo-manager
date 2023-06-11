@@ -650,8 +650,7 @@ void MainWindow::pushFastestDebian_clicked()
         ver_name
             = QString(); // netselect-apt doesn't like name buster/bullseye for some reason, maybe it expects "stable"
 
-    QString out;
-    bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), out, false);
+    bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), false);
     progress->hide();
 
     if (!success) {
@@ -675,7 +674,7 @@ void MainWindow::pushFastestMX_clicked()
     progress->show();
     QString out;
     bool success = shell->run(
-        "set -o pipefail; netselect -D -I " + listMXurls + " |tr -s ' ' |sed 's/^ //' |cut -d' ' -f2", out);
+        "set -o pipefail; netselect -D -I " + listMXurls + " |tr -s ' ' |sed 's/^ //' |cut -d' ' -f2", &out);
     qDebug() << listMXurls;
     qDebug() << "FASTEST " << success << out;
     progress->hide();
@@ -726,7 +725,7 @@ void MainWindow::pb_restoreSources_clicked()
         = QString("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/" + branch).arg(QString::number(mx_version));
     QFileInfo fi(url);
     QFile tofile(tmpdir.path() + "/" + fi.fileName() + ".zip");
-    if (!downloadFile(url, tofile)) {
+    if (!downloadFile(url, &tofile)) {
         QMessageBox::critical(this, tr("Error"), tr("Could not download original APT files."));
         return;
     }
@@ -765,8 +764,8 @@ bool MainWindow::checkRepo(const QString &repo)
         manager.setProxy(proxies.first());
 
     QNetworkRequest request;
-    request.setRawHeader("User-Agent",
-                         qApp->applicationName().toUtf8() + "/" + qApp->applicationVersion().toUtf8() + " (linux-gnu)");
+    request.setRawHeader("User-Agent", QApplication::applicationName().toUtf8() + "/"
+                                           + QApplication::applicationVersion().toUtf8() + " (linux-gnu)");
     request.setUrl(QUrl(repo));
     QNetworkReply *reply = manager.head(request);
 
@@ -787,10 +786,10 @@ bool MainWindow::checkRepo(const QString &repo)
     return false;
 }
 
-bool MainWindow::downloadFile(const QString &url, QFile &file)
+bool MainWindow::downloadFile(const QString &url, QFile *file)
 {
-    if (!file.open(QIODevice::WriteOnly)) {
-        qWarning() << "Could not open file:" << file.fileName() << file.errorString();
+    if (!file->open(QIODevice::WriteOnly)) {
+        qWarning() << "Could not open file:" << file->fileName() << file->errorString();
         return false;
     }
 
@@ -810,7 +809,7 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
 
     bool success = true;
     connect(reply, &QNetworkReply::readyRead,
-            [&reply, &file, &success]() { success = file.write(reply->readAll()) > 0; });
+            [&reply, file, &success]() { success = file->write(reply->readAll()) > 0; });
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
 
@@ -818,10 +817,10 @@ bool MainWindow::downloadFile(const QString &url, QFile &file)
         QMessageBox::warning(
             this, tr("Error"),
             tr("There was an error writing file: %1. Please check if you have enough free space on your drive")
-                .arg(file.fileName()));
+                .arg(file->fileName()));
         exit(EXIT_FAILURE);
     }
 
-    file.close();
+    file->close();
     return (reply->error() == QNetworkReply::NoError);
 }
