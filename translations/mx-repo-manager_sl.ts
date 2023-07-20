@@ -103,14 +103,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="154"/>
         <location filename="../mainwindow.cpp" line="458"/>
-        <location filename="../mainwindow.cpp" line="751"/>
+        <location filename="../mainwindow.cpp" line="750"/>
         <source>Success</source>
         <translation>Operacija je uspela</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="155"/>
         <location filename="../mainwindow.cpp" line="459"/>
-        <location filename="../mainwindow.cpp" line="755"/>
+        <location filename="../mainwindow.cpp" line="754"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Vaša nova izbira bo postala aktivna, ko bodo viri naslednjič posodobljeni.</translation>
     </message>
@@ -126,14 +126,14 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="461"/>
-        <location filename="../mainwindow.cpp" line="658"/>
-        <location filename="../mainwindow.cpp" line="668"/>
-        <location filename="../mainwindow.cpp" line="686"/>
-        <location filename="../mainwindow.cpp" line="703"/>
-        <location filename="../mainwindow.cpp" line="711"/>
-        <location filename="../mainwindow.cpp" line="730"/>
-        <location filename="../mainwindow.cpp" line="736"/>
-        <location filename="../mainwindow.cpp" line="819"/>
+        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="685"/>
+        <location filename="../mainwindow.cpp" line="702"/>
+        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="729"/>
+        <location filename="../mainwindow.cpp" line="735"/>
+        <location filename="../mainwindow.cpp" line="818"/>
         <source>Error</source>
         <translation>Napaka</translation>
     </message>
@@ -203,53 +203,53 @@
         <translation>Izberite APT skladišče in vire, ki jih želite uporabljati:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt ni mogel najti najhitrejšega repozitorija.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="685"/>
         <source>Could not detect fastest repo.</source>
         <translation>Najhitrejšega repozitorija ni bilo mogoče odkriti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="702"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
         <translation>Ni mogoče ugotoviti ali ta aplikacija teče na antiX ali MX</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="711"/>
         <source>MX version not detected or out of range: </source>
         <translation>MX različica ni zaznana ali je izven obsega:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="730"/>
+        <location filename="../mainwindow.cpp" line="729"/>
         <source>Could not download original APT files.</source>
         <translation>Izvnirnih APT datotek ni bilo mogoče prenesti.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="736"/>
+        <location filename="../mainwindow.cpp" line="735"/>
         <source>Could not unzip downloaded file.</source>
         <translation>Prenešen datoteke ni bilo mogoče razširiti.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="746"/>
+        <location filename="../mainwindow.cpp" line="745"/>
         <source>Enabling AHS</source>
         <translation>Vklapljam AHS</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="746"/>
+        <location filename="../mainwindow.cpp" line="745"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
         <translation>Uporabljate AHS (Advanced Hardware Stack) repozitorji?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="752"/>
+        <location filename="../mainwindow.cpp" line="751"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Izvirni APT viri so bili obnovljeni na stanje ob izdaji. Izvorne datoteke, ki jih je uporabnik dodal v /etc/apt/sources.list.d/, niso bili spremenjeni.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="820"/>
+        <location filename="../mainwindow.cpp" line="819"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Pri zapisovanju datoteke %1 se je zgodila napaka. Preverite ali je na nosilcu dovolj prostora</translation>
     </message>

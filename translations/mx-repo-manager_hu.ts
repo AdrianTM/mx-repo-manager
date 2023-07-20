@@ -103,14 +103,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="154"/>
         <location filename="../mainwindow.cpp" line="458"/>
-        <location filename="../mainwindow.cpp" line="751"/>
+        <location filename="../mainwindow.cpp" line="750"/>
         <source>Success</source>
         <translation>Sikeres</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="155"/>
         <location filename="../mainwindow.cpp" line="459"/>
-        <location filename="../mainwindow.cpp" line="755"/>
+        <location filename="../mainwindow.cpp" line="754"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Az új választás a források következő frissítésekor lép életbe.</translation>
     </message>
@@ -126,14 +126,14 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="461"/>
-        <location filename="../mainwindow.cpp" line="658"/>
-        <location filename="../mainwindow.cpp" line="668"/>
-        <location filename="../mainwindow.cpp" line="686"/>
-        <location filename="../mainwindow.cpp" line="703"/>
-        <location filename="../mainwindow.cpp" line="711"/>
-        <location filename="../mainwindow.cpp" line="730"/>
-        <location filename="../mainwindow.cpp" line="736"/>
-        <location filename="../mainwindow.cpp" line="819"/>
+        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="685"/>
+        <location filename="../mainwindow.cpp" line="702"/>
+        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="729"/>
+        <location filename="../mainwindow.cpp" line="735"/>
+        <location filename="../mainwindow.cpp" line="818"/>
         <source>Error</source>
         <translation>Hiba</translation>
     </message>
@@ -203,53 +203,53 @@
         <translation>Válassza ki a használni kívánt APT csomagforrást és további csomagforrásokat:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>A netselect-apt alkalmazásnak nem sikerült megállapítania melyik a leggyorsabb forrás.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="685"/>
         <source>Could not detect fastest repo.</source>
         <translation>Nem sikerült a leggyorsabb forrás meghatározása.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="702"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
         <translation>Nem sikerült megállapítani hogy ez egy anitX vagy MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="711"/>
         <source>MX version not detected or out of range: </source>
         <translation>MX verzió megállapítása nem sikerült vagy tartományon kívül:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="730"/>
+        <location filename="../mainwindow.cpp" line="729"/>
         <source>Could not download original APT files.</source>
         <translation>Nem sikerült az eredeti APT fájlok letöltése.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="736"/>
+        <location filename="../mainwindow.cpp" line="735"/>
         <source>Could not unzip downloaded file.</source>
         <translation>Nem sikerült a letöltött fájl kicsomagolása.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="746"/>
+        <location filename="../mainwindow.cpp" line="745"/>
         <source>Enabling AHS</source>
         <translation>AHS engedélyezése</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="746"/>
+        <location filename="../mainwindow.cpp" line="745"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
         <translation>Használja az AHS (Advanced Hardware Stack) forrást?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="752"/>
+        <location filename="../mainwindow.cpp" line="751"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>A kiadás eredeti APT forrásai kerültek visszaállításra. A felhasználó által a /etc/apt/sources.list.d/ könyvtárban felvett saját források nem változtak.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="820"/>
+        <location filename="../mainwindow.cpp" line="819"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Hiba történt a fájl írása során: %1. Ellenőrizze, hogy van-e elég szabad hely a meghajtón.</translation>
     </message>
