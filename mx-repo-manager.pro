@@ -70,7 +70,6 @@ TRANSLATIONS += translations/mx-repo-manager_af.ts \
                 translations/mx-repo-manager_et.ts \
                 translations/mx-repo-manager_eu.ts \
                 translations/mx-repo-manager_fa.ts \
-                translations/mx-repo-manager_fi_FI.ts \
                 translations/mx-repo-manager_fil_PH.ts \
                 translations/mx-repo-manager_fil.ts \
                 translations/mx-repo-manager_fi.ts \
@@ -136,7 +135,6 @@ TRANSLATIONS += translations/mx-repo-manager_af.ts \
                 translations/mx-repo-manager_pt.ts \
                 translations/mx-repo-manager_ro.ts \
                 translations/mx-repo-manager_rue.ts \
-                translations/mx-repo-manager_ru_RU.ts \
                 translations/mx-repo-manager_ru.ts \
                 translations/mx-repo-manager_rw.ts \
                 translations/mx-repo-manager_sd.ts \
