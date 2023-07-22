@@ -51,7 +51,6 @@ TRANSLATIONS += translations/mx-repo-manager_af.ts \
                 translations/mx-repo-manager_be.ts \
                 translations/mx-repo-manager_bg.ts \
                 translations/mx-repo-manager_bn.ts \
-                translations/mx-repo-manager_bs_BA.ts \
                 translations/mx-repo-manager_bs.ts \
                 translations/mx-repo-manager_ca.ts \
                 translations/mx-repo-manager_ceb.ts \
@@ -89,7 +88,6 @@ TRANSLATIONS += translations/mx-repo-manager_af.ts \
                 translations/mx-repo-manager_hr.ts \
                 translations/mx-repo-manager_ht.ts \
                 translations/mx-repo-manager_hu.ts \
-                translations/mx-repo-manager_hy_AM.ts \
                 translations/mx-repo-manager_hye.ts \
                 translations/mx-repo-manager_hy.ts \
                 translations/mx-repo-manager_id.ts \
