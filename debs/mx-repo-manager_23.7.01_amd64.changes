@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 24 Jul 2023 08:58:02 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.7.01) mx; urgency=medium
+ .
+   * Fix a couple of translations
+Checksums-Sha1:
+ 732ccce1d6dce72b675b701b954d20a0a7ce5fa9 1204 mx-repo-manager_23.7.01.dsc
+ 8bb1fb6e0116bb0b09ff14873cb49cb372aaed00 120368 mx-repo-manager_23.7.01.tar.xz
+ 4800819e80928b8d8524c2733718108e7c374938 10791 mx-repo-manager_23.7.01_amd64.buildinfo
+ df4f4aa9d0c90691fbc8694129e8f276c40e5cdc 139356 mx-repo-manager_23.7.01_amd64.deb
+Checksums-Sha256:
+ 91cae85b29b5dc49ad1f0a1ac54f673e5666c3f7d1bb14c3c3eb736ab7cc89e6 1204 mx-repo-manager_23.7.01.dsc
+ 3b6cf3ae91b24c57270e63cdd198ef2b1135bcde1e2d7636d59d1b02e5f05eaf 120368 mx-repo-manager_23.7.01.tar.xz
+ d979673f14f97678337e02af89ee33361d862ed97eddec36b4373b4e3b7bb4d1 10791 mx-repo-manager_23.7.01_amd64.buildinfo
+ 5492c122cd9ee7b7d933f2783c9a588279b8ef2513e053258cb5cd8130dc5dc8 139356 mx-repo-manager_23.7.01_amd64.deb
+Files:
+ 4e1060908267977e013c70976796a51f 1204 admin optional mx-repo-manager_23.7.01.dsc
+ f0ae46d1df89943462d5c4b71649f06f 120368 admin optional mx-repo-manager_23.7.01.tar.xz
+ 4fb0ad29b642ff0c39daed0d45760e01 10791 admin optional mx-repo-manager_23.7.01_amd64.buildinfo
+ d6aa15f33d9cc89f35cf7f40b09fc7d1 139356 admin optional mx-repo-manager_23.7.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS+djUTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumA49CACzPLFZPb7z74cFY5cK+fLzCOEf52zK
+aoF9IWrBvsTnUONNdvLhd9hxCb8AmBU0kNseZn3/McjItksRLj1NIdCV9Yhtsr7H
+efCXU4Kb+Rz4ndC1NzROvOivi83iHxhIIRyEzvMSmxzO4gG5dSu2BLgUtB4go1lR
+qmqfxFk4e5EGCwXRzzcv9YshTkd9argKcpPmPipJstf6cNTq8RP4DRyfUYGbw31R
+atTLP8hIJ4nM89ocPs2S0Eyq02YzZwO9o18cyecPi+yO4UKWWYez2nyekzcM1ZL4
+2+X0+8jzQVuUrC/1X6aPl2RAyI6109s3r+WMoiONwJ+2WqA0W1o6euAS
+=+aMm
+-----END PGP SIGNATURE-----
