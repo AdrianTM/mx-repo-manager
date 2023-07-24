@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 24 Jul 2023 08:58:02 -0400
+Source: mx-repo-manager
+Architecture: source
+Version: 23.7.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-repo-manager (23.7.01) mx; urgency=medium
+ .
+   * Fix a couple of translations
+Checksums-Sha1:
+ 732ccce1d6dce72b675b701b954d20a0a7ce5fa9 1204 mx-repo-manager_23.7.01.dsc
+ 8bb1fb6e0116bb0b09ff14873cb49cb372aaed00 120368 mx-repo-manager_23.7.01.tar.xz
+ 4800819e80928b8d8524c2733718108e7c374938 10791 mx-repo-manager_23.7.01_amd64.buildinfo
+Checksums-Sha256:
+ 91cae85b29b5dc49ad1f0a1ac54f673e5666c3f7d1bb14c3c3eb736ab7cc89e6 1204 mx-repo-manager_23.7.01.dsc
+ 3b6cf3ae91b24c57270e63cdd198ef2b1135bcde1e2d7636d59d1b02e5f05eaf 120368 mx-repo-manager_23.7.01.tar.xz
+ d979673f14f97678337e02af89ee33361d862ed97eddec36b4373b4e3b7bb4d1 10791 mx-repo-manager_23.7.01_amd64.buildinfo
+Files:
+ 4e1060908267977e013c70976796a51f 1204 admin optional mx-repo-manager_23.7.01.dsc
+ f0ae46d1df89943462d5c4b71649f06f 120368 admin optional mx-repo-manager_23.7.01.tar.xz
+ 4fb0ad29b642ff0c39daed0d45760e01 10791 admin optional mx-repo-manager_23.7.01_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmS+djUTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumECqCADW7F5OzE9fpJLormXToi6J/RXy1Kda
+zKYLg3RVwwKYfDf9zX666StnWLlpCaz0PK0kxmyGW4gaDwFUrsljfAXOcVWOiKir
+KeGbjc6iPWGdj5FokHpBb8tT89G/AbKGqFjHQw6D5YtJC93nJizfFq4yKu64ufmn
+fIovN3S9jzJQ/X4uqsRX3XVskueW8R2IR23xZlr17V+n1lLkT2aGEdvO3Q1vXq6X
+ATgtuwLQUuCRDTVz433+dozcIPpMHdYr/+lk6uiHND5OTmoyYXZlmmLG4+k9ABbS
++Ych5Krov/8It2HAgnLsUwY2YMXTFgnXJZnqTCBJoQEzc5+7U9Aj/Oya
+=0ol1
+-----END PGP SIGNATURE-----
