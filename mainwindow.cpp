@@ -331,7 +331,7 @@ QStringList MainWindow::loadAptFile(const QString &file)
     QFile aptFile(file);
     if (!aptFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qWarning() << "Could not open file: " << aptFile << aptFile.errorString();
-        return QStringList();
+        return {};
     }
 
     QStringList entries;
@@ -450,7 +450,7 @@ void MainWindow::replaceRepos(const QString &url)
         QString antix_file = QStringLiteral("/etc/apt/sources.list.d/antix.list");
         repo_line_antix = (url == QLatin1String("http://mxrepo.com")) ? "http://la.mxrepo.com/antix/" + ver_name + "/"
                                                                       : url + "/antix/" + ver_name + "/";
-        cmd_antix = QString("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix, antix_file);
+        cmd_antix = ("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix, antix_file);
     }
 
     // check if both replacement were successful
@@ -626,13 +626,13 @@ QIcon MainWindow::getFlag(QString country)
     // QMetaEnum metaEnum = QMetaEnum::fromType<QLocale::Country>(); -- not in older Qt versions
     int index = metaEnum.keyToValue(country.remove(QStringLiteral(" ")).toUtf8());
     QList<QLocale> locales
-        = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, QLocale::Country(index));
+        = QLocale::matchingLocales(QLocale::AnyLanguage, QLocale::AnyScript, static_cast<QLocale::Country>(index));
     // qDebug() << "etFlag county: " << country << " locales: " << locales;
     if (locales.length() > 0) {
         QString short_name = locales.at(0).name().section(QStringLiteral("_"), 1, 1).toLower();
         return QIcon("/usr/share/flags-common/" + short_name + ".png");
     }
-    return QIcon();
+    return {};
 }
 
 // detect fastest Debian repo
@@ -722,7 +722,7 @@ void MainWindow::pb_restoreSources_clicked()
     // download source files from
     const QString branch = (mx_version > 19) ? QStringLiteral("main") : QStringLiteral("master");
     const QString url
-        = QString("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/" + branch).arg(QString::number(mx_version));
+        = ("https://codeload.github.com/MX-Linux/MX-%1_sources/zip/" + branch).arg(QString::number(mx_version));
     QFileInfo fi(url);
     QFile tofile(tmpdir.path() + "/" + fi.fileName() + ".zip");
     if (!downloadFile(url, &tofile)) {
@@ -730,13 +730,13 @@ void MainWindow::pb_restoreSources_clicked()
         return;
     }
     // extract master.zip to temp folder
-    QString cmd = QString("unzip -q " + tofile.fileName() + " -d %1/").arg(tmpdir.path());
+    QString cmd = ("unzip -q " + tofile.fileName() + " -d %1/").arg(tmpdir.path());
     if (!tofile.exists() || !shell->run(cmd)) {
         QMessageBox::critical(this, tr("Error"), tr("Could not unzip downloaded file."));
         return;
     }
     // move the files from the temporary directory to /etc/apt/sources.list.d/
-    cmd = QString("mv -b %1/MX-*_sources-" + branch + "/* /etc/apt/sources.list.d/").arg(tmpdir.path());
+    cmd = ("mv -b %1/MX-*_sources-" + branch + "/* /etc/apt/sources.list.d/").arg(tmpdir.path());
     shell->run(cmd);
 
     // for 64-bit OS check if user wants AHS repo
@@ -808,7 +808,7 @@ bool MainWindow::downloadFile(const QString &url, QFile *file)
     QEventLoop loop;
 
     bool success = true;
-    connect(reply, &QNetworkReply::readyRead,
+    connect(reply, &QNetworkReply::readyRead, this,
             [&reply, file, &success]() { success = file->write(reply->readAll()) > 0; });
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     loop.exec();
