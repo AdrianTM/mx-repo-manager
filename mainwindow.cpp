@@ -336,7 +336,7 @@ QStringList MainWindow::loadAptFile(const QString &file)
 
     QStringList entries;
     QTextStream in(&aptFile);
-    QRegularExpression re("^#*\\s*deb");
+    QRegularExpression re("^#*\\s*deb ");
     while (!in.atEnd()) {
         QString line = in.readLine();
         if (re.match(line).hasMatch())
