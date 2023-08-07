@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 07 Aug 2023 11:39:28 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 23.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.8) mx; urgency=medium
+ .
+   * Fix: avoid displaying '#debian backports' comment as a repo
+Checksums-Sha1:
+ 9c55ea12ae92448435a7782c981e509fc77f167f 1192 mx-repo-manager_23.8.dsc
+ 38e8bb7e767c2d85d06278673fffb6176d244540 120000 mx-repo-manager_23.8.tar.xz
+ 89f93f5e78a6b25d6d5ba33b88e9a81920b8f213 10944 mx-repo-manager_23.8_amd64.buildinfo
+ efc4d703fa8cfb3d059b9c23dec2b49de7accf55 139356 mx-repo-manager_23.8_amd64.deb
+Checksums-Sha256:
+ cb5857c4b318c421f4ca478bc1a478edddc6243ccad82b69659ffd6a41b83f9e 1192 mx-repo-manager_23.8.dsc
+ 326bf4f1860f161d5981bf415d4b61e3734969c37696a48622ddf4023fa5447d 120000 mx-repo-manager_23.8.tar.xz
+ c9c92580a605adf8502a1e077fcf5c19795d6b55eefb4efe5363fed79ecd36fb 10944 mx-repo-manager_23.8_amd64.buildinfo
+ cfdbf2315530a9cbaf4eeba72a744178b765e9511c0db91c14efbd00144349fb 139356 mx-repo-manager_23.8_amd64.deb
+Files:
+ 158a8872d2201204f12debd4973ee594 1192 admin optional mx-repo-manager_23.8.dsc
+ 99b2a7b13ff9001b82137768e7aa9fb4 120000 admin optional mx-repo-manager_23.8.tar.xz
+ e86b45cdd5d8a760e4b6865e5a9aa951 10944 admin optional mx-repo-manager_23.8_amd64.buildinfo
+ 2c5ea481f683eebac1af584a6d26ca06 139356 admin optional mx-repo-manager_23.8_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTRENATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumBIYCADWlEaLbufqIPkpSqthJmfYpOPcV2fw
+V729daDxmDzHbqHHX92D57f74cW/KP/knj/DTI34uuTQZyrvxZxln+Ultyvxd9Qv
+j4egB6TqVM+Lr+6rtJuaQRWKzSJ4kDXvRzrXgxgd7y/82X/FaQIOeRhv3yO6zx5P
+Bxl6cjmulE9xoce/UQYL24rZSXexCgxx7d9GoYdWtuWrrcwm8rvsCGaHfxZM1/nh
+FdRSmcLK5SuHf9HFqjJjc6nL6f7g7Z1j6zogK9TghYWyByC2Ssy2qp3yaSNaGNWO
+crMxAOkGpIpuixarUtjkc67lf1Rbfm5US+5pxBA7OAB/c3yWm3Kvd7mG
+=kINu
+-----END PGP SIGNATURE-----
