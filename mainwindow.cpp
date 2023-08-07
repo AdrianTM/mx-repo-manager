@@ -766,8 +766,8 @@ void MainWindow::pb_restoreSources_clicked()
         QMessageBox::critical(this, tr("Error"), tr("Could not unzip downloaded file."));
         return;
     }
-    // move the files from the temporary directory to /etc/apt/sources.list.d/
-    cmd = ("mv -b %1/MX-*_sources-" + branch + "/* /etc/apt/sources.list.d/").arg(tmpdir.path());
+    // move the sources list files from the temporary directory to /etc/apt/sources.list.d/
+    cmd = ("mv -b %1/MX-*_sources-" + branch + "/*.list /etc/apt/sources.list.d/").arg(tmpdir.path());
     shell->run(cmd);
 
     // for 64-bit OS check if user wants AHS repo
@@ -777,6 +777,11 @@ void MainWindow::pb_restoreSources_clicked()
             shell->run(QStringLiteral("sed -i '/^\\s*#*\\s*deb.*ahs\\s*/s/^#*\\s*//' /etc/apt/sources.list.d/mx.list"),
                        true);
         }
+    }
+    // remove incorrectly placed license file, if present
+    QFile license("/etc/apt/sources.list.d/LICENSE");
+    if (license.exists()) {
+        license.remove();
     }
 
     refresh();

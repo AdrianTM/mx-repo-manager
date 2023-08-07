@@ -1,3 +1,9 @@
+mx-repo-manager (23.8.01) mx; urgency=medium
+
+  * Fix: restore sources list files only, remove wrongly copied license file
+
+ -- fehlix <fehlix@mxlinux.org>  Mon, 07 Aug 2023 17:46:27 -0400
+
 mx-repo-manager (23.8) mx; urgency=medium
 
   * Fix: avoid displaying '#debian backports' comment as a repo
