@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Mon, 07 Aug 2023 11:39:28 -0400
+Source: mx-repo-manager
+Architecture: source
+Version: 23.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-repo-manager (23.8) mx; urgency=medium
+ .
+   * Fix: avoid displaying '#debian backports' comment as a repo
+Checksums-Sha1:
+ 9c55ea12ae92448435a7782c981e509fc77f167f 1192 mx-repo-manager_23.8.dsc
+ 38e8bb7e767c2d85d06278673fffb6176d244540 120000 mx-repo-manager_23.8.tar.xz
+ 89f93f5e78a6b25d6d5ba33b88e9a81920b8f213 10944 mx-repo-manager_23.8_amd64.buildinfo
+Checksums-Sha256:
+ cb5857c4b318c421f4ca478bc1a478edddc6243ccad82b69659ffd6a41b83f9e 1192 mx-repo-manager_23.8.dsc
+ 326bf4f1860f161d5981bf415d4b61e3734969c37696a48622ddf4023fa5447d 120000 mx-repo-manager_23.8.tar.xz
+ c9c92580a605adf8502a1e077fcf5c19795d6b55eefb4efe5363fed79ecd36fb 10944 mx-repo-manager_23.8_amd64.buildinfo
+Files:
+ 158a8872d2201204f12debd4973ee594 1192 admin optional mx-repo-manager_23.8.dsc
+ 99b2a7b13ff9001b82137768e7aa9fb4 120000 admin optional mx-repo-manager_23.8.tar.xz
+ e86b45cdd5d8a760e4b6865e5a9aa951 10944 admin optional mx-repo-manager_23.8_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTRENATHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumHx+CACJgvRi64aEKwVrtOqC+PmYR+EKWOUl
+v1QCA6vCInjLSc56ba76gU+/auH2uf8LwWhUEbVo4z3gCcuPGRF7p8cvfRGk/JYe
+vD6cUOMKRQFdJN9ARUHFJ8qHCVkwaq2vSXeqWcWLZXWf3zcbwwKVI9HdrPRL0fgm
+9q4rMakpYRgNcKnLjHNenxHQTl1/0Y/BPC7S4EAxZhRokWpEENOtAosFTz5XOk9D
+68/6uuNNQjoH/K3g+OnimUDliJK1tI4HtSw7b67D32k2lBjVDLUbDKYdTQh6sfhC
+YQcWm7YVe9Vr1/wnJXJpL5pTaFHJnKHU2xmP1D2yizmBdLnmHW2XHY1d
+=2lNO
+-----END PGP SIGNATURE-----

@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Mon, 07 Aug 2023 11:39:28 -0400
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: i386
+Version: 23.8
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.8) mx; urgency=medium
+ .
+   * Fix: avoid displaying '#debian backports' comment as a repo
+Checksums-Sha1:
+ 2118f46faad22d31158b3abf39ab84c547ecb996 10090 mx-repo-manager_23.8_i386.buildinfo
+ 470050ef6f70b12ef5b4f2efdd48ce3dd054d2e9 142720 mx-repo-manager_23.8_i386.deb
+Checksums-Sha256:
+ a00e21cd55f8663a622e637ddef353e2cc6c1dddeb97a097d601c46caa1afcec 10090 mx-repo-manager_23.8_i386.buildinfo
+ 4e9fe9fe25b4210e758e66ea0cba38912be121ec3b1740e3a7e85e59362ca7af 142720 mx-repo-manager_23.8_i386.deb
+Files:
+ 17b644eff4992b27e8107c5ee83e1577 10090 admin optional mx-repo-manager_23.8_i386.buildinfo
+ 735167311741514145c3310601d4b5a0 142720 admin optional mx-repo-manager_23.8_i386.deb
