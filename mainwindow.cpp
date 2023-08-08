@@ -74,6 +74,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
+    displayMXRepos(readMXRepos(), QString());
 
     QSize size = this->size();
     if (settings.contains(QStringLiteral("geometry"))) {
@@ -97,10 +98,10 @@ MainWindow::~MainWindow()
 void MainWindow::refresh()
 {
     getCurrentRepo();
-    displayMXRepos(readMXRepos(), QString());
     displayAllRepos(listAptFiles());
     ui->lineSearch->clear();
     ui->lineSearch->setFocus();
+    ui->pushOk->setDisabled(true);
 }
 
 // replace default Debian repos
@@ -685,12 +686,6 @@ void MainWindow::pushFastestMX_clicked()
     }
 }
 
-// void MainWindow::pushRedirector_clicked()
-//{
-//    replaceDebianRepos("https://deb.debian.org/debian/");
-//    refresh();
-//}
-
 void MainWindow::lineSearch_textChanged(const QString &arg1)
 {
     displayMXRepos(repos, arg1);
@@ -749,6 +744,7 @@ void MainWindow::pb_restoreSources_clicked()
         }
     }
     refresh();
+    displayMXRepos(readMXRepos(), QString());
     QMessageBox::information(this, tr("Success"),
                              tr("Original APT sources have been restored to the release status. User added source "
                                 "files in /etc/apt/sources.list.d/ have not been touched.")
