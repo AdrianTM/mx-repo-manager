@@ -438,46 +438,17 @@ void MainWindow::procDone()
     QApplication::setOverrideCursor(QCursor(Qt::ArrowCursor));
 }
 
-// replaces the lines in the APT file
+// replaces the lines in the APT file in mx.list file
 void MainWindow::replaceRepos(const QString &url)
 {
-    QString cmd_mx;
-    QString cmd_antix;
-
-    // get Debian version
-    const int ver_num = getDebianVerNum();
-    const QString ver_name = getDebianVerName(ver_num);
-
-    // mx source files to be edited (mx.list and mx16.list for MX15/16)
     QString mx_file {QStringLiteral("/etc/apt/sources.list.d/mx.list")};
-    if (QFileInfo::exists(QStringLiteral("/etc/apt/sources.list.d/mx16.list"))) {
-        mx_file += QLatin1String(" /etc/apt/sources.list.d/mx16.list"); // add mx16.list to the list if it exists
-    }
-
-    // for MX repos
     QString repo_line_mx = "deb " + url + "/mx/repo/ ";
     QString test_line_mx = "deb " + url + "/mx/testrepo/ ";
-    cmd_mx = QStringLiteral("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx, mx_file)
-             + QStringLiteral("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx, mx_file);
-
-    if (ver_num < Version::Stretch
-        && QFileInfo::exists(QStringLiteral(
-            "/etc/antix-version"))) { // Added antix-version check in case running this on a MXfyied Debian
-        // for antiX repos
-        QString antix_file = QStringLiteral("/etc/apt/sources.list.d/antix.list");
-        QString repo_line_antix = (url == QLatin1String("http://mxrepo.com"))
-                                      ? "http://la.mxrepo.com/antix/" + ver_name + "/"
-                                      : url + "/antix/" + ver_name + "/";
-        cmd_antix = ("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix, antix_file);
-    }
-
-    // check if both replacement were successful
-    if (shell->run(cmd_mx) && (ver_num >= Version::Stretch || shell->run(cmd_antix))) {
-        QMessageBox::information(this, tr("Success"),
-                                 tr("Your new selection will take effect the next time sources are updated."));
-    } else {
-        QMessageBox::critical(this, tr("Error"), tr("Could not change the repo."));
-    }
+    QString cmd_mx = QStringLiteral("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx, mx_file)
+                     + QStringLiteral("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx, mx_file);
+    shell->run(cmd_mx) ? QMessageBox::information(
+        this, tr("Success"), tr("Your new selection will take effect the next time sources are updated."))
+                       : QMessageBox::critical(this, tr("Error"), tr("Could not change the repo."));
     sources_changed = true;
 }
 
@@ -595,7 +566,8 @@ void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
                              tr("You have selected MX Test Repo. It's not recommended to leave it enabled or to "
                                 "upgrade all the packages from it.")
                                  + "\n\n"
-                                 + tr("A safer option is to install packages individually with MX Package Installer."));
+                                 + tr("A safer option is to install packages individually with MX Package "
+                                      "Installer."));
     }
 
     QFile file;
@@ -673,8 +645,8 @@ void MainWindow::pushFastestDebian_clicked()
 
     QString ver_name {getDebianVerName(getDebianVerNum())};
     if (ver_name == QLatin1String("buster") || ver_name == QLatin1String("bullseye")) {
-        ver_name
-            = QString(); // netselect-apt doesn't like name buster/bullseye for some reason, maybe it expects "stable"
+        ver_name = QString(); // netselect-apt doesn't like name buster/bullseye for some reason,
+                              // maybe it expects "stable"
     }
 
     bool success = shell->run("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), false);
@@ -847,10 +819,10 @@ bool MainWindow::downloadFile(const QString &url, QFile *file)
     loop.exec();
 
     if (!success) {
-        QMessageBox::warning(
-            this, tr("Error"),
-            tr("There was an error writing file: %1. Please check if you have enough free space on your drive")
-                .arg(file->fileName()));
+        QMessageBox::warning(this, tr("Error"),
+                             tr("There was an error writing file: %1. Please check if you have "
+                                "enough free space on your drive")
+                                 .arg(file->fileName()));
         exit(EXIT_FAILURE);
     }
 
