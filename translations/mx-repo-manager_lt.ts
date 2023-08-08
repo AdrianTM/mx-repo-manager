@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="630"/>
+        <location filename="../mainwindow.cpp" line="602"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Pasirinkite norimą naudoti APT saugyklą:</translation>
     </message>
@@ -101,155 +101,155 @@
         <translation>Taikyti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="161"/>
-        <location filename="../mainwindow.cpp" line="477"/>
-        <location filename="../mainwindow.cpp" line="783"/>
+        <location filename="../mainwindow.cpp" line="162"/>
+        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="748"/>
         <source>Success</source>
         <translation>Pavyko</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="162"/>
-        <location filename="../mainwindow.cpp" line="478"/>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="163"/>
+        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="752"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Jūsų naujas pasirinkimas įsigalios, kitą kartą atnaujinus šaltinius.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="283"/>
         <source>Lists</source>
         <translation>Sąrašai</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="283"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Šaltiniai (pažymėti šaltiniai yra įjungti)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="480"/>
+        <location filename="../mainwindow.cpp" line="452"/>
+        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <location filename="../mainwindow.cpp" line="685"/>
-        <location filename="../mainwindow.cpp" line="695"/>
-        <location filename="../mainwindow.cpp" line="713"/>
-        <location filename="../mainwindow.cpp" line="733"/>
-        <location filename="../mainwindow.cpp" line="741"/>
-        <location filename="../mainwindow.cpp" line="760"/>
-        <location filename="../mainwindow.cpp" line="766"/>
-        <location filename="../mainwindow.cpp" line="854"/>
+        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="707"/>
+        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="730"/>
+        <location filename="../mainwindow.cpp" line="818"/>
         <source>Error</source>
         <translation>Klaida</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="480"/>
+        <location filename="../mainwindow.cpp" line="452"/>
         <source>Could not change the repo.</source>
         <translation>Nepavyko pakeisti saugyklos.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>Cancel</source>
         <translation>Atsisakyti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="510"/>
+        <location filename="../mainwindow.cpp" line="481"/>
         <source>Please wait...</source>
         <translation>Prašome palaukti...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="565"/>
+        <location filename="../mainwindow.cpp" line="536"/>
         <source>About %1</source>
         <translation>Apie %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="566"/>
+        <location filename="../mainwindow.cpp" line="537"/>
         <source>Version: </source>
         <translation>Versija: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="539"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programa, skirta pasirinkti numatytąją APT saugyklą</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="570"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Autorių teisės (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="571"/>
+        <location filename="../mainwindow.cpp" line="542"/>
         <source>%1 License</source>
         <translation>%1 licencija</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="586"/>
+        <location filename="../mainwindow.cpp" line="557"/>
         <source>%1 Help</source>
         <translation>%1 žinynas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="595"/>
+        <location filename="../mainwindow.cpp" line="566"/>
         <source>Warning</source>
         <translation>Įspėjimas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="596"/>
+        <location filename="../mainwindow.cpp" line="567"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="599"/>
+        <location filename="../mainwindow.cpp" line="570"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Saugesnis pasirinkimas yra įdiegti paketus atskirai, naudojant MX paketų diegimo programą.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="../mainwindow.cpp" line="604"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Pasirinkite norimą naudoti APT saugyklą ir šaltinius:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="685"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Komandai netselect-apt nepavyko aptikti greičiausios saugyklos.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
-        <location filename="../mainwindow.cpp" line="713"/>
+        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="685"/>
         <source>Could not detect fastest repo.</source>
         <translation>Nepavyko aptikti greičiausios saugyklos.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="733"/>
+        <location filename="../mainwindow.cpp" line="699"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="742"/>
+        <location filename="../mainwindow.cpp" line="708"/>
         <source>MX version not detected or out of range: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="760"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>Could not download original APT files.</source>
         <translation>Nepavyko atsisiųsti pradinių APT failų.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="766"/>
+        <location filename="../mainwindow.cpp" line="730"/>
         <source>Could not unzip downloaded file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="776"/>
+        <location filename="../mainwindow.cpp" line="741"/>
         <source>Enabling AHS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="776"/>
+        <location filename="../mainwindow.cpp" line="741"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="784"/>
+        <location filename="../mainwindow.cpp" line="749"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Pradiniai APT šaltiniai atkurti į laidos būseną. Naudotojo pridėti šaltinių failai, esantys /etc/apt/sources.list.d/ nebuvo paliesti.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="855"/>
+        <location filename="../mainwindow.cpp" line="819"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation type="unfinished"></translation>
     </message>
@@ -257,23 +257,23 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../about.cpp" line="52"/>
+        <location filename="../about.cpp" line="51"/>
         <source>License</source>
         <translation>Licencija</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="53"/>
+        <location filename="../about.cpp" line="52"/>
         <location filename="../about.cpp" line="62"/>
         <source>Changelog</source>
         <translation>Keitinių žurnalas</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="54"/>
+        <location filename="../about.cpp" line="53"/>
         <source>Cancel</source>
         <translation>Atsisakyti</translation>
     </message>
     <message>
-        <location filename="../about.cpp" line="74"/>
+        <location filename="../about.cpp" line="75"/>
         <source>&amp;Close</source>
         <translation>&amp;Užverti</translation>
     </message>

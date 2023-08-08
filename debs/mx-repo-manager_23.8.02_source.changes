@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 08 Aug 2023 16:39:07 -0400
+Source: mx-repo-manager
+Architecture: source
+Version: 23.8.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-repo-manager (23.8.02) mx; urgency=medium
+ .
+   * Minor GUI improvement:
+   *     - don't scroll/refresh after applying the change
+   *     - disable Apply button after the change has been applied
+Checksums-Sha1:
+ a1ecccc5c36142e0be381b09d27685206975bf86 1204 mx-repo-manager_23.8.02.dsc
+ a2770b3098ec3e61be9bb040c3ebb0ad846ffcee 119872 mx-repo-manager_23.8.02.tar.xz
+ 1076a710ec234931920182d46b72d0b396f980c9 10967 mx-repo-manager_23.8.02_amd64.buildinfo
+Checksums-Sha256:
+ ecea2bc911796f90245d09b267e6fa70c28871f1d719f6677a82e3a52006f5de 1204 mx-repo-manager_23.8.02.dsc
+ 182dbede631f4be8098a23c2dbe34f80e002507eefa991ef81f5c1a657c57f4b 119872 mx-repo-manager_23.8.02.tar.xz
+ 8c6a86dbc4a6f7ea15ae791c1c0cfc92718dc28d6212c287e4b1e06b8bd07b93 10967 mx-repo-manager_23.8.02_amd64.buildinfo
+Files:
+ 7665596620a3b5f4391e689bdf11f24c 1204 admin optional mx-repo-manager_23.8.02.dsc
+ b559884c1031056e54bd173bbca3a020 119872 admin optional mx-repo-manager_23.8.02.tar.xz
+ 02061d44c12a523e8351e352d16a1acc 10967 admin optional mx-repo-manager_23.8.02_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmTSr3wTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumGb1B/9LYfW1dHlx9WKJCWUfVryLzdYShSuc
+7VGQ3vHp46I8ub80XkCF/5+vJsIjk+FiFfB272z5ftMVEgfLpkVNLi8s9wMMd9cH
+L10QEgRsO0A6fgD6pL1sEAnrfbrcAGjFrPNuENtBOIhdYQe8n7RudOxmB40rD/lT
+tmEgkeSPrIsK4UY1b851Q+EPPmjSJMG4d1jzj0BxcVKi1tvzVZBdtuLM5aJX8E0Z
+k6fe/O+yH3MzEU5TnD4/xnI21pKApYfCiI+5SppopVFqMwsJ2hyJLgp/w5v1XPaO
+SWiPpEHO4kY6sOL3DbZPI5OFFfwK78gGsXn7AtMBPMV3eYA6kVgHnwIK
+=/h6f
+-----END PGP SIGNATURE-----
