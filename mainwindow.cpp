@@ -176,17 +176,12 @@ QStringList MainWindow::readMXRepos()
     QStringList file_content_list = file_content.split(QStringLiteral("\n"));
     file_content_list.sort();
 
-    // remove commented out lines
-    QStringList repos;
-    for (const QString &line : file_content_list) {
-        if (!line.startsWith(QLatin1String("#"))) {
-            repos << line;
-        }
-    }
-
-    extractUrls(repos);
-    this->repos = repos;
-    return repos;
+    QStringList list;
+    std::remove_copy_if(file_content_list.begin(), file_content_list.end(), std::back_inserter(list),
+                        [](const QString &line) { return line.startsWith(QLatin1String("#")); });
+    extractUrls(list);
+    repos = list;
+    return list;
 }
 
 // List current repo
@@ -396,11 +391,15 @@ void MainWindow::displaySelected(const QString &repo)
 // extract the URLs from the list of repos that contain country names and description
 void MainWindow::extractUrls(const QStringList &repos)
 {
-    QStringList linelist;
     for (const QString &line : repos) {
-        linelist = line.split(QStringLiteral("-"));
-        linelist.removeAt(0);
-        listMXurls += linelist.join(QStringLiteral("-")).trimmed() + " "; // rejoin any repos that contain "-"
+        QStringList linelist = line.split(QStringLiteral("-"));
+        if (linelist.size() > 1) {
+            linelist.pop_front();
+            QString joinedLine = linelist.join(QStringLiteral("-")).trimmed();
+            if (!joinedLine.isEmpty()) {
+                listMXurls += joinedLine + " ";
+            }
+        }
     }
 }
 
