@@ -444,7 +444,6 @@ void MainWindow::replaceRepos(const QString &url)
 {
     QString cmd_mx;
     QString cmd_antix;
-    QString repo_line_antix;
 
     // get Debian version
     const int ver_num = getDebianVerNum();
@@ -467,8 +466,9 @@ void MainWindow::replaceRepos(const QString &url)
             "/etc/antix-version"))) { // Added antix-version check in case running this on a MXfyied Debian
         // for antiX repos
         QString antix_file = QStringLiteral("/etc/apt/sources.list.d/antix.list");
-        repo_line_antix = (url == QLatin1String("http://mxrepo.com")) ? "http://la.mxrepo.com/antix/" + ver_name + "/"
-                                                                      : url + "/antix/" + ver_name + "/";
+        QString repo_line_antix = (url == QLatin1String("http://mxrepo.com"))
+                                      ? "http://la.mxrepo.com/antix/" + ver_name + "/"
+                                      : url + "/antix/" + ver_name + "/";
         cmd_antix = ("sed -i 's;https\\?://.*/" + ver_name + "/\\?;%1;' %2").arg(repo_line_antix, antix_file);
     }
 
