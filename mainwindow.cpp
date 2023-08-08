@@ -777,12 +777,6 @@ void MainWindow::pb_restoreSources_clicked()
                        true);
         }
     }
-    // remove incorrectly placed license file, if present
-    QFile license("/etc/apt/sources.list.d/LICENSE");
-    if (license.exists()) {
-        license.remove();
-    }
-
     refresh();
     QMessageBox::information(this, tr("Success"),
                              tr("Original APT sources have been restored to the release status. User added source "
