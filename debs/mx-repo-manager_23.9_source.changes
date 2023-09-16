@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sat, 16 Sep 2023 14:29:55 -0400
+Source: mx-repo-manager
+Architecture: source
+Version: 23.9
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-repo-manager (23.9) mx; urgency=medium
+ .
+   * If current repo is not found in repos.txt, select mxrepo.com by default
+Checksums-Sha1:
+ 0ce105d754281a15abfb5e5606c6a4c6cb45c6cf 1192 mx-repo-manager_23.9.dsc
+ 2fdce4fa19870725112a8cdb8fd1cc39165770fc 120052 mx-repo-manager_23.9.tar.xz
+ ef4d6cc412b76f0e2319d5a4a4056eb8e24c25f7 10943 mx-repo-manager_23.9_amd64.buildinfo
+Checksums-Sha256:
+ f40ab5272c8b60a27add48dea073f4eaba7bd4f852fc2bc043c511fe283d8e80 1192 mx-repo-manager_23.9.dsc
+ 5dd002cc0ba8b6ff78d62ff35458dfd6ab7ecc26a4820273cea476f18035a57b 120052 mx-repo-manager_23.9.tar.xz
+ 8870b4a384c30e14246e1b221ee8a8964b44252328e09ecfa92d1b5e6975c754 10943 mx-repo-manager_23.9_amd64.buildinfo
+Files:
+ 881cc0fef25bf0c770c4b93f2e9f0aa5 1192 admin optional mx-repo-manager_23.9.dsc
+ 957920fca3829916fc10b808f5c186b9 120052 admin optional mx-repo-manager_23.9.tar.xz
+ e2d86e2158d17c6c0b252b5874f28565 10943 admin optional mx-repo-manager_23.9_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmUF+C8THGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCXaCAChr5v/SI7wDeqMZB08yTLv2Z1JIYzY
+nIWLi9autVRo6OJqc3VwFAOkZIJJtpg/dcMNfyyRFAftbX7Nt7CyaR0TePTRTOu+
+74kDFIn9ZlfdWxw+DAvU6UYGCwYbLnztlPmHzC+dzJxi5EDYm9NeGfL5hVv+kd27
+ZHdWtFp483ITJbJ9UveVvTIi0cstb32fVcSIBv1J8vbRhTe/zBx+zH3GJ+tDCbTd
+9GKqXIhODB/BeiOnpl0x9+Jbs9mzuOLdD5558wpXf3M+xE3uQvBDifmSbyFHq/8D
+gHQq4/Qe4ZXf/atQbKN22ZmfHnnCy0ROfcqV74stubozL+4CkHXkKP8N
+=iqKb
+-----END PGP SIGNATURE-----

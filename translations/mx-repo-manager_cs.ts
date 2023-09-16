@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="602"/>
+        <location filename="../mainwindow.cpp" line="618"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Zadejte repozitář APT, který si přejete použít:</translation>
     </message>
@@ -102,154 +102,154 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="162"/>
-        <location filename="../mainwindow.cpp" line="451"/>
-        <location filename="../mainwindow.cpp" line="748"/>
+        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="../mainwindow.cpp" line="764"/>
         <source>Success</source>
         <translation>Úspěch!</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="163"/>
-        <location filename="../mainwindow.cpp" line="451"/>
-        <location filename="../mainwindow.cpp" line="752"/>
+        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="../mainwindow.cpp" line="768"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Váš výběr bude zaveden po aktualizaci zdrojů.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>Lists</source>
         <translation>Seznamy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>Sources (checked sources are enabled)</source>
         <translation>Zdroje (označené zdroje jsou aktivní)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="452"/>
-        <location filename="../mainwindow.cpp" line="657"/>
-        <location filename="../mainwindow.cpp" line="667"/>
-        <location filename="../mainwindow.cpp" line="685"/>
-        <location filename="../mainwindow.cpp" line="699"/>
-        <location filename="../mainwindow.cpp" line="707"/>
-        <location filename="../mainwindow.cpp" line="724"/>
-        <location filename="../mainwindow.cpp" line="730"/>
-        <location filename="../mainwindow.cpp" line="818"/>
+        <location filename="../mainwindow.cpp" line="468"/>
+        <location filename="../mainwindow.cpp" line="673"/>
+        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="701"/>
+        <location filename="../mainwindow.cpp" line="715"/>
+        <location filename="../mainwindow.cpp" line="723"/>
+        <location filename="../mainwindow.cpp" line="740"/>
+        <location filename="../mainwindow.cpp" line="746"/>
+        <location filename="../mainwindow.cpp" line="834"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="452"/>
+        <location filename="../mainwindow.cpp" line="468"/>
         <source>Could not change the repo.</source>
         <translation>Změna repozitáře se nezdařila.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>Cancel</source>
         <translation>Zrušit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="481"/>
+        <location filename="../mainwindow.cpp" line="497"/>
         <source>Please wait...</source>
         <translation>Prosím vyčkejte...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="536"/>
+        <location filename="../mainwindow.cpp" line="552"/>
         <source>About %1</source>
         <translation>O programu %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="537"/>
+        <location filename="../mainwindow.cpp" line="553"/>
         <source>Version: </source>
         <translation>Verze:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="539"/>
+        <location filename="../mainwindow.cpp" line="555"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Program pro výběr předvolených repozitářů APT</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="557"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Vlastnická práva (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="542"/>
+        <location filename="../mainwindow.cpp" line="558"/>
         <source>%1 License</source>
         <translation>Licence %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="557"/>
+        <location filename="../mainwindow.cpp" line="573"/>
         <source>%1 Help</source>
         <translation>Nápověda %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="566"/>
+        <location filename="../mainwindow.cpp" line="582"/>
         <source>Warning</source>
         <translation>Varování</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="567"/>
+        <location filename="../mainwindow.cpp" line="583"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Máte vybraný MX Testovací repozitář. Není doporučené nechat ho povolený, nebo z něj aktualizovat všechny balíky.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="570"/>
+        <location filename="../mainwindow.cpp" line="586"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Bezpečnější volba je instalovat balíčky samostatně, pomocí MX instalátoru softvéru.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="604"/>
+        <location filename="../mainwindow.cpp" line="620"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Zadejte repozitář APT a zdroje, které si přejete použít:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="673"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>Příkaz netselect-apt nemohl nalézt nejrychlejší repozitář.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
-        <location filename="../mainwindow.cpp" line="685"/>
+        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="701"/>
         <source>Could not detect fastest repo.</source>
         <translation>Nebylo možné nalézt nejrychlejší repozitář.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="715"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
         <translation>Nelze zjistit zda tato aplikace poběží pod antiX nebo MX Linux.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>MX version not detected or out of range: </source>
         <translation>Verze MX nezjištěna nebo je mimo povolené meze: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="724"/>
+        <location filename="../mainwindow.cpp" line="740"/>
         <source>Could not download original APT files.</source>
         <translation>Není možné stáhnout původní APT soubory</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="730"/>
+        <location filename="../mainwindow.cpp" line="746"/>
         <source>Could not unzip downloaded file.</source>
         <translation>Nepovedlo se rozbalit stažený soubor.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="741"/>
+        <location filename="../mainwindow.cpp" line="757"/>
         <source>Enabling AHS</source>
         <translation>Povolování AHS</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="741"/>
+        <location filename="../mainwindow.cpp" line="757"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
         <translation>Používáte repozitář AHS (Advanced Hardware Stack)?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="749"/>
+        <location filename="../mainwindow.cpp" line="765"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Původní APT zdroje byly obnoveny do původního stavu. Uživatelsky přidané zdroje do /etc/apt/sources.list.d/ nebyly dotčeny.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="819"/>
+        <location filename="../mainwindow.cpp" line="835"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Při pokusu o zápis souboru: %1 se vyskytla chyba. Prosím zkontrolujte zda máte dostatek místa na disku.</translation>
     </message>
