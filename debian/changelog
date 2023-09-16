@@ -1,3 +1,9 @@
+mx-repo-manager (23.9) mx; urgency=medium
+
+  * If current repo is not found in repos.txt, select mxrepo.com by default
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 16 Sep 2023 14:29:55 -0400
+
 mx-repo-manager (23.8.02) mx; urgency=medium
 
   * Minor GUI improvement:

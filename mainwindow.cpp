@@ -195,7 +195,7 @@ void MainWindow::getCurrentRepo()
     }
     QTextStream in(&file);
     while (!in.atEnd()) {
-        QString line = in.readLine().trimmed();
+        const QString line = in.readLine().trimmed();
         if (line.contains(QRegularExpression("^#?\\s?deb\\s+.*/repo[/]?"))) {
             QRegularExpression re {"//(.*?)/"};
             QRegularExpressionMatch match = re.match(line);
@@ -206,6 +206,18 @@ void MainWindow::getCurrentRepo()
         }
     }
     file.close();
+
+    readMXRepos();
+    bool containsRepo = std::any_of(repos.cbegin(), repos.cend(),
+                                    [this](const QString &item) { return item.contains(current_repo); });
+    if (!containsRepo) {
+        qDebug() << "Current repo not found in the up-to-date list of repos, it might have been removed as "
+                    "non-working; selecting mxrepo.com as default";
+        const QString defaultRepo = "http://mxrepo.com";
+        if (replaceRepos(defaultRepo, true)) {
+            current_repo = defaultRepo;
+        }
+    }
 }
 
 int MainWindow::getDebianVerNum()
@@ -440,17 +452,21 @@ void MainWindow::procDone()
 }
 
 // replaces the lines in the APT file in mx.list file
-void MainWindow::replaceRepos(const QString &url)
+bool MainWindow::replaceRepos(const QString &url, bool quiet)
 {
     QString mx_file {QStringLiteral("/etc/apt/sources.list.d/mx.list")};
     QString repo_line_mx = "deb " + url + "/mx/repo/ ";
     QString test_line_mx = "deb " + url + "/mx/testrepo/ ";
     QString cmd_mx = QStringLiteral("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx, mx_file)
                      + QStringLiteral("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx, mx_file);
-    shell->run(cmd_mx) ? QMessageBox::information(
-        this, tr("Success"), tr("Your new selection will take effect the next time sources are updated."))
-                       : QMessageBox::critical(this, tr("Error"), tr("Could not change the repo."));
     sources_changed = true;
+    if (quiet) {
+        return shell->run(cmd_mx);
+    } else {
+        return shell->run(cmd_mx) ? QMessageBox::information(
+                   this, tr("Success"), tr("Your new selection will take effect the next time sources are updated."))
+                                  : QMessageBox::critical(this, tr("Error"), tr("Could not change the repo."));
+    }
 }
 
 void MainWindow::setConnections()
