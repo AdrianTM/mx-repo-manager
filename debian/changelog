@@ -1,3 +1,9 @@
+mx-repo-manager (23.11) mx; urgency=medium
+
+  * Run program as normal user and elevate only when running specific commands that need admin access
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 06 Nov 2023 11:46:00 -0500
+
 mx-repo-manager (23.9) mx; urgency=medium
 
   * If current repo is not found in repos.txt, select mxrepo.com by default
