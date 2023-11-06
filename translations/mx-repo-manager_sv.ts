@@ -292,7 +292,7 @@ Vet inte om den här appen fungerar med  antiX eller MX</translation>
     <message>
         <location filename="../main.cpp" line="85"/>
         <source>You must run this program with admin access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du måste köra detta program med administratörsrättigheter.</translation>
     </message>
 </context>
 </TS>
