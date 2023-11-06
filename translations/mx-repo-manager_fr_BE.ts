@@ -291,7 +291,7 @@
     <message>
         <location filename="../main.cpp" line="85"/>
         <source>You must run this program with admin access.</source>
-        <translation type="unfinished"></translation>
+        <translation>Vous devez exécuter ce programme avec un accès administrateur.</translation>
     </message>
 </context>
 </TS>
