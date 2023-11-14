@@ -10,7 +10,7 @@
 Cmd::Cmd(QObject *parent)
     : QProcess(parent),
       elevate {QFile::exists("/usr/bin/pkexec") ? "/usr/bin/pkexec" : "/usr/bin/gksu"},
-      helper {"/usr/lib/" + QApplication::applicationName() + "/helper"}
+      helper {"/usr/lib/mx-repo-manager/helper"}
 {
 }
 
