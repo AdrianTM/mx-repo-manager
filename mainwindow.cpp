@@ -459,11 +459,8 @@ void MainWindow::procDone()
 // replaces the lines in the APT file in mx.list file
 bool MainWindow::replaceRepos(const QString &url, bool quiet)
 {
-    QString mx_file {QStringLiteral("/etc/apt/sources.list.d/mx.list")};
-    QString repo_line_mx = "deb " + url + "/mx/repo/ ";
-    QString test_line_mx = "deb " + url + "/mx/testrepo/ ";
-    QString cmd_mx = QStringLiteral("sed -i 's;deb.*/repo/ ;%1;' %2 && ").arg(repo_line_mx, mx_file)
-                     + QStringLiteral("sed -i 's;deb.*/testrepo/ ;%1;' %2").arg(test_line_mx, mx_file);
+    QString mx_file {"/etc/apt/sources.list.d/mx.list"};
+    QString cmd_mx = QString(R"(sed -i -E 's;deb\s(\[.*\]\s)?.*(/repo/|/testrepo);deb \1%1\2;' %2)").arg(url, mx_file);
     sources_changed = true;
     if (quiet) {
         return shell->runAsRoot(cmd_mx);
