@@ -1,0 +1,25 @@
+Format: 1.8
+Date: Tue, 14 Nov 2023 18:10:47 -0500
+Source: mx-repo-manager
+Architecture: source
+Version: 23.11.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Changes:
+ mx-repo-manager (23.11.01) mx; urgency=medium
+ .
+   * Allow for [arch=arm64] and the line in the mx.list entries
+Checksums-Sha1:
+ 6995833ebb42a2d2b7be3993579125450c415608 646 mx-repo-manager_23.11.01.dsc
+ 2dc176a14ebff578374cfbc6abdb708b60a3f168 120588 mx-repo-manager_23.11.01.tar.xz
+ 712f3bb2d151c8d366f1569a3f7f18517d966609 10151 mx-repo-manager_23.11.01_arm64.buildinfo
+Checksums-Sha256:
+ 23b471e6acbf5d325dd16661c3f83d2b5ea960bc7fecfc70cb8d47349b869441 646 mx-repo-manager_23.11.01.dsc
+ b05dd475cb91a6635515bd05c7bc69d16ebf5c4a49358737f2ec2bb5003b8bb1 120588 mx-repo-manager_23.11.01.tar.xz
+ f2edb29606b44057fe1f060db23298a8fb52480012b86c232ab14bb15ce1c67b 10151 mx-repo-manager_23.11.01_arm64.buildinfo
+Files:
+ 32c0dbebf2115a10b406198fe43a9f02 646 admin optional mx-repo-manager_23.11.01.dsc
+ b9db7a332dbaf7431df1bec392ccbf40 120588 admin optional mx-repo-manager_23.11.01.tar.xz
+ eda7c0b68081a4bba7707a48f2b45be5 10151 admin optional mx-repo-manager_23.11.01_arm64.buildinfo

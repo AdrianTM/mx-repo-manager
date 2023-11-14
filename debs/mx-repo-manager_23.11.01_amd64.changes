@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 14 Nov 2023 18:10:47 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 23.11.01
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.11.01) mx; urgency=medium
+ .
+   * Allow for [arch=arm64] and the line in the mx.list entries
+Checksums-Sha1:
+ 1601addb57246e0908c3618fbcd2d81fc7be3d0a 1208 mx-repo-manager_23.11.01.dsc
+ 6e881989ae4b2b91c90f0b2e10dda5be92994783 120392 mx-repo-manager_23.11.01.tar.xz
+ 79109081c97b8fdd529955374cdf95a4f55ffb92 10975 mx-repo-manager_23.11.01_amd64.buildinfo
+ 06a68fff793a99fcb22f4494f136399be9f98ad4 139084 mx-repo-manager_23.11.01_amd64.deb
+Checksums-Sha256:
+ 84e30135756dc3bc489de0350626789f4f84f550125b1f48095e1382bdc72e26 1208 mx-repo-manager_23.11.01.dsc
+ a4d1d08fa098131babf1e3eb05b71e96394f895d5f69949a932083400004b706 120392 mx-repo-manager_23.11.01.tar.xz
+ eb500d962add2ed30cbc0608d106308287081591bf09ae908ac3d60aa2b16193 10975 mx-repo-manager_23.11.01_amd64.buildinfo
+ b9b0018d58be93cf74e809f152fc21cdae0f1f3658d925a2493a36a1e5bdb837 139084 mx-repo-manager_23.11.01_amd64.deb
+Files:
+ c699effba9de0bc441f82e8b0f75d2ba 1208 admin optional mx-repo-manager_23.11.01.dsc
+ f778b69a8e7e96fe1157f402cdc54b64 120392 admin optional mx-repo-manager_23.11.01.tar.xz
+ 25c33b7e6001268243036b2e6085eaa6 10975 admin optional mx-repo-manager_23.11.01_amd64.buildinfo
+ 2ca032cb368a64f289ce83c7fb2f08c9 139084 admin optional mx-repo-manager_23.11.01_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmVUALoTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumCBzB/9VUNKHtD+u2tdx0WCg3G7uICtmxTTx
+zzyaDX+JkqEz4URbmAcjVAxiCLkSsFvVXrIF7lQI8FDWbKNNUNGa4C+bd1RUE+Qx
+X1jmZFuB4lD7dsoaL0cE7nri07ZU10EpPvX9Q5YPBO+Q3UjRqncHhjWvXzTs2Nmg
+ucbn8beM8XAxDcIGU5dsXU5fXb3jIvANQ+aNfnkiHCSDeWbpUI+TpZHjNB61T7lj
+kx5LJs81dc09F1mR8LfvQDOfDXbOcK5rVtozOGTP1syRsazV5r7GATUS5Am0wy9j
+NykhA2CU6PHeLH4d1d4X08wkgkMb8dwTgfNfPtW+o0V4ItnPTOElYPUI
+=mDbY
+-----END PGP SIGNATURE-----
