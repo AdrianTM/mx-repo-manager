@@ -1,3 +1,9 @@
+mx-repo-manager (23.11.01) mx; urgency=medium
+
+  * Allow for [arch=arm64] and the line in the mx.list entries
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 14 Nov 2023 18:10:47 -0500
+
 mx-repo-manager (23.11) mx; urgency=medium
 
   * Run program as normal user and elevate only when running specific commands that need admin access
