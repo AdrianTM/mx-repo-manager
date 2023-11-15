@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: mx-repo-manager
 Binary: mx-repo-manager
 Architecture: any
-Version: 23.11.01
+Version: 23.11.02
 Maintainer: Adrian <adrian@mxlinux.org>
 Standards-Version: 3.9.8
 Vcs-Git: git://github.com/AdrianTM/mx-repo-manager
@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 10), qtbase5-dev, qttools5-dev-tools
 Package-List:
  mx-repo-manager deb admin optional arch=any
 Checksums-Sha1:
- 2dc176a14ebff578374cfbc6abdb708b60a3f168 120588 mx-repo-manager_23.11.01.tar.xz
+ 815f93266fb45a4e71e7c35ce371d879437391dc 120484 mx-repo-manager_23.11.02.tar.xz
 Checksums-Sha256:
- b05dd475cb91a6635515bd05c7bc69d16ebf5c4a49358737f2ec2bb5003b8bb1 120588 mx-repo-manager_23.11.01.tar.xz
+ 1318d37838c3c844c5d6f7867c8ebd2b366aa6e79b4ac313d7bf549434bb950e 120484 mx-repo-manager_23.11.02.tar.xz
 Files:
- b9db7a332dbaf7431df1bec392ccbf40 120588 mx-repo-manager_23.11.01.tar.xz
+ 9fa9a47be80cb5b1a45086b5378106e3 120484 mx-repo-manager_23.11.02.tar.xz

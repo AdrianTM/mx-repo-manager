@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 14 Nov 2023 21:38:48 -0500
+Source: mx-repo-manager
+Binary: mx-repo-manager
+Architecture: source amd64
+Version: 23.11.02
+Distribution: mx
+Urgency: medium
+Maintainer: Adrian <adrian@mxlinux.org>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-repo-manager - MX Repo Manager
+Changes:
+ mx-repo-manager (23.11.02) mx; urgency=medium
+ .
+   * Fix: add /mx/ to repo name
+Checksums-Sha1:
+ ad63c302841cfcb6328c0769014ac8d0bf32aa74 1208 mx-repo-manager_23.11.02.dsc
+ 3091ac6ac0a03891f5c0a2b0e04c9ec364427e56 120260 mx-repo-manager_23.11.02.tar.xz
+ ada065dc0dea45dec11d3b166b1ac2024f6bd413 10975 mx-repo-manager_23.11.02_amd64.buildinfo
+ 08c2b7b261a606f3c1d0e6b8da7ea17d279d21ad 139308 mx-repo-manager_23.11.02_amd64.deb
+Checksums-Sha256:
+ 10923f1291fb350885bcc10774b2b4a55e84d8d4b28d77b8ec1db1551b1922d3 1208 mx-repo-manager_23.11.02.dsc
+ b9b2dc9d229a229558b3dccd0bcade55e87a0ef7b4d3386b1c402fd05cd3b553 120260 mx-repo-manager_23.11.02.tar.xz
+ 3bd744208b08e08b5032e76898e062b634b7978004a7d32c2c737485874e8362 10975 mx-repo-manager_23.11.02_amd64.buildinfo
+ 217b5b10e4e5fbeb1bd0a9466f411ec90167c7c9f0b46fa8c1a7c9e9c959c1e4 139308 mx-repo-manager_23.11.02_amd64.deb
+Files:
+ f4c898891d2b8ee37c5088491312c7c0 1208 admin optional mx-repo-manager_23.11.02.dsc
+ 3802fe02d4405b7997146e6c42e80aae 120260 admin optional mx-repo-manager_23.11.02.tar.xz
+ d676064989174b12523746eb737a2635 10975 admin optional mx-repo-manager_23.11.02_amd64.buildinfo
+ 54f5c8930c2cbffa9933aa46e59822b0 139308 admin optional mx-repo-manager_23.11.02_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFHBAEBCgAxFiEE8ndToY6S45N+YzXncJOMeAZ57pgFAmVUMBMTHGFkcmlhbkBt
+eGxpbnV4Lm9yZwAKCRBwk4x4BnnumDzTB/0RzqURzlVJm64yaMhP+5YqdrwvykFN
+HTHF9jjpwmW93lGI+0VxBrjB0Ga35mGPER7DpnjdEYgLIqi8eOx6HQiBgxaEGpaE
++T3x8vu8jyvonTBp6qG3B3AlCRIg7UDHt492eNYITISVEHo+FsxmM0pq6T5278YX
+4myNEwI4TkQhDfrg1tW9Q0Q5H5nD+8s6xqTwdFDMSInfGrqLapLZQXs9BEUSvqKU
+xKuIRwz/G9/aI7Fosl1DXag3bV3a8Kpy0Dzb1r5JsZrkAkNPAgQyyWr6njkBGc63
+qnN/U/SMmXo+dcU+r5Dwg2oDA8bZw+NBHp6Uod521J/2pVNCOHA2z7yu
+=npWT
+-----END PGP SIGNATURE-----

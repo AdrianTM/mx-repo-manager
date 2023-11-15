@@ -1,3 +1,9 @@
+mx-repo-manager (23.11.02) mx; urgency=medium
+
+  * Fix: add /mx/ to repo name
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 14 Nov 2023 21:38:48 -0500
+
 mx-repo-manager (23.11.01) mx; urgency=medium
 
   * Allow for [arch=arm64] and the line in the mx.list entries
