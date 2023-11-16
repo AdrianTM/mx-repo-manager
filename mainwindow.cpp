@@ -160,6 +160,8 @@ void MainWindow::replaceDebianRepos(QString url)
         out << content;
         file.close();
         shell->runAsRoot("mv " + tmpFile.fileName() + " " + filePath);
+        shell->runAsRoot("chown root: " + filePath);
+        shell->runAsRoot("chmod +r " + filePath);
     }
     sources_changed = true;
     QMessageBox::information(this, tr("Success"),
