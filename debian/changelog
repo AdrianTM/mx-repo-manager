@@ -1,3 +1,9 @@
+mx-repo-manager (23.11.03) mx; urgency=medium
+
+  * Fix: /etc/apt/sources.list.d/debian.list ownership
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 16 Nov 2023 15:02:05 -0500
+
 mx-repo-manager (23.11.02) mx; urgency=medium
 
   * Fix: add /mx/ to repo name
