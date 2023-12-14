@@ -44,9 +44,11 @@ HEADERS  += \
     cmd.h \
     about.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    mainwindow.ui
 
-TRANSLATIONS += translations/mx-repo-manager_en.ts
+TRANSLATIONS += \
+    translations/mx-repo-manager_en.ts
 
 RESOURCES += \
     images.qrc
