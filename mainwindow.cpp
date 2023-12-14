@@ -71,7 +71,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->pushOk->setDisabled(true);
 
-    this->setWindowTitle(tr("MX Repo Manager"));
+    setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
     refresh();
     displayMXRepos(readMXRepos(), QString());
@@ -79,8 +79,8 @@ MainWindow::MainWindow(QWidget *parent)
     QSize size = this->size();
     if (settings.contains(QStringLiteral("geometry"))) {
         restoreGeometry(settings.value(QStringLiteral("geometry")).toByteArray());
-        if (this->isMaximized()) { // add option to resize if maximized
-            this->resize(size);
+        if (isMaximized()) { // add option to resize if maximized
+            resize(size);
             centerWindow();
         }
     }
@@ -386,9 +386,9 @@ void MainWindow::cancelOperation()
 void MainWindow::centerWindow()
 {
     QRect screenGeometry = QApplication::primaryScreen()->geometry();
-    int x = (screenGeometry.width() - this->width()) / 2;
-    int y = (screenGeometry.height() - this->height()) / 2;
-    this->move(x, y);
+    int x = (screenGeometry.width() - width()) / 2;
+    int y = (screenGeometry.height() - height()) / 2;
+    move(x, y);
 }
 
 void MainWindow::closeEvent(QCloseEvent * /*unused*/)
@@ -552,16 +552,16 @@ void MainWindow::pushOk_clicked()
 // About button clicked
 void MainWindow::pushAbout_clicked()
 {
-    this->hide();
+    hide();
     displayAboutMsgBox(
-        tr("About %1").arg(this->windowTitle()),
-        "<p align=\"center\"><b><h2>" + this->windowTitle() + "</h2></b></p><p align=\"center\">" + tr("Version: ")
+        tr("About %1").arg(windowTitle()),
+        "<p align=\"center\"><b><h2>" + windowTitle() + "</h2></b></p><p align=\"center\">" + tr("Version: ")
             + QApplication::applicationVersion() + "</p><p align=\"center\"><h3>"
             + tr("Program for choosing the default APT repository")
             + R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        QStringLiteral("/usr/share/doc/mx-repo-manager/license.html"), tr("%1 License").arg(this->windowTitle()));
-    this->show();
+        QStringLiteral("/usr/share/doc/mx-repo-manager/license.html"), tr("%1 License").arg(windowTitle()));
+    show();
 }
 
 // Help button clicked
@@ -575,7 +575,7 @@ void MainWindow::pushHelp_clicked()
         url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts");
     }
 
-    displayDoc(url, tr("%1 Help").arg(this->windowTitle()));
+    displayDoc(url, tr("%1 Help").arg(windowTitle()));
 }
 
 void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
@@ -679,7 +679,7 @@ void MainWindow::pushFastestDebian_clicked()
         return;
     }
     QString repo = shell->getOut("grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2").trimmed();
-    this->blockSignals(false);
+    blockSignals(false);
 
     if (checkRepo(repo)) {
         replaceDebianRepos(repo);

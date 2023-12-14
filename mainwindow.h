@@ -21,9 +21,7 @@
  * You should have received a copy of the GNU General Public License
  * along with mx-repo-manager.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
-
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QDir>
 #include <QListWidgetItem>
@@ -104,5 +102,3 @@ private:
     static bool checkRepo(const QString &repo);
     bool downloadFile(const QString &url, QFile *file);
 };
-
-#endif // MAINWINDOW_H
