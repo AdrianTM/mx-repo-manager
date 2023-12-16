@@ -39,8 +39,8 @@ SOURCES += \
     about.cpp
 
 HEADERS  += \
+    common.h \
     mainwindow.h \
-    version.h \
     cmd.h \
     about.h
 
