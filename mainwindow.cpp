@@ -309,7 +309,7 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
         topLevelItemDeb = new QTreeWidgetItem;
         topLevelItemDeb->setText(0, file_name);
         ui->treeWidget->addTopLevelItem(topLevelItem);
-        if (file_name.contains(QLatin1String("debian")) || file_name == "sources.list") {
+        if (file_name.contains("debian") || file_name == "sources.list") {
             ui->treeWidgetDeb->addTopLevelItem(topLevelItemDeb);
         }
         // topLevelItem look
@@ -327,7 +327,7 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
             // Add checkboxes
             childItem->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
             childItemDeb->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
-            if (item.startsWith(QLatin1String("#"))) {
+            if (item.startsWith('#')) {
                 childItem->setCheckState(1, Qt::Unchecked);
                 childItemDeb->setCheckState(1, Qt::Unchecked);
             } else {
@@ -567,7 +567,7 @@ void MainWindow::pushHelp_clicked()
     QString lang = locale.bcp47Name();
     QString url = "/usr/share/doc/mx-repo-manager/mx-repo-manager.html";
 
-    if (lang.startsWith(QLatin1String("fr"))) {
+    if (lang.startsWith("fr")) {
         url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
     }
 
@@ -579,7 +579,7 @@ void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
     ui->pushOk->setEnabled(true);
     ui->treeWidget->blockSignals(true);
     ui->treeWidgetDeb->blockSignals(true);
-    if (item->text(column).contains(QLatin1String("/mx/testrepo/")) && item->checkState(column) == Qt::Checked) {
+    if (item->text(column).contains("/mx/testrepo/") && item->checkState(column) == Qt::Checked) {
         QMessageBox::warning(this, tr("Warning"),
                              tr("You have selected MX Test Repo. It's not recommended to leave it enabled or to "
                                 "upgrade all the packages from it.")
@@ -593,7 +593,7 @@ void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
     const QString file_name {item->parent()->text(0)};
     const QString text {item->text(column)};
     QStringList changes;
-    if (file_name == QLatin1String("sources.list")) {
+    if (file_name == "sources.list") {
         file.setFileName("/etc/apt/" + file_name);
     } else {
         file.setFileName("/etc/apt/sources.list.d/" + file_name);
@@ -662,7 +662,7 @@ void MainWindow::pushFastestDebian_clicked()
     }
 
     QString ver_name {getDebianVerName(getDebianVerNum())};
-    if (ver_name == QLatin1String("buster") || ver_name == QLatin1String("bullseye")) {
+    if (ver_name == "buster" || ver_name == "bullseye") {
         ver_name = QString(); // netselect-apt doesn't like name buster/bullseye for some reason,
                               // maybe it expects "stable"
     }
