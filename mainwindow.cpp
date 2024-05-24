@@ -35,6 +35,7 @@
 #include <QTemporaryDir>
 #include <QTemporaryFile>
 #include <QTextEdit>
+#include <QThread>
 
 #include "about.h"
 #include <chrono>
@@ -375,7 +376,7 @@ QStringList MainWindow::loadAptFile(const QString &file)
 void MainWindow::cancelOperation()
 {
     Cmd().runAsRoot("kill " + QString::number(shell->processId()));
-    Cmd().run("sleep 1", true);
+    QThread::sleep(1);
     if (shell->state() != QProcess::NotRunning) {
         Cmd().runAsRoot("kill -9 " + QString::number(shell->processId()));
     }
