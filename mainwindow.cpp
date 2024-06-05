@@ -784,9 +784,8 @@ bool MainWindow::checkRepo(const QString &repo)
 
     auto error {QNetworkReply::NoError};
     QEventLoop loop;
-    connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error),
-            [&error](QNetworkReply::NetworkError err) { error = err; }); // errorOccured only in Qt >= 5.15
-    connect(reply, QOverload<QNetworkReply::NetworkError>::of(&QNetworkReply::error), &loop, &QEventLoop::quit);
+    connect(reply, &QNetworkReply::errorOccurred, [&error](QNetworkReply::NetworkError err) { error = err; });
+    connect(reply, &QNetworkReply::errorOccurred, &loop, &QEventLoop::quit);
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
     QTimer::singleShot(5s, &loop, [&loop, &error]() {
         error = QNetworkReply::TimeoutError;
