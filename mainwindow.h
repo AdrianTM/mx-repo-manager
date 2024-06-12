@@ -38,6 +38,8 @@ namespace Ui
 class MainWindow;
 }
 
+using namespace std::chrono_literals;
+
 class MainWindow : public QDialog
 {
     Q_OBJECT
@@ -100,5 +102,5 @@ private:
     bool sources_changed {};
 
     static bool checkRepo(const QString &repo);
-    bool downloadFile(const QString &url, QFile *file);
+    bool downloadFile(const QString &url, QFile *file, std::chrono::seconds timeout = 10s);
 };

@@ -173,7 +173,7 @@ QStringList MainWindow::readMXRepos()
 {
     QTemporaryDir tmpdir;
     QFile file(tmpdir.path() + "/repos.txt");
-    if (!downloadFile("https://raw.githubusercontent.com/MX-Linux/mx-repo-list/master/repos.txt", &file)) {
+    if (!downloadFile("https://raw.githubusercontent.com/MX-Linux/mx-repo-list/master/repos.txt", &file, 3s)) {
         qWarning() << "Could not download 'repos.txt' from github";
         file.setFileName("/usr/share/mx-repo-list/repos.txt");
     }
@@ -805,7 +805,7 @@ bool MainWindow::checkRepo(const QString &repo)
     return false;
 }
 
-bool MainWindow::downloadFile(const QString &url, QFile *file)
+bool MainWindow::downloadFile(const QString &url, QFile *file, std::chrono::seconds timeout)
 {
     if (!file->open(QIODevice::WriteOnly)) {
         qWarning() << "Could not open file:" << file->fileName() << file->errorString();
@@ -831,14 +831,18 @@ bool MainWindow::downloadFile(const QString &url, QFile *file)
     connect(reply, &QNetworkReply::readyRead, this,
             [&reply, file, &success]() { success = file->write(reply->readAll()) > 0; });
     connect(reply, &QNetworkReply::finished, &loop, &QEventLoop::quit);
+    QTimer::singleShot(timeout, &loop, [&loop, &reply]() {
+        reply->abort();
+        loop.quit();
+    });
     loop.exec();
-
     if (!success) {
         QMessageBox::warning(this, tr("Error"),
                              tr("There was an error writing file: %1. Please check if you have "
                                 "enough free space on your drive")
                                  .arg(file->fileName()));
-        exit(EXIT_FAILURE);
+        file->close();
+        return false;
     }
 
     file->close();
