@@ -73,8 +73,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     setWindowTitle(tr("MX Repo Manager"));
     ui->tabWidget->setCurrentWidget(ui->tabMX);
-    refresh();
-    displayMXRepos(readMXRepos(), QString());
+    refresh(true);
 
     QSize size = this->size();
     if (settings.contains("geometry")) {
@@ -95,9 +94,10 @@ MainWindow::~MainWindow()
 }
 
 // Refresh repo info
-void MainWindow::refresh()
+void MainWindow::refresh(bool force)
 {
-    getCurrentRepo();
+    getCurrentRepo(force);
+    displayMXRepos(repos, {});
     displayAllRepos(listAptFiles());
     ui->lineSearch->clear();
     ui->lineSearch->setFocus();
@@ -171,16 +171,21 @@ void MainWindow::replaceDebianRepos(QString url)
 // List available repos
 QStringList MainWindow::readMXRepos()
 {
-    QFile file("/usr/share/mx-repo-list/repos.txt");
-    if (!file.open(QIODevice::ReadOnly)) {
-        qWarning() << "Count not open file: " << file.fileName() << file.errorString();
+    QTemporaryDir tmpdir;
+    QFile file(tmpdir.path() + "/repos.txt");
+    if (!downloadFile("https://raw.githubusercontent.com/MX-Linux/mx-repo-list/master/repos.txt", &file)) {
+        qWarning() << "Could not download 'repos.txt' from github";
+        file.setFileName("/usr/share/mx-repo-list/repos.txt");
     }
-
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qWarning() << "Could not open local file: " << file.fileName() << file.errorString();
+        return QStringList();
+    }
     QString file_content = file.readAll().trimmed();
     file.close();
 
     QStringList file_content_list = file_content.split('\n');
-    file_content_list.sort();
+    file_content_list.sort(Qt::CaseInsensitive);
 
     QStringList list;
     std::remove_copy_if(file_content_list.begin(), file_content_list.end(), std::back_inserter(list),
@@ -191,7 +196,7 @@ QStringList MainWindow::readMXRepos()
 }
 
 // List current repo
-void MainWindow::getCurrentRepo()
+void MainWindow::getCurrentRepo(bool force)
 {
     QFile file("/etc/apt/sources.list.d/mx.list");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -212,7 +217,9 @@ void MainWindow::getCurrentRepo()
     }
     file.close();
 
-    readMXRepos();
+    if (force) {
+        readMXRepos();
+    }
     bool containsRepo = std::any_of(repos.cbegin(), repos.cend(),
                                     [this](const QString &item) { return item.contains(current_repo); });
     if (!containsRepo) {
@@ -232,7 +239,7 @@ int MainWindow::getDebianVerNum()
     if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QTextStream in(&file);
         QString line = in.readLine();
-        list = line.split(".");
+        list = line.split('.');
         file.close();
     } else {
         qCritical() << "Could not open /etc/debian_version:" << file.errorString() << "Assumes Bullseye";
@@ -757,8 +764,7 @@ void MainWindow::pb_restoreSources_clicked()
             shell->runAsRoot(R"(sed -i '/^\s*#*\s*deb.*ahs\s*/s/^#*\s*//' /etc/apt/sources.list.d/mx.list)", true);
         }
     }
-    refresh();
-    displayMXRepos(readMXRepos(), QString());
+    refresh(true);
     QMessageBox::information(this, tr("Success"),
                              tr("Original APT sources have been restored to the release status. User added source "
                                 "files in /etc/apt/sources.list.d/ have not been touched.")

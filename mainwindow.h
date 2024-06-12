@@ -60,8 +60,8 @@ public:
     void displayMXRepos(const QStringList &repos, const QString &filter);
     void displaySelected(const QString &repo);
     void extractUrls(const QStringList &repos);
-    void getCurrentRepo();
-    void refresh();
+    void getCurrentRepo(bool force = false);
+    void refresh(bool force = false);
     void replaceDebianRepos(QString url);
     void setConnections();
     void setProgressBar();
