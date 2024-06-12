@@ -484,7 +484,7 @@ bool MainWindow::replaceRepos(const QString &url, bool quiet)
 void MainWindow::setConnections()
 {
     connect(ui->lineSearch, &QLineEdit::textChanged, this, &MainWindow::lineSearch_textChanged);
-    connect(ui->pb_restoreSources, &QPushButton::clicked, this, &MainWindow::pb_restoreSources_clicked);
+    connect(ui->pushRestoreSources, &QPushButton::clicked, this, &MainWindow::pushRestoreSources_clicked);
     connect(ui->pushAbout, &QPushButton::clicked, this, &MainWindow::pushAbout_clicked);
     connect(ui->pushCancel, &QPushButton::clicked, this, &MainWindow::close);
     connect(ui->pushFastestDebian, &QPushButton::clicked, this, &MainWindow::pushFastestDebian_clicked);
@@ -715,7 +715,7 @@ void MainWindow::lineSearch_textChanged(const QString &arg1)
     displayMXRepos(repos, arg1);
 }
 
-void MainWindow::pb_restoreSources_clicked()
+void MainWindow::pushRestoreSources_clicked()
 {
     // Check if running on antiX/MX
     if (!QFileInfo::exists("/etc/antix-version") && !QFileInfo::exists("/etc/mx-version")) {

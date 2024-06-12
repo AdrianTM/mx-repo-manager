@@ -75,7 +75,7 @@ private slots:
     void procStart();
 
     void lineSearch_textChanged(const QString &arg1);
-    void pb_restoreSources_clicked();
+    void pushRestoreSources_clicked();
     void pushAbout_clicked();
     void pushFastestDebian_clicked();
     void pushFastestMX_clicked();
