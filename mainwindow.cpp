@@ -469,8 +469,8 @@ void MainWindow::procDone()
 bool MainWindow::replaceRepos(const QString &url, bool quiet)
 {
     QString mx_file {"/etc/apt/sources.list.d/mx.list"};
-    QString cmd_mx
-        = QString(R"(sed -i -E 's;\s(\[.*\]\s)?.*(/mx/repo/|/mx/testrepo); \1%1\2;' %2)").arg(url, mx_file);
+    QString cmd_mx = QString(R"(sed -i -E 's;(deb|deb-src)\s(\[.*\]\s)?.*(/mx/repo/|/mx/testrepo);\1 \2%1\3;' %2)")
+                         .arg(url, mx_file);
     sources_changed = true;
     if (quiet) {
         return shell->runAsRoot(cmd_mx);
