@@ -158,8 +158,8 @@ void MainWindow::replaceDebianRepos(QString url)
         }
         QTextStream out(&tmpFile);
         out << content;
-        file.close();
-        shell->runAsRoot("mv " + tmpFile.fileName() + " " + filePath);
+        tmpFile.close();
+        shell->runAsRoot("mv -f " + tmpFile.fileName() + " " + filePath);
         shell->runAsRoot("chown root: " + filePath);
         shell->runAsRoot("chmod +r " + filePath);
     }
@@ -470,7 +470,7 @@ bool MainWindow::replaceRepos(const QString &url, bool quiet)
 {
     QString mx_file {"/etc/apt/sources.list.d/mx.list"};
     QString cmd_mx
-        = QString(R"(sed -i -E 's;deb\s(\[.*\]\s)?.*(/mx/repo/|/mx/testrepo);deb \1%1\2;' %2)").arg(url, mx_file);
+        = QString(R"(sed -i -E 's;\s(\[.*\]\s)?.*(/mx/repo/|/mx/testrepo); \1%1\2;' %2)").arg(url, mx_file);
     sources_changed = true;
     if (quiet) {
         return shell->runAsRoot(cmd_mx);
