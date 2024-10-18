@@ -1,3 +1,9 @@
+mx-repo-manager (24.10) mx; urgency=medium
+
+  * Enable AHS automatically if needed when restoring sources
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 18 Oct 2024 17:18:40 -0400
+
 mx-repo-manager (24.7) mx; urgency=medium
 
   * Fix replaceDebianRepos deb-src substitution
