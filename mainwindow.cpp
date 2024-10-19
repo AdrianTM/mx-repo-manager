@@ -774,9 +774,10 @@ void MainWindow::pushRestoreSources_clicked()
               .arg(tmpdir.path(), QString::number(mx_version));
     shell->runAsRoot(cmd);
 
-    // For newer versions and 64-bit OS check if AHS was enabled
+    // For 64-bit OS check if user wants AHS repo
     if (mx_version >= 19 && shell->getOut("uname -m", true) == "x86_64") {
-        if (shell->run("apt-get update --print-uris | grep -q _ahs_binary", true)) {
+        if (QMessageBox::Yes
+            == QMessageBox::question(this, tr("Enabling AHS"), tr("Do you use AHS (Advanced Hardware Stack) repo?"))) {
             shell->runAsRoot(R"(sed -i '/^\s*#*\s*deb.*ahs\s*/s/^#*\s*//' /etc/apt/sources.list.d/mx.list)", true);
         }
     }
