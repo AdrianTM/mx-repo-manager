@@ -804,7 +804,7 @@ void MainWindow::pushRestoreSources_clicked()
     }
 
     // Move the sources list files from the temporary directory to /etc/apt/sources.list.d/
-    cmd = QString("mv -b %1/mx-sources-mx%2/*.list /etc/apt/sources.list.d/")
+    cmd = QString("mv -b %1/mx-sources-mx%2/*.list /etc/apt/sources.list.d/ && chown 0:0 /etc/apt/sources.list.d/* && chmod 644 /etc/apt/sources.list.d/*")
               .arg(tmpdir.path(), QString::number(mx_version));
     shell->runAsRoot(cmd);
 
