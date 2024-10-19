@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="640"/>
+        <location filename="../mainwindow.cpp" line="642"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Wählen Sie die APT-Paketquelle, die Sie verwenden möchten:</translation>
     </message>
@@ -102,15 +102,15 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="165"/>
-        <location filename="../mainwindow.cpp" line="493"/>
-        <location filename="../mainwindow.cpp" line="786"/>
+        <location filename="../mainwindow.cpp" line="495"/>
+        <location filename="../mainwindow.cpp" line="812"/>
         <source>Success</source>
         <translation>Erfolg</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="166"/>
-        <location filename="../mainwindow.cpp" line="494"/>
-        <location filename="../mainwindow.cpp" line="790"/>
+        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="816"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ihre neue Auswahl wird erst bei der nächsten Aktualisierung der Quellen wirksam.</translation>
     </message>
@@ -125,131 +125,131 @@
         <translation>Quellen (Kästchen mit Haken sind aktiviert)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="496"/>
-        <location filename="../mainwindow.cpp" line="698"/>
-        <location filename="../mainwindow.cpp" line="708"/>
-        <location filename="../mainwindow.cpp" line="725"/>
-        <location filename="../mainwindow.cpp" line="738"/>
-        <location filename="../mainwindow.cpp" line="745"/>
-        <location filename="../mainwindow.cpp" line="761"/>
-        <location filename="../mainwindow.cpp" line="768"/>
-        <location filename="../mainwindow.cpp" line="865"/>
+        <location filename="../mainwindow.cpp" line="498"/>
+        <location filename="../mainwindow.cpp" line="700"/>
+        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="727"/>
+        <location filename="../mainwindow.cpp" line="740"/>
+        <location filename="../mainwindow.cpp" line="747"/>
+        <location filename="../mainwindow.cpp" line="763"/>
+        <location filename="../mainwindow.cpp" line="770"/>
+        <location filename="../mainwindow.cpp" line="891"/>
         <source>Error</source>
         <translation>Fehler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="498"/>
         <source>Could not change the repo.</source>
         <translation>Wechsel des Paketquellen-Servers nicht möglich</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>Cancel</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="527"/>
+        <location filename="../mainwindow.cpp" line="529"/>
         <source>Please wait...</source>
         <translation>Bitte warten...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="578"/>
+        <location filename="../mainwindow.cpp" line="580"/>
         <source>About %1</source>
         <translation>Über %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="579"/>
+        <location filename="../mainwindow.cpp" line="581"/>
         <source>Version: </source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="581"/>
+        <location filename="../mainwindow.cpp" line="583"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Programm zur Wahl der Standard-Paketquelle für APT</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="583"/>
+        <location filename="../mainwindow.cpp" line="585"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="584"/>
+        <location filename="../mainwindow.cpp" line="586"/>
         <source>%1 License</source>
         <translation>%1 Lizenz</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="600"/>
         <source>%1 Help</source>
         <translation>%1 Hilfe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="615"/>
+        <location filename="../mainwindow.cpp" line="617"/>
         <source>Warning</source>
         <translation>Warnung</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="616"/>
+        <location filename="../mainwindow.cpp" line="618"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Sie haben die MX-Testpaketquellen ausgewählt. Es wird nicht empfohlen, sie aktiviert zu lassen oder deren Pakete zu aktualisieren.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="619"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Ein sichererer Weg ist die Installation von einzelnen Paketen mit der MX-Paketinstallation.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="642"/>
+        <location filename="../mainwindow.cpp" line="644"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Wählen Sie die APT-Paketquelle und Quellen, die Sie verwenden möchten:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="700"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt konnte die schnellste Paketquelle nicht erkennen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
-        <location filename="../mainwindow.cpp" line="725"/>
+        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="727"/>
         <source>Could not detect fastest repo.</source>
         <translation>Die schnellste Paketquelle konnte nicht erkannt werden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="738"/>
+        <location filename="../mainwindow.cpp" line="740"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
         <translation>Ich kann nicht feststellen, ob diese App auf antiX oder MX läuft</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="746"/>
+        <location filename="../mainwindow.cpp" line="748"/>
         <source>MX version not detected or out of range: </source>
         <translation>MX version nicht erkannt oder außerhalb des Bereichs:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="761"/>
+        <location filename="../mainwindow.cpp" line="763"/>
         <source>Could not download original APT files.</source>
         <translation>Die originalen APT-Dateien konnten nicht heruntergeladen werden.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="768"/>
+        <location filename="../mainwindow.cpp" line="770"/>
         <source>Could not unzip downloaded file.</source>
         <translation>Konnte die heruntergeladene Datei nicht entpacken.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="799"/>
         <source>Enabling AHS</source>
-        <translation type="unfinished"></translation>
+        <translation>AHS aktivieren</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="780"/>
+        <location filename="../mainwindow.cpp" line="799"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutzen Sie die AHS (Advanced Hardware Stack)-Paketquellen?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="787"/>
+        <location filename="../mainwindow.cpp" line="813"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Die originalen APT-Quellen wurden in den Ausgangsstatus zurückgesetzt. Benutzerdefinierte Quelldateien in /etc/apt/sources.list.d/ wurden nicht berührt.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="866"/>
+        <location filename="../mainwindow.cpp" line="892"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Beim Schreiben der Datei %1 gab es einen Fehler. Bitte prüfen Sie, ob genügend freier Speicherplatz auf dem Laufwerk vorhanden ist</translation>
     </message>
