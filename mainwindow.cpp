@@ -480,8 +480,10 @@ void MainWindow::procDone()
 bool MainWindow::replaceRepos(const QString &url, bool quiet)
 {
     const QString mx_file {"/etc/apt/sources.list.d/mx.list"};
+    //const QString cmd_mx
+        // = QString(R"(sed -i -E 's;(deb|deb-src)\s(\[.*\]\s)?.*(/mx/repo/|/mx/testrepo);\1 \2%1\3;' %2)")
     const QString cmd_mx
-        = QString(R"(sed -i -E 's;(deb|deb-src)\s(\[.*\]\s)?.*(/mx/repo/|/mx/testrepo);\1 \2%1\3;' %2)")
+        = QString(R"(sed -i -E 's=(deb|deb-src)\s(\[.*\]\s)?.*(/mx/([.]?/)*repo/?|/mx/([.]?/)*testrepo/?)=\1 \2%1\3=; s/\s+/ /g; s/\s+$//' %2)")
               .arg(url, mx_file);
     sources_changed = true;
     bool result = shell->runAsRoot(cmd_mx);
@@ -769,18 +771,42 @@ void MainWindow::pushRestoreSources_clicked()
         return;
     }
 
+	bool enable_ahs = false;
+    // For newer versions and 64-bit OS check if AHS was enabled
+    if (mx_version >= 19 && shell->getOut("uname -m", true).trimmed() == "x86_64") {
+        if (shell->run("apt-get update --print-uris | grep -q -E '/mx/([.]?/)*repo/.*/ahs/binary-amd64/Packages'", true)) {
+            enable_ahs = true;
+            qDebug() << "AHS repo detected:" << enable_ahs;
+        }
+    }
+	
+	bool enable_mx = false;
+	if (shell->run("apt-get update --print-uris | grep -q -E '/mx/([.]?/)*repo/.*/main/binary-amd64/Packages'", true)) {
+		enable_mx = true;
+	}
+
+    QString mx_list = QString("%1/mx-sources-mx%2/mx.list")
+              .arg(tmpdir.path(), QString::number(mx_version));
+
+	if (enable_ahs && QFile::exists(mx_list)) {
+		cmd = QString("sed -i -r 's/^[[:space:]]*#[[:space:]#]*(deb.*[[:space:]]ahs)[[:space:]]*/\\1/' %1")
+              .arg(mx_list);
+		shell->run(cmd);
+	}
+
+    if (mx_version >= 19 && shell->getOut("uname -m", true).trimmed() == "x86_64" && !enable_ahs && !enable_mx && QFile::exists(mx_list)) {
+        if (QMessageBox::Yes
+            == QMessageBox::question(this, tr("Enabling AHS"), tr("Do you use AHS (Advanced Hardware Stack) repo?"))) {
+			cmd = QString("sed -i -r 's/^[[:space:]]*#[[:space:]#]*(deb.*[[:space:]]ahs)[[:space:]]*/\\1/' %1")
+				.arg(mx_list);
+			shell->run(cmd);
+        }
+    }
+
     // Move the sources list files from the temporary directory to /etc/apt/sources.list.d/
     cmd = QString("mv -b %1/mx-sources-mx%2/*.list /etc/apt/sources.list.d/")
               .arg(tmpdir.path(), QString::number(mx_version));
     shell->runAsRoot(cmd);
-
-    // For 64-bit OS check if user wants AHS repo
-    if (mx_version >= 19 && shell->getOut("uname -m", true) == "x86_64") {
-        if (QMessageBox::Yes
-            == QMessageBox::question(this, tr("Enabling AHS"), tr("Do you use AHS (Advanced Hardware Stack) repo?"))) {
-            shell->runAsRoot(R"(sed -i '/^\s*#*\s*deb.*ahs\s*/s/^#*\s*//' /etc/apt/sources.list.d/mx.list)", true);
-        }
-    }
 
     refresh(true);
     QMessageBox::information(this, tr("Success"),
