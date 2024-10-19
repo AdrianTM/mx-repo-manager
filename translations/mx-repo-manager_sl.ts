@@ -103,14 +103,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="493"/>
-        <location filename="../mainwindow.cpp" line="785"/>
+        <location filename="../mainwindow.cpp" line="786"/>
         <source>Success</source>
         <translation>Operacija je uspela</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="166"/>
         <location filename="../mainwindow.cpp" line="494"/>
-        <location filename="../mainwindow.cpp" line="789"/>
+        <location filename="../mainwindow.cpp" line="790"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Vaša nova izbira bo postala aktivna, ko bodo viri naslednjič posodobljeni.</translation>
     </message>
@@ -133,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="745"/>
         <location filename="../mainwindow.cpp" line="761"/>
         <location filename="../mainwindow.cpp" line="768"/>
-        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="865"/>
         <source>Error</source>
         <translation>Napaka</translation>
     </message>
@@ -234,20 +234,22 @@
         <translation>Prenešen datoteke ni bilo mogoče razširiti.</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Enabling AHS</source>
-        <translation type="vanished">Vklop AHS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="vanished">Uporabljate AHS (Advanced Hardware Stack) skladišče?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="786"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Izvirni APT viri so bili obnovljeni na stanje ob izdaji. Izvorne datoteke, ki jih je uporabnik dodal v /etc/apt/sources.list.d/, niso bile spremenjene.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="865"/>
+        <location filename="../mainwindow.cpp" line="866"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Pri zapisovanju datoteke %1 se je zgodila napaka. Preverite ali je na nosilcu dovolj prostora</translation>
     </message>

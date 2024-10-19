@@ -103,14 +103,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="493"/>
-        <location filename="../mainwindow.cpp" line="785"/>
+        <location filename="../mainwindow.cpp" line="786"/>
         <source>Success</source>
         <translation>Vellykket</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="166"/>
         <location filename="../mainwindow.cpp" line="494"/>
-        <location filename="../mainwindow.cpp" line="789"/>
+        <location filename="../mainwindow.cpp" line="790"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Det nye valget vil tre i kraft neste gang kildene oppdateres.</translation>
     </message>
@@ -133,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="745"/>
         <location filename="../mainwindow.cpp" line="761"/>
         <location filename="../mainwindow.cpp" line="768"/>
-        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="865"/>
         <source>Error</source>
         <translation>Feil</translation>
     </message>
@@ -234,20 +234,22 @@
         <translation>Klarte ikke pakke ut nedlastet fil.</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Enabling AHS</source>
-        <translation type="vanished">Slår på AHS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="vanished">Vil du bruke pakkearkivet AHS (Advanced Hardware Stack)?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="786"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>De originale APT-kildene er nå gjenopprettet. De selvvalgte kildefilene i /etc/apt/sources.list.d/ opprettholdes.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="865"/>
+        <location filename="../mainwindow.cpp" line="866"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Feil ved skriving til fil: %1. Undersøk om det er nok ledig plass på disken.</translation>
     </message>

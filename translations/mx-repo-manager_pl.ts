@@ -103,14 +103,14 @@
     <message>
         <location filename="../mainwindow.cpp" line="165"/>
         <location filename="../mainwindow.cpp" line="493"/>
-        <location filename="../mainwindow.cpp" line="785"/>
+        <location filename="../mainwindow.cpp" line="786"/>
         <source>Success</source>
         <translation>Sukces </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="166"/>
         <location filename="../mainwindow.cpp" line="494"/>
-        <location filename="../mainwindow.cpp" line="789"/>
+        <location filename="../mainwindow.cpp" line="790"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Twój nowy wybór zacznie obowiązywać po następnym uaktualnieniu źródeł.</translation>
     </message>
@@ -133,7 +133,7 @@
         <location filename="../mainwindow.cpp" line="745"/>
         <location filename="../mainwindow.cpp" line="761"/>
         <location filename="../mainwindow.cpp" line="768"/>
-        <location filename="../mainwindow.cpp" line="864"/>
+        <location filename="../mainwindow.cpp" line="865"/>
         <source>Error</source>
         <translation>Błąd</translation>
     </message>
@@ -234,20 +234,22 @@
         <translation>Nie można rozpakować pobranego pliku.</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Enabling AHS</source>
-        <translation type="vanished">Włączanie AHS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="780"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation type="vanished">Czy korzystasz z repozytorium AHS (Advanced Hardware Stack)?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="786"/>
+        <location filename="../mainwindow.cpp" line="787"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Oryginalne źródła APT zostały przywrócone do stanu z momentu wydania. Pliki ze źródłami dodane przez użytkownika w /etc/apt/sources.list.d/ nie zostały zmienione.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="865"/>
+        <location filename="../mainwindow.cpp" line="866"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Wystąpił błąd podczas zapisu pliku: %1. Sprawdź, czy masz wystarczająco dużo wolnego miejsca na dysku</translation>
     </message>
