@@ -536,8 +536,7 @@ bool MainWindow::replaceRepos(const QString &url, bool quiet)
 
     // Try mx.sources if mx.list doesn't exist or fails
     const QString cmd_mx_sources
-        = QString(
-              R"(sed -i -E 's=URIs:[[:space:]]*\S*=URIs: %1=; s/[[:space:]]{2,}/ /g; s/[[:space:]]+$//' %2)")
+        = QString(R"(sed -i -E 's=URIs:[[:space:]]*\S*=URIs: %1=; s/[[:space:]]{2,}/ /g; s/[[:space:]]+$//' %2)")
               .arg(url, mx_sources);
 
     sources_changed = true;
@@ -816,7 +815,8 @@ void MainWindow::pushFastestDebian_clicked()
 void MainWindow::pushFastestMX_clicked()
 {
     progress->show();
-    QString command = QString("netselect -D -I %1 | tr -s ' ' | sed 's/^[[:space:]]//' | cut -d' ' -f2").arg(listMXurls);
+    QString command
+        = QString("netselect -D -I %1 | tr -s ' ' | sed 's/^[[:space:]]//' | cut -d' ' -f2").arg(listMXurls);
     bool success = shell->runAsRoot(command);
     qDebug() << listMXurls;
     QString out = shell->readAllStandardOutput().trimmed();
@@ -844,7 +844,7 @@ void MainWindow::pushRestoreSources_clicked()
     }
 
     bool ok = true;
-    int mx_version = shell->getOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").leftRef(2).toInt(&ok);
+    int mx_version = shell->getOut("grep -oP '(?<=DISTRIB_RELEASE=).*' /etc/lsb-release").left(2).toInt(&ok);
     if (!ok || mx_version < 18) {
         QMessageBox::critical(this, tr("Error"),
                               tr("MX version not detected or out of range: ") + QString::number(mx_version));
@@ -897,7 +897,9 @@ void MainWindow::pushRestoreSources_clicked()
                 cmd = QString("sed -i -r 's/^[[:space:]]*#[[:space:]#]*(deb.*[[:space:]]ahs)[[:space:]]*/\\1/' %1")
                           .arg(file);
             } else {
-                cmd = QString("sed -i -r '/Components:.*ahs/!s/^[[:space:]]*Components:[[:space:]]*\\[([^]]*?)\\][[:space:]]*$/Components: [\\1 ahs]/' %1")
+                cmd = QString("sed -i -r "
+                              "'/Components:.*ahs/!s/^[[:space:]]*Components:[[:space:]]*\\[([^]]*?)\\][[:space:]]*$/"
+                              "Components: [\\1 ahs]/' %1")
                           .arg(file);
             }
             shell->run(cmd);
@@ -916,7 +918,8 @@ void MainWindow::pushRestoreSources_clicked()
     }
 
     // Move the sources list files from the temporary directory to /etc/apt/sources.list.d/
-    cmd = QString("mv -b %1/mx-sources-mx%2/*.{list,sources} /etc/apt/sources.list.d/ && chown 0:0 /etc/apt/sources.list.d/* && "
+    cmd = QString("mv -b %1/mx-sources-mx%2/*.{list,sources} /etc/apt/sources.list.d/ && chown 0:0 "
+                  "/etc/apt/sources.list.d/* && "
                   "chmod 644 /etc/apt/sources.list.d/*")
               .arg(tmpdir.path(), QString::number(mx_version));
     shell->runAsRoot(cmd);
