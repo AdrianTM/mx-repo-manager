@@ -11,7 +11,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <location filename="../mainwindow.cpp" line="743"/>
+        <location filename="../mainwindow.cpp" line="742"/>
         <source>Select the APT repository that you want to use:</source>
         <translation>Выберите APT репозиторий, который Вы хотите использовать:</translation>
     </message>
@@ -102,15 +102,15 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="166"/>
-        <location filename="../mainwindow.cpp" line="557"/>
-        <location filename="../mainwindow.cpp" line="925"/>
+        <location filename="../mainwindow.cpp" line="556"/>
+        <location filename="../mainwindow.cpp" line="928"/>
         <source>Success</source>
         <translation>Успешно</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="167"/>
-        <location filename="../mainwindow.cpp" line="558"/>
-        <location filename="../mainwindow.cpp" line="929"/>
+        <location filename="../mainwindow.cpp" line="557"/>
+        <location filename="../mainwindow.cpp" line="932"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
         <translation>Ваш новый выбор вступит в силу при следующем обновлении.</translation>
     </message>
@@ -125,90 +125,90 @@
         <translation>Источники (отмеченные источники включены)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="560"/>
-        <location filename="../mainwindow.cpp" line="801"/>
-        <location filename="../mainwindow.cpp" line="811"/>
+        <location filename="../mainwindow.cpp" line="559"/>
+        <location filename="../mainwindow.cpp" line="800"/>
+        <location filename="../mainwindow.cpp" line="810"/>
         <location filename="../mainwindow.cpp" line="829"/>
         <location filename="../mainwindow.cpp" line="842"/>
         <location filename="../mainwindow.cpp" line="849"/>
         <location filename="../mainwindow.cpp" line="865"/>
         <location filename="../mainwindow.cpp" line="872"/>
-        <location filename="../mainwindow.cpp" line="1004"/>
+        <location filename="../mainwindow.cpp" line="1007"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="559"/>
         <source>Could not change the repo.</source>
         <translation>Не удалось изменить репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="585"/>
+        <location filename="../mainwindow.cpp" line="584"/>
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="591"/>
+        <location filename="../mainwindow.cpp" line="590"/>
         <source>Please wait...</source>
         <translation>Пожалуйста, ждите...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>About %1</source>
         <translation>О %1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Version: </source>
         <translation>Версия: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="669"/>
         <source>Program for choosing the default APT repository</source>
         <translation>Программа для выбора APT репозитория по умолчанию</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="672"/>
+        <location filename="../mainwindow.cpp" line="671"/>
         <source>Copyright (c) MX Linux</source>
         <translation>Copyright (c) MX Linux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="673"/>
+        <location filename="../mainwindow.cpp" line="672"/>
         <source>%1 License</source>
         <translation>%1 Лицензия</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="687"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>%1 Help</source>
         <translation>%1 Справка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="704"/>
+        <location filename="../mainwindow.cpp" line="703"/>
         <source>Warning</source>
         <translation>Предупреждение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="705"/>
+        <location filename="../mainwindow.cpp" line="704"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
         <translation>Вы выбрали MX Тестовый репозиторий. Не рекомендуется оставлять его активированным или обновлять из него все пакеты.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
+        <location filename="../mainwindow.cpp" line="707"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
         <translation>Безопасной является возможность устанавливать отдельные пакеты через MX Установщик пакетов.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="745"/>
+        <location filename="../mainwindow.cpp" line="744"/>
         <source>Select the APT repository and sources that you want to use:</source>
         <translation>Выберите APT репозиторий и источники, которые Вы хотите использовать:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="801"/>
+        <location filename="../mainwindow.cpp" line="800"/>
         <source>netselect-apt could not detect fastest repo.</source>
         <translation>netselect-apt не смог обнаружить самый быстрый репозиторий.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="811"/>
+        <location filename="../mainwindow.cpp" line="810"/>
         <location filename="../mainwindow.cpp" line="829"/>
         <source>Could not detect fastest repo.</source>
         <translation>Не удалось определить самый быстрый репозиторий.</translation>
@@ -234,22 +234,22 @@
         <translation>Не удалось распаковать загруженный файл.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="913"/>
+        <location filename="../mainwindow.cpp" line="915"/>
         <source>Enabling AHS</source>
         <translation>Включение AHS</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="913"/>
+        <location filename="../mainwindow.cpp" line="915"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
         <translation>Используете ли вы репозиторий AHS (расширенный стек аппаратного обеспечения)?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="926"/>
+        <location filename="../mainwindow.cpp" line="929"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
         <translation>Оригинальные источники APT были восстановлены до состояния релиза. Добавленные пользователем файлы источников в /etc/apt/sources.list.d/ не были затронуты.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="1005"/>
+        <location filename="../mainwindow.cpp" line="1008"/>
         <source>There was an error writing file: %1. Please check if you have enough free space on your drive</source>
         <translation>Ошибка при записи файла: %1. Проверьте наличие свободного места на диске.</translation>
     </message>
