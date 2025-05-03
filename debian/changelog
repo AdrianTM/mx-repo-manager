@@ -1,3 +1,9 @@
+mx-repo-manager (25.5) mx; urgency=medium
+
+  * Fix replacing repo in .sources (modernized files) 
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 03 May 2025 19:03:55 -0400
+
 mx-repo-manager (25.4) mx; urgency=medium
 
   * Update to Qt6
