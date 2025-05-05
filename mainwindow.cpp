@@ -536,7 +536,8 @@ bool MainWindow::replaceRepos(const QString &url, bool quiet)
 
     // Try mx.sources if mx.list doesn't exist or fails
     const QString cmd_mx_sources
-        = QString(R"(sed -i -E 's=URIs:[[:space:]]*\S*(/mx/([.]?/)*repo/?|/mx/([.]?/)*testrepo/?)=URIs: %1\1=; s/[[:space:]]{2,}/ /g; s/[[:space:]]+$//' %2)")
+        = QString(
+              R"(sed -i -E 's=URIs:[[:space:]]*\S*(/mx/([.]?/)*repo/?|/mx/([.]?/)*testrepo/?)=URIs: %1\1=; s/[[:space:]]{2,}/ /g; s/[[:space:]]+$//' %2)")
               .arg(url, mx_sources);
 
     sources_changed = true;
@@ -779,6 +780,10 @@ QIcon MainWindow::getFlag(QString country)
 // Detect fastest Debian repo
 void MainWindow::pushFastestDebian_clicked()
 {
+    if (!shell->runAsRoot("true", true)) {
+        QMessageBox::critical(this, tr("Error"), tr("Could not detect fastest repo."));
+        return;
+    }
     progress->show();
     QTemporaryFile tmpfile;
     if (!tmpfile.open()) {
@@ -814,6 +819,10 @@ void MainWindow::pushFastestDebian_clicked()
 // Detect and select the fastest MX repo
 void MainWindow::pushFastestMX_clicked()
 {
+    if (!shell->runAsRoot("true", true)) {
+        QMessageBox::critical(this, tr("Error"), tr("Could not detect fastest repo."));
+        return;
+    }
     progress->show();
     QString command
         = QString("netselect -D -I %1 | tr -s ' ' | sed 's/^[[:space:]]//' | cut -d' ' -f2").arg(listMXurls);
