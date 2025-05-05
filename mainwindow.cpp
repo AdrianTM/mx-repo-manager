@@ -991,7 +991,7 @@ bool MainWindow::downloadFile(const QString &url, QFile *file, std::chrono::seco
 
     connect(reply, &QNetworkReply::readyRead, this, [&file, reply]() {
         if (file->write(reply->readAll()) == -1) {
-            qDebug() << "Failed to write data to file:" << file->fileName();
+            qWarning() << "Failed to write data to file:" << file->fileName();
             reply->abort();
             file->close();
             file->remove();
@@ -1004,10 +1004,7 @@ bool MainWindow::downloadFile(const QString &url, QFile *file, std::chrono::seco
     file->close();
 
     if (reply->error() != QNetworkReply::NoError) {
-        QMessageBox::warning(this, tr("Error"),
-                             tr("There was an error writing file: %1. Please check if you have "
-                                "enough free space on your drive")
-                                 .arg(file->fileName()));
+        qWarning() << "Failed to download file:" << url << reply->errorString();
         file->remove();
         return false;
     }
