@@ -70,7 +70,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
     if (sources_changed) {
-        Cmd().runAsRoot("apt-get update&");
+        Cmd().runAsRoot("nohup apt-get update >/dev/null 2>&1 &");
     }
 }
 
@@ -113,6 +113,11 @@ void MainWindow::refresh(bool force)
 
 void MainWindow::replaceDebianRepos(const QString &url)
 {
+    if (!isValidRepositoryUrl(url)) {
+        qWarning() << "Invalid repository URL:" << url;
+        return;
+    }
+
     const QStringList files {"/etc/apt/sources.list.d/debian.list", "/etc/apt/sources.list.d/debian.sources",
                              "/etc/apt/sources.list.d/debian-stable-updates.list",
                              "/etc/apt/sources.list.d/debian-stable-updates.sources", "/etc/apt/sources.list"};
@@ -525,6 +530,11 @@ void MainWindow::procDone()
 
 bool MainWindow::replaceRepos(const QString &url, bool quiet)
 {
+    if (!isValidRepositoryUrl(url)) {
+        qWarning() << "Invalid repository URL:" << url;
+        return false;
+    }
+
     const QString mx_list {"/etc/apt/sources.list.d/mx.list"};
     const QString mx_sources {"/etc/apt/sources.list.d/mx.sources"};
 
@@ -940,6 +950,31 @@ void MainWindow::pushRestoreSources_clicked()
                                  + "\n\n"
                                  + tr("Your new selection will take effect the next time sources are updated."));
     sources_changed = true;
+}
+
+bool MainWindow::isValidRepositoryUrl(const QString &url)
+{
+    if (url.trimmed().isEmpty()) {
+        return false;
+    }
+
+    QUrl qurl(url.trimmed());
+    if (!qurl.isValid() || qurl.host().isEmpty()) {
+        return false;
+    }
+
+    // Only allow http, https, and ftp schemes
+    const QString scheme = qurl.scheme().toLower();
+    if (scheme != "http" && scheme != "https" && scheme != "ftp") {
+        return false;
+    }
+
+    // Basic length check (reasonable URL length)
+    if (url.length() > 2048) {
+        return false;
+    }
+
+    return true;
 }
 
 bool MainWindow::checkRepo(const QString &repo)
