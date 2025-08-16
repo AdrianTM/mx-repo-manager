@@ -1,62 +1,62 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ka">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="17"/>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>MX Repo Manager</source>
-        <translation>MX リボジトリマネージャ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
         <location filename="../mainwindow.cpp" line="743"/>
         <source>Select the APT repository that you want to use:</source>
-        <translation>使用したい APT リポジトリを選択して下さい:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="59"/>
         <source>MX repos</source>
-        <translation>MX リポジトリ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="84"/>
         <source>Select fastest MX repo for me</source>
-        <translation>自分用の最速な MXリポジトリを選択</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
         <source>search</source>
-        <translation>検索</translation>
+        <translation>ძებნა</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="168"/>
         <source>Debian repos</source>
-        <translation>Debian リポジトリ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="180"/>
         <source>Select fastest Debian repo for me</source>
-        <translation>自分用に最速の Debianリポジトリを選択</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="229"/>
         <source>Individual sources</source>
-        <translation>個々のソース</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="248"/>
         <source>Restore original APT sources</source>
-        <translation>元の APTソースを復元</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="329"/>
         <source>Display help </source>
-        <translation>ヘルプ表示</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="332"/>
         <source>Help</source>
-        <translation>ヘルプ</translation>
+        <translation>დახმარება</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="338"/>
@@ -66,12 +66,12 @@
     <message>
         <location filename="../mainwindow.ui" line="383"/>
         <source>About this application</source>
-        <translation>このアプリケーションについて</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="386"/>
         <source>About...</source>
-        <translation>情報...</translation>
+        <translation>შესახებ...</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="392"/>
@@ -81,12 +81,12 @@
     <message>
         <location filename="../mainwindow.ui" line="408"/>
         <source>Quit application</source>
-        <translation>アプリケーションの終了</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="411"/>
         <source>Close</source>
-        <translation>閉じる</translation>
+        <translation>დახურვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="417"/>
@@ -96,31 +96,31 @@
     <message>
         <location filename="../mainwindow.ui" line="436"/>
         <source>Apply</source>
-        <translation>適用</translation>
+        <translation>გადატარება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="166"/>
         <location filename="../mainwindow.cpp" line="557"/>
         <location filename="../mainwindow.cpp" line="937"/>
         <source>Success</source>
-        <translation>成功</translation>
+        <translation>წარმატება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="167"/>
         <location filename="../mainwindow.cpp" line="558"/>
         <location filename="../mainwindow.cpp" line="941"/>
         <source>Your new selection will take effect the next time sources are updated.</source>
-        <translation>新しい選択は、ソースが更新された後で反映されます。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>Lists</source>
-        <translation>一覧</translation>
+        <translation>სიები</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>Sources (checked sources are enabled)</source>
-        <translation>ソース (チェックが入ったソースが有効)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="560"/>
@@ -134,77 +134,77 @@
         <location filename="../mainwindow.cpp" line="874"/>
         <location filename="../mainwindow.cpp" line="881"/>
         <source>Error</source>
-        <translation>エラー</translation>
+        <translation>შეცდომა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="560"/>
         <source>Could not change the repo.</source>
-        <translation>リボジトリを変更できませんでした。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="585"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation>გაუქმება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="591"/>
         <source>Please wait...</source>
-        <translation>お待ち下さい...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>About %1</source>
-        <translation> %1 について</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="668"/>
         <source>Version: </source>
-        <translation>バージョン: </translation>
+        <translation>ვერსია:</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="670"/>
         <source>Program for choosing the default APT repository</source>
-        <translation>既定の APT リポジトリを選択するためのプログラム</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="672"/>
         <source>Copyright (c) MX Linux</source>
-        <translation>Copyright (c) MX Linux</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="673"/>
         <source>%1 License</source>
-        <translation>%1 ライセンス</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="687"/>
         <source>%1 Help</source>
-        <translation>%1 のヘルプ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="704"/>
         <source>Warning</source>
-        <translation>警告</translation>
+        <translation>გაფრთხილება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="705"/>
         <source>You have selected MX Test Repo. It&apos;s not recommended to leave it enabled or to upgrade all the packages from it.</source>
-        <translation>MX テスト版リポジトリが選択されています。これを有効にしたままにしたり、そこから全てのパッケージをアップグレードしたりすることはお勧めできません。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="708"/>
         <source>A safer option is to install packages individually with MX Package Installer.</source>
-        <translation>より安全なオプションは、MX パッケージ インストーラを使い、パッケージを個別にインストールすることです。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="745"/>
         <source>Select the APT repository and sources that you want to use:</source>
-        <translation>利用したい APTリポジトリとソースを選択して下さい:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="805"/>
         <source>netselect-apt could not detect fastest repo.</source>
-        <translation>netselect-apt は最速のレポを検出できませんでした。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="784"/>
@@ -212,42 +212,42 @@
         <location filename="../mainwindow.cpp" line="823"/>
         <location filename="../mainwindow.cpp" line="838"/>
         <source>Could not detect fastest repo.</source>
-        <translation>最速のリポジトリを検出できませんでした。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="851"/>
         <source>Can&apos;t figure out if this app is running on antiX or MX</source>
-        <translation>このアプリは antiX で動いているのか、MXで動いているのか分かりません</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="859"/>
         <source>MX version not detected or out of range: </source>
-        <translation>MX のバージョンが検出できないか、範囲外です。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="874"/>
         <source>Could not download original APT files.</source>
-        <translation>元の APTファイルをダウンロードできませんでした。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="881"/>
         <source>Could not unzip downloaded file.</source>
-        <translation>ダウンロードしたファイルを展開できません。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="924"/>
         <source>Enabling AHS</source>
-        <translation>AHS を有効にしています</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="924"/>
         <source>Do you use AHS (Advanced Hardware Stack) repo?</source>
-        <translation>AHS (Advanced Hardware Stack) を利用しますか？</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="938"/>
         <source>Original APT sources have been restored to the release status. User added source files in /etc/apt/sources.list.d/ have not been touched.</source>
-        <translation>オリジナルの APTソースがリリース時の状態に復元されました。etc/apt/sources.list.d/ にある、ユーザが追加したソースファイルには触れていません。</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -255,39 +255,39 @@
     <message>
         <location filename="../about.cpp" line="49"/>
         <source>License</source>
-        <translation>ライセンス</translation>
+        <translation>ლიცენზია</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="50"/>
         <location filename="../about.cpp" line="60"/>
         <source>Changelog</source>
-        <translation>更新履歴</translation>
+        <translation>ცვლილებების ჟურნალი</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="51"/>
         <source>Cancel</source>
-        <translation>キャンセル</translation>
+        <translation>გაუქმება</translation>
     </message>
     <message>
         <location filename="../about.cpp" line="73"/>
         <source>&amp;Close</source>
-        <translation>閉じる(&amp;C)</translation>
+        <translation>&amp;დახურვა</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="73"/>
         <location filename="../main.cpp" line="82"/>
         <source>Error</source>
-        <translation>エラー</translation>
+        <translation>შეცდომა</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="74"/>
         <source>You seem to be logged in as root, please log out and log in as normal user to use this program.</source>
-        <translation>rootとしてログインしているようです。このプログラムを使用するには、一度ログアウトして通常のユーザとしてログインしてください。</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../main.cpp" line="83"/>
         <source>You must run this program with admin access.</source>
-        <translation>このプログラムは管理者権限で実行してください。</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
