@@ -185,7 +185,7 @@ bool MainWindow::writeUpdatedFile(const QString &filePath, const QString &conten
         out << content;
     } // Ensuring the QTextStream is flushed and closed before moving the file
 
-    QString cmd = QStringLiteral("mv -f %1 %2 && chown root: %2 && chmod +r %2").arg(tmpFile.fileName(), filePath);
+    QString cmd = QStringLiteral("mv -f %1 %2 && chown root: %2 && chmod 644 %2").arg(tmpFile.fileName(), filePath);
     if (!Cmd().runAsRoot(cmd)) {
         qWarning() << "Failed to replace the file and update permissions for" << filePath;
         return false;
@@ -661,7 +661,7 @@ void MainWindow::pushOk_clicked()
             out.flush();
             tempFile.close();
 
-            shell->runAsRoot(QString("mv %1 %2").arg(tempFile.fileName(), file_name));
+            shell->runAsRoot(QString("mv %1 %2 && chown root: %2 && chmod 644 %2").arg(tempFile.fileName(), file_name));
             sources_changed = true;
         }
         queued_changes.clear();
