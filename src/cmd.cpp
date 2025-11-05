@@ -36,15 +36,24 @@ bool Cmd::run(const QString &cmd, bool quiet, bool asRoot)
         qDebug().noquote() << cmd;
     }
     QEventLoop loop;
-    connect(this, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    QProcess::ProcessError processError = QProcess::UnknownError;
+    const QMetaObject::Connection finishedConn
+        = connect(this, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), &loop, &QEventLoop::quit);
+    const QMetaObject::Connection errorConn = connect(this, &QProcess::errorOccurred, this,
+                                                      [&](QProcess::ProcessError error) {
+                                                          processError = error;
+                                                          loop.quit();
+                                                      });
     if (asRoot && getuid() != 0) {
         start(elevate, {helper, cmd});
     } else {
         start("/bin/bash", {"-c", cmd});
     }
     loop.exec();
+    disconnect(finishedConn);
+    disconnect(errorConn);
     emit done();
-    return (exitStatus() == QProcess::NormalExit && exitCode() == 0);
+    return (processError == QProcess::UnknownError && exitStatus() == QProcess::NormalExit && exitCode() == 0);
 }
 
 bool Cmd::runAsRoot(const QString &cmd, bool quiet)

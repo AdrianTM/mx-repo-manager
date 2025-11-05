@@ -150,7 +150,7 @@ void MainWindow::replaceDebianRepos(const QString &url)
 
         QString content;
         QTextStream in(&file);
-        QRegularExpression re {"(ftp|http[s]?://.*/debian)"};
+        QRegularExpression re {R"(((?:https?|ftp)://\S*?/debian))"};
         QString trimmedUrl = url.trimmed().remove(QRegularExpression("/$"));
 
         while (!in.atEnd()) {
@@ -285,21 +285,45 @@ void MainWindow::getCurrentRepo(bool force)
 int MainWindow::getDebianVerNum()
 {
     QFile file("/etc/debian_version");
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+    QString line;
+
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextStream in(&file);
+        if (!in.atEnd()) {
+            line = in.readLine().trimmed();
+        }
+        file.close();
+    } else {
         qCritical() << "Could not open /etc/debian_version:" << file.errorString() << ". Defaulting to Bullseye.";
         return Version::Bullseye;
     }
 
-    QTextStream in(&file);
-    QString line = in.readLine().trimmed();
-    file.close();
+    if (line.isEmpty()) {
+        qCritical() << "/etc/debian_version is empty. Defaulting to Bullseye.";
+        return Version::Bullseye;
+    }
 
     static const QHash<QString, Version> versionMap {
-        {"bullseye", Version::Bullseye}, {"bookworm", Version::Bookworm}, {"trixie", Version::Trixie}};
+        {"bullseye", Version::Bullseye},
+        {"bookworm", Version::Bookworm},
+        {"trixie", Version::Trixie}
+    };
 
+    // Check named versions first
     for (auto it = versionMap.cbegin(); it != versionMap.cend(); ++it) {
         if (line.contains(it.key(), Qt::CaseInsensitive)) {
             return it.value();
+        }
+    }
+
+    // Try numeric debian_versions such as "13.1" or "12" by extracting the major number and mapping to Version.
+    QRegularExpression numberPattern{R"((\d+))"};
+    QRegularExpressionMatch numberMatch = numberPattern.match(line);
+    if (numberMatch.hasMatch()) {
+        bool ok = false;
+        int majorVersion = numberMatch.captured(1).toInt(&ok);
+        if (ok && majorVersion >= Version::Bullseye && majorVersion < Version::MAX) {
+            return static_cast<Version>(majorVersion);
         }
     }
 
@@ -470,6 +494,8 @@ void MainWindow::displaySelected(const QString &repo)
         if (radio && radio->text().contains(repo, Qt::CaseInsensitive)) {
             radio->setChecked(true);
             ui->listWidget->scrollToItem(item);
+            radioSelectionChanged = true;
+            ui->pushOk->setEnabled(true);
             break;
         }
     }
@@ -875,8 +901,6 @@ void MainWindow::pushRestoreSources_clicked()
         qDebug() << "Could not create temp dir";
         return;
     }
-    QDir::setCurrent(tmpdir.path());
-
     // Download source files from
     const QString url = QString("https://codeload.github.com/MX-Linux/mx-sources/zip/mx%1").arg(mx_version);
     QFile tofile(tmpdir.path() + "/" + QFileInfo(url).fileName() + ".zip");

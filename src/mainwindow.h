@@ -86,7 +86,7 @@ private:
     bool downloadFile(const QString &url, QFile *file, std::chrono::seconds timeout = 10s);
     bool replaceRepos(const QString &url, bool quiet = false);
     bool writeUpdatedFile(const QString &filePath, const QString &content);
-    enum Version { Bullseye = 11, Bookworm, Trixie };
+    enum Version { Bullseye = 11, Bookworm, Trixie, MAX };
     static QFileInfoList listAptFiles();
     static QIcon getFlag(QString country);
     static QString getDebianVerName(int ver);
