@@ -60,3 +60,10 @@ bool Cmd::runAsRoot(const QString &cmd, bool quiet)
 {
     return run(cmd, quiet, true);
 }
+
+QString Cmd::shellQuote(const QString &arg)
+{
+    QString escaped = arg;
+    escaped.replace("'", "'\\''");
+    return "'" + escaped + "'";
+}

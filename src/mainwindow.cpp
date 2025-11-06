@@ -35,6 +35,8 @@
 #include <QTemporaryDir>
 #include <QTemporaryFile>
 #include <QTextEdit>
+#include <QStringList>
+#include <QRegularExpression>
 
 #include "about.h"
 #include <chrono>
@@ -123,7 +125,8 @@ void MainWindow::replaceDebianRepos(const QString &url)
                              "/etc/apt/sources.list.d/debian-stable-updates.sources", "/etc/apt/sources.list"};
     const QDir backupDir("/etc/apt/sources.list.d/backups");
 
-    if (!backupDir.exists() && !Cmd().runAsRoot("mkdir -p " + backupDir.path())) {
+    if (!backupDir.exists()
+        && !Cmd().runAsRoot(QString("mkdir -p %1").arg(Cmd::shellQuote(backupDir.path())))) {
         qWarning() << "Failed to create backup directory:" << backupDir.path();
         return;
     }
@@ -137,7 +140,8 @@ void MainWindow::replaceDebianRepos(const QString &url)
         const QString backupFilePath = backupDir.absoluteFilePath(
             fileInfo.fileName() + "." + QDateTime::currentDateTime().toString("yyyyMMdd_HHmmss"));
 
-        if (!Cmd().runAsRoot("cp " + filePath + " " + backupFilePath)) {
+        if (!Cmd().runAsRoot(QString("cp %1 %2")
+                                 .arg(Cmd::shellQuote(filePath), Cmd::shellQuote(backupFilePath)))) {
             qWarning() << "Failed to backup" << filePath;
             continue;
         }
@@ -185,7 +189,10 @@ bool MainWindow::writeUpdatedFile(const QString &filePath, const QString &conten
         out << content;
     } // Ensuring the QTextStream is flushed and closed before moving the file
 
-    QString cmd = QStringLiteral("mv -f %1 %2 && chown root: %2 && chmod 644 %2").arg(tmpFile.fileName(), filePath);
+    const QString quotedTemp = Cmd::shellQuote(tmpFile.fileName());
+    const QString quotedTarget = Cmd::shellQuote(filePath);
+    QString cmd = QStringLiteral("mv -f %1 %2 && chown root: %2 && chmod 644 %2")
+                      .arg(quotedTemp, quotedTarget);
     if (!Cmd().runAsRoot(cmd)) {
         qWarning() << "Failed to replace the file and update permissions for" << filePath;
         return false;
@@ -503,19 +510,19 @@ void MainWindow::displaySelected(const QString &repo)
 
 void MainWindow::extractUrls(const QStringList &repos)
 {
-    QStringList extractedUrls;
-    extractedUrls.reserve(repos.size());
+    QStringList quotedUrls;
+    quotedUrls.reserve(repos.size());
     for (const QString &line : repos) {
         QStringList linelist = line.split('-');
         if (linelist.size() > 1) {
             linelist.pop_front();
             QString joinedLine = linelist.join('-').trimmed();
             if (!joinedLine.isEmpty()) {
-                extractedUrls.append(joinedLine);
+                quotedUrls.append(Cmd::shellQuote(joinedLine));
             }
         }
     }
-    listMXurls = extractedUrls.join(' ');
+    listMXurls = quotedUrls.join(' ');
 }
 
 void MainWindow::setSelected()
@@ -561,29 +568,68 @@ bool MainWindow::replaceRepos(const QString &url, bool quiet)
         return false;
     }
 
+    const QString trimmedUrl = url.trimmed().remove(QRegularExpression("/$"));
     const QString mx_list {"/etc/apt/sources.list.d/mx.list"};
     const QString mx_sources {"/etc/apt/sources.list.d/mx.sources"};
 
-    // Try mx.list first
-    const QString cmd_mx_list
-        = QString(
-              R"(sed -i -E 's=(deb|deb-src)[[:space:]]+(\[.*\][[:space:]]+)?\S*(/mx/([.]?/)*repo/?|/mx/([.]?/)*testrepo/?)=\1 \2%1\3=g; s/[[:space:]]{2,}/ /g; s/[[:space:]]+$//g' %2)")
-              .arg(url, mx_list);
+    auto updateListFile = [&](const QString &path) -> bool {
+        QFile file(path);
+        if (!file.exists()) {
+            return false;
+        }
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            qWarning() << "Could not open file:" << path << file.errorString();
+            return false;
+        }
+        QTextStream in(&file);
+        QString content = in.readAll();
+        file.close();
 
-    // Try mx.sources if mx.list doesn't exist or fails
-    const QString cmd_mx_sources
-        = QString(
-              R"(sed -i -E 's=URIs:[[:space:]]*\S*(/mx/([.]?/)*repo/?|/mx/([.]?/)*testrepo/?)=URIs: %1\1=; s/[[:space:]]{2,}/ /g; s/[[:space:]]+$//' %2)")
-              .arg(url, mx_sources);
+        QString updated = content;
+        QRegularExpression repoPattern(
+            R"((deb(?:-src)?\s+(?:\[.*?\]\s+)?)(\S*)(/mx/(?:[.]?/)*repo/?|/mx/(?:[.]?/)*testrepo/?))",
+            QRegularExpression::CaseInsensitiveOption);
+        updated.replace(repoPattern, QStringLiteral("\\1%1\\3").arg(trimmedUrl));
+        updated.replace(QRegularExpression(R"([\t ]{2,})"), " ");
+        updated.replace(QRegularExpression(R"([\t ]+$)", QRegularExpression::MultilineOption), "");
+
+        if (updated == content) {
+            return false;
+        }
+        return writeUpdatedFile(path, updated);
+    };
+
+    auto updateSourcesFile = [&](const QString &path) -> bool {
+        QFile file(path);
+        if (!file.exists()) {
+            return false;
+        }
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            qWarning() << "Could not open file:" << path << file.errorString();
+            return false;
+        }
+        QTextStream in(&file);
+        QString content = in.readAll();
+        file.close();
+
+        QString updated = content;
+        QRegularExpression uriPattern(
+            R"((URIs:\s*)(\S*)(/mx/(?:[.]?/)*repo/?|/mx/(?:[.]?/)*testrepo/?))",
+            QRegularExpression::CaseInsensitiveOption);
+        updated.replace(uriPattern, QStringLiteral("\\1%1\\3").arg(trimmedUrl));
+        updated.replace(QRegularExpression(R"([\t ]{2,})"), " ");
+        updated.replace(QRegularExpression(R"([\t ]+$)", QRegularExpression::MultilineOption), "");
+
+        if (updated == content) {
+            return false;
+        }
+        return writeUpdatedFile(path, updated);
+    };
 
     sources_changed = true;
-    bool result = false;
-
-    if (QFile::exists(mx_list)) {
-        result = shell->runAsRoot(cmd_mx_list);
-    }
-    if (!result && QFile::exists(mx_sources)) {
-        result = shell->runAsRoot(cmd_mx_sources);
+    bool result = updateListFile(mx_list);
+    if (!result) {
+        result = updateSourcesFile(mx_sources);
     }
 
     if (quiet) {
@@ -687,7 +733,9 @@ void MainWindow::pushOk_clicked()
             out.flush();
             tempFile.close();
 
-            shell->runAsRoot(QString("mv %1 %2 && chown root: %2 && chmod 644 %2").arg(tempFile.fileName(), file_name));
+            const QString quotedTemp = Cmd::shellQuote(tempFile.fileName());
+            const QString quotedTarget = Cmd::shellQuote(file_name);
+            shell->runAsRoot(QString("mv %1 %2 && chown root: %2 && chmod 644 %2").arg(quotedTemp, quotedTarget));
             sources_changed = true;
         }
         queued_changes.clear();
@@ -834,14 +882,23 @@ void MainWindow::pushFastestDebian_clicked()
                           // maybe it expects "stable"
     }
 
-    bool success = shell->runAsRoot("netselect-apt " + ver_name + " -o " + tmpfile.fileName(), false);
+    QStringList commandParts {"netselect-apt"};
+    if (!ver_name.isEmpty()) {
+        commandParts << Cmd::shellQuote(ver_name);
+    }
+    commandParts << "-o" << Cmd::shellQuote(tmpfile.fileName());
+
+    bool success = shell->runAsRoot(commandParts.join(' '), false);
     progress->hide();
 
     if (!success) {
         QMessageBox::critical(this, tr("Error"), tr("netselect-apt could not detect fastest repo."));
         return;
     }
-    QString repo = shell->getOut("grep -m1 '^deb ' " + tmpfile.fileName() + "| cut -d' ' -f2").trimmed();
+    QString repo = shell->getOut(
+                              QString("grep -m1 '^deb ' %1 | cut -d' ' -f2")
+                                  .arg(Cmd::shellQuote(tmpfile.fileName())))
+                      .trimmed();
     blockSignals(false);
 
     if (checkRepo(repo)) {
@@ -910,7 +967,8 @@ void MainWindow::pushRestoreSources_clicked()
     }
 
     // Extract master.zip to temp folder
-    QString cmd = QString("unzip -q %1 -d %2/").arg(tofile.fileName(), tmpdir.path());
+    QString cmd = QString("unzip -q %1 -d %2")
+                      .arg(Cmd::shellQuote(tofile.fileName()), Cmd::shellQuote(tmpdir.path()));
     if (!tofile.exists() || !shell->run(cmd)) {
         QMessageBox::critical(this, tr("Error"), tr("Could not unzip downloaded file."));
         return;
@@ -938,12 +996,12 @@ void MainWindow::pushRestoreSources_clicked()
         if (QFile::exists(file)) {
             if (file.endsWith(".list")) {
                 cmd = QString("sed -i -r 's/^[[:space:]]*#[[:space:]#]*(deb.*[[:space:]]ahs)[[:space:]]*/\\1/' %1")
-                          .arg(file);
+                          .arg(Cmd::shellQuote(file));
             } else {
                 cmd = QString("sed -i -r "
                               "'/Components:.*ahs/!s/^[[:space:]]*Components:[[:space:]]*\\[([^]]*?)\\][[:space:]]*$/"
                               "Components: [\\1 ahs]/' %1")
-                          .arg(file);
+                          .arg(Cmd::shellQuote(file));
             }
             shell->run(cmd);
         }
@@ -964,7 +1022,7 @@ void MainWindow::pushRestoreSources_clicked()
     cmd = QString("mv -b %1/mx-sources-mx%2/*.{list,sources} /etc/apt/sources.list.d/ && chown 0:0 "
                   "/etc/apt/sources.list.d/* && "
                   "chmod 644 /etc/apt/sources.list.d/*")
-              .arg(tmpdir.path(), QString::number(mx_version));
+              .arg(Cmd::shellQuote(tmpdir.path()), QString::number(mx_version));
     shell->runAsRoot(cmd);
 
     refresh(true);
