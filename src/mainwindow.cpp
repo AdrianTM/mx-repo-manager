@@ -131,8 +131,41 @@ void MainWindow::replaceDebianRepos(const QString &url)
         return;
     }
 
+    bool anyChange = false;
+    const QString trimmedUrl = url.trimmed().remove(QRegularExpression("/$"));
+
     for (const QString &filePath : files) {
         if (!QFile::exists(filePath)) {
+            continue;
+        }
+
+        QFile file(filePath);
+        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+            qWarning() << "Could not open file:" << file.fileName() << file.errorString();
+            continue;
+        }
+
+        QString content;
+        QTextStream in(&file);
+        QRegularExpression re {R"(((?:https?|ftp)://\S*?/debian))"};
+        bool fileChanged = false;
+
+        while (!in.atEnd()) {
+            QString line = in.readLine().trimmed();
+            // Don't replace security line since it might not be available on the mirror
+            if (!line.contains("security")) {
+                QString updatedLine = line;
+                updatedLine.replace(re, trimmedUrl);
+                if (updatedLine != line) {
+                    fileChanged = true;
+                    line = updatedLine;
+                }
+            }
+            content.append(line + '\n');
+        }
+        file.close();
+
+        if (!fileChanged) {
             continue;
         }
 
@@ -146,34 +179,21 @@ void MainWindow::replaceDebianRepos(const QString &url)
             continue;
         }
 
-        QFile file(filePath);
-        if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-            qWarning() << "Could not open file:" << file.fileName() << file.errorString();
-            continue;
-        }
-
-        QString content;
-        QTextStream in(&file);
-        QRegularExpression re {R"(((?:https?|ftp)://\S*?/debian))"};
-        QString trimmedUrl = url.trimmed().remove(QRegularExpression("/$"));
-
-        while (!in.atEnd()) {
-            QString line = in.readLine().trimmed();
-            // Don't replace security line since it might not be available on the mirror
-            if (!line.contains("security")) {
-                line.replace(re, trimmedUrl);
-            }
-            content.append(line + '\n');
-        }
-        file.close();
-
         if (!writeUpdatedFile(filePath, content)) {
             continue;
         }
+
+        anyChange = true;
     }
-    sources_changed = true;
-    QMessageBox::information(this, tr("Success"),
-                             tr("Your new selection will take effect the next time sources are updated."));
+
+    if (anyChange) {
+        sources_changed = true;
+        QMessageBox::information(this, tr("Success"),
+                                 tr("Your new selection will take effect the next time sources are updated."));
+    } else {
+        QMessageBox::information(this, tr("No Changes"),
+                                 tr("The selected repository is already configured."));
+    }
 }
 
 bool MainWindow::writeUpdatedFile(const QString &filePath, const QString &content)
@@ -626,10 +646,13 @@ bool MainWindow::replaceRepos(const QString &url, bool quiet)
         return writeUpdatedFile(path, updated);
     };
 
-    sources_changed = true;
     bool result = updateListFile(mx_list);
     if (!result) {
         result = updateSourcesFile(mx_sources);
+    }
+
+    if (result) {
+        sources_changed = true;
     }
 
     if (quiet) {
@@ -702,6 +725,7 @@ QFileInfoList MainWindow::listAptFiles()
 
 void MainWindow::pushOk_clicked()
 {
+    bool appliedChanges = false;
     if (!queued_changes.isEmpty()) {
         for (const QStringList &changes : std::as_const(queued_changes)) {
             const QString &text = changes.at(0);
@@ -719,7 +743,12 @@ void MainWindow::pushOk_clicked()
             content = in.readAll();
             file.close();
 
-            content.replace(text, new_text);
+            QString updatedContent = content;
+            updatedContent.replace(text, new_text);
+
+            if (updatedContent == content) {
+                continue;
+            }
 
             // Create temp file
             QTemporaryFile tempFile;
@@ -729,16 +758,20 @@ void MainWindow::pushOk_clicked()
             }
 
             QTextStream out(&tempFile);
-            out << content;
+            out << updatedContent;
             out.flush();
             tempFile.close();
 
             const QString quotedTemp = Cmd::shellQuote(tempFile.fileName());
             const QString quotedTarget = Cmd::shellQuote(file_name);
-            shell->runAsRoot(QString("mv %1 %2 && chown root: %2 && chmod 644 %2").arg(quotedTemp, quotedTarget));
-            sources_changed = true;
+            if (shell->runAsRoot(QString("mv %1 %2 && chown root: %2 && chmod 644 %2").arg(quotedTemp, quotedTarget))) {
+                appliedChanges = true;
+            }
         }
         queued_changes.clear();
+    }
+    if (appliedChanges) {
+        sources_changed = true;
     }
     setSelected();
     refresh();
@@ -1023,15 +1056,17 @@ void MainWindow::pushRestoreSources_clicked()
                   "/etc/apt/sources.list.d/* && "
                   "chmod 644 /etc/apt/sources.list.d/*")
               .arg(Cmd::shellQuote(tmpdir.path()), QString::number(mx_version));
-    shell->runAsRoot(cmd);
-
-    refresh(true);
-    QMessageBox::information(this, tr("Success"),
-                             tr("Original APT sources have been restored to the release status. User added source "
-                                "files in /etc/apt/sources.list.d/ have not been touched.")
-                                 + "\n\n"
-                                 + tr("Your new selection will take effect the next time sources are updated."));
-    sources_changed = true;
+    if (shell->runAsRoot(cmd)) {
+        refresh(true);
+        QMessageBox::information(this, tr("Success"),
+                                 tr("Original APT sources have been restored to the release status. User added "
+                                    "source files in /etc/apt/sources.list.d/ have not been touched.")
+                                     + "\n\n"
+                                     + tr("Your new selection will take effect the next time sources are updated."));
+        sources_changed = true;
+    } else {
+        QMessageBox::critical(this, tr("Error"), tr("Could not restore the original APT source files."));
+    }
 }
 
 bool MainWindow::isValidRepositoryUrl(const QString &url)
