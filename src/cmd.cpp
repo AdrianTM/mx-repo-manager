@@ -70,7 +70,7 @@ bool Cmd::helperProc(const QStringList &helperArgs, QString *output, const QByte
 
     const bool result = proc(program, programArgs, output, input, quiet, Elevation::No);
     if (exitCode() == EXIT_CODE_PERMISSION_DENIED || exitCode() == EXIT_CODE_COMMAND_NOT_FOUND) {
-        handleElevationError();
+        handleElevationError(exitCode());
     }
     return result;
 }
@@ -117,7 +117,8 @@ bool Cmd::procAsRoot(const QString &cmd, const QStringList &args, QString *outpu
     return proc(cmd, args, output, input, quiet, Elevation::Yes);
 }
 
-bool Cmd::startDetachedAsRoot(const QString &cmd, const QStringList &args, QuietMode quiet)
+bool Cmd::startDetachedAsRoot(const QString &cmd, const QStringList &args, QuietMode quiet, const QString &logFilePath,
+                              QString *errorMessage)
 {
     QStringList helperArgs {"exec", cmd};
     helperArgs += args;
@@ -127,6 +128,9 @@ bool Cmd::startDetachedAsRoot(const QString &cmd, const QStringList &args, Quiet
     if (getuid() != 0) {
         if (elevationCommand.isEmpty()) {
             qWarning() << "No elevation helper available";
+            if (errorMessage) {
+                *errorMessage = QStringLiteral("No elevation helper available");
+            }
             return false;
         }
         program = elevationCommand;
@@ -137,7 +141,19 @@ bool Cmd::startDetachedAsRoot(const QString &cmd, const QStringList &args, Quiet
         qDebug() << program << programArgs;
     }
 
-    return QProcess::startDetached(program, programArgs);
+    QProcess detachedProcess;
+    detachedProcess.setProgram(program);
+    detachedProcess.setArguments(programArgs);
+    if (!logFilePath.isEmpty()) {
+        detachedProcess.setStandardOutputFile(logFilePath, QIODeviceBase::Append);
+        detachedProcess.setStandardErrorFile(logFilePath, QIODeviceBase::Append);
+    }
+
+    const bool started = detachedProcess.startDetached();
+    if (!started && errorMessage) {
+        *errorMessage = detachedProcess.errorString();
+    }
+    return started;
 }
 
 bool Cmd::run(const QString &cmd, QString *output, const QByteArray *input, QuietMode quiet)
@@ -145,14 +161,18 @@ bool Cmd::run(const QString &cmd, QString *output, const QByteArray *input, Quie
     return proc("/bin/bash", {"-c", cmd}, output, input, quiet);
 }
 
-void Cmd::handleElevationError()
+void Cmd::handleElevationError(int helperExitCode)
 {
     if (qobject_cast<MainWindow *>(qApp->activeWindow())) {
-        QMessageBox::critical(nullptr, tr("Administrator Access Required"),
-                              tr("This operation requires administrator privileges. Please restart the application "
-                                 "and enter your password when prompted."));
+        if (helperExitCode == EXIT_CODE_PERMISSION_DENIED) {
+            QMessageBox::warning(nullptr, tr("Authentication Canceled"),
+                                 tr("Authentication was canceled. No changes were applied."));
+        } else {
+            QMessageBox::critical(nullptr, tr("Administrator Access Required"),
+                                  tr("This operation requires administrator privileges, but the helper could not be "
+                                     "started correctly. No changes were applied."));
+        }
     }
-    exit(EXIT_FAILURE);
 }
 
 QString Cmd::readAllOutput() const

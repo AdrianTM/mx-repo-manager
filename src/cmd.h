@@ -17,7 +17,8 @@ public:
               const QByteArray *input = nullptr, QuietMode quiet = QuietMode::No, Elevation elevation = Elevation::No);
     bool procAsRoot(const QString &cmd, const QStringList &args = {}, QString *output = nullptr,
                     const QByteArray *input = nullptr, QuietMode quiet = QuietMode::No);
-    bool startDetachedAsRoot(const QString &cmd, const QStringList &args = {}, QuietMode quiet = QuietMode::No);
+    bool startDetachedAsRoot(const QString &cmd, const QStringList &args = {}, QuietMode quiet = QuietMode::No,
+                             const QString &logFilePath = {}, QString *errorMessage = nullptr);
     bool run(const QString &cmd, QString *output = nullptr, const QByteArray *input = nullptr,
              QuietMode quiet = QuietMode::No);
     [[nodiscard]] QString getOut(const QString &cmd, QuietMode quiet = QuietMode::No);
@@ -45,5 +46,5 @@ private:
 
     bool helperProc(const QStringList &helperArgs, QString *output = nullptr, const QByteArray *input = nullptr,
                     QuietMode quiet = QuietMode::No);
-    void handleElevationError();
+    void handleElevationError(int helperExitCode);
 };
