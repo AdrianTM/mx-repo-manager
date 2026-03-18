@@ -796,7 +796,7 @@ void MainWindow::pushHelp_clicked()
         url = "https://mxlinux.org/wiki/help-files/help-mx-gestionnaire-de-d%C3%A9p%C3%B4ts";
     }
 
-    displayDoc(url, tr("%1 Help").arg(windowTitle()));
+    displayHelpDoc(url, tr("%1 Help").arg(windowTitle()));
 }
 
 void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
