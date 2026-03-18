@@ -25,6 +25,8 @@
 #include "ui_mainwindow.h"
 
 #include <QDebug>
+#include <QCloseEvent>
+#include <QFile>
 #include <QDir>
 #include <QMetaEnum>
 #include <QNetworkProxyFactory>
@@ -70,10 +72,15 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
-    delete ui;
     if (sources_changed) {
-        Cmd().startDetachedAsRoot("apt-get", {"update"}, QuietMode::Yes);
+        progress->setLabelText(tr("Updating package sources..."));
+        progress->show();
+        QApplication::processEvents();
+
+        shell->procAsRoot("apt-get", {"update"}, nullptr, nullptr, QuietMode::Yes);
     }
+
+    delete ui;
 }
 
 void MainWindow::initializeIcons()
@@ -507,6 +514,7 @@ void MainWindow::centerWindow()
 void MainWindow::closeEvent([[maybe_unused]] QCloseEvent *event)
 {
     settings.setValue("geometry", saveGeometry());
+    event->accept();
 }
 
 void MainWindow::displaySelected(const QString &repo)
