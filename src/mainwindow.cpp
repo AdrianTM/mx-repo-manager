@@ -933,10 +933,15 @@ void MainWindow::pushFastestDebian_clicked()
         QMessageBox::critical(this, tr("Error"), tr("netselect-apt could not detect fastest repo."));
         return;
     }
-    QString repo = shell->getOut(
-                              QString("grep -m1 '^deb ' %1 | cut -d' ' -f2")
-                                  .arg(Cmd::shellQuote(tmpfile.fileName())))
-                      .trimmed();
+    QString repo;
+    tmpfile.seek(0);
+    while (!tmpfile.atEnd()) {
+        const QString line = QString::fromUtf8(tmpfile.readLine());
+        if (line.startsWith("deb ")) {
+            repo = line.section(' ', 1, 1).trimmed();
+            break;
+        }
+    }
     blockSignals(false);
 
     if (checkRepo(repo)) {
