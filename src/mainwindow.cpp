@@ -1023,21 +1023,20 @@ void MainWindow::pushRestoreSources_clicked()
         return;
     }
 
+    const QString aptUrisOut = shell->getOut("apt-get update --print-uris", QuietMode::Yes);
+    static const QRegularExpression ahsRx(QStringLiteral("/mx/([.]?/)*repo/.*/ahs/binary-amd64/Packages"));
+    static const QRegularExpression mxRx(QStringLiteral("/mx/([.]?/)*repo/.*/main/binary-amd64/Packages"));
+
     bool enable_ahs = false;
     // For newer versions and 64-bit OS check if AHS was enabled
     if (mx_version >= 19 && shell->getOut("uname -m", QuietMode::Yes).trimmed() == "x86_64") {
-        if (shell->run("apt-get update --print-uris | grep -q -E '/mx/([.]?/)*repo/.*/ahs/binary-amd64/Packages'",
-                       nullptr, nullptr, QuietMode::Yes)) {
+        if (ahsRx.match(aptUrisOut).hasMatch()) {
             enable_ahs = true;
             qDebug() << "AHS repo detected:" << enable_ahs;
         }
     }
 
-    bool enable_mx = false;
-    if (shell->run("apt-get update --print-uris | grep -q -E '/mx/([.]?/)*repo/.*/main/binary-amd64/Packages'",
-                   nullptr, nullptr, QuietMode::Yes)) {
-        enable_mx = true;
-    }
+    const bool enable_mx = mxRx.match(aptUrisOut).hasMatch();
 
     QString mx_list = QString("%1/mx-sources-mx%2/mx.list").arg(tmpdir.path(), QString::number(mx_version));
     QString mx_sources = QString("%1/mx-sources-mx%2/mx.sources").arg(tmpdir.path(), QString::number(mx_version));
