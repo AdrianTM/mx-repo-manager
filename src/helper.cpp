@@ -305,7 +305,6 @@ void removePidFileIfMatches(qint64 pid)
     process.start(program, args, QIODevice::ReadWrite);
     if (!process.waitForStarted()) {
         result.standardError = QString("Failed to start %1").arg(program).toUtf8();
-        result.exitCode = 127;
         return result;
     }
 
@@ -353,6 +352,11 @@ void removePidFileIfMatches(qint64 pid)
     if (!result.started) {
         return result.exitCode;
     }
+    // The GUI interprets 126/127 as pkexec failures. A command run by this helper
+    // must not impersonate an authentication cancellation or elevation error.
+    if (result.exitCode == 126 || result.exitCode == 127) {
+        return 1;
+    }
     return result.exitStatus == QProcess::NormalExit ? result.exitCode : 1;
 }
 
@@ -387,20 +391,20 @@ void removePidFileIfMatches(qint64 pid)
 {
     if (args.size() > 1) {
         printError(QStringLiteral("Arguments not allowed for command: netselect-apt"));
-        return 127;
+        return 1;
     }
     if (args.size() == 1) {
         static const QRegularExpression releaseName("^[A-Za-z0-9._-]+$");
         if (!releaseName.match(args.constFirst()).hasMatch()) {
             printError(QStringLiteral("Arguments not allowed for command: netselect-apt"));
-            return 127;
+            return 1;
         }
     }
 
     const QString program = resolveBinary(allowedCommands().value(QStringLiteral("netselect-apt")));
     if (program.isEmpty()) {
         printError(QStringLiteral("Command is not available: netselect-apt"));
-        return 127;
+        return 1;
     }
 
     QTemporaryFile outputFile;
@@ -430,7 +434,7 @@ void removePidFileIfMatches(qint64 pid)
     if (command == "kill") {
         if (!validateArgs(command, args)) {
             printError(QStringLiteral("Arguments not allowed for command: kill"));
-            return 127;
+            return 1;
         }
         return handleCancel(args);
     }
@@ -441,18 +445,18 @@ void removePidFileIfMatches(qint64 pid)
     const auto commandIt = allowedCommands().constFind(command);
     if (commandIt == allowedCommands().constEnd()) {
         printError(QString("Command is not allowed: %1").arg(command));
-        return 127;
+        return 1;
     }
 
     if (!validateArgs(command, args)) {
         printError(QString("Arguments not allowed for command: %1").arg(command));
-        return 127;
+        return 1;
     }
 
     const QString program = resolveBinary(commandIt.value());
     if (program.isEmpty()) {
         printError(QString("Command is not available: %1").arg(command));
-        return 127;
+        return 1;
     }
 
     const bool trackForCancel = command == QLatin1String("apt-get") || command == QLatin1String("netselect");
