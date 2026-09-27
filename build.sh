@@ -37,7 +37,7 @@ cleanup_build_artifacts() {
     rm -f debian/*.debhelper.log debian/*.substvars debian/files
     rm -rf debian/.debhelper/ debian/mx-repo-manager/ obj-*/
     rm -f translations/*.qm
-    rm -f ../*build* ../*.buildinfo 2>/dev/null || true
+    rm -f ../*.buildinfo 2>/dev/null || true
 }
 
 # Parse command line arguments
@@ -88,7 +88,6 @@ if [ "$DEBIAN_BUILD" = true ]; then
     mv ../*.dsc debs/ 2>/dev/null || true
     mv ../*.tar.* debs/ 2>/dev/null || true
     mv ../*.buildinfo debs/ 2>/dev/null || true
-    mv ../*build* debs/ 2>/dev/null || true
 
     echo "Cleaning build directory and debian artifacts..."
     cleanup_build_artifacts
