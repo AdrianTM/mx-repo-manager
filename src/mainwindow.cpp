@@ -434,7 +434,6 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
     auto processEntries = [](QTreeWidgetItem *parentItem, const auto &entries) {
         for (const auto &item : entries) {
             auto *childItem = new QTreeWidgetItem(parentItem, {QString(), item.first});
-            childItem->setFlags(childItem->flags() | Qt::ItemIsUserCheckable);
             childItem->setCheckState(1, item.second ? Qt::Checked : Qt::Unchecked);
         }
     };
@@ -443,11 +442,13 @@ void MainWindow::displayAllRepos(const QFileInfoList &apt_files)
         QString file_name = file_info.fileName();
         QString file = file_info.absoluteFilePath();
         auto *topLevelItem = new QTreeWidgetItem(ui->treeWidget, {file_name});
+        topLevelItem->setFlags(topLevelItem->flags() & ~Qt::ItemIsUserCheckable);
         topLevelItem->setForeground(0, QBrush(Qt::darkGreen));
         QTreeWidgetItem *topLevelItemDeb = nullptr;
 
         if (file_name.contains("debian") || file_name == "sources.list") {
             topLevelItemDeb = new QTreeWidgetItem(ui->treeWidgetDeb, {file_name});
+            topLevelItemDeb->setFlags(topLevelItemDeb->flags() & ~Qt::ItemIsUserCheckable);
             topLevelItemDeb->setForeground(0, QBrush(Qt::darkGreen));
         }
 
@@ -834,6 +835,10 @@ void MainWindow::pushHelp_clicked()
 
 void MainWindow::treeWidget_itemChanged(QTreeWidgetItem *item, int column)
 {
+    if (!item || !item->parent()) {
+        return;
+    }
+
     ui->pushOk->setEnabled(true);
     ui->treeWidget->blockSignals(true);
     ui->treeWidgetDeb->blockSignals(true);
