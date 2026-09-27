@@ -98,11 +98,12 @@ void displayAboutMsgBox(const QString &title, const QString &message, const QStr
         const QString appName = QFileInfo(QCoreApplication::applicationFilePath()).fileName();
         const QString changelogPath = QStringLiteral("/usr/share/doc/") + appName + QStringLiteral("/changelog.gz");
         proc.start(QStringLiteral("zcat"), {changelogPath}, QIODevice::ReadOnly);
-        if (proc.waitForStarted(3000) && proc.waitForFinished(3000)) {
-            text->setText(proc.readAllStandardOutput());
-        } else {
-            text->setText(QObject::tr("Could not load changelog."));
+        QString changelogText;
+        if (proc.waitForStarted(3000) && proc.waitForFinished(3000)
+            && proc.exitStatus() == QProcess::NormalExit && proc.exitCode() == 0) {
+            changelogText = QString::fromUtf8(proc.readAllStandardOutput());
         }
+        text->setText(changelogText.isEmpty() ? QObject::tr("Could not load changelog.") : changelogText);
 
         auto *btnClose = new QPushButton(QObject::tr("&Close"), &changelog);
         btnClose->setIcon(QIcon::fromTheme(QStringLiteral("window-close")));
